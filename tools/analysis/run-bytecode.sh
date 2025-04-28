@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-VERSION=evaluation-git-4e3de06d-dirty
+VERSION=evaluation-git-87a5f1f4
 BASEDIR=$(cd ../../benchmarks; pwd)
 JAVA=/usr/lib/jvm/temurin-21-jdk-amd64/bin/java
 JAR=$BASEDIR/dacapo-$VERSION.jar
