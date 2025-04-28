@@ -9,8 +9,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
+import java.util.stream.Collectors;
 import java.io.File;
 import java.io.PrintStream;
 import org.dacapo.harness.Callback;
@@ -28,7 +31,7 @@ public class BytecodeCallback extends Callback {
     private static int iteration = 0;
     private static String ymlSuffix = "";
 
-    public static long classesTransformed= 0;
+    public static long classesTransformed = 0;
     public static Long bytecodesTransformed = new Long(0);
     public static long bytecodesExecuted = 0;
     public static long callsExecuted = 0;
@@ -36,10 +39,34 @@ public class BytecodeCallback extends Callback {
     private static HashMap<Integer, Long> executed = new HashMap();
     private static HashMap<Integer, Long> called = new HashMap();
     private static List<String> skipped = new ArrayList();
+    // typename -> fieldname -> deref count
+    private static HashMap<String, HashMap<String, Long>> fieldDereferenced = new HashMap();
 
     private static long[] opcodes = new long[255];
 
-    public static final String[] mnemonic = {"nop", "aconst_null", "iconst_m1", "iconst_0", "iconst_1", "iconst_2", "iconst_3", "iconst_4", "iconst_5", "lconst_0", "lconst_1", "fconst_0", "fconst_1", "fconst_2", "dconst_0", "dconst_1", "bipush", "sipush", "ldc", "ldc_w", "ldc2_w", "iload", "lload", "fload", "dload", "aload", "iload_0", "iload_1", "iload_2", "iload_3", "lload_0", "lload_1", "lload_2", "lload_3", "fload_0", "fload_1", "fload_2", "fload_3", "dload_0", "dload_1", "dload_2", "dload_3", "aload_0", "aload_1", "aload_2", "aload_3", "iaload", "laload", "faload", "daload", "aaload", "baload", "caload", "saload", "istore", "lstore", "fstore", "dstore", "astore", "istore_0", "istore_1", "istore_2", "istore_3", "lstore_0", "lstore_1", "lstore_2", "lstore_3", "fstore_0", "fstore_1", "fstore_2", "fstore_3", "dstore_0", "dstore_1", "dstore_2", "dstore_3", "astore_0", "astore_1", "astore_2", "astore_3", "iastore", "lastore", "fastore", "dastore", "aastore", "bastore", "castore", "sastore", "pop", "pop2", "dup", "dup_x1", "dup_x2", "dup2", "dup2_x1", "dup2_x2", "swap", "iadd", "ladd", "fadd", "dadd", "isub", "lsub", "fsub", "dsub", "imul", "lmul", "fmul", "dmul", "idiv", "ldiv", "fdiv", "ddiv", "irem", "lrem", "frem", "drem", "ineg", "lneg", "fneg", "dneg", "ishl", "lshl", "ishr", "lshr", "iushr", "lushr", "iand", "land", "ior", "lor", "ixor", "lxor", "iinc", "i2l", "i2f", "i2d", "l2i", "l2f", "l2d", "f2i", "f2l", "f2d", "d2i", "d2l", "d2f", "i2b", "i2c", "i2s", "lcmp", "fcmpl", "fcmpg", "dcmpl", "dcmpg", "ifeq", "ifne", "iflt", "ifge", "ifgt", "ifle", "if_icmpeq", "if_icmpne", "if_icmplt", "if_icmpge", "if_icmpgt", "if_icmple", "if_acmpeq", "if_acmpne", "goto", "jsr", "ret", "tableswitch", "lookupswitch", "ireturn", "lreturn", "freturn", "dreturn", "areturn", "return", "getstatic", "putstatic", "getfield", "putfield", "invokevirtual", "invokespecial", "invokestatic", "invokeinterface", "invokedynamic", "new", "newarray", "anewarray", "arraylength", "athrow", "checkcast", "instanceof", "monitorenter", "monitorexit", "wide", "multianewarray", "ifnull", "ifnonnull", "goto_w", "jsr_w", "breakpoint", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "impdep1", "impdep2"};
+    public static final String[] mnemonic = { "nop", "aconst_null", "iconst_m1", "iconst_0", "iconst_1", "iconst_2",
+            "iconst_3", "iconst_4", "iconst_5", "lconst_0", "lconst_1", "fconst_0", "fconst_1", "fconst_2", "dconst_0",
+            "dconst_1", "bipush", "sipush", "ldc", "ldc_w", "ldc2_w", "iload", "lload", "fload", "dload", "aload",
+            "iload_0", "iload_1", "iload_2", "iload_3", "lload_0", "lload_1", "lload_2", "lload_3", "fload_0",
+            "fload_1", "fload_2", "fload_3", "dload_0", "dload_1", "dload_2", "dload_3", "aload_0", "aload_1",
+            "aload_2", "aload_3", "iaload", "laload", "faload", "daload", "aaload", "baload", "caload", "saload",
+            "istore", "lstore", "fstore", "dstore", "astore", "istore_0", "istore_1", "istore_2", "istore_3",
+            "lstore_0", "lstore_1", "lstore_2", "lstore_3", "fstore_0", "fstore_1", "fstore_2", "fstore_3", "dstore_0",
+            "dstore_1", "dstore_2", "dstore_3", "astore_0", "astore_1", "astore_2", "astore_3", "iastore", "lastore",
+            "fastore", "dastore", "aastore", "bastore", "castore", "sastore", "pop", "pop2", "dup", "dup_x1", "dup_x2",
+            "dup2", "dup2_x1", "dup2_x2", "swap", "iadd", "ladd", "fadd", "dadd", "isub", "lsub", "fsub", "dsub",
+            "imul", "lmul", "fmul", "dmul", "idiv", "ldiv", "fdiv", "ddiv", "irem", "lrem", "frem", "drem", "ineg",
+            "lneg", "fneg", "dneg", "ishl", "lshl", "ishr", "lshr", "iushr", "lushr", "iand", "land", "ior", "lor",
+            "ixor", "lxor", "iinc", "i2l", "i2f", "i2d", "l2i", "l2f", "l2d", "f2i", "f2l", "f2d", "d2i", "d2l", "d2f",
+            "i2b", "i2c", "i2s", "lcmp", "fcmpl", "fcmpg", "dcmpl", "dcmpg", "ifeq", "ifne", "iflt", "ifge", "ifgt",
+            "ifle", "if_icmpeq", "if_icmpne", "if_icmplt", "if_icmpge", "if_icmpgt", "if_icmple", "if_acmpeq",
+            "if_acmpne", "goto", "jsr", "ret", "tableswitch", "lookupswitch", "ireturn", "lreturn", "freturn",
+            "dreturn", "areturn", "return", "getstatic", "putstatic", "getfield", "putfield", "invokevirtual",
+            "invokespecial", "invokestatic", "invokeinterface", "invokedynamic", "new", "newarray", "anewarray",
+            "arraylength", "athrow", "checkcast", "instanceof", "monitorenter", "monitorexit", "wide", "multianewarray",
+            "ifnull", "ifnonnull", "goto_w", "jsr_w", "breakpoint", "", "", "", "", "", "", "", "", "", "", "", "", "",
+            "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+            "", "", "", "", "", "", "", "", "", "", "", "impdep1", "impdep2" };
 
     public BytecodeCallback(CommandLineArgs args) {
         super(args);
@@ -71,7 +98,7 @@ public class BytecodeCallback extends Callback {
     }
 
     private static void iterationStop(boolean warmup) {
-        ymlSuffix = warmup ? "."+iteration : "";
+        ymlSuffix = warmup ? "." + iteration : "";
     }
 
     private static boolean check() {
@@ -79,7 +106,7 @@ public class BytecodeCallback extends Callback {
         executed.values().remove(null);
         int post = executed.keySet().size();
         if (post != pre) {
-            System.err.println("Warning deleted "+(pre - post)+" null entries ("+pre+" -> "+post+")");
+            System.err.println("Warning deleted " + (pre - post) + " null entries (" + pre + " -> " + post + ")");
         }
 
         long esum = 0;
@@ -91,7 +118,8 @@ public class BytecodeCallback extends Callback {
             osum += opcodes[i];
         }
         if (esum != bytecodesExecuted || osum != bytecodesExecuted) {
-            System.err.println("WARNING: inconsistent count of bytecodes executed ("+esum+", "+osum+", "+bytecodesExecuted+")");
+            System.err.println("WARNING: inconsistent count of bytecodes executed (" + esum + ", " + osum + ", "
+                    + bytecodesExecuted + ")");
             return false;
         }
         return true;
@@ -104,13 +132,14 @@ public class BytecodeCallback extends Callback {
 
         String ymlfile = System.getProperty(YML_FILENAME_PROPERTY);
         if (ymlfile == null) {
-            System.out.println("The '"+YML_FILENAME_PROPERTY+"' system property is not set, so printing bytecode yml to console.");
+            System.out.println("The '" + YML_FILENAME_PROPERTY
+                    + "' system property is not set, so printing bytecode yml to console.");
         } else {
             ymlfile += ymlSuffix;
             try {
                 yml = new PrintStream(new File(ymlfile));
             } catch (Exception e) {
-                System.err.println("Could not open '"+ymlfile+"', so printing bytecode yml to console.");
+                System.err.println("Could not open '" + ymlfile + "', so printing bytecode yml to console.");
             }
         }
 
@@ -119,49 +148,70 @@ public class BytecodeCallback extends Callback {
         v.removeIf(Objects::isNull);
         int post = v.size();
         if (pre != post) {
-            System.err.println("Warning deleted "+(pre - post)+" null entries ("+pre+" -> "+post+").");
+            System.err.println("Warning deleted " + (pre - post) + " null entries (" + pre + " -> " + post + ").");
         }
         List<Long> bytecodefreq = new ArrayList<Long>(v);
         Collections.sort(bytecodefreq);
         int uniq = bytecodefreq.size();
-        long p90 = uniq > 0 ? bytecodefreq.get((uniq-1)-(uniq/10)) : 0;
-        long p99 = uniq > 0 ? bytecodefreq.get((uniq-1)-(uniq/100)) : 0;
-        long p999 = uniq > 0 ? bytecodefreq.get((uniq-1)-(uniq/1000)) : 0;
-        long p9999 = uniq > 0 ? bytecodefreq.get((uniq-1)-(uniq/10000)) : 0;
+        long p90 = uniq > 0 ? bytecodefreq.get((uniq - 1) - (uniq / 10)) : 0;
+        long p99 = uniq > 0 ? bytecodefreq.get((uniq - 1) - (uniq / 100)) : 0;
+        long p999 = uniq > 0 ? bytecodefreq.get((uniq - 1) - (uniq / 1000)) : 0;
+        long p9999 = uniq > 0 ? bytecodefreq.get((uniq - 1) - (uniq / 10000)) : 0;
 
         yml.println("# These statistics can be generated from a dacapo release using a command line like:");
-        yml.println("#    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>");
+        yml.println(
+                "#    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>");
         yml.println("#");
         yml.println("skipped-classes: " + skipped.size());
-        yml.println("transformed-classes: "+ classesTransformed);
-        yml.println("transformed-bytecodes: "+ bytecodesTransformed);
-        yml.println("executed-bytecodes: "+ bytecodesExecuted);
-        yml.println("executed-bytecodes-unique: "+ executed.size());
-        yml.println("executed-bytecodes-p90: "+ p90);
-        yml.println("executed-bytecodes-p99: "+ p99);
-        yml.println("executed-bytecodes-p999: "+ p999);
-        yml.println("executed-bytecodes-p9999: "+ p9999);
-        yml.println("executed-calls: "+ callsExecuted);
-        yml.println("executed-calls-unique: "+ called.size());
+        yml.println("transformed-classes: " + classesTransformed);
+        yml.println("transformed-bytecodes: " + bytecodesTransformed);
+        yml.println("executed-bytecodes: " + bytecodesExecuted);
+        yml.println("executed-bytecodes-unique: " + executed.size());
+        yml.println("executed-bytecodes-p90: " + p90);
+        yml.println("executed-bytecodes-p99: " + p99);
+        yml.println("executed-bytecodes-p999: " + p999);
+        yml.println("executed-bytecodes-p9999: " + p9999);
+        yml.println("executed-calls: " + callsExecuted);
+        yml.println("executed-calls-unique: " + called.size());
+
+        // Print the field dereference counts
+        yml.println("field-dereference-counts:");
+        for (String owner : fieldDereferenced.keySet()) {
+            HashMap<String, Long> deref = fieldDereferenced.get(owner);
+
+            LinkedHashMap<String, Long> sorted = deref.entrySet().stream()
+                    .sorted(Map.Entry.<String, Long>comparingByValue().reversed()
+                            .thenComparing(Map.Entry.comparingByKey()))
+                    .collect(Collectors.toMap(
+                            Map.Entry::getKey,
+                            Map.Entry::getValue,
+                            (e1, e2) -> e1,
+                            LinkedHashMap::new));
+
+            yml.print("  " + owner + ":");
+            for (String name : sorted.keySet()) {
+                yml.print("\n    " + name + ": " + sorted.get(name));
+            }
+        }
 
         yml.print("opcodes:");
         boolean start = true;
         for (int i = 0; i < 255; i++) {
             if (opcodes[i] != 0) {
-                yml.print("\n  "+mnemonic[i]+": "+opcodes[i]);
+                yml.print("\n  " + mnemonic[i] + ": " + opcodes[i]);
                 start = false;
             }
         }
-        
+
         for (String msg : skipped) {
-            yml.println("# "+msg);
+            yml.println("# " + msg);
         }
 
         if (yml != System.out) {
             try {
                 yml.close();
             } catch (Exception e) {
-                System.err.println("Exception closing file: "+e);
+                System.err.println("Exception closing file: " + e);
             }
         }
     }
@@ -193,29 +243,46 @@ public class BytecodeCallback extends Callback {
     }
 
     public synchronized static void bytecodeExecuted(int opcode, int id) {
-            opcodes[opcode]++;
+        opcodes[opcode]++;
 
-            /* calls */
-            if (opcode >= 182 && opcode <= 186) { // invokevirtual, invokespecial, invokestatic, invokeinterface, invokedynamic
-                callsExecuted++;
-                if (called.containsKey(id)) {
-                    long old = called.get(id);
-                    called.put(id, ++old);
-                } else {
-                    called.put(id, 1L);
-                }
-            }
-
-            if (executed.containsKey(id)) {
-                long old = executed.get(id);
-                executed.put(id, ++old);
+        /* calls */
+        if (opcode >= 182 && opcode <= 186) { // invokevirtual, invokespecial, invokestatic, invokeinterface,
+                                              // invokedynamic
+            callsExecuted++;
+            if (called.containsKey(id)) {
+                long old = called.get(id);
+                called.put(id, ++old);
             } else {
-                executed.put(id, 1L);
+                called.put(id, 1L);
             }
-            bytecodesExecuted++;
+        }
+
+        if (executed.containsKey(id)) {
+            long old = executed.get(id);
+            executed.put(id, ++old);
+        } else {
+            executed.put(id, 1L);
+        }
+        bytecodesExecuted++;
+    }
+
+    public synchronized static void fieldDereferenced(String owner, String name) {
+        if (fieldDereferenced.containsKey(owner)) {
+            HashMap<String, Long> deref = fieldDereferenced.get(owner);
+            if (deref.containsKey(name)) {
+                long old = deref.get(name);
+                deref.put(name, ++old);
+            } else {
+                deref.put(name, 1L);
+            }
+        } else {
+            HashMap<String, Long> deref = new HashMap();
+            deref.put(name, 1L);
+            fieldDereferenced.put(owner, deref);
+        }
     }
 
     public synchronized static void classSkipped(String message) {
-            skipped.add(message);
+        skipped.add(message);
     }
 }

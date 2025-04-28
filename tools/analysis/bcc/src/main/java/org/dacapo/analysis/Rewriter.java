@@ -80,6 +80,14 @@ public class Rewriter {
         @Override
         public void visitFieldInsn(int opcode, String owner, String name, String desc) {
             instrumentInsn(opcode);
+
+            // Track the field access
+            mv.visitInsn(NOP);
+            mv.visitLdcInsn(owner);
+            mv.visitInsn(NOP);
+            mv.visitLdcInsn(name);
+            mv.visitMethodInsn(INVOKESTATIC, "org/dacapo/analysis/BytecodeCallback", "fieldDereferenced", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+
             mv.visitFieldInsn(opcode, owner, name, desc);
         }
 
