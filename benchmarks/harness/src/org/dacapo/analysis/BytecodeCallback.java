@@ -187,10 +187,9 @@ public class BytecodeCallback extends Callback {
                             Map.Entry::getValue,
                             (e1, e2) -> e1,
                             LinkedHashMap::new));
-
-            yml.print("  " + owner + ":");
+            yml.println("  " + owner + ":");
             for (String name : sorted.keySet()) {
-                yml.print("\n    " + name + ": " + sorted.get(name));
+                yml.println("    " + name + ": " + sorted.get(name));
             }
         }
 
