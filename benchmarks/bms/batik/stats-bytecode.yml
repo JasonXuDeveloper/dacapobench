@@ -1,19 +1,2229 @@
 # These statistics can be generated from a dacapo release using a command line like:
-#    java -javaagent:dacapo-evaluation-git-6b469af0/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar dacapo-evaluation-git-6b469af0.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
+#    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 1093
+skipped-classes: 1097
 transformed-classes: 924
 transformed-bytecodes: 186986
-executed-bytecodes: 2756325153
+executed-bytecodes: 2756324992
 executed-bytecodes-unique: 32956
 executed-bytecodes-p90: 32572
 executed-bytecodes-p99: 1000718
 executed-bytecodes-p999: 10424928
 executed-bytecodes-p9999: 13031160
-executed-calls: 70165329
+executed-calls: 70165297
 executed-calls-unique: 4910
+field-dereference-counts:
+  org/dacapo/harness/TestHarness:
+    commandLineArgs: 15
+    config: 10
+    BuildVersion: 4
+    BuildNickName: 1
+  java/awt/RenderingHints:
+    KEY_COLOR_RENDERING: 1611
+    KEY_RENDERING: 1611
+    VALUE_COLOR_RENDER_QUALITY: 108
+    VALUE_COLOR_RENDER_SPEED: 108
+    VALUE_RENDER_QUALITY: 108
+    VALUE_RENDER_SPEED: 108
+  org/apache/batik/ext/awt/image/renderable/AbstractRable:
+    stamp: 12
+    srcs: 7
+    props: 6
+  org/apache/commons/cli/PosixParser:
+    tokens: 6
+    eatTheRest: 4
+    options: 3
+    currentOption: 1
+  org/dacapo/harness/Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG: 2
+    DACAPO_CHECKSUM_RE_PATH: 1
+    WORKING_DIRE: 1
+  org/apache/batik/parser/AbstractParser:
+    current: 957932
+    reader: 308199
+    errorHandler: 39559
+    localizableSupport: 39559
+  org/apache/batik/ext/awt/image/codec/png/IDATOutputStream:
+    bytesWritten: 11113
+    segmentLength: 4199
+    buffer: 2346
+    out: 1230
+    typeSignature: 247
+  org/apache/batik/css/engine/value/css2/FontWeightManager:
+    values: 6
+  org/apache/batik/css/engine/sac/CSSSelectorFactory:
+    INSTANCE: 1
+  org/apache/batik/bridge/RhinoInterpreterFactory:
+    RHINO_MIMETYPES: 3
+  org/apache/batik/css/engine/value/css2/CursorManager:
+    values: 17
+  org/apache/batik/anim/dom/SVGStylableElement$OverrideStyleDeclaration:
+    declaration: 16118
+    this$0: 16118
+  org/apache/batik/ext/awt/image/rendered/AbstractRed:
+    bounds: 1322
+    minTileX: 366
+    minTileY: 366
+    sm: 208
+    tileGridXOff: 202
+    tileGridYOff: 202
+    tileHeight: 199
+    tileWidth: 199
+    numXTiles: 183
+    numYTiles: 183
+    cm: 22
+    srcs: 14
+    props: 7
+  org/apache/commons/cli/Option:
+    longOption: 222
+    option: 162
+    values: 71
+    description: 62
+    required: 62
+    argCount: 54
+    type: 31
+    valuesep: 18
+    argName: 14
+  org/apache/batik/dom/AbstractElement$Entry:
+    next: 1002053
+    hash: 638434
+    value: 431149
+    namespaceURI: 249480
+    name: 243913
+  org/apache/batik/css/dom/CSSOMStoredStyleDeclaration:
+    declaration: 31169
+    valueProvider: 16118
+  org/apache/batik/transcoder/SVGAbstractTranscoder:
+    hints: 22
+    ctx: 7
+    KEY_EXECUTE_ONLOAD: 4
+    height: 4
+    width: 4
+    KEY_HEIGHT: 3
+    KEY_MEDIA: 3
+    KEY_PIXEL_UNIT_TO_MILLIMETER: 3
+    KEY_WIDTH: 3
+    KEY_ALLOWED_SCRIPT_TYPES: 2
+    KEY_ALTERNATE_STYLESHEET: 2
+    KEY_AOI: 2
+    KEY_DEFAULT_FONT_FAMILY: 2
+    KEY_MAX_HEIGHT: 2
+    KEY_MAX_WIDTH: 2
+    KEY_USER_STYLESHEET_URI: 2
+    builder: 2
+    userAgent: 2
+    KEY_ALLOW_EXTERNAL_RESOURCES: 1
+    KEY_CONSTRAIN_SCRIPT_ORIGIN: 1
+    KEY_DOCUMENT_ELEMENT: 1
+    KEY_DOCUMENT_ELEMENT_NAMESPACE_URI: 1
+    KEY_DOM_IMPLEMENTATION: 1
+    KEY_LANGUAGE: 1
+    KEY_PIXEL_TO_MM: 1
+    KEY_SNAPSHOT_TIME: 1
+    curAOI: 1
+    curTxf: 1
+    root: 1
+  org/apache/batik/dom/AbstractCharacterData:
+    nodeValue: 1107712
+  org/apache/batik/css/engine/value/css2/VisibilityManager:
+    values: 226
+  org/apache/batik/dom/AbstractAttrNS:
+    namespaceURI: 255610
+  org/apache/batik/anim/dom/TraitInformation:
+    isAnimatable: 44
+    percentageInterpretation: 44
+    type: 44
+  org/apache/batik/css/engine/value/css2/UnicodeBidiManager:
+    values: 4
+  org/apache/batik/util/Service:
+    providerMap: 9
+  org/dacapo/harness/Batik:
+    args: 2
+    constructor: 2
+    method: 2
+    config: 1
+    data: 1
+    loader: 1
+    scratch: 1
+  org/apache/batik/anim/dom/SVGOMAnimatedRect:
+    defaultValue: 1
+  org/apache/batik/parser/UnitProcessor$UnitResolver:
+    unit: 14894
+    value: 14894
+  java/awt/Rectangle:
+    width: 1794
+    height: 1788
+    x: 476
+    y: 459
+  org/apache/batik/css/engine/value/css2/TextDecorationManager:
+    values: 5
+  org/apache/batik/parser/DefaultLengthHandler:
+    INSTANCE: 8343
+  org/apache/batik/anim/dom/SAXSVGDocumentFactory:
+    LOCK: 1
+    isStandalone: 1
+    xmlVersion: 1
+  org/apache/batik/bridge/BridgeContext$CSSEngineUserAgentWrapper:
+    ua: 1
+  org/apache/batik/util/io/StringNormalizingReader:
+    next: 18876803
+    length: 6404696
+    string: 6365137
+    line: 67457
+  org/apache/batik/css/engine/value/css2/DirectionManager:
+    values: 3
+  org/apache/batik/ext/awt/image/rendered/LRUCache$LRUNode:
+    obj: 880
+  org/dacapo/parser/Config$ThreadModel:
+    PER_CPU: 4
+    SINGLE: 4
+    FIXED: 3
+    description: 3
+    $VALUES: 2
+  org/apache/batik/ext/awt/color/NamedProfileCache:
+    theCache: 1
+  org/apache/batik/css/engine/value/svg/AlignmentBaselineManager:
+    values: 12
+  org/apache/batik/parser/DefaultPathHandler:
+    INSTANCE: 19263
+  org/dacapo/harness/Callback$Mode:
+    TIMING: 2
+    WARMUP: 2
+    $VALUES: 1
+  org/apache/batik/css/parser/DefaultConditionFactory:
+    INSTANCE: 1
+  org/apache/batik/dom/svg/ListBuilder:
+    list: 232748
+    abstractSVGList: 170530
+  org/apache/batik/anim/dom/AttributeInitializer:
+    keys: 52476
+    values: 17489
+    length: 4472
+  org/apache/batik/i18n/LocalizableSupport:
+    resourceBundles: 39697
+    localeGroup: 39664
+    bundleName: 39596
+    classLoader: 39565
+    usedLocale: 102
+    locale: 100
+    cls: 81
+    lastResourceClass: 32
+  org/apache/batik/css/engine/value/svg/BaselineShiftManager:
+    values: 4
+  org/apache/batik/css/engine/CSSEngine:
+    valueManagers: 164386
+    shorthandManagers: 228
+  org/apache/batik/css/engine/value/svg/TextRenderingManager:
+    values: 5
+  org/apache/batik/anim/dom/AbstractSVGAnimatedLength$BaseSVGLength:
+    this$0: 7181
+    valid: 5370
+    missing: 3580
+    unitType: 1790
+    value: 74
+  org/apache/batik/ext/awt/image/spi/DefaultBrokenLinkProvider:
+    BROKEN_LINK_COLOR: 1
+    brokenLinkImg: 1
+  org/apache/batik/anim/dom/SVGGraphicsElement:
+    transform: 69932
+    externalResourcesRequired: 29045
+    motionTransform: 29037
+    xmlTraitInformation: 5
+  org/apache/batik/ext/awt/RadialGradientPaint:
+    center: 324
+    focus: 324
+    radius: 216
+    NO_CYCLE: 108
+    SRGB: 108
+    colorSpace: 108
+    colors: 108
+    cycleMethod: 108
+    fractions: 108
+    gradientTransform: 108
+  org/apache/batik/apps/rasterizer/Main:
+    optionMap: 27
+    args: 10
+    mimeTypeMap: 7
+    CL_OPTION_ALLOWED_SCRIPTS: 2
+    CL_OPTION_ALTERNATE_STYLESHEET: 2
+    CL_OPTION_AOI: 2
+    CL_OPTION_BACKGROUND_COLOR: 2
+    CL_OPTION_BLOCK_EXTERNAL_RESOURCES: 2
+    CL_OPTION_CONSTRAIN_SCRIPT_ORIGIN: 2
+    CL_OPTION_DEFAULT_FONT_FAMILY: 2
+    CL_OPTION_DPI: 2
+    CL_OPTION_HEIGHT: 2
+    CL_OPTION_INDEXED: 2
+    CL_OPTION_LANGUAGE: 2
+    CL_OPTION_MAX_HEIGHT: 2
+    CL_OPTION_MAX_WIDTH: 2
+    CL_OPTION_MEDIA_TYPE: 2
+    CL_OPTION_MIME_TYPE: 2
+    CL_OPTION_ONLOAD: 2
+    CL_OPTION_OUTPUT: 2
+    CL_OPTION_QUALITY: 2
+    CL_OPTION_SECURITY_OFF: 2
+    CL_OPTION_SNAPSHOT_TIME: 2
+    CL_OPTION_USER_STYLESHEET: 2
+    CL_OPTION_VALIDATE: 2
+    CL_OPTION_WIDTH: 2
+    CL_OPTION_ALLOWED_SCRIPTS_DESCRIPTION: 1
+    CL_OPTION_ALTERNATE_STYLESHEET_DESCRIPTION: 1
+    CL_OPTION_AOI_DESCRIPTION: 1
+    CL_OPTION_BACKGROUND_COLOR_DESCRIPTION: 1
+    CL_OPTION_BLOCK_EXTERNAL_RESOURCES_DESCRIPTION: 1
+    CL_OPTION_CONSTRAIN_SCRIPT_ORIGIN_DESCRIPTION: 1
+    CL_OPTION_DEFAULT_FONT_FAMILY_DESCRIPTION: 1
+    CL_OPTION_DPI_DESCRIPTION: 1
+    CL_OPTION_HEIGHT_DESCRIPTION: 1
+    CL_OPTION_INDEXED_DESCRIPTION: 1
+    CL_OPTION_LANGUAGE_DESCRIPTION: 1
+    CL_OPTION_MAX_HEIGHT_DESCRIPTION: 1
+    CL_OPTION_MAX_WIDTH_DESCRIPTION: 1
+    CL_OPTION_MEDIA_TYPE_DESCRIPTION: 1
+    CL_OPTION_MIME_TYPE_DESCRIPTION: 1
+    CL_OPTION_ONLOAD_DESCRIPTION: 1
+    CL_OPTION_OUTPUT_DESCRIPTION: 1
+    CL_OPTION_QUALITY_DESCRIPTION: 1
+    CL_OPTION_SECURITY_OFF_DESCRIPTION: 1
+    CL_OPTION_SNAPSHOT_TIME_DESCRIPTION: 1
+    CL_OPTION_USER_STYLESHEET_DESCRIPTION: 1
+    CL_OPTION_VALIDATE_DESCRIPTION: 1
+    CL_OPTION_WIDTH_DESCRIPTION: 1
+    USAGE: 1
+  org/apache/batik/dom/AbstractDOMImplementation:
+    features: 16
+    localizableSupport: 1
+  org/dacapo/parser/SimpleCharStream:
+    bufpos: 20594
+    column: 10870
+    inBuf: 4481
+    bufcolumn: 4080
+    bufline: 4080
+    buffer: 3770
+    line: 3743
+    prevCharIsLF: 3742
+    maxNextCharInd: 3605
+    prevCharIsCR: 3523
+    tokenBegin: 2885
+    bufsize: 81
+    available: 5
+    tabSize: 5
+    inputStream: 4
+    trackLineColumn: 1
+  org/apache/batik/anim/dom/SVGOMAnimatedEnumeration:
+    defaultValue: 7054
+    values: 7054
+    changing: 1901
+    hasAnimVal: 1901
+    valid: 1901
+  org/apache/batik/css/engine/value/FloatValue:
+    floatValue: 431260
+    unitType: 410319
+    UNITS: 1
+  org/apache/batik/gvt/RootGraphicsNode:
+    treeGraphicsNodeChangeListeners: 149950
+  org/apache/batik/css/engine/value/svg/MarkerManager:
+    property: 9
+  org/apache/batik/css/engine/CSSEngine$StyleDeclarationDocumentHandler:
+    this$0: 658453
+    styleMap: 164385
+  org/apache/batik/dom/util/HashTableStack:
+    current: 75444
+  org/apache/batik/util/ParsedURL:
+    data: 138720
+    handlersMap: 68462
+    userAgent: 35855
+    defaultHandler: 34228
+    globalUserAgent: 32607
+  org/dacapo/harness/LatencyReporter:
+    callback: 2
+    globalIdx: 1
+    timerBase: 1
+  org/apache/batik/css/engine/value/StringMap$Entry:
+    hash: 57947
+    value: 41348
+    key: 41330
+    next: 17723
+  org/apache/batik/dom/svg/AbstractSVGTransformList$SVGTransformItem:
+    parent: 23694
+    affineTransform: 11847
+  org/apache/batik/css/engine/CSSEngine$StyleSheetDocumentHandler:
+    styleRule: 5
+    styleDeclaration: 4
+    this$0: 4
+    styleSheet: 1
+  org/apache/batik/bridge/CSSUtilities:
+    TRANSPARENT: 1
+  org/apache/batik/gvt/filter/GraphicsNodeRable8Bit:
+    usePrimitivePaint: 21
+    node: 20
+    cachedBounds: 13
+    cachedRed: 13
+    cachedGn2dev: 9
+    cachedUsr2dev: 9
+  org/apache/batik/bridge/SVGColorProfileElementBridge:
+    cache: 1
+  org/apache/batik/anim/dom/SVGOMAnimatedPathData:
+    pathSegs: 409246
+    animPathSegs: 57786
+    hasAnimVal: 38526
+    changing: 19264
+    defaultValue: 19264
+    normalizedPathSegs: 19264
+  org/apache/batik/bridge/SVGSVGElementBridge$1:
+    h: 2
+    val$dh: 2
+    val$dw: 2
+    w: 2
+    this$0: 1
+  org/apache/batik/css/engine/value/css2/OverflowManager:
+    values: 228
+  org/apache/batik/ext/awt/image/SVGComposite:
+    rule: 12
+    OVER: 4
+    ATOP: 1
+    DARKEN: 1
+    IN: 1
+    LIGHTEN: 1
+    MULTIPLY: 1
+    OUT: 1
+    SCREEN: 1
+    XOR: 1
+  org/apache/batik/anim/dom/SVGOMAnimatedBoolean:
+    defaultValue: 32572
+  org/apache/batik/ext/awt/image/codec/png/PNGEncodeParam:
+    SRGBIntentSet: 8
+    physicalDimensionSet: 4
+    physicalDimension: 3
+    transparencySet: 3
+    ICCProfileDataSet: 2
+    SRGBIntent: 2
+    chromaticitySet: 2
+    chunkType: 2
+    gammaSet: 2
+    modificationTimeSet: 2
+    paletteHistogramSet: 2
+    significantBitsSet: 2
+    suggestedPaletteSet: 2
+    textSet: 2
+    useInterlacing: 2
+    zTextSet: 2
+    ICCProfileData: 1
+    bitDepthSet: 1
+    chromaticity: 1
+    chunkData: 1
+    paletteHistogram: 1
+    significantBits: 1
+    suggestedPalette: 1
+    text: 1
+    zText: 1
+  org/apache/batik/extension/svg/BatikFlowTextElementBridge:
+    ANCHOR_TYPE: 1
+    FLOW_EMPTY_PARAGRAPH: 1
+    FLOW_LINE_BREAK: 1
+    FLOW_PARAGRAPH: 1
+    FLOW_REGIONS: 1
+    KERNING: 1
+    LETTER_SPACING: 1
+    PREFORMATTED: 1
+    TEXTPATH: 1
+    WORD_SPACING: 1
+  org/apache/batik/dom/svg/AbstractSVGTransform:
+    type: 23694
+    affineTransform: 11847
+  org/apache/batik/ext/awt/image/rendered/TileBlock:
+    benefit: 353
+    h: 10
+    w: 9
+    xOff: 6
+    yOff: 6
+    occW: 5
+    occX: 2
+    occY: 2
+    occupied: 2
+    occH: 1
+  org/apache/batik/dom/GenericText:
+    ownerDocument: 199684
+    readonly: 199684
+  org/apache/batik/anim/dom/AbstractSVGAnimatedLength:
+    baseVal: 22019
+    direction: 19503
+    nonNegative: 19503
+    hasAnimVal: 12995
+    changing: 11205
+    element: 1790
+    localName: 1790
+    namespaceURI: 1790
+  org/apache/batik/ext/awt/image/rendered/PadRed$ZeroRecter:
+    bands: 1
+    wr: 1
+    zeros: 1
+  org/apache/batik/css/engine/value/css2/FontSizeManager:
+    values: 11
+  org/apache/batik/css/engine/sac/AbstractElementSelector:
+    localName: 187027
+    namespaceURI: 6
+  org/apache/batik/util/AbstractParsedURLProtocolHandler:
+    protocol: 7
+  org/apache/commons/cli/CommandLine:
+    options: 64
+    args: 5
+  org/apache/batik/apps/rasterizer/SVGConverter:
+    dst: 7
+    sources: 7
+    controller: 4
+    destinationType: 3
+    securityOff: 3
+    DEFAULT_RESULT_TYPE: 2
+    allowExternalResources: 2
+    allowedScriptTypes: 2
+    alternateStylesheet: 2
+    area: 2
+    backgroundColor: 2
+    constrainScriptOrigin: 2
+    defaultFontFamily: 2
+    executeOnload: 2
+    height: 2
+    indexed: 2
+    language: 2
+    maxHeight: 2
+    maxWidth: 2
+    mediaType: 2
+    pixelUnitToMillimeter: 2
+    quality: 2
+    snapshotTime: 2
+    userStylesheet: 2
+    validate: 2
+    width: 2
+    files: 1
+  org/apache/batik/css/engine/value/StringMap:
+    table: 86060
+    count: 970
+  org/apache/commons/cli/Options:
+    shortOpts: 71
+    longOpts: 70
+    optionGroups: 4
+    requiredOpts: 3
+  org/apache/batik/gvt/ShapeNode:
+    primitiveBounds: 290319
+    shape: 193355
+    shapePainter: 154243
+    isVisible: 116235
+    sensitiveArea: 96400
+    sensitiveBounds: 96400
+    geometryBounds: 77120
+    paintedArea: 77120
+  org/apache/batik/css/engine/value/svg/TextAnchorManager:
+    values: 4
+  org/apache/batik/apps/rasterizer/Messages:
+    localizableSupport: 51
+  org/apache/batik/css/engine/value/svg/SVGValueConstants:
+    NONE_VALUE: 72940
+    CURRENTCOLOR_VALUE: 37959
+    NUMBER_1: 29042
+    ACCUMULATE_VALUE: 9984
+    NUMBER_255: 47
+    NUMBER_0: 24
+    NUMBER_250: 14
+    NUMBER_139: 11
+    NUMBER_240: 11
+    NUMBER_105: 10
+    NUMBER_205: 10
+    NUMBER_245: 10
+    AUTO_VALUE: 9
+    NUMBER_211: 9
+    NUMBER_238: 9
+    NUMBER_230: 8
+    NUMBER_112: 7
+    NUMBER_128: 7
+    NUMBER_169: 7
+    NUMBER_144: 6
+    BLACK_RGB_VALUE: 5
+    NUMBER_127: 5
+    NUMBER_143: 5
+    NUMBER_160: 5
+    NUMBER_220: 5
+    NUMBER_222: 5
+    NUMBER_224: 5
+    NUMBER_248: 5
+    NUMBER_34: 5
+    NUMBER_47: 5
+    NUMBER_50: 5
+    NUMBER_79: 5
+    OPTIMIZESPEED_VALUE: 5
+    MIDDLE_VALUE: 4
+    NONZERO_VALUE: 4
+    NUMBER_107: 4
+    NUMBER_130: 4
+    NUMBER_135: 4
+    NUMBER_140: 4
+    NUMBER_147: 4
+    NUMBER_153: 4
+    NUMBER_165: 4
+    NUMBER_170: 4
+    NUMBER_173: 4
+    NUMBER_180: 4
+    NUMBER_206: 4
+    NUMBER_210: 4
+    NUMBER_216: 4
+    NUMBER_218: 4
+    NUMBER_228: 4
+    NUMBER_235: 4
+    NUMBER_69: 4
+    ALPHABETIC_VALUE: 3
+    BASELINE_VALUE: 3
+    BUTT_VALUE: 3
+    EVENODD_VALUE: 3
+    GEOMETRICPRECISION_VALUE: 3
+    HANGING_VALUE: 3
+    IDEOGRAPHIC_VALUE: 3
+    MATHEMATICAL_VALUE: 3
+    MITER_VALUE: 3
+    NUMBER_119: 3
+    NUMBER_122: 3
+    NUMBER_133: 3
+    NUMBER_136: 3
+    NUMBER_152: 3
+    NUMBER_154: 3
+    NUMBER_176: 3
+    NUMBER_178: 3
+    NUMBER_179: 3
+    NUMBER_184: 3
+    NUMBER_188: 3
+    NUMBER_196: 3
+    NUMBER_20: 3
+    NUMBER_204: 3
+    NUMBER_209: 3
+    NUMBER_215: 3
+    NUMBER_219: 3
+    NUMBER_221: 3
+    NUMBER_225: 3
+    NUMBER_25: 3
+    NUMBER_30: 3
+    NUMBER_32: 3
+    NUMBER_42: 3
+    NUMBER_60: 3
+    NUMBER_72: 3
+    NUMBER_85: 3
+    NUMBER_92: 3
+    OPTIMIZEQUALITY_VALUE: 3
+    ROUND_VALUE: 3
+    SRGB_VALUE: 3
+    TEXT_AFTER_EDGE_VALUE: 3
+    TEXT_BEFORE_EDGE_VALUE: 3
+    VISIBLEPAINTED_VALUE: 3
+    AFTER_EDGE_VALUE: 2
+    ALICEBLUE_RGB_VALUE: 2
+    ALICEBLUE_VALUE: 2
+    ANTIQUEWHITE_RGB_VALUE: 2
+    ANTIQUEWHITE_VALUE: 2
+    AQUAMARINE_RGB_VALUE: 2
+    AQUAMARINE_VALUE: 2
+    AZURE_RGB_VALUE: 2
+    AZURE_VALUE: 2
+    BEFORE_EDGE_VALUE: 2
+    BEIGE_RGB_VALUE: 2
+    BEIGE_VALUE: 2
+    BEVEL_VALUE: 2
+    BISQUE_RGB_VALUE: 2
+    BISQUE_VALUE: 2
+    BLANCHEDALMOND_RGB_VALUE: 2
+    BLANCHEDALMOND_VALUE: 2
+    BLUEVIOLET_RGB_VALUE: 2
+    BLUEVIOLET_VALUE: 2
+    BROWN_RGB_VALUE: 2
+    BROWN_VALUE: 2
+    BURLYWOOD_RGB_VALUE: 2
+    BURLYWOOD_VALUE: 2
+    CADETBLUE_RGB_VALUE: 2
+    CADETBLUE_VALUE: 2
+    CENTRAL_VALUE: 2
+    CHARTREUSE_RGB_VALUE: 2
+    CHARTREUSE_VALUE: 2
+    CHOCOLATE_RGB_VALUE: 2
+    CHOCOLATE_VALUE: 2
+    CORAL_RGB_VALUE: 2
+    CORAL_VALUE: 2
+    CORNFLOWERBLUE_RGB_VALUE: 2
+    CORNFLOWERBLUE_VALUE: 2
+    CORNSILK_RGB_VALUE: 2
+    CORNSILK_VALUE: 2
+    CRIMSON_RGB_VALUE: 2
+    CRIMSON_VALUE: 2
+    CYAN_RGB_VALUE: 2
+    CYAN_VALUE: 2
+    DARKBLUE_RGB_VALUE: 2
+    DARKBLUE_VALUE: 2
+    DARKCYAN_RGB_VALUE: 2
+    DARKCYAN_VALUE: 2
+    DARKGOLDENROD_RGB_VALUE: 2
+    DARKGOLDENROD_VALUE: 2
+    DARKGRAY_RGB_VALUE: 2
+    DARKGRAY_VALUE: 2
+    DARKGREEN_RGB_VALUE: 2
+    DARKGREEN_VALUE: 2
+    DARKGREY_RGB_VALUE: 2
+    DARKGREY_VALUE: 2
+    DARKKHAKI_RGB_VALUE: 2
+    DARKKHAKI_VALUE: 2
+    DARKMAGENTA_RGB_VALUE: 2
+    DARKMAGENTA_VALUE: 2
+    DARKOLIVEGREEN_RGB_VALUE: 2
+    DARKOLIVEGREEN_VALUE: 2
+    DARKORANGE_RGB_VALUE: 2
+    DARKORANGE_VALUE: 2
+    DARKORCHID_RGB_VALUE: 2
+    DARKORCHID_VALUE: 2
+    DARKRED_RGB_VALUE: 2
+    DARKRED_VALUE: 2
+    DARKSALMON_RGB_VALUE: 2
+    DARKSALMON_VALUE: 2
+    DARKSEAGREEN_RGB_VALUE: 2
+    DARKSEAGREEN_VALUE: 2
+    DARKSLATEBLUE_RGB_VALUE: 2
+    DARKSLATEBLUE_VALUE: 2
+    DARKSLATEGRAY_RGB_VALUE: 2
+    DARKSLATEGRAY_VALUE: 2
+    DARKSLATEGREY_RGB_VALUE: 2
+    DARKSLATEGREY_VALUE: 2
+    DARKTURQUOISE_RGB_VALUE: 2
+    DARKTURQUOISE_VALUE: 2
+    DARKVIOLET_RGB_VALUE: 2
+    DARKVIOLET_VALUE: 2
+    DEEPPINK_RGB_VALUE: 2
+    DEEPPINK_VALUE: 2
+    DEEPSKYBLUE_RGB_VALUE: 2
+    DEEPSKYBLUE_VALUE: 2
+    DIMGRAY_RGB_VALUE: 2
+    DIMGRAY_VALUE: 2
+    DIMGREY_RGB_VALUE: 2
+    DIMGREY_VALUE: 2
+    DODGERBLUE_RGB_VALUE: 2
+    DODGERBLUE_VALUE: 2
+    END_VALUE: 2
+    FILLSTROKE_VALUE: 2
+    FILL_VALUE: 2
+    FIREBRICK_RGB_VALUE: 2
+    FIREBRICK_VALUE: 2
+    FLORALWHITE_RGB_VALUE: 2
+    FLORALWHITE_VALUE: 2
+    FORESTGREEN_RGB_VALUE: 2
+    FORESTGREEN_VALUE: 2
+    GAINSBORO_RGB_VALUE: 2
+    GAINSBORO_VALUE: 2
+    GHOSTWHITE_RGB_VALUE: 2
+    GHOSTWHITE_VALUE: 2
+    GOLDENROD_RGB_VALUE: 2
+    GOLDENROD_VALUE: 2
+    GOLD_RGB_VALUE: 2
+    GOLD_VALUE: 2
+    GREENYELLOW_RGB_VALUE: 2
+    GREENYELLOW_VALUE: 2
+    GREY_RGB_VALUE: 2
+    GREY_VALUE: 2
+    HONEYDEW_RGB_VALUE: 2
+    HONEYDEW_VALUE: 2
+    HOTPINK_RGB_VALUE: 2
+    HOTPINK_VALUE: 2
+    INDIANRED_RGB_VALUE: 2
+    INDIANRED_VALUE: 2
+    INDIGO_RGB_VALUE: 2
+    INDIGO_VALUE: 2
+    IVORY_RGB_VALUE: 2
+    IVORY_VALUE: 2
+    KHAKI_RGB_VALUE: 2
+    KHAKI_VALUE: 2
+    LAVENDERBLUSH_RGB_VALUE: 2
+    LAVENDERBLUSH_VALUE: 2
+    LAVENDER_RGB_VALUE: 2
+    LAVENDER_VALUE: 2
+    LAWNGREEN_RGB_VALUE: 2
+    LAWNGREEN_VALUE: 2
+    LEMONCHIFFON_RGB_VALUE: 2
+    LEMONCHIFFON_VALUE: 2
+    LIGHTBLUE_RGB_VALUE: 2
+    LIGHTBLUE_VALUE: 2
+    LIGHTCORAL_RGB_VALUE: 2
+    LIGHTCORAL_VALUE: 2
+    LIGHTCYAN_RGB_VALUE: 2
+    LIGHTCYAN_VALUE: 2
+    LIGHTGOLDENRODYELLOW_RGB_VALUE: 2
+    LIGHTGOLDENRODYELLOW_VALUE: 2
+    LIGHTGRAY_RGB_VALUE: 2
+    LIGHTGRAY_VALUE: 2
+    LIGHTGREEN_RGB_VALUE: 2
+    LIGHTGREEN_VALUE: 2
+    LIGHTGREY_RGB_VALUE: 2
+    LIGHTGREY_VALUE: 2
+    LIGHTPINK_RGB_VALUE: 2
+    LIGHTPINK_VALUE: 2
+    LIGHTSALMON_RGB_VALUE: 2
+    LIGHTSALMON_VALUE: 2
+    LIGHTSEAGREEN_RGB_VALUE: 2
+    LIGHTSEAGREEN_VALUE: 2
+    LIGHTSKYBLUE_RGB_VALUE: 2
+    LIGHTSKYBLUE_VALUE: 2
+    LIGHTSLATEGRAY_RGB_VALUE: 2
+    LIGHTSLATEGRAY_VALUE: 2
+    LIGHTSLATEGREY_RGB_VALUE: 2
+    LIGHTSLATEGREY_VALUE: 2
+    LIGHTSTEELBLUE_RGB_VALUE: 2
+    LIGHTSTEELBLUE_VALUE: 2
+    LIGHTYELLOW_RGB_VALUE: 2
+    LIGHTYELLOW_VALUE: 2
+    LIMEGREEN_RGB_VALUE: 2
+    LIMEGREEN_VALUE: 2
+    LINEARRGB_VALUE: 2
+    LINEN_RGB_VALUE: 2
+    LINEN_VALUE: 2
+    LR_TB_VALUE: 2
+    LR_VALUE: 2
+    MAGENTA_RGB_VALUE: 2
+    MAGENTA_VALUE: 2
+    MEDIUMAQUAMARINE_RGB_VALUE: 2
+    MEDIUMAQUAMARINE_VALUE: 2
+    MEDIUMBLUE_RGB_VALUE: 2
+    MEDIUMBLUE_VALUE: 2
+    MEDIUMORCHID_RGB_VALUE: 2
+    MEDIUMORCHID_VALUE: 2
+    MEDIUMPURPLE_RGB_VALUE: 2
+    MEDIUMPURPLE_VALUE: 2
+    MEDIUMSEAGREEN_RGB_VALUE: 2
+    MEDIUMSEAGREEN_VALUE: 2
+    MEDIUMSLATEBLUE_RGB_VALUE: 2
+    MEDIUMSLATEBLUE_VALUE: 2
+    MEDIUMSPRINGGREEN_RGB_VALUE: 2
+    MEDIUMSPRINGGREEN_VALUE: 2
+    MEDIUMTURQUOISE_RGB_VALUE: 2
+    MEDIUMTURQUOISE_VALUE: 2
+    MEDIUMVIOLETRED_RGB_VALUE: 2
+    MEDIUMVIOLETRED_VALUE: 2
+    MIDNIGHTBLUE_RGB_VALUE: 2
+    MIDNIGHTBLUE_VALUE: 2
+    MINTCREAM_RGB_VALUE: 2
+    MINTCREAM_VALUE: 2
+    MISTYROSE_RGB_VALUE: 2
+    MISTYROSE_VALUE: 2
+    MOCCASIN_RGB_VALUE: 2
+    MOCCASIN_VALUE: 2
+    NAVAJOWHITE_RGB_VALUE: 2
+    NAVAJOWHITE_VALUE: 2
+    NO_CHANGE_VALUE: 2
+    NUMBER_100: 2
+    NUMBER_102: 2
+    NUMBER_104: 2
+    NUMBER_106: 2
+    NUMBER_11: 2
+    NUMBER_113: 2
+    NUMBER_114: 2
+    NUMBER_123: 2
+    NUMBER_124: 2
+    NUMBER_134: 2
+    NUMBER_138: 2
+    NUMBER_142: 2
+    NUMBER_148: 2
+    NUMBER_149: 2
+    NUMBER_150: 2
+    NUMBER_158: 2
+    NUMBER_164: 2
+    NUMBER_175: 2
+    NUMBER_181: 2
+    NUMBER_182: 2
+    NUMBER_183: 2
+    NUMBER_185: 2
+    NUMBER_186: 2
+    NUMBER_189: 2
+    NUMBER_19: 2
+    NUMBER_191: 2
+    NUMBER_193: 2
+    NUMBER_199: 2
+    NUMBER_200: 2
+    NUMBER_203: 2
+    NUMBER_208: 2
+    NUMBER_21: 2
+    NUMBER_212: 2
+    NUMBER_213: 2
+    NUMBER_214: 2
+    NUMBER_226: 2
+    NUMBER_232: 2
+    NUMBER_233: 2
+    NUMBER_237: 2
+    NUMBER_239: 2
+    NUMBER_244: 2
+    NUMBER_251: 2
+    NUMBER_252: 2
+    NUMBER_253: 2
+    NUMBER_35: 2
+    NUMBER_4: 2
+    NUMBER_43: 2
+    NUMBER_45: 2
+    NUMBER_46: 2
+    NUMBER_61: 2
+    NUMBER_63: 2
+    NUMBER_64: 2
+    NUMBER_65: 2
+    NUMBER_70: 2
+    NUMBER_71: 2
+    NUMBER_75: 2
+    NUMBER_80: 2
+    NUMBER_82: 2
+    NUMBER_87: 2
+    NUMBER_90: 2
+    NUMBER_91: 2
+    NUMBER_95: 2
+    NUMBER_96: 2
+    NUMBER_99: 2
+    OLDLACE_RGB_VALUE: 2
+    OLDLACE_VALUE: 2
+    OLIVEDRAB_RGB_VALUE: 2
+    OLIVEDRAB_VALUE: 2
+    OPTIMIZELEGIBILITY_VALUE: 2
+    ORANGERED_RGB_VALUE: 2
+    ORANGERED_VALUE: 2
+    ORANGE_RGB_VALUE: 2
+    ORANGE_VALUE: 2
+    ORCHID_RGB_VALUE: 2
+    ORCHID_VALUE: 2
+    PALEGOLDENROD_RGB_VALUE: 2
+    PALEGOLDENROD_VALUE: 2
+    PALEGREEN_RGB_VALUE: 2
+    PALEGREEN_VALUE: 2
+    PALETURQUOISE_RGB_VALUE: 2
+    PALETURQUOISE_VALUE: 2
+    PALEVIOLETRED_RGB_VALUE: 2
+    PALEVIOLETRED_VALUE: 2
+    PAPAYAWHIP_RGB_VALUE: 2
+    PAPAYAWHIP_VALUE: 2
+    PEACHPUFF_RGB_VALUE: 2
+    PEACHPUFF_VALUE: 2
+    PERU_RGB_VALUE: 2
+    PERU_VALUE: 2
+    PINK_RGB_VALUE: 2
+    PINK_VALUE: 2
+    PLUM_RGB_VALUE: 2
+    PLUM_VALUE: 2
+    POWDERBLUE_RGB_VALUE: 2
+    POWDERBLUE_VALUE: 2
+    PURPLE_RGB_VALUE: 2
+    PURPLE_VALUE: 2
+    RESET_SIZE_VALUE: 2
+    RL_TB_VALUE: 2
+    RL_VALUE: 2
+    ROSYBROWN_RGB_VALUE: 2
+    ROSYBROWN_VALUE: 2
+    ROYALBLUE_RGB_VALUE: 2
+    ROYALBLUE_VALUE: 2
+    SADDLEBROWN_RGB_VALUE: 2
+    SADDLEBROWN_VALUE: 2
+    SALMON_RGB_VALUE: 2
+    SALMON_VALUE: 2
+    SANDYBROWN_RGB_VALUE: 2
+    SANDYBROWN_VALUE: 2
+    SEAGREEN_RGB_VALUE: 2
+    SEAGREEN_VALUE: 2
+    SEASHELL_RGB_VALUE: 2
+    SEASHELL_VALUE: 2
+    SIENNA_RGB_VALUE: 2
+    SIENNA_VALUE: 2
+    SKYBLUE_RGB_VALUE: 2
+    SKYBLUE_VALUE: 2
+    SLATEBLUE_RGB_VALUE: 2
+    SLATEBLUE_VALUE: 2
+    SLATEGRAY_RGB_VALUE: 2
+    SLATEGRAY_VALUE: 2
+    SLATEGREY_RGB_VALUE: 2
+    SLATEGREY_VALUE: 2
+    SNOW_RGB_VALUE: 2
+    SNOW_VALUE: 2
+    SPRINGGREEN_RGB_VALUE: 2
+    SPRINGGREEN_VALUE: 2
+    SQUARE_VALUE: 2
+    START_VALUE: 2
+    STEELBLUE_RGB_VALUE: 2
+    STEELBLUE_VALUE: 2
+    SUB_VALUE: 2
+    SUPER_VALUE: 2
+    TAN_RGB_VALUE: 2
+    TAN_VALUE: 2
+    TB_RL_VALUE: 2
+    TB_VALUE: 2
+    TEXT_BOTTOM_VALUE: 2
+    TEXT_TOP_VALUE: 2
+    THISTLE_RGB_VALUE: 2
+    THISTLE_VALUE: 2
+    TOMATO_RGB_VALUE: 2
+    TOMATO_VALUE: 2
+    TURQUOISE_RGB_VALUE: 2
+    TURQUOISE_VALUE: 2
+    USE_SCRIPT_VALUE: 2
+    VIOLET_RGB_VALUE: 2
+    VIOLET_VALUE: 2
+    VISIBLEFILLSTROKE_VALUE: 2
+    VISIBLEFILL_VALUE: 2
+    VISIBLESTROKE_VALUE: 2
+    WHEAT_RGB_VALUE: 2
+    WHEAT_VALUE: 2
+    WHITESMOKE_RGB_VALUE: 2
+    WHITESMOKE_VALUE: 2
+    YELLOWGREEN_RGB_VALUE: 2
+    YELLOWGREEN_VALUE: 2
+    ALL_VALUE: 1
+    AQUA_RGB_VALUE: 1
+    BLUE_RGB_VALUE: 1
+    CRISPEDGES_VALUE: 1
+    FUCHSIA_RGB_VALUE: 1
+    GRAY_RGB_VALUE: 1
+    GREEN_RGB_VALUE: 1
+    LIME_RGB_VALUE: 1
+    MAROON_RGB_VALUE: 1
+    NAVY_RGB_VALUE: 1
+    NEW_VALUE: 1
+    NUMBER_192: 1
+    OLIVE_RGB_VALUE: 1
+    PAINTED_VALUE: 1
+    RED_RGB_VALUE: 1
+    SILVER_RGB_VALUE: 1
+    STROKE_VALUE: 1
+    TEAL_RGB_VALUE: 1
+    VISIBLE_VALUE: 1
+    WHITE_RGB_VALUE: 1
+    YELLOW_RGB_VALUE: 1
+    ZERO_DEGREE: 1
+  org/apache/batik/anim/dom/SVGOMAnimatedLength:
+    defaultValue: 17403
+  org/apache/batik/ext/awt/image/codec/png/ChunkStream:
+    dos: 58
+    baos: 49
+    type: 35
+  org/apache/batik/css/parser/CSSLexicalUnit$StringLexicalUnit:
+    value: 97558
+  org/apache/batik/gvt/GraphicsNode:
+    IDENTITY: 1
+  org/apache/batik/anim/dom/AbstractElement$ExtendedNamedNodeHashMap:
+    this$0: 53314
+  org/dacapo/parser/ConfigFileTokenManager:
+    jjnewStateCnt: 15699
+    jjround: 15240
+    curChar: 14202
+    jjstateSet: 11447
+    jjrounds: 10831
+    jjnextStates: 5269
+    input_stream: 5058
+    jjmatchedKind: 4016
+    jjmatchedPos: 1739
+    jjimageLen: 567
+    image: 483
+    curLexState: 407
+    jjnewLexState: 407
+    jjtoToken: 405
+    jjimage: 243
+    jjstrLiteralImages: 243
+    jjtoSkip: 165
+    lengthOfMatch: 163
+    jjtoSpecial: 2
+    debugStream: 1
+    defaultLexState: 1
+    jjbitVec0: 1
+    jjbitVec2: 1
+    jjtoMore: 1
+    lexStateNames: 1
+  org/dacapo/parser/Config$OutputFile:
+    existence: 73
+    digest: 49
+    filter: 46
+    text: 46
+    bytes: 41
+    lines: 41
+    keep: 38
+    name: 38
+    this$0: 38
+  org/apache/batik/gvt/event/GraphicsNodeChangeEvent:
+    changeSource: 145805
+  org/apache/batik/css/engine/StringIntMap$Entry:
+    hash: 281957
+    key: 164676
+    value: 164676
+    next: 117378
+  org/apache/batik/css/engine/value/svg/PointerEventsManager:
+    values: 12
+  org/apache/batik/anim/dom/SVGOMPathElement:
+    d: 38526
+    xmlTraitInformation: 1
+  org/apache/batik/css/parser/CSSSACMediaList:
+    list: 4
+    length: 3
+  org/apache/batik/anim/dom/SVGOMDocument:
+    isSVG12: 154173
+    mainAnimatedAttributeListener: 148974
+    animatedAttributeListeners: 50320
+    implementation: 35850
+    documentURI: 7177
+    cssNavigableDocumentListeners: 2
+    readonly: 2
+    url: 2
+    localizableSupport: 1
+    referrer: 1
+    svgContext: 1
+  org/apache/batik/bridge/SVGPolylineElementBridge:
+    DEFAULT_SHAPE: 1
+  org/apache/batik/css/engine/value/svg/OpacityManager:
+    inherited: 33509
+    property: 15
+  org/w3c/css/sac/InputSource:
+    uri: 3
+    byteStream: 1
+    characterStream: 1
+    encoding: 1
+  org/apache/batik/css/dom/CSSOMSVGStyleDeclaration:
+    cssEngine: 16118
+  org/apache/batik/transcoder/XMLAbstractTranscoder:
+    hints: 6
+    KEY_XML_PARSER_VALIDATING: 4
+    KEY_XML_PARSER_CLASSNAME: 3
+    KEY_DOCUMENT_ELEMENT: 2
+    KEY_DOCUMENT_ELEMENT_NAMESPACE_URI: 2
+    KEY_DOM_IMPLEMENTATION: 2
+  org/apache/batik/ext/awt/image/PadMode:
+    mode: 3
+    ZERO_PAD: 2
+    REPLICATE: 1
+    WRAP: 1
+  org/apache/batik/ext/awt/RadialGradientPaintContext:
+    sqrtLutFixed: 34044
+    invSqStepFloat: 17022
+    gradient: 16914
+    gradientOverflow: 8221
+    a01: 1731
+    a11: 1731
+    fillMethod: 660
+    fastGradientArraySize: 576
+    radius: 552
+    centerX: 540
+    centerY: 432
+    focusX: 432
+    focusY: 324
+    isNonCyclic: 324
+    isSimpleFocus: 324
+    a00: 240
+    a10: 240
+    constA: 228
+    constB: 228
+    radiusSq: 216
+    a02: 108
+    a12: 108
+    isSimpleLookup: 108
+    trivial: 108
+  org/apache/batik/dom/util/HashTableStack$Link:
+    pushCount: 83211
+    defaultStr: 20796
+    table: 13044
+    next: 13
+  org/apache/batik/dom/AbstractStylableDocument:
+    cssEngine: 568955
+  org/apache/batik/dom/svg/AbstractSVGTransformList$TransformListBuilder:
+    listHandler: 47388
+  org/apache/batik/css/engine/value/svg/ShapeRenderingManager:
+    values: 5
+  org/apache/batik/css/parser/DefaultErrorHandler:
+    INSTANCE: 1
+  java/awt/geom/Arc2D$Double:
+    extent: 6996
+    height: 6996
+    start: 6996
+    width: 6996
+    x: 6996
+    y: 6996
+  org/apache/batik/css/engine/value/svg/ColorRenderingManager:
+    values: 4
+  org/apache/batik/anim/dom/SVGOMRectElement$2:
+    this$0: 36
+  org/apache/batik/anim/dom/SVGOMRectElement$1:
+    this$0: 51
+  org/apache/batik/anim/dom/SVGOMElement:
+    prefix: 493545
+    liveAttributeValues: 148818
+    ownerDocument: 148818
+    readonly: 116324
+    svgContext: 109822
+    targetListeners: 50318
+    xmlTraitInformation: 1
+  java/awt/geom/Point2D$Float:
+    x: 4509
+    y: 4509
+  org/apache/batik/ext/awt/image/codec/png/PNGEncodeParam$RGB:
+    backgroundSet: 4
+    backgroundRGB: 2
+  org/apache/batik/css/parser/CSSLexicalUnit$FloatLexicalUnit:
+    value: 35428
+  org/apache/batik/dom/svg/AbstractSVGPathSegList$PathSegListBuilder:
+    listHandler: 185360
+  org/apache/batik/anim/dom/SVGOMUseElement:
+    shadowTree: 6204
+    x: 1680
+    y: 1680
+    attributeInitializer: 845
+    height: 840
+    width: 840
+    xmlTraitInformation: 1
+  org/apache/batik/css/parser/DefaultDocumentHandler:
+    INSTANCE: 1
+  org/dacapo/parser/Token:
+    next: 860
+    kind: 672
+    image: 423
+    beginColumn: 242
+    beginLine: 242
+    endColumn: 242
+    endLine: 242
+    specialToken: 241
+  org/apache/batik/bridge/SVGDocumentBridge:
+    ctx: 1
+    document: 1
+    node: 1
+  org/dacapo/harness/TeePrintStream:
+    out: 6
+  org/apache/batik/css/engine/value/AbstractColorManager:
+    values: 45
+    computedValues: 17
+  org/apache/batik/i18n/LocaleGroup:
+    DEFAULT: 39565
+    locale: 100
+  org/apache/batik/anim/dom/AbstractSVGAnimatedValue:
+    listeners: 497702
+    element: 329169
+    localName: 228533
+    namespaceURI: 228533
+    hasAnimVal: 29087
+  org/apache/batik/ext/awt/image/codec/png/PNGImageEncoder:
+    numBands: 13031170
+    currRow: 10428998
+    bitShift: 10424929
+    bpp: 4072
+    prevRow: 4070
+    filteredRows: 2714
+    param: 1382
+    bitDepth: 1374
+    compressGray: 1357
+    dataOutput: 12
+    image: 10
+    colorType: 4
+    interlace: 3
+    height: 2
+    magic: 2
+    redPalette: 2
+    skipAlpha: 2
+    srgbChroma: 2
+    width: 2
+    alphaPalette: 1
+    bluePalette: 1
+    greenPalette: 1
+  org/apache/batik/dom/AbstractDocument$IdSoftRef:
+    id: 35005
+    this$0: 35005
+    list: 14925
+  org/apache/batik/css/engine/StyleRule:
+    selectorList: 31171
+    styleDeclaration: 2
+  org/apache/batik/util/DoublyIndexedTable:
+    table: 1125965
+    count: 298420
+    initialCapacity: 35872
+  org/apache/batik/gvt/event/GraphicsNodeEvent:
+    consumed: 58084
+    id: 58084
+  org/apache/batik/dom/svg/SVGOMUseShadowRoot:
+    cssParentElement: 17256
+    isLocal: 840
+    ownerDocument: 840
+  org/apache/batik/transcoder/TranscoderSupport:
+    hints: 3
+    defaultErrorHandler: 2
+    handler: 1
+  org/apache/batik/bridge/SVGTextElementBridge:
+    elemTPI: 3
+    usingComplexSVGFont: 3
+    ALT_GLYPH_HANDLER: 1
+    ANCHOR_TYPE: 1
+    BASELINE_SHIFT: 1
+    GVT_FONTS: 1
+    GVT_FONT_FAMILIES: 1
+    PAINT_INFO: 1
+    TEXTPATH: 1
+    TEXT_COMPOUND_DELIMITER: 1
+    TEXT_COMPOUND_ID: 1
+    ZERO: 1
+  org/apache/batik/css/engine/value/svg/ColorInterpolationManager:
+    values: 4
+  org/apache/batik/ext/awt/geom/RectListManager:
+    size: 7
+    rects: 4
+    bounds: 2
+    comparator: 1
+  org/apache/batik/anim/dom/SVGOMAnimatedPathData$BaseSVGPathSegList:
+    malformed: 19262
+    missing: 19262
+  org/apache/batik/anim/dom/SVGOMAnimatedTransformList$BaseSVGTransformList:
+    malformed: 11847
+    missing: 11847
+  org/apache/batik/ext/awt/image/rendered/TileMap$TileMapLRUMember$RasterSoftRef:
+    this$0: 176
+  org/apache/batik/dom/AbstractAttr:
+    nodeName: 801533
+    isIdAttr: 311710
+    ownerDocument: 308398
+    ownerElement: 250290
+    unspecified: 232259
+  org/apache/batik/dom/svg/SVGPathSegItem:
+    type: 255148
+    y: 242414
+    x: 242406
+    letter: 127574
+    x1: 28334
+    x2: 28334
+    y1: 28334
+    y2: 28334
+    angle: 13992
+    largeArcFlag: 13992
+    r1: 13992
+    r2: 13992
+    sweepFlag: 13992
+  org/apache/batik/css/engine/SVGCSSEngine:
+    SVG_SHORTHAND_MANAGERS: 2
+    SVG_VALUE_MANAGERS: 2
+    fontSizeIndex: 1
+    lineHeightIndex: 1
+  org/apache/batik/css/engine/sac/CSSConditionFactory:
+    classLocalName: 1
+    classNamespaceURI: 1
+    idLocalName: 1
+    idNamespaceURI: 1
+  javax/xml/bind/DatatypeConverter:
+    theConverter: 80
+    SET_DATATYPE_CONVERTER_PERMISSION: 1
+  org/apache/batik/css/parser/CSSLexicalUnit$IntegerLexicalUnit:
+    value: 379058
+  org/apache/batik/dom/GenericAttrNS:
+    readonly: 71361
+  org/apache/batik/ext/awt/ColorSpaceHintKey:
+    VALUE_COLORSPACE_AGREY: 1
+    VALUE_COLORSPACE_ALPHA: 1
+    VALUE_COLORSPACE_ALPHA_CONVERT: 1
+    VALUE_COLORSPACE_ARGB: 1
+    VALUE_COLORSPACE_GREY: 1
+    VALUE_COLORSPACE_RGB: 1
+  org/apache/batik/ext/awt/geom/ExtendedGeneralPath:
+    numVals: 880245
+    values: 707728
+    numSeg: 631126
+    types: 450721
+    path: 221523
+    cx: 140931
+    cy: 140931
+    mx: 25725
+    my: 25725
+  org/dacapo/harness/Benchmark:
+    stats: 48
+    data: 43
+    datDeps: 32
+    config: 26
+    jarDeps: 10
+    scratch: 9
+    verbose: 9
+    err: 7
+    out: 7
+    validateOutput: 6
+    iteration: 5
+    validationReport: 5
+    loader: 4
+    printStats: 4
+    savedErr: 4
+    savedOut: 4
+    silentErr: 4
+    silentOut: 4
+    preIterationGC: 3
+    preserve: 3
+    savedSystemProperties: 3
+    timeoutDialation: 3
+    validate: 3
+    watchdog: 3
+    dumpLatencyCSV: 2
+    dumpLatencyHDR: 2
+    dumpLatencySmoothing: 2
+    iterations: 2
+    latencyBaseFileName: 2
+    savedClassLoader: 2
+    dataSet: 1
+    valRepFile: 1
+  org/apache/batik/dom/util/SAXDocumentFactory$CommentInfo:
+    comment: 2
+  org/apache/batik/css/engine/StyleMap:
+    masks: 3268555
+    values: 1612943
+    fixedCascadedValues: 15051
+  org/apache/batik/anim/dom/SVGOMRectElement:
+    rx: 87
+    ry: 87
+    height: 36
+    liveAttributeValues: 36
+    width: 36
+    x: 36
+    y: 36
+    ownerDocument: 18
+    xmlTraitInformation: 1
+  org/apache/batik/css/parser/DefaultSelectorFactory:
+    INSTANCE: 1
+  org/apache/batik/anim/dom/SVGOMSVGElement:
+    attributeInitializer: 9
+    height: 2
+    preserveAspectRatio: 2
+    viewBox: 2
+    width: 2
+    externalResourcesRequired: 1
+    x: 1
+    xmlTraitInformation: 1
+    y: 1
+  org/apache/batik/transcoder/SVGAbstractTranscoder$SVGAbstractTranscoderUserAgent:
+    this$0: 7
+  org/apache/batik/css/engine/value/ComputedValue:
+    computedValue: 6444
+    cascadedValue: 1611
+  java/io/File:
+    separator: 2
+  org/apache/batik/anim/dom/SVGOMRadialGradientElement$2:
+    this$0: 137
+  org/apache/batik/anim/dom/SVGOMRadialGradientElement$1:
+    this$0: 137
+  org/apache/batik/dom/GenericAttr:
+    readonly: 178930
+  org/apache/batik/bridge/SVGPathElementBridge:
+    DEFAULT_SHAPE: 1
+  org/dacapo/parser/Config$Size:
+    outputFiles: 110
+    this$0: 41
+    threadLimit: 6
+    args: 4
+    nThreads: 3
+    name: 3
+  org/apache/batik/transcoder/TranscoderOutput:
+    ostream: 3
+  org/apache/batik/ext/awt/image/codec/util/ImageEncoderImpl:
+    output: 1
+    param: 1
+  org/apache/batik/anim/dom/SVGDOMImplementation:
+    factories: 35844
+    svg11Factories: 83
+    DOM_IMPLEMENTATION: 5
+  org/apache/batik/css/engine/value/ValueConstants:
+    NONE_VALUE: 58771
+    INLINE_VALUE: 28394
+    NUMBER_0: 22
+    NUMBER_128: 13
+    NUMBER_255: 13
+    NORMAL_VALUE: 6
+    ALL_VALUE: 5
+    AUTO_VALUE: 4
+    NUMBER_192: 4
+    VISIBLE_VALUE: 4
+    HIDDEN_VALUE: 3
+    WHITE_RGB_VALUE: 3
+    ACTIVEBORDER_VALUE: 2
+    ACTIVECAPTION_VALUE: 2
+    APPWORKSPACE_VALUE: 2
+    AQUA_RGB_VALUE: 2
+    AQUA_VALUE: 2
+    BACKGROUND_VALUE: 2
+    BIDI_OVERRIDE_VALUE: 2
+    BLACK_RGB_VALUE: 2
+    BLACK_VALUE: 2
+    BLINK_VALUE: 2
+    BLOCK_VALUE: 2
+    BLUE_RGB_VALUE: 2
+    BLUE_VALUE: 2
+    BOLDER_VALUE: 2
+    BOLD_VALUE: 2
+    BUTTONFACE_VALUE: 2
+    BUTTONHIGHLIGHT_VALUE: 2
+    BUTTONSHADOW_VALUE: 2
+    BUTTONTEXT_VALUE: 2
+    CAPTIONTEXT_VALUE: 2
+    COLLAPSE_VALUE: 2
+    COMPACT_VALUE: 2
+    CONDENSED_VALUE: 2
+    CROSSHAIR_VALUE: 2
+    DEFAULT_VALUE: 2
+    EMBED_VALUE: 2
+    EXPANDED_VALUE: 2
+    EXTRA_CONDENSED_VALUE: 2
+    EXTRA_EXPANDED_VALUE: 2
+    E_RESIZE_VALUE: 2
+    FUCHSIA_RGB_VALUE: 2
+    FUCHSIA_VALUE: 2
+    GRAYTEXT_VALUE: 2
+    GRAY_RGB_VALUE: 2
+    GRAY_VALUE: 2
+    GREEN_RGB_VALUE: 2
+    GREEN_VALUE: 2
+    HELP_VALUE: 2
+    HIGHLIGHTTEXT_VALUE: 2
+    HIGHLIGHT_VALUE: 2
+    INACTIVEBORDER_VALUE: 2
+    INACTIVECAPTIONTEXT_VALUE: 2
+    INACTIVECAPTION_VALUE: 2
+    INFOBACKGROUND_VALUE: 2
+    INFOTEXT_VALUE: 2
+    INLINE_TABLE_VALUE: 2
+    ITALIC_VALUE: 2
+    LARGER_VALUE: 2
+    LARGE_VALUE: 2
+    LIGHTER_VALUE: 2
+    LIME_RGB_VALUE: 2
+    LIME_VALUE: 2
+    LINE_THROUGH_VALUE: 2
+    LIST_ITEM_VALUE: 2
+    LTR_VALUE: 2
+    MARKER_VALUE: 2
+    MAROON_RGB_VALUE: 2
+    MAROON_VALUE: 2
+    MEDIUM_VALUE: 2
+    MENUTEXT_VALUE: 2
+    MENU_VALUE: 2
+    MOVE_VALUE: 2
+    NARROWER_VALUE: 2
+    NAVY_RGB_VALUE: 2
+    NAVY_VALUE: 2
+    NE_RESIZE_VALUE: 2
+    NW_RESIZE_VALUE: 2
+    N_RESIZE_VALUE: 2
+    OBLIQUE_VALUE: 2
+    OLIVE_RGB_VALUE: 2
+    OLIVE_VALUE: 2
+    OVERLINE_VALUE: 2
+    POINTER_VALUE: 2
+    PURPLE_RGB_VALUE: 2
+    PURPLE_VALUE: 2
+    RED_RGB_VALUE: 2
+    RED_VALUE: 2
+    RTL_VALUE: 2
+    RUN_IN_VALUE: 2
+    SCROLLBAR_VALUE: 2
+    SCROLL_VALUE: 2
+    SEMI_CONDENSED_VALUE: 2
+    SEMI_EXPANDED_VALUE: 2
+    SE_RESIZE_VALUE: 2
+    SILVER_RGB_VALUE: 2
+    SILVER_VALUE: 2
+    SMALLER_VALUE: 2
+    SMALL_CAPS_VALUE: 2
+    SMALL_VALUE: 2
+    SW_RESIZE_VALUE: 2
+    S_RESIZE_VALUE: 2
+    TABLE_CAPTION_VALUE: 2
+    TABLE_CELL_VALUE: 2
+    TABLE_COLUMN_GROUP_VALUE: 2
+    TABLE_COLUMN_VALUE: 2
+    TABLE_FOOTER_GROUP_VALUE: 2
+    TABLE_HEADER_GROUP_VALUE: 2
+    TABLE_ROW_GROUP_VALUE: 2
+    TABLE_ROW_VALUE: 2
+    TABLE_VALUE: 2
+    TEAL_RGB_VALUE: 2
+    TEAL_VALUE: 2
+    TEXT_VALUE: 2
+    THREEDDARKSHADOW_VALUE: 2
+    THREEDFACE_VALUE: 2
+    THREEDHIGHLIGHT_VALUE: 2
+    THREEDLIGHTSHADOW_VALUE: 2
+    THREEDSHADOW_VALUE: 2
+    ULTRA_CONDENSED_VALUE: 2
+    ULTRA_EXPANDED_VALUE: 2
+    UNDERLINE_VALUE: 2
+    WAIT_VALUE: 2
+    WHITE_VALUE: 2
+    WIDER_VALUE: 2
+    WINDOWFRAME_VALUE: 2
+    WINDOWTEXT_VALUE: 2
+    WINDOW_VALUE: 2
+    W_RESIZE_VALUE: 2
+    XX_LARGE_VALUE: 2
+    XX_SMALL_VALUE: 2
+    X_LARGE_VALUE: 2
+    X_SMALL_VALUE: 2
+    YELLOW_RGB_VALUE: 2
+    YELLOW_VALUE: 2
+    BOTTOM_VALUE: 1
+    CRISPEDGES_VALUE: 1
+    CURSIVE_VALUE: 1
+    FANTASY_VALUE: 1
+    INHERIT_VALUE: 1
+    MONOSPACE_VALUE: 1
+    NUMBER_100: 1
+    NUMBER_200: 1
+    NUMBER_300: 1
+    NUMBER_400: 1
+    NUMBER_500: 1
+    NUMBER_600: 1
+    NUMBER_700: 1
+    NUMBER_800: 1
+    NUMBER_900: 1
+    PAINTED_VALUE: 1
+    SANS_SERIF_VALUE: 1
+    SERIF_VALUE: 1
+    STROKE_VALUE: 1
+    TOP_VALUE: 1
+  org/apache/batik/ext/awt/image/rendered/AbstractTiledRed:
+    tiles: 531
+    defaultTileSize: 6
+    tileGridXOff: 3
+    tileGridYOff: 3
+    tileHeight: 3
+    tileWidth: 3
+    minTileX: 2
+    minTileY: 2
+    bounds: 1
+    numXTiles: 1
+    numYTiles: 1
+  org/apache/batik/dom/svg/AbstractSVGMatrix:
+    FLIP_X_TRANSFORM: 1
+    FLIP_Y_TRANSFORM: 1
+  javax/xml/bind/DatatypeConverterImpl:
+    hexCode: 1249
+    $assertionsDisabled: 1
+    datatypeFactory: 1
+    decodeMap: 1
+    encodeMap: 1
+    theInstance: 1
+  org/apache/batik/anim/dom/SVGOMGradientElement:
+    attributeInitializer: 3531
+    SPREAD_METHOD_VALUES: 3527
+    UNITS_VALUES: 3527
+    externalResourcesRequired: 3526
+    gradientUnits: 3526
+    href: 3526
+    spreadMethod: 3526
+    xmlTraitInformation: 3
+  org/apache/batik/css/engine/value/css2/DisplayManager:
+    values: 666
+  org/apache/batik/css/engine/value/svg/SVGColorManager:
+    property: 15
+    defaultValue: 6
+  org/apache/batik/gvt/text/GVTAttributedCharacterIterator$TextAttribute:
+    ANCHOR_TYPE: 3
+    PAINT_INFO: 3
+    TEXTPATH: 3
+    ALT_GLYPH_HANDLER: 2
+    BASELINE_SHIFT: 2
+    FLOW_EMPTY_PARAGRAPH: 2
+    FLOW_LINE_BREAK: 2
+    FLOW_PARAGRAPH: 2
+    FLOW_REGIONS: 2
+    GVT_FONTS: 2
+    GVT_FONT_FAMILIES: 2
+    KERNING: 2
+    LETTER_SPACING: 2
+    PREFORMATTED: 2
+    TEXT_COMPOUND_DELIMITER: 2
+    TEXT_COMPOUND_ID: 2
+    WORD_SPACING: 2
+    ADJUST_ALL: 1
+    ADJUST_SPACING: 1
+    ARABIC_FORM: 1
+    ARABIC_INITIAL: 1
+    ARABIC_ISOLATED: 1
+    ARABIC_MEDIAL: 1
+    ARABIC_NONE: 1
+    ARABIC_TERMINAL: 1
+    BBOX_WIDTH: 1
+    BIDI_LEVEL: 1
+    CHAR_INDEX: 1
+    CUSTOM_SPACING: 1
+    DX: 1
+    DY: 1
+    EXPLICIT_LAYOUT: 1
+    FONT_VARIANT: 1
+    GVT_FONT: 1
+    HORIZONTAL_ORIENTATION_ANGLE: 1
+    LANGUAGE: 1
+    LENGTH_ADJUST: 1
+    LINE_HEIGHT: 1
+    ORIENTATION_ANGLE: 1
+    ORIENTATION_AUTO: 1
+    OVERLINE_ON: 1
+    ROTATION: 1
+    SCRIPT: 1
+    SMALL_CAPS: 1
+    STRIKETHROUGH_ON: 1
+    UNDERLINE_ON: 1
+    VERTICAL_ORIENTATION: 1
+    VERTICAL_ORIENTATION_ANGLE: 1
+    WRITING_MODE: 1
+    WRITING_MODE_LTR: 1
+    WRITING_MODE_RTL: 1
+    WRITING_MODE_TTB: 1
+    X: 1
+    Y: 1
+  org/apache/batik/util/SoftReferenceCache:
+    map: 3
+    synchronous: 3
+  org/apache/batik/gvt/FillShapePainter:
+    shape: 94160
+    paint: 76374
+  java/lang/System:
+    out: 10
+    err: 4
+  org/apache/batik/parser/AWTPathProducer:
+    currentY: 283550
+    currentX: 283546
+    path: 172459
+    xCenter: 140475
+    yCenter: 140475
+    windingRule: 38524
+  org/apache/batik/css/engine/CSSEngine$1:
+    this$0: 31169
+    val$result: 31169
+  java/lang/Boolean:
+    FALSE: 3
+    TRUE: 1
+  org/apache/batik/css/engine/value/StringValue:
+    unitType: 312076
+    value: 203251
+  org/apache/batik/css/engine/value/URIValue:
+    cssText: 3234
+  org/apache/batik/gvt/filter/GraphicsNodeRed8Bit:
+    cm: 8
+    hints: 8
+    node: 8
+    node2dev: 8
+    usePrimitivePaint: 8
+  org/apache/batik/ext/awt/image/rendered/TileMap:
+    rasters: 705
+    cache: 178
+    source: 2
+  org/apache/batik/parser/LengthParser:
+    current: 234462
+    reader: 69812
+    lengthHandler: 41710
+  org/apache/batik/css/parser/CSSSelectorList:
+    length: 218208
+    list: 187043
+  org/apache/batik/transcoder/image/PNGTranscoder:
+    KEY_FORCE_TRANSPARENT_WHITE: 3
+    hints: 3
+    KEY_GAMMA: 2
+    KEY_INDEXED: 2
+    DEFAULT_CHROMA: 1
+    userAgent: 1
+  org/apache/batik/css/engine/value/css2/FontShorthandManager:
+    values: 7
+    FONT_FAMILY_LU: 2
+    BOLD_LU: 1
+    MEDIUM_LU: 1
+    NORMAL_LU: 1
+    SZ_10PT_LU: 1
+    SZ_8PT_LU: 1
+  org/apache/batik/anim/dom/SVGOMDocument$AnimAttrListener:
+    this$0: 50319
+  org/apache/batik/css/engine/StyleSheet:
+    rules: 31173
+    size: 31173
+    media: 1
+  org/apache/commons/cli/Parser:
+    options: 7
+    cmd: 4
+    requiredOptions: 2
+  org/apache/batik/anim/dom/SVGOMAnimatedString:
+    hasAnimVal: 3671
+    element: 840
+    localName: 840
+    namespaceURI: 840
+  org/apache/batik/css/engine/value/ListValue:
+    length: 9
+    items: 7
+    separator: 1
+  org/apache/batik/util/ApplicationSecurityEnforcer:
+    appMainClass: 1
+    appMainClassRelativeURL: 1
+    securityPolicy: 1
+  org/apache/commons/cli/Util:
+    EMPTY_STRING_ARRAY: 2
+  org/dacapo/parser/ConfigFile:
+    token: 1675
+    jj_ntk: 801
+    jj_gen: 537
+    token_source: 242
+    jj_nt: 190
+    jj_la1: 76
+    jj_input_stream: 2
+    jj_expentries: 1
+    jj_kind: 1
+    jj_la1_0: 1
+    jj_la1_1: 1
+  org/apache/batik/css/engine/value/svg/WritingModeManager:
+    values: 7
+  org/apache/batik/dom/AbstractChildNode:
+    parentNode: 599059
+    nextSibling: 582814
+    previousSibling: 35009
+  org/apache/batik/ext/awt/image/rendered/PadRed:
+    padMode: 2
+    hints: 1
+  org/apache/batik/util/CleanerThread:
+    queue: 70365
+    thread: 2
+  org/dacapo/harness/Callback$1:
+    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
+  org/apache/batik/css/engine/value/svg/ClipRuleManager:
+    values: 3
+  org/apache/batik/ext/awt/image/GraphicsUtil:
+    sRGB_Unpre: 4
+  org/dacapo/harness/CommandLineArgs:
+    OPTIONS: 125
+    line: 42
+    options: 33
+    $assertionsDisabled: 32
+    visibleOptions: 31
+    callback: 6
+    benchmarks: 3
+    parser: 2
+  org/apache/batik/css/engine/value/css2/FontStyleManager:
+    values: 5
+  org/apache/batik/parser/PathParser:
+    current: 736911
+    pathHandler: 204622
+    reader: 173767
+  org/apache/batik/util/MimeTypeConstants:
+    MIME_TYPES_SVG: 2
+    MIME_TYPES_SVG_LIST: 2
+  org/apache/batik/apps/rasterizer/SVGConverterFileSource:
+    file: 7
+    ref: 3
+  org/apache/batik/gvt/CanvasGraphicsNode:
+    transform: 6
+    viewingTransform: 6
+    inverseTransform: 2
+    positionTransform: 2
+    backgroundPaint: 1
+  org/apache/batik/bridge/UserAgentViewport:
+    userAgent: 1
+  org/apache/batik/bridge/SVGSVGElementBridge:
+    ctx: 1
+    e: 1
+  org/apache/batik/ext/awt/image/rendered/TileCache:
+    cache: 2
+  org/apache/batik/css/engine/value/svg/ColorManager:
+    computedValues: 148
+    values: 132
+    DEFAULT_VALUE: 1
+  org/apache/batik/css/engine/StyleDeclaration:
+    count: 31177
+    values: 16122
+    indexes: 16121
+    priorities: 16121
+  org/apache/batik/parser/NumberParser:
+    current: 9323415
+    reader: 2864165
+    pow10: 346138
+  org/apache/batik/dom/svg/AbstractSVGItem:
+    parent: 461632
+  org/apache/batik/bridge/AbstractSVGGradientElementBridge$Stop:
+    offset: 9666
+    color: 6444
+  org/apache/batik/gvt/CompositeShapePainter:
+    painters: 250636
+    count: 231357
+    shape: 77116
+  org/apache/batik/ext/awt/RenderingHintsKeyExt:
+    KEY_AREA_OF_INTEREST: 1
+    KEY_AVOID_TILE_PAINTING: 1
+    KEY_BASE: 1
+    KEY_BUFFERED_IMAGE: 1
+    KEY_COLORSPACE: 1
+    KEY_TRANSCODING: 1
+    VALUE_AVOID_TILE_PAINTING_DEFAULT: 1
+    VALUE_AVOID_TILE_PAINTING_OFF: 1
+    VALUE_AVOID_TILE_PAINTING_ON: 1
+  org/apache/batik/bridge/SVGFilterElementBridge:
+    TRANSPARENT_BLACK: 1
+  org/apache/batik/anim/dom/SVGStylableElement:
+    xmlTraitInformation: 4
+  org/apache/batik/css/engine/CSSEngine$StyleDeclarationBuilder:
+    this$0: 1
+  org/apache/batik/bridge/DocumentLoader:
+    documentFactory: 2
+    cacheMap: 1
+    userAgent: 1
+  org/apache/batik/anim/dom/AbstractSVGLength$DefaultContext:
+    this$0: 1790
+  org/apache/batik/anim/dom/SVGOMClipPathElement:
+    CLIP_PATH_UNITS_VALUES: 3
+    clipPathUnits: 2
+    xmlTraitInformation: 1
+  org/apache/batik/css/engine/value/svg/ImageRenderingManager:
+    values: 4
+  org/apache/batik/css/parser/ScannerUtilities:
+    NAME: 2550412
+    HEXADECIMAL: 275581
+    IDENTIFIER_START: 243217
+    URI: 36397
+    STRING: 1
+  org/apache/batik/anim/dom/SVGOMRadialGradientElement:
+    fx: 411
+    fy: 411
+    liveAttributeValues: 274
+    cx: 137
+    cy: 137
+    ownerDocument: 137
+    r: 137
+    xmlTraitInformation: 1
+  org/apache/batik/anim/dom/SVGOMAnimatedNumber:
+    allowPercentage: 3270
+    changing: 3270
+    defaultValue: 3270
+    hasAnimVal: 3270
+    valid: 3270
+  org/apache/batik/dom/svg/SVGOMMatrix:
+    affineTransform: 41181
+  org/apache/batik/anim/dom/SVGOMAnimatedTransformList:
+    baseVal: 142164
+    hasAnimVal: 59235
+    animVal: 35541
+    defaultValue: 29045
+    changing: 11847
+  org/apache/batik/bridge/URIResolver:
+    documentURI: 28704
+    document: 21528
+    documentLoader: 7176
+  org/apache/batik/parser/AWTTransformProducer:
+    affineTransform: 324
+  org/apache/batik/parser/DefaultTransformListHandler:
+    INSTANCE: 11956
+  org/apache/batik/css/engine/StringIntMap:
+    table: 330104
+    count: 124
+  org/apache/batik/ext/awt/image/renderable/ClipRable8Bit:
+    clipPath: 4
+    useAA: 2
+  org/apache/batik/anim/dom/SVGOMAnimatedTransformList$AnimSVGTransformList:
+    this$0: 82929
+    itemList: 11847
+  org/apache/batik/css/engine/value/svg/SpacingManager:
+    property: 6
+  org/apache/batik/bridge/SVGUseElementBridge:
+    l: 1065
+    subCtx: 1065
+    node: 840
+    e: 225
+  org/apache/batik/dom/ExtensibleDOMImplementation:
+    customFactories: 59
+    extensions: 6
+    customShorthandManagers: 1
+    customValueManagers: 1
+  org/apache/batik/bridge/UnitProcessor$DefaultContext:
+    ctx: 59692
+    e: 59692
+  org/apache/batik/anim/dom/AbstractElement:
+    liveAttributeValues: 190014
+    ownerDocument: 190014
+    attributes: 39309
+  org/apache/batik/css/engine/value/InheritValue:
+    INSTANCE: 2
+  org/apache/batik/bridge/SVGAltGlyphElementBridge:
+    PAINT_INFO: 1
+  org/apache/batik/ext/awt/image/rendered/PadRed$ZeroRecter_INT_PACK:
+    scanStride: 1539
+    pixels: 1537
+    zeros: 1537
+    x0: 4
+    y0: 4
+    base: 3
+  org/apache/batik/dom/AbstractElementNS:
+    namespaceURI: 35
+  org/dacapo/parser/Config:
+    sizes: 116
+    threadModel: 13
+    desc: 9
+    name: 5
+    className: 4
+    threadCountOverride: 2
+  org/apache/batik/util/Platform:
+    isOSX: 6
+  org/dacapo/parser/Config$1:
+    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 8
+  org/apache/batik/dom/util/DOMUtilities:
+    NAME_CHARACTER: 1047516
+    NAME_FIRST_CHARACTER: 154206
+    LOCK_STRINGS: 1
+    MODIFIER_STRINGS: 1
+  org/apache/batik/css/engine/value/css2/FontStretchManager:
+    values: 13
+  org/apache/batik/css/engine/value/css2/FontVariantManager:
+    values: 3
+  java/util/Collections:
+    EMPTY_LIST: 1
+  org/dacapo/harness/TeeOutputStream:
+    log: 457
+    toScreen: 151
+    logFile: 6
+    version: 2
+  org/apache/batik/util/DoublyLinkedList:
+    head: 929
+    size: 478
+  org/apache/batik/bridge/SVGSVGElementBridge$SVGSVGElementViewport:
+    height: 1
+    width: 1
+  org/apache/batik/parser/UnitProcessor:
+    SQRT2: 1
+  org/apache/batik/script/InterpreterPool:
+    defaultFactories: 10
+    factories: 2
+  org/apache/batik/gvt/StrokeShapePainter:
+    stroke: 92614
+    paint: 75860
+    shape: 74598
+    strokedShape: 73339
+  org/apache/batik/css/engine/value/svg/FillRuleManager:
+    values: 3817
+  org/apache/batik/css/parser/Scanner:
+    current: 18049655
+    position: 11731306
+    buffer: 7270605
+    reader: 2885368
+    type: 1967247
+    start: 1359038
+    blankCharacters: 1314740
+    end: 983615
+  org/apache/batik/ext/awt/LinearGradientPaint:
+    LINEAR_RGB: 3222
+    end: 3006
+    start: 3006
+    colorSpace: 1503
+    cycleMethod: 1503
+    fractions: 1503
+    gradientTransform: 1503
+  org/apache/batik/bridge/UserAgentAdapter:
+    extensions: 11
+    FEATURES: 2
+  org/apache/batik/css/engine/value/LengthManager:
+    SQRT2: 1
+  org/apache/batik/util/io/AbstractCharDecoder:
+    inputStream: 5
+    buffer: 3
+    count: 2
+    position: 2
+  org/apache/batik/css/engine/value/RGBColorValue:
+    blue: 84242
+    green: 84242
+    red: 84242
+  org/apache/batik/ext/awt/MultipleGradientPaint:
+    colors: 7731
+    NO_CYCLE: 6337
+    SRGB: 3223
+    fractions: 3222
+    transparency: 3222
+    REPEAT: 3115
+    LINEAR_RGB: 1612
+    colorSpace: 1611
+    cycleMethod: 1611
+    gradientTransform: 1611
+    REFLECT: 1
+  org/apache/batik/ext/awt/image/CompositeRule:
+    rule: 12
+    ATOP: 2
+    DARKEN: 2
+    IN: 2
+    LIGHTEN: 2
+    MULTIPLY: 2
+    OUT: 2
+    OVER: 2
+    SCREEN: 2
+    XOR: 2
+  org/apache/batik/util/XMLResourceDescriptor:
+    parserProps: 9
+    xmlParserClassName: 6
+    cssParserClassName: 3
+  org/apache/batik/anim/dom/SVGOMStopElement:
+    offset: 3270
+    xmlTraitInformation: 1
+  org/apache/batik/css/engine/value/svg/DominantBaselineManager:
+    values: 15
+  org/apache/batik/util/ParsedURLData:
+    path: 217476
+    protocol: 205400
+    host: 199040
+    ref: 140043
+    port: 96351
+    stream: 34235
+    hasBeenOpened: 34232
+    contentType: 34231
+    contentEncoding: 34229
+    acceptedEncodings: 3
+    GZIP_MAGIC: 2
+    postConnectionURL: 1
+  org/apache/batik/anim/dom/SVGURIReferenceGraphicsElement:
+    href: 1680
+    xmlTraitInformation: 2
+  org/apache/batik/ext/awt/image/rendered/TranslateRed:
+    deltaX: 2
+    deltaY: 2
+  org/apache/batik/ext/awt/image/codec/png/CRC:
+    crcTable: 1002767
+  java/awt/AlphaComposite:
+    SrcOver: 29045
+    Clear: 4
+  org/apache/batik/css/parser/CSSLexicalUnit$PredefinedFunctionLexicalUnit:
+    parameters: 91860
+  org/apache/batik/util/DoublyIndexedTable$Entry:
+    key2: 284952
+    hash: 257449
+    key1: 237385
+    value: 217178
+    next: 189724
+  org/apache/batik/ext/awt/image/rendered/TileMap$TileMapLRUMember:
+    hRaster: 176
+    parent: 176
+    pt: 176
+    wRaster: 176
+  org/apache/batik/transcoder/TranscoderInput:
+    uri: 2
+    document: 1
+    istream: 1
+    reader: 1
+    xmlReader: 1
+  org/apache/batik/ext/awt/image/rendered/LRUCache:
+    used: 304
+    free: 278
+    maxSize: 2
+  org/apache/batik/bridge/SVGPolygonElementBridge:
+    DEFAULT_SHAPE: 1
+  org/apache/batik/ext/awt/image/rendered/TileLRUMember:
+    myNode: 654
+    hRaster: 302
+    wRaster: 176
+  org/apache/batik/dom/AbstractElement$NamedNodeHashMap:
+    table: 2068410
+    count: 556902
+    this$0: 344246
+  org/dacapo/harness/CommandLineArgs$Methodology:
+    ITERATE: 5
+    CONVERGE: 3
+    $VALUES: 2
+  org/apache/batik/dom/AbstractParentChildNode:
+    parentNode: 1027872
+    nextSibling: 228054
+    previousSibling: 35010
+  org/apache/batik/dom/GenericElementNS:
+    nodeName: 28
+    readonly: 11
+  org/apache/batik/anim/dom/SVGOMLinearGradientElement:
+    x1: 3389
+    x2: 3389
+    y1: 3389
+    y2: 3389
+    xmlTraitInformation: 1
+  org/apache/batik/ext/awt/LinearGradientPaintContext:
+    fastGradientArraySize: 23748
+    dgdX: 22345
+    dgdY: 10421
+    gradientOverflow: 7415
+    gradientUnderflow: 7415
+    gc: 4509
+    fillMethod: 3006
+    a00: 1503
+    a01: 1503
+    a02: 1503
+    a10: 1503
+    a11: 1503
+    a12: 1503
+    cycleMethod: 1503
+    gradient: 1503
+    hasDiscontinuity: 1503
+    isSimpleLookup: 1503
+    pixSz: 1503
+  java/awt/font/TextAttribute:
+    STRIKETHROUGH_ON: 1
+    UNDERLINE_ON: 1
+  org/apache/batik/css/engine/value/svg/StrokeLinecapManager:
+    values: 17964
+  org/apache/batik/parser/TransformListParser:
+    current: 274857
+    reader: 131451
+    transformListHandler: 59775
+  org/apache/batik/ext/awt/MultipleGradientPaintContext:
+    gradients: 12888
+    transparencyTest: 12888
+    normalizedIntervals: 9666
+    dataModel: 8379
+    saved: 8067
+    gradient: 8055
+    cached: 7818
+    model: 6534
+    fractions: 6444
+    colorSpace: 4833
+    cycleMethod: 4833
+    srgbmodel_A: 3223
+    gradientOverflow: 3222
+    gradientUnderflow: 3222
+    isSimpleLookup: 3222
+    cachedModel: 3144
+    lrgbmodel_A: 1612
+    a00: 1611
+    a01: 1611
+    a02: 1611
+    a10: 1611
+    a11: 1611
+    a12: 1611
+    fastGradientArraySize: 1611
+    gradientAverage: 1611
+    gradientsLength: 1611
+    hasDiscontinuity: 1611
+    LinearRGBtoSRGB: 257
+    SRGBtoLinearRGB: 257
+    srgbmodel_NA: 157
+    lrgbmodel_NA: 79
+  org/apache/batik/css/engine/value/svg/StrokeLinejoinManager:
+    values: 17964
+  org/apache/batik/util/io/ISO_8859_1Decoder:
+    position: 496
+    count: 332
+    buffer: 165
+  org/apache/batik/dom/GenericComment:
+    ownerDocument: 1
+    readonly: 1
+  org/apache/batik/util/DoublyLinkedList$Node:
+    prev: 2404
+    next: 1479
+  org/apache/batik/apps/rasterizer/DestinationType:
+    code: 5
+    extension: 5
+    JPEG: 4
+    type: 4
+    PNG: 3
+    PDF: 2
+    TIFF: 2
+  org/apache/batik/util/io/StreamNormalizingReader:
+    charDecoder: 169
+    nextChar: 167
+    line: 13
+    charDecoderFactories: 7
+    column: 6
+  org/apache/batik/css/dom/CSSOMStyleDeclaration:
+    handler: 16118
+    parentRule: 16118
+    valueProvider: 16118
+  org/apache/batik/transcoder/image/ImageTranscoder:
+    KEY_BACKGROUND_COLOR: 2
+    curTxf: 2
+    height: 2
+    root: 2
+    width: 2
+    KEY_FORCE_TRANSPARENT_WHITE: 1
+    hints: 1
+  org/apache/batik/css/parser/CSSLexicalUnit:
+    lexicalUnitType: 804810
+    nextLexicalUnit: 414995
+    previousLexicalUnit: 393588
 opcodes:
-  aconst_null: 2754596
+  aconst_null: 2754597
   iconst_m1: 6792618
   iconst_0: 20538759
   iconst_1: 58670115
@@ -28,14 +2238,14 @@ opcodes:
   fconst_2: 8250
   dconst_0: 28029
   dconst_1: 3810
-  bipush: 29055273
+  bipush: 29055269
   sipush: 48815296
   ldc: 3970265
-  iload: 622642305
+  iload: 622642287
   lload: 2
   fload: 7516117
   dload: 909436
-  aload: 378347798
+  aload: 378347751
   iaload: 68057304
   faload: 61290
   daload: 355546
@@ -43,11 +2253,11 @@ opcodes:
   baload: 42700913
   caload: 655748
   saload: 3237386
-  istore: 134435030
+  istore: 134435028
   lstore: 2
   fstore: 1361190
   dstore: 321770
-  astore: 10702935
+  astore: 10702934
   iastore: 52769881
   fastore: 342145
   dastore: 128
@@ -102,7 +2312,7 @@ opcodes:
   fcmpg: 214423
   dcmpl: 15648
   dcmpg: 35399
-  ifeq: 10249986
+  ifeq: 10249978
   ifne: 4935799
   iflt: 31823101
   ifge: 21070017
@@ -110,8 +2320,8 @@ opcodes:
   ifle: 10956618
   if_icmpeq: 3913074
   if_icmpne: 19201936
-  if_icmplt: 2166803
-  if_icmpge: 35299413
+  if_icmplt: 2166805
+  if_icmpge: 35299411
   if_icmpgt: 17041640
   if_icmple: 10668354
   if_acmpeq: 85917
@@ -123,28 +2333,26 @@ opcodes:
   freturn: 1403704
   dreturn: 2
   areturn: 17327468
-  return: 14921637
-  getstatic: 6294703
-  putstatic: 5466
-  getfield: 139013134
+  return: 14921629
+  getstatic: 6294702
+  putstatic: 5467
+  getfield: 139013102
   putfield: 31026230
-  invokevirtual: 35792930
-  invokespecial: 8901481
+  invokevirtual: 35792914
+  invokespecial: 8901465
   invokestatic: 16354502
   invokeinterface: 9116416
   new: 2995580
   newarray: 178210
   anewarray: 174494
   arraylength: 4863828
-  checkcast: 2928858
+  checkcast: 2928857
   instanceof: 384254
   monitorenter: 1
   monitorexit: 1
   multianewarray: 1
-  ifnull: 5990664
-  ifnonnull: 6250320
-
-# sun/launcher/LauncherHelper
+  ifnull: 5990655
+  ifnonnull: 6250320# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -227,9 +2435,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
+# java/security/PrivilegedActionException
 # java/util/zip/ZipException
 # java/nio/file/ProviderMismatchException
-# java/security/PrivilegedActionException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -417,8 +2625,6 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
-# jdk/internal/foreign/MemorySessionImpl
-# java/lang/foreign/MemorySegment$Scope
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -434,6 +2640,10 @@ opcodes:
 # sun/security/jca/ProviderList$1
 # java/security/Provider$ServiceKey
 # java/security/Provider$EngineDescription
+# java/security/SecureRandomParameters
+# java/security/cert/CertStoreParameters
+# java/security/Policy$Parameters
+# javax/security/auth/login/Configuration$Parameters
 # jdk/internal/math/FloatingDecimal
 # jdk/internal/math/FloatingDecimal$ExceptionalBinaryToASCIIBuffer
 # jdk/internal/math/FloatingDecimal$BinaryToASCIIConverter
@@ -500,6 +2710,8 @@ opcodes:
 # java/nio/channels/SelectableChannel
 # sun/nio/ch/ChannelInputStream
 # sun/security/provider/ByteArrayAccess$LE
+# jdk/internal/foreign/MemorySessionImpl
+# java/lang/foreign/MemorySegment$Scope
 # sun/security/provider/ByteArrayAccess
 # javax/xml/datatype/DatatypeConfigurationException
 # java/util/Calendar
@@ -1237,3 +3449,13 @@ opcodes:
 # sun/security/provider/SHA
 # sun/security/provider/ByteArrayAccess$BE
 # java/util/ComparableTimSort
+# java/util/HashMap$EntrySpliterator
+# java/util/HashMap$HashMapSpliterator
+# java/util/Collections$ReverseComparator
+# java/util/Comparators$NaturalOrderComparator
+# java/util/Collections$ReverseComparator2
+# java/util/stream/SortedOps
+# java/util/stream/SortedOps$OfRef
+# java/util/stream/ReferencePipeline$StatefulOp
+# java/util/stream/SortedOps$SizedRefSortingSink
+# java/util/stream/SortedOps$AbstractRefSortingSink
