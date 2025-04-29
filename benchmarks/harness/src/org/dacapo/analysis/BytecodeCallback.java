@@ -8,6 +8,7 @@ package org.dacapo.analysis;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -18,6 +19,10 @@ import java.io.File;
 import java.io.PrintStream;
 import org.dacapo.harness.Callback;
 import org.dacapo.harness.CommandLineArgs;
+import sun.misc.Unsafe;
+import java.lang.invoke.MethodHandles;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 /*
  * This code depends on the bytecode instrumentation package located
@@ -39,8 +44,41 @@ public class BytecodeCallback extends Callback {
     private static HashMap<Integer, Long> executed = new HashMap();
     private static HashMap<Integer, Long> called = new HashMap();
     private static List<String> skipped = new ArrayList();
-    // typename -> fieldname -> deref count
-    private static HashMap<String, HashMap<String, Long>> fieldDereferenced = new HashMap();
+    // typename -> fieldname -> FieldMetadata
+    private static HashMap<String, HashMap<String, FieldMetadata>> fieldDereferenced = new HashMap();
+    private static final Unsafe UNSAFE;
+
+    static {
+        try {
+            Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");
+            theUnsafe.setAccessible(true);
+            UNSAFE = (Unsafe) theUnsafe.get(null);
+        } catch (Exception e) {
+            throw new ExceptionInInitializerError(e);
+        }
+    }
+
+    private static class FieldMetadata {
+        long offset;
+        long derefCount;
+
+        FieldMetadata(long offset) {
+            this.offset = offset;
+            this.derefCount = 0;
+        }
+
+        public long getOffset() {
+            return offset;
+        }
+
+        public long getDerefCount() {
+            return derefCount;
+        }
+
+        public void incrementDerefCount() {
+            derefCount++;
+        }
+    }
 
     private static long[] opcodes = new long[255];
 
@@ -177,19 +215,24 @@ public class BytecodeCallback extends Callback {
         // Print the field dereference counts
         yml.println("field-dereference-counts:");
         for (String owner : fieldDereferenced.keySet()) {
-            HashMap<String, Long> deref = fieldDereferenced.get(owner);
+            HashMap<String, FieldMetadata> deref = fieldDereferenced.get(owner);
 
-            LinkedHashMap<String, Long> sorted = deref.entrySet().stream()
-                    .sorted(Map.Entry.<String, Long>comparingByValue().reversed()
-                            .thenComparing(Map.Entry.comparingByKey()))
+            LinkedHashMap<String, FieldMetadata> sorted = deref.entrySet()
+                    .stream()
+                    .sorted(Map.Entry.<String, FieldMetadata>comparingByValue(
+                            Comparator.comparingLong(FieldMetadata::getDerefCount)).reversed())
                     .collect(Collectors.toMap(
                             Map.Entry::getKey,
                             Map.Entry::getValue,
                             (e1, e2) -> e1,
                             LinkedHashMap::new));
+
             yml.println("  " + owner + ":");
             for (String name : sorted.keySet()) {
-                yml.println("    " + name + ": " + sorted.get(name));
+                FieldMetadata fieldMetadata = sorted.get(name);
+                yml.println("    " + name + ":");
+                yml.println("      offset: " + fieldMetadata.getOffset());
+                yml.println("      deref-count: " + fieldMetadata.getDerefCount());
             }
         }
 
@@ -267,18 +310,54 @@ public class BytecodeCallback extends Callback {
 
     public synchronized static void fieldDereferenced(String owner, String name) {
         if (fieldDereferenced.containsKey(owner)) {
-            HashMap<String, Long> deref = fieldDereferenced.get(owner);
+            HashMap<String, FieldMetadata> deref = fieldDereferenced.get(owner);
             if (deref.containsKey(name)) {
-                long old = deref.get(name);
-                deref.put(name, ++old);
+                FieldMetadata old = deref.get(name);
+                old.incrementDerefCount();
             } else {
-                deref.put(name, 1L);
+                FieldMetadata fieldMetadata = retrieveFieldMetadata(owner, name);
+                fieldMetadata.incrementDerefCount();
+                deref.put(name, fieldMetadata);
             }
         } else {
-            HashMap<String, Long> deref = new HashMap();
-            deref.put(name, 1L);
+            HashMap<String, FieldMetadata> deref = new HashMap();
+            FieldMetadata fieldMetadata = retrieveFieldMetadata(owner, name);
+            fieldMetadata.incrementDerefCount();
+            deref.put(name, fieldMetadata);
             fieldDereferenced.put(owner, deref);
         }
+    }
+
+    private static FieldMetadata retrieveFieldMetadata(String owner, String name) {
+        try {
+            String binaryName = owner.replace('/', '.');
+            ClassLoader loader = Thread.currentThread().getContextClassLoader();
+            Class<?> cls = Class.forName(binaryName, true, loader);
+
+            Field f = findField(cls, name);
+
+            Class<?> t = f.getType();
+            long offset = Modifier.isStatic(f.getModifiers())
+                    ? UNSAFE.staticFieldOffset(f)
+                    : UNSAFE.objectFieldOffset(f);
+
+            return new FieldMetadata(offset);
+        } catch (Exception ex) {
+            throw new RuntimeException("Failed to retrieve metadata for " + owner + "." + name, ex);
+        }
+    }
+
+    private static Field findField(Class<?> cls, String name) throws NoSuchFieldException {
+        for (Class<?> c = cls; c != null; c = c.getSuperclass()) {
+            try {
+                Field f = c.getDeclaredField(name);
+                f.setAccessible(true);
+                return f;
+            } catch (NoSuchFieldException ignored) {
+            }
+        }
+
+        return cls.getField(name);
     }
 
     public synchronized static void classSkipped(String message) {
