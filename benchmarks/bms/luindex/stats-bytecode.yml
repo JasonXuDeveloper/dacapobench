@@ -1,158 +1,3096 @@
 # These statistics can be generated from a dacapo release using a command line like:
-#    java -javaagent:dacapo-evaluation-git-6b469af0/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar dacapo-evaluation-git-6b469af0.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
+#    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 781
-transformed-classes: 901
-transformed-bytecodes: 219121
-executed-bytecodes: 30089817691
-executed-bytecodes-unique: 54527
-executed-bytecodes-p90: 236845
+skipped-classes: 780
+transformed-classes: 940
+transformed-bytecodes: 223527
+executed-bytecodes: 28991134714
+executed-bytecodes-unique: 50416
+executed-bytecodes-p90: 376634
 executed-bytecodes-p99: 13404700
-executed-bytecodes-p999: 91183906
+executed-bytecodes-p999: 92394203
 executed-bytecodes-p9999: 106012917
-executed-calls: 1749289784
-executed-calls-unique: 5623
+executed-calls: 1779979683
+executed-calls-unique: 5893
+field-dereference-counts:
+  org/apache/lucene/store/FlushInfo:
+    estimatedSegmentSize: 6
+    numDocs: 6
+  org/dacapo/harness/TestHarness:
+    commandLineArgs: 15
+    config: 10
+    BuildVersion: 4
+    BuildNickName: 1
+  org/apache/commons/cli/PosixParser:
+    tokens: 6
+    eatTheRest: 4
+    options: 3
+    currentOption: 1
+  org/apache/lucene/analysis/tokenattributes/CharTermAttributeImpl:
+    termLength: 80452207
+    termBuffer: 66999586
+    builder: 26809407
+    MIN_BUFFER_SIZE: 8
+  org/apache/lucene/util/BytesRefHash$1:
+    val$compact: 41205013
+    val$tmpOffset: 16632910
+    this$0: 14600057
+  org/apache/lucene/index/IndexingChain$FieldSchema:
+    indexOptions: 72009
+    omitNorms: 54009
+    storeTermVector: 54009
+    vectorDimension: 36018
+    docValuesType: 36009
+    pointDimensionCount: 36009
+    pointIndexDimensionCount: 36009
+    pointNumBytes: 36009
+    vectorEncoding: 36009
+    vectorSimilarityFunction: 36009
+    docID: 18009
+    attributes: 18
+    name: 9
+    errMsg: 1
+  org/apache/lucene/codecs/lucene90/Lucene90NormsProducer$2:
+    val$entry: 59969
+    this$0: 23969
+  org/apache/lucene/index/MultiTerms:
+    subs: 24
+    hasPositions: 6
+    subSlices: 6
+    $assertionsDisabled: 4
+    hasFreqs: 3
+    hasOffsets: 3
+    hasPayloads: 3
+  org/apache/lucene/codecs/NormsConsumer$NumericDocValuesSub:
+    values: 48024
+    mappedDocID: 24000
+    $assertionsDisabled: 13
+  org/apache/lucene/codecs/lucene90/blocktree/Lucene90BlockTreeTermsReader:
+    postingsReader: 1375634
+    version: 33
+    indexIn: 24
+    termsIn: 24
+    fieldMap: 15
+    segment: 12
+    $assertionsDisabled: 10
+    NO_OUTPUT: 10
+    fieldList: 3
+    FST_OUTPUTS: 2
+  org/apache/lucene/codecs/lucene90/blocktree/SegmentTermsEnum:
+    currentFrame: 5020910
+    term: 3501238
+    fr: 2955521
+    $assertionsDisabled: 1388071
+    in: 997750
+    termExists: 700253
+    staticFrame: 687799
+    targetBeforeCurrentLength: 687781
+    stack: 37533
+    validIndexPrefix: 24962
+    arcs: 54
+    outputAccumulator: 51
+    fstReader: 9
+  org/apache/lucene/analysis/ReusableStringReader:
+    pos: 2217424
+    size: 751156
+    s: 384589
+  org/apache/lucene/codecs/lucene90/Lucene90NormsProducer$3:
+    val$slice: 10429893
+    doc: 9248650
+    this$0: 1181243
+  org/apache/commons/cli/Option:
+    longOption: 222
+    option: 162
+    values: 71
+    description: 62
+    required: 62
+    argCount: 54
+    type: 31
+    valuesep: 18
+    argName: 14
+  org/apache/lucene/index/LeafReader:
+    readerContext: 4
+    $assertionsDisabled: 1
+  org/apache/lucene/backward_codecs/lucene95/Lucene95HnswVectorsFormat:
+    beamWidth: 1
+    maxConn: 1
+  org/apache/lucene/codecs/perfield/PerFieldMergeState$FilterFieldInfos:
+    filtered: 16
+    filteredNames: 16
+    filteredHasDocValues: 4
+    filteredHasFreq: 4
+    filteredHasNorms: 4
+    filteredHasOffsets: 4
+    filteredHasPayloads: 4
+    filteredHasPointValues: 4
+    filteredHasPostings: 4
+    filteredHasProx: 4
+    filteredHasVectors: 4
+  org/apache/lucene/util/MergedIterator$SubIterator:
+    current: 84
+    index: 42
+    iterator: 40
+  org/apache/lucene/codecs/lucene90/Lucene90StoredFieldsFormat:
+    mode: 14
+    BEST_SPEED_MODE: 8
+    MODE_KEY: 8
+    BEST_COMPRESSION_MODE: 1
+  org/apache/lucene/analysis/CharArrayMap:
+    ignoreCase: 3
+    keys: 3
+    values: 3
+    EMPTY_MAP: 2
+    count: 2
+    entrySet: 2
+    keySet: 2
+    $assertionsDisabled: 1
+  org/apache/lucene/util/compress/LZ4:
+    $assertionsDisabled: 1615397
+  org/apache/lucene/util/compress/LZ4$FastCompressionHashTable:
+    base: 323666
+    bytes: 298334
+    hashTable: 226835
+    hashLog: 226750
+    $assertionsDisabled: 194012
+    lastOff: 97268
+    end: 88
+  org/apache/lucene/util/MSBRadixSorter:
+    commonPrefix: 19554
+    maxLength: 13039
+    $assertionsDisabled: 12885
+    histograms: 6583
+    endOffsets: 6378
+  org/apache/lucene/backward_codecs/lucene91/Lucene91HnswVectorsFormat:
+    beamWidth: 1
+    maxConn: 1
+  org/apache/lucene/util/packed/BulkOperationPackedSingleBlock:
+    bitsPerValue: 14
+    mask: 14
+    valueCount: 14
+  org/apache/lucene/store/MergeInfo:
+    estimatedMergeBytes: 1
+    isExternal: 1
+    mergeMaxNumSegments: 1
+    totalMaxDoc: 1
+  org/apache/lucene/util/packed/DirectReader$DirectPackedReader12:
+    in: 19
+    offset: 19
+  org/apache/lucene/backward_codecs/lucene92/Lucene92Codec$2:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene92/Lucene92Codec$3:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene50/Lucene50StoredFieldsFormat:
+    FAST_MODE: 6
+    mode: 4
+    LZ4_DECOMPRESSOR: 1
+    MODE_KEY: 1
+  org/apache/lucene/backward_codecs/lucene92/Lucene92Codec$1:
+    this$0: 1
+  org/dacapo/parser/Config$ThreadModel:
+    PER_CPU: 4
+    SINGLE: 4
+    FIXED: 3
+    description: 3
+    $VALUES: 2
+  org/apache/lucene/util/UnicodeUtil:
+    $assertionsDisabled: 1
+    BIG_TERM: 1
+    utf8CodeLength: 1
+  org/apache/lucene/index/ConcurrentMergeScheduler$MergeThread:
+    this$0: 6
+    mergeSource: 3
+    merge: 2
+    rateLimiter: 1
+  org/apache/lucene/codecs/lucene90/blocktree/SegmentTermsEnum$OutputAccumulator:
+    index: 129
+    current: 117
+    outputs: 51
+    num: 36
+    $assertionsDisabled: 16
+    outputIndex: 15
+  org/apache/lucene/codecs/NormsConsumer$1$1:
+    current: 96008
+    docID: 48012
+    val$docIDMerger: 24008
+    this$1: 4
+  org/dacapo/harness/Callback$Mode:
+    TIMING: 2
+    WARMUP: 2
+    $VALUES: 1
+  org/apache/lucene/util/BytesRefComparator:
+    NATURAL: 10
+    comparedBytesCount: 10
+  org/apache/lucene/store/BufferedChecksum:
+    upto: 36054
+    buffer: 20370
+    in: 11571
+  org/apache/lucene/backward_codecs/lucene84/Lucene84Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/codecs/lucene90/compressing/Lucene90CompressingTermVectorsFormat:
+    blockSize: 6
+    chunkSize: 6
+    compressionMode: 6
+    formatName: 6
+    maxDocsPerChunk: 6
+    segmentSuffix: 6
+  org/apache/lucene/codecs/perfield/PerFieldPostingsFormat$FieldsReader:
+    fields: 39
+    formats: 39
+    $assertionsDisabled: 10
+    segment: 9
+  org/apache/lucene/codecs/lucene90/compressing/Lucene90CompressingStoredFieldsWriter:
+    bufferedDocs: 48656
+    numBufferedDocs: 36150
+    numStoredFieldsInDoc: 36000
+    endOffsets: 30816
+    numStoredFields: 24832
+    $assertionsDisabled: 12039
+    TYPE_BITS: 12002
+    chunkSize: 6015
+    maxDocsPerChunk: 6007
+    fieldsStream: 104
+    docBase: 56
+    metaStream: 40
+    numChunks: 36
+    indexWriter: 32
+    compressor: 20
+    numDirtyChunks: 16
+    numDirtyDocs: 16
+    segment: 16
+    compressionMode: 7
+    BULK_MERGE_ENABLED: 4
+    BULK_MERGE_ENABLED_SYSPROP: 2
+    NEGATIVE_ZERO_DOUBLE: 1
+    NEGATIVE_ZERO_FLOAT: 1
+    TYPE_MASK: 1
+  org/apache/lucene/index/BufferedUpdatesStream:
+    nextGen: 7
+    finishedSegments: 6
+    infoStream: 6
+    updates: 5
+    $assertionsDisabled: 4
+    bytesUsed: 1
+  org/apache/lucene/codecs/perfield/PerFieldPostingsFormat$FieldsGroup:
+    fields: 8
+    state: 8
+    suffix: 4
+  org/apache/lucene/index/IndexWriter$6:
+    $SwitchMap$org$apache$lucene$index$MergeTrigger: 9
+    $SwitchMap$org$apache$lucene$index$DocValuesType: 7
+  org/apache/lucene/backward_codecs/lucene92/Lucene92Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultKnnVectorsFormat: 1
+    defaultPostingsFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    knnVectorsFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/analysis/Analyzer:
+    storedValue: 12002
+  org/apache/lucene/index/FilterMergePolicy:
+    in: 1
+  org/apache/lucene/util/FrequencyTrackingRingBuffer:
+    frequencies: 257
+    $assertionsDisabled: 2
+    buffer: 2
+    BASE_RAM_BYTES_USED: 1
+    maxSize: 1
+    position: 1
+  org/apache/lucene/index/IndexWriter$1:
+    this$0: 10
+  org/apache/lucene/util/IntBlockPool:
+    buffers: 13404908
+    intUpto: 2751179
+    intOffset: 687948
+    buffer: 687857
+    bufferUpto: 346
+    allocator: 91
+  org/apache/lucene/util/AttributeSource:
+    currentState: 13428767
+    attributes: 180
+    attributeImpls: 74
+    factory: 18
+    implInterfaces: 8
+  org/apache/lucene/util/CollectionUtil$ListIntroSorter:
+    list: 15
+    comp: 9
+  org/apache/lucene/analysis/standard/StandardAnalyzer:
+    maxTokenLength: 6002
+    stopwords: 1
+  org/apache/lucene/codecs/Codec$Holder:
+    defaultCodec: 3
+    LOADER: 2
+  org/apache/lucene/backward_codecs/lucene50/Lucene50StoredFieldsFormat$Mode:
+    BEST_SPEED: 6
+    BEST_COMPRESSION: 2
+    $VALUES: 1
+  org/apache/lucene/index/ParallelPostingsArray:
+    addressOffset: 14093969
+    byteStarts: 1377041
+    size: 2501
+    textStarts: 2008
+  org/apache/lucene/util/fst/ReverseBytesReader:
+    pos: 2445381
+    bytes: 952490
+  org/apache/lucene/store/ByteArrayDataOutput:
+    pos: 208051
+    bytes: 115746
+    limit: 65898
+    $assertionsDisabled: 49849
+  org/apache/lucene/index/MultiTermsEnum$TermsEnumWithSlice:
+    subIndex: 1849234
+    subSlice: 687781
+    termsEnum: 687772
+    $assertionsDisabled: 10
+  org/dacapo/luindex/Index:
+    SEP: 1
+    data: 1
+    scratch: 1
+  org/apache/lucene/codecs/lucene90/blocktree/Lucene90BlockTreeTermsWriter$PendingEntry:
+    isTerm: 1244026
+  org/apache/lucene/util/fst/FSTCompiler$CompiledNode:
+    node: 624007
+  org/apache/lucene/util/fst/ReverseRandomAccessReader:
+    in: 9
+  org/apache/commons/cli/CommandLine:
+    options: 64
+    args: 5
+  org/apache/lucene/index/MergePolicy$OneMergeProgress:
+    aborted: 14
+    pauseLock: 6
+    pauseTimesNS: 4
+    pausing: 3
+    $assertionsDisabled: 2
+    owner: 1
+  org/apache/lucene/analysis/StopwordAnalyzerBase:
+    stopwords: 1
+  org/apache/lucene/util/SetOnce:
+    set: 7914
+  org/apache/lucene/index/SegmentReadState:
+    segmentInfo: 81
+    segmentSuffix: 65
+    directory: 39
+    fieldInfos: 38
+    context: 26
+  org/apache/lucene/store/FSDirectory$FSIndexOutput$1:
+    out: 3975
+    val$this$0: 59
+  org/apache/lucene/index/DocumentsWriterFlushQueue:
+    $assertionsDisabled: 35
+    purgeLock: 21
+    queue: 20
+    ticketCount: 12
+  org/apache/lucene/index/DocIDMerger$Sub:
+    mappedDocID: 5348112
+    docMap: 4660349
+  org/apache/lucene/analysis/Analyzer$TokenStreamComponents:
+    sink: 6001
+    source: 6001
+  org/dacapo/parser/ConfigFileTokenManager:
+    jjnewStateCnt: 6328
+    jjround: 5948
+    curChar: 5382
+    jjstateSet: 4427
+    jjrounds: 3975
+    input_stream: 1979
+    jjnextStates: 1831
+    jjmatchedKind: 1067
+    jjmatchedPos: 633
+    image: 193
+    jjimage: 98
+    jjstrLiteralImages: 98
+    curLexState: 97
+    jjnewLexState: 97
+    jjtoToken: 97
+    jjimageLen: 96
+    debugStream: 1
+    defaultLexState: 1
+    jjbitVec0: 1
+    jjbitVec2: 1
+    jjtoMore: 1
+    jjtoSkip: 1
+    jjtoSpecial: 1
+    lexStateNames: 1
+  org/dacapo/parser/Config$OutputFile:
+    digest: 20
+    filter: 17
+    text: 17
+    bytes: 16
+    existence: 12
+    lines: 12
+    keep: 9
+    name: 9
+    this$0: 9
+  org/apache/lucene/util/fst/BytesRefFSTEnum:
+    current: 624837
+    upto: 580573
+    result: 203210
+    output: 79686
+    $assertionsDisabled: 1
+  org/apache/lucene/index/ByteSlicePool:
+    pool: 4948056
+    FIRST_LEVEL_SIZE: 2063317
+    LEVEL_SIZE_ARRAY: 1118920
+    NEXT_LEVEL_ARRAY: 431147
+    $assertionsDisabled: 215574
+  org/apache/lucene/codecs/KnnVectorsFormat:
+    name: 13
+    EMPTY: 1
+  org/apache/lucene/store/BaseDirectory:
+    isOpen: 221
+    lockFactory: 2
+  org/apache/lucene/util/TimSorter:
+    stackSize: 1026729
+    runEnds: 798567
+    to: 474170
+    $assertionsDisabled: 228163
+    minRun: 228162
+    maxTempSlots: 114081
+  org/apache/lucene/codecs/lucene90/blocktree/CompressionAlgorithm:
+    BY_CODE: 44284
+    NO_COMPRESSION: 83
+    code: 6
+    $VALUES: 2
+    LOWERCASE_ASCII: 2
+    LZ4: 2
+  org/apache/lucene/index/VectorValuesConsumer:
+    accountable: 12631
+    codec: 3
+    directory: 3
+    infoStream: 3
+    segmentInfo: 3
+    writer: 3
+  org/apache/lucene/backward_codecs/lucene80/Lucene80DocValuesFormat:
+    mode: 2
+    MODE_KEY: 1
+  org/apache/lucene/codecs/lucene90/Lucene90CompoundFormat$SizedFile:
+    length: 268
+    name: 30
+  org/apache/lucene/backward_codecs/lucene70/Lucene70Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/util/packed/DirectMonotonicReader:
+    avgs: 49
+    blockMask: 49
+    blockShift: 49
+    mins: 49
+    bpvs: 44
+    readers: 36
+    nonZeroBpvs: 18
+    BASE_RAM_BYTES_USED: 1
+  org/apache/lucene/store/DataOutput:
+    groupVIntBytes: 14397627
+    copyBuffer: 1484
+    COPY_BUFFER_SIZE: 1391
+    $assertionsDisabled: 48
+  org/apache/lucene/index/VectorEncoding:
+    FLOAT32: 30012
+    $VALUES: 20
+    BYTE: 3
+    byteSize: 2
+  org/apache/lucene/index/IndexWriter:
+    MAX_STORED_STRING_LENGTH: 12000
+    eventQueue: 6
+    mergeScheduler: 1
+  org/apache/lucene/util/IntsRef:
+    ints: 3274076
+    length: 3048577
+    offset: 871813
+    EMPTY_INTS: 21936
+    $assertionsDisabled: 1
+  org/dacapo/harness/Luindex:
+    clazz: 3
+    benchmark: 2
+    method: 2
+    scratch: 2
+    config: 1
+    data: 1
+    loader: 1
+  org/apache/lucene/codecs/lucene90/Lucene90StoredFieldsFormat$1:
+    $SwitchMap$org$apache$lucene$codecs$lucene90$Lucene90StoredFieldsFormat$Mode: 10
+  org/apache/lucene/codecs/lucene90/Lucene90CompoundReader:
+    handle: 45
+    entries: 36
+    segmentName: 9
+    version: 9
+    directory: 3
+  org/apache/lucene/search/UsageTrackingQueryCachingPolicy:
+    $assertionsDisabled: 1
+    recentlyUsedFilters: 1
+  org/apache/lucene/index/BufferedUpdatesStream$FinishedSegments:
+    completedDelGen: 17
+    finishedDelGens: 13
+    infoStream: 4
+  org/apache/lucene/store/MemorySegmentIndexInput$SingleSegmentImpl:
+    curSegment: 9248668
+    LAYOUT_BYTE: 9248650
+    curPosition: 293200
+    length: 226554
+    curSegmentIndex: 177
+    LAYOUT_LE_SHORT: 18
+  org/apache/lucene/document/InvertableType:
+    BINARY: 3
+    TOKEN_STREAM: 3
+    $VALUES: 2
+  java/math/BigInteger:
+    ONE: 13
+  org/apache/lucene/index/TermsEnumIndex:
+    currentTermPrefix8: 8985303
+    currentTerm: 7956716
+    $assertionsDisabled: 1738381
+    termsEnum: 687817
+    subIndex: 27
+    EMPTY_ARRAY: 4
+  org/apache/lucene/util/packed/PackedInts$Format:
+    PACKED: 146
+    $assertionsDisabled: 51
+    PACKED_SINGLE_BLOCK: 4
+    $VALUES: 3
+    id: 2
+  org/apache/lucene/util/Version:
+    major: 66
+    bugfix: 56
+    minor: 56
+    encodedValue: 52
+    prerelease: 46
+    $assertionsDisabled: 43
+    LATEST: 18
+    LUCENE_9_10_0: 2
+    LUCENE_8_0_0: 1
+    LUCENE_8_10_0: 1
+    LUCENE_8_10_1: 1
+    LUCENE_8_11_0: 1
+    LUCENE_8_11_1: 1
+    LUCENE_8_11_2: 1
+    LUCENE_8_11_3: 1
+    LUCENE_8_12_0: 1
+    LUCENE_8_1_0: 1
+    LUCENE_8_1_1: 1
+    LUCENE_8_2_0: 1
+    LUCENE_8_3_0: 1
+    LUCENE_8_3_1: 1
+    LUCENE_8_4_0: 1
+    LUCENE_8_4_1: 1
+    LUCENE_8_5_0: 1
+    LUCENE_8_5_1: 1
+    LUCENE_8_5_2: 1
+    LUCENE_8_6_0: 1
+    LUCENE_8_6_1: 1
+    LUCENE_8_6_2: 1
+    LUCENE_8_6_3: 1
+    LUCENE_8_7_0: 1
+    LUCENE_8_8_0: 1
+    LUCENE_8_8_1: 1
+    LUCENE_8_8_2: 1
+    LUCENE_8_9_0: 1
+    LUCENE_9_0_0: 1
+    LUCENE_9_1_0: 1
+    LUCENE_9_2_0: 1
+    LUCENE_9_3_0: 1
+    LUCENE_9_4_0: 1
+    LUCENE_9_4_1: 1
+    LUCENE_9_4_2: 1
+    LUCENE_9_5_0: 1
+    LUCENE_9_6_0: 1
+    LUCENE_9_7_0: 1
+    LUCENE_9_8_0: 1
+    LUCENE_9_9_0: 1
+    LUCENE_9_9_1: 1
+    LUCENE_9_9_2: 1
+    LUCENE_CURRENT: 1
+    MIN_SUPPORTED_MAJOR: 1
+  org/apache/lucene/codecs/perfield/PerFieldPostingsFormat$FieldsWriter$1:
+    val$group: 6
+    this$1: 3
+  org/apache/lucene/index/TermsEnum:
+    EMPTY: 4
+  java/lang/Short:
+    TYPE: 1
+  java/lang/Character:
+    TYPE: 1
+  org/apache/lucene/analysis/standard/StandardTokenizerImpl:
+    zzState: 453527419
+    zzStartRead: 114316415
+    ZZ_CMAP_BLOCKS: 106012918
+    zzMarkedPos: 99823938
+    yychar: 84952890
+    zzCurrentPos: 37267464
+    zzLexicalState: 35783096
+    ZZ_LEXSTATE: 35771096
+    ZZ_ACTION: 35765096
+    zzBuffer: 29020904
+    zzEndRead: 17461095
+    ZZ_ATTRIBUTE: 13398701
+    ZZ_ROWMAP: 13398701
+    ZZ_TRANS: 13398701
+    zzFinalHighSurrogate: 1117761
+    zzAtEOF: 390588
+    zzReader: 384589
+    ZZ_CMAP_TOP: 351830
+    ZZ_BUFFERSIZE: 12002
+    zzAtBOL: 12001
+    yycolumn: 12000
+    yyline: 12000
+    zzEOFDone: 12000
+    ZZ_ERROR_MSG: 1
+  org/apache/lucene/store/OutputStreamIndexOutput:
+    bytesWritten: 7994219
+    os: 2749659
+    crc: 177
+    flushedOnClose: 177
+  org/apache/lucene/backward_codecs/lucene60/Lucene60FieldInfosFormat:
+    $assertionsDisabled: 3
+  org/apache/lucene/index/TermsHashPerField$PostingsBytesStartArray:
+    perField: 2116
+    bytesUsed: 547
+  org/apache/lucene/index/FreqProxFields$FreqProxTerms:
+    terms: 18
+  org/dacapo/parser/Token:
+    next: 340
+    kind: 267
+    image: 163
+    beginColumn: 97
+    beginLine: 97
+    endColumn: 97
+    endLine: 97
+    specialToken: 97
+  org/apache/lucene/util/packed/BulkOperation:
+    $assertionsDisabled: 85
+    packedBulkOps: 85
+    packedSingleBlockBulkOps: 1
+  org/apache/lucene/util/packed/DirectWriter:
+    off: 160
+    count: 128
+    $assertionsDisabled: 113
+    nextValues: 112
+    bitsPerValue: 56
+    numValues: 56
+    SUPPORTED_BITS_PER_VALUE: 25
+    nextBlocks: 24
+    output: 20
+    finished: 8
+  org/dacapo/harness/TeePrintStream:
+    out: 6
+  org/apache/lucene/codecs/lucene90/blocktree/Lucene90BlockTreeTermsWriter$PendingBlock:
+    subIndices: 148104
+    $assertionsDisabled: 143446
+    fp: 94547
+    isFloor: 82688
+    prefix: 82688
+    this$0: 82688
+    hasTerms: 77652
+    floorLeadByte: 55721
+    index: 21931
+  java/lang/Byte:
+    TYPE: 1
+  org/apache/lucene/index/DocumentsWriterFlushQueue$FlushTicket:
+    segment: 9
+    $assertionsDisabled: 7
+    frozenUpdates: 6
+    hasSegment: 6
+    published: 6
+    failed: 3
+  org/apache/lucene/index/BaseTermsEnum:
+    atts: 21
+  org/apache/lucene/index/IndexFileNames:
+    $assertionsDisabled: 109
+    CODEC_FILE_PATTERN: 3
+  org/apache/lucene/search/LRUQueryCache:
+    uniqueQueries: 2
+    $assertionsDisabled: 1
+    cache: 1
+    leavesToCache: 1
+    lock: 1
+    maxRamBytesUsed: 1
+    maxSize: 1
+    mostRecentlyUsedQueries: 1
+    ramBytesUsed: 1
+    skipCacheFactor: 1
+  org/apache/lucene/index/TermVectorsConsumerPerField:
+    doVectors: 90000
+    fieldState: 18009
+    $assertionsDisabled: 18001
+    hasPayloads: 18000
+    termFreqAtt: 18000
+    fieldInfo: 9
+    postingsArray: 9
+    termBytePool: 9
+    termVectorsPostingsArray: 9
+    termsWriter: 9
+  org/apache/lucene/util/packed/BulkOperationPacked:
+    longValueCount: 6328
+    bitsPerValue: 5984
+    longBlockCount: 192
+    $assertionsDisabled: 129
+    mask: 128
+    byteBlockCount: 64
+    byteValueCount: 64
+    intMask: 64
+  org/apache/lucene/backward_codecs/lucene95/Lucene95Codec$3:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene95/Lucene95Codec$2:
+    this$0: 1
+  org/apache/lucene/codecs/BlockTermState:
+    docFreq: 2097270
+    totalTermFreq: 1893053
+    termBlockOrd: 1274915
+    $assertionsDisabled: 1
+  org/apache/lucene/backward_codecs/lucene95/Lucene95Codec$1:
+    this$0: 1
+  org/apache/lucene/codecs/perfield/PerFieldKnnVectorsFormat:
+    PER_FIELD_FORMAT_KEY: 1
+    PER_FIELD_SUFFIX_KEY: 1
+  org/apache/lucene/index/TermsHash:
+    nextTermsHash: 24012
+    bytePool: 21
+    bytesUsed: 15
+    intPool: 15
+    termBytePool: 15
+  org/apache/lucene/util/packed/DeltaPackedLongValues:
+    mins: 109
+    $assertionsDisabled: 10
+    BASE_RAM_BYTES_USED: 10
+  javax/xml/bind/DatatypeConverter:
+    theConverter: 20
+    SET_DATATYPE_CONVERTER_PERMISSION: 1
+  org/apache/lucene/index/DocumentsWriterPerThread$FlushedSegment:
+    liveDocs: 6
+    segmentInfo: 6
+    delCount: 3
+    fieldInfos: 3
+    segmentUpdates: 3
+    sortMap: 3
+  org/apache/lucene/index/NormValuesWriter:
+    docsWithField: 36030
+    pending: 36027
+    bytesUsed: 36018
+    lastDocID: 36009
+    iwBytesUsed: 18009
+    fieldInfo: 42
+  org/apache/lucene/util/NamedSPILoader:
+    services: 23
+    clazz: 6
+  org/apache/lucene/util/BytesRefHash$1$1:
+    this$1: 33259442
+    $assertionsDisabled: 6370
+    k: 6369
+  org/apache/lucene/codecs/lucene90/compressing/Lucene90CompressingStoredFieldsFormat:
+    compressionMode: 14
+    formatName: 14
+    segmentSuffix: 14
+    blockShift: 11
+    chunkSize: 11
+    maxDocsPerChunk: 11
+  org/apache/lucene/backward_codecs/lucene91/Lucene91Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultKnnVectorsFormat: 1
+    defaultPostingsFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    knnVectorsFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/codecs/lucene90/Lucene90NormsConsumer:
+    meta: 124
+    data: 32
+    maxDoc: 16
+    $assertionsDisabled: 13
+  org/apache/lucene/backward_codecs/lucene87/Lucene87StoredFieldsFormat$Mode:
+    BEST_COMPRESSION: 3
+    BEST_SPEED: 3
+    $VALUES: 1
+  org/apache/lucene/codecs/lucene90/blocktree/SegmentTermsEnumFrame:
+    ste: 5391103
+    metaDataUpto: 4148772
+    state: 4046289
+    nextEnt: 2879886
+    suffix: 2100732
+    statsSingletonRunLength: 1545199
+    $assertionsDisabled: 1441962
+    prefix: 1425441
+    suffixesReader: 1422709
+    isLeafBlock: 1410156
+    entCount: 919039
+    suffixLengthsReader: 734937
+    ord: 725305
+    bytesReader: 709993
+    startBytePos: 700244
+    statsReader: 358261
+    subCode: 209118
+    lastSubFP: 72037
+    suffixBytes: 66681
+    bytes: 66620
+    suffixLengthBytes: 66595
+    statBytes: 66501
+    fp: 56761
+    compressionAlg: 44361
+    isLastInFloor: 44280
+    fpOrig: 37443
+    fpEnd: 31799
+    totalSuffixBytes: 22140
+    arc: 12481
+    floorDataReader: 123
+    hasTerms: 27
+    isFloor: 27
+    hasTermsOrig: 18
+    nextFloorLabel: 12
+    numFollowFloorBlocks: 12
+    rewindPos: 12
+  org/apache/lucene/index/DocumentsWriterStallControl:
+    stalled: 6646
+    $assertionsDisabled: 1
+    waiting: 1
+  org/apache/lucene/codecs/perfield/PerFieldPostingsFormat$FieldsGroup$Builder:
+    fields: 20
+    suffix: 20
+    state: 8
+  org/apache/lucene/codecs/lucene90/blocktree/Lucene90BlockTreeTermsWriter$StatsWriter:
+    singletonCount: 2556743
+    hasFreqs: 1244026
+    out: 615564
+  org/apache/lucene/index/OneMergeWrappingMergePolicy:
+    in: 1
+    wrapOneMerge: 1
+  org/apache/lucene/index/DirectoryReader:
+    $assertionsDisabled: 1
+  org/apache/lucene/index/TermVectorsConsumer:
+    accountable: 12631
+    numVectorFields: 12000
+    perFields: 6003
+    hasVectors: 6000
+    termBytePool: 18
+    bytePool: 9
+    bytesUsed: 9
+    intPool: 9
+    codec: 3
+    directory: 3
+    flushTerm: 3
+    info: 3
+    vectorSliceReaderOff: 3
+    vectorSliceReaderPos: 3
+    writer: 3
+    $assertionsDisabled: 1
+  org/apache/lucene/document/FieldType:
+    indexOptions: 102000
+    stored: 60000
+    tokenized: 60000
+    docValuesType: 48000
+    dimensionCount: 36000
+    frozen: 36000
+    storeTermVectors: 36000
+    vectorDimension: 36000
+    attributes: 18000
+    omitNorms: 18000
+    storeTermVectorOffsets: 18000
+    storeTermVectorPayloads: 18000
+    storeTermVectorPositions: 18000
+    vectorEncoding: 12000
+    vectorSimilarityFunction: 12000
+  org/apache/lucene/index/IndexingChain:
+    fields: 72021
+    docFields: 72015
+    storedFieldsConsumer: 36637
+    fieldHash: 18246
+    hashMask: 18018
+    bytesUsed: 12649
+    termVectorsWriter: 12634
+    vectorValuesConsumer: 12634
+    termsHash: 12015
+    nextFieldGen: 12000
+    hasHitAbortingException: 6000
+    indexWriterConfig: 42
+    totalFieldCount: 39
+    $assertionsDisabled: 31
+    fieldInfos: 30
+    infoStream: 27
+    byteBlockAllocator: 12
+    indexCreatedVersionMajor: 12
+    abortingExceptionConsumer: 3
+    docValuesBytePool: 3
+  org/apache/lucene/util/StringSorter$1:
+    this$0: 19803295
+    val$cmp: 2564846
+  org/apache/lucene/util/fst/ByteSequenceOutputs:
+    $assertionsDisabled: 3115506
+    NO_OUTPUT: 1792477
+    singleton: 21942
+    BASE_NUM_BYTES: 1
+  org/apache/lucene/codecs/perfield/PerFieldDocValuesFormat:
+    PER_FIELD_FORMAT_KEY: 1
+    PER_FIELD_SUFFIX_KEY: 1
+  org/apache/lucene/codecs/CompetitiveImpactAccumulator$1:
+    this$0: 44
+  org/apache/lucene/analysis/CharArraySet:
+    map: 13392701
+    EMPTY_SET: 6
+    PLACEHOLDER: 1
+  org/apache/lucene/util/IntBlockPool$Allocator:
+    blockSize: 3
+  java/lang/System:
+    out: 16
+    err: 4
+  org/apache/lucene/index/CompositeReaderContext$Builder:
+    leafDocBase: 10
+    leaves: 8
+    $assertionsDisabled: 2
+    reader: 2
+  org/apache/lucene/backward_codecs/lucene94/Lucene94Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultKnnVectorsFormat: 1
+    defaultPostingsFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    knnVectorsFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/index/SlowCompositeCodecReaderWrapper:
+    docStarts: 4
+    codecReaders: 1
+    fieldInfos: 1
+    liveDocs: 1
+    meta: 1
+    numDocs: 1
+  org/apache/lucene/util/AttributeFactory$1:
+    val$constr: 8
+  org/apache/lucene/index/FreqProxTermsWriterPerField$FreqProxPostingsArray:
+    lastDocIDs: 21979066
+    lastDocCodes: 8574366
+    textStarts: 687772
+    lastOffsets: 1981
+    lastPositions: 1981
+    termFreqs: 1981
+    $assertionsDisabled: 996
+  java/lang/Boolean:
+    TRUE: 7906
+    TYPE: 1
+  org/apache/lucene/index/TermsHashPerField:
+    termStreamAddressBuffer: 23788073
+    $assertionsDisabled: 22431190
+    streamAddressOffset: 19864144
+    intPool: 16843663
+    postingsArray: 15469585
+    bytesHash: 13440745
+    doNextCall: 13422700
+    bytePool: 6890781
+    streamCount: 3438878
+    slicePool: 903363
+    nextPerField: 90027
+    sortedTermIDs: 18018
+    fieldName: 39
+    indexOptions: 18
+  org/apache/lucene/util/packed/PackedInts$FormatAndBits:
+    bitsPerValue: 50
+    format: 50
+  org/apache/lucene/util/fst/FSTEnum:
+    upto: 2326510
+    arcs: 1161670
+    output: 687014
+    fst: 500887
+    fstReader: 261403
+    $assertionsDisabled: 79687
+    NO_OUTPUT: 43838
+  org/apache/lucene/index/BaseCompositeReader:
+    starts: 5
+    maxDoc: 3
+    numDocs: 3
+    $assertionsDisabled: 2
+    subReaders: 2
+    subReadersList: 2
+    subReadersSorter: 1
+  org/apache/lucene/index/SegmentReader$1:
+    cacheKey: 3
+    this$0: 3
+  org/apache/lucene/codecs/lucene90/Lucene90StoredFieldsFormat$Mode:
+    BEST_COMPRESSION: 9
+    BEST_SPEED: 9
+    $VALUES: 3
+  org/apache/lucene/index/SegmentReader$2:
+    this$0: 3
+  org/apache/lucene/index/MultiTermsEnum$TermMergeQueue:
+    stack: 1375547
+  org/apache/lucene/index/Terms:
+    EMPTY: 1
+    EMPTY_ARRAY: 1
+  org/apache/lucene/index/MultiTermsEnum:
+    numTop: 3962693
+    queue: 2410421
+    top: 2240059
+    subDocs: 1892993
+    $assertionsDisabled: 1892985
+    current: 1034862
+    lastSeek: 517431
+    lastSeekExact: 517431
+    INDEX_COMPARATOR: 517429
+    subs: 24
+    numSubs: 21
+    currentSubs: 12
+    lastSeekScratch: 3
+  org/apache/lucene/util/fst/FST$INPUT_TYPE:
+    BYTE1: 350389
+    BYTE2: 2
+    BYTE4: 2
+    $VALUES: 1
+  org/apache/lucene/index/FieldInfos$Builder:
+    globalFieldNumbers: 62
+    byName: 57
+    $assertionsDisabled: 21
+    finished: 5
+  org/apache/commons/cli/Util:
+    EMPTY_STRING_ARRAY: 2
+  org/apache/lucene/util/LongsRef:
+    $assertionsDisabled: 1
+    EMPTY_LONGS: 1
+  org/apache/lucene/store/TrackingDirectoryWrapper:
+    createdFileNames: 88
+    in: 71
+  java/nio/ByteOrder:
+    LITTLE_ENDIAN: 265110
+    BIG_ENDIAN: 5
+  org/apache/lucene/index/SegmentWriteState:
+    segmentInfo: 106
+    segmentSuffix: 68
+    fieldInfos: 50
+    directory: 42
+    context: 36
+    infoStream: 12
+    segUpdates: 12
+    delCountOnFlush: 11
+    liveDocs: 11
+    softDelCountOnFlush: 6
+    $assertionsDisabled: 5
+  org/dacapo/harness/Callback$1:
+    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
+  org/apache/lucene/analysis/LowerCaseFilter:
+    termAtt: 26785401
+    input: 13398700
+  org/apache/lucene/backward_codecs/lucene80/Lucene80DocValuesFormat$Mode:
+    BEST_SPEED: 4
+    BEST_COMPRESSION: 3
+    $VALUES: 1
+  org/apache/lucene/index/NormValuesWriter$1:
+    this$0: 45
+    val$sorted: 21
+    val$values: 21
+  org/dacapo/harness/CommandLineArgs:
+    OPTIONS: 125
+    line: 42
+    options: 33
+    $assertionsDisabled: 32
+    visibleOptions: 31
+    callback: 6
+    benchmarks: 3
+    parser: 2
+  org/apache/lucene/util/AttributeFactory:
+    DEFAULT_ATTRIBUTE_FACTORY: 2
+    NO_ARG_CTOR: 2
+    NO_ARG_RETURNING_ATTRIBUTEIMPL: 2
+    lookup: 2
+  org/apache/lucene/index/IndexWriterConfig:
+    mergePolicy: 21
+    infoStream: 19
+    codec: 17
+    similarity: 9
+    writer: 3
+    commit: 2
+    flushPolicy: 2
+    openMode: 2
+    delPolicy: 1
+    mergeScheduler: 1
+    perThreadHardLimitMB: 1
+    readerPooling: 1
+  org/apache/lucene/codecs/PointsFormat:
+    EMPTY: 1
+  org/apache/lucene/store/IndexInput:
+    resourceDescription: 452
+  org/apache/lucene/store/FSDirectory$FSIndexOutput:
+    this$0: 59
+  org/apache/lucene/index/NormValuesWriter$BufferedNorms:
+    value: 48000
+    docsWithField: 24024
+    iter: 24012
+  org/apache/lucene/index/LockableConcurrentApproximatePriorityQueue:
+    addAndUnlockCounter: 12002
+    queue: 12002
+  org/apache/lucene/backward_codecs/compressing/CompressionMode$4:
+    $assertionsDisabled: 1
+  org/apache/lucene/index/StoredFieldsConsumer$1:
+    $SwitchMap$org$apache$lucene$document$StoredValue$Type: 12007
+  org/apache/lucene/backward_codecs/lucene84/Lucene84Codec$2:
+    this$0: 1
+  org/apache/lucene/util/CloseableThreadLocal:
+    countUntilPurge: 6153
+    t: 6026
+    hardRefs: 307
+    PURGE_MULTIPLIER: 154
+  org/apache/lucene/backward_codecs/lucene84/Lucene84Codec$1:
+    this$0: 1
+  org/apache/lucene/util/packed/PackedLongValues$Builder:
+    pendingOff: 54168
+    pending: 54093
+    size: 36009
+    ramBytesUsed: 18168
+    valuesOff: 384
+    values: 243
+    acceptableOverheadRatio: 84
+    $assertionsDisabled: 76
+    pageMask: 9
+    pageShift: 9
+    BASE_RAM_BYTES_USED: 1
+  org/apache/lucene/store/ChecksumIndexInput:
+    skipBuffer: 10711
+    $assertionsDisabled: 19
+  org/apache/lucene/util/fst/ReadWriteDataOutput$1:
+    nextRead: 204550
+    current: 60807
+    this$0: 46771
+    nextBuffer: 30513
+    $assertionsDisabled: 16085
+  org/apache/lucene/backward_codecs/lucene87/Lucene87Codec$Mode:
+    BEST_COMPRESSION: 3
+    dvMode: 3
+    storedMode: 3
+    BEST_SPEED: 2
+    $VALUES: 1
+  org/apache/lucene/index/TermsEnum$1:
+    atts: 1
+  java/lang/Void:
+    TYPE: 2
+  org/apache/lucene/search/similarities/BM25Similarity:
+    LENGTH_TABLE: 257
+    b: 1
+    discountOverlaps: 1
+    k1: 1
+  org/apache/lucene/search/DocIdSetIterator$2:
+    doc: 96072
+    val$maxDoc: 24024
+  org/apache/lucene/document/StoredValue$Type:
+    STRING: 48003
+    BINARY: 3
+    DOUBLE: 3
+    FLOAT: 3
+    INTEGER: 3
+    LONG: 3
+    $VALUES: 2
+  org/dacapo/parser/Config:
+    sizes: 59
+    desc: 11
+    threadModel: 11
+    name: 5
+    className: 4
+    threadCountOverride: 2
+  org/dacapo/parser/Config$1:
+    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 7
+  org/dacapo/harness/TeeOutputStream:
+    log: 1514
+    toScreen: 504
+    logFile: 6
+    version: 2
+  org/apache/lucene/util/packed/PackedInts$NullReader:
+    valueCount: 150
+    $assertionsDisabled: 101
+  org/apache/lucene/codecs/perfield/PerFieldPostingsFormat:
+    PER_FIELD_FORMAT_KEY: 22
+    PER_FIELD_SUFFIX_KEY: 22
+  org/apache/lucene/index/MultiBits:
+    $assertionsDisabled: 1
+  org/apache/lucene/index/IndexWriterEventListener:
+    NO_OP_LISTENER: 1
+  org/apache/lucene/store/ByteBuffersDataOutput$ByteBufferRecycler:
+    reuse: 661260
+    delegate: 346
+  org/apache/lucene/codecs/lucene90/Lucene90NormsProducer$DenseNormsIterator:
+    doc: 10513886
+    maxDoc: 1229224
+  org/apache/lucene/store/LockValidatingDirectoryWrapper:
+    writeLock: 104
+    in: 103
+  org/apache/lucene/util/packed/DirectReader$DirectPackedReader16:
+    in: 17
+    offset: 17
+  org/apache/lucene/index/VectorSimilarityFunction:
+    EUCLIDEAN: 30011
+    $VALUES: 19
+    COSINE: 2
+    DOT_PRODUCT: 2
+    MAXIMUM_INNER_PRODUCT: 2
+  org/apache/lucene/index/MergeTrigger:
+    ADD_INDEXES: 3
+    CLOSING: 3
+    COMMIT: 3
+    EXPLICIT: 3
+    FULL_FLUSH: 3
+    GET_READER: 3
+    MERGE_FINISHED: 3
+    SEGMENT_FLUSH: 3
+    $VALUES: 2
+  org/apache/lucene/index/IndexingChain$PerField:
+    invertState: 228035927
+    termsHashPerField: 13440718
+    fieldInfo: 78081
+    schema: 54009
+    first: 54000
+    analyzer: 36009
+    fieldGen: 36009
+    tokenStream: 36000
+    fieldName: 18045
+    norms: 18027
+    $assertionsDisabled: 18019
+    reserved: 18009
+    similarity: 18009
+    next: 54
+    this$0: 27
+    indexCreatedVersionMajor: 18
+    docValuesWriter: 9
+    infoStream: 9
+    pointValuesWriter: 9
+  org/apache/lucene/index/ConcurrentMergeScheduler$1:
+    $assertionsDisabled: 21
+    val$rateLimiter: 11
+    in: 10
+    this$0: 1
+    val$mergeThread: 1
+  org/apache/lucene/document/Document:
+    fields: 36000
+    NO_STRINGS: 1
+  java/nio/file/StandardOpenOption:
+    WRITE: 72
+    CREATE_NEW: 59
+    READ: 54
+    CREATE: 1
+  org/apache/lucene/backward_codecs/lucene90/Lucene90Codec$Mode:
+    BEST_SPEED: 3
+    storedMode: 3
+    BEST_COMPRESSION: 2
+    $VALUES: 1
+  org/apache/lucene/backward_codecs/lucene95/Lucene95Codec$Mode:
+    BEST_SPEED: 3
+    storedMode: 3
+    BEST_COMPRESSION: 2
+    $VALUES: 1
+  org/apache/lucene/codecs/lucene99/Lucene99HnswVectorsFormat:
+    beamWidth: 1
+    flatVectorsFormat: 1
+    maxConn: 1
+    mergeExec: 1
+    numMergeWorkers: 1
+  org/apache/lucene/store/IOContext$Context:
+    FLUSH: 8
+    READ: 5
+    MERGE: 4
+    DEFAULT: 3
+    $VALUES: 1
+  org/apache/lucene/backward_codecs/lucene90/Lucene90Codec$1:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene90/Lucene90Codec$2:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene90/Lucene90Codec$3:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene92/Lucene92HnswVectorsFormat:
+    beamWidth: 1
+    maxConn: 1
+  org/apache/lucene/util/Counter$SerialCounter:
+    count: 64646
+  org/apache/lucene/store/FilterIndexOutput:
+    out: 1077378
+  org/apache/lucene/index/DocumentsWriterDeleteQueue$Node:
+    next: 7
+    item: 4
+  org/apache/lucene/util/packed/PackedInts$Reader:
+    $assertionsDisabled: 19
+  org/apache/lucene/codecs/PostingsFormat:
+    name: 40
+    EMPTY: 1
+  org/apache/lucene/util/compress/LZ4$Table16:
+    table: 323666
+    $assertionsDisabled: 226575
+  org/apache/lucene/store/IOContext:
+    READONCE: 17
+    context: 12
+    $assertionsDisabled: 11
+    flushInfo: 11
+    load: 11
+    mergeInfo: 11
+    readOnce: 11
+    DEFAULT: 8
+    LOAD: 7
+    READ: 5
+  org/apache/lucene/util/packed/PackedLongValues:
+    values: 221
+    pageMask: 21
+    pageShift: 9
+    ramBytesUsed: 9
+    size: 9
+    $assertionsDisabled: 1
+    BASE_RAM_BYTES_USED: 1
+  org/apache/lucene/document/StoredValue:
+    type: 60000
+    stringValue: 36000
+  org/apache/lucene/backward_codecs/lucene70/Lucene70Codec$1:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene70/Lucene70Codec$2:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene87/Lucene87Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    pointsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/index/FieldInfos$FieldDimensions:
+    dimensionCount: 6
+    dimensionNumBytes: 6
+    indexDimensionCount: 6
+  org/apache/lucene/codecs/lucene90/Lucene90NormsProducer$NormsEntry:
+    docsWithFieldOffset: 2410445
+    bytesPerNorm: 2386504
+    normsOffset: 36028
+    numDocsWithField: 28
+    denseRankPower: 21
+    docsWithFieldLength: 21
+    jumpTableEntryCount: 21
+  org/apache/lucene/index/MappedMultiFields$MappedMultiTermsEnum:
+    field: 517433
+    in: 517428
+    mergeState: 6
+  org/apache/lucene/index/FreqProxTermsWriterPerField:
+    $assertionsDisabled: 30064182
+    termFreqAtt: 25451856
+    hasFreq: 14092490
+    freqProxPostingsArray: 13405202
+    fieldState: 6059878
+    offsetAttribute: 18000
+    payloadAttribute: 18000
+    sawPayloads: 18000
+    postingsArray: 511
+    indexOptions: 54
+    bytePool: 9
+    fieldInfo: 9
+    hasOffsets: 9
+    hasProx: 9
+  org/apache/lucene/util/StringHelper:
+    GOOD_FAST_HASH_SEED: 14735883
+    nextId: 40
+    idLock: 14
+    mask128: 14
+    $assertionsDisabled: 1
+  org/apache/lucene/util/fst/Util:
+    $assertionsDisabled: 1
+  org/dacapo/harness/Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG: 2
+    DACAPO_CHECKSUM_RE_PATH: 1
+    WORKING_DIRE: 1
+  org/apache/lucene/index/IndexWriter$Merges:
+    $assertionsDisabled: 9
+    mergesEnabled: 9
+    this$0: 1
+  org/apache/lucene/index/MergePolicy$MergeSpecification:
+    merges: 4
+  org/apache/lucene/util/IOUtils:
+    $assertionsDisabled: 1
+    UTF_8: 1
+  org/apache/lucene/index/MappingMultiPostingsEnum:
+    current: 14925831
+    docIDMerger: 5665184
+    subs: 1205206
+    multiDocsAndPositionsEnum: 1034856
+    allSubs: 687799
+    field: 517430
+  org/apache/lucene/backward_codecs/lucene92/Lucene92Codec$Mode:
+    BEST_SPEED: 3
+    storedMode: 3
+    BEST_COMPRESSION: 2
+    $VALUES: 1
+  org/apache/lucene/index/FieldInfos$FieldVectorProperties:
+    numDimensions: 6
+    similarityFunction: 6
+    vectorEncoding: 6
+  org/apache/lucene/index/Fields:
+    EMPTY_ARRAY: 2
+  org/apache/lucene/index/ReaderSlice:
+    readerIndex: 687775
+    length: 3
+    start: 3
+    EMPTY_ARRAY: 2
+  org/apache/lucene/util/BytesRefBlockPool:
+    byteBlockPool: 26766157
+    $assertionsDisabled: 8675563
+    BASE_RAM_BYTES: 1
+  org/apache/lucene/index/ApproximatePriorityQueue:
+    usedSlots: 36029
+    slots: 18468
+    $assertionsDisabled: 17995
+  org/apache/lucene/util/packed/Packed64:
+    $assertionsDisabled: 514
+    blocks: 507
+    bitsPerValue: 408
+    bpvMinusBlockSize: 265
+    maskRight: 265
+    valueCount: 84
+  org/apache/lucene/backward_codecs/lucene50/compressing/Lucene50CompressingTermVectorsFormat:
+    blockSize: 5
+    chunkSize: 5
+    compressionMode: 5
+    formatName: 5
+    maxDocsPerChunk: 5
+    segmentSuffix: 5
+  org/apache/lucene/util/packed/PackedInts:
+    $assertionsDisabled: 26
+  org/apache/lucene/util/FrequencyTrackingRingBuffer$IntBag:
+    freqs: 513
+    keys: 257
+    mask: 257
+    $assertionsDisabled: 2
+    BASE_RAM_BYTES_USED: 1
+  org/apache/lucene/util/compress/LZ4$HighCompressionHashTable:
+    next: 13646780
+    hashTable: 7828802
+    bytes: 7283920
+    attempts: 6843088
+    chainTable: 4808965
+    $assertionsDisabled: 4099197
+    base: 1677200
+    end: 44356
+  org/apache/lucene/store/IndexOutput:
+    name: 103
+    resourceDescription: 79
+  org/apache/lucene/codecs/MultiLevelSkipListWriter:
+    skipBuffer: 192730
+    windowLength: 34947
+    $assertionsDisabled: 33758
+    numberOfSkipLevels: 12101
+    skipMultiplier: 1190
+    skipInterval: 4
+  org/apache/lucene/store/FSDirectory:
+    pendingDeletes: 414
+    directory: 276
+    nextTempFileCounter: 9
+    opsSinceLastDelete: 1
+  org/apache/lucene/analysis/CharacterUtils:
+    $assertionsDisabled: 26785401
+  org/apache/lucene/util/Counter$AtomicCounter:
+    count: 26550
+  org/apache/lucene/util/fst/FST:
+    outputs: 1766938
+    metadata: 525955
+    $assertionsDisabled: 264338
+    fstReader: 65811
+    BASE_RAM_BYTES_USED: 1
+    DEFAULT_MAX_BLOCK_BITS: 1
+  org/apache/lucene/search/DocIdSetIterator:
+    $assertionsDisabled: 1
+  org/apache/lucene/codecs/lucene94/Lucene94FieldInfosFormat:
+    $assertionsDisabled: 3
+  org/apache/lucene/store/ByteBuffersDataOutput:
+    currentBlock: 12603561
+    blocks: 1899047
+    ramBytesUsed: 762862
+    $assertionsDisabled: 686258
+    blockReuse: 551932
+    blockBits: 519033
+    EMPTY: 286985
+    NO_REUSE: 286913
+    blockAllocate: 264679
+    ALLOCATE_BB_ON_HEAP: 22037
+    maxBitsPerBlock: 22036
+    EMPTY_BYTE_ARRAY: 1
+  org/apache/lucene/codecs/lucene90/LZ4WithPresetDictCompressionMode$LZ4WithPresetDictCompressor:
+    compressed: 284
+    buffer: 196
+    hashTable: 92
+  org/apache/lucene/index/IndexFileDeleter$CommitPoint:
+    commitsToDelete: 1
+    directoryOrig: 1
+    files: 1
+    generation: 1
+    segmentCount: 1
+    segmentsFileName: 1
+    userData: 1
+  org/apache/lucene/util/fst/GrowableByteArrayDataOutput:
+    nextWrite: 3280899
+    bytes: 2393327
+    $assertionsDisabled: 887508
+    BASE_RAM_BYTES_USED: 1
+  org/apache/lucene/index/CachingMergeContext:
+    mergeContext: 38
+    cachedNumDeletesToMerge: 29
+  org/apache/lucene/index/DocValuesType:
+    NONE: 66113
+    BINARY: 5
+    NUMERIC: 5
+    SORTED: 5
+    SORTED_NUMERIC: 5
+    SORTED_SET: 5
+    $VALUES: 4
+  org/apache/lucene/backward_codecs/lucene91/Lucene91Codec$3:
+    this$0: 1
+  org/apache/lucene/util/RamUsageEstimator:
+    NUM_BYTES_OBJECT_REF: 254946
+    NUM_BYTES_OBJECT_ALIGNMENT: 533
+    NUM_BYTES_OBJECT_HEADER: 173
+    NUM_BYTES_ARRAY_HEADER: 97
+    primitiveSizes: 54
+    COMPRESSED_REFS_ENABLED: 2
+    HASHTABLE_RAM_BYTES_PER_ENTRY: 2
+    INTEGER_SIZE: 1
+    JVM_IS_HOTSPOT_64BIT: 1
+    LINKED_HASHTABLE_RAM_BYTES_PER_ENTRY: 1
+    LONG_SIZE: 1
+    STRING_SIZE: 1
+  org/apache/lucene/backward_codecs/lucene91/Lucene91Codec$2:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene91/Lucene91Codec$1:
+    this$0: 1
+  org/apache/lucene/index/SegmentCoreReaders$1:
+    this$0: 3
+  org/apache/lucene/index/FreqProxFields$FreqProxDocsEnum:
+    docID: 19896853
+    reader: 9948431
+    readTermFreq: 4630334
+    $assertionsDisabled: 3942554
+    ended: 2751088
+    postingsArray: 1375550
+    termID: 1375544
+    terms: 687781
+  org/apache/lucene/index/IndexingChain$3:
+    $SwitchMap$org$apache$lucene$document$InvertableType: 18003
+    $SwitchMap$org$apache$lucene$index$DocValuesType: 16
+    $SwitchMap$org$apache$lucene$index$VectorEncoding: 3
+  org/apache/lucene/backward_codecs/lucene95/Lucene95Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultKnnVectorsFormat: 1
+    defaultPostingsFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    knnVectorsFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/index/IndexingChain$IntBlockAllocator:
+    bytesUsed: 88
+  org/apache/lucene/codecs/lucene94/Lucene94FieldInfosFormat$1:
+    $SwitchMap$org$apache$lucene$index$DocValuesType: 19
+    $SwitchMap$org$apache$lucene$index$IndexOptions: 18
+  org/apache/lucene/index/MergeScheduler:
+    infoStream: 47
+  org/apache/lucene/util/ByteBlockPool$Allocator:
+    blockSize: 10
+  org/apache/lucene/util/StringSorter:
+    scratchBytes1: 10803817
+    scratch1: 5401913
+    scratchBytes2: 3750425
+    scratch2: 1875217
+    pivot: 647245
+    pivotBuilder: 22921
+    cmp: 27
+  org/apache/lucene/index/IndexFileDeleter:
+    VERBOSE_REF_COUNTS: 115
+    fileDeleter: 81
+    infoStream: 58
+    $assertionsDisabled: 37
+    lastFiles: 22
+    commits: 5
+    commitsToDelete: 4
+    directory: 2
+    directoryOrig: 2
+    policy: 2
+    startingCommitDeleted: 1
+    writer: 1
+  org/apache/lucene/search/DocIdSet:
+    EMPTY: 1
+  org/apache/lucene/index/FilterLeafReader$FilterFields:
+    in: 14
+  org/apache/lucene/internal/tests/TestSecrets:
+    cmsAccess: 2
+    indexPackageAccess: 2
+    indexWriterAccess: 2
+    segmentReaderAccess: 2
+  org/dacapo/parser/SimpleCharStream:
+    bufpos: 7756
+    column: 4150
+    inBuf: 1811
+    bufcolumn: 1550
+    bufline: 1550
+    buffer: 1444
+    line: 1413
+    prevCharIsLF: 1412
+    maxNextCharInd: 1365
+    prevCharIsCR: 1328
+    tokenBegin: 817
+    bufsize: 53
+    tabSize: 23
+    available: 5
+    inputStream: 4
+    trackLineColumn: 1
+  org/apache/lucene/backward_codecs/lucene90/Lucene90FieldInfosFormat:
+    $assertionsDisabled: 3
+  org/apache/lucene/codecs/lucene99/Lucene99PostingsWriter:
+    docBufferUpto: 51329087
+    docCount: 30226107
+    lastDocID: 20965597
+    norms: 19726500
+    writeFreqs: 19252503
+    $assertionsDisabled: 11709867
+    lastBlockDocID: 10533504
+    competitiveFreqNormAccumulator: 10533368
+    docDeltaBuffer: 10499751
+    fieldHasNorms: 9260662
+    lastPosition: 9260650
+    lastStartOffset: 9260650
+    writePositions: 4820812
+    lastState: 4282890
+    docStartFP: 2422481
+    docOut: 1599859
+    skipWriter: 1251054
+    payStartFP: 1205200
+    posBufferUpto: 1205200
+    posStartFP: 1205200
+    emptyState: 38829
+    posOut: 33913
+    forDeltaUtil: 33901
+    lastBlockPayFP: 33757
+    lastBlockPayloadByteUpto: 33757
+    lastBlockPosBufferUpto: 33757
+    lastBlockPosFP: 33757
+    payOut: 16
+    writeOffsets: 12
+    writePayloads: 12
+    freqBuffer: 4
+    offsetLengthBuffer: 4
+    offsetStartDeltaBuffer: 4
+    payloadBytes: 4
+    payloadLengthBuffer: 4
+    pforUtil: 4
+    posDeltaBuffer: 4
+  org/apache/lucene/util/packed/PackedInts$1:
+    $SwitchMap$org$apache$lucene$util$packed$PackedInts$Format: 28
+  org/apache/lucene/codecs/lucene90/compressing/Lucene90CompressingStoredFieldsReader:
+    fieldsStream: 30
+    version: 27
+    indexReader: 24
+    numDirtyChunks: 24
+    numDirtyDocs: 24
+    maxPointer: 21
+    chunkSize: 18
+    closed: 18
+    compressionMode: 18
+    numChunks: 18
+    decompressor: 15
+    fieldInfos: 15
+    numDocs: 15
+    merging: 12
+    state: 12
+    $assertionsDisabled: 7
+  org/apache/lucene/index/CompositeReaderContext:
+    $assertionsDisabled: 3
+    leaves: 3
+    isTopLevel: 2
+    children: 1
+    reader: 1
+  org/dacapo/harness/LatencyReporter:
+    callback: 2
+    globalIdx: 1
+    timerBase: 1
+  org/apache/lucene/analysis/Tokenizer:
+    input: 26815401
+    inputPending: 24001
+    ILLEGAL_STATE_READER: 18003
+  org/apache/lucene/util/IntsRefBuilder:
+    ref: 3822568
+    $assertionsDisabled: 101618
+  org/apache/lucene/util/ArrayUtil:
+    $assertionsDisabled: 21899472
+    MAX_ARRAY_LENGTH: 82865
+  java/util/concurrent/TimeUnit:
+    MILLISECONDS: 2
+  org/apache/lucene/analysis/tokenattributes/PackedTokenAttributeImpl:
+    positionIncrement: 40286107
+    endOffset: 40274100
+    startOffset: 40256100
+    termFrequency: 39550335
+    type: 26821407
+    positionLength: 13428707
+  java/lang/Long:
+    TYPE: 2
+  org/apache/lucene/store/BufferedChecksumIndexInput:
+    main: 16035
+    digest: 15759
+  org/apache/lucene/index/LeafReaderContext:
+    reader: 22
+    docBase: 7
+    isTopLevel: 7
+    leaves: 7
+    ord: 7
+    $assertionsDisabled: 1
+  org/apache/lucene/codecs/lucene99/Lucene99SegmentInfoFormat:
+    $assertionsDisabled: 5
+  org/apache/lucene/util/packed/DirectMonotonicReader$Meta:
+    numBlocks: 96
+    bpvs: 66
+    avgs: 30
+    mins: 30
+    offsets: 30
+    blockShift: 24
+    BASE_RAM_BYTES_USED: 1
+  org/apache/lucene/util/ArrayTimSorter:
+    arr: 676738
+    comparator: 350926
+    tmp: 114081
+  org/apache/lucene/index/CompositeReader:
+    readerContext: 6
+    $assertionsDisabled: 2
+  org/apache/lucene/index/DocumentsWriterDeleteQueue$DeleteSlice:
+    sliceTail: 12034
+    sliceHead: 6021
+    $assertionsDisabled: 8
+  org/apache/lucene/document/Field$StringTokenStream:
+    value: 60006
+    used: 48006
+    offsetAttribute: 24006
+    termAttribute: 12006
+  org/apache/lucene/index/SegmentCoreReaders$2:
+    this$0: 3
+  org/apache/lucene/store/NativeFSLockFactory:
+    LOCK_HELD: 106
+    INSTANCE: 2
+  org/apache/lucene/util/BitUtil:
+    VH_LE_INT: 15453203
+    VH_NATIVE_INT: 7571075
+    VH_BE_LONG: 405055
+    VH_LE_LONG: 383421
+    VH_BE_INT: 251057
+    VH_BE_SHORT: 179259
+    VH_LE_SHORT: 33
+    NATIVE_BYTE_ORDER: 6
+    VH_BE_DOUBLE: 1
+    VH_BE_FLOAT: 1
+    VH_LE_DOUBLE: 1
+    VH_LE_FLOAT: 1
+    VH_NATIVE_DOUBLE: 1
+    VH_NATIVE_FLOAT: 1
+    VH_NATIVE_LONG: 1
+    VH_NATIVE_SHORT: 1
+  org/apache/lucene/index/SegmentCoreReaders$3:
+    cacheKey: 3
+    this$0: 3
+  org/apache/lucene/codecs/perfield/PerFieldMergeState:
+    in: 15
+    orgFieldsProducers: 14
+    orgFieldInfos: 11
+    orgMergeFieldInfos: 3
+  org/apache/lucene/util/Constants:
+    JRE_IS_64BIT: 41429
+    OS_NAME: 6
+    HAS_SSE4A: 5
+    OS_ARCH: 5
+    HAS_FMA: 3
+    WINDOWS: 3
+    IS_CLIENT_VM: 2
+    FREE_BSD: 1
+    HAS_FAST_SCALAR_FMA: 1
+    HAS_FAST_VECTOR_FMA: 1
+    IS_HOTSPOT_VM: 1
+    IS_JVMCI_VM: 1
+    JAVA_VENDOR: 1
+    JAVA_VERSION: 1
+    JVM_NAME: 1
+    JVM_SPEC_VERSION: 1
+    JVM_VENDOR: 1
+    JVM_VERSION: 1
+    LINUX: 1
+    MAC_OS_X: 1
+    MAX_VECTOR_SIZE: 1
+    OS_VERSION: 1
+    SUN_OS: 1
+  org/apache/lucene/backward_codecs/lucene90/Lucene90Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultKnnVectorsFormat: 1
+    defaultPostingsFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    knnVectorsFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/index/MergeRateLimiter:
+    minPauseCheckBytes: 20
+    lastNS: 16
+    mbPerSec: 11
+    mergeProgress: 11
+    MIN_PAUSE_NS: 9
+    totalBytesWritten: 9
+    $assertionsDisabled: 3
+    MAX_PAUSE_NS: 1
+  org/apache/lucene/index/FreqProxFields:
+    fields: 24
+  org/apache/lucene/index/LogByteSizeMergePolicy:
+    maxMergeSize: 1
+    maxMergeSizeForForcedMerge: 1
+    minMergeSize: 1
+  org/apache/lucene/store/MemorySegmentIndexInput:
+    curPosition: 6367372
+    curSegment: 4255789
+    LAYOUT_LE_INT: 2006909
+    LAYOUT_BYTE: 1418967
+    LAYOUT_LE_SHORT: 20648
+    LAYOUT_LE_LONG: 13876
+    length: 563
+    chunkSizePower: 552
+    chunkSizeMask: 427
+    segments: 384
+    arena: 363
+    curSegmentIndex: 177
+    $assertionsDisabled: 53
+    LAYOUT_LE_FLOAT: 1
+  org/apache/commons/cli/Options:
+    shortOpts: 71
+    longOpts: 70
+    optionGroups: 4
+    requiredOpts: 3
+  org/apache/lucene/codecs/lucene99/Lucene99SkipWriter:
+    initialized: 2456238
+    fieldHasPositions: 1252236
+    docOut: 1238961
+    lastDocFP: 1217281
+    freqNormOut: 139776
+    $assertionsDisabled: 116911
+    curCompetitiveFreqNorms: 114582
+    curDoc: 103643
+    curDocPointer: 103643
+    lastSkipDoc: 81971
+    lastSkipDocPointer: 81971
+    numberOfSkipLevels: 34943
+    curPayPointer: 33757
+    curPayloadByteUpto: 33757
+    curPosBufferUpto: 33757
+    curPosPointer: 33757
+    fieldHasOffsets: 12
+    fieldHasPayloads: 12
+    payOut: 4
+    posOut: 4
+  org/apache/lucene/index/ByteSliceReader:
+    upto: 19625399
+    $assertionsDisabled: 16277110
+    bufferOffset: 6324882
+    endIndex: 6324882
+    buffer: 5515046
+    limit: 5515046
+    bufferUpto: 2710035
+    level: 1334491
+    pool: 903345
+  org/apache/lucene/util/fst/FSTCompiler$Arc:
+    output: 1995778
+    nextFinalOutput: 688555
+    isFinal: 560100
+    target: 560100
+    label: 415190
+  org/apache/lucene/index/SegmentMerger:
+    mergeState: 34
+    fieldInfosBuilder: 11
+    codec: 6
+    directory: 5
+    context: 4
+    $assertionsDisabled: 3
+  org/apache/lucene/codecs/lucene90/blocktree/Lucene90BlockTreeTermsWriter:
+    $assertionsDisabled: 43875
+    version: 43866
+    metaOut: 36
+    termsOut: 20
+    fieldInfos: 16
+    indexOut: 16
+    fields: 12
+    closed: 8
+    postingsWriter: 8
+    maxDoc: 4
+    maxItemsInBlock: 4
+    minItemsInBlock: 4
+    scratchBytes: 4
+    scratchIntsRef: 4
+    EMPTY_BYTES_REF: 1
+  org/apache/lucene/util/BytesRef:
+    bytes: 115608135
+    length: 103393975
+    offset: 71103131
+    $assertionsDisabled: 287160
+    EMPTY_BYTES: 127311
+  org/apache/lucene/util/packed/PackedInts$MutableImpl:
+    valueCount: 84
+    $assertionsDisabled: 26
+    bitsPerValue: 25
+  org/apache/lucene/util/GroupVIntUtil:
+    MASKS: 2006909
+  org/apache/lucene/util/fst/FSTCompiler$Builder:
+    dataOutput: 65793
+    suffixRAMLimitMB: 65793
+    version: 65793
+    allowFixedLengthArcs: 43862
+    directAddressingMaxOversizingFactor: 43862
+    inputType: 43862
+    outputs: 43862
+  org/apache/lucene/util/fst/BitTableUtil:
+    $assertionsDisabled: 22717
+  org/apache/lucene/index/MergePolicy$OneMergeProgress$PauseReason:
+    $VALUES: 3
+    OTHER: 2
+    PAUSED: 2
+    STOPPED: 2
+  org/apache/lucene/util/AttributeFactory$DefaultAttributeFactory$1:
+    this$0: 1
+  org/apache/lucene/codecs/lucene90/Lucene90NormsProducer:
+    norms: 1205240
+    maxDoc: 1205219
+    dataInputs: 1181257
+    merging: 1181257
+    data: 52
+    disiInputs: 7
+    disiJumpTables: 7
+  org/apache/lucene/index/IndexWriterConfig$OpenMode:
+    CREATE: 3
+    APPEND: 2
+    CREATE_OR_APPEND: 2
+    $VALUES: 1
+  org/apache/lucene/analysis/TokenFilter:
+    input: 36002
+  org/apache/lucene/index/DocIDMerger$SequentialDocIDMerger:
+    current: 11213660
+    subs: 1893018
+    nextIndex: 1716285
+  org/apache/lucene/store/OutputStreamIndexOutput$XBufferedOutputStream:
+    count: 1534032
+    buf: 767016
+  org/apache/lucene/util/InfoStream:
+    NO_OUTPUT: 2
+    defaultInfoStream: 2
+  org/apache/lucene/store/ByteBuffersDataInput:
+    pos: 1360
+    blocks: 1163
+    blockBits: 352
+    blockMask: 344
+    offset: 24
+    length: 16
+    floatBuffers: 8
+    longBuffers: 8
+  org/apache/lucene/index/FilterLeafReader$FilterTerms:
+    in: 3
+  org/apache/lucene/codecs/lucene99/Lucene99PostingsFormat:
+    maxTermBlockSize: 6
+    minTermBlockSize: 6
+  org/apache/lucene/index/IndexReaderContext:
+    docBaseInParent: 8
+    identity: 8
+    isTopLevel: 8
+    ordInParent: 8
+    parent: 8
+  org/apache/lucene/codecs/lucene90/blocktree/Lucene90BlockTreeTermsWriter$PendingTerm:
+    termBytes: 2410400
+    state: 1205200
+  org/apache/lucene/store/ByteArrayDataInput:
+    pos: 7696898
+    bytes: 3192689
+    limit: 88980
+  org/apache/lucene/util/fst/OffHeapFSTStore:
+    in: 27
+    numBytes: 18
+    offset: 18
+    BASE_RAM_BYTES_USED: 1
+  org/apache/lucene/index/IndexWriter$EventQueue:
+    permits: 25
+    queue: 19
+    closed: 12
+    $assertionsDisabled: 8
+    writer: 8
+  org/apache/lucene/index/TieredMergePolicy:
+    $assertionsDisabled: 1
+    deletesPctAllowed: 1
+    floorSegmentBytes: 1
+    forceMergeDeletesPctAllowed: 1
+    maxMergeAtOnce: 1
+    maxMergedSegmentBytes: 1
+    segsPerTier: 1
+  org/apache/lucene/util/compress/LowercaseAsciiCompression:
+    $assertionsDisabled: 68188
+  org/apache/lucene/codecs/compressing/MatchingReaders:
+    matchingReaders: 7
+    count: 1
+  org/apache/lucene/index/LogMergePolicy$SegmentInfoAndLevel:
+    level: 18
+    info: 7
+  org/apache/lucene/index/MappingMultiPostingsEnum$MappingPostingsSub:
+    postings: 6005869
+    mappedDocID: 4630325
+  org/apache/lucene/codecs/lucene99/Lucene99Codec$Mode:
+    BEST_SPEED: 3
+    storedMode: 3
+    BEST_COMPRESSION: 2
+    $VALUES: 1
+  org/apache/lucene/index/DocumentsWriterPerThread:
+    $assertionsDisabled: 25920
+    numDocsInRAM: 24018
+    indexingChain: 18634
+    pendingUpdates: 12649
+    deleteDocIDs: 12631
+    deleteSlice: 12015
+    lock: 12005
+    aborted: 12004
+    flushPending: 7905
+    lastCommittedBytesUsed: 7278
+    deleteQueue: 6006
+    abortingException: 6003
+    enableTestPoints: 6003
+    parentField: 6003
+    pendingNumDocs: 6003
+    infoStream: 24
+    directory: 18
+    segmentInfo: 18
+    filesToDelete: 12
+    codec: 9
+    indexWriterConfig: 9
+    fieldInfos: 6
+    hasFlushed: 6
+    numDeletedDocIds: 6
+    nf: 3
+  org/apache/lucene/store/MMapDirectory:
+    PROVIDER: 56
+    chunkSizePower: 53
+    preload: 53
+    directory: 52
+    $assertionsDisabled: 3
+    DEFAULT_MAX_CHUNK_SIZE: 2
+    NO_FILES: 2
+    UNMAP_SUPPORTED: 2
+    ALL_FILES: 1
+    BASED_ON_LOAD_IO_CONTEXT: 1
+    LOG: 1
+    UNMAP_NOT_SUPPORTED_REASON: 1
+  org/apache/lucene/util/AttributeSource$State:
+    attribute: 13428707
+    next: 13428700
+  org/apache/lucene/util/BytesRefBuilder:
+    ref: 121083310
+    $assertionsDisabled: 14131299
+  org/apache/lucene/util/InfoStream$NoOutput:
+    $assertionsDisabled: 1
+  org/apache/lucene/util/LongValues:
+    IDENTITY: 1
+    ZEROES: 1
+  org/apache/lucene/analysis/StopFilter:
+    termAtt: 26785401
+    stopWords: 13392701
+  org/apache/lucene/store/FilterDirectory:
+    in: 260
+  org/apache/lucene/util/packed/PackedInts$Mutable:
+    $assertionsDisabled: 10
+  org/apache/lucene/codecs/lucene99/ForUtil:
+    tmp: 1173856
+    MASKS8: 90329
+    MASK8_2: 22024
+    MASK8_1: 19153
+    MASK8_3: 18897
+    MASKS16: 18822
+    MASK8_4: 4427
+    MASK8_6: 3672
+    MASK8_7: 3033
+    MASK8_5: 2717
+    MASKS32: 56
+    MASK16_7: 25
+    MASK16_1: 17
+    MASK16_2: 17
+    MASK16_3: 17
+    MASK16_4: 17
+    MASK16_5: 17
+    MASK16_6: 17
+    MASK16_9: 5
+    MASK16_10: 1
+    MASK16_11: 1
+    MASK16_12: 1
+    MASK16_13: 1
+    MASK16_14: 1
+    MASK16_15: 1
+    MASK32_1: 1
+    MASK32_10: 1
+    MASK32_11: 1
+    MASK32_12: 1
+    MASK32_13: 1
+    MASK32_14: 1
+    MASK32_15: 1
+    MASK32_17: 1
+    MASK32_18: 1
+    MASK32_19: 1
+    MASK32_2: 1
+    MASK32_20: 1
+    MASK32_21: 1
+    MASK32_22: 1
+    MASK32_23: 1
+    MASK32_24: 1
+    MASK32_3: 1
+    MASK32_4: 1
+    MASK32_5: 1
+    MASK32_6: 1
+    MASK32_7: 1
+    MASK32_8: 1
+    MASK32_9: 1
+  org/apache/lucene/util/packed/DeltaPackedLongValues$Builder:
+    mins: 102
+    ramBytesUsed: 18
+    values: 18
+    valuesOff: 18
+    BASE_RAM_BYTES_USED: 10
+    pageMask: 9
+    pageShift: 9
+    pending: 9
+    size: 9
+  org/apache/lucene/codecs/lucene99/ForDeltaUtil:
+    forUtil: 47728
+    $assertionsDisabled: 33841
+    IDENTITY_PLUS_ONE: 155
+  org/apache/lucene/util/PriorityQueue:
+    heap: 7148683
+    size: 3192243
+    maxSize: 8
+  java/lang/Integer:
+    TYPE: 1
+  org/apache/lucene/index/LeafMetaData:
+    minVersion: 15
+    createdVersionMajor: 13
+    hasBlocks: 7
+    sort: 7
+  org/apache/lucene/util/packed/DirectMonotonicWriter:
+    bufferSize: 312
+    buffer: 304
+    count: 88
+    previous: 88
+    meta: 40
+    data: 24
+    baseDataPointer: 16
+    finished: 16
+    numValues: 16
+    $assertionsDisabled: 9
+  org/apache/lucene/index/IndexReader:
+    refCount: 67
+    closedByChild: 49
+    parentReaders: 14
+    closed: 8
+  org/apache/lucene/backward_codecs/lucene80/Lucene80Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/codecs/lucene90/blocktree/FieldReader:
+    fieldInfo: 1579887
+    parent: 1375661
+    index: 63
+    rootCode: 18
+    $assertionsDisabled: 10
+    docCount: 9
+    maxTerm: 9
+    minTerm: 9
+    numTerms: 9
+    rootBlockFP: 9
+    sumDocFreq: 9
+    sumTotalTermFreq: 9
+  org/apache/lucene/codecs/lucene99/Lucene99PostingsFormat$IntBlockTermState:
+    singletonDocID: 8227474
+    docStartFP: 5015175
+    skipOffset: 5003307
+    docFreq: 2920002
+    lastPosBlockOffset: 2410482
+    payStartFP: 1227335
+    posStartFP: 1227335
+  org/apache/lucene/index/FlushByRamOrCountsPolicy:
+    indexWriterConfig: 1896
+    infoStream: 2
+  org/apache/lucene/util/packed/PackedLongValues$Iterator:
+    pOff: 72112
+    currentCount: 24112
+    currentValues: 24112
+    $assertionsDisabled: 24101
+    vOff: 424
+    this$0: 224
+  org/apache/lucene/util/BytesRefHash:
+    ids: 36194722
+    $assertionsDisabled: 28828875
+    bytesStart: 24033380
+    pool: 23327115
+    hashMask: 14696026
+    hashSize: 5325214
+    count: 3456905
+    hashHalfSize: 687907
+    bytesStartArray: 511
+    bytesUsed: 252
+    lastCount: 27
+    BASE_RAM_BYTES: 1
+  org/dacapo/harness/Benchmark:
+    stats: 48
+    config: 27
+    data: 13
+    scratch: 9
+    verbose: 9
+    err: 7
+    jarDeps: 7
+    loader: 7
+    out: 7
+    validateOutput: 6
+    validationReport: 6
+    datDeps: 5
+    iteration: 5
+    printStats: 4
+    savedClassLoader: 4
+    savedErr: 4
+    savedOut: 4
+    silentErr: 4
+    silentOut: 4
+    preIterationGC: 3
+    preserve: 3
+    savedSystemProperties: 3
+    timeoutDialation: 3
+    validate: 3
+    watchdog: 3
+    dumpLatencyCSV: 2
+    dumpLatencyHDR: 2
+    dumpLatencySmoothing: 2
+    iterations: 2
+    latencyBaseFileName: 2
+    dataSet: 1
+    valRepFile: 1
+  org/apache/lucene/index/MergeState:
+    docMaps: 24
+    mergeFieldInfos: 24
+    fieldInfos: 23
+    fieldsProducers: 18
+    storedFieldsReaders: 18
+    docValuesProducers: 16
+    normsProducers: 13
+    infoStream: 11
+    needsIndexSort: 8
+    maxDocs: 7
+    segmentInfo: 7
+    liveDocs: 3
+  java/io/File:
+    separator: 2
+  org/apache/lucene/backward_codecs/lucene94/Lucene94HnswVectorsFormat:
+    beamWidth: 1
+    maxConn: 1
+  org/apache/lucene/codecs/compressing/CompressionMode$4:
+    $assertionsDisabled: 1
+  org/dacapo/parser/Config$Size:
+    outputFiles: 53
+    this$0: 12
+    threadLimit: 6
+    args: 4
+    nThreads: 3
+    name: 3
+  org/apache/lucene/codecs/lucene99/PForUtil:
+    IDENTITY_PLUS_ONE: 129
+    forUtil: 13
+    $assertionsDisabled: 1
+  org/apache/lucene/codecs/lucene99/Lucene99PostingsReader$BlockDocsEnum:
+    docBufferUpto: 22661833
+    doc: 11323966
+    docBuffer: 7613531
+    docFreq: 4140533
+    blockUpto: 2792791
+    indexHasFreq: 2281515
+    accum: 1607644
+    $assertionsDisabled: 1403347
+    isFreqsRead: 1389445
+    freqBuffer: 1375553
+    singletonDocID: 1171246
+    totalTermFreq: 1171246
+    docTermStartFP: 892070
+    needsFreq: 892070
+    startDocIn: 687778
+    indexHasPayloads: 687772
+    indexHasPos: 687772
+    nextSkipDoc: 687772
+    skipOffset: 687772
+    skipped: 687772
+    docIn: 626810
+    forDeltaUtil: 13910
+    forUtil: 27
+    indexHasOffsets: 9
+    pforUtil: 9
+    this$0: 9
+  org/apache/lucene/index/MappedMultiFields$MappedMultiTerms:
+    field: 6
+    mergeState: 6
+    in: 3
+  org/apache/lucene/index/MultiPostingsEnum$EnumWithSlice:
+    slice: 2751097
+    postingsEnum: 2751088
+  javax/xml/bind/DatatypeConverterImpl:
+    hexCode: 289
+    $assertionsDisabled: 1
+    datatypeFactory: 1
+    decodeMap: 1
+    encodeMap: 1
+    theInstance: 1
+  org/apache/lucene/codecs/DocValuesFormat:
+    name: 24
+  java/lang/Double:
+    TYPE: 1
+  org/apache/lucene/index/IndexOptions:
+    DOCS_AND_FREQS_AND_POSITIONS: 2063469
+    NONE: 1289482
+    DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS: 687871
+    DOCS_AND_FREQS: 687814
+    DOCS: 234367
+    $VALUES: 2
+  org/apache/lucene/index/Impact:
+    freq: 139772
+    norm: 139772
+  org/apache/lucene/util/packed/PackedInts$Format$2:
+    $assertionsDisabled: 1
+  org/apache/lucene/util/fst/FST$Arc:
+    flags: 1606999
+    label: 696533
+    nodeFlags: 658856
+    output: 500905
+    nextArc: 476916
+    target: 463599
+    nextFinalOutput: 261421
+    bytesPerArc: 148548
+    arcIdx: 75196
+    presenceIndex: 47732
+    numArcs: 27493
+    posArcsStart: 26555
+    firstLabel: 25554
+    bitTableStart: 25016
+  org/apache/lucene/index/MultiPostingsEnum:
+    subs: 1892996
+    subPostingsEnums: 1375547
+    numSubs: 1034856
+    doc: 517431
+    current: 517428
+    parent: 517428
+    upto: 517428
+    $assertionsDisabled: 1
+  org/apache/lucene/codecs/Codec:
+    name: 23
+  org/apache/lucene/backward_codecs/lucene94/Lucene94Codec$1:
+    this$0: 1
+  org/apache/lucene/util/ByteBlockPool$DirectTrackingAllocator:
+    blockSize: 1008
+    bytesUsed: 514
+  org/apache/lucene/index/FreqProxFields$FreqProxTermsEnum:
+    ord: 3438896
+    postingsArray: 1375559
+    scratch: 1375553
+    sortedTermIDs: 1375553
+    numTerms: 687790
+    terms: 687790
+    termsPool: 687781
+    $assertionsDisabled: 10
+  org/apache/lucene/backward_codecs/lucene94/Lucene94Codec$2:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene94/Lucene94Codec$3:
+    this$0: 1
+  org/apache/lucene/index/BufferedUpdates:
+    deleteTerms: 13284
+    bytesUsed: 13275
+    fieldUpdatesBytesUsed: 13275
+    deleteQueries: 24
+    numFieldUpdates: 24
+    fieldUpdates: 11
+    segmentName: 7
+    BYTES_PER_DEL_QUERY: 1
+    MAX_INT: 1
+  org/apache/lucene/util/fst/FST$Arc$BitTable:
+    $assertionsDisabled: 22717
+  org/apache/lucene/index/IndexWriter$IndexWriterMergeSource:
+    writer: 11
+    $assertionsDisabled: 2
+  org/apache/lucene/util/FileDeleter$MsgType:
+    REF: 273
+    FILE: 45
+    $VALUES: 1
+  org/apache/lucene/codecs/lucene90/compressing/Lucene90CompressingStoredFieldsWriter$CompressingStoredFieldsMergeSub:
+    docID: 24015
+    maxDoc: 6017
+    readerIndex: 9
+    mergeStrategy: 6
+  org/apache/commons/cli/Parser:
+    options: 7
+    cmd: 4
+    requiredOptions: 2
+  org/apache/lucene/index/FilterLeafReader$FilterTermsEnum:
+    in: 517434
+  org/apache/lucene/util/fst/FST$FSTMetadata:
+    inputType: 350387
+    startNode: 87751
+    numBytes: 65811
+    outputs: 65811
+    emptyOutput: 43973
+    version: 21940
+  org/apache/lucene/index/SegmentCommitInfo:
+    info: 180
+    sizeInBytes: 67
+    delGen: 51
+    fieldInfosFiles: 49
+    delCount: 45
+    dvUpdatesFiles: 44
+    softDelCount: 27
+    id: 25
+    bufferedDeletesGen: 23
+    nextWriteDelGen: 19
+    nextWriteDocValuesGen: 19
+    nextWriteFieldInfosGen: 19
+    fieldInfosGen: 18
+    docValuesGen: 15
+    $assertionsDisabled: 2
+  org/apache/lucene/codecs/lucene99/Lucene99PostingsReader:
+    $assertionsDisabled: 697029
+    docIn: 687784
+    payIn: 9
+    posIn: 9
+    version: 3
+  org/apache/lucene/backward_codecs/lucene91/Lucene91Codec$Mode:
+    BEST_SPEED: 3
+    storedMode: 3
+    BEST_COMPRESSION: 2
+    $VALUES: 1
+  org/dacapo/parser/ConfigFile:
+    token: 668
+    jj_ntk: 309
+    jj_gen: 220
+    token_source: 98
+    jj_nt: 74
+    jj_la1: 47
+    jj_input_stream: 2
+    jj_expentries: 1
+    jj_kind: 1
+    jj_la1_0: 1
+    jj_la1_1: 1
+  org/apache/lucene/backward_codecs/lucene90/Lucene90HnswVectorsFormat:
+    beamWidth: 1
+    maxConn: 1
+  org/apache/lucene/backward_codecs/lucene86/Lucene86Codec:
+    compoundFormat: 1
+    defaultDVFormat: 1
+    defaultFormat: 1
+    docValuesFormat: 1
+    fieldInfosFormat: 1
+    liveDocsFormat: 1
+    normsFormat: 1
+    pointsFormat: 1
+    postingsFormat: 1
+    segmentInfosFormat: 1
+    storedFieldsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/codecs/lucene90/Lucene90CompoundReader$FileEntry:
+    length: 90
+    offset: 90
+  org/apache/lucene/codecs/lucene90/compressing/FieldsIndexReader:
+    indexInput: 45
+    docsStartPointer: 33
+    startPointersStartPointer: 33
+    numChunks: 29
+    docsEndPointer: 24
+    docsMeta: 24
+    startPointersEndPointer: 24
+    startPointersMeta: 24
+    maxDoc: 23
+    blockShift: 21
+    maxPointer: 18
+    docs: 17
+    startPointers: 17
+  org/apache/lucene/codecs/lucene90/compressing/Lucene90CompressingStoredFieldsWriter$MergeStrategy:
+    BULK: 8
+    VISITOR: 5
+    DOC: 2
+    $VALUES: 1
+  org/apache/lucene/backward_codecs/lucene86/Lucene86Codec$1:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene86/Lucene86Codec$2:
+    this$0: 1
+  org/apache/lucene/index/SegmentInfos:
+    segments: 105
+    indexCreatedVersionMajor: 21
+    version: 21
+    generation: 15
+    $assertionsDisabled: 10
+    lastGeneration: 9
+    userData: 7
+    pendingCommit: 4
+    counter: 2
+  org/apache/lucene/codecs/PushPostingsWriterBase:
+    postingsEnum: 12876250
+    writeFreqs: 10465874
+    writePositions: 9260662
+    fieldInfo: 2410412
+    enumFlags: 1205212
+    $assertionsDisabled: 1205201
+    indexOptions: 48
+    writeOffsets: 12
+    writePayloads: 12
+  org/apache/lucene/util/SmallFloat:
+    NUM_FREE_VALUES: 30667
+    MAX_INT4: 2
+  org/apache/lucene/util/HotspotVMOptions:
+    ACCESSOR: 7
+    IS_HOTSPOT_VM: 3
+  org/apache/lucene/analysis/TokenStream:
+    $assertionsDisabled: 10
+    DEFAULT_TOKEN_ATTRIBUTE_FACTORY: 8
+  org/apache/lucene/index/OrdTermState:
+    $assertionsDisabled: 1
+  org/apache/lucene/backward_codecs/lucene94/Lucene94Codec$Mode:
+    BEST_SPEED: 3
+    storedMode: 3
+    BEST_COMPRESSION: 2
+    $VALUES: 1
+  org/apache/lucene/util/FileDeleter:
+    messenger: 315
+    refCounts: 180
+    $assertionsDisabled: 79
+    directory: 40
+    ZERO_REF: 1
+  org/apache/lucene/util/Sorter:
+    pivotIndex: 104918
+    $assertionsDisabled: 1
+  org/apache/lucene/index/MappedMultiFields:
+    mergeState: 4
+    in: 3
+  java/nio/channels/FileChannel$MapMode:
+    READ_ONLY: 52
+  org/apache/lucene/backward_codecs/lucene50/Lucene50StoredFieldsFormat$2:
+    $assertionsDisabled: 1
+  org/apache/lucene/util/Accountable:
+    NULL_ACCOUNTABLE: 10
+  org/apache/lucene/index/SegmentDocValues:
+    genDVProducers: 3
+    $assertionsDisabled: 1
+  java/nio/charset/StandardCharsets:
+    UTF_8: 217
+  org/apache/lucene/index/FieldInfos:
+    byNumber: 127
+    byName: 96
+    values: 41
+    hasNorms: 24
+    hasDocValues: 20
+    hasPostings: 20
+    hasProx: 20
+    hasPointValues: 17
+    hasVectorValues: 17
+    hasVectors: 17
+    parentField: 16
+    softDeletesField: 16
+    hasFreq: 13
+    hasOffsets: 13
+    hasPayloads: 13
+    EMPTY: 1
+  org/apache/lucene/codecs/lucene99/Lucene99Codec$3:
+    this$0: 1
+  org/apache/lucene/codecs/StoredFieldsWriter:
+    $assertionsDisabled: 1
+  org/apache/lucene/util/MergedIterator:
+    top: 96
+    queue: 82
+    numTop: 72
+    current: 18
+    removeDuplicates: 8
+    $assertionsDisabled: 7
+  org/apache/lucene/codecs/lucene99/Lucene99Codec$2:
+    this$0: 1
+  org/apache/lucene/util/ByteBlockPool:
+    buffers: 28627814
+    byteUpto: 7956105
+    buffer: 2022767
+    byteOffset: 1807714
+    bufferUpto: 2039
+    allocator: 520
+    $assertionsDisabled: 1
+    BASE_RAM_BYTES: 1
+  org/apache/lucene/codecs/lucene99/Lucene99Codec:
+    defaultPostingsFormat: 13
+    normsFormat: 12
+    fieldInfosFormat: 8
+    postingsFormat: 8
+    storedFieldsFormat: 8
+    compoundFormat: 7
+    segmentInfosFormat: 5
+    defaultDVFormat: 1
+    defaultKnnVectorsFormat: 1
+    docValuesFormat: 1
+    knnVectorsFormat: 1
+    liveDocsFormat: 1
+    vectorsFormat: 1
+  org/apache/lucene/codecs/CompetitiveImpactAccumulator:
+    maxFreqs: 37976841
+    $assertionsDisabled: 10722875
+    otherFreqNormPairs: 1564725
+  org/apache/lucene/backward_codecs/lucene87/Lucene87Codec$2:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene87/Lucene87Codec$1:
+    this$0: 1
+  org/apache/lucene/codecs/NormsConsumer$1:
+    val$mergeState: 59
+    val$mergeFieldInfo: 19
+    $assertionsDisabled: 5
+    this$0: 3
+  org/apache/lucene/index/MergePolicy$OneMerge:
+    mergeProgress: 9
+    mergeReaders: 8
+    info: 4
+    segments: 4
+    $assertionsDisabled: 3
+    mergeCompleted: 3
+    maxNumSegments: 2
+    totalMaxDoc: 2
+    estimatedMergeBytes: 1
+    isExternal: 1
+    mergeStartNS: 1
+    usesPooledReaders: 1
+  org/apache/lucene/codecs/lucene99/Lucene99Codec$1:
+    this$0: 13
+  org/apache/lucene/util/fst/ReadWriteDataOutput:
+    dataOutput: 199708
+    $assertionsDisabled: 199685
+    byteBuffers: 67718
+    blockSize: 56213
+    blockBits: 38024
+    blockMask: 38024
+    frozen: 21940
+  org/apache/lucene/index/BufferedUpdates$DeletedTerms:
+    bytesUsed: 13288
+    termsSize: 27
+    deleteTerms: 14
+    pool: 14
+  org/apache/lucene/util/FileDeleter$RefCount:
+    count: 354
+    $assertionsDisabled: 94
+    initDone: 84
+    fileName: 22
+  java/util/Locale:
+    ROOT: 3
+  org/apache/lucene/index/SegmentInfo:
+    name: 92
+    dir: 60
+    minVersion: 8
+  org/apache/lucene/index/DocumentsWriterDeleteQueue:
+    tail: 6029
+    nextSeqNo: 6016
+    $assertionsDisabled: 6011
+    closed: 6010
+    globalBufferedUpdates: 647
+    globalBufferLock: 32
+    globalSlice: 23
+    maxSeqNo: 13
+    generation: 7
+    infoStream: 7
+    advanced: 6
+    previousMaxSeqId: 4
+    startSeqNo: 4
+  org/apache/lucene/index/FieldInvertState:
+    position: 67089500
+    offset: 26875400
+    offsetAttribute: 26845409
+    length: 26845400
+    lastPosition: 26827409
+    lastStartOffset: 26827409
+    termFreqAttribute: 13440709
+    posIncrAttribute: 13422709
+    termAttribute: 13404709
+    uniqueTermCount: 9296650
+    maxTermFrequency: 1393544
+    attributeSource: 18009
+    indexCreatedVersionMajor: 18009
+    indexOptions: 18009
+    payloadAttribute: 18009
+    numOverlap: 18000
+    name: 9
+  org/apache/lucene/util/fst/BytesRefFSTEnum$InputOutput:
+    output: 159372
+    input: 101605
+  org/apache/lucene/codecs/PostingsFormat$Holder:
+    LOADER: 19
+  org/apache/lucene/backward_codecs/compressing/CompressionMode:
+    FAST: 1
+    FAST_DECOMPRESSION: 1
+    HIGH_COMPRESSION: 1
+    LZ4_DECOMPRESSOR: 1
+  org/apache/lucene/analysis/standard/StandardTokenizer:
+    scanner: 53600801
+    skippedPositions: 26803400
+    termAtt: 26785401
+    posIncrAtt: 13404701
+    maxTokenLength: 13398702
+    offsetAtt: 13398701
+    TOKEN_TYPES: 13392701
+    typeAtt: 13392701
+    input: 12001
+  org/apache/lucene/index/ConcurrentApproximatePriorityQueue:
+    concurrency: 24084
+    locks: 12051
+    queues: 12045
+    $assertionsDisabled: 1
+  org/apache/lucene/util/AttributeFactory$StaticImplementationAttributeFactory:
+    clazz: 8
+    delegate: 1
+  org/apache/lucene/index/FieldInfos$FieldNumbers:
+    strictlyConsistent: 24
+    parentFieldName: 9
+    softDeletesFieldName: 9
+  org/apache/lucene/codecs/perfield/PerFieldPostingsFormat$FieldsWriter:
+    writeState: 24
+    this$0: 16
+    toClose: 12
+  org/apache/lucene/store/RateLimitedIndexOutput:
+    bytesSinceLastPause: 3766342
+    currentMinPauseCheckBytes: 1255460
+    out: 1255442
+    rateLimiter: 26
+  org/apache/lucene/util/AttributeFactory$DefaultAttributeFactory:
+    constructors: 1
+  org/apache/lucene/backward_codecs/lucene87/Lucene87StoredFieldsFormat:
+    BEST_COMPRESSION_MODE: 1
+    BEST_SPEED_MODE: 1
+    MODE_KEY: 1
+    mode: 1
+  org/apache/lucene/index/FlushPolicy:
+    $assertionsDisabled: 5
+    indexWriterConfig: 1
+    infoStream: 1
+  org/apache/lucene/codecs/lucene90/LZ4WithPresetDictCompressionMode$LZ4WithPresetDictDecompressor:
+    buffer: 9
+    compressedLengths: 9
+    $assertionsDisabled: 1
+  org/apache/lucene/index/MergePolicy:
+    $assertionsDisabled: 29
+    noCFSRatio: 9
+    maxCFSSegmentSize: 7
+  org/apache/lucene/index/TermVectorsConsumerPerField$TermVectorsPostingsArray:
+    freqs: 9
+    lastOffsets: 9
+    lastPositions: 9
+    $assertionsDisabled: 1
+  org/apache/lucene/util/fst/FSTCompiler:
+    frontier: 2088428
+    NO_OUTPUT: 1921433
+    $assertionsDisabled: 1889821
+    scratchBytes: 1756744
+    fst: 1413713
+    lastInput: 1056345
+    numBytesWritten: 884683
+    lastFrozenNode: 320576
+    arcCount: 267752
+    nodeCount: 267752
+    dataOutput: 265462
+    dedupHash: 230562
+    paddingBytePending: 177738
+    allowFixedLengthArcs: 155807
+    numBytesPerArc: 122715
+    numLabelBytesPerArc: 101872
+    fixedLengthArcsBuffer: 39838
+    directAddressingMaxOversizingFactor: 25480
+    version: 22013
+    NULL_FST_READER: 21932
+    directAddressingExpansionCredit: 7249
+    directAddressingNodeCount: 6850
+    binarySearchNodeCount: 248
+    continuousNodeCount: 164
+  org/apache/lucene/index/MultiReader:
+    closeSubReaders: 1
+  org/apache/lucene/util/SetOnce$Wrapper:
+    object: 13
+  java/lang/Float:
+    TYPE: 1
+  java/lang/foreign/ValueLayout:
+    JAVA_BYTE: 1
+    JAVA_FLOAT_UNALIGNED: 1
+    JAVA_INT_UNALIGNED: 1
+    JAVA_LONG_UNALIGNED: 1
+    JAVA_SHORT_UNALIGNED: 1
+  org/apache/lucene/util/fst/FSTCompiler$FixedLengthArcsBuffer:
+    bytes: 64665
+    bado: 41596
+  java/nio/file/StandardCopyOption:
+    ATOMIC_MOVE: 1
+  org/apache/lucene/index/DocumentsWriterPerThreadPool:
+    freeList: 12002
+    $assertionsDisabled: 6011
+    closed: 6004
+    dwpts: 20
+    takenWriterPermits: 19
+    dwptFactory: 4
+  org/apache/lucene/codecs/compressing/CompressionMode:
+    FAST: 7
+    FAST_DECOMPRESSION: 1
+    HIGH_COMPRESSION: 1
+    LZ4_DECOMPRESSOR: 1
+  org/apache/lucene/codecs/perfield/PerFieldMergeState$FilterFieldsProducer:
+    filtered: 15
+    in: 15
+  org/apache/lucene/index/FieldInfo:
+    indexOptions: 4905874
+    number: 2398755
+    storePayloads: 1375739
+    omitNorms: 1241404
+    pointDimensionCount: 18267
+    docValuesType: 18243
+    vectorDimension: 18189
+    pointIndexDimensionCount: 18186
+    pointNumBytes: 18186
+    storeTermVector: 18147
+    vectorSimilarityFunction: 18144
+    vectorEncoding: 18090
+    name: 12279
+    softDeletesField: 165
+    attributes: 150
+    isParentField: 111
+    dvGen: 99
+  org/apache/lucene/index/LogMergePolicy:
+    calibrateSizeByDeletes: 18
+    mergeFactor: 10
+    minMergeSize: 8
+    $assertionsDisabled: 6
+    maxMergeDocs: 4
+    maxMergeSizeForForcedMerge: 4
+  org/apache/lucene/index/StoredFieldsConsumer:
+    writer: 30012
+    accountable: 12634
+    lastDoc: 12006
+    $assertionsDisabled: 6001
+    codec: 6
+    directory: 6
+    info: 6
+  org/apache/lucene/store/NativeFSLockFactory$NativeFSLock:
+    path: 208
+    channel: 105
+    closed: 105
+    lock: 105
+    creationTime: 104
+    $assertionsDisabled: 3
+  org/apache/lucene/index/MergePolicy$MergeReader:
+    codecReader: 3
+    hardLiveDocs: 3
+    reader: 3
+  org/dacapo/harness/CommandLineArgs$Methodology:
+    ITERATE: 5
+    CONVERGE: 3
+    $VALUES: 2
+  org/apache/lucene/util/packed/BulkOperation$1:
+    $SwitchMap$org$apache$lucene$util$packed$PackedInts$Format: 87
+  org/apache/lucene/backward_codecs/lucene80/Lucene80Codec$2:
+    this$0: 1
+  org/apache/lucene/backward_codecs/lucene80/Lucene80Codec$1:
+    this$0: 1
+  org/apache/lucene/codecs/DocValuesFormat$Holder:
+    LOADER: 9
+  org/apache/lucene/analysis/FilteringTokenFilter:
+    skippedPositions: 26803400
+    input: 13398700
+    posIncrAtt: 12001
+  org/apache/lucene/util/StringSorter$MSBStringRadixSorter:
+    this$0: 14448462
+    cmp: 5401913
+  org/apache/lucene/codecs/CodecUtil:
+    $assertionsDisabled: 19
+  org/apache/lucene/index/IndexWriter$AddIndexesMergeSource:
+    pendingAddIndexesMerges: 3
+    this$0: 2
+    writer: 1
+  org/apache/lucene/util/fst/FSTCompiler$UnCompiledNode:
+    numArcs: 3178702
+    arcs: 2597061
+    $assertionsDisabled: 2544413
+    owner: 1121544
+    output: 864196
+    isFinal: 687067
+    depth: 358616
+  org/apache/lucene/search/LRUQueryCache$MinSegmentSizePredicate:
+    minSize: 1
 opcodes:
-  aconst_null: 3539013
-  iconst_m1: 270281091
-  iconst_0: 250199348
-  iconst_1: 583531390
-  iconst_2: 8849130
-  iconst_3: 30782723
-  iconst_4: 4098823
-  iconst_5: 14901455
-  lconst_0: 8789078
-  lconst_1: 104627382
-  fconst_0: 49570
+  aconst_null: 3517119
+  iconst_m1: 269350700
+  iconst_0: 251573698
+  iconst_1: 587383859
+  iconst_2: 10629224
+  iconst_3: 32781931
+  iconst_4: 7884370
+  iconst_5: 14766957
+  lconst_0: 7792780
+  lconst_1: 7451470
+  fconst_0: 36
   fconst_1: 21933
-  dconst_0: 3
-  dconst_1: 16
-  bipush: 435203602
-  sipush: 423365769
-  ldc: 236782803
-  iload: 5531562065
-  lload: 92324273
-  fload: 223608
-  dload: 37
-  aload: 5206266730
-  iaload: 719234424
-  laload: 47341909
-  faload: 40
-  aaload: 93247238
-  baload: 117223252
+  dconst_0: 87727
+  dconst_1: 19
+  bipush: 429021502
+  sipush: 324726282
+  ldc: 235152652
+  iload: 5321802848
+  lload: 89142550
+  fload: 22283
+  dload: 87763
+  aload: 5039748688
+  iaload: 709906828
+  laload: 30262816
+  faload: 42
+  aaload: 89799127
+  baload: 108011469
   caload: 69860883
   saload: 1991374
-  istore: 1906457754
-  lstore: 24775738
-  fstore: 79190
-  dstore: 32
-  astore: 177517250
-  iastore: 66375276
-  lastore: 113371943
-  fastore: 271
-  aastore: 3608962
-  bastore: 89240473
+  istore: 1875678281
+  lstore: 32503654
+  fstore: 99
+  dstore: 33
+  astore: 164058688
+  iastore: 68145003
+  lastore: 21835885
+  fastore: 273
+  aastore: 3585824
+  bastore: 93570338
   sastore: 3118937
-  pop: 8368347
-  pop2: 296638
-  dup: 131335218
-  dup_x1: 125457542
-  dup_x2: 2548321
-  dup2: 17325877
-  dup2_x1: 37848
-  iadd: 630557662
-  ladd: 57524371
-  isub: 129559340
-  lsub: 3572806
-  dsub: 16
-  imul: 105346006
-  lmul: 2849756
-  fmul: 30368
-  dmul: 27698
-  idiv: 1211889
-  ldiv: 186932
-  fdiv: 16
-  ddiv: 26452
-  irem: 60332
-  lrem: 72994
-  ineg: 25473615
-  lneg: 925960
-  ishl: 24793098
-  lshl: 7406325
-  ishr: 45455858
-  lshr: 1289013
-  iushr: 59354926
-  lushr: 5358037
-  iand: 537054638
-  land: 9499941
-  ior: 37978266
-  lor: 6683516
-  ixor: 86112499
-  lxor: 1372731
-  iinc: 349130311
-  i2l: 79441349
-  i2f: 30839
-  i2d: 52841
-  l2i: 43468951
+  pop: 8510567
+  pop2: 25462
+  dup: 127477132
+  dup_x1: 125751480
+  dup_x2: 2774562
+  dup2: 18109228
+  dup2_x1: 37855
+  iadd: 641951701
+  ladd: 50486327
+  isub: 135948956
+  lsub: 3098811
+  dsub: 18
+  imul: 104118956
+  lmul: 343617
+  fmul: 3920
+  dmul: 1334
+  idiv: 1197489
+  ldiv: 29
+  fdiv: 17
+  ddiv: 89
+  irem: 53058
+  lrem: 291
+  ineg: 25435087
+  lneg: 348821
+  ishl: 25475316
+  lshl: 7468622
+  ishr: 43737120
+  lshr: 674342
+  iushr: 61117952
+  lushr: 4109502
+  iand: 528999570
+  land: 7435149
+  ior: 40183780
+  lor: 10960095
+  ixor: 84837745
+  lxor: 1018460
+  iinc: 246931494
+  i2l: 76792954
+  i2f: 4390
+  i2d: 114
+  l2i: 32625860
   l2f: 71
-  l2d: 43
-  f2i: 30031
+  l2d: 46
+  f2i: 3584
   f2l: 71
-  f2d: 6
+  f2d: 8
   d2i: 8
-  d2l: 27053
-  d2f: 23
-  i2b: 106529088
+  d2l: 689
+  d2f: 27
+  i2b: 109446599
   i2s: 3335161
-  lcmp: 43710912
-  fcmpl: 8
-  fcmpg: 278
-  dcmpl: 634
-  dcmpg: 3
-  ifeq: 219285100
-  ifne: 351193325
-  iflt: 59441682
-  ifge: 56103165
-  ifgt: 17985152
-  ifle: 30371482
-  if_icmpeq: 72571624
-  if_icmpne: 578522815
-  if_icmplt: 28505089
-  if_icmpge: 632585020
-  if_icmpgt: 29394724
-  if_icmple: 29583840
-  if_acmpeq: 3263184
-  if_acmpne: 3373491
-  goto: 935868544
-  tableswitch: 52052050
-  lookupswitch: 276006
-  ireturn: 617478230
-  lreturn: 20325443
-  freturn: 3631
-  dreturn: 7917
-  areturn: 130452742
-  return: 333556900
-  getstatic: 517568452
-  putstatic: 560
-  getfield: 3242976571
-  putfield: 842722890
-  invokevirtual: 700288730
-  invokespecial: 34196962
-  invokestatic: 782759335
-  invokeinterface: 232037814
-  invokedynamic: 6943
-  new: 4338536
-  newarray: 1759538
-  anewarray: 317480
-  arraylength: 60378853
-  checkcast: 24953887
-  instanceof: 30350391
+  lcmp: 32322979
+  fcmpl: 10
+  fcmpg: 277
+  dcmpl: 22565
+  dcmpg: 43865
+  ifeq: 214995017
+  ifne: 348640648
+  iflt: 56613776
+  ifge: 53050435
+  ifgt: 17569841
+  ifle: 19783068
+  if_icmpeq: 72653504
+  if_icmpne: 575780729
+  if_icmplt: 30771715
+  if_icmpge: 534021124
+  if_icmpgt: 23355302
+  if_icmple: 31636583
+  if_acmpeq: 3283014
+  if_acmpne: 3920237
+  goto: 824314787
+  tableswitch: 51761603
+  lookupswitch: 177933
+  ireturn: 620372045
+  lreturn: 16935272
+  freturn: 3549
+  dreturn: 7914
+  areturn: 156093451
+  return: 339987537
+  getstatic: 520988899
+  putstatic: 592
+  getfield: 3210976905
+  putfield: 819844354
+  invokevirtual: 705077288
+  invokespecial: 34977466
+  invokestatic: 798960058
+  invokeinterface: 240390857
+  invokedynamic: 574014
+  new: 4577193
+  newarray: 1697652
+  anewarray: 294341
+  arraylength: 56116609
+  checkcast: 24845671
+  instanceof: 29347415
   monitorenter: 186
   monitorexit: 186
-  ifnull: 40717316
-  ifnonnull: 42484584
-
-# sun/launcher/LauncherHelper
+  ifnull: 40724312
+  ifnonnull: 37512455# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -235,9 +3173,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
+# java/nio/file/ProviderMismatchException
 # java/security/PrivilegedActionException
 # java/util/zip/ZipException
-# java/nio/file/ProviderMismatchException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -440,6 +3378,10 @@ opcodes:
 # sun/security/jca/ProviderList$1
 # java/security/Provider$ServiceKey
 # java/security/Provider$EngineDescription
+# java/security/SecureRandomParameters
+# java/security/cert/CertStoreParameters
+# java/security/Policy$Parameters
+# javax/security/auth/login/Configuration$Parameters
 # jdk/internal/math/FloatingDecimal
 # jdk/internal/math/FloatingDecimal$ExceptionalBinaryToASCIIBuffer
 # jdk/internal/math/FloatingDecimal$BinaryToASCIIConverter
@@ -554,7 +3496,6 @@ opcodes:
 # java/io/StringReader
 # java/text/ParseException
 # java/io/UncheckedIOException
-# java/util/concurrent/ExecutionException
 # java/security/AccessControlException
 # java/lang/SecurityException
 # java/util/AbstractList$RandomAccessSpliterator
@@ -573,8 +3514,6 @@ opcodes:
 # java/lang/management/ManagementFactory$PlatformMBeanFinder
 # java/lang/management/ManagementFactory$PlatformMBeanFinder$1
 # sun/management/spi/PlatformMBeanProvider
-# jdk/management/jfr/internal/FlightRecorderMXBeanProvider
-# java/util/concurrent/Callable
 # com/sun/management/internal/PlatformMBeanProviderImpl
 # com/sun/management/internal/PlatformMBeanProviderImpl$1
 # sun/management/spi/PlatformMBeanProvider$PlatformComponent
@@ -592,6 +3531,8 @@ opcodes:
 # sun/management/VMManagementImpl
 # sun/management/VMManagement
 # com/sun/management/internal/PlatformMBeanProviderImpl$5
+# jdk/management/jfr/internal/FlightRecorderMXBeanProvider
+# java/util/concurrent/Callable
 # java/lang/management/DefaultPlatformMBeanProvider
 # java/lang/management/DefaultPlatformMBeanProvider$1
 # java/lang/management/DefaultPlatformMBeanProvider$2
@@ -620,10 +3561,14 @@ opcodes:
 # java/util/Collections$2
 # com/sun/management/HotSpotDiagnosticMXBean$ThreadDumpFormat
 # com/sun/management/VMOption
-# com/sun/management/internal/Flag
-# com/sun/management/internal/Flag$1
 # com/sun/management/VMOption$Origin
 # javax/management/openmbean/CompositeData
+# com/sun/management/internal/Flag
+# com/sun/management/internal/Flag$1
+# java/lang/invoke/MethodHandles$1
+# java/lang/invoke/BoundMethodHandle$Species_LJ
+# java/lang/invoke/BoundMethodHandle$Species_LLLLL
+# java/lang/invoke/WrongMethodTypeException
 # java/lang/invoke/MethodHandleImpl$BindCaller
 # java/lang/invoke/MethodHandleImpl$BindCaller$1
 # java/lang/invoke/MethodHandleImpl$CasesHolder
@@ -715,10 +3660,7 @@ opcodes:
 # java/util/regex/Pattern$Ques
 # java/util/regex/Pattern$BranchConn
 # java/util/regex/Pattern$Branch
-# java/lang/invoke/MethodHandles$1
 # java/lang/invoke/BoundMethodHandle$Species_LLJ
-# java/lang/invoke/BoundMethodHandle$Species_LLLLL
-# java/lang/invoke/BoundMethodHandle$Species_LJ
 # java/util/ArrayList$ListItr
 # java/text/Format
 # java/text/NumberFormat
@@ -764,20 +3706,6 @@ opcodes:
 # java/text/DecimalFormatSymbols
 # java/text/spi/DecimalFormatSymbolsProvider
 # sun/util/locale/provider/DecimalFormatSymbolsProviderImpl
-# java/lang/StringLatin1$CharsSpliterator
-# java/util/stream/IntStream
-# java/util/stream/IntPipeline
-# java/util/stream/IntPipeline$Head
-# java/util/function/IntPredicate
-# java/util/stream/IntPipeline$StatelessOp
-# java/util/stream/IntPipeline$10
-# java/util/function/IntConsumer
-# java/util/stream/Sink$OfInt
-# java/util/stream/FindOps$FindSink$OfInt
-# java/util/OptionalInt
-# java/util/stream/Sink$ChainedInt
-# java/util/stream/IntPipeline$10$1
-# java/lang/StringUTF16$CharsSpliterator
 # java/lang/CharacterData00
 # java/text/DecimalFormat
 # java/text/FieldPosition
@@ -786,7 +3714,10 @@ opcodes:
 # java/util/function/IntFunction
 # java/util/zip/CheckedOutputStream
 # sun/nio/ch/ChannelOutputStream
+# java/util/stream/IntStream
 # java/util/stream/ReferencePipeline$8
+# java/util/stream/IntPipeline$StatelessOp
+# java/util/stream/IntPipeline
 # java/util/stream/Nodes
 # java/util/stream/Node
 # java/util/stream/Nodes$EmptyNode
@@ -801,11 +3732,14 @@ opcodes:
 # java/util/stream/Nodes$IntSpinedNodeBuilder
 # java/util/stream/Node$Builder$OfInt
 # java/util/stream/Node$Builder
+# java/util/stream/Sink$OfInt
+# java/util/function/IntConsumer
 # java/util/stream/SpinedBuffer$OfInt
 # java/util/stream/SpinedBuffer$OfPrimitive
 # java/util/stream/AbstractSpinedBuffer
 # java/util/stream/ReferencePipeline$8$1
 # java/util/Spliterators$IntArraySpliterator
+# java/util/stream/IntPipeline$Head
 # java/lang/reflect/UndeclaredThrowableException
 # java/util/WeakHashMap$KeyIterator
 # java/util/WeakHashMap$HashIterator
@@ -918,12 +3852,16 @@ opcodes:
 # java/lang/invoke/VarHandleSegmentAsShorts
 # java/util/stream/Nodes$SpinedNodeBuilder
 # java/util/stream/SpinedBuffer
+# java/lang/invoke/VarHandleSegmentAsInts
+# java/util/function/IntPredicate
 # java/util/stream/StreamSpliterators$WrappingSpliterator
 # java/util/stream/StreamSpliterators$AbstractWrappingSpliterator
 # java/util/stream/StreamSpliterators
 # java/util/function/BooleanSupplier
+# java/lang/invoke/MethodHandle$1
 # java/util/IdentityHashMap$IdentityHashMapIterator
 # java/util/IdentityHashMap$KeyIterator
+# java/util/function/UnaryOperator
 # java/nio/file/StandardCopyOption
 # sun/nio/fs/UnixFileSystem$Flags
 # java/util/ArrayDeque$DeqSpliterator
@@ -932,4 +3870,11 @@ opcodes:
 # java/security/GeneralSecurityException
 # sun/security/provider/SHA
 # sun/security/provider/ByteArrayAccess$BE
-# java/lang/invoke/MethodHandle$1
+# java/util/HashMap$EntrySpliterator
+# java/util/Collections$ReverseComparator
+# java/util/Collections$ReverseComparator2
+# java/util/stream/SortedOps
+# java/util/stream/SortedOps$OfRef
+# java/util/stream/ReferencePipeline$StatefulOp
+# java/util/stream/SortedOps$SizedRefSortingSink
+# java/util/stream/SortedOps$AbstractRefSortingSink

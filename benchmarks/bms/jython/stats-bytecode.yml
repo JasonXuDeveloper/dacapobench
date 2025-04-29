@@ -1,23 +1,4830 @@
 # These statistics can be generated from a dacapo release using a command line like:
-#    java -javaagent:dacapo-evaluation-git-6b469af0/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar dacapo-evaluation-git-6b469af0.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
+#    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 1181
+skipped-classes: 1193
 transformed-classes: 3883
 transformed-bytecodes: 883311
-executed-bytecodes: 6394454347
-executed-bytecodes-unique: 149741
+executed-bytecodes: 6394417925
+executed-bytecodes-unique: 149740
 executed-bytecodes-p90: 13000
 executed-bytecodes-p99: 543354
-executed-bytecodes-p999: 7116292
-executed-bytecodes-p9999: 52706898
-executed-calls: 652722512
+executed-bytecodes-p999: 7116250
+executed-bytecodes-p9999: 52706854
+executed-calls: 652715743
 executed-calls-unique: 29337
+field-dereference-counts:
+  org/python/core/PyType$type_mro_exposer:
+    info: 26
+    self: 26
+  org/dacapo/harness/TestHarness:
+    commandLineArgs: 15
+    config: 10
+    BuildVersion: 4
+    BuildNickName: 1
+  org/objectweb/asm/ClassWriter:
+    symbolTable: 1365
+    lastMethod: 1060
+    lastField: 744
+    firstMethod: 628
+    compute: 600
+    firstField: 470
+    lastRuntimeVisibleAnnotation: 242
+    interfaceCount: 238
+    accessFlags: 224
+    sourceFileIndex: 102
+    interfaces: 98
+    version: 84
+    debugExtension: 56
+    enclosingClassIndex: 56
+    firstAttribute: 56
+    firstRecordComponent: 56
+    innerClasses: 56
+    lastRuntimeInvisibleAnnotation: 56
+    lastRuntimeInvisibleTypeAnnotation: 56
+    lastRuntimeVisibleTypeAnnotation: 56
+    moduleWriter: 56
+    nestHostClassIndex: 56
+    nestMemberClasses: 56
+    permittedSubclasses: 56
+    signatureIndex: 56
+    superClass: 56
+    thisClass: 56
+    flags: 28
+  jnr/constants/ConstantSet$ConstantIterator:
+    next: 539
+    it: 270
+    this$0: 1
+  org/dacapo/harness/Jython:
+    method: 3
+    loader: 2
+    pySetArgsMethod: 2
+    scratch: 2
+    config: 1
+    data: 1
+  org/python/core/PySet$set___contains___exposer:
+    info: 36
+    self: 36
+  org/python/modules/struct:
+    native_table: 2
+    __doc__: 1
+    bigendian_table: 1
+    error: 1
+    lilendian_table: 1
+  org/python/core/io/StreamIO:
+    readChannel: 271
+    outputStream: 117
+    writeChannel: 61
+    closefd: 56
+    inputStream: 27
+  org/python/core/PyString$str_startswith_exposer:
+    info: 186
+    self: 186
+  org/python/core/PyUnicode$unicode_isnumeric_exposer:
+    info: 60000
+    self: 60000
+  org/apache/commons/cli/Option:
+    longOption: 222
+    option: 162
+    values: 71
+    description: 62
+    required: 62
+    argCount: 54
+    type: 31
+    valuesep: 18
+    argName: 14
+  org/python/antlr/PythonParser$pass_stmt_return:
+    tree: 461
+  io/netty/util/concurrent/RejectedExecutionHandlers:
+    REJECT: 2
+  com/ibm/icu/impl/UCharacterProperty$CombiningClassIntProperty:
+    this$0: 3
+  org/python/antlr/PythonParser$name_or_print_return:
+    tree: 9411
+  org/python/antlr/PythonParser$import_as_names_return:
+    tree: 18
+  org/python/compiler/SymInfo:
+    flags: 12889
+    locals_index: 1459
+  io/netty/util/ConstantPool:
+    constants: 63
+    nextId: 32
+  io/netty/util/internal/ThreadExecutorMap:
+    mappings: 1
+  org/python/core/PyString$str_strip_exposer:
+    info: 8
+    self: 8
+  org/python/core/PyUnicode$unicode_upper_exposer:
+    info: 12000
+    self: 12000
+  Lookups$py:
+    self: 25
+    c$13: 3
+    c$18: 3
+    c$3: 3
+    c$8: 3
+    BuiltinMethodLookup$21: 2
+    NormalClassAttribute$6: 2
+    NormalInstanceAttribute$16: 2
+    SpecialClassAttribute$1: 2
+    SpecialInstanceAttribute$11: 2
+    calibrate$14: 2
+    calibrate$19: 2
+    calibrate$23: 2
+    calibrate$4: 2
+    calibrate$9: 2
+    f$0: 2
+    test$12: 2
+    test$17: 2
+    test$2: 2
+    test$22: 2
+    test$7: 2
+    c$10: 1
+    c$15: 1
+    c$20: 1
+    c$5: 1
+  jnr/ffi/Platform$CPU:
+    X86_64: 4
+    AARCH64: 3
+    I386: 3
+    MIPS64EL: 3
+    PPC: 3
+    PPC64: 3
+    PPC64LE: 3
+    S390X: 3
+    SPARC: 3
+    SPARCV9: 3
+    $VALUES: 2
+    ARM: 2
+    MIPS32: 2
+    UNKNOWN: 2
+  jnr/posix/util/Platform:
+    IS_WINDOWS: 163
+    IS_MAC: 158
+    OS_NAME_LC: 12
+    OS_NAMES: 4
+    IS_DRAGONFLY: 2
+    IS_FREEBSD: 2
+    IS_OPENBSD: 2
+    OS_NAME: 2
+    ARCH: 1
+    IS_32_BIT: 1
+    IS_64_BIT: 1
+    IS_BSD: 1
+    IS_LINUX: 1
+    IS_SOLARIS: 1
+    IS_WINDOWS_20X: 1
+    IS_WINDOWS_7: 1
+    IS_WINDOWS_9X: 1
+    IS_WINDOWS_NT: 1
+    IS_WINDOWS_SERVER: 1
+    IS_WINDOWS_VISTA: 1
+    IS_WINDOWS_XP: 1
+  com/ibm/icu/impl/Norm2AllModes:
+    decomp: 50003
+    comp: 2
+    fcc: 2
+    fcd: 2
+    impl: 2
+    NOOP_NORMALIZER2: 1
+    cache: 1
+  org/python/core/PyString$str_isalnum_exposer:
+    info: 100038
+    self: 100038
+  org/dacapo/harness/Callback$Mode:
+    TIMING: 2
+    WARMUP: 2
+    $VALUES: 1
+  org/python/antlr/PythonTree:
+    children: 2952319
+    node: 2144273
+    charStartIndex: 806908
+    charStopIndex: 803493
+    from_future_checked: 549360
+    parent: 545501
+  org/python/core/PyType$1:
+    this$0: 63
+  org/python/modules/itertools/product:
+    TYPE: 2
+  org/python/core/PyType$2:
+    this$0: 72
+  org/python/core/Py:
+    None: 19250543
+    defaultSystemState: 8034759
+    IndexError: 1056704
+    NoConversion: 851889
+    EmptyObjects: 741268
+    EmptyTuple: 481440
+    EmptyString: 145032
+    NoKeywords: 90823
+    False: 50007
+    True: 105
+    NotImplemented: 89
+    GeneratorExit: 5
+    StopIteration: 3
+    Exception: 1
+    SyntaxError: 1
+  org/objectweb/asm/Label:
+    frame: 157693
+    bytecodeOffset: 123383
+    outputStackMax: 106832
+    flags: 55359
+    forwardReferences: 24791
+    nextListElement: 15629
+    outgoingEdges: 12420
+    nextBasicBlock: 9812
+    EMPTY_LIST: 5131
+  com/google/common/base/Stopwatch:
+    isRunning: 6
+    ticker: 6
+    startTick: 4
+    elapsedNanos: 2
+  org/python/antlr/NoCloseReaderStream:
+    data: 807
+  org/python/core/CompileMode:
+    eval: 2
+    exec: 2
+    single: 2
+    $VALUES: 1
+  org/objectweb/asm/ByteVector:
+    length: 498200
+    data: 369241
+  io/netty/util/internal/shaded/org/jctools/util/UnsafeAccess:
+    UNSAFE: 27
+    SUPPORTS_GET_AND_ADD_LONG: 1
+    SUPPORTS_GET_AND_SET_REF: 1
+  org/python/antlr/ast/Slice:
+    upper: 1475
+    lower: 1433
+    step: 1053
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/google/common/collect/MapMakerInternalMap$WeakKeyStrongValueSegment:
+    queueForKeys: 11
+  io/netty/channel/ChannelOption:
+    pool: 32
+    ALLOCATOR: 1
+    ALLOW_HALF_CLOSURE: 1
+    AUTO_CLOSE: 1
+    AUTO_READ: 1
+    CONNECT_TIMEOUT_MILLIS: 1
+    DATAGRAM_CHANNEL_ACTIVE_ON_REGISTRATION: 1
+    IP_MULTICAST_ADDR: 1
+    IP_MULTICAST_IF: 1
+    IP_MULTICAST_LOOP_DISABLED: 1
+    IP_MULTICAST_TTL: 1
+    IP_TOS: 1
+    MAX_MESSAGES_PER_READ: 1
+    MAX_MESSAGES_PER_WRITE: 1
+    MESSAGE_SIZE_ESTIMATOR: 1
+    RCVBUF_ALLOCATOR: 1
+    SINGLE_EVENTEXECUTOR_PER_GROUP: 1
+    SO_BACKLOG: 1
+    SO_BROADCAST: 1
+    SO_KEEPALIVE: 1
+    SO_LINGER: 1
+    SO_RCVBUF: 1
+    SO_REUSEADDR: 1
+    SO_SNDBUF: 1
+    SO_TIMEOUT: 1
+    TCP_FASTOPEN: 1
+    TCP_FASTOPEN_CONNECT: 1
+    TCP_NODELAY: 1
+    WRITE_BUFFER_HIGH_WATER_MARK: 1
+    WRITE_BUFFER_LOW_WATER_MARK: 1
+    WRITE_BUFFER_WATER_MARK: 1
+    WRITE_SPIN_COUNT: 1
+  org/python/core/PyType$type___init___exposer:
+    info: 26
+    self: 26
+  org/python/core/PyType$type___getattribute___exposer:
+    info: 422
+    self: 422
+  Dict$py:
+    self: 17
+    DictCreation$1: 2
+    DictWithFloatKeys$7: 2
+    DictWithIntegerKeys$10: 2
+    DictWithStringKeys$4: 2
+    SimpleDictManipulation$13: 2
+    calibrate$12: 2
+    calibrate$15: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    calibrate$9: 2
+    f$0: 2
+    test$11: 2
+    test$14: 2
+    test$2: 2
+    test$5: 2
+    test$8: 2
+  org/python/core/ThreadState:
+    call_depth: 24604944
+    systemStateRef: 16069546
+    frame: 14059972
+    exception: 7029986
+    profilefunc: 7029986
+    tracefunc: 3514993
+  re$py:
+    self: 22
+    Scanner$18: 2
+    __init__$19: 2
+    _compile$12: 2
+    _compile_repl$13: 2
+    _expand$14: 2
+    _pickle$17: 2
+    _subx$15: 2
+    compile$8: 2
+    escape$11: 2
+    f$0: 2
+    findall$6: 2
+    finditer$7: 2
+    match$1: 2
+    purge$9: 2
+    scan$20: 2
+    search$2: 2
+    split$5: 2
+    sub$3: 2
+    subn$4: 2
+    template$10: 2
+    filter$16: 1
+  org/python/core/PyUnicode$unicode_islower_exposer:
+    info: 60000
+    self: 60000
+  org/python/core/PySystemState:
+    modules: 60
+    packageManager: 19
+    registry: 13
+    warnoptions: 6
+    argv: 4
+    builtins: 4
+    path: 2
+  org/python/core/PyTraceback:
+    TYPE: 144158
+    tb_frame: 144158
+    tb_lineno: 144157
+    tb_next: 144157
+  jnr/constants/platform/Errno:
+    resolver: 25
+    ENOENT: 8
+    $VALUES: 2
+    E2BIG: 2
+    EACCES: 2
+    EADDRINUSE: 2
+    EADDRNOTAVAIL: 2
+    EADV: 2
+    EAFNOSUPPORT: 2
+    EAGAIN: 2
+    EALREADY: 2
+    EAUTH: 2
+    EBADE: 2
+    EBADF: 2
+    EBADFD: 2
+    EBADMSG: 2
+    EBADR: 2
+    EBADRPC: 2
+    EBADRQC: 2
+    EBADSLT: 2
+    EBFONT: 2
+    EBUSY: 2
+    ECANCELED: 2
+    ECAPMODE: 2
+    ECHILD: 2
+    ECHRNG: 2
+    ECOMM: 2
+    ECONNABORTED: 2
+    ECONNREFUSED: 2
+    ECONNRESET: 2
+    EDEADLK: 2
+    EDEADLOCK: 2
+    EDESTADDRREQ: 2
+    EDOM: 2
+    EDOOFUS: 2
+    EDOTDOT: 2
+    EDQUOT: 2
+    EEXIST: 2
+    EFAULT: 2
+    EFBIG: 2
+    EFTYPE: 2
+    EHOSTDOWN: 2
+    EHOSTUNREACH: 2
+    EHWPOISON: 2
+    EIDRM: 2
+    EILSEQ: 2
+    EINPROGRESS: 2
+    EINTR: 2
+    EINVAL: 2
+    EIO: 2
+    EIPSEC: 2
+    EISCONN: 2
+    EISDIR: 2
+    EISNAM: 2
+    EKEYEXPIRED: 2
+    EKEYREJECTED: 2
+    EKEYREVOKED: 2
+    EL2HLT: 2
+    EL2NSYNC: 2
+    EL3HLT: 2
+    EL3RST: 2
+    ELIBACC: 2
+    ELIBBAD: 2
+    ELIBEXEC: 2
+    ELIBMAX: 2
+    ELIBSCN: 2
+    ELNRNG: 2
+    ELOOP: 2
+    EMEDIUMTYPE: 2
+    EMFILE: 2
+    EMLINK: 2
+    EMSGSIZE: 2
+    EMULTIHOP: 2
+    ENAMETOOLONG: 2
+    ENAVAIL: 2
+    ENEEDAUTH: 2
+    ENETDOWN: 2
+    ENETRESET: 2
+    ENETUNREACH: 2
+    ENFILE: 2
+    ENOANO: 2
+    ENOATTR: 2
+    ENOBUFS: 2
+    ENOCSI: 2
+    ENODATA: 2
+    ENODEV: 2
+    ENOEXEC: 2
+    ENOKEY: 2
+    ENOLCK: 2
+    ENOLINK: 2
+    ENOMEDIUM: 2
+    ENOMEM: 2
+    ENOMSG: 2
+    ENONET: 2
+    ENOPKG: 2
+    ENOPROTOOPT: 2
+    ENOSPC: 2
+    ENOSR: 2
+    ENOSTR: 2
+    ENOSYS: 2
+    ENOTBLK: 2
+    ENOTCAPABLE: 2
+    ENOTCONN: 2
+    ENOTDIR: 2
+    ENOTEMPTY: 2
+    ENOTNAM: 2
+    ENOTRECOVERABLE: 2
+    ENOTSOCK: 2
+    ENOTSUP: 2
+    ENOTTY: 2
+    ENOTUNIQ: 2
+    ENXIO: 2
+    EOPNOTSUPP: 2
+    EOVERFLOW: 2
+    EOWNERDEAD: 2
+    EPERM: 2
+    EPFNOSUPPORT: 2
+    EPIPE: 2
+    EPROCLIM: 2
+    EPROCUNAVAIL: 2
+    EPROGMISMATCH: 2
+    EPROGUNAVAIL: 2
+    EPROTO: 2
+    EPROTONOSUPPORT: 2
+    EPROTOTYPE: 2
+    ERANGE: 2
+    EREMCHG: 2
+    EREMOTE: 2
+    EREMOTEIO: 2
+    ERESTART: 2
+    ERFKILL: 2
+    EROFS: 2
+    ERPCMISMATCH: 2
+    ESHUTDOWN: 2
+    ESOCKTNOSUPPORT: 2
+    ESPIPE: 2
+    ESRCH: 2
+    ESRMNT: 2
+    ESTALE: 2
+    ESTRPIPE: 2
+    ETIME: 2
+    ETIMEDOUT: 2
+    ETOOMANYREFS: 2
+    ETXTBSY: 2
+    EUCLEAN: 2
+    EUNATCH: 2
+    EUSERS: 2
+    EWOULDBLOCK: 2
+    EXDEV: 2
+    EXFULL: 2
+    __UNKNOWN_CONSTANT__: 2
+  org/python/antlr/PythonParser$shift_expr_return:
+    lparen: 54366
+    tree: 39060
+  io/netty/util/internal/shaded/org/jctools/queues/BaseMpscLinkedArrayQueue:
+    consumerBuffer: 20
+    consumerMask: 20
+    producerBuffer: 20
+    producerMask: 20
+    $assertionsDisabled: 1
+    BUFFER_CONSUMED: 1
+    JUMP: 1
+  com/ibm/icu/impl/UCharacterProperty$NormInertBinaryProperty:
+    this$0: 4
+    which: 4
+  functools$py:
+    self: 27
+    cmp_to_key$16: 2
+    f$0: 2
+    total_ordering$3: 2
+    update_wrapper$1: 2
+    wraps$2: 2
+    K$17: 1
+    __eq__$21: 1
+    __ge__$23: 1
+    __gt__$20: 1
+    __hash__$25: 1
+    __init__$18: 1
+    __le__$22: 1
+    __lt__$19: 1
+    __ne__$24: 1
+    f$10: 1
+    f$11: 1
+    f$12: 1
+    f$13: 1
+    f$14: 1
+    f$15: 1
+    f$4: 1
+    f$5: 1
+    f$6: 1
+    f$7: 1
+    f$8: 1
+    f$9: 1
+  io/netty/util/ResourceLeakDetector:
+    excludedMethods: 3
+    DEFAULT_LEVEL: 2
+    logger: 2
+    SAMPLING_INTERVAL: 1
+    TARGET_RECORDS: 1
+    level: 1
+  org/python/util/InteractiveConsole:
+    CONSOLE_FILENAME: 3
+    filename: 2
+  io/netty/util/internal/CleanerJava9:
+    INVOKE_CLEANER: 2
+    logger: 2
+  io/netty/util/concurrent/FastThreadLocal:
+    index: 2
+    variablesToRemoveIndex: 1
+  org/python/modules/time/PyTimeTuple:
+    TYPE: 3
+    n_fields: 1
+    n_sequence_fields: 1
+    n_unnamed_fields: 1
+    tm_hour: 1
+    tm_isdst: 1
+    tm_mday: 1
+    tm_min: 1
+    tm_mon: 1
+    tm_sec: 1
+    tm_wday: 1
+    tm_yday: 1
+    tm_year: 1
+  org/python/antlr/PythonParser$del_list_return:
+    tree: 31
+  org/dacapo/parser/ConfigFileTokenManager:
+    jjnewStateCnt: 5457
+    jjround: 5078
+    curChar: 4830
+    jjstateSet: 3783
+    jjrounds: 3325
+    input_stream: 1954
+    jjnextStates: 1513
+    jjmatchedKind: 1219
+    jjmatchedPos: 679
+    image: 233
+    jjimage: 118
+    jjstrLiteralImages: 118
+    curLexState: 117
+    jjnewLexState: 117
+    jjtoToken: 117
+    jjimageLen: 116
+    debugStream: 1
+    defaultLexState: 1
+    jjbitVec0: 1
+    jjbitVec2: 1
+    jjtoMore: 1
+    jjtoSkip: 1
+    jjtoSpecial: 1
+    lexStateNames: 1
+  org/python/modules/sre/SRE_STATE$CACHE$1:
+    this$0: 1
+  org/python/modules/sre/SRE_STATE$CACHE$2:
+    this$0: 1
+  org/python/antlr/PythonParser$decorators_return:
+    tree: 1
+  org/python/modules/_jythonlib/_jythonlib:
+    __doc__: 2
+  org/python/antlr/ast/Dict:
+    keys: 520
+    values: 359
+    col_offset: 66
+    lineno: 66
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/imp$CodeData:
+    bytes: 104
+    filename: 52
+    mtime: 52
+  com/ibm/icu/impl/UCharacterProperty:
+    INSTANCE: 250001
+    m_trie_: 200002
+    intProps: 50002
+    m_additionalColumnsCount_: 50002
+    m_additionalTrie_: 50002
+    $assertionsDisabled: 50001
+    m_additionalVectors_: 50001
+    GC_ZL_MASK: 2
+    GC_ZP_MASK: 2
+    GC_ZS_MASK: 2
+    binProps: 2
+    GC_CC_MASK: 1
+    GC_CN_MASK: 1
+    GC_CS_MASK: 1
+    GC_Z_MASK: 1
+    gcbToHst: 1
+    m_maxBlockScriptValue_: 1
+    m_maxJTGValue_: 1
+    m_scriptExtensions_: 1
+    m_unicodeVersion_: 1
+  stat$py:
+    self: 11
+    S_IFMT$2: 2
+    S_IMODE$1: 2
+    S_ISBLK$5: 2
+    S_ISCHR$4: 2
+    S_ISDIR$3: 2
+    S_ISFIFO$7: 2
+    S_ISLNK$8: 2
+    S_ISREG$6: 2
+    S_ISSOCK$9: 2
+    f$0: 2
+  org/python/core/PyException:
+    type: 6
+  org/python/modules/_threading/RLock$RLock_acquire_exposer:
+    info: 1
+    self: 1
+  io/netty/channel/ChannelMetadata:
+    defaultMaxMessagesPerRead: 3
+    hasDisconnect: 3
+  org/python/util/jython$CommandLineOptions$Action:
+    RUN: 9
+    ERROR: 3
+    HELP: 3
+    VERSION: 3
+    $VALUES: 2
+  org/python/core/adapter/ClassicPyObjectAdapter$5:
+    this$0: 4
+  org/python/core/adapter/ClassicPyObjectAdapter$6:
+    this$0: 4
+  org/python/core/adapter/ClassicPyObjectAdapter$3:
+    this$0: 4
+  org/python/core/adapter/ClassicPyObjectAdapter$4:
+    this$0: 4
+  org/python/core/adapter/ClassicPyObjectAdapter$1:
+    this$0: 4
+  weakref$py:
+    self: 13
+    KeyedRef$9: 2
+    WeakKeyDictionary$5: 2
+    WeakValueDictionary$1: 2
+    __init__$11: 2
+    __new__$10: 2
+    __new__$2: 2
+    __new__$6: 2
+    f$0: 2
+    iterkeyrefs$7: 2
+    itervaluerefs$3: 2
+    keyrefs$8: 2
+    valuerefs$4: 2
+  org/python/core/adapter/ClassicPyObjectAdapter$2:
+    this$0: 4
+  org/python/modules/zipimport/zipimporter$exposed___new__:
+    for_type: 198
+  org/python/modules/_jythonlib/set_builder:
+    set_type: 267
+    factory: 178
+    TYPE: 2
+  org/python/core/PyFile$file_read_exposer:
+    info: 2
+    self: 2
+  org/antlr/runtime/CommonTokenStream:
+    p: 8596012
+    tokens: 4795254
+    range: 2531493
+    channel: 1481829
+  org/python/antlr/ast/Pass:
+    lineno: 922
+    col_offset: 461
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/antlr/runtime/RecognizerSharedState:
+    _fsp: 2638804
+    following: 1759218
+    failed: 262038
+    token: 253154
+    channel: 178235
+    errorRecovery: 117518
+    tokenStartLine: 117164
+    type: 116638
+    tokenStartCharPositionInLine: 116384
+    tokenStartCharIndex: 116382
+    text: 116336
+    backtracking: 21326
+    lastErrorIndex: 46
+    syntaxErrors: 46
+  java/lang/Short:
+    TYPE: 33179
+  io/netty/resolver/DefaultAddressResolverGroup:
+    INSTANCE: 1
+  io/netty/buffer/Unpooled:
+    $assertionsDisabled: 2
+    ALLOC: 2
+    BIG_ENDIAN: 1
+    EMPTY_BUFFER: 1
+    LITTLE_ENDIAN: 1
+  org/python/antlr/PythonTokenSource:
+    tokens: 270883
+    stream: 152452
+    lastTokenAddedIndex: 97099
+    inSingle: 48584
+    sp: 15529
+    indentStack: 9743
+    filename: 23
+  org/python/antlr/PythonParser$and_test_return:
+    tree: 35239
+  java/lang/Character:
+    TYPE: 33167
+  org/python/compiler/PyCodeConstant:
+    module: 2118
+    name: 1412
+    id: 1059
+    names: 963
+    argcount: 706
+    arglist: 706
+    cellvars: 706
+    co_firstlineno: 706
+    co_name: 706
+    fname: 706
+    freevars: 706
+    jy_npurecell: 706
+    keywordlist: 706
+    moreflags: 706
+    access: 353
+  org/python/core/PyFrozenSet$frozenset___contains___exposer:
+    self: 5
+    info: 1
+  org/python/modules/itertools/starmap:
+    TYPE: 2
+  io/netty/channel/AbstractChannel:
+    logger: 1
+  org/dacapo/parser/Token:
+    next: 394
+    kind: 314
+    image: 206
+    beginColumn: 117
+    beginLine: 117
+    endColumn: 117
+    endLine: 117
+    specialToken: 117
+  org/python/core/adapter/ClassicPyObjectAdapter$9:
+    this$0: 4
+  Setup$py:
+    f$0: 2
+    self: 2
+  org/python/core/adapter/ClassicPyObjectAdapter$7:
+    this$0: 4
+  org/python/core/adapter/ClassicPyObjectAdapter$8:
+    this$0: 4
+  org/antlr/runtime/DFA:
+    special: 287517
+    accept: 165793
+    min: 58944
+    eot: 42654
+    max: 22536
+    transition: 19829
+  java/lang/Byte:
+    TYPE: 33703
+  org/python/core/PyStringMap$StringMapKeysIter:
+    iterator: 314
+    this$0: 167
+  org/python/core/PyJavaType$CollectionsProxiesHolder:
+    proxies: 1
+  org/python/antlr/PythonParser$decorator_return:
+    tree: 3
+  org/python/modules/itertools/itertools:
+    __doc__: 2
+    __doc__tee: 1
+  org/python/core/PyJavaType$Modular:
+    accessibleMH: 355
+    LOOKUP: 4
+  org/python/compiler/PyLongConstant:
+    value: 1570
+  io/netty/util/internal/shaded/org/jctools/queues/BaseMpscLinkedArrayQueueColdProducerFields:
+    P_LIMIT_OFFSET: 21
+  io/netty/util/internal/logging/Log4JLoggerFactory:
+    INSTANCE: 2
+  org/python/core/PyDictionary$dict_get_exposer:
+    info: 175136
+    self: 136
+  org/python/core/PyList$list_insert_exposer:
+    info: 175003
+    self: 3
+  org/python/antlr/PythonParser$import_name_return:
+    tree: 97
+  com/google/common/cache/LocalCache$LocalManualCache:
+    localCache: 1
+  com/google/common/cache/CacheBuilder:
+    expireAfterAccessNanos: 7
+    concurrencyLevel: 6
+    maximumWeight: 6
+    statsCounterSupplier: 6
+    keyStrength: 5
+    weigher: 5
+    strictParsing: 4
+    expireAfterWriteNanos: 3
+    maximumSize: 3
+    NULL_STATS_COUNTER: 2
+    initialCapacity: 2
+    refreshNanos: 2
+    valueStrength: 2
+    CACHE_STATS_COUNTER: 1
+    EMPTY_STATS: 1
+    NULL_TICKER: 1
+    keyEquivalence: 1
+    logger: 1
+    removalListener: 1
+    ticker: 1
+    valueEquivalence: 1
+  org/python/core/packagecache/CachedJarsPackageManager$ClassList:
+    inaccessible: 18310
+    accessible: 2388
+  org/python/core/JyAttribute$TransientAttributeLink:
+    value: 50050
+  com/google/common/cache/LocalCache$AccessQueue$1:
+    nextAccess: 10
+    previousAccess: 8
+  org/python/core/PyDictionaryDerived:
+    dict: 1
+    slots: 1
+  org/python/core/Py2kBuffer:
+    TYPE: 1
+    paramNames: 1
+  org/python/core/io/TextIOInputStream:
+    textIO: 104
+  com/ibm/icu/impl/Trie2$UTrie2Header:
+    indexLength: 3
+  org/python/antlr/PythonParser$parameters_return:
+    tree: 228
+  jnr/ffi/mapper/SimpleTypeMapper:
+    fromNativeConverters: 1
+    toNativeConverters: 1
+  com/google/common/base/CharMatcher$NamedFastMatcher:
+    description: 2
+  org/python/modules/_io/PyIOBase:
+    TYPE: 1
+  jnr/ffi/LibraryLoader$2:
+    $SwitchMap$jnr$ffi$Platform$OS: 8
+    $SwitchMap$jnr$ffi$LibraryOption: 3
+  com/google/common/base/AbstractIterator$State:
+    FAILED: 48
+    DONE: 24
+    NOT_READY: 18
+    READY: 14
+    $VALUES: 2
+  org/python/antlr/base/expr:
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/modules/itertools/izipLongest:
+    TYPE: 2
+  io/netty/util/internal/PlatformDependent0:
+    JAVA_VERSION: 405
+    UNSAFE: 56
+    logger: 11
+    IS_ANDROID: 4
+    DIRECT_BUFFER_CONSTRUCTOR: 3
+    $assertionsDisabled: 2
+    ADDRESS_FIELD_OFFSET: 2
+    ALLOCATE_ARRAY_METHOD: 2
+    BYTE_ARRAY_BASE_OFFSET: 2
+    EXPLICIT_NO_UNSAFE_CAUSE: 2
+    RUNNING_IN_NATIVE_IMAGE: 2
+    UNSAFE_UNAVAILABILITY_CAUSE: 2
+    ALIGN_SLICE: 1
+    INTERNAL_UNSAFE: 1
+    INT_ARRAY_BASE_OFFSET: 1
+    INT_ARRAY_INDEX_SCALE: 1
+    IS_EXPLICIT_TRY_REFLECTION_SET_ACCESSIBLE: 1
+    LONG_ARRAY_BASE_OFFSET: 1
+    LONG_ARRAY_INDEX_SCALE: 1
+    UNALIGNED: 1
+  org/python/modules/_collections/PyDeque:
+    TYPE: 2
+    $assertionsDisabled: 1
+  io/netty/buffer/PoolSubpage:
+    bitmap: 3744
+    chunk: 3744
+    elemSize: 3744
+    pageShifts: 3744
+    runOffset: 3744
+    runSize: 3744
+    $assertionsDisabled: 1
+  jnr/ffi/mapper/SimpleFunctionMapper:
+    functionNameMap: 1
+  org/python/antlr/PythonParser$small_stmt_return:
+    tree: 11358
+  org/python/core/PyUnicode$unicode_isdigit_exposer:
+    info: 60000
+    self: 60000
+  org/python/antlr/PythonParser$suite_return:
+    tree: 1407
+  org/python/antlr/PythonParser$elif_clause_return:
+    tree: 346
+  org/python/core/PyEnumerate:
+    index: 17
+    sit: 13
+    TYPE: 3
+  org/python/core/PyJavaType$Constant:
+    CLASS: 1
+    OBJECT: 1
+  org/python/core/PyOverridableNew:
+    for_type: 190608
+  org/python/antlr/PythonParser$exprlist_return:
+    tree: 196
+  io/netty/channel/nio/AbstractNioChannel:
+    $assertionsDisabled: 1
+    logger: 1
+  com/google/common/base/AbstractIterator:
+    state: 124
+    next: 38
+  org/python/core/PyString$str_split_exposer:
+    info: 27
+    self: 27
+  org/python/modules/zipimport/zipimporter:
+    prefix: 3718
+    sys: 2158
+    archive: 204
+    files: 4
+    TYPE: 1
+    __doc__: 1
+    log: 1
+  org/python/modules/_functools/PyPartial:
+    TYPE: 1
+  org/python/core/PySystemState$PySystemStateCloser:
+    isCleanup: 2
+    resourceClosers: 2
+    shutdownHook: 1
+  java/lang/Boolean:
+    TYPE: 83949
+  org/python/util/OptionScanner:
+    argIndex: 33
+    args: 24
+    optIndex: 13
+    message: 4
+    optarg: 4
+    longSpec: 2
+    programOpts: 2
+    $assertionsDisabled: 1
+  org/objectweb/asm/Type:
+    valueBegin: 2073
+    valueBuffer: 2073
+    valueEnd: 2073
+    sort: 2017
+    INT_TYPE: 26
+    LONG_TYPE: 4
+    BOOLEAN_TYPE: 3
+    BYTE_TYPE: 1
+    CHAR_TYPE: 1
+    DOUBLE_TYPE: 1
+    FLOAT_TYPE: 1
+    SHORT_TYPE: 1
+    VOID_TYPE: 1
+  org/python/antlr/PythonParser$arith_expr_return:
+    lparen: 54366
+    tree: 38507
+  org/python/core/PyTuple$1:
+    iter: 254
+    this$0: 84
+  org/python/util/jython$CommandLineOptions:
+    filename: 12
+    argv: 11
+    action: 8
+    verbosity: 6
+    command: 4
+    jar: 4
+    properties: 4
+    warnoptions: 4
+    PROGRAM_LONG_OPTS: 3
+    help: 2
+    message: 2
+    module: 2
+    version: 2
+  com/google/common/collect/RegularImmutableList:
+    array: 19
+    EMPTY: 1
+  org/python/core/StderrWrapper:
+    name: 1
+  jnr/ffi/NativeType:
+    $VALUES: 3
+    ADDRESS: 3
+    DOUBLE: 3
+    FLOAT: 3
+    SCHAR: 3
+    SINT: 3
+    SLONG: 3
+    SLONGLONG: 3
+    SSHORT: 3
+    UCHAR: 3
+    UINT: 3
+    ULONG: 3
+    ULONGLONG: 3
+    USHORT: 3
+    VOID: 3
+    STRUCT: 2
+  org/python/core/io/BufferedIOMixin:
+    rawIO: 179
+    bufferSize: 28
+  java/nio/ByteOrder:
+    BIG_ENDIAN: 10
+    LITTLE_ENDIAN: 1
+  org/python/antlr/PythonParser$term_op_return:
+    tree: 530
+  org/antlr/runtime/tree/RewriteRuleElementStream:
+    cursor: 2450382
+    dirty: 2078406
+    adaptor: 1954414
+    elementDescription: 1954414
+    singleElement: 984329
+    elements: 498306
+  io/netty/util/CharsetUtil:
+    UTF_8: 3
+    ISO_8859_1: 2
+    US_ASCII: 2
+    UTF_16: 2
+    UTF_16BE: 2
+    UTF_16LE: 2
+    CHARSETS: 1
+  org/python/modules/_io/PyFileIO:
+    TYPE: 1
+  io/netty/bootstrap/AbstractBootstrap:
+    EMPTY_ATTRIBUTE_ARRAY: 1
+    EMPTY_OPTION_ARRAY: 1
+  org/python/antlr/PythonParser$dotted_as_names_return:
+    tree: 97
+  org/python/core/PyFastSequenceIter:
+    TYPE: 1
+  org/python/core/FutureFeature:
+    division: 178
+    absolute_import: 149
+    flag: 56
+    with_statement: 53
+    $VALUES: 2
+    GIL: 2
+    braces: 2
+    generators: 2
+    global_interpreter_lock: 2
+    nested_scopes: 2
+    print_function: 2
+    unicode_literals: 2
+    PRAGMA_MODULE: 1
+  org/dacapo/harness/CommandLineArgs:
+    OPTIONS: 125
+    line: 42
+    options: 33
+    $assertionsDisabled: 32
+    visibleOptions: 31
+    callback: 6
+    benchmarks: 3
+    parser: 2
+  io/netty/buffer/PooledByteBufAllocator$PoolThreadLocalCache:
+    this$0: 1
+    useCacheForAllThreads: 1
+  com/ibm/icu/util/CodePointTrie$ValueWidth:
+    BITS_16: 5
+    BITS_32: 3
+    BITS_8: 3
+    $VALUES: 2
+  org/python/core/JavaFunc:
+    method: 5
+  org/python/core/PyXRange:
+    len: 236
+    start: 236
+    step: 236
+    TYPE: 119
+    stop: 118
+  com/ibm/icu/impl/Norm2AllModes$DecomposeNormalizer2:
+    impl: 50000
+  jnr/posix/POSIXFactory$1:
+    $SwitchMap$jnr$ffi$Platform$OS: 10
+  org/python/core/PrePy:
+    LEVELS: 27
+    logger: 9
+    savedVerbosity: 8
+    $assertionsDisabled: 7
+    importLogger: 1
+  org/python/modules/itertools/combinations:
+    TYPE: 2
+  org/python/core/JyAttribute$AttributeLink:
+    value: 6
+    next: 1
+  com/ibm/icu/impl/UBiDiProps:
+    trie: 100002
+    INSTANCE: 100001
+    indexes: 23
+    jgArray: 2
+    jgArray2: 2
+    mirrors: 1
+  org/python/modules/itertools/izip:
+    TYPE: 2
+  io/netty/util/concurrent/DefaultThreadFactory:
+    poolId: 2
+    daemon: 1
+    nextId: 1
+    prefix: 1
+    priority: 1
+    threadGroup: 1
+  org/python/core/PySequence$DefaultIndexDelegate:
+    this$0: 15293536
+  org/python/core/PySlot:
+    index: 60
+    dtype: 24
+    name: 24
+  org/python/core/util/importer$SearchOrderEntry:
+    suffix: 1628
+    type: 1584
+  org/python/core/PyIterator:
+    stopException: 5
+    __doc__next: 1
+  org/python/compiler/ClassFile:
+    methodVisitors: 1688
+    name: 1504
+    cw: 1116
+    fieldVisitors: 442
+    interfaces: 231
+    sfilename: 125
+    annotationVisitors: 56
+    mtime: 56
+    superclass: 56
+    access: 28
+  org/python/antlr/PythonParser$and_expr_return:
+    lparen: 54366
+    tree: 39060
+  org/python/core/PyJavaType$4:
+    this$0: 1
+  org/python/core/PyJavaType$3:
+    this$0: 1
+  com/google/common/collect/MapMakerInternalMap$StrongKeyWeakValueEntry$Helper:
+    INSTANCE: 4
+  org/python/antlr/PythonParser$list_iter_return:
+    tree: 14
+  org/python/core/PyJavaType$6:
+    this$0: 1
+  org/python/core/PyJavaType$5:
+    this$0: 1
+  org/python/core/PyJavaType$2:
+    val$reflctr: 122
+    this$0: 30
+  org/python/core/PySetDerived:
+    dict: 138
+    slots: 89
+  org/python/core/PyJavaType$1:
+    this$0: 6
+  org/python/core/PyList$list_remove_exposer:
+    info: 37
+    self: 37
+  org/python/core/PyType$12:
+    $SwitchMap$org$python$antlr$ast$cmpopType: 7
+  jnr/constants/ConstantSet:
+    nameToConstant: 150
+    LOADER: 5
+    constantSets: 5
+    CAN_LOAD_RESOURCES: 3
+    constants: 3
+    lock: 2
+    valueToConstant: 2
+    enumClass: 1
+  org/python/core/CodeFlag$1:
+    val$flags: 26871
+  org/python/core/PyType$11:
+    this$0: 1004
+  org/python/core/PyJavaType$8:
+    this$0: 1
+  com/google/common/collect/MapMakerInternalMap$AbstractWeakKeyEntry:
+    hash: 126
+    next: 3
+  org/python/core/PyJavaType$7:
+    self: 6
+    this$0: 1
+  org/python/core/WrappedIterIterator:
+    next: 34476
+    checkedForNext: 28148
+    iter: 9484
+  jnr/constants/platform/linux/Errno:
+    value: 411
+    E2BIG: 3
+    EACCES: 3
+    EADDRINUSE: 3
+    EADDRNOTAVAIL: 3
+    EADV: 3
+    EAFNOSUPPORT: 3
+    EAGAIN: 3
+    EALREADY: 3
+    EBADE: 3
+    EBADF: 3
+    EBADFD: 3
+    EBADMSG: 3
+    EBADR: 3
+    EBADRQC: 3
+    EBADSLT: 3
+    EBFONT: 3
+    EBUSY: 3
+    ECANCELED: 3
+    ECHILD: 3
+    ECHRNG: 3
+    ECOMM: 3
+    ECONNABORTED: 3
+    ECONNREFUSED: 3
+    ECONNRESET: 3
+    EDEADLK: 3
+    EDEADLOCK: 3
+    EDESTADDRREQ: 3
+    EDOM: 3
+    EDOTDOT: 3
+    EDQUOT: 3
+    EEXIST: 3
+    EFAULT: 3
+    EFBIG: 3
+    EHOSTDOWN: 3
+    EHOSTUNREACH: 3
+    EHWPOISON: 3
+    EIDRM: 3
+    EILSEQ: 3
+    EINPROGRESS: 3
+    EINTR: 3
+    EINVAL: 3
+    EIO: 3
+    EISCONN: 3
+    EISDIR: 3
+    EISNAM: 3
+    EKEYEXPIRED: 3
+    EKEYREJECTED: 3
+    EKEYREVOKED: 3
+    EL2HLT: 3
+    EL2NSYNC: 3
+    EL3HLT: 3
+    EL3RST: 3
+    ELIBACC: 3
+    ELIBBAD: 3
+    ELIBEXEC: 3
+    ELIBMAX: 3
+    ELIBSCN: 3
+    ELNRNG: 3
+    ELOOP: 3
+    EMEDIUMTYPE: 3
+    EMFILE: 3
+    EMLINK: 3
+    EMSGSIZE: 3
+    EMULTIHOP: 3
+    ENAMETOOLONG: 3
+    ENAVAIL: 3
+    ENETDOWN: 3
+    ENETRESET: 3
+    ENETUNREACH: 3
+    ENFILE: 3
+    ENOANO: 3
+    ENOBUFS: 3
+    ENOCSI: 3
+    ENODATA: 3
+    ENODEV: 3
+    ENOENT: 3
+    ENOEXEC: 3
+    ENOKEY: 3
+    ENOLCK: 3
+    ENOLINK: 3
+    ENOMEDIUM: 3
+    ENOMEM: 3
+    ENOMSG: 3
+    ENONET: 3
+    ENOPKG: 3
+    ENOPROTOOPT: 3
+    ENOSPC: 3
+    ENOSR: 3
+    ENOSTR: 3
+    ENOSYS: 3
+    ENOTBLK: 3
+    ENOTCONN: 3
+    ENOTDIR: 3
+    ENOTEMPTY: 3
+    ENOTNAM: 3
+    ENOTRECOVERABLE: 3
+    ENOTSOCK: 3
+    ENOTSUP: 3
+    ENOTTY: 3
+    ENOTUNIQ: 3
+    ENXIO: 3
+    EOPNOTSUPP: 3
+    EOVERFLOW: 3
+    EOWNERDEAD: 3
+    EPERM: 3
+    EPFNOSUPPORT: 3
+    EPIPE: 3
+    EPROTO: 3
+    EPROTONOSUPPORT: 3
+    EPROTOTYPE: 3
+    ERANGE: 3
+    EREMCHG: 3
+    EREMOTE: 3
+    EREMOTEIO: 3
+    ERESTART: 3
+    ERFKILL: 3
+    EROFS: 3
+    ESHUTDOWN: 3
+    ESOCKTNOSUPPORT: 3
+    ESPIPE: 3
+    ESRCH: 3
+    ESRMNT: 3
+    ESTALE: 3
+    ESTRPIPE: 3
+    ETIME: 3
+    ETIMEDOUT: 3
+    ETOOMANYREFS: 3
+    ETXTBSY: 3
+    EUCLEAN: 3
+    EUNATCH: 3
+    EUSERS: 3
+    EWOULDBLOCK: 3
+    EXDEV: 3
+    EXFULL: 3
+    $VALUES: 2
+  org/python/core/PyJavaType$9:
+    this$0: 1
+  org/python/core/CodeFlag$1$1:
+    all: 53742
+    next: 44924
+    this$0: 26871
+  java/lang/Void:
+    TYPE: 11550
+  NewInstances$py:
+    self: 16
+    __init__$6: 3
+    __init__$8: 3
+    c$4: 3
+    d$5: 3
+    e$7: 3
+    CreateNewInstances$2: 2
+    c$1: 2
+    calibrate$9: 2
+    f$0: 2
+    test$3: 2
+    __init__$12: 1
+    __init__$14: 1
+    c$10: 1
+    d$11: 1
+    e$13: 1
+  org/python/core/PySuper:
+    objType: 130
+    obj: 53
+    superType: 52
+    TYPE: 1
+  org/python/core/PyObject$object___subclasshook___exposer:
+    info: 12
+    self: 12
+  org/dacapo/parser/Config$1:
+    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 12
+  org/dacapo/harness/TeeOutputStream:
+    log: 14
+    logFile: 6
+    toScreen: 4
+    version: 2
+  Numbers$py:
+    self: 14
+    CompareFloats$4: 2
+    CompareFloatsIntegers$7: 2
+    CompareIntegers$1: 2
+    CompareLongs$10: 2
+    calibrate$12: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    calibrate$9: 2
+    f$0: 2
+    test$11: 2
+    test$2: 2
+    test$5: 2
+    test$8: 2
+  org/objectweb/asm/ClassVisitor:
+    cv: 15597
+    api: 879
+  org/python/core/PyJavaType$CollectionProxies:
+    postProxies: 1
+    proxies: 1
+  io/netty/util/internal/SystemPropertyUtil:
+    logger: 1
+  org/python/core/PyList$list_append_exposer:
+    self: 2232044
+    info: 240064
+  org/antlr/runtime/tree/CommonTree:
+    token: 1127429
+    childIndex: 1094861
+    stopIndex: 797864
+    startIndex: 797804
+  org/antlr/runtime/ANTLRStringStream:
+    p: 9534052
+    charPositionInLine: 3035333
+    n: 2456021
+    data: 2455954
+    markDepth: 1118465
+    markers: 435449
+    line: 423111
+    lastMarker: 247649
+  org/python/antlr/PythonParser$list_if_return:
+    tree: 8
+  org/python/core/PlainConsole:
+    encoding: 2
+    encodingCharset: 1
+  org/python/antlr/ast/Suite:
+    body: 990
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/packagecache/PathPackageManager:
+    searchPath: 1
+  org/python/antlr/ast/TryExcept:
+    handlers: 1507
+    orelse: 1146
+    body: 955
+    col_offset: 191
+    lineno: 191
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/PythonParser$trailer_return:
+    tree: 19135
+  org/python/modules/_locale/DateSymbolJyLocale:
+    dfSymbols: 1
+    locale: 1
+  org/python/util/InteractiveInterpreter:
+    buffer: 2
+    filename: 2
+  org/python/compiler/CodeCompiler$LambdaSyntheticReturn:
+    this$0: 6
+  org/python/core/PyUnicode$unicode_isspace_exposer:
+    info: 60000
+    self: 60000
+  org/python/core/PyTuple:
+    array: 3278227
+    cachedList: 1153934
+    TYPE: 959842
+  org/python/core/PyJavaType$11:
+    this$0: 1
+  org/python/core/PyListIterator:
+    list: 22102353
+    index: 21602230
+    stopped: 8367747
+    TYPE: 1
+  org/python/core/PyJavaType$10:
+    this$0: 1
+  org/python/core/PyJavaType$13:
+    this$0: 1
+  org/python/core/PyJavaType$12:
+    this$0: 1
+  org/python/core/PyJavaType$15:
+    this$0: 1
+  org/python/antlr/ast/alias:
+    name: 462
+    asname: 294
+    nameNodes: 130
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyJavaType$14:
+    this$0: 1
+  org/python/core/adapter/ExtensiblePyObjectAdapter:
+    preClassAdapters: 552563
+    classAdapters: 551175
+    postClassAdapters: 348
+  org/python/core/PyJavaType$19:
+    self: 2
+  jnr/posix/JavaPOSIX:
+    $assertionsDisabled: 1
+    handler: 1
+    helper: 1
+  com/google/common/cache/CacheBuilder$OneWeigher:
+    INSTANCE: 3
+    $VALUES: 1
+  io/netty/channel/DefaultSelectStrategy:
+    INSTANCE: 11
+  org/python/core/PyMethod:
+    __func__: 1
+  org/python/core/PyStringMap$stringmap_values_exposer:
+    info: 2
+    self: 2
+  org/python/core/PyType$MethodCache:
+    table: 7128644
+    methodCache: 7121687
+  org/python/proxies/_socket$DaemonThreadFactory$2:
+    __proxy: 3
+    __systemState: 1
+  io/netty/buffer/PooledByteBufAllocatorMetric:
+    allocator: 1
+  org/python/modules/operator$PyItemGetter:
+    items: 4
+    TYPE: 2
+  org/python/core/JavaIterator:
+    proxy: 132
+  org/dacapo/harness/Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG: 2
+    DACAPO_CHECKSUM_RE_PATH: 1
+    WORKING_DIRE: 1
+  jnr/ffi/provider/InvalidProvider:
+    cause: 2
+    message: 2
+    runtime: 1
+  numbers$py:
+    self: 63
+    Complex$2: 2
+    Integral$44: 2
+    Number$1: 2
+    Rational$40: 2
+    Real$25: 2
+    __abs__$21: 2
+    __add__$7: 2
+    __and__$52: 2
+    __complex__$3: 2
+    __complex__$36: 2
+    __div__$15: 2
+    __divmod__$28: 2
+    __eq__$23: 2
+    __float__$26: 2
+    __float__$43: 2
+    __float__$59: 2
+    __floordiv__$30: 2
+    __index__$46: 2
+    __invert__$58: 2
+    __le__$35: 2
+    __long__$45: 2
+    __lshift__$48: 2
+    __lt__$34: 2
+    __mod__$32: 2
+    __mul__$13: 2
+    __ne__$24: 2
+    __neg__$9: 2
+    __nonzero__$4: 2
+    __or__$56: 2
+    __pos__$10: 2
+    __pow__$19: 2
+    __pow__$47: 2
+    __radd__$8: 2
+    __rand__$53: 2
+    __rdiv__$16: 2
+    __rdivmod__$29: 2
+    __rfloordiv__$31: 2
+    __rlshift__$49: 2
+    __rmod__$33: 2
+    __rmul__$14: 2
+    __ror__$57: 2
+    __rpow__$20: 2
+    __rrshift__$51: 2
+    __rshift__$50: 2
+    __rsub__$12: 2
+    __rtruediv__$18: 2
+    __rxor__$55: 2
+    __sub__$11: 2
+    __truediv__$17: 2
+    __trunc__$27: 2
+    __xor__$54: 2
+    conjugate$22: 2
+    conjugate$39: 2
+    denominator$42: 2
+    denominator$61: 2
+    f$0: 2
+    imag$38: 2
+    imag$6: 2
+    numerator$41: 2
+    numerator$60: 2
+    real$37: 2
+    real$5: 2
+  io/netty/util/internal/logging/AbstractInternalLogger:
+    name: 24
+  io/netty/util/concurrent/AbstractScheduledEventExecutor:
+    scheduledTaskQueue: 3
+    SCHEDULED_FUTURE_TASK_COMPARATOR: 2
+    $assertionsDisabled: 1
+    WAKEUP_TASK: 1
+  com/ibm/icu/impl/Normalizer2Impl:
+    normTrie: 70002
+    minDecompNoCP: 50002
+    minNoNo: 50002
+    minYesNo: 20002
+    minMaybeYes: 6
+    maybeYesCompositions: 4
+    smallFCD: 4
+    $assertionsDisabled: 3
+    IS_ACCEPTABLE: 3
+    centerNoNoDelta: 2
+    dataVersion: 2
+    extraData: 2
+    limitNoNo: 2
+    minCompNoMaybeCP: 2
+    minLcccCP: 2
+    minNoNoCompBoundaryBefore: 2
+    minNoNoCompNoMaybeCC: 2
+    minNoNoEmpty: 2
+    minYesNoMappingsOnly: 2
+    segmentStarterMapper: 1
+  org/python/antlr/ast/Call:
+    keywords: 9582
+    args: 9325
+    func: 7897
+    kwargs: 4799
+    starargs: 4799
+    lineno: 1325
+    col_offset: 1323
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyTypeDerived:
+    slots: 26
+  org/python/core/PyFile$file_fileno_exposer:
+    info: 1
+    self: 1
+  com/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper:
+    UNSAFE: 9
+    VALUE_OFFSET: 5
+    LISTENERS_OFFSET: 3
+    WAITERS_OFFSET: 3
+    WAITER_NEXT_OFFSET: 1
+    WAITER_THREAD_OFFSET: 1
+  org/python/core/PyUnicode$SubsequenceIteratorBasic:
+    current: 12192000
+    stop: 4600000
+    step: 4348000
+    this$0: 4348000
+  socket$py:
+    self: 3
+    f$0: 2
+    supports$1: 2
+  org/python/modules/sre/PatternObject$split_exposer:
+    info: 1
+    self: 1
+  com/google/common/collect/MapMakerInternalMap$StrongKeyWeakValueEntry:
+    valueReference: 12
+  org/python/modules/itertools/islice:
+    TYPE: 2
+  io/netty/util/concurrent/DefaultEventExecutorChooserFactory$GenericEventExecutorChooser:
+    executors: 1
+    idx: 1
+  org/python/modules/_threading/RLock$RLock_release_exposer:
+    info: 1
+    self: 1
+  org/python/core/ClasspathPyImporter$exposed___new__:
+    for_type: 198
+  org/python/modules/_threading/Lock:
+    TYPE: 2
+  java/nio/file/LinkOption:
+    NOFOLLOW_LINKS: 11
+  io/netty/channel/nio/NioEventLoop$SelectorTuple:
+    selector: 10
+    unwrappedSelector: 10
+  org/python/core/PyString$str_islower_exposer:
+    info: 100000
+    self: 100000
+  org/python/core/PyUnicode$unicode_title_exposer:
+    info: 12000
+    self: 12000
+  org/python/core/PyStringMap$StringMapItemsIter:
+    this$0: 416
+    iterator: 391
+  org/python/modules/_io/PyRawIOBase:
+    TYPE: 2
+  org/python/core/ThreadStateMapping:
+    inCallThreadState: 15728935
+    globalThreadStates: 130
+    inverseGlobalThreadStates: 4
+    entriesPrototype: 1
+  org/python/antlr/ast/Name:
+    ctx: 38101
+    id: 35737
+    lineno: 12322
+    col_offset: 12289
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/modules/_sre:
+    CODESIZE: 1
+    MAGIC: 1
+    MAXREPEAT: 1
+  io/netty/util/concurrent/MultithreadEventExecutorGroup$1:
+    this$0: 1
+  org/python/core/Pragma$PragmaModule:
+    name: 1
+  org/python/antlr/PythonParser$compound_stmt_return:
+    tree: 2014
+  fnmatch$py:
+    self: 7
+    _purge$1: 2
+    f$0: 2
+    filter$3: 2
+    fnmatch$2: 2
+    fnmatchcase$4: 2
+    translate$5: 2
+  org/python/core/PyEllipsis:
+    TYPE: 1
+  com/ibm/icu/impl/UCharacterProperty$22:
+    this$0: 1
+  org/python/antlr/ast/boolopType:
+    And: 3
+    Or: 3
+    $VALUES: 2
+    UNDEFINED: 2
+  org/python/core/PyDictionary$dict___init___exposer:
+    info: 1
+    self: 1
+  com/ibm/icu/impl/UCharacterProperty$21:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$24:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$23:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$26:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$25:
+    this$0: 1
+  com/ibm/icu/impl/Norm2AllModes$Normalizer2WithImpl:
+    impl: 100008
+  org/python/core/PyFunction:
+    __code__: 3516283
+    __closure__: 3516282
+    __defaults__: 3516282
+    __globals__: 3516282
+    __doc__: 51845
+    __module__: 51759
+    __name__: 51742
+    TYPE: 51726
+    __dict__: 521
+  com/ibm/icu/impl/UCharacterProperty$27:
+    this$0: 1
+  org/python/antlr/PythonParser$power_return:
+    lparen: 57070
+    tree: 28300
+  org/python/antlr/adapter/AstAdapters:
+    exprAdapter: 3798
+    aliasAdapter: 1
+    cmpopAdapter: 1
+    comprehensionAdapter: 1
+    excepthandlerAdapter: 1
+    identifierAdapter: 1
+    keywordAdapter: 1
+    sliceAdapter: 1
+    stmtAdapter: 1
+  org/python/core/PyDictProxy$dictproxy_iterkeys_exposer:
+    info: 1
+    self: 1
+  com/ibm/icu/text/Normalizer$NFKDModeImpl:
+    INSTANCE: 50001
+  com/ibm/icu/impl/UCharacterProperty$20:
+    this$0: 1
+  org/dacapo/parser/SimpleCharStream:
+    bufpos: 7214
+    column: 3773
+    inBuf: 1698
+    bufcolumn: 1467
+    bufline: 1467
+    buffer: 1325
+    line: 1284
+    prevCharIsLF: 1283
+    maxNextCharInd: 1242
+    prevCharIsCR: 1208
+    tokenBegin: 893
+    bufsize: 47
+    tabSize: 21
+    available: 5
+    inputStream: 4
+    trackLineColumn: 1
+  com/ibm/icu/impl/UCharacterProperty$5:
+    this$0: 1
+  org/python/antlr/PythonParser$dotted_as_name_return:
+    tree: 112
+  com/ibm/icu/impl/UCharacterProperty$6:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$7:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$8:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$1:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$2:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$3:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$4:
+    this$0: 1
+  io/netty/util/internal/logging/Log4J2LoggerFactory:
+    INSTANCE: 2
+  org/python/core/PySequenceIter:
+    seq: 301350
+    index: 251212
+  org/python/core/PyArray$ItemType:
+    itemClass: 112
+    description: 14
+    itemsize: 14
+    max: 14
+    min: 14
+    typecode: 14
+    OBJECT: 9
+    $VALUES: 8
+    BOOLEAN: 2
+    BYTE: 2
+    CHAR: 2
+    DOUBLE: 2
+    FLOAT: 2
+    INT: 2
+    LONG: 2
+    SHORT: 2
+    UBYTE: 2
+    UINT: 2
+    ULONG: 2
+    UNICHAR: 2
+    USHORT: 2
+    TWO_TO_64: 1
+  org/python/core/PyString$str_format_exposer:
+    info: 50016
+    self: 50016
+  org/python/core/ThreadContext:
+    initializingProxy: 415
+  org/python/modules/time/Time:
+    altzone: 2
+    timezone: 2
+    tzname: 2
+    __doc__: 1
+    datesyms: 1
+    daylight: 1
+    enshortdays: 1
+    enshortmonths: 1
+    shortdays: 1
+    shortmonths: 1
+  com/ibm/icu/impl/UCharacterProperty$9:
+    this$0: 1
+  org/python/antlr/ast/Lambda:
+    body: 18
+    lineno: 18
+    args: 12
+    col_offset: 6
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/ast/cmpopType:
+    Eq: 4
+    Gt: 4
+    GtE: 4
+    Lt: 4
+    LtE: 4
+    NotEq: 4
+    $VALUES: 3
+    In: 3
+    Is: 3
+    IsNot: 3
+    NotIn: 3
+    UNDEFINED: 2
+  org/python/compiler/PyFloatConstant:
+    value: 3447
+  org/apache/commons/cli/Options:
+    shortOpts: 71
+    longOpts: 70
+    optionGroups: 4
+    requiredOpts: 3
+  org/python/core/BaseBytes:
+    ctype: 19666822
+    $assertionsDisabled: 1
+    emptyStorage: 1
+  org/python/modules/time/TimeFunctions:
+    index: 234
+    module: 1
+  io/netty/util/concurrent/DefaultPromise:
+    listeners: 20
+    executor: 12
+    result: 10
+    CANCELLATION_CAUSE_HOLDER: 2
+    CANCELLATION_STACK: 1
+    MAX_LISTENER_STACK_DEPTH: 1
+    RESULT_UPDATER: 1
+    SUCCESS: 1
+    UNCANCELLABLE: 1
+    logger: 1
+    rejectedExecutionLogger: 1
+  package$py:
+    f$0: 2
+    self: 2
+  org/python/core/Options:
+    division_warning: 360001
+    respectJavaAccessibility: 894
+    proxyDebugDirectory: 82
+    ignore_environment: 13
+    verbose: 12
+    inspect: 11
+    importSite: 4
+    sreCacheSpec: 4
+    Qnew: 3
+    caseok: 3
+    includeJavaStackInExceptions: 3
+    interactive: 3
+    showJavaExceptions: 3
+    showPythonProxyExceptions: 3
+    no_site: 2
+    bytes_warning: 1
+    dont_write_bytecode: 1
+    no_user_site: 1
+    optimize: 1
+    py3k_warning: 1
+    unbuffered: 1
+  org/python/modules/errno:
+    errorcode: 137
+    __doc__: 1
+  org/python/antlr/PythonParser$expr_stmt_return:
+    tree: 4709
+  org/python/compiler/PyUnicodeConstant:
+    value: 336
+  com/google/common/base/Splitter:
+    limit: 11
+    omitEmptyStrings: 11
+    strategy: 11
+    trimmer: 9
+  org/python/core/stringlib/InternalFormat$Spec:
+    grouping: 280232
+    align: 260214
+    fill: 260214
+    width: 250281
+    sign: 250230
+    type: 250230
+    alternate: 250210
+    precision: 200270
+    NUMERIC: 2
+    STRING: 1
+  org/dacapo/harness/FileCopy:
+    src: 27
+    tgt: 27
+  com/google/common/cache/LocalCache$AccessQueue:
+    head: 16
+  org/python/modules/itertools/groupby:
+    TYPE: 2
+  org/python/modules/_threading/Condition:
+    TYPE: 2
+  org/python/core/PyBuiltinCallable$DefaultInfo:
+    maxargs: 2665
+    minargs: 2665
+    name: 2665
+  org/python/antlr/PythonParser$list_for_return:
+    tree: 18
+  org/python/modules/_locale/_locale:
+    DEFAULT_LOCALE: 2
+    currentLocale: 2
+    AVAILABLE_LOCALES: 1
+    CHAR_MAX_PY_INT: 1
+    C_LOCALE_PY_STRING: 1
+    Error: 1
+    LC_ALL: 1
+    LC_COLLATE: 1
+    LC_CTYPE: 1
+    LC_MESSAGES: 1
+    LC_MONETARY: 1
+    LC_NUMERIC: 1
+    LC_TIME: 1
+    __doc__: 1
+    __doc___localeconv: 1
+    __doc___setlocale: 1
+    __doc___strcoll: 1
+    __doc___strxfrm: 1
+  org/python/core/stringlib/IntegerFormatter$Traditional:
+    lenWhole: 10
+    spec: 10
+  org/python/antlr/PythonParser$printlist_return:
+    tree: 146
+  Calls$py:
+    self: 37
+    c$22: 3
+    f$14: 3
+    f$23: 3
+    f$3: 3
+    f$33: 3
+    f1$4: 3
+    g$5: 3
+    h$6: 3
+    j$24: 3
+    k$25: 3
+    BuiltinFunctionCalls$17: 2
+    ComplexPythonFunctionCalls$12: 2
+    PythonFunctionCalls$1: 2
+    PythonMethodCalls$20: 2
+    Recursion$31: 2
+    calibrate$15: 2
+    calibrate$19: 2
+    calibrate$26: 2
+    calibrate$34: 2
+    calibrate$7: 2
+    f$0: 2
+    test$13: 2
+    test$18: 2
+    test$2: 2
+    test$21: 2
+    test$32: 2
+    c$27: 1
+    f$16: 1
+    f$28: 1
+    f$35: 1
+    f$8: 1
+    f1$9: 1
+    g$10: 1
+    h$11: 1
+    j$29: 1
+    k$30: 1
+  org/python/expose/BaseTypeBuilder:
+    newWrapper: 524
+    baseClass: 294
+    descrs: 294
+    doc: 294
+    isBaseType: 294
+    meths: 294
+    name: 294
+    typeClass: 147
+  org/python/antlr/ast/Global:
+    names: 18
+    col_offset: 4
+    lineno: 4
+    nameNodes: 4
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/PythonParser$print_stmt_return:
+    tree: 206
+  org/python/modules/PyStruct:
+    TYPE: 2
+  com/ibm/icu/impl/UCharacterProperty$IntProperty:
+    column: 50025
+    mask: 50025
+    this$0: 50025
+    shift: 50007
+  jnr/ffi/provider/FFIProvider$SystemProviderSingletonHolder:
+    INSTANCE: 2
+  org/python/modules/zipimport/zipimport:
+    ZipImportError: 199
+    _zip_directory_cache: 3
+    __doc__: 1
+  org/python/core/util/LimitedCache:
+    clock: 14717
+    map: 4932
+    upperLimit: 13
+    CLOCK_THRESHOLD: 1
+    limit: 1
+  org/python/core/io/TextIOWrapper:
+    newlineIsLF: 32
+    newline: 8
+    LF_PATTERN: 1
+  org/python/core/PyTupleDerived:
+    dict: 8
+    slots: 1
+  org/python/core/ParserFacade$ExpectedEncodingBufferedReader:
+    encoding: 23
+  org/python/antlr/ast/If:
+    orelse: 2371
+    body: 1689
+    test: 1689
+    col_offset: 341
+    lineno: 341
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/modules/operator$PyMethodCaller:
+    TYPE: 2
+    __doc__: 1
+  org/python/core/PyType$MethodCache$MethodCacheEntry:
+    version: 7124547
+    name: 7121745
+    where: 87002
+    EMPTY: 4097
+  org/python/antlr/ast/Expr:
+    value: 7730
+    lineno: 3834
+    col_offset: 1907
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  java/lang/Integer:
+    TYPE: 40760
+  org/python/antlr/PythonParser$argument_return:
+    tree: 1440
+  org/python/core/util/importer$ModuleInfo:
+    NOT_FOUND: 24
+    ERROR: 13
+    MODULE: 2
+    PACKAGE: 2
+    $VALUES: 1
+  org/python/modules/itertools/compress:
+    TYPE: 2
+  org/python/core/ClasspathPyImporter$ClasspathPyImporter_find_module_exposer:
+    info: 11
+    self: 11
+  org/python/core/PyType$Registry$IncompleteType:
+    type: 402
+  org/python/core/PyBoolean:
+    value: 6954456
+    TYPE: 3
+  org/python/antlr/PythonParser$if_stmt_return:
+    tree: 266
+  com/google/common/cache/LocalCache$LocalLoadingCache:
+    localCache: 2
+  org/python/core/CompilerFacade:
+    compiler: 4
+  org/python/antlr/ast/ListComp:
+    elt: 60
+    generators: 60
+    col_offset: 36
+    lineno: 36
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyDictionary$dict_iteritems_exposer:
+    info: 4
+    self: 4
+  org/python/antlr/ast/FunctionDef:
+    body: 1140
+    name: 1140
+    decorator_list: 912
+    lineno: 684
+    args: 456
+    col_offset: 228
+    nameNode: 228
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyType$Constant:
+    PYOBJECT: 1
+    PYSTRING: 1
+    PYTYPE: 1
+  io/netty/util/concurrent/ScheduledFutureTask:
+    queueIndex: 3
+    START_TIME: 2
+    $assertionsDisabled: 1
+    deadlineNanos: 1
+    periodNanos: 1
+  org/python/antlr/PythonParser$subscriptlist_return:
+    tree: 1524
+  org/python/compiler/ArgListCompiler:
+    names: 1432
+    defaults: 1302
+    fpnames: 964
+    init_code: 702
+    keywordlist: 469
+    arglist: 468
+  java/lang/Double:
+    TYPE: 13406
+  org/python/antlr/PythonParser$import_from_return:
+    tree: 35
+  org/python/core/adapter/ClassAdapter:
+    adaptedClass: 88
+  org/python/core/PyString$str_find_exposer:
+    info: 1
+    self: 1
+  org/python/antlr/ast/Str:
+    s: 1568
+    col_offset: 760
+    lineno: 760
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/modules/posix/OS:
+    pattern: 6
+    shellCommands: 4
+    $VALUES: 3
+    POSIX: 3
+    IBMi: 2
+    NT: 2
+  com/google/common/collect/MapMakerInternalMap$WeakKeyStrongValueEntry$Helper:
+    INSTANCE: 2
+  org/python/util/jython$Status:
+    NOT_RUN: 8
+    OK: 8
+    NO_FILE: 4
+    ERROR: 2
+    $VALUES: 1
+  io/netty/util/ResourceLeakDetector$Level:
+    SIMPLE: 3
+    $VALUES: 2
+    ADVANCED: 2
+    DISABLED: 2
+    PARANOID: 2
+  com/ibm/icu/impl/ICUData:
+    logger: 1
+  jnr/ffi/Platform:
+    LOCALE: 31
+    os: 8
+    addressSize: 2
+    cpu: 2
+    libPattern: 1
+    longSize: 1
+  org/python/core/PyDescriptor:
+    dtype: 3814566
+  org/python/core/PyGenerator:
+    gi_frame: 700853
+    gi_running: 300456
+    closure: 150192
+    gi_code: 100080
+    TYPE: 50041
+    stopException: 1
+  io/netty/util/internal/InternalThreadLocalMap:
+    nextIndex: 4
+    logger: 3
+    STRING_BUILDER_INITIAL_SIZE: 2
+    STRING_BUILDER_MAX_SIZE: 2
+    UNSET: 1
+    slowThreadLocalMap: 1
+  org/apache/commons/cli/Parser:
+    options: 7
+    cmd: 4
+    requiredOptions: 2
+  org/python/core/PyString$str_istitle_exposer:
+    info: 100000
+    self: 100000
+  org/dacapo/parser/ConfigFile:
+    token: 792
+    jj_ntk: 331
+    jj_gen: 257
+    token_source: 118
+    jj_nt: 81
+    jj_la1: 44
+    jj_input_stream: 2
+    jj_expentries: 1
+    jj_kind: 1
+    jj_la1_0: 1
+    jj_la1_1: 1
+  org/python/compiler/Future:
+    featureSet: 421
+    features: 47
+  org/python/core/PyPropertyDerived:
+    dict: 12
+    slots: 4
+  org/python/core/PyBaseException$BaseException___init___exposer:
+    info: 145032
+    self: 145032
+  com/ibm/icu/util/CodePointTrie$Data16:
+    array: 262
+  org/python/antlr/PythonParser$return_stmt_return:
+    tree: 87
+  org/python/core/PyType$type___setattr___exposer:
+    info: 154
+    self: 154
+  org/objectweb/asm/AnnotationVisitor:
+    av: 391
+    api: 235
+  org/python/antlr/ast/UnaryOp:
+    operand: 92
+    op: 46
+    lineno: 40
+    col_offset: 23
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/util/PythonInterpreter:
+    globals: 2
+  org/python/antlr/PythonParser$else_clause_return:
+    tree: 106
+  io/netty/bootstrap/ServerBootstrap:
+    logger: 1
+  org/python/core/PySlice:
+    stop: 5730100
+    start: 5490336
+    step: 3597869
+    TYPE: 1756935
+  org/python/core/ImportFunction:
+    ARGS: 300337
+  glob$py:
+    self: 9
+    f$0: 2
+    glob$2: 2
+    glob0$6: 2
+    glob1$4: 2
+    has_magic$7: 2
+    iglob$3: 2
+    _unicode$1: 1
+    f$5: 1
+  io/netty/buffer/UnpooledByteBufAllocator$UnpooledByteBufAllocatorMetric:
+    directCounter: 1
+    heapCounter: 1
+  org/python/core/PyObject:
+    TYPE: 859
+  org/python/antlr/base/slice:
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/google/common/collect/MapMakerInternalMap$AbstractStrongKeyEntry:
+    hash: 4
+    key: 4
+    next: 4
+  org/objectweb/asm/Frame:
+    outputStackTop: 618583
+    outputStack: 326712
+    outputLocals: 221682
+    owner: 114986
+    outputStackStart: 99759
+    inputLocals: 69772
+    initializations: 28435
+    inputStack: 24692
+    initializationCount: 1559
+  org/python/core/util/importer$EntryType:
+    IS_BYTECODE: 794
+    IS_PACKAGE: 794
+    IS_SOURCE: 794
+    $VALUES: 2
+  org/python/core/BytecodeLoader$Loader:
+    parents: 1339
+  com/google/common/collect/MapMakerInternalMap:
+    keyEquivalence: 123
+    entryHelper: 14
+  org/python/core/PyList$list_extend_exposer:
+    info: 8
+    self: 8
+  org/objectweb/asm/commons/Method:
+    PRIMITIVE_TYPE_DESCRIPTORS: 197
+    descriptor: 188
+    name: 188
+  org/objectweb/asm/ClassReader:
+    classFileBuffer: 313170
+    cpInfoOffsets: 212019
+    constantUtf8Values: 71622
+    b: 16295
+    header: 3350
+    maxStringLength: 1742
+    bootstrapMethodOffsets: 871
+    constantDynamicValues: 871
+  jnr/ffi/LibraryOption:
+    $VALUES: 3
+    FunctionMapper: 3
+    TypeMapper: 3
+    CallingConvention: 2
+    IgnoreError: 2
+    LoadNow: 2
+    PreferCustomPaths: 2
+    SaveError: 2
+  org/python/modules/_functools/_functools:
+    __doc__: 2
+    __doc__reduce: 1
+  org/python/core/PyBaseExceptionDerived:
+    slots: 145068
+  com/google/common/collect/ImmutableMap:
+    EMPTY_ENTRY_ARRAY: 1
+  com/google/common/base/Suppliers$SupplierOfInstance:
+    instance: 6
+  org/objectweb/asm/SymbolTable$Entry:
+    hashCode: 112773
+    tag: 110931
+    value: 78021
+    next: 62205
+    index: 40955
+    name: 31152
+    owner: 31143
+    data: 730
+    info: 20
+  io$py:
+    self: 6
+    BufferedIOBase$3: 2
+    IOBase$1: 2
+    RawIOBase$2: 2
+    TextIOBase$4: 2
+    f$0: 2
+  org/python/core/BaseSet$1:
+    iterator: 323
+    this$0: 168
+    size: 56
+  com/google/common/collect/ImmutableEntry:
+    key: 31
+    value: 16
+  com/google/common/base/Equivalence$Equals:
+    INSTANCE: 5
+  org/python/core/PySystemState$PySystemStateCloser$ShutdownCloser:
+    closer: 2
+    this$0: 1
+  jnr/posix/POSIXFactory$DefaultLibCProvider:
+    INSTANCE: 1
+  org/python/antlr/AST:
+    TYPE: 1
+  org/python/antlr/PythonParser$funcdef_return:
+    tree: 228
+  java/lang/Float:
+    TYPE: 12614
+  org/python/core/PyString$str_endswith_exposer:
+    info: 20
+    self: 20
+  _weakrefset$py:
+    _build$3: 90
+    self: 5
+    WeakSet$1: 2
+    __new__$2: 2
+    f$0: 2
+  org/python/modules/itertools/imap:
+    TYPE: 2
+  com/google/common/cache/LocalCache$StrongValueReference:
+    referent: 2
+  io/netty/util/internal/shaded/org/jctools/util/UnsafeRefArrayAccess:
+    REF_ARRAY_BASE: 1
+    REF_ELEMENT_SHIFT: 1
+  com/ibm/icu/util/CodePointTrie$Fast16:
+    dataArray: 70002
+    $assertionsDisabled: 20001
+  jnr/ffi/mapper/FunctionMapper$Builder:
+    functionNameMap: 2
+  org/python/core/FloatInfo:
+    TYPE: 2
+    dig: 1
+    epsilon: 1
+    mant_dig: 1
+    max: 1
+    max_10_exp: 1
+    max_exp: 1
+    min: 1
+    min_10_exp: 1
+    min_exp: 1
+    radix: 1
+    rounds: 1
+  org/dacapo/harness/CommandLineArgs$Methodology:
+    ITERATE: 5
+    CONVERGE: 3
+    $VALUES: 2
+  io/netty/buffer/PoolThreadCache:
+    logger: 1
+  org/python/core/stringlib/InternalFormat$Parser:
+    ptr: 1550872
+    spec: 1150697
+  org/python/core/PyList$list_count_exposer:
+    info: 1
+    self: 1
+  org/python/core/PyModule:
+    __dict__: 146
+  org/python/core/PyList$list_sort_exposer:
+    info: 175003
+    self: 3
+  org/python/core/packagecache/PackageManager$AccessVisitor:
+    class_access: 1494
+  org/python/modules/thread/thread:
+    __doc__: 1
+    error: 1
+    group: 1
+    stack_size: 1
+  org/antlr/runtime/BitSet:
+    bits: 490
+  org/python/antlr/PythonParser$except_clause_return:
+    tree: 394
+  org/python/core/PyFloat:
+    value: 22123227
+    TYPE: 5761419
+    INT_LONG_BOUNDARY: 61
+    NAN: 1
+    ONE: 1
+    SPEC_REPR: 1
+    SPEC_STR: 1
+    ZERO: 1
+    double_format: 1
+    float_format: 1
+  org/python/modules/itertools/combinationsWithReplacement:
+    TYPE: 2
+  org/apache/commons/cli/PosixParser:
+    tokens: 6
+    eatTheRest: 4
+    options: 3
+    currentOption: 1
+  jnr/ffi/Platform$SingletonHolder:
+    PLATFORM: 4
+  org/python/modules/Setup:
+    builtinModules: 1
+  org/python/core/PyMemoryView:
+    $assertionsDisabled: 1
+    TYPE: 1
+  org/python/core/PyDictionary$dict_has_key_exposer:
+    self: 300008
+    info: 175010
+  com/google/common/collect/MapMakerInternalMap$WeakValueReferenceImpl:
+    entry: 4
+  org/python/antlr/PythonParser:
+    DFA136_accept: 23
+    DFA136_eof: 23
+    DFA136_eot: 23
+    DFA136_max: 23
+    DFA136_min: 23
+    DFA136_special: 23
+    DFA136_transition: 23
+    DFA52_accept: 23
+    DFA52_eof: 23
+    DFA52_eot: 23
+    DFA52_max: 23
+    DFA52_min: 23
+    DFA52_special: 23
+    DFA52_transition: 23
+  org/python/core/PyObject$object___setattr___exposer:
+    info: 270094
+    self: 270094
+  io/netty/util/concurrent/CompleteFuture:
+    executor: 1
+  org/python/modules/_collections/PyDefaultDict:
+    TYPE: 2
+  io/netty/util/internal/CleanerJava9$1:
+    val$buffer: 2
+  io/netty/buffer/SizeClasses:
+    lookupMaxSize: 32832
+    pageShifts: 18528
+    sizeClasses: 17376
+    chunkSize: 8832
+    nPSizes: 7776
+    nSizes: 7584
+    nSubpages: 7488
+    directMemoryCacheAlignment: 7392
+    smallMaxSizeIdx: 3744
+    pageIdx2sizeTab: 192
+    size2idxTab: 192
+    sizeIdx2sizeTab: 192
+    $assertionsDisabled: 97
+    pageSize: 96
+  org/python/antlr/ast/For:
+    orelse: 1140
+    body: 944
+    iter: 748
+    target: 748
+    lineno: 588
+    col_offset: 196
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/google/common/util/concurrent/AbstractFuture$Listener:
+    TOMBSTONE: 1
+    executor: 1
+    task: 1
+  org/python/core/PyList$exposed___new__:
+    for_type: 45004
+  org/python/compiler/Constant:
+    access: 1
+  com/google/common/cache/CacheBuilderSpec$1:
+    $SwitchMap$com$google$common$cache$LocalCache$Strength: 4
+  org/python/compiler/Module:
+    classfile: 1765
+    codes: 353
+  org/python/core/PySequence:
+    delegator: 12124737
+  org/python/core/PySet$set_add_exposer:
+    info: 127
+    self: 127
+  org/python/antlr/PythonParser$stmt_return:
+    tree: 6618
+  org/dacapo/parser/Config$ThreadModel:
+    PER_CPU: 4
+    SINGLE: 4
+    FIXED: 3
+    description: 3
+    $VALUES: 2
+  org/python/antlr/PythonParser$classdef_return:
+    tree: 96
+  org/python/antlr/ast/operatorType:
+    Add: 3
+    BitAnd: 3
+    BitOr: 3
+    BitXor: 3
+    Div: 3
+    FloorDiv: 3
+    LShift: 3
+    Mod: 3
+    Mult: 3
+    Pow: 3
+    RShift: 3
+    Sub: 3
+    $VALUES: 2
+    UNDEFINED: 2
+  org/python/core/PyType$type___subclasses___exposer:
+    info: 24
+    self: 24
+  org/python/core/PyFunction$function___call___exposer:
+    info: 3
+  io/netty/util/concurrent/GlobalEventExecutor$TaskRunner:
+    $assertionsDisabled: 1
+    this$0: 1
+  org/python/core/PySuper$exposed___new__:
+    for_type: 26
+  io/netty/buffer/PooledByteBufAllocator$1:
+    this$0: 1
+  org/python/compiler/PyStringConstant:
+    value: 3379
+  org/python/antlr/ast/List:
+    elts: 230
+    ctx: 181
+    col_offset: 46
+    lineno: 46
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/modules/_weakref/ProxyType:
+    TYPE: 2
+  org/python/core/io/LineBufferedWriter:
+    buffer: 391
+  org/python/core/IdImpl$WeakIdentityMap$WeakIdKey:
+    hashcode: 7
+    this$0: 4
+  org/objectweb/asm/FieldWriter:
+    accessFlags: 2316
+    symbolTable: 1930
+    constantValueIndex: 1158
+    firstAttribute: 1158
+    lastRuntimeInvisibleAnnotation: 1158
+    lastRuntimeInvisibleTypeAnnotation: 1158
+    lastRuntimeVisibleAnnotation: 1158
+    lastRuntimeVisibleTypeAnnotation: 1158
+    signatureIndex: 1158
+    fv: 1130
+    descriptorIndex: 772
+    nameIndex: 772
+  org/python/modules/_threading/RLock:
+    TYPE: 2
+  org/python/proxies/signal$JythonSignalHandler$0:
+    __proxy: 3
+    __systemState: 1
+  io/netty/channel/nio/NioEventLoop$3:
+    this$0: 10
+  io/netty/channel/nio/NioEventLoop$4:
+    val$selectedKeySet: 30
+    val$selectorImplClass: 30
+    val$unwrappedSelector: 30
+    this$0: 10
+  io/netty/channel/nio/NioEventLoop$1:
+    this$0: 10
+  org/objectweb/asm/MethodWriter:
+    currentBasicBlock: 265495
+    code: 265377
+    compute: 178432
+    lastBytecodeOffset: 121575
+    symbolTable: 100561
+    currentFrame: 45511
+    maxLocals: 41187
+    lineNumberTable: 24063
+    lastBasicBlock: 21272
+    previousFrame: 14187
+    lineNumberTableLength: 13904
+    firstHandler: 13672
+    stackMapTableEntries: 12717
+    hasAsmInstructions: 11522
+    stackMapTableNumberOfEntries: 6496
+    accessFlags: 3808
+    firstBasicBlock: 2720
+    numberOfExceptions: 2206
+    signatureIndex: 2176
+    defaultValue: 1632
+    firstAttribute: 1632
+    firstCodeAttribute: 1632
+    lastCodeRuntimeInvisibleTypeAnnotation: 1632
+    lastCodeRuntimeVisibleTypeAnnotation: 1632
+    lastRuntimeInvisibleAnnotation: 1632
+    lastRuntimeInvisibleParameterAnnotations: 1632
+    lastRuntimeInvisibleTypeAnnotation: 1632
+    lastRuntimeVisibleAnnotation: 1632
+    lastRuntimeVisibleParameterAnnotations: 1632
+    lastRuntimeVisibleTypeAnnotation: 1632
+    localVariableTable: 1632
+    localVariableTypeTable: 1632
+    parameters: 1632
+    mv: 1604
+    descriptor: 1088
+    descriptorIndex: 1088
+    maxStack: 1088
+    nameIndex: 1088
+    sourceOffset: 1088
+    exceptionIndexTable: 554
+    currentLocals: 544
+    name: 544
+    lastHandler: 473
+    STACK_SIZE_DELTA: 1
+  org/python/compiler/Code:
+    mv: 132208
+    locals: 41453
+    nlocals: 25523
+    argcount: 7784
+    finallyLocals: 926
+    sig: 544
+    returnLocal: 215
+  org/python/antlr/PythonParser$term_return:
+    lparen: 55996
+    tree: 41381
+  io/netty/util/internal/shaded/org/jctools/queues/BaseMpscLinkedArrayQueueProducerFields:
+    P_INDEX_OFFSET: 1
+  org/python/antlr/ast/Subscript:
+    slice: 3810
+    value: 3810
+    ctx: 3058
+    col_offset: 762
+    lineno: 762
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/PythonParser$comparison_return:
+    tree: 22531
+  org/objectweb/asm/Handler:
+    nextHandler: 46655
+    endPc: 23340
+    startPc: 23340
+    catchTypeDescriptor: 747
+    handlerPc: 747
+    catchType: 498
+  org/python/core/stringlib/InternalFormat$Formatter:
+    result: 430234
+    spec: 190096
+    start: 180212
+    mark: 180162
+    bytes: 100114
+    lenWhole: 60004
+    lenSign: 30002
+  org/python/core/PyString$str_join_exposer:
+    info: 50071
+    self: 50070
+  org/python/antlr/PythonParser$attr_return:
+    tree: 3500
+  org/python/modules/struct$FormatDef:
+    name: 66
+    alignment: 53
+    size: 50
+  com/ibm/icu/util/CodePointTrie$Type:
+    FAST: 4
+    SMALL: 2
+    $VALUES: 1
+  jnr/posix/LinuxPOSIX:
+    PASSWD: 1
+  com/google/common/collect/MapMaker:
+    keyStrength: 19
+    valueStrength: 16
+    concurrencyLevel: 9
+    initialCapacity: 9
+    useCustomMap: 9
+    keyEquivalence: 4
+  org/python/compiler/ProxyMaker:
+    namesAndSigs: 235
+    classfile: 123
+    superclass: 32
+    supernames: 27
+    names: 13
+    interfaces: 10
+    myClass: 10
+  org/python/core/JavaImporter:
+    log: 20
+  jnr/constants/PlatformConstants$PackageNameResolver:
+    PACKAGE_NAME: 4
+  org/antlr/runtime/Lexer:
+    state: 513248
+    input: 420867
+  org/apache/commons/cli/CommandLine:
+    options: 64
+    args: 5
+  org/python/core/stringlib/IntegerFormatter:
+    spec: 200060
+    lenWhole: 50010
+    BIN: 1
+    HEX: 1
+    LIMIT_BYTE: 1
+    LIMIT_UNICODE: 1
+    OCT: 1
+  com/google/common/cache/LocalCache$WeightedStrongValueReference:
+    weight: 4
+  org/python/antlr/ast/BinOp:
+    left: 4520
+    right: 4520
+    op: 3390
+    col_offset: 1130
+    lineno: 1130
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/google/common/cache/LocalCache$NullEntry:
+    INSTANCE: 2
+    $VALUES: 1
+  org/python/antlr/PythonParser$fpdef_return:
+    tree: 730
+  org/python/core/PyUnicode$unicode_lower_exposer:
+    info: 12000
+    self: 12000
+  io/netty/buffer/PoolChunkList:
+    $assertionsDisabled: 1153
+    arena: 576
+    freeMaxThreshold: 576
+    freeMinThreshold: 576
+    maxCapacity: 576
+    maxUsage: 576
+    minUsage: 576
+    nextList: 576
+    prevList: 576
+    EMPTY_METRICS: 1
+  Imports$py:
+    self: 11
+    SecondImport$1: 2
+    SecondPackageImport$4: 2
+    SecondSubmoduleImport$7: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    calibrate$9: 2
+    f$0: 2
+    test$2: 2
+    test$5: 2
+    test$8: 2
+  org/antlr/runtime/tree/BaseTreeAdaptor:
+    uniqueNodeID: 46
+  io/netty/util/NettyRuntime$AvailableProcessorsHolder:
+    availableProcessors: 6
+  org/python/modules/sre/SRE_STATE:
+    mark: 4816
+    str: 256
+    sre_char_info: 255
+    end: 34
+    ptr: 34
+    sre_char_lower: 27
+    start: 21
+    lastmark: 17
+    lastindex: 14
+    mark_stack: 12
+    mark_stack_base: 12
+    mark_stack_size: 12
+    repeat: 12
+    charsize: 2
+    endpos: 2
+    flags: 2
+    pos: 2
+  org/python/antlr/ast/Index:
+    value: 2055
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/JavaProxyMap$MapMethod:
+    self: 64
+  org/python/core/PyBuiltinMethod:
+    self: 3379722
+  Exceptions$py:
+    self: 8
+    TryExcept$4: 2
+    TryRaiseExcept$1: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    f$0: 2
+    test$2: 2
+    test$5: 2
+  org/dacapo/parser/Config$OutputFile:
+    digest: 16
+    filter: 14
+    text: 14
+    bytes: 8
+    existence: 8
+    lines: 8
+    keep: 6
+    name: 6
+    this$0: 6
+  org/python/antlr/ast/Assign:
+    targets: 16884
+    value: 11256
+    lineno: 5628
+    col_offset: 2814
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/antlr/runtime/BaseRecognizer:
+    state: 3795894
+  org/python/antlr/ast/Return:
+    value: 607
+    lineno: 186
+    col_offset: 93
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/PythonParser$listmaker_return:
+    tree: 33
+  jythonlib$py:
+    f$0: 2
+    self: 2
+  org/python/core/PySyntaxError:
+    column: 1
+    filename: 1
+    lineno: 1
+    text: 1
+    value: 1
+  org/python/antlr/PythonLexer$DFA14:
+    accept: 23
+    decisionNumber: 23
+    eof: 23
+    eot: 23
+    max: 23
+    min: 23
+    recognizer: 23
+    special: 23
+    this$0: 23
+    transition: 23
+  org/python/core/PyBaseCode:
+    co_argcount: 8231290
+    co_flags: 7231708
+    co_nlocals: 7199364
+    co_varnames: 3610835
+    co_cellvars: 3464904
+    co_freevars: 3464887
+    varargs: 3464877
+    varkwargs: 3464806
+    jy_npurecell: 3434452
+    co_firstlineno: 2065
+    nargs: 250
+  org/python/modules/operator$PyAttrGetter:
+    TYPE: 2
+  Tuples$py:
+    self: 8
+    SmallTuples$4: 2
+    TupleSlicing$1: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    f$0: 2
+    test$2: 2
+    test$5: 2
+  io/netty/util/internal/logging/InternalLoggerFactory:
+    defaultFactory: 47
+  jnr/ffi/provider/jffi/NativeRuntime$SingletonHolder:
+    INSTANCE: 1
+  org/python/core/PyUnicode$Supplementary:
+    count: 1
+    this$0: 1
+  com/ibm/icu/impl/Norm2AllModes$NFKCSingleton:
+    INSTANCE: 2
+  StringIO$py:
+    self: 20
+    StringIO$2: 2
+    __init__$3: 2
+    __iter__$4: 2
+    _complain_ifclosed$1: 2
+    close$6: 2
+    f$0: 2
+    flush$16: 2
+    getvalue$17: 2
+    isatty$7: 2
+    next$5: 2
+    read$10: 2
+    readline$11: 2
+    readlines$12: 2
+    seek$8: 2
+    tell$9: 2
+    test$18: 2
+    truncate$13: 2
+    write$14: 2
+    writelines$15: 2
+  org/python/modules/posix/PyStatResult:
+    st_mode: 19
+    TYPE: 13
+    st_atime: 10
+    st_ctime: 10
+    st_dev: 10
+    st_gid: 10
+    st_ino: 10
+    st_mtime: 10
+    st_nlink: 10
+    st_size: 10
+    st_uid: 10
+  org/python/modules/thread/PyLocal:
+    TYPE: 1
+  io/netty/util/concurrent/ThreadPerTaskExecutor:
+    threadFactory: 1
+  org/python/antlr/PythonParser$import_stmt_return:
+    tree: 132
+  org/python/antlr/PythonParser$for_stmt_return:
+    tree: 178
+  com/google/common/base/Ticker:
+    SYSTEM_TICKER: 4
+  org/python/antlr/base/stmt:
+    from_future_checked: 15
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/google/common/cache/CacheBuilder$NullListener:
+    INSTANCE: 3
+    $VALUES: 1
+  org/python/core/PyClass:
+    __dict__: 2832394
+    __del__: 112376
+    __bases__: 52110
+    __name__: 169
+    TYPE: 107
+    __contains__: 106
+    __delattr__: 106
+    __getattr__: 106
+    __setattr__: 106
+    __tojava__: 106
+  java/math/BigInteger:
+    ONE: 1
+  org/python/antlr/PythonLexer:
+    input: 1173134
+    state: 624239
+    startPos: 228999
+    dfa46: 61597
+    implicitLineJoiningLevel: 25556
+    dfa5: 699
+    dfa45: 344
+    DFA46_transition: 284
+    DFA46_transitionS: 262
+    dfa14: 38
+    DFA5_transition: 30
+    DFA45_transition: 29
+    DFA14_transition: 28
+    DFA14_accept: 24
+    DFA14_eof: 24
+    DFA14_eot: 24
+    DFA14_max: 24
+    DFA14_min: 24
+    DFA14_special: 24
+    DFA45_accept: 24
+    DFA45_eof: 24
+    DFA45_eot: 24
+    DFA45_max: 24
+    DFA45_min: 24
+    DFA45_special: 24
+    DFA46_accept: 24
+    DFA46_eof: 24
+    DFA46_eot: 24
+    DFA46_max: 24
+    DFA46_min: 24
+    DFA46_special: 24
+    DFA5_accept: 24
+    DFA5_eof: 24
+    DFA5_eot: 24
+    DFA5_max: 24
+    DFA5_min: 24
+    DFA5_special: 24
+    eofWhileNested: 23
+    errorHandler: 23
+    partial: 23
+    single: 23
+    DFA5_transitionS: 8
+    DFA45_transitionS: 7
+    DFA14_transitionS: 6
+  org/python/core/PyObject$1:
+    this$0: 3476
+  com/ibm/icu/impl/UCharacterProperty$CaseBinaryProperty:
+    this$0: 10
+    which: 10
+  com/google/common/collect/MapMakerInternalMap$StrongKeyWeakValueSegment:
+    queueForValues: 20
+  org/python/modules/itertools/takewhile:
+    TYPE: 2
+  org/python/antlr/ast/keyword:
+    value: 380
+    arg: 190
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyNone:
+    TYPE: 1
+  org/python/antlr/PythonParser$simple_stmt_return:
+    tree: 5679
+  org/python/modules/operator:
+    __doc__: 1
+  io/netty/channel/nio/SelectedSelectionKeySet:
+    keys: 10
+  org/dacapo/harness/TeePrintStream:
+    out: 6
+  io/netty/util/internal/EmptyArrays:
+    EMPTY_STRINGS: 2
+    EMPTY_ASCII_STRINGS: 1
+    EMPTY_BYTES: 1
+    EMPTY_BYTE_BUFFERS: 1
+    EMPTY_CERTIFICATES: 1
+    EMPTY_CHARS: 1
+    EMPTY_CLASSES: 1
+    EMPTY_INTS: 1
+    EMPTY_JAVAX_X509_CERTIFICATES: 1
+    EMPTY_OBJECTS: 1
+    EMPTY_STACK_TRACE: 1
+    EMPTY_X509_CERTIFICATES: 1
+  org/python/core/io/BufferedWriter:
+    buffer: 109
+    rawIO: 15
+    bufferSize: 2
+  org/antlr/runtime/CharStreamState:
+    charPositionInLine: 310235
+    line: 310235
+    p: 310235
+  org/python/antlr/PythonParser$factor_return:
+    lparen: 57514
+    tree: 28936
+  org/python/core/PyTableCode:
+    func_id: 3517058
+    funcs: 3517058
+    co_flags: 4257
+    co_argcount: 2319
+    co_cellvars: 2065
+    co_code: 2065
+    co_filename: 2065
+    co_firstlineno: 2065
+    co_freevars: 2065
+    co_name: 2065
+    co_nlocals: 2065
+    co_varnames: 2065
+    jy_npurecell: 2065
+    nargs: 2065
+    varargs: 2065
+    varkwargs: 2065
+    __members__: 1
+  org/python/core/PyNullImporter:
+    TYPE: 2
+  org/python/core/PyString$str_rstrip_exposer:
+    info: 4
+    self: 4
+  org/python/core/io/UniversalIOWrapper$Newline:
+    LF: 9716
+    value: 3
+    $VALUES: 2
+    CR: 2
+    CRLF: 2
+  org/python/core/PyShadowString$shadowstr_startswith_exposer:
+    info: 6
+    self: 6
+  com/google/common/collect/MapMakerInternalMap$Strength:
+    STRONG: 27
+    WEAK: 7
+    $VALUES: 1
+  jnr/posix/LazyPOSIX:
+    posix: 3
+    handler: 2
+    useNativePosix: 2
+  org/python/core/PyDictionary$dict_keys_exposer:
+    info: 200026
+    self: 100013
+  io/netty/buffer/EmptyByteBuf:
+    EMPTY_BYTE_BUFFER: 2
+    alloc: 2
+    order: 2
+    str: 2
+    EMPTY_BYTE_BUFFER_ADDRESS: 1
+  Arithmetic$py:
+    self: 17
+    SimpleComplexArithmetic$13: 2
+    SimpleFloatArithmetic$4: 2
+    SimpleIntFloatArithmetic$7: 2
+    SimpleIntegerArithmetic$1: 2
+    SimpleLongArithmetic$10: 2
+    calibrate$12: 2
+    calibrate$15: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    calibrate$9: 2
+    f$0: 2
+    test$11: 2
+    test$14: 2
+    test$2: 2
+    test$5: 2
+    test$8: 2
+  javax/xml/bind/DatatypeConverter:
+    theConverter: 4738
+    SET_DATATYPE_CONVERTER_PERMISSION: 1
+  org/python/core/PyType$type___eq___exposer:
+    info: 81
+    self: 81
+  org/python/core/PyMethodDescr:
+    meth: 3380514
+    name: 2373
+    maxargs: 1188
+    minargs: 1188
+    dtype: 1178
+  org/python/antlr/PythonLexer$DFA45:
+    this$0: 344
+    accept: 23
+    decisionNumber: 23
+    eof: 23
+    eot: 23
+    max: 23
+    min: 23
+    recognizer: 23
+    special: 23
+    transition: 23
+  org/python/antlr/PythonLexer$DFA46:
+    this$0: 140192
+    accept: 23
+    decisionNumber: 23
+    eof: 23
+    eot: 23
+    max: 23
+    min: 23
+    recognizer: 23
+    special: 23
+    transition: 23
+  org/objectweb/asm/FieldVisitor:
+    api: 386
+    fv: 386
+  org/python/modules/itertools/chain:
+    TYPE: 2
+  org/python/core/MakeProxies:
+    proxyNumber: 11
+  org/python/antlr/ast/Print:
+    values: 1828
+    dest: 1034
+    lineno: 412
+    nl: 356
+    col_offset: 206
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/PythonParser$subscript_return:
+    tree: 3706
+  org/python/antlr/PythonParser$atom_return:
+    lparen: 57070
+    tree: 43872
+  org/python/core/PyStringMap$stringmap_clear_exposer:
+    info: 1
+    self: 1
+  org/python/core/PyFrame:
+    f_fastlocals: 159266605
+    tracefunc: 64878809
+    f_lineno: 61507973
+    f_builtins: 19092749
+    f_back: 13959736
+    env_j: 10494984
+    f_globals: 8521555
+    f_ncells: 7330062
+    f_code: 5560023
+    f_locals: 4978494
+    f_nfreevars: 3815354
+    generatorInput: 3565109
+    TYPE: 3464883
+    f_lasti: 2409768
+    f_env: 258
+    f_exits: 4
+  io/netty/channel/nio/SelectedSelectionKeySetSelector:
+    delegate: 10
+    selectionKeys: 10
+  com/google/common/cache/CacheBuilderSpec$KeyStrengthParser:
+    strength: 2
+  genericpath$py:
+    self: 11
+    _splitext$9: 2
+    commonprefix$8: 2
+    exists$1: 2
+    f$0: 2
+    getatime$6: 2
+    getctime$7: 2
+    getmtime$5: 2
+    getsize$4: 2
+    isdir$3: 2
+    isfile$2: 2
+  org/python/core/AbstractDict$AbstractDictIter:
+    size: 405
+    iterator: 96
+  org/python/core/PyObjectDerived:
+    dict: 1154953
+    slots: 84499
+  sre_constants$py:
+    self: 6
+    error$1: 2
+    f$0: 2
+    makedict$2: 2
+    dump$3: 1
+    f$4: 1
+  org/python/core/exceptions$BoundStaticJavaMethod:
+    javaMethod: 33
+    info: 6
+    self: 6
+  com/ibm/icu/impl/Norm2AllModes$NFCSingleton:
+    INSTANCE: 50001
+  org/python/antlr/GrammarActions$StringPair:
+    s: 1560
+    unicode: 1560
+    this$0: 780
+  com/ibm/icu/text/StringPrepParseException:
+    $assertionsDisabled: 1
+  org/python/core/BaseSet:
+    _set: 56
+  jnr/posix/JavaLibCHelper$1:
+    this$0: 1
+  com/google/common/cache/LocalCache$EntryFactory:
+    STRONG: 3
+    STRONG_ACCESS: 3
+    STRONG_ACCESS_WRITE: 3
+    STRONG_WRITE: 3
+    WEAK: 3
+    WEAK_ACCESS: 3
+    WEAK_ACCESS_WRITE: 3
+    WEAK_WRITE: 3
+    factories: 2
+    $VALUES: 1
+  org/python/core/IdImpl:
+    idMap: 5
+    sequentialId: 4
+  java/lang/System:
+    in: 6
+    out: 6
+    err: 4
+  org/python/core/PyString$str_rfind_exposer:
+    info: 5
+    self: 5
+  org/python/core/io/TextIOBase:
+    readahead: 676
+    bufferedIO: 197
+    builder: 28
+    interimBuilder: 28
+  org/python/compiler/PyComplexConstant:
+    value: 72
+  org/python/antlr/ast/comprehension:
+    ifs: 106
+    iter: 72
+    target: 72
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/google/common/base/CharMatcher$Whitespace:
+    SHIFT: 23
+    INSTANCE: 1
+  org/python/core/PyVersionInfo:
+    TYPE: 2
+    major: 1
+    micro: 1
+    minor: 1
+    releaselevel: 1
+    serial: 1
+  org/python/core/ArgParser:
+    args: 4220822
+    kws: 3801480
+    params: 1468690
+    required: 601497
+    funcname: 538113
+    emptyKws: 1
+  org/python/core/ReflectedCallData:
+    args: 2704694
+    errArg: 901727
+    length: 901680
+    self: 901451
+  org/python/core/PyDictionary$exposed___new__:
+    for_type: 8
+  jnr/posix/BaseNativePOSIX:
+    ConstantConverter: 1
+    FileStatConverter: 1
+    GROUP: 1
+    MsgHdrConverter: 1
+    TimesConverter: 1
+    handler: 1
+    signalHandlers: 1
+  org/python/antlr/PythonLexer$DFA5:
+    accept: 23
+    decisionNumber: 23
+    eof: 23
+    eot: 23
+    max: 23
+    min: 23
+    recognizer: 23
+    special: 23
+    this$0: 23
+    transition: 23
+  org/python/core/io/IOBase:
+    closed: 334
+  org/python/core/PyObject$1$1:
+    this$1: 1738
+  org/python/compiler/LegacyCompiler$LazyLegacyBundle:
+    ostream: 15
+    filename: 9
+    name: 9
+    cflags: 6
+    linenumbers: 6
+    node: 6
+    printResults: 6
+  org/apache/commons/cli/Util:
+    EMPTY_STRING_ARRAY: 2
+  com/google/common/base/AbstractIterator$1:
+    $SwitchMap$com$google$common$base$AbstractIterator$State: 33
+  org/python/core/packagecache/CachedJarsPackageManager$JarXEntry:
+    mtime: 5
+    cachefile: 4
+  org/python/antlr/PythonParser$dictorsetmaker_return:
+    tree: 27
+  org/python/core/PyFile$file_close_exposer:
+    info: 2
+    self: 2
+  org/python/core/PyCode:
+    co_name: 51725
+  io/netty/util/internal/shaded/org/jctools/queues/BaseMpscLinkedArrayQueueConsumerFields:
+    C_INDEX_OFFSET: 1
+  org/python/core/PyObject$object___init___exposer:
+    info: 18008
+    self: 18008
+  org/python/modules/itertools/dropwhile:
+    TYPE: 2
+  encodings/aliases$py:
+    f$0: 2
+    self: 2
+  org/python/core/PyUnicode$unicode_isdecimal_exposer:
+    info: 60000
+    self: 60000
+  org/dacapo/harness/Callback$1:
+    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
+  com/google/common/collect/ImmutableMapEntry$NonTerminalImmutableMapEntry:
+    nextInKeyBucket: 15
+  com/google/common/base/CharMatcher$None:
+    INSTANCE: 1
+  org/python/core/codecs$CodecState:
+    default_encoding: 171
+    errorHandlers: 11
+    searchPath: 4
+    searchCache: 3
+    BUILTIN_ERROR_HANDLERS: 2
+  jnr/constants/platform/linux/Errno$StringTable:
+    descriptions: 147
+  org/python/antlr/ast/arguments:
+    args: 1797
+    defaults: 702
+    kwarg: 469
+    vararg: 468
+    kwargName: 234
+    varargName: 234
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  With$py:
+    self: 20
+    BlockExceptions$14: 2
+    ContextManager$2: 2
+    ContextManager$8: 2
+    TryFinally$7: 2
+    WithFinally$1: 2
+    WithRaiseExcept$13: 2
+    __enter__$15: 2
+    __enter__$3: 2
+    __enter__$9: 2
+    __exit__$10: 2
+    __exit__$16: 2
+    __exit__$4: 2
+    calibrate$12: 2
+    calibrate$18: 2
+    calibrate$6: 2
+    f$0: 2
+    test$11: 2
+    test$17: 2
+    test$5: 2
+  org/python/antlr/ast/ImportFrom:
+    names: 212
+    module: 105
+    from_future_checked: 90
+    level: 70
+    lineno: 70
+    moduleNames: 70
+    col_offset: 35
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  copy_reg$py:
+    self: 12
+    __newobj__$6: 2
+    _reconstructor$4: 2
+    _reduce_ex$5: 2
+    _slotnames$7: 2
+    add_extension$8: 2
+    clear_extension_cache$10: 2
+    constructor$2: 2
+    f$0: 2
+    pickle$1: 2
+    pickle_complex$3: 2
+    remove_extension$9: 2
+  com/ibm/icu/impl/UCharacterProperty$NormQuickCheckIntProperty:
+    max: 4
+    this$0: 4
+    which: 4
+  org/python/core/PyStringMap$stringmap_get_exposer:
+    info: 1
+    self: 1
+  com/google/common/cache/LocalCache$Segment:
+    keyReferenceQueue: 2
+  org/python/modules/itertools/ifilter:
+    TYPE: 2
+  org/python/antlr/PythonParser$DFA52:
+    accept: 23
+    decisionNumber: 23
+    eof: 23
+    eot: 23
+    max: 23
+    min: 23
+    recognizer: 23
+    special: 23
+    this$0: 23
+    transition: 23
+  Lists$py:
+    self: 17
+    ListSlicing$4: 2
+    NestedListComprehensions$13: 2
+    SimpleListComprehensions$10: 2
+    SimpleListManipulation$1: 2
+    SmallLists$7: 2
+    calibrate$12: 2
+    calibrate$15: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    calibrate$9: 2
+    f$0: 2
+    test$11: 2
+    test$14: 2
+    test$2: 2
+    test$5: 2
+    test$8: 2
+  io/netty/util/internal/StringUtil:
+    BYTE2HEX_PAD: 514
+    BYTE2HEX_NOPAD: 257
+    HEX2B: 24
+    $assertionsDisabled: 1
+    NEWLINE: 1
+  org/python/core/PyFloat$Format:
+    BE: 4
+    format: 3
+    LE: 2
+    UNKNOWN: 2
+    $VALUES: 1
+  io/netty/util/concurrent/FailedFuture:
+    cause: 1
+  io/netty/util/internal/PlatformDependent$4:
+    val$allowedClassifiers: 3
+    val$availableClassifiers: 3
+    val$file: 3
+    val$osReleaseFileName: 1
+  org/python/antlr/PythonParser$defparameter_return:
+    tree: 732
+  org/python/core/PyNone$Holder:
+    INSTANCE: 92
+  org/python/core/AnnotationReader$1:
+    this$0: 780
+  org/python/core/PyTuple$tuple___getitem___exposer:
+    info: 1
+    self: 1
+  org/python/antlr/PythonParser$expr_return:
+    tree: 42812
+  org/python/antlr/ast/BoolOp:
+    values: 176
+    lineno: 44
+    op: 44
+    col_offset: 22
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyStaticMethod:
+    callable: 125
+    TYPE: 10
+  org/python/core/PyNewWrapper:
+    for_type: 45319
+    doc: 145
+    self: 115
+  org/python/core/PyType$type___call___exposer:
+    info: 1
+  org/python/core/PyUnicode$unicode_istitle_exposer:
+    info: 60000
+    self: 60000
+  io/netty/util/concurrent/GlobalEventExecutor:
+    SCHEDULE_QUIET_PERIOD_INTERVAL: 3
+    quietPeriodTask: 2
+    INSTANCE: 1
+    logger: 1
+    started: 1
+    taskQueue: 1
+    taskRunner: 1
+    terminationFuture: 1
+    threadFactory: 1
+  org/python/antlr/PythonParser$DFA136:
+    accept: 23
+    decisionNumber: 23
+    eof: 23
+    eot: 23
+    max: 23
+    min: 23
+    recognizer: 23
+    special: 23
+    this$0: 23
+    transition: 23
+  org/python/core/PySet$exposed___new__:
+    for_type: 68
+  org/python/antlr/PythonParser$not_test_return:
+    tree: 23592
+  com/ibm/icu/impl/UCharacterProperty$18:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$19:
+    this$0: 1
+  org/python/core/PyBuiltinCallable:
+    info: 3384320
+    doc: 3127108
+  org/python/core/PySet$set___iter___exposer:
+    info: 25
+    self: 25
+  org/dacapo/parser/Config:
+    sizes: 48
+    threadModel: 21
+    desc: 11
+    name: 5
+    className: 4
+    threadCountOverride: 2
+  com/ibm/icu/impl/UCharacterProperty$10:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$11:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$12:
+    this$0: 1
+  org/python/modules/_jythonlib/dict_builder:
+    TYPE: 1
+  com/ibm/icu/impl/UCharacterProperty$13:
+    this$0: 1
+  org/python/antlr/ast/With:
+    body: 224
+    context_expr: 168
+    optional_vars: 140
+    col_offset: 56
+    lineno: 56
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/ibm/icu/impl/UCharacterProperty$14:
+    this$0: 1
+  io/netty/util/concurrent/GlobalEventExecutor$1:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$15:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$16:
+    this$0: 1
+  com/ibm/icu/impl/UCharacterProperty$17:
+    this$0: 1
+  io/netty/channel/socket/nio/NioSocketChannel:
+    DEFAULT_SELECTOR_PROVIDER: 1
+    logger: 1
+  com/ibm/icu/impl/Trie2$ValueWidth:
+    BITS_16: 3
+    BITS_32: 3
+    $VALUES: 2
+  com/ibm/icu/util/CodePointMap:
+    $assertionsDisabled: 1
+  com/ibm/icu/impl/Norm2AllModes$ComposeNormalizer2:
+    onlyContiguous: 4
+  org/python/core/PyString$str_isupper_exposer:
+    info: 100000
+    self: 100000
+  org/python/antlr/PythonParser$arith_op_return:
+    tree: 600
+  org/python/antlr/ast/Continue:
+    col_offset: 11
+    lineno: 11
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/ibm/icu/impl/UCharacterProperty$EmojiBinaryProperty:
+    this$0: 13
+    which: 13
+  io/netty/util/internal/ThreadExecutorMap$1:
+    val$eventExecutor: 10
+    val$executor: 10
+  com/google/common/util/concurrent/AbstractFuture$Waiter:
+    TOMBSTONE: 1
+  io/netty/util/internal/ThreadExecutorMap$3:
+    val$eventExecutor: 1
+    val$threadFactory: 1
+  org/python/core/PyJavaType$ClassComparator:
+    this$0: 298
+  org/python/core/PyReflectedConstructor:
+    argslist: 711
+    nargs: 459
+  org/python/antlr/PythonParser$xor_expr_return:
+    lparen: 54366
+    tree: 39060
+  org/python/core/PyProperty:
+    fget: 428
+    fdel: 296
+    fset: 296
+    doc: 218
+    TYPE: 67
+    docFromGetter: 66
+  java/nio/file/StandardOpenOption:
+    READ: 15425
+  com/ibm/icu/text/Normalizer$ModeImpl:
+    normalizer2: 50001
+  org/python/antlr/PythonParser$testlist_return:
+    tree: 18558
+  com/ibm/icu/util/VersionInfo:
+    m_version_: 133
+    MAP_: 75
+    ICU_VERSION: 2
+    UNICODE_14_0: 2
+    ICU_DATA_VERSION: 1
+    TZDATA_VERSION: 1
+    UCOL_BUILDER_VERSION: 1
+    UCOL_RUNTIME_VERSION: 1
+    UCOL_TAILORINGS_VERSION: 1
+    UNICODE_10_0: 1
+    UNICODE_11_0: 1
+    UNICODE_12_0: 1
+    UNICODE_12_1: 1
+    UNICODE_13_0: 1
+    UNICODE_1_0: 1
+    UNICODE_1_0_1: 1
+    UNICODE_1_1_0: 1
+    UNICODE_1_1_5: 1
+    UNICODE_2_0: 1
+    UNICODE_2_1_2: 1
+    UNICODE_2_1_5: 1
+    UNICODE_2_1_8: 1
+    UNICODE_2_1_9: 1
+    UNICODE_3_0: 1
+    UNICODE_3_0_1: 1
+    UNICODE_3_1_0: 1
+    UNICODE_3_1_1: 1
+    UNICODE_3_2: 1
+    UNICODE_4_0: 1
+    UNICODE_4_0_1: 1
+    UNICODE_4_1: 1
+    UNICODE_5_0: 1
+    UNICODE_5_1: 1
+    UNICODE_5_2: 1
+    UNICODE_6_0: 1
+    UNICODE_6_1: 1
+    UNICODE_6_2: 1
+    UNICODE_6_3: 1
+    UNICODE_7_0: 1
+    UNICODE_8_0: 1
+    UNICODE_9_0: 1
+    UNICODE_VERSION: 1
+  org/python/core/PyBaseString:
+    TYPE: 1
+  org/python/core/imp$CodeImport:
+    compiled_only: 2
+    source: 2
+    $VALUES: 1
+  com/ibm/icu/impl/ICUConfig:
+    CONFIG_PROPS: 3
+  org/python/core/PyDictionary$dict_iterkeys_exposer:
+    info: 1
+    self: 1
+  org/antlr/runtime/BufferedTokenStream:
+    tokens: 600898
+    p: 152638
+    tokenSource: 119109
+    lastMarker: 62086
+    range: 46
+  java/nio/file/FileVisitResult:
+    CONTINUE: 28437
+    SKIP_SUBTREE: 69
+  org/python/core/PyXRangeIter:
+    index: 1627514
+    len: 542662
+    start: 542544
+    step: 542544
+    TYPE: 120
+  org/python/modules/_weakref/ReferenceType:
+    TYPE: 3
+  org/python/core/PyJavaType$MethodComparator:
+    classComparator: 2806
+    this$0: 298
+  org/python/core/ClasspathPyImporter:
+    entries: 242
+    logger: 44
+    path: 12
+    TYPE: 1
+  io/netty/util/concurrent/AbstractEventExecutor:
+    parent: 11
+    selfCollection: 11
+    logger: 1
+  org/python/core/PyString$str_isalpha_exposer:
+    info: 100000
+    self: 100000
+  org/python/core/PyDictionary$dict_items_exposer:
+    info: 175020
+    self: 20
+  org/python/antlr/ast/Num:
+    n: 13692
+    lineno: 3909
+    col_offset: 3908
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/google/common/collect/MapMakerInternalMap$Segment:
+    map: 153
+    readCount: 150
+    table: 147
+    count: 140
+    threshold: 39
+    maxSegmentSize: 32
+    modCount: 14
+  org/python/antlr/base/mod:
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/modules/posix/Hider$PosixImpl:
+    NOT_APPLICABLE: 26
+    JAVA: 3
+    $VALUES: 2
+    NATIVE: 2
+  com/google/common/collect/MapMakerInternalMap$WeakKeyStrongValueEntry:
+    value: 129
+  org/python/core/JavaProxyMap:
+    mapContainsProxy: 2
+    mapCopyProxy: 2
+    mapEqProxy: 2
+    mapFromKeysProxy: 2
+    mapGeProxy: 2
+    mapGetItemProxy: 2
+    mapGetProxy: 2
+    mapGtProxy: 2
+    mapHasKeyProxy: 2
+    mapItemsProxy: 2
+    mapIterItemsProxy: 2
+    mapIterKeysProxy: 2
+    mapIterProxy: 2
+    mapIterValuesProxy: 2
+    mapKeysProxy: 2
+    mapLeProxy: 2
+    mapLenProxy: 2
+    mapLtProxy: 2
+    mapNeProxy: 2
+    mapPopItemProxy: 2
+    mapPopProxy: 2
+    mapPutProxy: 2
+    mapRemoveProxy: 2
+    mapReprProxy: 2
+    mapSetDefaultProxy: 2
+    mapUpdateProxy: 2
+    mapValuesProxy: 2
+  org/python/core/stringlib/MarkupIterator$FieldNumbering:
+    automaticFieldNumber: 100016
+    manualFieldNumberSpecified: 100000
+  jnr/ffi/provider/InvalidRuntime:
+    cause: 1
+    message: 1
+  org/python/core/PyBaseException$BaseException___setattr___exposer:
+    info: 42
+    self: 42
+  jnr/ffi/Platform$OS:
+    LINUX: 7
+    WINDOWS: 6
+    FREEBSD: 5
+    NETBSD: 5
+    $VALUES: 4
+    AIX: 4
+    DARWIN: 4
+    DRAGONFLY: 4
+    MIDNIGHTBSD: 4
+    OPENBSD: 4
+    SOLARIS: 4
+    IBMI: 3
+    UNKNOWN: 3
+    ZLINUX: 3
+  com/kenai/jffi/Type:
+    VOID: 1
+  jnr/posix/POSIXTypeMapper:
+    INSTANCE: 1
+  io/netty/channel/socket/nio/NioDatagramChannel:
+    DEFAULT_SELECTOR_PROVIDER: 1
+    EXPECTED_TYPES: 1
+    METADATA: 1
+  org/python/antlr/PythonParser$dotted_name_return:
+    tree: 147
+  org/python/core/PyBuiltinFunction:
+    doc: 168
+  org/python/core/packagecache/CachedJarsPackageManager$1:
+    val$M: 43292
+    this$0: 27799
+    val$modPackages: 16353
+  jnr/ffi/provider/InvalidProvider$1:
+    this$0: 3
+  com/google/common/cache/LocalCache$WeakAccessEntry:
+    nextAccess: 6
+    previousAccess: 6
+    accessTime: 4
+  org/python/core/AbstractDict$ItemsIter:
+    iterator: 132
+  jnr/ffi/mapper/SignatureTypeMapperAdapter:
+    typeMapper: 2
+  io/netty/channel/ChannelInitializer:
+    logger: 1
+  org/python/core/util/LimitedCache$Holder:
+    used: 4909
+    value: 4909
+  org/python/core/PyDictProxy:
+    dict: 138
+  org/python/core/PyString$str_replace_exposer:
+    info: 20
+    self: 20
+  org/python/antlr/ast/Tuple:
+    elts: 852
+    ctx: 423
+    col_offset: 156
+    lineno: 156
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/modules/sre/PatternObject$match_exposer:
+    info: 1
+    self: 1
+  org/antlr/runtime/Token:
+    SKIP_TOKEN: 6836
+    INVALID_TOKEN: 1
+  org/python/core/PyList:
+    gListAllocatedStatus: 1279
+  org/python/core/PyDictProxy$dictproxy_keys_exposer:
+    info: 12
+    self: 6
+  org/python/core/PyUnicode$unicode_isalpha_exposer:
+    info: 60000
+    self: 60000
+  io/netty/util/concurrent/DefaultPromise$CauseHolder:
+    cause: 2
+  org/python/antlr/ast/TryFinally:
+    finalbody: 120
+    body: 100
+    col_offset: 20
+    lineno: 20
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  com/ibm/icu/impl/UCharacterProperty$BiDiIntProperty:
+    this$0: 4
+  org/python/antlr/PythonParser$with_item_return:
+    tree: 56
+  org/python/core/PyList$PyObjectDefaultComparator:
+    list: 1285
+    comparatorException: 6
+  org/python/antlr/ast/Raise:
+    type: 228
+    inst: 174
+    tback: 125
+    lineno: 76
+    col_offset: 38
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/PythonParser$dotted_attr_return:
+    tree: 1
+  org/python/antlr/ast/Module:
+    body: 161
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/ast/Import:
+    names: 724
+    lineno: 194
+    col_offset: 97
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyTuple$tuple___len___exposer:
+    info: 2
+    self: 2
+  org/python/core/AbstractArray:
+    size: 11
+    capacity: 7
+  com/google/common/collect/ImmutableList$Builder:
+    size: 24
+    contents: 18
+    forceCopy: 9
+  org/python/core/util/importer:
+    searchOrder: 407
+    logger: 1
+  org/python/compiler/CodeCompiler$2:
+    $SwitchMap$org$python$antlr$ast$operatorType: 13
+    $SwitchMap$org$python$antlr$ast$cmpopType: 11
+    $SwitchMap$org$python$antlr$ast$expr_contextType: 5
+    $SwitchMap$org$python$antlr$ast$unaryopType: 5
+    $SwitchMap$org$python$antlr$ast$boolopType: 3
+  org/dacapo/harness/LatencyReporter:
+    callback: 2
+    globalIdx: 1
+    timerBase: 1
+  org/python/compiler/CodeCompiler$1:
+    val$__exit__: 68
+    this$0: 48
+    val$mgr_tmp: 48
+  java/util/concurrent/TimeUnit:
+    NANOSECONDS: 32
+    SECONDS: 2
+  java/lang/Long:
+    TYPE: 16466
+  org/python/core/finalization/FinalizeTrigger:
+    flags: 300273
+    toFinalize: 150138
+    factory: 50048
+  org/python/antlr/PythonParser$testlist_gexp_return:
+    tree: 283
+  org/python/core/PyUnicode$unicode_isalnum_exposer:
+    info: 60000
+    self: 60000
+  org/python/compiler/Future$1:
+    this$0: 47
+  org/python/core/packagecache/SysPackageManager$1:
+    val$moduleDir: 71
+    this$0: 70
+  org/python/modules/sre/SRE_STATE$CACHE:
+    INSTANCE: 4
+    cache: 3
+    $VALUES: 1
+  com/google/common/base/Platform:
+    logger: 1
+    patternCompiler: 1
+  org/python/core/PyProperty$exposed___new__:
+    for_type: 70
+  io/netty/util/AbstractConstant:
+    uniqueIdGenerator: 32
+    id: 31
+    name: 31
+    uniquifier: 31
+  Strings$py:
+    self: 23
+    CompareInternedStrings$7: 2
+    CompareStrings$4: 2
+    ConcatStrings$1: 2
+    CreateStringsWithConcat$10: 2
+    StringMappings$16: 2
+    StringPredicates$19: 2
+    StringSlicing$13: 2
+    calibrate$12: 2
+    calibrate$15: 2
+    calibrate$18: 2
+    calibrate$21: 2
+    calibrate$3: 2
+    calibrate$6: 2
+    calibrate$9: 2
+    f$0: 2
+    test$11: 2
+    test$14: 2
+    test$17: 2
+    test$2: 2
+    test$20: 2
+    test$5: 2
+    test$8: 2
+  org/python/core/JavaProxyList:
+    listAppendProxy: 2
+    listCountProxy: 2
+    listEqProxy: 2
+    listExtendProxy: 2
+    listGetProxy: 2
+    listIAddProxy: 2
+    listIMulProxy: 2
+    listIndexProxy: 2
+    listInsertProxy: 2
+    listNeProxy: 2
+    listPopProxy: 2
+    listRAddProxy: 2
+    listRemoveOverrideProxy: 2
+    listRemoveProxy: 2
+    listReverseProxy: 2
+    listSetProxy: 2
+    listSortProxy: 2
+  org/python/modules/OperatorFunctions:
+    module: 1
+  org/python/core/io/UniversalIOWrapper:
+    readahead: 218461
+    skipNextLF: 218111
+    newlineTypes: 9736
+  org/python/core/PyTupleIterator:
+    iterator: 308917
+    TYPE: 1
+  jnr/constants/PlatformConstants:
+    OS: 4
+    ARCH: 3
+    ARCH_NAMES: 2
+    FAKE: 2
+    INSTANCE: 2
+    OS_NAMES: 2
+    BYTE_ORDER: 1
+    NAME: 1
+  org/python/core/PyReflectedFunction:
+    nargs: 2734427
+    argslist: 2729230
+    __doc__: 1354319
+    __module__: 1354319
+    calledStatically: 1351361
+    __name__: 904089
+  org/python/core/PyType$MROMergeState:
+    mro: 29965
+    next: 24286
+  org/python/core/LongInfo:
+    TYPE: 2
+    bits_per_digit: 1
+    sizeof_digit: 1
+  jnr/ffi/mapper/CompositeTypeMapper:
+    signatureTypeMappers: 1
+  io/netty/channel/ChannelException:
+    $assertionsDisabled: 1
+  org/python/core/PyList$2:
+    iter: 276
+    this$0: 2
+    val$index: 2
+  io/netty/channel/MultithreadEventLoopGroup:
+    logger: 2
+    DEFAULT_EVENT_LOOP_THREADS: 1
+  org/python/core/PyProperty$property___init___exposer:
+    info: 4
+    self: 4
+  encodings/utf_8$py:
+    self: 9
+    IncrementalDecoder$4: 2
+    IncrementalEncoder$2: 2
+    StreamReader$6: 2
+    StreamWriter$5: 2
+    decode$1: 2
+    encode$3: 2
+    f$0: 2
+    getregentry$7: 2
+  org/objectweb/asm/Edge:
+    info: 8489
+    nextEdge: 8489
+    successor: 8489
+  com/google/common/base/Splitter$1$1:
+    this$0: 16
+    toSplit: 11
+  org/python/core/PySystemStateRef:
+    referenceQueue: 7
+    threadStateBackReference: 3
+  org/python/core/PyStringMap$stringmap_items_exposer:
+    info: 25
+    self: 25
+  org/python/modules/cStringIO:
+    InputType: 1
+    OutputType: 1
+    strings: 1
+  org/python/modules/_weakref/WeakrefModule:
+    __doc__: 2
+  org/python/antlr/PythonParser$test_return:
+    tree: 28710
+  com/google/common/cache/LocalCache$Strength:
+    WEAK: 7
+    STRONG: 6
+    SOFT: 4
+    $VALUES: 2
+  com/google/common/base/Splitter$5:
+    this$0: 10
+    val$sequence: 10
+  com/google/common/base/Splitter$1:
+    val$separatorMatcher: 13
+  org/python/core/stringlib/TextFormatter:
+    result: 154
+    spec: 101
+    lenWhole: 50
+    mark: 50
+    bytes: 1
+  com/google/common/cache/CacheBuilderSpec$ValueStrengthParser:
+    strength: 2
+  org/python/core/IdImpl$WeakIdentityMap:
+    idKeys: 9
+    objHashcodeToPyId: 5
+  org/python/core/codecs:
+    BASE64_VALUE: 1
+    Py_UNICODE_REPLACEMENT_CHARACTER: 1
+    hexdigit: 1
+    hexdigits: 1
+    utf7_category: 1
+    utf8_code_length: 1
+  org/python/modules/itertools/ifilterfalse:
+    TYPE: 2
+  org/python/core/PyCell:
+    ob_ref: 177
+    TYPE: 24
+  package/submodule$py:
+    f$0: 2
+    self: 2
+  __future__$py:
+    self: 7
+    _Feature$1: 2
+    __init__$2: 2
+    __repr__$5: 2
+    f$0: 2
+    getMandatoryRelease$4: 2
+    getOptionalRelease$3: 2
+  org/python/antlr/PythonParser$global_stmt_return:
+    tree: 4
+  org/python/pycode/_pyx2:
+    self: 9
+    _PollNotification$1: 2
+    __getnewargs__$7: 2
+    __new__$2: 2
+    __repr__$4: 2
+    _asdict$5: 2
+    _make$3: 2
+    _replace$6: 2
+    f$0: 2
+  org/python/core/PyString$str_partition_exposer:
+    info: 10
+    self: 10
+  org/python/antlr/PythonParser$flow_stmt_return:
+    tree: 136
+  org/python/modules/itertools/repeat:
+    TYPE: 2
+  org/python/util/OptionScanner$LongSpec:
+    hasArgument: 4
+    key: 4
+    returnValue: 4
+  org/python/antlr/PythonParser$comp_op_return:
+    tree: 1015
+  org/python/util/jython$1:
+    $SwitchMap$org$python$util$jython$CommandLineOptions$Action: 7
+  org/python/pycode/_pyx0:
+    f$0: 2
+    self: 2
+  org/python/core/PyStringMap$stringmap_iterkeys_exposer:
+    info: 1
+    self: 1
+  io/netty/util/internal/PlatformDependent0$3:
+    val$finalUnsafe: 3
+    val$direct: 2
+  io/netty/buffer/UnpooledByteBufAllocator:
+    DEFAULT: 1
+  org/dacapo/harness/Benchmark:
+    data: 2375
+    datDeps: 2346
+    stats: 48
+    jarDeps: 25
+    config: 22
+    scratch: 9
+    verbose: 8
+    err: 7
+    loader: 7
+    out: 7
+    validateOutput: 6
+    iteration: 5
+    validationReport: 5
+    printStats: 4
+    savedClassLoader: 4
+    savedErr: 4
+    savedOut: 4
+    silentErr: 4
+    silentOut: 4
+    preIterationGC: 3
+    preserve: 3
+    savedSystemProperties: 3
+    timeoutDialation: 3
+    validate: 3
+    watchdog: 3
+    dumpLatencyCSV: 2
+    dumpLatencyHDR: 2
+    dumpLatencySmoothing: 2
+    iterations: 2
+    latencyBaseFileName: 2
+    dataSet: 1
+    valRepFile: 1
+  io/netty/util/internal/PlatformDependent0$4:
+    val$direct: 2
+  org/python/core/JavaProxySet:
+    andProxy: 2
+    cmpProxy: 2
+    containsProxy: 2
+    deepcopyOverrideProxy: 2
+    differenceProxy: 2
+    differenceUpdateProxy: 2
+    discardProxy: 2
+    eqProxy: 2
+    gtProxy: 2
+    hashProxy: 2
+    iandProxy: 2
+    intersectionProxy: 2
+    intersectionUpdateProxy: 2
+    iorProxy: 2
+    isDisjointProxy: 2
+    isubProxy: 2
+    ixorProxy: 2
+    ltProxy: 2
+    neProxy: 2
+    orProxy: 2
+    popProxy: 2
+    reduceProxy: 2
+    removeOverrideProxy: 2
+    subProxy: 2
+    symDiffProxy: 2
+    symDiffUpdateProxy: 2
+    unionProxy: 2
+    updateProxy: 2
+    xorProxy: 2
+  io/netty/util/internal/PlatformDependent0$2:
+    val$finalUnsafe: 2
+  io/netty/util/internal/PlatformDependent0$7:
+    val$finalInternalUnsafe: 2
+  org/python/Version:
+    defaultCodeFlags: 4175
+    GIT_TAG: 7
+    GIT_VERSION: 3
+    DATE: 2
+    PY_VERSION: 2
+    TIME: 2
+    GIT_BRANCH: 1
+    PY_MAJOR_VERSION: 1
+    PY_MICRO_VERSION: 1
+    PY_MINOR_VERSION: 1
+    PY_RELEASE_LEVEL: 1
+    PY_RELEASE_SERIAL: 1
+  org/objectweb/asm/Context:
+    currentMethodAccessFlags: 17504
+    currentMethodDescriptor: 17316
+    currentMethodName: 17316
+    charBuffer: 14169
+    parsingOptions: 8647
+    attributePrototypes: 799
+  org/python/antlr/PythonParser$import_as_name_return:
+    tree: 18
+  com/ibm/icu/impl/Trie2$2:
+    $SwitchMap$com$ibm$icu$impl$Trie2$ValueWidth: 3
+  org/python/compiler/CodeCompiler$ExceptionHandler:
+    exceptionStarts: 1223
+    exceptionEnds: 745
+    this$0: 546
+    node: 407
+    bodyDone: 267
+  com/google/common/collect/ImmutableMap$Builder:
+    size: 39
+    entries: 35
+    entriesUsed: 5
+    valueComparator: 1
+  io/netty/channel/socket/nio/NioServerSocketChannel:
+    DEFAULT_SELECTOR_PROVIDER: 1
+    METADATA: 1
+    logger: 1
+  org/python/modules/_io/_jyio:
+    DEFAULT_BUFFER_SIZE: 2
+    UnsupportedOperation: 1
+    openKwds: 1
+  jnr/ffi/LibraryLoader$DefaultLibPaths:
+    PATHS: 1
+  org/python/modules/itertools/permutations:
+    TYPE: 2
+  io/netty/util/internal/logging/JdkLoggerFactory:
+    INSTANCE: 2
+  jnr/constants/platform/ConstantResolver$UnknownConstant:
+    name: 15
+    value: 15
+  java/io/File:
+    separator: 2774
+    separatorChar: 587
+    pathSeparator: 2
+  org/python/modules/itertools/cycle:
+    TYPE: 2
+  org/dacapo/parser/Config$Size:
+    outputFiles: 42
+    this$0: 9
+    threadLimit: 6
+    args: 4
+    nThreads: 3
+    name: 3
+  org/python/antlr/PythonParser$or_test_return:
+    tree: 23500
+  io/netty/resolver/AddressResolverGroup:
+    executorTerminationListeners: 1
+    logger: 1
+    resolvers: 1
+  com/ibm/icu/impl/ICUBinary:
+    icuDataFiles: 6
+    $assertionsDisabled: 5
+  com/google/common/cache/CacheBuilderSpec:
+    KEY_VALUE_SPLITTER: 5
+    VALUE_PARSERS: 5
+    concurrencyLevel: 5
+    keyStrength: 5
+    maximumWeight: 5
+    accessExpirationTimeUnit: 4
+    maximumSize: 3
+    KEYS_SPLITTER: 2
+    accessExpirationDuration: 2
+    initialCapacity: 1
+    recordStats: 1
+    refreshTimeUnit: 1
+    specification: 1
+    valueStrength: 1
+    writeExpirationTimeUnit: 1
+  jnr/ffi/provider/jffi/NativeRuntime$1:
+    $SwitchMap$jnr$ffi$NativeType: 16
+  org/python/antlr/ast/Attribute:
+    value: 8640
+    ctx: 6378
+    attr: 3468
+    lineno: 1758
+    attrName: 1724
+    col_offset: 1724
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/ast/Delete:
+    targets: 234
+    lineno: 86
+    col_offset: 43
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  javax/xml/bind/DatatypeConverterImpl:
+    hexCode: 75777
+    $assertionsDisabled: 1
+    datatypeFactory: 1
+    decodeMap: 1
+    encodeMap: 1
+    theInstance: 1
+  org/python/core/PySet$set___init___exposer:
+    info: 89
+    self: 89
+  org/python/compiler/ScopesCompiler:
+    cur: 13108
+    scopes: 1601
+    level: 1435
+    func_level: 1312
+    code_compiler: 376
+    nodeScopes: 376
+  org/python/core/BytecodeNotification:
+    callbacks: 82
+  io/netty/channel/SingleThreadEventLoop:
+    tailTasks: 10
+    DEFAULT_MAX_PENDING_TASKS: 1
+  jnr/posix/POSIXFactory$DefaultLibCProvider$SingletonHolder:
+    libc: 1
+  org/python/antlr/ast/ExceptHandler:
+    body: 985
+    type: 669
+    name: 611
+    col_offset: 197
+    lineno: 197
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyString$str_isdigit_exposer:
+    info: 100005
+    self: 100005
+  org/python/core/PyBaseException:
+    args: 290070
+    message: 254055
+    __dict__: 54
+    TYPE: 1
+  org/python/compiler/ProxyCodeHelpers:
+    types: 292
+  org/python/compiler/JavaMaker:
+    methods: 72
+    classfile: 21
+    myClass: 10
+    pythonClass: 10
+    pythonModule: 10
+  org/python/core/PyBeanProperty:
+    __name__: 346
+    getMethod: 345
+    myType: 342
+    setMethod: 342
+    field: 4
+  org/python/antlr/PythonParser$with_stmt_return:
+    tree: 28
+  org/python/antlr/base/excepthandler:
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/packagecache/PathPackageManager$PackageExistsFileFilter:
+    python: 5428
+    java: 34
+  org/objectweb/asm/AnnotationWriter:
+    annotation: 711
+    numElementValuePairsOffset: 553
+    numElementValuePairs: 474
+    symbolTable: 265
+    previousAnnotation: 237
+    useNamedValues: 158
+    nextAnnotation: 130
+  org/python/proxies/subprocess$_CouplerThread$1:
+    __proxy: 4
+    __systemState: 2
+  io/netty/util/concurrent/DefaultEventExecutorChooserFactory:
+    INSTANCE: 1
+  org/python/core/CodeFlag:
+    CO_OPTIMIZED: 3765072
+    CO_GENERATOR: 3464808
+    flag: 31738
+    allFlags: 2068
+    CO_GENERATOR_ALLOWED: 711
+    CO_FUTURE_DIVISION: 380
+    CO_VARARGS: 78
+    CO_VARKEYWORDS: 53
+    CO_FUTURE_WITH_STATEMENT: 28
+    CO_FUTURE_ABSOLUTE_IMPORT: 27
+    CO_FUTURE_PRINT_FUNCTION: 27
+    CO_FUTURE_UNICODE_LITERALS: 27
+    CO_NESTED: 5
+    $VALUES: 3
+    CO_NEWLOCALS: 2
+  io/netty/channel/DefaultSelectStrategyFactory:
+    INSTANCE: 2
+  com/ibm/icu/text/StringPrep:
+    CACHE: 1
+    PROFILE_NAMES: 1
+  com/ibm/icu/impl/Trie2_16:
+    index: 700000
+    dataLength: 3
+    header: 3
+  org/python/core/PyArray$ArrayDelegate:
+    this$0: 11
+  io/netty/util/internal/DefaultPriorityQueue:
+    queue: 3
+    size: 3
+    EMPTY_ARRAY: 1
+    comparator: 1
+  com/google/common/base/Splitter$SplittingIterator:
+    offset: 70
+    toSplit: 43
+    limit: 38
+    trimmer: 27
+    omitEmptyStrings: 16
+  org/antlr/runtime/CommonToken:
+    type: 1727419
+    channel: 1610341
+    index: 775669
+    start: 346425
+    stop: 339412
+    charPositionInLine: 138370
+    input: 111963
+    text: 96992
+    line: 81261
+  org/python/core/adapter/ClassicPyObjectAdapter$10:
+    this$0: 4
+  com/ibm/icu/text/Normalizer:
+    NFKD: 50002
+    NFC: 3
+    NFD: 2
+    NFKC: 2
+    NONE: 2
+    COMPOSE: 1
+    COMPOSE_COMPAT: 1
+    DECOMP: 1
+    DECOMP_COMPAT: 1
+    DEFAULT: 1
+    FCD: 1
+    MAYBE: 1
+    NO: 1
+    NO_OP: 1
+    YES: 1
+  com/ibm/icu/impl/UCharacterProperty$BinaryProperty:
+    column: 72
+    mask: 72
+    this$0: 72
+  org/antlr/runtime/Parser:
+    input: 23
+  org/python/core/io/BinaryIOWrapper:
+    bufferedIO: 28
+    readahead: 28
+  java/util/logging/Level:
+    FINE: 769
+    FINEST: 12
+    CONFIG: 5
+    ALL: 2
+    OFF: 2
+    WARNING: 2
+    FINER: 1
+    INFO: 1
+    SEVERE: 1
+  org/python/core/AnnotationReader:
+    nextVisitIsVersion: 416
+    nextVisitIsMTime: 364
+    nextVisitIsFilename: 312
+    filename: 156
+    version: 156
+    mtime: 104
+  org/python/core/PyStringMap$stringmap_keys_exposer:
+    info: 44
+    self: 26
+  org/python/antlr/PythonParser$try_stmt_return:
+    tree: 211
+  org/python/antlr/ast/ClassDef:
+    body: 480
+    name: 480
+    bases: 458
+    decorator_list: 384
+    lineno: 288
+    col_offset: 96
+    nameNode: 96
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/core/PyFile$file_flush_exposer:
+    info: 1
+    self: 1
+  org/python/core/PyStringMap$stringmap_update_exposer:
+    info: 18
+    self: 18
+  org/python/core/PyBuiltinFunctionSet:
+    index: 152
+  jnr/ffi/mapper/TypeMapper$Builder:
+    fromNativeConverterMap: 2
+    toNativeConverterMap: 2
+  java/util/Locale:
+    ROOT: 3
+    ENGLISH: 1
+  org/python/core/PySingleton:
+    name: 3
+  org/python/core/packagecache/CachedJarsPackageManager:
+    index: 6
+    cachedir: 4
+    indexModified: 4
+    logger: 1
+  org/objectweb/asm/MethodVisitor:
+    api: 1088
+    mv: 1088
+  io/netty/util/internal/logging/JdkLogger:
+    logger: 60
+    SELF: 1
+    SUPER: 1
+  com/google/common/collect/ImmutableCollection:
+    EMPTY_ARRAY: 1
+  org/python/core/PyString$str_isspace_exposer:
+    info: 100000
+    self: 100000
+  org/python/antlr/PythonParser$arglist_return:
+    tree: 911
+  org/python/core/PyUnicode$unicode_isupper_exposer:
+    info: 60000
+    self: 60000
+  org/python/core/PyAttributeDeleted:
+    INSTANCE: 1
+  io/netty/util/concurrent/PromiseTask$SentinelRunnable:
+    name: 3
+  com/google/common/cache/LocalCache$WeakEntry:
+    valueReference: 12
+    hash: 4
+    next: 2
+  io/netty/util/DefaultAttributeMap:
+    $assertionsDisabled: 1
+    ATTRIBUTES_UPDATER: 1
+    EMPTY_ATTRIBUTES: 1
+  org/python/core/PyString:
+    TYPE: 106
+  org/python/antlr/PythonParser$varargslist_return:
+    tree: 225
+  org/python/core/PyString$str_index_exposer:
+    info: 2
+    self: 2
+  io/netty/util/NettyRuntime:
+    holder: 3
+  pprint$py:
+    self: 20
+    PrettyPrinter$7: 2
+    __init__$8: 2
+    _format$13: 2
+    _perfcheck$18: 2
+    _recursion$17: 2
+    _repr$14: 2
+    _safe_repr$16: 2
+    _sorted$6: 2
+    f$0: 2
+    format$15: 2
+    isreadable$12: 2
+    isreadable$4: 2
+    isrecursive$11: 2
+    isrecursive$5: 2
+    pformat$10: 2
+    pformat$2: 2
+    pprint$1: 2
+    pprint$9: 2
+    saferepr$3: 2
+  org/python/antlr/ast/expr_contextType:
+    Load: 9092
+    Param: 368
+    Store: 368
+    Del: 3
+    $VALUES: 2
+    AugLoad: 2
+    AugStore: 2
+    UNDEFINED: 2
+  org/python/antlr/ast/Compare:
+    comparators: 5075
+    left: 4060
+    ops: 3045
+    lineno: 1247
+    col_offset: 1015
+    TYPE: 1
+    attributes: 1
+    fields: 1
+  org/python/antlr/PythonParser$continue_stmt_return:
+    tree: 11
+  com/google/common/cache/CacheStats:
+    evictionCount: 1
+    hitCount: 1
+    loadExceptionCount: 1
+    loadSuccessCount: 1
+    missCount: 1
+    totalLoadTime: 1
+  org/python/modules/_weakref/CallableProxyType:
+    TYPE: 2
+  org/python/modules/itertools/count:
+    TYPE: 2
+  org/python/core/ReflectedArgs:
+    flags: 1380853
+    args: 1035627
+    isStatic: 479964
+    isVarArgs: 460010
+    method: 459865
+    declaringClass: 17591
+  org/python/modules/ArrayModule:
+    __doc__: 1
+  com/google/common/base/Equivalence$Identity:
+    INSTANCE: 3
+  org/python/antlr/PythonParser$del_stmt_return:
+    tree: 31
+  jnr/ffi/Platform$1:
+    $SwitchMap$jnr$ffi$Platform$OS: 15
+    $SwitchMap$jnr$ffi$Platform$CPU: 11
+  org/python/core/PyDataDescr:
+    name: 1163
+    ofType: 734
+    doc: 649
+    dtype: 649
+  org/python/util/jython:
+    logger: 5
+    consoleHandler: 3
+    usageBody: 1
+  org/python/core/io/BufferedReader:
+    buffer: 454
+    rawIO: 82
+    bufferSize: 26
+  org/python/core/CompilerFlags:
+    flags: 7245058
+    dont_imply_dedent: 4134
+    only_ast: 4134
+    source_is_utf8: 4134
+    CO_ALL_FEATURES: 2
+  Instances$py:
+    self: 15
+    __init__$5: 3
+    __init__$7: 3
+    c$3: 3
+    d$4: 3
+    e$6: 3
+    CreateInstances$1: 2
+    calibrate$8: 2
+    f$0: 2
+    test$2: 2
+    __init__$11: 1
+    __init__$13: 1
+    c$9: 1
+    d$10: 1
+    e$12: 1
+  org/python/antlr/ast/unaryopType:
+    Invert: 3
+    Not: 3
+    UAdd: 3
+    USub: 3
+    $VALUES: 2
+    UNDEFINED: 2
+  com/ibm/icu/util/CodePointTrie$1:
+    $SwitchMap$com$ibm$icu$util$CodePointTrie$ValueWidth: 4
+  org/python/antlr/PythonParser$raise_stmt_return:
+    tree: 38
+  org/python/compiler/ScopeInfo:
+    tbl: 13346
+    local: 3271
+    names: 2069
+    kind: 1974
+    ac: 1642
+    inner_free: 1017
+    cellvars: 706
+    freevars: 706
+    LOGGER: 684
+    jy_npurecell: 683
+    cell: 660
+    up: 660
+    generator: 427
+    func_level: 353
+    jy_paramcells: 353
+    level: 353
+    scope_name: 353
+    scope_node: 353
+    distance: 330
+    from_import_star: 330
+    unqual_exec: 330
+    hasReturnWithValue: 74
+    max_with_count: 56
+    PRESENT: 5
+    contains_ns_free_vars: 3
+  org/python/core/PyObject$object___getattribute___exposer:
+    info: 25
+    self: 25
+  org/objectweb/asm/SymbolTable:
+    entries: 232179
+    entryCount: 30840
+    constantPoolCount: 19301
+    constantPool: 9683
+    typeTable: 6881
+    majorVersion: 3292
+    typeCount: 2812
+    className: 477
+    bootstrapMethods: 56
+    classWriter: 36
+    sourceClassReader: 28
+  org/python/antlr/PythonParser$lambdef_return:
+    tree: 6
+  org/python/core/PySystemState$DefaultBuiltinsHolder:
+    builtins: 1
+  org/objectweb/asm/Symbol:
+    value: 79577
+    index: 58251
+    tag: 38851
+    name: 10801
+    data: 10280
+    owner: 10280
+    info: 154
+  org/python/compiler/PyIntegerConstant:
+    value: 14378
 opcodes:
-  aconst_null: 51027969
-  iconst_m1: 15459995
-  iconst_0: 96403357
-  iconst_1: 96497134
-  iconst_2: 33700433
+  aconst_null: 51027903
+  iconst_m1: 15459998
+  iconst_0: 96403305
+  iconst_1: 96496808
+  iconst_2: 33700397
   iconst_3: 21697066
   iconst_4: 18423630
   iconst_5: 6488008
@@ -25,39 +4832,39 @@ opcodes:
   lconst_1: 1165362
   dconst_0: 1260000
   dconst_1: 3
-  bipush: 28926689
-  sipush: 62005540
-  ldc: 41257416
-  iload: 365432002
+  bipush: 28926511
+  sipush: 62005506
+  ldc: 41257732
+  iload: 365427490
   lload: 3685669
   dload: 28304886
-  aload: 1865268798
-  iaload: 5532398
-  aaload: 98001751
-  baload: 20069352
+  aload: 1865259841
+  iaload: 5532350
+  aaload: 98001587
+  baload: 20069344
   caload: 3312864
   saload: 569473
-  istore: 68565074
+  istore: 68564518
   lstore: 900677
   dstore: 9940560
-  astore: 207896983
+  astore: 207895698
   iastore: 7291360
-  aastore: 32765587
-  bastore: 658663
+  aastore: 32765529
+  bastore: 658495
   castore: 331651
   sastore: 51072
-  pop: 17846047
+  pop: 17845620
   pop2: 100031
-  dup: 66684209
-  dup_x1: 11946571
+  dup: 66683497
+  dup_x1: 11946570
   dup_x2: 14939
   dup2_x1: 542457
   dup2_x2: 100001
   swap: 9973443
-  iadd: 51512469
+  iadd: 51512472
   ladd: 1707748
   dadd: 300983
-  isub: 20427650
+  isub: 20427699
   lsub: 623494
   dsub: 1201096
   imul: 88129
@@ -76,69 +4883,67 @@ opcodes:
   lshr: 900000
   iushr: 147137
   lushr: 782
-  iand: 28341327
+  iand: 28341279
   land: 30
   ior: 238458
   lor: 50
-  ixor: 8019567
-  iinc: 9384983
+  ixor: 8019526
+  iinc: 9384097
   i2l: 1157840
   i2d: 911845
   l2i: 2426176
   l2d: 237
   d2i: 1601
   d2l: 1
-  i2b: 707934
+  i2b: 707766
   i2c: 289183
   i2s: 319328
   lcmp: 1166963
   dcmpl: 3150096
   dcmpg: 3050108
-  ifeq: 74821864
-  ifne: 27626531
+  ifeq: 74820894
+  ifne: 27626495
   iflt: 4049115
   ifge: 23344269
-  ifgt: 801654
-  ifle: 11622172
-  if_icmpeq: 4771876
-  if_icmpne: 16587312
-  if_icmplt: 18329247
-  if_icmpge: 35201100
-  if_icmpgt: 3468240
+  ifgt: 801862
+  ifle: 11622385
+  if_icmpeq: 4771857
+  if_icmpne: 16587250
+  if_icmplt: 18329094
+  if_icmpge: 35199851
+  if_icmpgt: 3468057
   if_icmple: 7978076
-  if_acmpeq: 3830691
-  if_acmpne: 35697180
-  goto: 83905491
-  tableswitch: 2703245
-  lookupswitch: 535456
-  ireturn: 110918860
-  lreturn: 198
+  if_acmpeq: 3830650
+  if_acmpne: 35697107
+  goto: 83903321
+  tableswitch: 2703237
+  lookupswitch: 535432
+  ireturn: 110917980
+  lreturn: 196
   dreturn: 17602368
-  areturn: 204540312
-  return: 199130576
-  getstatic: 94834840
+  areturn: 204539646
+  return: 199130260
+  getstatic: 94834440
   putstatic: 1016
-  getfield: 639480781
-  putfield: 207773165
-  invokevirtual: 418083441
-  invokespecial: 122926100
-  invokestatic: 81389784
-  invokeinterface: 30323182
+  getfield: 639479328
+  putfield: 207772649
+  invokevirtual: 418078471
+  invokespecial: 122925108
+  invokestatic: 81389515
+  invokeinterface: 30322644
   invokedynamic: 5
-  new: 26256439
+  new: 26255745
   newarray: 1792531
-  anewarray: 7342547
-  arraylength: 16000132
+  anewarray: 7342499
+  arraylength: 16000218
   athrow: 146472
-  checkcast: 77046291
-  instanceof: 8302858
-  monitorenter: 7367323
-  monitorexit: 7367323
+  checkcast: 77045391
+  instanceof: 8302810
+  monitorenter: 7367322
+  monitorexit: 7367322
   multianewarray: 96
-  ifnull: 271614614
-  ifnonnull: 46548263
-
-# sun/launcher/LauncherHelper
+  ifnull: 271614201
+  ifnonnull: 46547789# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -221,9 +5026,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
-# java/util/zip/ZipException
 # java/nio/file/ProviderMismatchException
 # java/security/PrivilegedActionException
+# java/util/zip/ZipException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -427,6 +5232,10 @@ opcodes:
 # sun/security/jca/ProviderList$1
 # java/security/Provider$ServiceKey
 # java/security/Provider$EngineDescription
+# java/security/SecureRandomParameters
+# java/security/cert/CertStoreParameters
+# java/security/Policy$Parameters
+# javax/security/auth/login/Configuration$Parameters
 # jdk/internal/math/FloatingDecimal
 # jdk/internal/math/FloatingDecimal$ExceptionalBinaryToASCIIBuffer
 # jdk/internal/math/FloatingDecimal$BinaryToASCIIConverter
@@ -519,12 +5328,12 @@ opcodes:
 # javax/xml/datatype/FactoryFinder
 # jdk/xml/internal/SecuritySupport
 # javax/xml/datatype/FactoryFinder$1
+# jdk/internal/foreign/MemorySessionImpl
+# java/lang/foreign/MemorySegment$Scope
 # java/net/URLClassLoader$3
 # java/net/URLClassLoader$3$1
 # java/net/MalformedURLException
 # com/sun/org/apache/xerces/internal/jaxp/datatype/DatatypeFactoryImpl
-# jdk/internal/foreign/MemorySessionImpl
-# java/lang/foreign/MemorySegment$Scope
 # java/lang/invoke/MethodHandle$1
 # java/util/regex/Pattern$BnM
 # java/util/regex/MatchResult
@@ -709,6 +5518,15 @@ opcodes:
 # java/io/UncheckedIOException
 # java/util/AbstractMap$2
 # java/util/AbstractMap$2$1
+# java/io/ProxyingConsole
+# jdk/internal/io/JdkConsoleImpl
+# jdk/internal/io/JdkConsoleImpl$2
+# java/io/PrintWriter
+# java/io/PrintWriter$1
+# jdk/internal/access/JavaIOPrintWriterAccess
+# jdk/internal/io/JdkConsoleImpl$LineReader
+# java/io/ProxyingConsole$WrappingReader
+# java/io/ProxyingConsole$WrappingWriter
 # java/io/Console$1
 # jdk/internal/access/JavaIOAccess
 # java/lang/ProcessBuilder
@@ -766,13 +5584,13 @@ opcodes:
 # java/util/concurrent/CompletableFuture$UniHandle
 # java/util/concurrent/CompletableFuture$UniCompletion
 # java/util/concurrent/ForkJoinTask$Aux
-# java/lang/ProcessBuilder$NullInputStream
-# java/io/FileOutputStream$1
-# java/lang/ProcessBuilder$NullOutputStream
 # jdk/internal/event/ProcessStartEvent
 # jdk/internal/logger/LazyLoggers
 # jdk/internal/logger/LazyLoggers$1
 # jdk/internal/logger/LazyLoggers$LazyLoggerFactories
+# java/lang/ProcessBuilder$NullInputStream
+# java/io/FileOutputStream$1
+# java/lang/ProcessBuilder$NullOutputStream
 # jdk/internal/logger/LoggerFinderLoader
 # jdk/internal/logger/LoggerFinderLoader$TemporaryLoggerFinder
 # sun/util/logging/internal/LoggingProviderImpl$JULWrapper
@@ -809,6 +5627,7 @@ opcodes:
 # java/lang/foreign/MemorySegment
 # java/io/PushbackInputStream
 # java/io/DataOutputStream
+# java/nio/charset/IllegalCharsetNameException
 # java/nio/channels/Channels$ReadableByteChannelImpl
 # java/nio/channels/Channels$WritableByteChannelImpl
 # java/nio/BufferOverflowException
@@ -908,12 +5727,10 @@ opcodes:
 # sun/util/locale/provider/TimeZoneNameProviderImpl
 # sun/util/locale/provider/CalendarDataProviderImpl
 # sun/util/cldr/CLDRCalendarDataProviderImpl
-# java/io/PrintWriter
 # java/lang/Throwable$WrappedPrintStream
 # java/lang/Throwable$PrintStreamOrWriter
 # java/lang/Throwable$WrappedPrintWriter
 # java/lang/Throwable$SentinelHolder
-# java/nio/charset/IllegalCharsetNameException
 # java/io/StringReader
 # java/lang/ArrayIndexOutOfBoundsException
 # java/util/JumboEnumSet
@@ -944,13 +5761,13 @@ opcodes:
 # sun/nio/fs/UnixUserPrincipals$Group
 # java/nio/file/attribute/GroupPrincipal
 # java/lang/invoke/BoundMethodHandle$Species_LLLL
-# java/util/concurrent/atomic/AtomicBoolean
 # java/util/stream/IntStream
 # java/nio/ShortBuffer
 # java/nio/FloatBuffer
 # java/nio/DoubleBuffer
 # java/nio/charset/Charset$ThreadTrackHolder
 # java/nio/charset/Charset$ExtendedProviderHolder
+# java/util/concurrent/atomic/AtomicBoolean
 # sun/invoke/util/ValueConversions$WrapperCache
 # sun/invoke/util/ValueConversions$1
 # java/lang/invoke/MethodHandles$1
@@ -1053,6 +5870,7 @@ opcodes:
 # java/util/Collections$ReverseComparator2
 # java/util/Collections$SequencedSetFromMap
 # java/util/Collections$AsLIFOQueue
+# java/util/AbstractMap$ViewCollection
 # java/util/WeakHashMap$Values
 # java/util/WeakHashMap$EntrySet
 # java/util/WeakHashMap$EntrySpliterator
@@ -1063,7 +5881,6 @@ opcodes:
 # java/util/WeakHashMap$HashIterator
 # java/util/WeakHashMap$KeyIterator
 # java/util/WeakHashMap$ValueIterator
-# java/util/AbstractMap$ViewCollection
 # java/util/concurrent/Semaphore
 # java/util/concurrent/Semaphore$NonfairSync
 # java/util/concurrent/Semaphore$Sync
@@ -1170,8 +5987,8 @@ opcodes:
 # javax/net/ssl/SSLPeerUnverifiedException
 # javax/net/ssl/SSLException
 # javax/net/ssl/SSLHandshakeException
-# java/util/concurrent/ScheduledExecutorService
 # java/util/EventListener
+# java/util/concurrent/ScheduledExecutorService
 # java/lang/ClassFormatError
 # java/security/cert/X509Certificate
 # java/security/cert/X509Extension
@@ -1181,6 +5998,11 @@ opcodes:
 # java/lang/management/RuntimeMXBean
 # java/lang/management/PlatformManagedObject
 # javax/management/MBeanServerConnection
+# javax/management/ObjectName
+# javax/management/QueryExp
+# javax/management/InstanceNotFoundException
+# javax/management/OperationsException
+# javax/management/JMException
 # sun/management/spi/PlatformMBeanProvider$PlatformComponent
 # javax/management/MBeanServer
 # java/lang/management/ClassLoadingMXBean
@@ -1188,11 +6010,6 @@ opcodes:
 # java/lang/management/ThreadMXBean
 # java/lang/management/CompilationMXBean
 # java/lang/management/OperatingSystemMXBean
-# javax/management/ObjectName
-# javax/management/QueryExp
-# javax/management/InstanceNotFoundException
-# javax/management/OperationsException
-# javax/management/JMException
 # java/lang/management/ManagementFactory$PlatformMBeanFinder
 # java/lang/management/ManagementFactory$PlatformMBeanFinder$1
 # sun/management/spi/PlatformMBeanProvider
@@ -1319,3 +6136,9 @@ opcodes:
 # sun/security/provider/SHA
 # sun/security/provider/ByteArrayAccess$BE
 # java/util/ComparableTimSort
+# java/util/HashMap$EntrySpliterator
+# java/util/Comparators$NaturalOrderComparator
+# java/util/stream/SortedOps
+# java/util/stream/SortedOps$OfRef
+# java/util/stream/SortedOps$SizedRefSortingSink
+# java/util/stream/SortedOps$AbstractRefSortingSink
