@@ -316,13 +316,19 @@ public class BytecodeCallback extends Callback {
                 old.incrementDerefCount();
             } else {
                 FieldMetadata fieldMetadata = retrieveFieldMetadata(owner, name);
+                if (fieldMetadata == null) {
+                    return;
+                }
                 fieldMetadata.incrementDerefCount();
                 deref.put(name, fieldMetadata);
             }
         } else {
-            HashMap<String, FieldMetadata> deref = new HashMap();
             FieldMetadata fieldMetadata = retrieveFieldMetadata(owner, name);
+            if (fieldMetadata == null) {
+                return;
+            }
             fieldMetadata.incrementDerefCount();
+            HashMap<String, FieldMetadata> deref = new HashMap();
             deref.put(name, fieldMetadata);
             fieldDereferenced.put(owner, deref);
         }
@@ -337,6 +343,10 @@ public class BytecodeCallback extends Callback {
             Field f = findField(cls, name);
 
             Class<?> t = f.getType();
+            boolean isArray = t.isArray();
+            if (isArray) {
+                return null;
+            }
             long offset = Modifier.isStatic(f.getModifiers())
                     ? UNSAFE.staticFieldOffset(f)
                     : UNSAFE.objectFieldOffset(f);
