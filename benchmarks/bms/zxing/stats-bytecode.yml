@@ -4,13 +4,13 @@
 skipped-classes: 1005
 transformed-classes: 331
 transformed-bytecodes: 139483
-executed-bytecodes: 108759897037
+executed-bytecodes: 108759897060
 executed-bytecodes-unique: 55826
 executed-bytecodes-p90: 89542
 executed-bytecodes-p99: 42883804
 executed-bytecodes-p999: 266020008
 executed-bytecodes-p9999: 1282289820
-executed-calls: 1899908263
+executed-calls: 1899908267
 executed-calls-unique: 4397
 field-dereference-counts:
   javax/xml/bind/DatatypeConverter:
@@ -24,43 +24,13 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    readerSpiNames:
-      offset: 112
-      deref-count: 2
-    entensions:
-      offset: 120
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    mimeType:
-      offset: 124
-      deref-count: 2
-    STANDARD_OUTPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/aztec/decoder/Decoder:
-    LOWER_TABLE:
-      offset: 116
-      deref-count: 7844
-    UPPER_TABLE:
-      offset: 112
-      deref-count: 312
-    PUNCT_TABLE:
-      offset: 124
-      deref-count: 245
-    DIGIT_TABLE:
-      offset: 128
-      deref-count: 197
     ddata:
       offset: 12
       deref-count: 159
     DEFAULT_ENCODING:
       offset: 132
       deref-count: 21
-    MIXED_TABLE:
-      offset: 120
-      deref-count: 10
   java/lang/Integer:
     TYPE:
       offset: 112
@@ -95,9 +65,6 @@ field-dereference-counts:
     symbolSizeColumns:
       offset: 20
       deref-count: 1091
-    VERSIONS:
-      offset: 112
-      deref-count: 338
     totalCodewords:
       offset: 32
       deref-count: 272
@@ -283,25 +250,6 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    entensions:
-      offset: 120
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    mimeType:
-      offset: 124
-      deref-count: 2
-    writerSpiNames:
-      offset: 112
-      deref-count: 2
-    STANDARD_INPUT_TYPE:
-      offset: 112
-      deref-count: 1
-  com/google/zxing/pdf417/decoder/PDF417CodewordDecoder:
-    RATIOS_TABLE:
-      offset: 112
-      deref-count: 37073747
   com/google/zxing/pdf417/decoder/BoundingBox:
     minY:
       offset: 20
@@ -370,9 +318,6 @@ field-dereference-counts:
       offset: 16
       deref-count: 202358
   com/google/zxing/pdf417/decoder/DetectionResultColumn:
-    codewords:
-      offset: 16
-      deref-count: 879770
     boundingBox:
       offset: 12
       deref-count: 332712
@@ -387,9 +332,6 @@ field-dereference-counts:
     bits:
       offset: 12
       deref-count: 1682
-    points:
-      offset: 16
-      deref-count: 1076
   com/google/zxing/oned/rss/expanded/decoders/CurrentParsingState:
     position:
       offset: 12
@@ -401,45 +343,6 @@ field-dereference-counts:
     name:
       offset: 12
       deref-count: 1007
-  com/google/zxing/oned/MultiFormatOneDReader:
-    readers:
-      offset: 12
-      deref-count: 366408
-    EMPTY_ONED_ARRAY:
-      offset: 112
-      deref-count: 1255
-  com/google/zxing/oned/EAN13Reader:
-    L_AND_G_PATTERNS:
-      offset: 128
-      deref-count: 486308
-    FIRST_DIGIT_ENCODINGS:
-      offset: 112
-      deref-count: 242692
-    decodeMiddleCounters:
-      offset: 24
-      deref-count: 170640
-    L_PATTERNS:
-      offset: 124
-      deref-count: 9945
-    MIDDLE_PATTERN:
-      offset: 116
-      deref-count: 4780
-  com/google/zxing/pdf417/detector/Detector:
-    STOP_PATTERN:
-      offset: 124
-      deref-count: 3913
-    START_PATTERN:
-      offset: 120
-      deref-count: 3913
-    INDEXES_START_PATTERN:
-      offset: 112
-      deref-count: 3913
-    INDEXES_STOP_PATTERN:
-      offset: 116
-      deref-count: 3913
-    ROTATIONS:
-      offset: 128
-      deref-count: 1028
   java/io/File:
     separator:
       offset: 116
@@ -494,13 +397,6 @@ field-dereference-counts:
     ERASURES_CORRECTED:
       offset: 132
       deref-count: 2
-    $VALUES:
-      offset: 168
-      deref-count: 2
-  com/google/zxing/oned/Code128Reader:
-    CODE_PATTERNS:
-      offset: 112
-      deref-count: 16677293
   org/dacapo/parser/Config$Size:
     outputFiles:
       offset: 32
@@ -514,9 +410,6 @@ field-dereference-counts:
     nThreads:
       offset: 16
       deref-count: 5
-    args:
-      offset: 24
-      deref-count: 3
     name:
       offset: 20
       deref-count: 2
@@ -525,9 +418,6 @@ field-dereference-counts:
       offset: 112
       deref-count: 22
   com/google/zxing/qrcode/decoder/ErrorCorrectionLevel:
-    FOR_BITS:
-      offset: 128
-      deref-count: 405
     bits:
       offset: 24
       deref-count: 4
@@ -543,9 +433,6 @@ field-dereference-counts:
     M:
       offset: 116
       deref-count: 3
-    $VALUES:
-      offset: 132
-      deref-count: 1
   com/google/zxing/oned/rss/expanded/decoders/FieldParser$DataLength:
     variable:
       offset: 16
@@ -557,39 +444,14 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    entensions:
-      offset: 120
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    mimeType:
-      offset: 124
-      deref-count: 2
-    writerSpiNames:
-      offset: 112
-      deref-count: 2
-    STANDARD_INPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/oned/UPCEANExtension2Support:
-    decodeMiddleCounters:
-      offset: 12
-      deref-count: 3862
     decodeRowStringBuffer:
       offset: 16
       deref-count: 3862
-  com/google/zxing/qrcode/decoder/DecodedBitStreamParser:
-    ALPHANUMERIC_CHARS:
-      offset: 112
-      deref-count: 771
   com/google/zxing/maxicode/decoder/BitMatrixParser:
     bitMatrix:
       offset: 12
       deref-count: 836655
-    BITNR:
-      offset: 112
-      deref-count: 31846
   com/google/zxing/oned/rss/expanded/decoders/DecodedObject:
     newPosition:
       offset: 12
@@ -605,21 +467,6 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    readerSpiNames:
-      offset: 128
-      deref-count: 2
-    suffixes:
-      offset: 116
-      deref-count: 2
-    names:
-      offset: 112
-      deref-count: 2
-    MIMETypes:
-      offset: 120
-      deref-count: 2
-    STANDARD_OUTPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/datamatrix/decoder/DecodedBitStreamParser$Mode:
     ASCII_ENCODE:
       offset: 116
@@ -645,28 +492,10 @@ field-dereference-counts:
     ECI_ENCODE:
       offset: 140
       deref-count: 1
-    $VALUES:
-      offset: 144
-      deref-count: 1
   com/github/jaiimageio/impl/plugins/tiff/TIFFImageReaderSpi:
     registered:
       offset: 22
       deref-count: 3
-    suffixes:
-      offset: 116
-      deref-count: 2
-    names:
-      offset: 112
-      deref-count: 2
-    MIMETypes:
-      offset: 120
-      deref-count: 2
-    writerSpiNames:
-      offset: 128
-      deref-count: 2
-    STANDARD_INPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder:
     information:
       offset: 12
@@ -678,23 +507,14 @@ field-dereference-counts:
       offset: 20
       deref-count: 4651
   javax/xml/bind/DatatypeConverterImpl:
-    hexCode:
-      offset: 116
-      deref-count: 40161
     theInstance:
       offset: 112
-      deref-count: 1
-    encodeMap:
-      offset: 124
       deref-count: 1
     datatypeFactory:
       offset: 128
       deref-count: 1
     $assertionsDisabled:
       offset: 133
-      deref-count: 1
-    decodeMap:
-      offset: 120
       deref-count: 1
   com/google/zxing/qrcode/detector/AlignmentPatternFinder:
     image:
@@ -703,9 +523,6 @@ field-dereference-counts:
     moduleSize:
       offset: 28
       deref-count: 5271
-    crossCheckStateCount:
-      offset: 40
-      deref-count: 923
     possibleCenters:
       offset: 36
       deref-count: 711
@@ -728,21 +545,6 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    readerSpiNames:
-      offset: 136
-      deref-count: 2
-    suffixes:
-      offset: 124
-      deref-count: 2
-    names:
-      offset: 120
-      deref-count: 2
-    MIMETypes:
-      offset: 128
-      deref-count: 2
-    STANDARD_OUTPUT_TYPE:
-      offset: 112
-      deref-count: 1
   org/dacapo/parser/Config$ThreadModel:
     PER_CPU:
       offset: 120
@@ -753,17 +555,11 @@ field-dereference-counts:
     FIXED:
       offset: 116
       deref-count: 1
-    $VALUES:
-      offset: 124
-      deref-count: 1
   com/google/zxing/common/reedsolomon/ReedSolomonDecoder:
     field:
       offset: 12
       deref-count: 237590
   com/google/zxing/qrcode/decoder/DataMask:
-    $VALUES:
-      offset: 144
-      deref-count: 221
     DATA_MASK_101:
       offset: 132
       deref-count: 2
@@ -850,22 +646,6 @@ field-dereference-counts:
     TIMING:
       offset: 116
       deref-count: 2
-    $VALUES:
-      offset: 120
-      deref-count: 1
-  com/google/zxing/oned/UPCEReader:
-    L_AND_G_PATTERNS:
-      offset: 128
-      deref-count: 484870
-    NUMSYS_AND_CHECK_DIGIT_PATTERNS:
-      offset: 116
-      deref-count: 461646
-    decodeMiddleCounters:
-      offset: 24
-      deref-count: 170400
-    MIDDLE_END_PATTERN:
-      offset: 112
-      deref-count: 7230
   java/lang/Boolean:
     TRUE:
       offset: 112
@@ -897,9 +677,6 @@ field-dereference-counts:
       offset: 24
       deref-count: 29421
   com/google/zxing/common/reedsolomon/GenericGFPoly:
-    coefficients:
-      offset: 16
-      deref-count: 5112852
     field:
       offset: 12
       deref-count: 4658872
@@ -959,37 +736,9 @@ field-dereference-counts:
     ASTERISK_ENCODING:
       offset: 124
       deref-count: 4496637
-    counters:
-      offset: 16
-      deref-count: 744524
-    CHARACTER_ENCODINGS:
-      offset: 120
-      deref-count: 732882
     decodeRowResult:
       offset: 12
       deref-count: 14854
-    ALPHABET:
-      offset: 116
-      deref-count: 2555
-  com/google/zxing/maxicode/decoder/DecodedBitStreamParser:
-    SETS:
-      offset: 132
-      deref-count: 690
-    SERVICE_CLASS_BYTES:
-      offset: 116
-      deref-count: 6
-    COUNTRY_BYTES:
-      offset: 112
-      deref-count: 6
-    POSTCODE_2_LENGTH_BYTES:
-      offset: 120
-      deref-count: 6
-    POSTCODE_2_BYTES:
-      offset: 124
-      deref-count: 6
-    POSTCODE_3_BYTES:
-      offset: 128
-      deref-count: 1
   com/google/zxing/aztec/AztecDetectorResult:
     nbLayers:
       offset: 24
@@ -1003,20 +752,6 @@ field-dereference-counts:
     errorsCorrected:
       offset: 28
       deref-count: 56
-  com/google/zxing/oned/UPCEANReader:
-    L_AND_G_PATTERNS:
-      offset: 128
-      deref-count: 400
-  com/google/zxing/common/GlobalHistogramBinarizer:
-    buckets:
-      offset: 20
-      deref-count: 6492585
-    luminances:
-      offset: 16
-      deref-count: 396237
-    EMPTY:
-      offset: 112
-      deref-count: 1552
   com/google/zxing/aztec/detector/Detector$Point:
     x:
       offset: 12
@@ -1028,12 +763,6 @@ field-dereference-counts:
     modulus:
       offset: 12
       deref-count: 9833278
-    logTable:
-      offset: 20
-      deref-count: 9324685
-    expTable:
-      offset: 16
-      deref-count: 4670610
     zero:
       offset: 24
       deref-count: 317
@@ -1061,9 +790,6 @@ field-dereference-counts:
       offset: 20
       deref-count: 2
   com/google/zxing/pdf417/decoder/DetectionResult:
-    detectionResultColumns:
-      offset: 20
-      deref-count: 683988
     barcodeColumnCount:
       offset: 12
       deref-count: 562570
@@ -1073,10 +799,6 @@ field-dereference-counts:
     boundingBox:
       offset: 24
       deref-count: 260
-  org/apache/commons/cli/Util:
-    EMPTY_STRING_ARRAY:
-      offset: 112
-      deref-count: 2
   org/dacapo/parser/SimpleCharStream:
     bufpos:
       offset: 24
@@ -1087,15 +809,6 @@ field-dereference-counts:
     inBuf:
       offset: 40
       deref-count: 1136
-    bufline:
-      offset: 52
-      deref-count: 960
-    bufcolumn:
-      offset: 56
-      deref-count: 960
-    buffer:
-      offset: 64
-      deref-count: 899
     line:
       offset: 32
       deref-count: 885
@@ -1146,20 +859,11 @@ field-dereference-counts:
     jj_nt:
       offset: 40
       deref-count: 45
-    jj_la1:
-      offset: 44
-      deref-count: 38
     jj_input_stream:
       offset: 32
       deref-count: 2
     jj_kind:
       offset: 20
-      deref-count: 1
-    jj_la1_0:
-      offset: 112
-      deref-count: 1
-    jj_la1_1:
-      offset: 116
       deref-count: 1
     jj_expentries:
       offset: 48
@@ -1180,9 +884,6 @@ field-dereference-counts:
     nbLayers:
       offset: 12
       deref-count: 154
-    EXPECTED_CORNER_BITS:
-      offset: 112
-      deref-count: 140
     nbDataBlocks:
       offset: 16
       deref-count: 56
@@ -1197,28 +898,10 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    entensions:
-      offset: 120
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    mimeType:
-      offset: 124
-      deref-count: 2
-    writerSpiNames:
-      offset: 112
-      deref-count: 2
-    STANDARD_INPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/common/BitMatrix:
     rowSize:
       offset: 20
       deref-count: 667508944
-    bits:
-      offset: 24
-      deref-count: 661035101
     width:
       offset: 12
       deref-count: 268388647
@@ -1250,27 +933,6 @@ field-dereference-counts:
     possibleRightPairs:
       offset: 40
       deref-count: 367459
-    FINDER_PATTERNS:
-      offset: 136
-      deref-count: 121399
-    OUTSIDE_ODD_WIDEST:
-      offset: 128
-      deref-count: 3610
-    OUTSIDE_GSUM:
-      offset: 120
-      deref-count: 3610
-    OUTSIDE_EVEN_TOTAL_SUBSET:
-      offset: 112
-      deref-count: 3610
-    INSIDE_ODD_TOTAL_SUBSET:
-      offset: 116
-      deref-count: 2008
-    INSIDE_ODD_WIDEST:
-      offset: 132
-      deref-count: 2008
-    INSIDE_GSUM:
-      offset: 124
-      deref-count: 2008
   com/google/zxing/Result:
     resultMetadata:
       offset: 40
@@ -1281,12 +943,6 @@ field-dereference-counts:
     format:
       offset: 36
       deref-count: 1388
-    resultPoints:
-      offset: 32
-      deref-count: 1309
-    rawBytes:
-      offset: 28
-      deref-count: 1198
     numBits:
       offset: 12
       deref-count: 1093
@@ -1297,52 +953,18 @@ field-dereference-counts:
     TYPE:
       offset: 112
       deref-count: 1
-  org/dacapo/harness/Callback$1:
-    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology:
-      offset: 112
-      deref-count: 3
-  com/google/zxing/pdf417/PDF417Common:
-    SYMBOL_TABLE:
-      offset: 116
-      deref-count: 151617
   com/google/zxing/qrcode/detector/AlignmentPattern:
     estimatedModuleSize:
       offset: 20
       deref-count: 643
-  com/google/zxing/pdf417/decoder/DecodedBitStreamParser$1:
-    $SwitchMap$com$google$zxing$pdf417$decoder$DecodedBitStreamParser$Mode:
-      offset: 112
-      deref-count: 6230
   com/google/zxing/aztec/decoder/Decoder$CorrectedBitsResult:
-    correctBits:
-      offset: 20
-      deref-count: 80
     ecLevel:
       offset: 16
       deref-count: 40
     errorsCorrected:
       offset: 12
       deref-count: 40
-  com/google/zxing/datamatrix/decoder/DecodedBitStreamParser:
-    TEXT_BASIC_SET_CHARS:
-      offset: 120
-      deref-count: 1555
-    TEXT_SHIFT3_SET_CHARS:
-      offset: 128
-      deref-count: 7
-    C40_SHIFT2_SET_CHARS:
-      offset: 116
-      deref-count: 2
-    C40_BASIC_SET_CHARS:
-      offset: 112
-      deref-count: 1
-    TEXT_SHIFT2_SET_CHARS:
-      offset: 124
-      deref-count: 1
   org/dacapo/harness/CommandLineArgs:
-    OPTIONS:
-      offset: 276
-      deref-count: 125
     line:
       offset: 12
       deref-count: 42
@@ -1364,67 +986,17 @@ field-dereference-counts:
     parser:
       offset: 280
       deref-count: 2
-  com/google/zxing/oned/rss/AbstractRSSReader:
-    decodeFinderCounters:
-      offset: 12
-      deref-count: 1894706
-    oddCounts:
-      offset: 28
-      deref-count: 64524
-    evenCounts:
-      offset: 32
-      deref-count: 64393
-    dataCharacterCounters:
-      offset: 16
-      deref-count: 44290
-    oddRoundingErrors:
-      offset: 20
-      deref-count: 36544
-    evenRoundingErrors:
-      offset: 24
-      deref-count: 33905
   com/google/zxing/qrcode/decoder/Version:
-    alignmentPatternCenters:
-      offset: 20
-      deref-count: 1341
-    VERSION_DECODE_INFO:
-      offset: 112
-      deref-count: 985
     versionNumber:
       offset: 12
       deref-count: 915
     totalCodewords:
       offset: 16
       deref-count: 646
-    VERSIONS:
-      offset: 116
-      deref-count: 579
-    ecBlocks:
-      offset: 24
-      deref-count: 242
-  com/google/zxing/datamatrix/decoder/DecodedBitStreamParser$1:
-    $SwitchMap$com$google$zxing$datamatrix$decoder$DecodedBitStreamParser$Mode:
-      offset: 112
-      deref-count: 12
   com/github/jaiimageio/impl/plugins/bmp/BMPImageWriterSpi:
     registered:
       offset: 22
       deref-count: 3
-    readerSpiNames:
-      offset: 112
-      deref-count: 2
-    extensions:
-      offset: 120
-      deref-count: 2
-    mimeTypes:
-      offset: 124
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    STANDARD_OUTPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/qrcode/decoder/FormatInformation:
     dataMask:
       offset: 12
@@ -1432,13 +1004,7 @@ field-dereference-counts:
     errorCorrectionLevel:
       offset: 16
       deref-count: 404
-    FORMAT_INFO_DECODE_LOOKUP:
-      offset: 112
-      deref-count: 208
   com/google/zxing/datamatrix/decoder/DataBlock:
-    codewords:
-      offset: 16
-      deref-count: 7263
     numDataCodewords:
       offset: 12
       deref-count: 347
@@ -1468,9 +1034,6 @@ field-dereference-counts:
     fileId:
       offset: 44
       deref-count: 6
-    optionalData:
-      offset: 60
-      deref-count: 6
     fileName:
       offset: 56
       deref-count: 2
@@ -1478,21 +1041,6 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    extensions:
-      offset: 120
-      deref-count: 2
-    mimeTypes:
-      offset: 124
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    writerSpiNames:
-      offset: 112
-      deref-count: 2
-    STANDARD_INPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/beust/jcommander/ParameterDescription:
     parameterAnnotation:
       offset: 24
@@ -1556,25 +1104,13 @@ field-dereference-counts:
       offset: 36
       deref-count: 27998
   com/google/zxing/common/BitArray:
-    bits:
-      offset: 16
-      deref-count: 1368042001
     size:
       offset: 12
       deref-count: 19359828
-    EMPTY_BITS:
-      offset: 112
-      deref-count: 1
   com/google/zxing/MultiFormatReader:
     hints:
       offset: 12
       deref-count: 8174
-    readers:
-      offset: 16
-      deref-count: 3762
-    EMPTY_READER_ARRAY:
-      offset: 112
-      deref-count: 1255
   java/nio/charset/StandardCharsets:
     US_ASCII:
       offset: 112
@@ -1596,25 +1132,10 @@ field-dereference-counts:
     narrowLineWidth:
       offset: 12
       deref-count: 412317
-    START_PATTERN:
-      offset: 116
-      deref-count: 364045
-    PATTERNS:
-      offset: 124
-      deref-count: 145720
-    END_PATTERN_REVERSED:
-      offset: 120
-      deref-count: 51934
-    DEFAULT_ALLOWED_LENGTHS:
-      offset: 112
-      deref-count: 917
   com/google/zxing/qrcode/detector/FinderPatternFinder:
     image:
       offset: 16
       deref-count: 61089188
-    crossCheckStateCount:
-      offset: 24
-      deref-count: 159732
     possibleCenters:
       offset: 20
       deref-count: 17278
@@ -1641,9 +1162,6 @@ field-dereference-counts:
     isStackTrace:
       offset: 116
       deref-count: 1565
-    NO_TRACE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/oned/rss/expanded/ExpandedPair:
     finderPattern:
       offset: 20
@@ -1698,36 +1216,12 @@ field-dereference-counts:
     startFromEven:
       offset: 36
       deref-count: 2352104
-    startEnd:
-      offset: 48
-      deref-count: 936364
     rows:
       offset: 44
       deref-count: 917558
-    FINDER_PATTERN_SEQUENCES:
-      offset: 132
-      deref-count: 373494
-    WEIGHTS:
-      offset: 128
-      deref-count: 161977
-    FINDER_PATTERNS:
-      offset: 124
-      deref-count: 158459
-    SYMBOL_WIDEST:
-      offset: 112
-      deref-count: 20692
-    GSUM:
-      offset: 120
-      deref-count: 20692
-    EVEN_TOTAL_SUBSET:
-      offset: 116
-      deref-count: 20692
   com/google/zxing/ReaderException:
     isStackTrace:
       offset: 116
-      deref-count: 1
-    NO_TRACE:
-      offset: 112
       deref-count: 1
   com/google/zxing/oned/rss/expanded/decoders/BlockParsedResult:
     finished:
@@ -1740,25 +1234,10 @@ field-dereference-counts:
     ecCodewords:
       offset: 12
       deref-count: 324
-    ecBlocks:
-      offset: 16
-      deref-count: 208
   com/google/zxing/oned/CodaBarReader:
-    CHARACTER_ENCODINGS:
-      offset: 120
-      deref-count: 131032896
     counterLength:
       offset: 12
       deref-count: 58302602
-    counters:
-      offset: 20
-      deref-count: 29921047
-    STARTEND_ENCODING:
-      offset: 124
-      deref-count: 1916422
-    ALPHABET:
-      offset: 116
-      deref-count: 1914837
     decodeRowResult:
       offset: 16
       deref-count: 115557
@@ -1782,18 +1261,9 @@ field-dereference-counts:
     curChar:
       offset: 44
       deref-count: 3266
-    jjstateSet:
-      offset: 60
-      deref-count: 2585
-    jjrounds:
-      offset: 56
-      deref-count: 2289
     input_stream:
       offset: 52
       deref-count: 1222
-    jjnextStates:
-      offset: 124
-      deref-count: 1039
     jjmatchedKind:
       offset: 32
       deref-count: 659
@@ -1803,47 +1273,20 @@ field-dereference-counts:
     image:
       offset: 68
       deref-count: 115
-    jjstrLiteralImages:
-      offset: 120
-      deref-count: 59
     jjimage:
       offset: 64
       deref-count: 59
     curLexState:
       offset: 12
       deref-count: 58
-    jjnewLexState:
-      offset: 132
-      deref-count: 58
-    jjtoToken:
-      offset: 136
-      deref-count: 58
     jjimageLen:
       offset: 36
       deref-count: 57
-    jjbitVec0:
-      offset: 112
-      deref-count: 1
-    jjbitVec2:
-      offset: 116
-      deref-count: 1
-    defaultLexState:
-      offset: 16
-      deref-count: 1
-    lexStateNames:
-      offset: 128
-      deref-count: 1
-    jjtoMore:
-      offset: 148
-      deref-count: 1
     debugStream:
       offset: 48
       deref-count: 1
-    jjtoSkip:
-      offset: 140
-      deref-count: 1
-    jjtoSpecial:
-      offset: 144
+    defaultLexState:
+      offset: 16
       deref-count: 1
   org/dacapo/parser/Config$OutputFile:
     digest:
@@ -1880,9 +1323,6 @@ field-dereference-counts:
     isStackTrace:
       offset: 116
       deref-count: 1428
-    NO_TRACE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/datamatrix/decoder/BitMatrixParser:
     readMappingMatrix:
       offset: 16
@@ -1897,9 +1337,6 @@ field-dereference-counts:
     ecCodewordsPerBlock:
       offset: 12
       deref-count: 1076
-    ecBlocks:
-      offset: 16
-      deref-count: 402
   com/google/zxing/common/detector/WhiteRectangleDetector:
     image:
       offset: 36
@@ -1922,10 +1359,6 @@ field-dereference-counts:
     upInit:
       offset: 32
       deref-count: 15708
-  com/google/zxing/qrcode/decoder/DecodedBitStreamParser$1:
-    $SwitchMap$com$google$zxing$qrcode$decoder$Mode:
-      offset: 112
-      deref-count: 681
   com/google/zxing/datamatrix/decoder/Version$ECB:
     count:
       offset: 12
@@ -1937,22 +1370,6 @@ field-dereference-counts:
     value:
       offset: 12
       deref-count: 6933158
-    startEnd:
-      offset: 16
-      deref-count: 119733
-    resultPoints:
-      offset: 20
-      deref-count: 22859
-  com/google/zxing/pdf417/decoder/DecodedBitStreamParser:
-    MIXED_CHARS:
-      offset: 116
-      deref-count: 1314
-    EXP900:
-      offset: 120
-      deref-count: 94
-    PUNCT_CHARS:
-      offset: 112
-      deref-count: 10
   com/google/zxing/oned/rss/expanded/decoders/DecodedInformation:
     remaining:
       offset: 20
@@ -1982,20 +1399,10 @@ field-dereference-counts:
     className:
       offset: 16
       deref-count: 4
-    jars:
-      offset: 32
-      deref-count: 2
-  org/dacapo/parser/Config$1:
-    $SwitchMap$org$dacapo$parser$Config$ThreadModel:
-      offset: 112
-      deref-count: 3
   com/google/zxing/qrcode/decoder/Mode:
     TERMINATOR:
       offset: 112
       deref-count: 593
-    characterCountBitsForVersions:
-      offset: 28
-      deref-count: 268
     BYTE:
       offset: 128
       deref-count: 182
@@ -2017,28 +1424,19 @@ field-dereference-counts:
     STRUCTURED_APPEND:
       offset: 124
       deref-count: 3
-    ECI:
-      offset: 132
-      deref-count: 3
     FNC1_SECOND_POSITION:
       offset: 144
+      deref-count: 3
+    ECI:
+      offset: 132
       deref-count: 3
     FNC1_FIRST_POSITION:
       offset: 140
       deref-count: 3
-    $VALUES:
-      offset: 152
-      deref-count: 2
   com/google/zxing/oned/Code39Reader:
     decodeRowResult:
       offset: 16
       deref-count: 366113
-    counters:
-      offset: 20
-      deref-count: 366113
-    CHARACTER_ENCODINGS:
-      offset: 116
-      deref-count: 36236
     usingCheckDigit:
       offset: 12
       deref-count: 1278
@@ -2105,9 +1503,6 @@ field-dereference-counts:
       offset: 24
       deref-count: 2
   com/google/zxing/qrcode/decoder/DataBlock:
-    codewords:
-      offset: 16
-      deref-count: 39785
     numDataCodewords:
       offset: 12
       deref-count: 1979
@@ -2145,9 +1540,6 @@ field-dereference-counts:
     isStackTrace:
       offset: 116
       deref-count: 5157252
-    NO_TRACE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/common/GridSampler:
     gridSampler:
       offset: 112
@@ -2156,9 +1548,6 @@ field-dereference-counts:
     field:
       offset: 12
       deref-count: 9597113
-    coefficients:
-      offset: 16
-      deref-count: 4942808
   java/math/BigInteger:
     ZERO:
       offset: 136
@@ -2184,9 +1573,6 @@ field-dereference-counts:
       deref-count: 53
     PUNCT:
       offset: 124
-      deref-count: 1
-    $VALUES:
-      offset: 136
       deref-count: 1
   com/google/zxing/pdf417/decoder/ec/ErrorCorrection:
     field:
@@ -2232,9 +1618,6 @@ field-dereference-counts:
     PURE_BARCODE:
       offset: 116
       deref-count: 2
-    $VALUES:
-      offset: 160
-      deref-count: 2
   java/lang/Float:
     TYPE:
       offset: 112
@@ -2262,9 +1645,6 @@ field-dereference-counts:
     byteOffset:
       offset: 12
       deref-count: 100758
-    bytes:
-      offset: 20
-      deref-count: 60762
   com/google/zxing/aztec/decoder/Decoder$Table:
     DIGIT:
       offset: 124
@@ -2284,13 +1664,6 @@ field-dereference-counts:
     MIXED:
       offset: 120
       deref-count: 9
-    $VALUES:
-      offset: 136
-      deref-count: 1
-  com/google/zxing/aztec/decoder/Decoder$1:
-    $SwitchMap$com$google$zxing$aztec$decoder$Decoder$Table:
-      offset: 112
-      deref-count: 8603
   com/google/zxing/oned/rss/expanded/decoders/FieldParser:
     TWO_DIGIT_DATA_LENGTH:
       offset: 112
@@ -2305,15 +1678,9 @@ field-dereference-counts:
       offset: 124
       deref-count: 68
   com/google/zxing/common/reedsolomon/GenericGF:
-    logTable:
-      offset: 28
-      deref-count: 8980644
     size:
       offset: 12
       deref-count: 4606228
-    expTable:
-      offset: 24
-      deref-count: 4534232
     generatorBase:
       offset: 20
       deref-count: 31121
@@ -2360,9 +1727,6 @@ field-dereference-counts:
     errorsCorrected:
       offset: 44
       deref-count: 594
-    rawBytes:
-      offset: 28
-      deref-count: 594
     symbologyModifier:
       offset: 24
       deref-count: 586
@@ -2388,21 +1752,6 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    readerSpiNames:
-      offset: 112
-      deref-count: 2
-    entensions:
-      offset: 120
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    mimeType:
-      offset: 124
-      deref-count: 2
-    STANDARD_OUTPUT_TYPE:
-      offset: 112
-      deref-count: 1
   org/dacapo/parser/Token:
     next:
       offset: 36
@@ -2428,16 +1777,6 @@ field-dereference-counts:
     beginLine:
       offset: 16
       deref-count: 58
-  com/google/zxing/oned/EAN8Reader:
-    L_PATTERNS:
-      offset: 124
-      deref-count: 279527
-    decodeMiddleCounters:
-      offset: 24
-      deref-count: 170412
-    MIDDLE_PATTERN:
-      offset: 116
-      deref-count: 6866
   org/dacapo/harness/TeePrintStream:
     out:
       offset: 16
@@ -2461,30 +1800,18 @@ field-dereference-counts:
     decoder:
       offset: 12
       deref-count: 2219
-    NO_POINTS:
-      offset: 112
-      deref-count: 9
   com/beust/jcommander/WrappedParameter:
     parameter:
       offset: 12
       deref-count: 131
   com/google/zxing/oned/UPCEANExtension5Support:
-    decodeMiddleCounters:
-      offset: 12
-      deref-count: 3870
     decodeRowStringBuffer:
       offset: 16
       deref-count: 3870
-    CHECK_DIGIT_ENCODINGS:
-      offset: 112
-      deref-count: 74
   org/dacapo/harness/CommandLineArgs$Methodology:
     ITERATE:
       offset: 112
       deref-count: 3
-    $VALUES:
-      offset: 120
-      deref-count: 1
     CONVERGE:
       offset: 116
       deref-count: 1
@@ -2492,21 +1819,6 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    readerSpiNames:
-      offset: 112
-      deref-count: 2
-    extensions:
-      offset: 120
-      deref-count: 2
-    mimeTypes:
-      offset: 124
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    STANDARD_OUTPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/oned/rss/expanded/decoders/AbstractExpandedDecoder:
     generalDecoder:
       offset: 16
@@ -2525,28 +1837,10 @@ field-dereference-counts:
     twoSupport:
       offset: 12
       deref-count: 3862
-    EXTENSION_START_PATTERN:
-      offset: 112
-      deref-count: 296
   com/github/jaiimageio/impl/plugins/bmp/BMPImageReaderSpi:
     registered:
       offset: 22
       deref-count: 3
-    extensions:
-      offset: 120
-      deref-count: 2
-    mimeTypes:
-      offset: 124
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    writerSpiNames:
-      offset: 112
-      deref-count: 2
-    STANDARD_INPUT_TYPE:
-      offset: 112
-      deref-count: 1
   com/google/zxing/client/j2se/DecoderConfig:
     dumpBlackPoint:
       offset: 16
@@ -2585,28 +1879,6 @@ field-dereference-counts:
     registered:
       offset: 22
       deref-count: 3
-    readerSpiNames:
-      offset: 112
-      deref-count: 2
-    entensions:
-      offset: 120
-      deref-count: 2
-    formatNames:
-      offset: 116
-      deref-count: 2
-    mimeType:
-      offset: 124
-      deref-count: 2
-    STANDARD_OUTPUT_TYPE:
-      offset: 112
-      deref-count: 1
-  com/google/zxing/oned/MultiFormatUPCEANReader:
-    readers:
-      offset: 12
-      deref-count: 170640
-    EMPTY_READER_ARRAY:
-      offset: 112
-      deref-count: 1255
   com/google/zxing/ResultPoint:
     y:
       offset: 16
@@ -2630,9 +1902,6 @@ field-dereference-counts:
       offset: 12
       deref-count: 1
   org/dacapo/harness/Zxing:
-    args:
-      offset: 60
-      deref-count: 2
     method:
       offset: 44
       deref-count: 2
@@ -2665,12 +1934,12 @@ opcodes:
   dconst_1: 297
   bipush: 5421732610
   sipush: 1509640366
-  ldc: 323149543
-  iload: 25892796374
+  ldc: 323149544
+  iload: 25892796376
   lload: 2800152
   fload: 928843341
   dload: 478562
-  aload: 9189182613
+  aload: 9189182622
   iaload: 5005591164
   faload: 113845534
   aaload: 67859533
@@ -2680,7 +1949,7 @@ opcodes:
   lstore: 2795640
   fstore: 490740913
   dstore: 239466
-  astore: 91351098
+  astore: 91351101
   iastore: 1938316321
   fastore: 2681341
   aastore: 343086
@@ -2731,7 +2000,7 @@ opcodes:
   fcmpg: 56114520
   dcmpl: 1282
   dcmpg: 3173
-  ifeq: 2048811415
+  ifeq: 2048811417
   ifne: 467327563
   iflt: 96848062
   ifge: 52182890
@@ -2751,14 +2020,14 @@ opcodes:
   ireturn: 1704376693
   freturn: 47518063
   dreturn: 850
-  areturn: 21280496
+  areturn: 21280497
   return: 131892282
   getstatic: 208513012
   putstatic: 255
   getfield: 3266484140
   putfield: 16703073
-  invokevirtual: 1669207323
-  invokespecial: 25635531
+  invokevirtual: 1669207325
+  invokespecial: 25635533
   invokestatic: 175304016
   invokeinterface: 29761393
   new: 540958
@@ -2770,7 +2039,7 @@ opcodes:
   instanceof: 85509
   multianewarray: 1244
   ifnull: 4820465
-  ifnonnull: 2414739# sun/launcher/LauncherHelper
+  ifnonnull: 2414740# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -3048,6 +2317,8 @@ opcodes:
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
 # java/util/Formatter
+# jdk/internal/foreign/MemorySessionImpl
+# java/lang/foreign/MemorySegment$Scope
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -3163,8 +2434,6 @@ opcodes:
 # java/net/URLClassLoader$3$1
 # java/net/MalformedURLException
 # com/sun/org/apache/xerces/internal/jaxp/datatype/DatatypeFactoryImpl
-# jdk/internal/foreign/MemorySessionImpl
-# java/lang/foreign/MemorySegment$Scope
 # java/lang/invoke/MethodHandle$1
 # java/util/regex/Pattern$BnM
 # java/util/regex/MatchResult
@@ -3431,13 +2700,13 @@ opcodes:
 # com/sun/imageio/spi/RAFImageInputStreamSpi
 # com/sun/imageio/spi/RAFImageOutputStreamSpi
 # javax/imageio/spi/IIORegistry$1
-# java/nio/channels/NonReadableChannelException
-# javax/imageio/ImageWriter
-# javax/imageio/ImageTranscoder
+# javax/imageio/ImageReader
 # java/awt/image/DirectColorModel
 # java/awt/image/PackedColorModel
 # javax/imageio/IIOException
-# javax/imageio/ImageReader
+# javax/imageio/ImageWriter
+# javax/imageio/ImageTranscoder
+# java/nio/channels/NonReadableChannelException
 # javax/imageio/metadata/IIOMetadataFormat
 # javax/imageio/spi/PartialOrderIterator
 # javax/imageio/ImageIO$CacheInfo
@@ -3468,13 +2737,13 @@ opcodes:
 # javax/imageio/ImageIO$CanDecodeInputFilter
 # javax/imageio/spi/ServiceRegistry$Filter
 # java/util/concurrent/ForkJoinPool
-# java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory
-# java/util/concurrent/ForkJoinPool$WorkQueue
 # javax/imageio/spi/FilterIterator
+# java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory
+# com/sun/imageio/plugins/common/ReaderUtil
+# java/util/concurrent/ForkJoinPool$WorkQueue
 # java/util/concurrent/ForkJoinPool$DefaultForkJoinWorkerThreadFactory
 # jdk/internal/access/JavaUtilConcurrentFJPAccess
 # java/util/concurrent/ForkJoinPool$2
-# com/sun/imageio/plugins/common/ReaderUtil
 # javax/imageio/ImageIO$ImageReaderIterator
 # com/sun/imageio/plugins/png/PNGImageReader
 # java/awt/Point
@@ -3487,14 +2756,14 @@ opcodes:
 # java/io/SequenceInputStream
 # com/sun/imageio/plugins/common/SubImageInputStream
 # com/sun/imageio/plugins/common/InputStreamAdapter
-# javax/imageio/ImageTypeSpecifier$Interleaved
 # javax/imageio/ImageTypeSpecifier$Indexed
+# javax/imageio/ImageTypeSpecifier$Interleaved
 # javax/imageio/ImageTypeSpecifier$Grayscale
 # java/awt/image/DataBuffer
 # java/awt/image/DataBuffer$1
+# java/awt/image/ColorModel$1
 # sun/awt/image/SunWritableRaster$DataStealer
 # sun/awt/image/SunWritableRaster
-# java/awt/image/ColorModel$1
 # java/awt/Rectangle
 # java/awt/Shape
 # javax/imageio/ImageTypeSpecifier$Packed
@@ -3505,8 +2774,8 @@ opcodes:
 # sun/java2d/StateTrackableDelegate
 # sun/java2d/StateTrackable
 # sun/java2d/StateTrackableDelegate$2
-# sun/awt/image/ByteInterleavedRaster
 # sun/awt/image/BytePackedRaster
+# sun/awt/image/ByteInterleavedRaster
 # sun/awt/image/ByteComponentRaster
 # sun/awt/image/NativeLibLoader
 # sun/awt/image/NativeLibLoader$1
