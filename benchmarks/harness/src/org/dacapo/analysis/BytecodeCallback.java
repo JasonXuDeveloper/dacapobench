@@ -347,6 +347,10 @@ public class BytecodeCallback extends Callback {
             if (isArray) {
                 return null;
             }
+            boolean isPrimitive = t.isPrimitive();
+            if (isPrimitive) {
+                return null;
+            }
             long offset = Modifier.isStatic(f.getModifiers())
                     ? UNSAFE.staticFieldOffset(f)
                     : UNSAFE.objectFieldOffset(f);
