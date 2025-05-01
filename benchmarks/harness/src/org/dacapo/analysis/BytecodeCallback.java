@@ -308,14 +308,15 @@ public class BytecodeCallback extends Callback {
         bytecodesExecuted++;
     }
 
-    public synchronized static void fieldDereferenced(String owner, String name) {
+    public synchronized static void fieldDereferenced(Class<?> cls, String name) {
+        String owner = cls.getName();
         if (fieldDereferenced.containsKey(owner)) {
             HashMap<String, FieldMetadata> deref = fieldDereferenced.get(owner);
             if (deref.containsKey(name)) {
                 FieldMetadata old = deref.get(name);
                 old.incrementDerefCount();
             } else {
-                FieldMetadata fieldMetadata = retrieveFieldMetadata(owner, name);
+                FieldMetadata fieldMetadata = retrieveFieldMetadata(cls, name);
                 if (fieldMetadata == null) {
                     return;
                 }
@@ -323,7 +324,7 @@ public class BytecodeCallback extends Callback {
                 deref.put(name, fieldMetadata);
             }
         } else {
-            FieldMetadata fieldMetadata = retrieveFieldMetadata(owner, name);
+            FieldMetadata fieldMetadata = retrieveFieldMetadata(cls, name);
             if (fieldMetadata == null) {
                 return;
             }
@@ -334,12 +335,8 @@ public class BytecodeCallback extends Callback {
         }
     }
 
-    private static FieldMetadata retrieveFieldMetadata(String owner, String name) {
+    private static FieldMetadata retrieveFieldMetadata(Class<?> cls, String name) {
         try {
-            String binaryName = owner.replace('/', '.');
-            ClassLoader loader = Thread.currentThread().getContextClassLoader();
-            Class<?> cls = Class.forName(binaryName, true, loader);
-
             Field f = findField(cls, name);
 
             Class<?> t = f.getType();
@@ -357,7 +354,7 @@ public class BytecodeCallback extends Callback {
 
             return new FieldMetadata(offset);
         } catch (Exception ex) {
-            throw new RuntimeException("Failed to retrieve metadata for " + owner + "." + name, ex);
+            throw new RuntimeException("Failed to retrieve metadata for " + cls.getName() + "." + name, ex);
         }
     }
 

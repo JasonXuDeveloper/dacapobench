@@ -83,10 +83,10 @@ public class Rewriter {
 
             // Track the field access
             mv.visitInsn(NOP);
-            mv.visitLdcInsn(owner);
+            mv.visitLdcInsn(Type.getObjectType(owner));  
             mv.visitInsn(NOP);
             mv.visitLdcInsn(name);
-            mv.visitMethodInsn(INVOKESTATIC, "org/dacapo/analysis/BytecodeCallback", "fieldDereferenced", "(Ljava/lang/String;Ljava/lang/String;)V", false);
+            mv.visitMethodInsn(INVOKESTATIC, "org/dacapo/analysis/BytecodeCallback", "fieldDereferenced", "(Ljava/lang/Class;Ljava/lang/String;)V", false);
 
             mv.visitFieldInsn(opcode, owner, name, desc);
         }
