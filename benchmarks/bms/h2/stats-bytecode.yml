@@ -1,1982 +1,2852 @@
 # These statistics can be generated from a dacapo release using a command line like:
 #    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 574
-transformed-classes: 739
-transformed-bytecodes: 178917
-executed-bytecodes: 82417477656
-executed-bytecodes-unique: 18153
-executed-bytecodes-p90: 4840852
-executed-bytecodes-p99: 98578284
-executed-bytecodes-p999: 395901698
-executed-bytecodes-p9999: 651674266
-executed-calls: 6985473507
-executed-calls-unique: 2514
+skipped-classes: 579
+transformed-classes: 743
+transformed-bytecodes: 179591
+executed-bytecodes: 82677246664
+executed-bytecodes-unique: 17994
+executed-bytecodes-p90: 5098570
+executed-bytecodes-p99: 99921233
+executed-bytecodes-p999: 397906379
+executed-bytecodes-p9999: 656163088
+executed-calls: 7001684331
+executed-calls-unique: 2490
 field-dereference-counts:
   org/dacapo/harness/TestHarness:
-    commandLineArgs: 15
-    config: 14
-    BuildVersion: 4
-    BuildNickName: 1
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 14
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
   org/apache/commons/cli/PosixParser:
-    tokens: 6
-    eatTheRest: 4
-    options: 3
-    currentOption: 1
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
   org/dacapo/harness/Data:
-    DEFAULT_LOCAL_DACAPO_CONFIG: 2
-    DACAPO_CHECKSUM_RE_PATH: 1
-    WORKING_DIRE: 1
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
   org/dacapo/h2/TPCCDataSource$NullWriter:
-    this$0: 1
+    this$0:
+      offset: 20
+      deref-count: 1
   org/h2/expression/aggregate/AbstractAggregate:
-    filterCondition: 206885
-    over: 184094
-    args: 552
-    distinct: 72
-    $assertionsDisabled: 1
-  org/h2/mvstore/MVStoreException:
-    errorCode: 39258
-  org/h2/mvstore/MVMap$4:
-    $SwitchMap$org$h2$mvstore$MVMap$Decision: 17499058
+    filterCondition:
+      offset: 40
+      deref-count: 207422
+    over:
+      offset: 28
+      deref-count: 184597
   org/dacapo/h2/TPCCDataSource:
-    dbname: 1
-    driver: 1
-    logWriter: 1
-    loginTimeout: 1
-    properties: 1
+    driver:
+      offset: 16
+      deref-count: 1
+    dbname:
+      offset: 20
+      deref-count: 1
+    logWriter:
+      offset: 28
+      deref-count: 1
+    properties:
+      offset: 24
+      deref-count: 1
   org/h2/command/query/Query:
-    lastResult: 5699848
-    noCache: 4154351
-    fetchExpr: 3014569
-    offsetExpr: 3014010
-    fetchPercent: 3013990
-    neverLazy: 3013990
-    randomAccessResult: 3013990
-    lastEvaluated: 2279327
-    lastParameters: 2279327
-    lastLimit: 2279297
-    withTies: 1874236
-    session: 1147892
-    cacheableChecked: 1140057
-    lastExists: 1139804
-    checkInit: 535
-    isPrepared: 525
-    expressions: 382
-    orderList: 328
-    sort: 204
-    visibleColumnCount: 99
+    lastResult:
+      offset: 120
+      deref-count: 5700360
+    fetchExpr:
+      offset: 112
+      deref-count: 3014635
+    offsetExpr:
+      offset: 116
+      deref-count: 3014076
+    session:
+      offset: 40
+      deref-count: 1147925
+    lastExists:
+      offset: 124
+      deref-count: 1139870
+    expressions:
+      offset: 96
+      deref-count: 382
+    orderList:
+      offset: 104
+      deref-count: 328
+    sort:
+      offset: 108
+      deref-count: 204
   org/h2/constraint/ConstraintActionType:
-    RESTRICT: 3
-    CASCADE: 2
-    SET_DEFAULT: 2
-    SET_NULL: 2
-    $VALUES: 1
+    RESTRICT:
+      offset: 112
+      deref-count: 3
+    SET_DEFAULT:
+      offset: 120
+      deref-count: 2
+    SET_NULL:
+      offset: 124
+      deref-count: 2
+    CASCADE:
+      offset: 116
+      deref-count: 2
   org/apache/commons/cli/Option:
-    longOption: 222
-    option: 162
-    values: 71
-    description: 62
-    required: 62
-    argCount: 54
-    type: 31
-    valuesep: 18
-    argName: 14
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
   org/h2/util/TimeZoneProvider:
-    UTC: 2
+    UTC:
+      offset: 112
+      deref-count: 2
   org/h2/expression/function/Function1_2:
-    left: 295162
-    right: 295162
-  org/h2/result/Sparse:
-    map: 1716450707
-    columnCount: 18756717
+    left:
+      offset: 16
+      deref-count: 295966
+    right:
+      offset: 20
+      deref-count: 295966
   org/h2/mvstore/tx/Record:
-    oldValue: 9846666
-    key: 9156208
-    mapId: 9156208
-    COMMIT_MARKER: 1
+    oldValue:
+      offset: 20
+      deref-count: 9767487
+    key:
+      offset: 16
+      deref-count: 9075496
+    COMMIT_MARKER:
+      offset: 112
+      deref-count: 1
   org/h2/schema/SchemaObject:
-    schema: 942
+    schema:
+      offset: 44
+      deref-count: 942
   org/h2/engine/DbObject:
-    objectName: 22244
-    id: 1075
-    temporary: 397
-    database: 379
-    modificationId: 139
-    trace: 116
-    comment: 55
+    objectName:
+      offset: 40
+      deref-count: 22301
+    database:
+      offset: 28
+      deref-count: 379
+    trace:
+      offset: 32
+      deref-count: 116
+    comment:
+      offset: 36
+      deref-count: 55
   org/h2/expression/analysis/DataAnalysisOperation:
-    over: 481787
-    lastGroupRowId: 390715
-    select: 206765
+    over:
+      offset: 28
+      deref-count: 482961
+    select:
+      offset: 24
+      deref-count: 207302
   org/h2/result/RowFactory$Holder:
-    EFFECTIVE: 25
+    EFFECTIVE:
+      offset: 112
+      deref-count: 24
   org/h2/command/dml/FilteredDataChangeStatement:
-    condition: 5315922
-    targetTableFilter: 3300359
-    session: 2657889
-    fetchExpr: 144
+    condition:
+      offset: 64
+      deref-count: 5328944
+    targetTableFilter:
+      offset: 68
+      deref-count: 3307157
+    session:
+      offset: 40
+      deref-count: 2664400
+    fetchExpr:
+      offset: 72
+      deref-count: 144
   org/h2/table/TableType:
-    TABLE: 50
-    EXTERNAL_TABLE_ENGINE: 2
-    MATERIALIZED_VIEW: 2
-    SYSTEM_TABLE: 2
-    TABLE_LINK: 2
-    VIEW: 2
-    $VALUES: 1
-  org/h2/mvstore/DataUtils:
-    $assertionsDisabled: 1
+    TABLE:
+      offset: 120
+      deref-count: 50
+    EXTERNAL_TABLE_ENGINE:
+      offset: 128
+      deref-count: 2
+    MATERIALIZED_VIEW:
+      offset: 132
+      deref-count: 2
+    SYSTEM_TABLE:
+      offset: 116
+      deref-count: 2
+    TABLE_LINK:
+      offset: 112
+      deref-count: 2
+    VIEW:
+      offset: 124
+      deref-count: 2
   org/h2/expression/function/CurrentDateTimeValueFunction:
-    type: 142886
-    TYPES: 28
-    function: 28
-    scale: 28
-    NAMES: 2
-  org/h2/util/IntArray:
-    data: 10
-    size: 10
+    type:
+      offset: 24
+      deref-count: 142918
   org/apache/derby/client/ClientAutoloadedDriver:
-    exceptionsOnLoadDriver__: 1
-    factoryObject: 1
-    registeredDriver__: 1
-    traceFileSuffixIndex_: 1
-  org/h2/api/IntervalQualifier$1:
-    $SwitchMap$org$h2$api$IntervalQualifier: 40
+    registeredDriver__:
+      offset: 120
+      deref-count: 1
+    exceptionsOnLoadDriver__:
+      offset: 116
+      deref-count: 1
+    factoryObject:
+      offset: 112
+      deref-count: 1
   org/h2/engine/OnExitDatabaseCloser:
-    DATABASES: 2
-    INSTANCE: 2
-    registered: 2
-    terminated: 1
+    DATABASES:
+      offset: 112
+      deref-count: 2
+    INSTANCE:
+      offset: 116
+      deref-count: 2
   org/h2/command/dml/CommandWithValues:
-    valuesExpressionList: 212
+    valuesExpressionList:
+      offset: 64
+      deref-count: 212
   org/h2/expression/analysis/WindowFunctionType:
-    FIRST_VALUE: 3
-    LAG: 3
-    LAST_VALUE: 3
-    LEAD: 3
-    NTH_VALUE: 3
-    $VALUES: 2
-    CUME_DIST: 2
-    DENSE_RANK: 2
-    NTILE: 2
-    PERCENT_RANK: 2
-    RANK: 2
-    RATIO_TO_REPORT: 2
-    ROW_NUMBER: 2
+    NTH_VALUE:
+      offset: 152
+      deref-count: 3
+    LAG:
+      offset: 140
+      deref-count: 3
+    LAST_VALUE:
+      offset: 148
+      deref-count: 3
+    FIRST_VALUE:
+      offset: 144
+      deref-count: 3
+    LEAD:
+      offset: 136
+      deref-count: 3
+    PERCENT_RANK:
+      offset: 124
+      deref-count: 2
+    RATIO_TO_REPORT:
+      offset: 156
+      deref-count: 2
+    ROW_NUMBER:
+      offset: 112
+      deref-count: 2
+    DENSE_RANK:
+      offset: 120
+      deref-count: 2
+    RANK:
+      offset: 116
+      deref-count: 2
+    CUME_DIST:
+      offset: 128
+      deref-count: 2
+    NTILE:
+      offset: 132
+      deref-count: 2
   org/h2/command/dml/SetTypes:
-    TYPES: 58
-    $assertionsDisabled: 2
+    TYPES:
+      offset: 112
+      deref-count: 58
   org/dacapo/parser/Config$ThreadModel:
-    FIXED: 7
-    SINGLE: 7
-    PER_CPU: 5
-    description: 3
-    $VALUES: 2
+    SINGLE:
+      offset: 112
+      deref-count: 5
+    FIXED:
+      offset: 116
+      deref-count: 5
+    PER_CPU:
+      offset: 120
+      deref-count: 3
   org/h2/Driver:
-    INSTANCE: 3
-    registered: 2
-    DEFAULT_CONNECTION: 1
-  org/h2/util/TimeZoneProvider$Simple:
-    offset: 1343730
+    INSTANCE:
+      offset: 112
+      deref-count: 3
+    DEFAULT_CONNECTION:
+      offset: 120
+      deref-count: 1
   org/h2/mode/DefaultNullOrdering:
-    defaultAscNulls: 344
-    defaultDescNulls: 4
-    nullAsc: 4
-    nullDesc: 4
-    $VALUES: 2
-    FIRST: 2
-    HIGH: 2
-    LAST: 2
-    LOW: 2
-    VALUES: 1
+    HIGH:
+      offset: 116
+      deref-count: 2
+    LOW:
+      offset: 112
+      deref-count: 2
+    LAST:
+      offset: 124
+      deref-count: 2
+    FIRST:
+      offset: 120
+      deref-count: 2
   org/apache/derbyTesting/system/oe/client/Submitter:
-    rand: 4427862
-    maxW: 2178160
-    display: 462432
-    ops: 462432
-    transactionCount: 72
-    TX_CUM_PROB: 1
-    TX_NAME: 1
+    rand:
+      offset: 24
+      deref-count: 4424256
+    ops:
+      offset: 20
+      deref-count: 461831
+    display:
+      offset: 16
+      deref-count: 461831
   org/h2/table/Plan:
-    allFilters: 6355
-    allConditions: 2941
-    planItems: 1755
-    filters: 1683
+    planItems:
+      offset: 16
+      deref-count: 1755
   org/h2/expression/BinaryOperation:
-    type: 2349940
-    left: 1175894
-    right: 1175630
-    opType: 1175246
-    convertRight: 1175102
-    forcedType: 264
+    type:
+      offset: 24
+      deref-count: 2352014
+    left:
+      offset: 16
+      deref-count: 1176931
+    right:
+      offset: 20
+      deref-count: 1176667
+    opType:
+      offset: 28
+      deref-count: 1176283
+    forcedType:
+      offset: 32
+      deref-count: 264
   org/h2/jdbc/JdbcStatement:
-    conn: 61713824
-    resultSet: 10264202
-    generatedKeys: 6087170
-    executingCommand: 6086332
-    updateCount: 3043630
-    cancelled: 3043585
-    closeOnCompletion: 912929
-    session: 2802
-    escapeProcessing: 1215
-    fetchSize: 1215
-    resultSetConcurrency: 1169
-    resultSetType: 1169
-    maxRows: 1
-  org/h2/value/ValueSmallint:
-    value: 495528378
+    conn:
+      offset: 56
+      deref-count: 61724378
+    resultSet:
+      offset: 64
+      deref-count: 10266152
+    generatedKeys:
+      offset: 68
+      deref-count: 6088974
+    executingCommand:
+      offset: 72
+      deref-count: 6088136
+    session:
+      offset: 60
+      deref-count: 2802
   org/apache/derbyTesting/system/oe/model/Order:
-    id: 15880
-    district: 11910
-    ol_cnt: 11910
-    warehouse: 11910
-    carrier_id: 7940
-    entry_d: 7940
-    all_local: 3970
-    customer: 3970
+    carrier_id:
+      offset: 36
+      deref-count: 7940
+    entry_d:
+      offset: 32
+      deref-count: 7940
   org/dacapo/harness/Callback$Mode:
-    TIMING: 2
-    WARMUP: 2
-    $VALUES: 1
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
   org/h2/mvstore/type/ByteArrayDataType:
-    INSTANCE: 1
+    INSTANCE:
+      offset: 112
+      deref-count: 1
   org/h2/jdbc/JdbcConnection:
-    session: 71146943
-    executingStatement: 6086332
-    rollback: 1190226
-    commit: 278880
-    holdability: 25
-    keepOpenStackTrace: 25
-    queryTimeoutCache: 25
-    url: 25
-    user: 25
-    watcher: 25
+    session:
+      offset: 44
+      deref-count: 71152578
+    executingStatement:
+      offset: 76
+      deref-count: 6088136
+    rollback:
+      offset: 52
+      deref-count: 1188321
+    commit:
+      offset: 48
+      deref-count: 278982
+    watcher:
+      offset: 80
+      deref-count: 25
+    user:
+      offset: 40
+      deref-count: 25
+    url:
+      offset: 36
+      deref-count: 25
   org/h2/mvstore/tx/TransactionStore$TxMapBuilder:
-    typeRegistry: 111
-    defaultDataType: 37
-  org/apache/derbyTesting/system/oe/direct/OrderItem4Sort:
-    w: 5131522
-    i: 3968892
-    q: 899868
+    typeRegistry:
+      offset: 24
+      deref-count: 111
+    defaultDataType:
+      offset: 28
+      deref-count: 37
   org/h2/mvstore/tx/CommitDecisionMaker:
-    decision: 21343983
-    $assertionsDisabled: 18632370
-    undoKey: 14155278
+    decision:
+      offset: 12
+      deref-count: 21316467
   org/h2/command/Parser$NullConstraintType:
-    NO_NULL_CONSTRAINT_FOUND: 3
-    NULL_IS_ALLOWED: 3
-    NULL_IS_NOT_ALLOWED: 3
-    $VALUES: 2
+    NULL_IS_ALLOWED:
+      offset: 112
+      deref-count: 3
+    NULL_IS_NOT_ALLOWED:
+      offset: 116
+      deref-count: 3
+    NO_NULL_CONSTRAINT_FOUND:
+      offset: 120
+      deref-count: 3
   org/h2/mvstore/RootReference:
-    holdCount: 143105590
-    root: 122844390
-    version: 90586312
-    updateAttemptCounter: 79204878
-    updateCounter: 79204878
-    previous: 75158831
-    appendCounter: 73286075
-    $assertionsDisabled: 55230074
-    ownerId: 49776231
+    root:
+      offset: 48
+      deref-count: 121946871
+    previous:
+      offset: 52
+      deref-count: 75847155
   org/h2/util/ParserUtil:
-    KEYWORDS: 1
+    KEYWORDS:
+      offset: 112
+      deref-count: 1
   org/h2/mvstore/CursorPos:
-    index: 334838225
-    page: 228130477
-    parent: 205445208
+    page:
+      offset: 16
+      deref-count: 227863081
+    parent:
+      offset: 20
+      deref-count: 205147709
   org/h2/table/IndexColumn:
-    sortType: 29297868
-    column: 1996
-    columnName: 244
-  org/h2/util/SmallLRUCache:
-    size: 829
-  org/h2/mvstore/MVMap$IntValueHolder:
-    value: 52979945
+    column:
+      offset: 20
+      deref-count: 1996
+    columnName:
+      offset: 16
+      deref-count: 244
   org/apache/derbyTesting/system/oe/direct/StatementHelper:
-    statements: 2923035
-    conn: 768
+    statements:
+      offset: 16
+      deref-count: 2922143
+    conn:
+      offset: 12
+      deref-count: 768
   org/dacapo/parser/SimpleCharStream:
-    bufpos: 11027
-    column: 6079
-    inBuf: 2532
-    bufcolumn: 2211
-    bufline: 2211
-    buffer: 2068
-    line: 2046
-    prevCharIsLF: 2045
-    maxNextCharInd: 1964
-    prevCharIsCR: 1910
-    tokenBegin: 1050
-    tabSize: 69
-    bufsize: 65
-    available: 5
-    inputStream: 4
-    trackLineColumn: 1
-  org/h2/value/ValueTimestamp:
-    dateValue: 6921122
-    timeNanos: 6921122
+    inputStream:
+      offset: 60
+      deref-count: 4
   org/h2/mvstore/tx/TransactionMap$TMIterator:
-    forEntries: 23661109
-    committingTransactions: 9514964
-    cursor: 9514964
-    transactionId: 9514964
+    cursor:
+      offset: 24
+      deref-count: 9518975
+    committingTransactions:
+      offset: 20
+      deref-count: 9518975
   org/dacapo/harness/LatencyReporter:
-    idx: 500024
-    callback: 400006
-    next_idx: 304024
-    txend: 300001
-    reporters: 200049
-    timerBase: 200002
-    txbegin: 200002
-    stride: 104025
-    id: 100024
-    txowner: 100001
-    globalIdx: 4002
-    max: 24
-    requestsFinished: 1
-    requestsStarted: 1
+    callback:
+      offset: 132
+      deref-count: 400006
+    globalIdx:
+      offset: 124
+      deref-count: 4002
   org/h2/command/query/QueryOrderBy:
-    expression: 378
-    columnIndexExpr: 192
-    sortType: 123
+    expression:
+      offset: 16
+      deref-count: 378
+    columnIndexExpr:
+      offset: 20
+      deref-count: 192
   java/util/concurrent/TimeUnit:
-    MILLISECONDS: 1
+    MILLISECONDS:
+      offset: 120
+      deref-count: 1
   org/h2/value/ValueBigint:
-    value: 4364649
-    STATIC_CACHE: 218052
-    MAX: 1
-    MAX_BI: 1
-    MIN: 1
+    MAX_BI:
+      offset: 120
+      deref-count: 1
+    MIN:
+      offset: 112
+      deref-count: 1
+    MAX:
+      offset: 116
+      deref-count: 1
   org/dacapo/h2/TPCC:
-    submitters: 174
-    rands: 74
-    transactionsPerTerminal: 50
-    connections: 49
-    conn: 35
-    numberOfTerminals: 34
-    properties: 29
-    database: 28
-    scale: 28
-    driver: 27
-    reporter: 26
-    $assertionsDisabled: 13
-    totalTransactions: 7
-    verbose: 5
-    inMemoryDB: 3
-    loaderThreads: 3
-    size: 3
-    argMap: 2
-    cleanupInIteration: 2
-    createSuffix: 2
-    firstIteration: 2
-    preIterationTime: 2
-    threadMap: 2
-    generate: 1
-    preserve: 1
-    reportPreIterationTimes: 1
-    resetToInitialDataTime: 1
-    scratch: 1
-    timerBase: 1
+    conn:
+      offset: 104
+      deref-count: 35
+    properties:
+      offset: 100
+      deref-count: 29
+    database:
+      offset: 108
+      deref-count: 28
+    driver:
+      offset: 96
+      deref-count: 27
+    reporter:
+      offset: 76
+      deref-count: 26
+    size:
+      offset: 92
+      deref-count: 3
+    threadMap:
+      offset: 80
+      deref-count: 2
+    argMap:
+      offset: 84
+      deref-count: 2
+    createSuffix:
+      offset: 112
+      deref-count: 2
+    scratch:
+      offset: 88
+      deref-count: 1
   org/h2/value/TypeInfo:
-    valueType: 45765924
-    precision: 20503903
-    scale: 7701757
-    extTypeInfo: 3012523
-    TYPE_SMALLINT: 2628908
-    TYPE_INTEGER: 1586313
-    TYPE_INFOS_BY_VALUE_TYPE: 295407
-    TYPE_UNKNOWN: 1750
-    TYPE_NUMERIC_FLOATING_POINT: 121
-    TYPE_ARRAY_UNKNOWN: 1
-    TYPE_BIGINT: 1
-    TYPE_BINARY: 1
-    TYPE_BLOB: 1
-    TYPE_BOOLEAN: 1
-    TYPE_CHAR: 1
-    TYPE_CLOB: 1
-    TYPE_DATE: 1
-    TYPE_DECFLOAT: 1
-    TYPE_DECFLOAT_BIGINT: 1
-    TYPE_DOUBLE: 1
-    TYPE_ENUM_UNDEFINED: 1
-    TYPE_GEOMETRY: 1
-    TYPE_INTERVAL_DAY: 1
-    TYPE_INTERVAL_DAY_TO_SECOND: 1
-    TYPE_INTERVAL_HOUR_TO_SECOND: 1
-    TYPE_INTERVAL_YEAR_TO_MONTH: 1
-    TYPE_JAVA_OBJECT: 1
-    TYPE_JSON: 1
-    TYPE_NULL: 1
-    TYPE_NUMERIC_BIGINT: 1
-    TYPE_NUMERIC_SCALE_0: 1
-    TYPE_REAL: 1
-    TYPE_ROW_EMPTY: 1
-    TYPE_TIME: 1
-    TYPE_TIMESTAMP: 1
-    TYPE_TIMESTAMP_TZ: 1
-    TYPE_TIME_TZ: 1
-    TYPE_TINYINT: 1
-    TYPE_UUID: 1
-    TYPE_VARBINARY: 1
-    TYPE_VARCHAR: 1
-    TYPE_VARCHAR_IGNORECASE: 1
+    extTypeInfo:
+      offset: 28
+      deref-count: 3017237
+    TYPE_SMALLINT:
+      offset: 156
+      deref-count: 2628908
+    TYPE_INTEGER:
+      offset: 160
+      deref-count: 1586313
+    TYPE_UNKNOWN:
+      offset: 112
+      deref-count: 1750
+    TYPE_NUMERIC_FLOATING_POINT:
+      offset: 176
+      deref-count: 121
+    TYPE_GEOMETRY:
+      offset: 240
+      deref-count: 1
+    TYPE_VARCHAR_IGNORECASE:
+      offset: 128
+      deref-count: 1
+    TYPE_BLOB:
+      offset: 144
+      deref-count: 1
+    TYPE_JSON:
+      offset: 244
+      deref-count: 1
+    TYPE_BIGINT:
+      offset: 164
+      deref-count: 1
+    TYPE_ROW_EMPTY:
+      offset: 256
+      deref-count: 1
+    TYPE_REAL:
+      offset: 180
+      deref-count: 1
+    TYPE_TIME_TZ:
+      offset: 204
+      deref-count: 1
+    TYPE_DOUBLE:
+      offset: 184
+      deref-count: 1
+    TYPE_INTERVAL_DAY_TO_SECOND:
+      offset: 224
+      deref-count: 1
+    TYPE_TINYINT:
+      offset: 152
+      deref-count: 1
+    TYPE_DATE:
+      offset: 196
+      deref-count: 1
+    TYPE_TIMESTAMP_TZ:
+      offset: 212
+      deref-count: 1
+    TYPE_NULL:
+      offset: 116
+      deref-count: 1
+    TYPE_DECFLOAT_BIGINT:
+      offset: 192
+      deref-count: 1
+    TYPE_DECFLOAT:
+      offset: 188
+      deref-count: 1
+    TYPE_JAVA_OBJECT:
+      offset: 232
+      deref-count: 1
+    TYPE_CLOB:
+      offset: 132
+      deref-count: 1
+    TYPE_BOOLEAN:
+      offset: 148
+      deref-count: 1
+    TYPE_TIMESTAMP:
+      offset: 208
+      deref-count: 1
+    TYPE_INTERVAL_DAY:
+      offset: 216
+      deref-count: 1
+    TYPE_VARBINARY:
+      offset: 140
+      deref-count: 1
+    TYPE_NUMERIC_BIGINT:
+      offset: 172
+      deref-count: 1
+    TYPE_ARRAY_UNKNOWN:
+      offset: 252
+      deref-count: 1
+    TYPE_UUID:
+      offset: 248
+      deref-count: 1
+    TYPE_CHAR:
+      offset: 120
+      deref-count: 1
+    TYPE_ENUM_UNDEFINED:
+      offset: 236
+      deref-count: 1
+    TYPE_NUMERIC_SCALE_0:
+      offset: 168
+      deref-count: 1
+    TYPE_BINARY:
+      offset: 136
+      deref-count: 1
+    TYPE_INTERVAL_HOUR_TO_SECOND:
+      offset: 228
+      deref-count: 1
+    TYPE_INTERVAL_YEAR_TO_MONTH:
+      offset: 220
+      deref-count: 1
+    TYPE_TIME:
+      offset: 200
+      deref-count: 1
+    TYPE_VARCHAR:
+      offset: 124
+      deref-count: 1
   org/h2/message/TraceSystem:
-    levelMax: 84111350
-    levelSystemOut: 246744
-    fileName: 246740
-    traces: 990
-    writer: 36
-    levelFile: 5
-    checkSize: 1
-    maxFileSize: 1
-    sysOut: 1
+    fileName:
+      offset: 36
+      deref-count: 246607
+    traces:
+      offset: 40
+      deref-count: 990
+    writer:
+      offset: 56
+      deref-count: 36
+    sysOut:
+      offset: 60
+      deref-count: 1
   java/lang/Long:
-    TYPE: 1
+    TYPE:
+      offset: 112
+      deref-count: 1
   org/h2/mvstore/tx/TransactionMap$UncommittedIterator:
-    cursor: 9063092
+    cursor:
+      offset: 24
+      deref-count: 9069270
   org/apache/derbyTesting/system/oe/model/Customer:
-    credit: 312619
-    district: 273199
-    warehouse: 273199
-    id: 265259
-    data: 189149
-    first: 162321
-    last: 162321
-    middle: 162321
-    address: 158351
-    credit_lim: 158351
-    discount: 158351
-    phone: 158351
-    since: 158351
-    balance: 158238
-    delivery_cnt: 4083
-    payment_cnt: 4083
-    ytd_payment: 4083
+    credit:
+      offset: 52
+      deref-count: 312177
+    data:
+      offset: 72
+      deref-count: 189408
+    middle:
+      offset: 32
+      deref-count: 162100
+    last:
+      offset: 36
+      deref-count: 162100
+    first:
+      offset: 28
+      deref-count: 162100
+    address:
+      offset: 40
+      deref-count: 158130
+    phone:
+      offset: 44
+      deref-count: 158130
+    credit_lim:
+      offset: 56
+      deref-count: 158130
+    discount:
+      offset: 60
+      deref-count: 158130
+    since:
+      offset: 48
+      deref-count: 158130
+    balance:
+      offset: 64
+      deref-count: 158017
+    ytd_payment:
+      offset: 68
+      deref-count: 4083
   org/h2/mvstore/tx/TransactionStore:
-    store: 4032340
-    committingTransactions: 3891689
+    store:
+      offset: 24
+      deref-count: 4032006
+    committingTransactions:
+      offset: 52
+      deref-count: 3894371
   org/h2/mvstore/MVMap$BasicBuilder:
-    keyType: 266
-    valueType: 266
+    valueType:
+      offset: 16
+      deref-count: 266
+    keyType:
+      offset: 12
+      deref-count: 266
   org/h2/mvstore/db/NullValueDataType:
-    INSTANCE: 1
+    INSTANCE:
+      offset: 112
+      deref-count: 1
   org/h2/table/QueryExpressionTable:
-    maxDataModificationId: 41
-    lastModificationCheck: 31
-    database: 21
-    index: 20
-    viewQuery: 20
+    database:
+      offset: 28
+      deref-count: 21
+    index:
+      offset: 116
+      deref-count: 20
+    viewQuery:
+      offset: 112
+      deref-count: 20
   org/h2/jdbc/JdbcSQLSyntaxErrorException:
-    sql: 7
-    message: 5
-    originalMessage: 5
-    stackTrace: 2
+    sql:
+      offset: 60
+      deref-count: 7
+    originalMessage:
+      offset: 48
+      deref-count: 5
+    message:
+      offset: 56
+      deref-count: 5
+    stackTrace:
+      offset: 52
+      deref-count: 2
   org/h2/table/PlanItem:
-    index: 3253
-    cost: 3013
-    masks: 1474
-    joinPlan: 24
+    index:
+      offset: 24
+      deref-count: 3253
+    joinPlan:
+      offset: 28
+      deref-count: 24
   org/h2/mvstore/db/RowDataType:
-    indexes: 1251194827
-    valueDataType: 588063360
-    sortTypes: 588063272
-    $assertionsDisabled: 9730
-    columnCount: 155
-    storeKeys: 89
-    FACTORY: 1
+    valueDataType:
+      offset: 20
+      deref-count: 590055798
+    FACTORY:
+      offset: 112
+      deref-count: 1
   org/h2/command/ddl/SequenceOptions:
-    dataType: 3
-    bounds: 2
-    maxValue: 2
-    minValue: 2
-    oldSequence: 2
-    restart: 2
-    cacheSize: 1
-    cycle: 1
-    increment: 1
-    start: 1
+    dataType:
+      offset: 12
+      deref-count: 3
+    minValue:
+      offset: 32
+      deref-count: 2
+    oldSequence:
+      offset: 48
+      deref-count: 2
+    restart:
+      offset: 20
+      deref-count: 2
+    maxValue:
+      offset: 28
+      deref-count: 2
+    cacheSize:
+      offset: 40
+      deref-count: 1
+    start:
+      offset: 16
+      deref-count: 1
+    increment:
+      offset: 24
+      deref-count: 1
+    cycle:
+      offset: 36
+      deref-count: 1
   org/h2/message/TraceObject:
-    trace: 30931297
-    id: 1914396
-    traceType: 1142392
-    ID: 1141278
-    PREFIX: 1
-    SQL_OOME: 1
+    trace:
+      offset: 20
+      deref-count: 30935213
+    ID:
+      offset: 112
+      deref-count: 1141370
+    SQL_OOME:
+      offset: 120
+      deref-count: 1
   org/h2/util/CloseWatcher:
-    queue: 51
-    refs: 26
-    closeable: 25
+    queue:
+      offset: 112
+      deref-count: 51
+    refs:
+      offset: 116
+      deref-count: 26
+    closeable:
+      offset: 32
+      deref-count: 25
   org/apache/derbyTesting/system/oe/load/SimpleInsert:
-    random: 4243968
-    conn: 944
-    scale: 19
-    seed: 4
+    random:
+      offset: 28
+      deref-count: 4243968
+    conn:
+      offset: 24
+      deref-count: 944
   org/h2/mvstore/db/MVDelegateIndex:
-    mainIndex: 485240
-  org/apache/derby/client/am/Configuration:
-    dncCompatibleJREVersions: 1
-    dncPackageConsistencyToken: 1
-    exceptionsOnLoadResources: 1
+    mainIndex:
+      offset: 80
+      deref-count: 484605
   org/h2/engine/Mode$ViewExpressionNames:
-    AS_IS: 13
-    EXCEPTION: 6
-    MYSQL_STYLE: 4
-    $VALUES: 1
-  org/h2/value/ValueInteger:
-    value: 355635816
-    DYNAMIC_CACHE: 4185121
-    STATIC_CACHE: 2781505
+    AS_IS:
+      offset: 112
+      deref-count: 11
+    EXCEPTION:
+      offset: 116
+      deref-count: 4
+    MYSQL_STYLE:
+      offset: 120
+      deref-count: 2
   org/h2/value/ExtTypeInfoNumeric:
-    DECIMAL: 1
+    DECIMAL:
+      offset: 112
+      deref-count: 1
   org/h2/command/ddl/CommandWithColumns:
-    constraintCommands: 22
-    primaryKey: 15
-    transactional: 3
-    session: 1
+    constraintCommands:
+      offset: 68
+      deref-count: 22
+    primaryKey:
+      offset: 72
+      deref-count: 15
+    session:
+      offset: 40
+      deref-count: 1
   org/h2/expression/condition/PredicateWithSubquery:
-    query: 90
+    query:
+      offset: 16
+      deref-count: 90
   org/h2/table/TableBase:
-    columns: 771
-    isHidden: 120
-    tableEngine: 73
-    tableEngineParams: 73
-    comment: 60
-    globalTemporary: 13
-  org/dacapo/h2/TPCCReporter:
-    count: 300022
-    totalTransactions: 100002
-  org/h2/expression/BinaryOperation$1:
-    $SwitchMap$org$h2$expression$BinaryOperation$OpType: 1174987
+    tableEngine:
+      offset: 100
+      deref-count: 73
+    tableEngineParams:
+      offset: 104
+      deref-count: 73
+    comment:
+      offset: 36
+      deref-count: 60
   org/apache/commons/cli/CommandLine:
-    options: 64
-    args: 5
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
   org/h2/index/Index:
-    indexColumns: 52523665
-    columnIds: 29297081
-    rowFactory: 15374908
-    table: 14588986
-    database: 14587107
-    indexType: 4572161
-    uniqueRowFactory: 3116383
-    columns: 459227
-    uniqueColumnColumn: 3579
-    comment: 231
+    rowFactory:
+      offset: 72
+      deref-count: 15381316
+    table:
+      offset: 64
+      deref-count: 15018626
+    database:
+      offset: 28
+      deref-count: 15016747
+    indexType:
+      offset: 68
+      deref-count: 4574846
+    uniqueRowFactory:
+      offset: 76
+      deref-count: 3118277
+    comment:
+      offset: 36
+      deref-count: 231
   org/h2/command/query/Select$LazyResultSelect:
-    columnCount: 2991391
-    this$0: 2991391
+    this$0:
+      offset: 60
+      deref-count: 2991423
   org/h2/mvstore/Page$PageReference:
-    page: 200812428
-    count: 42337658
-    pos: 42337658
-    $assertionsDisabled: 1
-    EMPTY: 1
+    page:
+      offset: 12
+      deref-count: 200305033
+    EMPTY:
+      offset: 112
+      deref-count: 1
   org/apache/commons/cli/Options:
-    shortOpts: 71
-    longOpts: 70
-    optionGroups: 4
-    requiredOpts: 3
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
   org/h2/index/IndexType:
-    primaryKey: 4571944
-    nullsDistinct: 4571771
-    hash: 459
-    spatial: 214
-    scan: 98
-    persistent: 97
-    belongsToConstraint: 19
+    nullsDistinct:
+      offset: 20
+      deref-count: 4574456
   org/h2/api/IntervalQualifier:
-    string: 26
-    DAY: 5
-    DAY_TO_HOUR: 5
-    DAY_TO_MINUTE: 5
-    DAY_TO_SECOND: 5
-    HOUR: 5
-    HOUR_TO_MINUTE: 5
-    HOUR_TO_SECOND: 5
-    MINUTE: 5
-    MINUTE_TO_SECOND: 5
-    MONTH: 5
-    SECOND: 5
-    YEAR: 5
-    YEAR_TO_MONTH: 5
-    $VALUES: 2
+    string:
+      offset: 24
+      deref-count: 26
+    HOUR_TO_MINUTE:
+      offset: 152
+      deref-count: 5
+    HOUR_TO_SECOND:
+      offset: 156
+      deref-count: 5
+    MONTH:
+      offset: 116
+      deref-count: 5
+    HOUR:
+      offset: 124
+      deref-count: 5
+    YEAR_TO_MONTH:
+      offset: 136
+      deref-count: 5
+    MINUTE_TO_SECOND:
+      offset: 160
+      deref-count: 5
+    DAY_TO_MINUTE:
+      offset: 144
+      deref-count: 5
+    DAY_TO_SECOND:
+      offset: 148
+      deref-count: 5
+    DAY_TO_HOUR:
+      offset: 140
+      deref-count: 5
+    YEAR:
+      offset: 112
+      deref-count: 5
+    MINUTE:
+      offset: 128
+      deref-count: 5
+    SECOND:
+      offset: 132
+      deref-count: 5
+    DAY:
+      offset: 120
+      deref-count: 5
   org/apache/derbyTesting/system/oe/model/Warehouse:
-    id: 406386
-    name: 381319
-    address: 295185
-    tax: 203193
-    ytd: 203193
+    name:
+      offset: 16
+      deref-count: 381154
+    address:
+      offset: 20
+      deref-count: 295020
+    ytd:
+      offset: 28
+      deref-count: 203000
+    tax:
+      offset: 24
+      deref-count: 203000
   org/dacapo/parser/ConfigFileTokenManager:
-    jjnewStateCnt: 9835
-    jjround: 9342
-    curChar: 7863
-    jjstateSet: 6967
-    jjrounds: 6381
-    jjnextStates: 2992
-    input_stream: 2770
-    jjmatchedKind: 1397
-    jjmatchedPos: 820
-    image: 255
-    jjimage: 129
-    jjstrLiteralImages: 129
-    curLexState: 128
-    jjnewLexState: 128
-    jjtoToken: 128
-    jjimageLen: 127
-    debugStream: 1
-    defaultLexState: 1
-    jjbitVec0: 1
-    jjbitVec2: 1
-    jjtoMore: 1
-    jjtoSkip: 1
-    jjtoSpecial: 1
-    lexStateNames: 1
+    input_stream:
+      offset: 52
+      deref-count: 2770
+    image:
+      offset: 68
+      deref-count: 255
+    jjimage:
+      offset: 64
+      deref-count: 129
+    debugStream:
+      offset: 48
+      deref-count: 1
   org/dacapo/parser/Config$OutputFile:
-    digest: 20
-    filter: 18
-    text: 18
-    bytes: 10
-    existence: 10
-    lines: 10
-    keep: 8
-    name: 8
-    this$0: 8
+    digest:
+      offset: 32
+      deref-count: 20
+    this$0:
+      offset: 36
+      deref-count: 8
+    name:
+      offset: 28
+      deref-count: 8
   org/h2/value/DataType:
-    TYPES_BY_NAME: 217
-    TYPES_BY_VALUE_TYPE: 93
-    defaultPrecision: 47
-    maxPrecision: 47
-    sqlType: 46
-    type: 46
-    minPrecision: 43
-    params: 33
-    prefix: 32
-    suffix: 32
-    supportsPrecision: 27
-    defaultScale: 20
-    maxScale: 20
-    minScale: 12
-    caseSensitive: 10
-    supportsScale: 9
-    specialPrecisionScale: 3
-  org/h2/command/Token$ParameterToken:
-    index: 5008
+    TYPES_BY_NAME:
+      offset: 112
+      deref-count: 217
+    params:
+      offset: 68
+      deref-count: 33
+    prefix:
+      offset: 60
+      deref-count: 32
+    suffix:
+      offset: 64
+      deref-count: 32
   org/h2/engine/IsolationLevel:
-    REPEATABLE_READ: 25556360
-    READ_COMMITTED: 1937113
-    SERIALIZABLE: 16530
-    jdbc: 10242
-    lockMode: 5
-    sql: 5
-    READ_UNCOMMITTED: 4
-    SNAPSHOT: 4
-    $VALUES: 3
+    REPEATABLE_READ:
+      offset: 120
+      deref-count: 25535770
+    READ_COMMITTED:
+      offset: 116
+      deref-count: 1938354
+    SERIALIZABLE:
+      offset: 128
+      deref-count: 16530
+    sql:
+      offset: 32
+      deref-count: 5
+    SNAPSHOT:
+      offset: 124
+      deref-count: 4
+    READ_UNCOMMITTED:
+      offset: 112
+      deref-count: 4
   org/h2/mvstore/tx/VersionedValueType:
-    valueType: 542657
-    factory: 33
+    valueType:
+      offset: 12
+      deref-count: 529895
+    factory:
+      offset: 16
+      deref-count: 33
   org/h2/result/SortOrder:
-    orderList: 454
-    sortTypes: 378
-    session: 336
-    queryColumnIndexes: 252
+    orderList:
+      offset: 24
+      deref-count: 454
+    session:
+      offset: 12
+      deref-count: 336
   org/h2/message/Trace:
-    traceWriter: 42179078
-    traceLevel: 41932339
-    module: 246774
-    lineSeparator: 35
-    MODULE_NAMES: 12
+    traceWriter:
+      offset: 16
+      deref-count: 42183259
+    module:
+      offset: 20
+      deref-count: 246641
+    lineSeparator:
+      offset: 24
+      deref-count: 35
   org/h2/mvstore/Page$Leaf:
-    values: 171965279
-    $assertionsDisabled: 188684
-    map: 188683
+    map:
+      offset: 36
+      deref-count: 188455
   org/h2/mvstore/db/MVSecondaryIndex$MVStoreCursor:
-    current: 37914149
-    row: 27059627
-    it: 16626600
-    mvTable: 9931565
-    session: 9931565
-  org/h2/expression/aggregate/AggregateDataDefault$1:
-    $SwitchMap$org$h2$expression$aggregate$AggregateType: 12
+    current:
+      offset: 24
+      deref-count: 37946931
+    row:
+      offset: 28
+      deref-count: 27090428
+    it:
+      offset: 16
+      deref-count: 16636305
+    mvTable:
+      offset: 20
+      deref-count: 9940157
+    session:
+      offset: 12
+      deref-count: 9940157
   org/h2/mvstore/tx/Transaction:
-    transactionMaps: 88034996
-    statusAndLogId: 83122209
-    isolationLevel: 31515558
-    transactionId: 21555972
-    store: 18304673
-    txCounter: 4560205
-    $assertionsDisabled: 3149793
-    undoLogRootReferences: 542441
-    timeoutMillis: 535046
-    sequenceNum: 499564
-    listener: 499462
-    name: 499462
-    ownerId: 499462
-    notificationRequested: 217258
-    blockingTransaction: 106803
-    blockingKey: 71168
-    blockingMapName: 71168
-    STATUS_NAMES: 1
+    transactionMaps:
+      offset: 72
+      deref-count: 88023169
+    statusAndLogId:
+      offset: 44
+      deref-count: 82956883
+    isolationLevel:
+      offset: 76
+      deref-count: 31495875
+    store:
+      offset: 36
+      deref-count: 18139776
+    txCounter:
+      offset: 48
+      deref-count: 4559236
+    name:
+      offset: 52
+      deref-count: 498827
+    listener:
+      offset: 40
+      deref-count: 498827
+    blockingTransaction:
+      offset: 56
+      deref-count: 107054
+    blockingKey:
+      offset: 64
+      deref-count: 71334
+    blockingMapName:
+      offset: 60
+      deref-count: 71334
   org/h2/mvstore/type/ObjectDataType$AutoDetectDataType:
-    base: 1
-    typeId: 1
+    base:
+      offset: 16
+      deref-count: 1
   org/h2/table/TableFilter:
-    state: 94647566
-    currentSearchRow: 86834217
-    current: 73515063
-    cursor: 51164123
-    select: 41044913
-    nestedJoin: 39053160
-    join: 37383120
-    scanCount: 30178732
-    foundOne: 15151187
-    joinCondition: 13016984
-    filterCondition: 10718455
-    table: 9002788
-    session: 8864722
-    indexConditions: 4444530
-    joinOuter: 2536175
-    derivedColumnMap: 110541
-    evaluatable: 3373
-    index: 2498
-    hashCode: 1914
-    indexHints: 1499
-    alias: 916
-    orderInFrom: 776
-    masks: 713
-    fullCondition: 617
-    joinOuterIndirect: 568
-    $assertionsDisabled: 1
-    JOI_VISITOR: 1
-    ORDER_IN_FROM_COMPARATOR: 1
+    currentSearchRow:
+      offset: 80
+      deref-count: 86872366
+    current:
+      offset: 84
+      deref-count: 73560015
+    cursor:
+      offset: 64
+      deref-count: 51194905
+    select:
+      offset: 44
+      deref-count: 41059966
+    nestedJoin:
+      offset: 92
+      deref-count: 39069508
+    join:
+      offset: 88
+      deref-count: 37398663
+    joinCondition:
+      offset: 76
+      deref-count: 13024504
+    filterCondition:
+      offset: 72
+      deref-count: 10725877
+    table:
+      offset: 40
+      deref-count: 9003388
+    session:
+      offset: 36
+      deref-count: 8865326
+    indexConditions:
+      offset: 68
+      deref-count: 4444832
+    derivedColumnMap:
+      offset: 112
+      deref-count: 110388
+    index:
+      offset: 52
+      deref-count: 2498
+    indexHints:
+      offset: 56
+      deref-count: 1499
+    alias:
+      offset: 48
+      deref-count: 916
+    fullCondition:
+      offset: 108
+      deref-count: 617
+    ORDER_IN_FROM_COMPARATOR:
+      offset: 112
+      deref-count: 1
+    JOI_VISITOR:
+      offset: 116
+      deref-count: 1
   org/h2/mvstore/tx/RollbackDecisionMaker:
-    decision: 3500736
-    $assertionsDisabled: 1166913
-    toLogId: 811852
-    transactionId: 811852
-    listener: 597848
-    store: 597848
+    decision:
+      offset: 36
+      deref-count: 3503127
+    listener:
+      offset: 32
+      deref-count: 596980
+    store:
+      offset: 12
+      deref-count: 596980
   org/h2/expression/ExpressionVisitor:
-    type: 52775483
-    set: 17488063
-    maxDataModificationId: 3112897
-    queryLevel: 3056677
-    columns1: 3056045
-    resolver: 3052748
-    table: 3052679
-    DETERMINISTIC_VISITOR: 1140603
-    $assertionsDisabled: 3485
-    INDEPENDENT_VISITOR: 516
-    INDEPENDENT_VISITORS: 515
-    EVALUATABLE_VISITOR: 170
-    EVALUATABLE_VISITORS: 1
-    QUERY_COMPARABLE_VISITOR: 1
-    READONLY_VISITOR: 1
+    set:
+      offset: 20
+      deref-count: 17488228
+    columns1:
+      offset: 24
+      deref-count: 3056862
+    resolver:
+      offset: 36
+      deref-count: 3053565
+    table:
+      offset: 28
+      deref-count: 3053496
+    DETERMINISTIC_VISITOR:
+      offset: 116
+      deref-count: 1140695
+    INDEPENDENT_VISITOR:
+      offset: 112
+      deref-count: 516
+    EVALUATABLE_VISITOR:
+      offset: 120
+      deref-count: 170
+    READONLY_VISITOR:
+      offset: 132
+      deref-count: 1
+    QUERY_COMPARABLE_VISITOR:
+      offset: 136
+      deref-count: 1
   org/h2/store/FileLockMethod:
-    FILE: 2
-    FS: 2
-    NO: 2
-    SOCKET: 2
-    $VALUES: 1
-  org/h2/value/ValueUuid:
-    high: 4
-    low: 3
+    NO:
+      offset: 112
+      deref-count: 2
+    SOCKET:
+      offset: 120
+      deref-count: 2
+    FILE:
+      offset: 116
+      deref-count: 2
+    FS:
+      offset: 124
+      deref-count: 2
   org/h2/constraint/ConstraintCheck:
-    expr: 3
-    comment: 1
-    filter: 1
-    table: 1
+    expr:
+      offset: 56
+      deref-count: 3
+    filter:
+      offset: 52
+      deref-count: 1
+    comment:
+      offset: 36
+      deref-count: 1
+    table:
+      offset: 48
+      deref-count: 1
   org/dacapo/h2/TPCCSubmitter:
-    TX_CUM_PROB: 1084726
-    globalSeed: 300002
-    rand: 200024
-    tid: 200024
-    reporter: 100024
-    transactionCount: 100000
-    TX_NAME: 16
+    rand:
+      offset: 36
+      deref-count: 200024
+    reporter:
+      offset: 40
+      deref-count: 100024
   org/h2/mvstore/type/ObjectDataType$NullType:
-    INSTANCE: 3
+    INSTANCE:
+      offset: 112
+      deref-count: 2
   org/h2/util/MathUtils:
-    secureRandom: 7
-    seeded: 2
+    secureRandom:
+      offset: 112
+      deref-count: 7
   org/h2/schema/Sequence$Cycle:
-    CYCLE: 3
-    EXHAUSTED: 3
-    NO_CYCLE: 3
-    $VALUES: 1
+    EXHAUSTED:
+      offset: 120
+      deref-count: 1
+    NO_CYCLE:
+      offset: 116
+      deref-count: 1
+    CYCLE:
+      offset: 112
+      deref-count: 1
   org/h2/engine/DbSettings:
-    recompileAlways: 3043181
-    DEFAULT: 52
-    defaultTableEngine: 52
-    dropRestrict: 28
-    analyzeAuto: 27
-    analyzeSample: 27
-    autoCompactFillRate: 27
-    caseInsensitiveIdentifiers: 27
-    compressData: 27
-    databaseToLower: 27
-    databaseToUpper: 27
-    dbCloseOnExit: 27
-    defaultConnection: 27
-    defaultEscape: 27
-    defragAlways: 27
-    estimatedFunctionTableRows: 27
-    ignoreCatalogs: 27
-    lobTimeout: 27
-    maxCompactTime: 27
-    maxQueryTimeout: 27
-    mvStore: 27
-    optimizeDistinct: 27
-    optimizeEvaluatableSubqueries: 27
-    optimizeInList: 27
-    optimizeInSelect: 27
-    optimizeInsertFromSelect: 27
-    optimizeOr: 27
-    optimizeSimpleSingleRowSubqueries: 27
-    optimizeTwoEquals: 27
-    queryCacheSize: 27
-    reuseSpace: 27
-    shareLinkedConnections: 27
-    zeroBasedEnums: 27
-  org/h2/result/SearchRow:
-    key: 192736989
-    MATCH_ALL_ROW_KEY: 107715975
-  org/apache/derbyTesting/system/oe/model/District:
-    warehouse: 308536
+    defaultTableEngine:
+      offset: 76
+      deref-count: 51
+    DEFAULT:
+      offset: 112
+      deref-count: 51
+    defaultEscape:
+      offset: 72
+      deref-count: 26
   org/h2/expression/ValueExpression:
-    value: 4595375
-    DEFAULT: 270
-    NULL: 3
-    FALSE: 1
-    TRUE: 1
+    value:
+      offset: 16
+      deref-count: 4597466
+    DEFAULT:
+      offset: 116
+      deref-count: 270
+    NULL:
+      offset: 112
+      deref-count: 3
+    TRUE:
+      offset: 120
+      deref-count: 1
+    FALSE:
+      offset: 124
+      deref-count: 1
   org/h2/engine/SettingsBase:
-    settings: 3135
+    settings:
+      offset: 12
+      deref-count: 3135
   org/h2/jdbc/JdbcSQLNonTransientException:
-    message: 454218
-    originalMessage: 454218
-    sql: 454218
-    stackTrace: 227109
+    originalMessage:
+      offset: 48
+      deref-count: 453838
+    message:
+      offset: 56
+      deref-count: 453838
+    sql:
+      offset: 60
+      deref-count: 453838
+    stackTrace:
+      offset: 52
+      deref-count: 226919
   org/h2/value/ValueDouble:
-    value: 3579663
-    NAN: 1
-    ONE: 1
-    ZERO: 1
+    ZERO:
+      offset: 112
+      deref-count: 1
+    ONE:
+      offset: 116
+      deref-count: 1
+    NAN:
+      offset: 120
+      deref-count: 1
   java/lang/Short:
-    TYPE: 1
+    TYPE:
+      offset: 112
+      deref-count: 1
   java/lang/Character:
-    TYPE: 1
-  org/h2/engine/Role:
-    system: 1
+    TYPE:
+      offset: 112
+      deref-count: 1
   org/h2/value/ExtTypeInfoRow:
-    fields: 1
+    fields:
+      offset: 16
+      deref-count: 1
   org/h2/command/Token$IntegerToken:
-    value: 1011
-    number: 674
+    value:
+      offset: 16
+      deref-count: 1011
   org/dacapo/parser/Token:
-    next: 438
-    kind: 347
-    image: 221
-    beginColumn: 128
-    beginLine: 128
-    endColumn: 128
-    endLine: 128
-    specialToken: 128
+    next:
+      offset: 36
+      deref-count: 438
+    image:
+      offset: 32
+      deref-count: 221
+    specialToken:
+      offset: 40
+      deref-count: 128
   org/h2/command/ddl/DropTable$SchemaAndTable:
-    schema: 2
-    tableName: 2
+    schema:
+      offset: 12
+      deref-count: 2
+    tableName:
+      offset: 16
+      deref-count: 2
   org/dacapo/harness/TeePrintStream:
-    out: 6
-  org/h2/mvstore/tx/VersionedBitSet:
-    version: 1004344
+    out:
+      offset: 16
+      deref-count: 6
   org/h2/index/QueryExpressionIndex:
-    recursive: 140
-    originalParameters: 90
-    querySQL: 80
-    query: 70
-    table: 50
-    columns: 40
-    createSession: 30
-    evaluatedAt: 30
-    indexMasks: 30
-    columnIds: 10
-    indexColumns: 10
-    $assertionsDisabled: 1
-    MAX_AGE_NANOS: 1
-  org/h2/value/Value:
-    GROUPS: 8
-    EMPTY_VALUES: 1
-  org/h2/expression/OperationN:
-    args: 31303
-    argsCount: 240
+    originalParameters:
+      offset: 96
+      deref-count: 90
+    querySQL:
+      offset: 92
+      deref-count: 80
+    query:
+      offset: 104
+      deref-count: 70
+    table:
+      offset: 88
+      deref-count: 50
+    createSession:
+      offset: 108
+      deref-count: 30
   java/lang/Byte:
-    TYPE: 1
-  org/h2/command/Token:
-    start: 32962
-    TOKENS: 1
-  org/h2/result/FetchedResult:
-    rowId: 14274241
-    currentRow: 10165685
-    nextRow: 9048520
-    afterLast: 2234330
+    TYPE:
+      offset: 112
+      deref-count: 1
   org/h2/mvstore/MVStore$TxCounter:
-    counterUpdater: 4
-    version: 2
-    counter: 1
+    counterUpdater:
+      offset: 112
+      deref-count: 4
   java/time/Instant:
-    EPOCH: 1
+    EPOCH:
+      offset: 112
+      deref-count: 1
   org/h2/command/ddl/CreateTableData:
-    columns: 173
-    temporary: 62
-    persistIndexes: 49
-    tableEngine: 38
-    tableName: 37
-    schema: 26
-    globalTemporary: 25
-    id: 25
-    persistData: 25
-    session: 25
-    tableEngineParams: 13
+    columns:
+      offset: 32
+      deref-count: 173
+    tableEngine:
+      offset: 40
+      deref-count: 38
+    tableName:
+      offset: 28
+      deref-count: 37
+    schema:
+      offset: 24
+      deref-count: 26
+    session:
+      offset: 36
+      deref-count: 25
+    tableEngineParams:
+      offset: 44
+      deref-count: 13
   org/h2/mvstore/db/MVTable$TraceLockEvent:
-    eventText: 7
-    TRACE_LOCK_ADDED_FOR: 2
-    TRACE_LOCK_ADD_UPGRADED_FOR: 2
-    TRACE_LOCK_OK: 2
-    TRACE_LOCK_REQUESTING_FOR: 2
-    TRACE_LOCK_TIMEOUT_AFTER: 2
-    TRACE_LOCK_UNLOCK: 2
-    TRACE_LOCK_WAITING_FOR: 2
-    $VALUES: 1
+    eventText:
+      offset: 24
+      deref-count: 7
+    TRACE_LOCK_UNLOCK:
+      offset: 128
+      deref-count: 2
+    TRACE_LOCK_ADDED_FOR:
+      offset: 132
+      deref-count: 2
+    TRACE_LOCK_REQUESTING_FOR:
+      offset: 120
+      deref-count: 2
+    TRACE_LOCK_ADD_UPGRADED_FOR:
+      offset: 136
+      deref-count: 2
+    TRACE_LOCK_TIMEOUT_AFTER:
+      offset: 124
+      deref-count: 2
+    TRACE_LOCK_OK:
+      offset: 112
+      deref-count: 2
+    TRACE_LOCK_WAITING_FOR:
+      offset: 116
+      deref-count: 2
   org/h2/command/ddl/CreateTable:
-    data: 327
-    session: 183
-    asQuery: 24
-    comment: 24
-    ifNotExists: 12
-  org/h2/result/ResultWithGeneratedKeys:
-    updateCount: 6629898
+    data:
+      offset: 80
+      deref-count: 327
+    session:
+      offset: 40
+      deref-count: 183
+    asQuery:
+      offset: 84
+      deref-count: 24
+    comment:
+      offset: 88
+      deref-count: 24
   org/h2/engine/SessionLocal$State:
-    BLOCKED: 2
-    CLOSED: 2
-    INIT: 2
-    RUNNING: 2
-    SLEEP: 2
-    SUSPENDED: 2
-    THROTTLED: 2
-    $VALUES: 1
+    INIT:
+      offset: 112
+      deref-count: 2
+    SLEEP:
+      offset: 124
+      deref-count: 2
+    CLOSED:
+      offset: 136
+      deref-count: 2
+    RUNNING:
+      offset: 116
+      deref-count: 2
+    SUSPENDED:
+      offset: 132
+      deref-count: 2
+    THROTTLED:
+      offset: 128
+      deref-count: 2
+    BLOCKED:
+      offset: 120
+      deref-count: 2
   org/h2/constraint/Constraint:
-    table: 32
+    table:
+      offset: 48
+      deref-count: 32
   org/h2/mvstore/db/MVPrimaryIndex:
-    dataMap: 15285840
-    mainIndexColumn: 6462291
-    lastKey: 2906542
-    mvTable: 2109142
-    $assertionsDisabled: 97
-    mapName: 39
+    dataMap:
+      offset: 92
+      deref-count: 15288010
+    lastKey:
+      offset: 96
+      deref-count: 2907955
+    mvTable:
+      offset: 84
+      deref-count: 2110627
+    mapName:
+      offset: 88
+      deref-count: 39
   org/h2/table/DataChangeDeltaTable$ResultOption:
-    FINAL: 1665229
-    NEW: 424101
-    OLD: 424101
-    $VALUES: 1
-  org/h2/value/ValueTimestampTimeZone:
-    dateValue: 759554
-    timeNanos: 759554
-    timeZoneOffsetSeconds: 601273
-  org/h2/expression/aggregate/Aggregate$1:
-    $SwitchMap$org$h2$expression$aggregate$AggregateType: 46
+    FINAL:
+      offset: 120
+      deref-count: 1666176
+    NEW:
+      offset: 116
+      deref-count: 424582
+    OLD:
+      offset: 112
+      deref-count: 424582
   org/h2/command/ddl/AlterTable:
-    session: 42
-    tableName: 42
-    ifTableExists: 18
+    session:
+      offset: 40
+      deref-count: 42
+    tableName:
+      offset: 72
+      deref-count: 42
   org/h2/value/ValueNull:
-    INSTANCE: 799478295
+    INSTANCE:
+      offset: 112
+      deref-count: 807125064
   org/h2/constraint/ConstraintUnique:
-    index: 1111660
-    primaryKey: 29
-    columns: 18
-    indexOwner: 18
-    table: 18
-    comment: 9
-    nullsDistinct: 9
+    index:
+      offset: 52
+      deref-count: 1113088
+    table:
+      offset: 48
+      deref-count: 18
+    nullsDistinct:
+      offset: 60
+      deref-count: 9
+    comment:
+      offset: 36
+      deref-count: 9
   org/h2/mvstore/db/LobStorageMap$BlobMeta$Type:
-    INSTANCE: 1
+    INSTANCE:
+      offset: 112
+      deref-count: 1
   javax/xml/bind/DatatypeConverter:
-    theConverter: 18
-    SET_DATATYPE_CONVERTER_PERMISSION: 1
+    theConverter:
+      offset: 112
+      deref-count: 18
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
   java/lang/Integer:
-    TYPE: 1
+    TYPE:
+      offset: 112
+      deref-count: 1
   org/h2/command/ddl/DropTable:
-    tables: 3
-    ifExists: 2
-    dropAction: 1
-    session: 1
+    tables:
+      offset: 72
+      deref-count: 3
+    session:
+      offset: 40
+      deref-count: 1
+    dropAction:
+      offset: 68
+      deref-count: 1
   org/h2/mvstore/tx/TxDecisionMaker$RepeatableReadLockDecisionMaker:
-    snapshotValueSupplier: 16057123
-    valueType: 16057123
-    key: 542558
+    snapshotValueSupplier:
+      offset: 60
+      deref-count: 16024041
+    valueType:
+      offset: 56
+      deref-count: 16024041
+    key:
+      offset: 32
+      deref-count: 529796
   org/h2/schema/Schema:
-    tablesAndViews: 971148
-    temporaryUniqueNames: 234
-    domains: 118
-    database: 52
-    indexes: 45
-    constraints: 44
-    synonyms: 14
-    sequences: 4
-    constants: 2
-    functionsAndAggregates: 2
-    owner: 2
-    system: 2
-    triggers: 2
+    tablesAndViews:
+      offset: 52
+      deref-count: 969878
+    temporaryUniqueNames:
+      offset: 88
+      deref-count: 234
+    domains:
+      offset: 56
+      deref-count: 118
+    database:
+      offset: 28
+      deref-count: 52
+    indexes:
+      offset: 64
+      deref-count: 45
+    constraints:
+      offset: 76
+      deref-count: 44
+    synonyms:
+      offset: 60
+      deref-count: 14
+    sequences:
+      offset: 68
+      deref-count: 4
+    owner:
+      offset: 44
+      deref-count: 2
+    constants:
+      offset: 80
+      deref-count: 2
+    triggers:
+      offset: 72
+      deref-count: 2
+    functionsAndAggregates:
+      offset: 84
+      deref-count: 2
   org/h2/table/QueryExpressionTable$CacheKey:
-    masks: 50
-    queryExpressionTable: 50
+    queryExpressionTable:
+      offset: 16
+      deref-count: 50
   org/h2/expression/aggregate/AggregateDataCollecting$NullCollectionMode:
-    EXCLUDED: 2
-    IGNORED: 2
-    USED_OR_IMPOSSIBLE: 2
-    $VALUES: 1
+    EXCLUDED:
+      offset: 116
+      deref-count: 2
+    USED_OR_IMPOSSIBLE:
+      offset: 120
+      deref-count: 2
+    IGNORED:
+      offset: 112
+      deref-count: 2
   org/dacapo/harness/Benchmark:
-    stats: 49
-    config: 22
-    loader: 16
-    data: 12
-    jarDeps: 10
-    savedClassLoader: 10
-    verbose: 9
-    scratch: 8
-    err: 7
-    out: 7
-    validateOutput: 6
-    iteration: 5
-    validationReport: 5
-    preserve: 4
-    printStats: 4
-    savedErr: 4
-    savedOut: 4
-    silentErr: 4
-    silentOut: 4
-    preIterationGC: 3
-    savedSystemProperties: 3
-    timeoutDialation: 3
-    validate: 3
-    watchdog: 3
-    dumpLatencyCSV: 2
-    dumpLatencyHDR: 2
-    dumpLatencySmoothing: 2
-    iterations: 2
-    latencyBaseFileName: 2
-    datDeps: 1
-    dataSet: 1
-    valRepFile: 1
+    stats:
+      offset: 56
+      deref-count: 49
+    config:
+      offset: 28
+      deref-count: 22
+    loader:
+      offset: 32
+      deref-count: 16
+    data:
+      offset: 24
+      deref-count: 12
+    savedClassLoader:
+      offset: 36
+      deref-count: 10
+    jarDeps:
+      offset: 48
+      deref-count: 10
+    scratch:
+      offset: 20
+      deref-count: 8
+    err:
+      offset: 140
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    savedErr:
+      offset: 136
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    datDeps:
+      offset: 52
+      deref-count: 1
+    valRepFile:
+      offset: 116
+      deref-count: 1
   org/h2/result/LocalResult:
-    rowId: 55022228
-    rowCount: 46600089
-    currentRow: 20320772
-    rows: 19929945
-    external: 19107704
-    closed: 10634546
-    limit: 9697463
-    maxMemoryRows: 9071590
-    distinct: 9051961
-    distinctIndexes: 9051961
-    visibleColumnCount: 7361165
-    fetchPercent: 5530542
-    session: 5501102
-    $assertionsDisabled: 4546860
-    sort: 4147282
-    offset: 3901799
-    limitsWereApplied: 3901505
-    expressions: 3806032
-    resultColumnCount: 3676533
-    containsNull: 588
-    distinctRows: 588
-    containsLobs: 294
+    rows:
+      offset: 72
+      deref-count: 19936911
+    external:
+      offset: 92
+      deref-count: 19112417
+    session:
+      offset: 64
+      deref-count: 5503549
+    sort:
+      offset: 76
+      deref-count: 4146377
+    distinctRows:
+      offset: 80
+      deref-count: 640
+    containsNull:
+      offset: 100
+      deref-count: 640
   org/h2/expression/Operation2:
-    left: 1676580
-    right: 1676580
+    left:
+      offset: 16
+      deref-count: 1677748
+    right:
+      offset: 20
+      deref-count: 1677748
   org/h2/value/ValueRow:
-    EMPTY: 184812
+    EMPTY:
+      offset: 112
+      deref-count: 185312
   org/h2/util/Utils:
-    RESOURCES: 3
-    EMPTY_BYTES: 1
-    EMPTY_INT_ARRAY: 1
+    RESOURCES:
+      offset: 120
+      deref-count: 3
   java/math/RoundingMode:
-    HALF_UP: 132313
-  org/h2/command/query/Query$OffsetFetch:
-    fetch: 3013990
-    fetchPercent: 3013990
-    offset: 3013990
+    HALF_UP:
+      offset: 128
+      deref-count: 132362
   org/h2/util/TempFileDeleter:
-    queue: 1
-    refMap: 1
+    queue:
+      offset: 12
+      deref-count: 1
+    refMap:
+      offset: 16
+      deref-count: 1
   java/io/File:
-    separator: 2
+    separator:
+      offset: 116
+      deref-count: 2
   org/h2/command/query/Select:
-    expressions: 10391434
-    topTableFilter: 7515651
+    expressions:
+      offset: 96
+      deref-count: 10390728
+    topTableFilter:
+      offset: 156
+      deref-count: 7516406
   org/dacapo/parser/Config$Size:
-    outputFiles: 51
-    nThreads: 31
-    threadLimit: 15
-    this$0: 12
-    args: 8
-    name: 4
+    outputFiles:
+      offset: 32
+      deref-count: 51
+    this$0:
+      offset: 36
+      deref-count: 12
+    name:
+      offset: 20
+      deref-count: 4
   org/h2/mvstore/tx/Snapshot:
-    root: 41471753
-    committingTransactions: 38989874
+    root:
+      offset: 12
+      deref-count: 41490559
+    committingTransactions:
+      offset: 16
+      deref-count: 39005913
   org/h2/command/dml/SetClauseList:
-    actions: 8145594
-    onUpdate: 424243
-    table: 288
-  org/h2/mvstore/tx/TransactionMap$2:
-    $SwitchMap$org$h2$engine$IsolationLevel: 6
+    table:
+      offset: 16
+      deref-count: 288
   org/h2/mvstore/Cursor:
-    cursorPos: 299807929
-    current: 225754911
-    reverse: 174119484
-    to: 73429037
-    last: 57376110
-    lastValue: 57376104
-    lastPage: 52798135
-    keeper: 31881186
-    $assertionsDisabled: 1
+    cursorPos:
+      offset: 20
+      deref-count: 299989403
+    current:
+      offset: 28
+      deref-count: 225930167
+    to:
+      offset: 16
+      deref-count: 73500461
+    last:
+      offset: 32
+      deref-count: 57421954
+    lastValue:
+      offset: 36
+      deref-count: 57421948
+    lastPage:
+      offset: 40
+      deref-count: 52834681
+    keeper:
+      offset: 24
+      deref-count: 31895128
   org/h2/mvstore/db/ValueDataType:
-    compareMode: 382281864
-    provider: 382281798
-    rowFactory: 220
-    sortTypes: 156
-    handler: 90
-    $assertionsDisabled: 1
-    FACTORY: 1
+    compareMode:
+      offset: 20
+      deref-count: 385673187
+    provider:
+      offset: 16
+      deref-count: 385673121
+    rowFactory:
+      offset: 28
+      deref-count: 220
+    handler:
+      offset: 12
+      deref-count: 90
+    FACTORY:
+      offset: 112
+      deref-count: 1
   org/h2/expression/condition/ExistsPredicate:
-    query: 3748452
+    query:
+      offset: 16
+      deref-count: 3748452
   org/h2/table/DerivedTable:
-    topQuery: 50
-    querySQL: 20
-    index: 10
-    tables: 10
-    viewQuery: 10
-  org/h2/command/Token$KeywordToken:
-    type: 64075
-    TOKENS: 38162
+    topQuery:
+      offset: 128
+      deref-count: 50
+    querySQL:
+      offset: 124
+      deref-count: 20
+    tables:
+      offset: 120
+      deref-count: 10
+    index:
+      offset: 116
+      deref-count: 10
+    viewQuery:
+      offset: 112
+      deref-count: 10
   javax/xml/bind/DatatypeConverterImpl:
-    hexCode: 257
-    $assertionsDisabled: 1
-    datatypeFactory: 1
-    decodeMap: 1
-    encodeMap: 1
-    theInstance: 1
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
   org/h2/schema/Sequence:
-    dataType: 5
-    increment: 4
-    cycle: 3
-    startValue: 3
-    baseValue: 2
-    belongsToTable: 2
-    cacheSize: 2
-    maxValue: 2
-    minValue: 2
-    margin: 1
-    writeWithMargin: 1
+    dataType:
+      offset: 104
+      deref-count: 5
+    cycle:
+      offset: 108
+      deref-count: 3
   org/h2/value/ValueChar:
-    value: 80640
+    value:
+      offset: 12
+      deref-count: 81508
   java/lang/Double:
-    TYPE: 1
+    TYPE:
+      offset: 112
+      deref-count: 1
   java/lang/System:
-    out: 41
-    err: 4
-  org/h2/command/Parser$1:
-    $SwitchMap$org$h2$expression$aggregate$AggregateType: 26
-    $SwitchMap$org$h2$engine$Mode$ModeEnum: 6
-    $SwitchMap$org$h2$expression$analysis$WindowFunctionType: 6
-    $SwitchMap$org$h2$command$Parser$NullConstraintType: 4
+    out:
+      offset: 116
+      deref-count: 41
+    err:
+      offset: 120
+      deref-count: 4
   org/h2/expression/condition/ConditionNot:
-    condition: 1874336
+    condition:
+      offset: 16
+      deref-count: 1874336
   org/apache/derby/iapi/jdbc/AutoloadedDriver:
-    _autoloadedDriver: 2
-    _engineForcedDown: 1
+    _autoloadedDriver:
+      offset: 112
+      deref-count: 2
   org/h2/result/SimpleRowValue:
-    index: 113694111
-    data: 102544740
-    virtualColumnCount: 2850732
-  org/h2/command/ddl/Analyze$SelectivityData:
-    elements: 2596948
-    size: 1492281
-    zeroElement: 518331
-    maxSize: 472237
-    distinctCount: 600
+    data:
+      offset: 28
+      deref-count: 102055859
   java/lang/Boolean:
-    TYPE: 1
+    TYPE:
+      offset: 120
+      deref-count: 1
   org/h2/value/ValueBoolean:
-    value: 33776685
-    TRUE: 7629815
-    FALSE: 2594138
+    TRUE:
+      offset: 112
+      deref-count: 7629697
+    FALSE:
+      offset: 116
+      deref-count: 2593930
   org/h2/mvstore/Page:
-    map: 72462920
+    map:
+      offset: 36
+      deref-count: 72166969
   org/h2/value/ValueNumeric:
-    value: 11998965
-    ZERO: 160001
-    ONE: 21562
-    MAX_LONG_DECIMAL: 46
-    MIN_LONG_DECIMAL: 46
-    type: 2
+    value:
+      offset: 12
+      deref-count: 12013260
+    ZERO:
+      offset: 112
+      deref-count: 160001
+    ONE:
+      offset: 116
+      deref-count: 21719
+    MIN_LONG_DECIMAL:
+      offset: 132
+      deref-count: 56
+    MAX_LONG_DECIMAL:
+      offset: 128
+      deref-count: 56
+    type:
+      offset: 16
+      deref-count: 2
   org/h2/command/ddl/SchemaCommand:
-    schema: 155
+    schema:
+      offset: 64
+      deref-count: 155
   org/h2/mvstore/tx/TransactionStore$TxMapBuilder$TMVMap:
-    type: 74
+    type:
+      offset: 80
+      deref-count: 74
   org/h2/command/Token$ValueToken:
-    value: 12
+    value:
+      offset: 16
+      deref-count: 12
   org/apache/derbyTesting/system/oe/direct/Standard:
-    nameList: 778318
-    district: 697962
-    conn: 499383
-    warehouse: 227075
-    STOCK_INFO: 147641
-    order: 47664
-    customer: 26875
+    nameList:
+      offset: 36
+      deref-count: 776549
+    district:
+      offset: 28
+      deref-count: 697036
+    conn:
+      offset: 12
+      deref-count: 498782
+    warehouse:
+      offset: 24
+      deref-count: 227131
+    order:
+      offset: 32
+      deref-count: 47664
+    customer:
+      offset: 20
+      deref-count: 26875
   org/apache/derbyTesting/system/oe/load/ThreadInsert:
-    scale: 5
-    threadCount: 3
-    ds: 1
-    master: 1
-    nextWarehouse: 1
+    master:
+      offset: 36
+      deref-count: 1
+    ds:
+      offset: 44
+      deref-count: 1
   org/h2/mvstore/db/LobStorageMap$BlobReference$Type:
-    INSTANCE: 1
+    INSTANCE:
+      offset: 112
+      deref-count: 1
   org/h2/mvstore/db/MVPrimaryIndex$MVStoreCursor:
-    row: 14566293
-    current: 11653074
-    it: 2913355
+    row:
+      offset: 20
+      deref-count: 14566293
+    current:
+      offset: 16
+      deref-count: 11653074
+    it:
+      offset: 12
+      deref-count: 2913355
   org/h2/util/DateTimeUtils:
-    FRACTIONAL_SECONDS_TABLE: 1458259
-    LOCAL: 28
-    NORMAL_DAYS_PER_MONTH: 1
+    LOCAL:
+      offset: 120
+      deref-count: 28
   org/h2/expression/Operation1_2:
-    left: 295210
-    right: 295210
-    type: 48
+    left:
+      offset: 16
+      deref-count: 296014
+    right:
+      offset: 20
+      deref-count: 296014
+    type:
+      offset: 24
+      deref-count: 48
   org/apache/commons/cli/Parser:
-    options: 7
-    cmd: 4
-    requiredOptions: 2
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
   org/h2/command/dml/SetClauseList$SetSimple:
-    expression: 2782833
-  org/apache/commons/cli/Util:
-    EMPTY_STRING_ARRAY: 2
+    expression:
+      offset: 16
+      deref-count: 2785412
   org/dacapo/parser/ConfigFile:
-    token: 871
-    jj_ntk: 388
-    jj_gen: 286
-    token_source: 129
-    jj_nt: 92
-    jj_la1: 51
-    jj_input_stream: 2
-    jj_expentries: 1
-    jj_kind: 1
-    jj_la1_0: 1
-    jj_la1_1: 1
+    token:
+      offset: 36
+      deref-count: 871
+    token_source:
+      offset: 28
+      deref-count: 129
+    jj_nt:
+      offset: 40
+      deref-count: 92
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
   org/h2/mvstore/MVMap$Decision:
-    PUT: 23668163
-    REPEAT: 8735428
-    ABORT: 1391888
-    REMOVE: 1174433
-    $VALUES: 2
+    PUT:
+      offset: 120
+      deref-count: 23495507
+    REPEAT:
+      offset: 124
+      deref-count: 8655462
+    ABORT:
+      offset: 112
+      deref-count: 1391105
+    REMOVE:
+      offset: 116
+      deref-count: 1175240
   org/h2/mvstore/MVMap$DecisionMaker:
-    DEFAULT: 476455
-    IF_ABSENT: 138
-    PUT: 64
-    IF_PRESENT: 1
-    REMOVE: 1
+    DEFAULT:
+      offset: 112
+      deref-count: 475718
+    IF_ABSENT:
+      offset: 124
+      deref-count: 137
+    PUT:
+      offset: 116
+      deref-count: 63
   org/h2/command/query/SelectGroups$Grouped:
-    currentGroupsKey: 435268
-    currentGroupRowId: 413386
-    groupByData: 297089
-    groupIndex: 206765
-    currentGroupByExprData: 206693
-    cursor: 135594
-    session: 45198
+    currentGroupsKey:
+      offset: 48
+      deref-count: 436378
+    groupByData:
+      offset: 44
+      deref-count: 297762
+    cursor:
+      offset: 52
+      deref-count: 135798
+    session:
+      offset: 16
+      deref-count: 45266
   org/h2/mvstore/tx/TransactionMap:
-    map: 22139242
-  org/h2/value/ValueCollectionBase:
-    values: 22600
-  org/dacapo/harness/Callback$1:
-    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
-  org/h2/mvstore/MVMap$Builder:
-    singleWriter: 27
-  org/h2/mvstore/tx/TxDecisionMaker$LockDecisionMaker:
-    $assertionsDisabled: 1
+    map:
+      offset: 24
+      deref-count: 22141569
   org/h2/command/ddl/CreateIndex:
-    indexName: 10
-    session: 10
-    indexColumns: 6
-    uniqueColumnCount: 6
-    comment: 4
-    hash: 4
-    primaryKey: 4
-    spatial: 4
-    tableName: 4
-    create: 2
-    ifNotExists: 2
-    nullsDistinct: 2
+    indexName:
+      offset: 84
+      deref-count: 10
+    session:
+      offset: 40
+      deref-count: 10
+    comment:
+      offset: 96
+      deref-count: 4
+    tableName:
+      offset: 80
+      deref-count: 4
+    nullsDistinct:
+      offset: 92
+      deref-count: 2
   org/h2/engine/NullsDistinct:
-    NOT_DISTINCT: 3116333
-    DISTINCT: 13
-    ALL_DISTINCT: 3
-    $VALUES: 1
+    NOT_DISTINCT:
+      offset: 120
+      deref-count: 3118225
+    DISTINCT:
+      offset: 112
+      deref-count: 11
+    ALL_DISTINCT:
+      offset: 116
+      deref-count: 1
   org/h2/command/dml/TransactionCommand:
-    type: 489751
-    session: 489702
+    session:
+      offset: 40
+      deref-count: 489101
   org/h2/expression/aggregate/AggregateType:
-    $VALUES: 4
-    ANY: 4
-    ARRAY_AGG: 4
-    BIT_AND_AGG: 4
-    BIT_NAND_AGG: 4
-    BIT_NOR_AGG: 4
-    BIT_OR_AGG: 4
-    BIT_XNOR_AGG: 4
-    BIT_XOR_AGG: 4
-    CORR: 4
-    COUNT: 4
-    COVAR_POP: 4
-    COVAR_SAMP: 4
-    CUME_DIST: 4
-    DENSE_RANK: 4
-    EVERY: 4
-    HISTOGRAM: 4
-    JSON_ARRAYAGG: 4
-    JSON_OBJECTAGG: 4
-    LISTAGG: 4
-    MAX: 4
-    MIN: 4
-    MODE: 4
-    PERCENTILE_CONT: 4
-    PERCENTILE_DISC: 4
-    PERCENT_RANK: 4
-    RANK: 4
-    REGR_AVGX: 4
-    REGR_AVGY: 4
-    REGR_COUNT: 4
-    REGR_INTERCEPT: 4
-    REGR_R2: 4
-    REGR_SLOPE: 4
-    REGR_SXX: 4
-    REGR_SXY: 4
-    REGR_SYY: 4
-    SUM: 4
-    ANY_VALUE: 3
-    AVG: 3
-    COUNT_ALL: 3
-    ENVELOPE: 3
-    MEDIAN: 3
-    STDDEV_POP: 3
-    STDDEV_SAMP: 3
-    VAR_POP: 3
-    VAR_SAMP: 3
+    BIT_XNOR_AGG:
+      offset: 184
+      deref-count: 4
+    PERCENTILE_CONT:
+      offset: 256
+      deref-count: 4
+    MAX:
+      offset: 128
+      deref-count: 4
+    BIT_XOR_AGG:
+      offset: 172
+      deref-count: 4
+    MODE:
+      offset: 276
+      deref-count: 4
+    BIT_NAND_AGG:
+      offset: 176
+      deref-count: 4
+    RANK:
+      offset: 240
+      deref-count: 4
+    ANY:
+      offset: 156
+      deref-count: 4
+    JSON_OBJECTAGG:
+      offset: 284
+      deref-count: 4
+    EVERY:
+      offset: 160
+      deref-count: 4
+    BIT_NOR_AGG:
+      offset: 180
+      deref-count: 4
+    REGR_COUNT:
+      offset: 212
+      deref-count: 4
+    BIT_OR_AGG:
+      offset: 168
+      deref-count: 4
+    REGR_SYY:
+      offset: 232
+      deref-count: 4
+    COVAR_POP:
+      offset: 192
+      deref-count: 4
+    REGR_SLOPE:
+      offset: 204
+      deref-count: 4
+    REGR_AVGY:
+      offset: 224
+      deref-count: 4
+    JSON_ARRAYAGG:
+      offset: 288
+      deref-count: 4
+    REGR_AVGX:
+      offset: 220
+      deref-count: 4
+    PERCENT_RANK:
+      offset: 248
+      deref-count: 4
+    BIT_AND_AGG:
+      offset: 164
+      deref-count: 4
+    PERCENTILE_DISC:
+      offset: 260
+      deref-count: 4
+    LISTAGG:
+      offset: 268
+      deref-count: 4
+    ARRAY_AGG:
+      offset: 272
+      deref-count: 4
+    HISTOGRAM:
+      offset: 188
+      deref-count: 4
+    SUM:
+      offset: 120
+      deref-count: 4
+    COVAR_SAMP:
+      offset: 196
+      deref-count: 4
+    REGR_R2:
+      offset: 216
+      deref-count: 4
+    REGR_INTERCEPT:
+      offset: 208
+      deref-count: 4
+    MIN:
+      offset: 124
+      deref-count: 4
+    CORR:
+      offset: 200
+      deref-count: 4
+    REGR_SXX:
+      offset: 228
+      deref-count: 4
+    REGR_SXY:
+      offset: 236
+      deref-count: 4
+    DENSE_RANK:
+      offset: 244
+      deref-count: 4
+    COUNT:
+      offset: 116
+      deref-count: 4
+    CUME_DIST:
+      offset: 252
+      deref-count: 4
+    VAR_SAMP:
+      offset: 148
+      deref-count: 3
+    VAR_POP:
+      offset: 144
+      deref-count: 3
+    COUNT_ALL:
+      offset: 112
+      deref-count: 3
+    STDDEV_SAMP:
+      offset: 140
+      deref-count: 3
+    ENVELOPE:
+      offset: 280
+      deref-count: 3
+    MEDIAN:
+      offset: 264
+      deref-count: 3
+    ANY_VALUE:
+      offset: 152
+      deref-count: 3
+    STDDEV_POP:
+      offset: 136
+      deref-count: 3
+    AVG:
+      offset: 132
+      deref-count: 3
   org/h2/expression/BinaryOperation$OpType:
-    DIVIDE: 3
-    MINUS: 3
-    MULTIPLY: 3
-    PLUS: 3
-    $VALUES: 2
+    MULTIPLY:
+      offset: 120
+      deref-count: 3
+    PLUS:
+      offset: 112
+      deref-count: 3
+    MINUS:
+      offset: 116
+      deref-count: 3
+    DIVIDE:
+      offset: 124
+      deref-count: 3
   org/dacapo/harness/CommandLineArgs:
-    OPTIONS: 125
-    line: 42
-    options: 33
-    $assertionsDisabled: 32
-    visibleOptions: 31
-    callback: 6
-    benchmarks: 3
-    parser: 2
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
   org/h2/mvstore/tx/TransactionMap$RepeatableIterator:
-    snapshotKey: 30286255
-    uncommittedCursor: 20753766
-    uncommittedKey: 20239103
-    cursor: 14989333
-    snapshotValue: 6864161
-    uncommittedValue: 5521755
-    keyType: 4014667
-    transactionId: 2839888
-    committingTransactions: 6804
-  org/h2/expression/Expression:
-    addedToFilter: 264
-  org/h2/util/Permutations:
-    index: 360
-    n: 288
-    m: 216
-    hasNext: 120
-    in: 120
-    out: 120
+    snapshotKey:
+      offset: 36
+      deref-count: 30337115
+    uncommittedCursor:
+      offset: 44
+      deref-count: 20789604
+    uncommittedKey:
+      offset: 48
+      deref-count: 20265755
+    cursor:
+      offset: 24
+      deref-count: 15014682
+    snapshotValue:
+      offset: 40
+      deref-count: 6878048
+    uncommittedValue:
+      offset: 52
+      deref-count: 5527104
+    keyType:
+      offset: 32
+      deref-count: 4018369
+    committingTransactions:
+      offset: 20
+      deref-count: 7074
   java/math/BigDecimal:
-    ZERO: 2714965
-    ONE: 2554965
+    ZERO:
+      offset: 124
+      deref-count: 2716505
+    ONE:
+      offset: 128
+      deref-count: 2556505
   org/h2/command/Command:
-    session: 41275854
-    sql: 7086215
-    trace: 7066585
-    startTimeNanos: 1140038
-    cancel: 125544
-    canReuse: 1279
+    session:
+      offset: 24
+      deref-count: 41279431
+    sql:
+      offset: 32
+      deref-count: 7086874
+    trace:
+      offset: 28
+      deref-count: 7067187
   org/h2/command/query/Optimizer:
-    cost: 2252
-    bestPlan: 2204
-    filters: 1683
-    allColumnsSet: 1114
-    condition: 1114
-    session: 1114
-    topFilter: 1090
-    startNs: 24
+    bestPlan:
+      offset: 44
+      deref-count: 2204
+    condition:
+      offset: 36
+      deref-count: 1114
+    allColumnsSet:
+      offset: 56
+      deref-count: 1114
+    session:
+      offset: 40
+      deref-count: 1114
+    topFilter:
+      offset: 48
+      deref-count: 1090
   org/h2/command/dml/SetClauseList$UpdateAction:
-    ON_UPDATE: 1175379
-    SET_DEFAULT: 1175379
-  org/h2/engine/SessionLocal$1:
-    $SwitchMap$org$h2$engine$IsolationLevel: 6
+    SET_DEFAULT:
+      offset: 116
+      deref-count: 1176624
+    ON_UPDATE:
+      offset: 112
+      deref-count: 1176624
   org/h2/engine/ConnectionInfo:
-    prop: 2090
-    KNOWN_SETTINGS: 1816
-    name: 176
-    url: 101
-    user: 100
-    persistent: 78
-    remote: 50
-    userPasswordHash: 50
-    filePasswordHash: 25
-    networkConnectionInfo: 25
-    originalURL: 25
-    timeZone: 25
-    unnamed: 25
-    IGNORED_BY_PARSER: 1
-    fileEncryptionKey: 1
+    prop:
+      offset: 16
+      deref-count: 2090
+    KNOWN_SETTINGS:
+      offset: 112
+      deref-count: 1816
+    name:
+      offset: 48
+      deref-count: 176
+    url:
+      offset: 24
+      deref-count: 101
+    user:
+      offset: 28
+      deref-count: 100
+    timeZone:
+      offset: 44
+      deref-count: 25
+    networkConnectionInfo:
+      offset: 56
+      deref-count: 25
+    originalURL:
+      offset: 20
+      deref-count: 25
+    IGNORED_BY_PARSER:
+      offset: 116
+      deref-count: 1
   org/apache/derbyTesting/system/oe/model/OrderLine:
-    amount: 39746
-    delivery_d: 39746
-    i_id: 39746
-    quantity: 39746
-    supply_w_id: 39746
+    amount:
+      offset: 28
+      deref-count: 39745
+    delivery_d:
+      offset: 24
+      deref-count: 39745
   org/h2/message/DbException:
-    MESSAGES: 246742
-    SQL_OOME: 3
-    OOME: 1
+    MESSAGES:
+      offset: 116
+      deref-count: 246607
+    SQL_OOME:
+      offset: 120
+      deref-count: 1
   org/h2/mvstore/MVMap:
-    keyType: 191483310
-    id: 128614129
-    root: 128268577
-    $assertionsDisabled: 53179001
-    store: 53158042
-    singleWriter: 51965981
-    closed: 33250178
-    readOnly: 25733043
-    valueType: 22099836
-    valuesBuffer: 17937885
-    notificationRequested: 9559561
-    keysBuffer: 9082853
-    keysPerPage: 8737994
-    lock: 59026
-    createVersion: 127
-    avgKeySize: 64
-    avgValSize: 64
-    isVolatile: 33
+    keyType:
+      offset: 52
+      deref-count: 191537795
+    root:
+      offset: 48
+      deref-count: 128956616
+    store:
+      offset: 44
+      deref-count: 53082977
+    valueType:
+      offset: 56
+      deref-count: 22072657
+    lock:
+      offset: 68
+      deref-count: 28884
+    avgKeySize:
+      offset: 72
+      deref-count: 64
+    avgValSize:
+      offset: 76
+      deref-count: 64
   org/h2/mvstore/tx/TransactionMap$CommittedIterator:
-    cursor: 26260173
-    committingTransactions: 23848
-    transactionId: 23848
+    cursor:
+      offset: 24
+      deref-count: 26261136
+    committingTransactions:
+      offset: 20
+      deref-count: 24194
   org/h2/command/query/AllColumnsForPlan:
-    map: 8336
-    filters: 1367
+    map:
+      offset: 16
+      deref-count: 8336
   org/h2/util/StringUtils:
-    softCache: 14150978
-    TO_UPPER_CACHE: 2494119
-    HEX_DECODE: 230
-    HEX: 8
-    softCacheCreatedNs: 2
+    softCache:
+      offset: 112
+      deref-count: 14152236
   org/dacapo/h2/TPCC$2:
-    val$url: 10
+    val$url:
+      offset: 12
+      deref-count: 10
   org/h2/mvstore/type/MetaType:
-    cache: 1
-    database: 1
-    exceptionHandler: 1
+    cache:
+      offset: 20
+      deref-count: 1
+    database:
+      offset: 12
+      deref-count: 1
+    exceptionHandler:
+      offset: 16
+      deref-count: 1
   org/h2/command/Token$IdentifierToken:
-    identifier: 14865
-    quoted: 13248
-    unicode: 6684
+    identifier:
+      offset: 20
+      deref-count: 14865
   org/dacapo/h2/TPCC$1:
-    val$name: 10
+    val$name:
+      offset: 12
+      deref-count: 10
   org/dacapo/h2/TPCC$3:
-    val$count: 48
-    val$submitter: 48
+    val$submitter:
+      offset: 120
+      deref-count: 48
   org/h2/expression/Alias:
-    expr: 116716
-    alias: 23414
-    aliasColumnName: 72
+    expr:
+      offset: 20
+      deref-count: 117545
+    alias:
+      offset: 16
+      deref-count: 23654
   org/h2/engine/SysProperties:
-    OBJECT_CACHE_SIZE: 7075491
-    OBJECT_CACHE: 7075490
-    OBJECT_CACHE_MAX_PER_ELEMENT_SIZE: 2707223
-    FORCE_AUTOCOMMIT_OFF_ON_COMMIT: 489703
-    SERVER_RESULT_SET_FETCH_SIZE: 1169
-    CHECK: 441
-    URL_MAP: 26
-    ALLOWED_CLASSES: 1
-    AUTH_CONFIG_FILE: 1
-    BIND_ADDRESS: 1
-    CLIENT_TRACE_DIRECTORY: 1
-    COLLATOR_CACHE_SIZE: 1
-    CONSOLE_MAX_PROCEDURES_LIST_COLUMNS: 1
-    CONSOLE_MAX_TABLES_LIST_COLUMNS: 1
-    CONSOLE_MAX_TABLES_LIST_INDEXES: 1
-    CONSOLE_STREAM: 1
-    CONSOLE_TIMEOUT: 1
-    DATASOURCE_TRACE_LEVEL: 1
-    DELAY_WRONG_PASSWORD_MAX: 1
-    DELAY_WRONG_PASSWORD_MIN: 1
-    ENABLE_ANONYMOUS_TLS: 1
-    JAVA_OBJECT_SERIALIZER: 1
-    JAVA_SYSTEM_COMPILER: 1
-    LOB_CLIENT_MAX_SIZE_MEMORY: 1
-    MAX_FILE_RETRY: 1
-    MAX_MEMORY_ROWS: 1
-    MAX_RECONNECT: 1
-    MAX_TRACE_DATA_LENGTH: 1
-    NIO_CLEANER_HACK: 1
-    NIO_LOAD_MAPPED: 1
-    PG_DEFAULT_CLIENT_ENCODING: 1
-    PREFIX_TEMP_FILE: 1
-    SERVER_CACHED_OBJECTS: 1
-    SOCKET_CONNECT_RETRY: 1
-    SOCKET_CONNECT_TIMEOUT: 1
-    SPLIT_FILE_SIZE_SHIFT: 1
-    THREAD_DEADLOCK_DETECTOR: 1
-    TRACE_IO: 1
-    USER_HOME: 1
-    USE_THREAD_CONTEXT_CLASS_LOADER: 1
-    lobCloseBetweenReads: 1
+    URL_MAP:
+      offset: 144
+      deref-count: 25
   org/h2/mvstore/tx/TxDecisionMaker$PutIfAbsentDecisionMaker:
-    oldValueSupplier: 16839234
-    $assertionsDisabled: 1721305
-    key: 1262124
+    oldValueSupplier:
+      offset: 56
+      deref-count: 16817061
+    key:
+      offset: 32
+      deref-count: 1260271
   org/h2/command/query/Select$LazyResultQueryFlat:
-    this$0: 44086882
-    columnCount: 19439954
-    rowNumber: 15447006
-    forUpdate: 9389877
+    this$0:
+      offset: 64
+      deref-count: 44087703
   org/h2/jdbc/JdbcSQLTimeoutException:
-    sql: 49945
-    message: 29967
-    originalMessage: 29967
-    stackTrace: 9989
+    sql:
+      offset: 60
+      deref-count: 50400
+    originalMessage:
+      offset: 48
+      deref-count: 30240
+    message:
+      offset: 56
+      deref-count: 30240
+    stackTrace:
+      offset: 52
+      deref-count: 10080
   java/util/Locale:
-    ENGLISH: 182566
+    ENGLISH:
+      offset: 112
+      deref-count: 184641
   org/h2/mvstore/type/LongDataType:
-    EMPTY_LONG_ARR: 169674
-    INSTANCE: 14
+    INSTANCE:
+      offset: 112
+      deref-count: 14
   org/h2/engine/Mode$ExpressionNames:
-    OPTIMIZED_SQL: 13
-    ORIGINAL_SQL: 5
-    NUMBER: 4
-    C_NUMBER: 3
-    EMPTY: 3
-    POSTGRESQL_STYLE: 3
-    $VALUES: 1
+    OPTIMIZED_SQL:
+      offset: 112
+      deref-count: 11
+    ORIGINAL_SQL:
+      offset: 116
+      deref-count: 3
+    NUMBER:
+      offset: 124
+      deref-count: 2
+    POSTGRESQL_STYLE:
+      offset: 132
+      deref-count: 1
+    EMPTY:
+      offset: 120
+      deref-count: 1
+    C_NUMBER:
+      offset: 128
+      deref-count: 1
   org/h2/result/RowFactory$DefaultRowFactory:
-    indexes: 64822502
-    columnCount: 21607538
-    map: 18756851
-    dataType: 122
-    columnTypes: 89
-    INSTANCE: 2
+    dataType:
+      offset: 16
+      deref-count: 121
+    INSTANCE:
+      offset: 112
+      deref-count: 1
   org/dacapo/parser/Config:
-    sizes: 96
-    threadModel: 67
-    threadCountOverride: 29
-    desc: 11
-    name: 5
-    className: 4
+    sizes:
+      offset: 24
+      deref-count: 96
+    threadModel:
+      offset: 20
+      deref-count: 67
+    desc:
+      offset: 28
+      deref-count: 11
+    name:
+      offset: 12
+      deref-count: 5
+    className:
+      offset: 16
+      deref-count: 4
   org/h2/mvstore/tx/VersionedValueUncommitted:
-    operationId: 22990472
-    committedValue: 11957187
-    $assertionsDisabled: 8679754
+    committedValue:
+      offset: 24
+      deref-count: 11837236
   org/h2/result/LazyResult:
-    nextRow: 16924275
-    afterLast: 5641425
-    closed: 5641425
-    limit: 5641425
-    expressions: 2991391
-    session: 2991391
+    session:
+      offset: 40
+      deref-count: 2991423
   org/h2/expression/Parameter:
-    value: 109080644
-    column: 7496
-    index: 3776
-  org/dacapo/parser/Config$1:
-    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 31
+    value:
+      offset: 20
+      deref-count: 109128665
+    column:
+      offset: 24
+      deref-count: 7496
   org/h2/mvstore/tx/TxDecisionMaker:
-    decision: 60052112
-    transaction: 59451570
-    mapId: 55411083
-    lastValue: 26130971
-    undoKey: 17359506
-    blockingTransaction: 17050621
-    key: 16906911
-    value: 16373993
-    lastOperationId: 8735425
-    $assertionsDisabled: 7004132
+    decision:
+      offset: 48
+      deref-count: 59675182
+    transaction:
+      offset: 40
+      deref-count: 59183464
+    lastValue:
+      offset: 52
+      deref-count: 25891010
+    blockingTransaction:
+      offset: 44
+      deref-count: 16976627
+    key:
+      offset: 32
+      deref-count: 16832969
+    value:
+      offset: 36
+      deref-count: 16312779
   org/dacapo/harness/TeeOutputStream:
-    log: 1406
-    toScreen: 468
-    logFile: 6
-    version: 2
+    log:
+      offset: 28
+      deref-count: 1406
+    logFile:
+      offset: 32
+      deref-count: 6
   org/h2/engine/Mode$ModeEnum:
-    REGULAR: 28
-    Derby: 4
-    HSQLDB: 4
-    MariaDB: 4
-    MySQL: 4
-    PostgreSQL: 4
-    DB2: 3
-    LEGACY: 3
-    MSSQLServer: 3
-    Oracle: 3
-    STRICT: 3
-    $VALUES: 2
+    REGULAR:
+      offset: 112
+      deref-count: 26
+    HSQLDB:
+      offset: 140
+      deref-count: 2
+    Derby:
+      offset: 128
+      deref-count: 2
+    PostgreSQL:
+      offset: 152
+      deref-count: 2
+    MySQL:
+      offset: 144
+      deref-count: 2
+    MariaDB:
+      offset: 132
+      deref-count: 2
+    STRICT:
+      offset: 116
+      deref-count: 1
+    MSSQLServer:
+      offset: 136
+      deref-count: 1
+    LEGACY:
+      offset: 120
+      deref-count: 1
+    DB2:
+      offset: 124
+      deref-count: 1
+    Oracle:
+      offset: 148
+      deref-count: 1
   org/h2/mvstore/tx/Record$Type:
-    transactionStore: 1
+    transactionStore:
+      offset: 12
+      deref-count: 1
   org/h2/value/ValueBigDecimalBase:
-    value: 2533405
+    value:
+      offset: 12
+      deref-count: 2534788
   org/h2/mvstore/StreamStore:
-    map: 1
-    maxBlockSize: 1
-    minBlockSize: 1
-    nextBuffer: 1
-    nextKey: 1
-    onStoreCallback: 1
+    onStoreCallback:
+      offset: 32
+      deref-count: 1
+    nextKey:
+      offset: 24
+      deref-count: 1
+    nextBuffer:
+      offset: 28
+      deref-count: 1
+    map:
+      offset: 20
+      deref-count: 1
   org/h2/jdbc/JdbcSQLTransactionRollbackException:
-    sql: 48200
-    message: 28920
-    originalMessage: 28920
-    stackTrace: 9640
+    sql:
+      offset: 60
+      deref-count: 48030
+    originalMessage:
+      offset: 48
+      deref-count: 28818
+    message:
+      offset: 56
+      deref-count: 28818
+    stackTrace:
+      offset: 52
+      deref-count: 9606
   org/dacapo/harness/H2:
-    config: 9
-    scratch: 5
-    data: 4
-    tpcc: 4
-    iterationTPCC: 2
-    makeTPCC: 2
-    preIterationTPCC: 2
-    prepareTPCC: 2
-    loader: 1
-    postIterationTPCC: 1
+    config:
+      offset: 28
+      deref-count: 9
+    scratch:
+      offset: 20
+      deref-count: 5
+    data:
+      offset: 24
+      deref-count: 4
+    tpcc:
+      offset: 60
+      deref-count: 4
+    prepareTPCC:
+      offset: 68
+      deref-count: 2
+    makeTPCC:
+      offset: 64
+      deref-count: 2
+    preIterationTPCC:
+      offset: 72
+      deref-count: 2
+    iterationTPCC:
+      offset: 76
+      deref-count: 2
+    loader:
+      offset: 32
+      deref-count: 1
+    postIterationTPCC:
+      offset: 80
+      deref-count: 1
   org/h2/mvstore/type/StringDataType:
-    EMPTY_STRING_ARR: 7
-    INSTANCE: 1
+    INSTANCE:
+      offset: 112
+      deref-count: 1
   org/h2/engine/User:
-    admin: 1903885
-    systemUser: 1903119
-    salt: 28
-    passwordHash: 26
-    comment: 1
-  org/h2/command/dml/DataChangeStatement:
-    isPrepared: 500
+    comment:
+      offset: 36
+      deref-count: 1
   org/h2/constraint/Constraint$Type:
-    PRIMARY_KEY: 31
-    CHECK: 2
-    DOMAIN: 2
-    REFERENTIAL: 2
-    UNIQUE: 2
-    $VALUES: 1
+    PRIMARY_KEY:
+      offset: 116
+      deref-count: 29
   org/h2/util/LegacyDateTimeUtils:
-    PROLEPTIC_GREGORIAN_CHANGE: 1
-    UTC: 1
-  org/h2/mvstore/tx/TransactionMap$ValidationIterator:
-    $assertionsDisabled: 424100
-    transactionId: 424099
-  org/h2/expression/function/FunctionN:
-    args: 61596
+    UTC:
+      offset: 116
+      deref-count: 1
+    PROLEPTIC_GREGORIAN_CHANGE:
+      offset: 112
+      deref-count: 1
   org/h2/expression/condition/SimplePredicate:
-    left: 788
-    whenOperand: 150
-    not: 75
+    left:
+      offset: 16
+      deref-count: 788
   org/h2/index/SingleRowCursor:
-    row: 171
+    row:
+      offset: 16
+      deref-count: 171
   org/apache/derbyTesting/system/oe/util/OERandom:
-    rand: 15472131
-    left24: 2239519
-    decimalString: 1894140
-    SYLLABLES: 927594
-    RESCALE: 531319
-    right10: 202251
-    left10: 192251
-    left26: 170011
-    right24: 170011
-    left300: 64011
-    left8: 64011
-    right200: 64011
-    right8: 64011
-    left14: 10011
-    doneInit: 28
-    Cid: 27
-    Citem: 27
-    Clast: 27
+    rand:
+      offset: 24
+      deref-count: 15467323
+    decimalString:
+      offset: 28
+      deref-count: 1894140
   java/lang/Float:
-    TYPE: 1
+    TYPE:
+      offset: 112
+      deref-count: 1
   org/h2/command/dml/Update:
-    session: 5462830
-    targetTableFilter: 2430601
-    condition: 1324774
-    setClauseList: 1086342
-    fetchExpr: 661955
-    onDuplicateKeyInsert: 424099
+    session:
+      offset: 40
+      deref-count: 5466143
+    targetTableFilter:
+      offset: 68
+      deref-count: 2432171
+    condition:
+      offset: 64
+      deref-count: 1325462
+    setClauseList:
+      offset: 76
+      deref-count: 1087167
+    fetchExpr:
+      offset: 72
+      deref-count: 662299
+    onDuplicateKeyInsert:
+      offset: 80
+      deref-count: 424580
   org/h2/engine/Setting:
-    intValue: 2
-    stringValue: 1
+    stringValue:
+      offset: 48
+      deref-count: 1
   org/h2/value/ValueStringBase:
-    value: 52732217
-    type: 12
+    value:
+      offset: 12
+      deref-count: 52864580
+    type:
+      offset: 16
+      deref-count: 12
   org/h2/command/Token$CharacterStringToken:
-    value: 15
-    string: 10
-    unicode: 5
-  org/h2/command/dml/SetClauseList$SetAction:
-    arrayIndexes: 2782305
+    value:
+      offset: 16
+      deref-count: 15
+    string:
+      offset: 24
+      deref-count: 10
   org/apache/derbyTesting/system/oe/model/Address:
-    city: 492520
-    state: 492520
-    street1: 492520
-    street2: 492520
-    zip: 492520
+    zip:
+      offset: 28
+      deref-count: 492134
+    city:
+      offset: 20
+      deref-count: 492134
+    street1:
+      offset: 12
+      deref-count: 492134
+    state:
+      offset: 24
+      deref-count: 492134
+    street2:
+      offset: 16
+      deref-count: 492134
   org/h2/util/ScriptReader:
-    bufferPos: 34592
-    buffer: 11523
-    bufferEnd: 11469
-    insideRemark: 194
-    bufferStart: 187
-    remarkStart: 119
-    blockRemark: 97
-    skipRemarks: 97
-    endOfFile: 72
-    reader: 16
+    reader:
+      offset: 32
+      deref-count: 16
   org/dacapo/harness/CommandLineArgs$Methodology:
-    ITERATE: 5
-    CONVERGE: 3
-    $VALUES: 2
+    ITERATE:
+      offset: 112
+      deref-count: 3
+    CONVERGE:
+      offset: 116
+      deref-count: 1
   org/h2/engine/Mode:
-    takeInsertedIdentity: 1241134
-    charPadding: 1140052
-    treatEmptyStringsAsNull: 2601
-    systemColumns: 217
-    typeByNameMap: 137
-    modeEnum: 134
-    name: 22
-    expressionNames: 19
-    viewExpressionNames: 17
-    nullsDistinct: 14
-    MODES: 13
-    disallowedTypes: 12
-    supportedClientInfoPropertiesRegEx: 8
-    limit: 7
-    numericWithBooleanComparison: 6
-    aliasColumnName: 5
-    minusIsExcept: 5
-    autoIncrementClause: 4
-    dateTimeValueWithinTransaction: 4
-    identityColumnsHaveDefaultOnNull: 4
-    regexpReplaceBackslashReferences: 4
-    topInSelect: 4
-    alterTableModifyColumn: 3
-    groupByColumnIndex: 3
-    nextvalAndCurrvalPseudoColumns: 3
-    serialDataTypes: 3
-    truncateTableRestartIdentity: 3
-    updateSequenceOnManualIdentityInsertion: 3
-    zeroExLiteralsAreBinaryStrings: 3
-    acceptsCommaAsJsonKeyValueSeparator: 2
-    allNumericTypesHavePrecision: 2
-    allowEmptyInPredicate: 2
-    allowPlusForStringConcat: 2
-    allowUnrelatedOrderByExpressionsInDistinctQueries: 2
-    alterTableExtensionsMySQL: 2
-    createUniqueConstraintForReferencedColumns: 2
-    deleteIdentifierFrom: 2
-    forBitData: 2
-    identityClause: 2
-    identityDataType: 2
-    indexDefinitionInCreateTable: 2
-    isolationLevelInSelectOrInsertStatement: 2
-    mergeWhere: 2
-    mySqlTableOptions: 2
-    nextValueReturnsDifferentValues: 2
-    onDuplicateKeyUpdate: 2
-    replaceInto: 2
-    supportPoundSymbolForColumnNames: 2
-    sysDummy1: 2
-    topInDML: 2
-    allowDB2TimestampFormat: 1
-    allowEmptySchemaValuesAsDefaultSchema: 1
-    allowUsingFromClauseInUpdateStatement: 1
-    alterTableModifyColumnPreserveNullability: 1
-    charAndByteLengthUnits: 1
-    convertOnlyToSmallerScale: 1
-    dateIsTimestamp0: 1
-    decimalSequences: 1
-    discardWithTableHints: 1
-    insertOnConflict: 1
-    logIsLogBase10: 1
-    numericIsDecfloat: 1
-    squareBracketQuotedNames: 1
-    swapConvertFunctionParameters: 1
-    swapLogFunctionParameters: 1
-    takeGeneratedSequenceValue: 1
+    charPadding:
+      offset: 76
+      deref-count: 1140144
+    typeByNameMap:
+      offset: 92
+      deref-count: 137
+    modeEnum:
+      offset: 100
+      deref-count: 134
+    name:
+      offset: 96
+      deref-count: 22
+    expressionNames:
+      offset: 80
+      deref-count: 19
+    viewExpressionNames:
+      offset: 84
+      deref-count: 17
+    nullsDistinct:
+      offset: 68
+      deref-count: 14
+    MODES:
+      offset: 112
+      deref-count: 13
+    disallowedTypes:
+      offset: 88
+      deref-count: 12
+    supportedClientInfoPropertiesRegEx:
+      offset: 72
+      deref-count: 8
   org/h2/mvstore/type/ObjectDataType:
-    last: 2
-    COMMON_CLASSES: 1
-    DOUBLE_ONE_BITS: 1
-    DOUBLE_ZERO_BITS: 1
-    FLOAT_ONE_BITS: 1
-    FLOAT_ZERO_BITS: 1
-  org/h2/command/ddl/DefineCommand:
-    transactional: 102
+    last:
+      offset: 12
+      deref-count: 2
   org/h2/engine/Mode$CharPadding:
-    IN_RESULT_SETS: 1140041
-    ALWAYS: 13
-    NEVER: 4
-    $VALUES: 1
+    IN_RESULT_SETS:
+      offset: 116
+      deref-count: 1140131
+    ALWAYS:
+      offset: 112
+      deref-count: 11
+    NEVER:
+      offset: 120
+      deref-count: 2
   org/h2/mvstore/MVStore$Builder:
-    config: 2
+    config:
+      offset: 12
+      deref-count: 2
   org/h2/command/Prepared:
-    currentRowNumber: 37168831
-    rowScanCount: 32237118
-    session: 29212019
-    parameters: 25908925
-    withParamValues: 17701070
-    sqlStatement: 4934046
-    cteCleanups: 3534159
-    persistedObjectId: 3532973
-    modificationMetaId: 3044060
-    prepareAlways: 3044037
-    command: 193374
-    sqlTokens: 1462
-    create: 906
+    session:
+      offset: 40
+      deref-count: 29213611
+    parameters:
+      offset: 52
+      deref-count: 25914061
+    sqlStatement:
+      offset: 44
+      deref-count: 4934922
+    cteCleanups:
+      offset: 60
+      deref-count: 3534460
+    command:
+      offset: 56
+      deref-count: 193494
+    sqlTokens:
+      offset: 48
+      deref-count: 1462
 opcodes:
-  aconst_null: 264656475
-  iconst_m1: 803777237
-  iconst_0: 984895467
-  iconst_1: 2159971217
-  iconst_2: 34104402
-  iconst_3: 49816237
-  iconst_4: 35572198
-  iconst_5: 2432582
-  lconst_0: 120810859
-  lconst_1: 37977289
-  dconst_0: 748337
-  dconst_1: 748313
-  bipush: 733645740
-  sipush: 26992648
-  ldc: 87318387
-  iload: 11450591825
-  lload: 992788922
-  dload: 17153011
-  aload: 18846412315
-  iaload: 1549161876
-  laload: 52700
+  aconst_null: 266961699
+  iconst_m1: 807807068
+  iconst_0: 989950050
+  iconst_1: 2167370920
+  iconst_2: 34730291
+  iconst_3: 49841738
+  iconst_4: 36923564
+  iconst_5: 2431400
+  lconst_0: 120314459
+  lconst_1: 40442614
+  dconst_0: 747946
+  dconst_1: 747922
+  bipush: 737453836
+  sipush: 26821696
+  ldc: 86888627
+  iload: 11493407772
+  lload: 991758764
+  dload: 17141049
+  aload: 18889445487
+  iaload: 1557647222
+  laload: 51856
   faload: 100000
-  aaload: 437640843
+  aaload: 437916486
   baload: 473
-  saload: 2078057
-  istore: 3762941820
-  lstore: 344823608
-  dstore: 12916490
-  astore: 1752509246
-  iastore: 1148560
-  lastore: 7364
+  saload: 2081223
+  istore: 3778584706
+  lstore: 346457424
+  dstore: 12906775
+  astore: 1759431664
+  iastore: 1148767
+  lastore: 7261
   fastore: 300000
-  aastore: 53290730
+  aastore: 53070696
   sastore: 2249670
-  pop: 61335933
+  pop: 61074871
   pop2: 24
-  dup: 249382679
-  dup_x1: 33413651
-  dup2: 5474180
-  iadd: 665659938
-  ladd: 53156258
-  dadd: 6332624
-  isub: 1070732157
-  lsub: 9906550
+  dup: 248882188
+  dup_x1: 33372364
+  dup2: 5410883
+  iadd: 667429987
+  ladd: 55375384
+  dadd: 6327816
+  isub: 1075842617
+  lsub: 12593871
   dsub: 720
-  imul: 3804409
-  lmul: 801220
+  imul: 4410918
+  lmul: 800470
   fmul: 8
-  dmul: 6333344
-  idiv: 1278422
-  ldiv: 5634049
+  dmul: 6328536
+  idiv: 1276645
+  ldiv: 6977343
   fdiv: 8
   ddiv: 1440
-  irem: 1635558
-  lrem: 681335
-  ineg: 118661718
-  lneg: 2
-  ishl: 73269
-  lshl: 1599155
-  ishr: 27841
-  lshr: 634222
-  iushr: 324063247
-  lushr: 63230856
-  iand: 350046472
-  land: 31640714
-  ior: 934040
-  lor: 1671940
-  ixor: 7268294
-  lxor: 1680572
-  iinc: 449545642
-  i2l: 38219458
+  irem: 1633639
+  lrem: 680812
+  ineg: 118717485
+  ishl: 73334
+  lshl: 1597587
+  ishr: 27612
+  lshr: 635072
+  iushr: 324472155
+  lushr: 63070874
+  iand: 350980489
+  land: 31382008
+  ior: 933712
+  lor: 1670436
+  ixor: 7275671
+  lxor: 1681407
+  iinc: 451898668
+  i2l: 38398144
   i2f: 16
-  i2d: 6333488
-  l2i: 77286795
+  i2d: 6328680
+  l2i: 78481991
   l2f: 200000
   l2d: 720
-  d2i: 6332048
-  i2b: 17692978
-  i2c: 1185046
-  i2s: 2335995
-  lcmp: 426860494
-  dcmpl: 1495592
+  d2i: 6327240
+  i2b: 17433650
+  i2c: 1196803
+  i2s: 2334025
+  lcmp: 427132788
+  dcmpl: 1494810
   dcmpg: 552
-  ifeq: 1411793217
-  ifne: 754578130
-  iflt: 131032713
-  ifge: 285979616
-  ifgt: 4773024
-  ifle: 1182444562
-  if_icmpeq: 15980273
-  if_icmpne: 987477603
-  if_icmplt: 30003702
-  if_icmpge: 692685954
-  if_icmpgt: 462097136
-  if_icmple: 110286603
-  if_acmpeq: 20619701
-  if_acmpne: 920745507
-  goto: 2293095603
-  tableswitch: 21066494
-  lookupswitch: 10778593
-  ireturn: 2590623604
-  lreturn: 192124737
+  ifeq: 1415132824
+  ifne: 763357629
+  iflt: 130918229
+  ifge: 285910085
+  ifgt: 4777558
+  ifle: 1187150756
+  if_icmpeq: 15825425
+  if_icmpne: 990960305
+  if_icmplt: 29974519
+  if_icmpge: 694852964
+  if_icmpgt: 464238542
+  if_icmple: 111669344
+  if_acmpeq: 20461392
+  if_acmpne: 925191089
+  goto: 2300059663
+  tableswitch: 20981177
+  lookupswitch: 10783287
+  ireturn: 2598809823
+  lreturn: 191665654
   freturn: 100000
   dreturn: 1752
-  areturn: 1771167615
-  return: 787981921
-  getstatic: 769428504
+  areturn: 1776657042
+  return: 785968474
+  getstatic: 776162101
   putstatic: 100025
-  getfield: 6849276493
-  putfield: 1127871327
-  invokevirtual: 4042846155
-  invokespecial: 1736243259
-  invokestatic: 678105109
-  invokeinterface: 527883215
-  invokedynamic: 395769
-  new: 194819460
-  newarray: 143685
-  anewarray: 17835356
-  arraylength: 598083580
-  athrow: 679388
-  checkcast: 1057930459
-  instanceof: 12060061
-  monitorenter: 2551380
-  monitorexit: 2551380
-  ifnull: 716684255
-  ifnonnull: 730330165# sun/launcher/LauncherHelper
+  getfield: 6870273327
+  putfield: 1123705549
+  invokevirtual: 4051090305
+  invokespecial: 1741235880
+  invokestatic: 680969550
+  invokeinterface: 527993984
+  invokedynamic: 394612
+  new: 194419505
+  newarray: 143601
+  anewarray: 17832533
+  arraylength: 600214076
+  athrow: 678616
+  checkcast: 1059790434
+  instanceof: 12052537
+  monitorenter: 2536432
+  monitorexit: 2536432
+  ifnull: 722180712
+  ifnonnull: 732181322# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -2025,6 +2895,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -2059,9 +2931,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
+# java/util/zip/ZipException
 # java/nio/file/ProviderMismatchException
 # java/security/PrivilegedActionException
-# java/util/zip/ZipException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -2236,6 +3108,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -2250,6 +3123,7 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
+# java/util/Formatter
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -2372,6 +3246,7 @@ opcodes:
 # java/util/regex/Matcher
 # java/util/regex/IntHashSet
 # java/net/URLClassLoader$1
+# java/util/StringTokenizer
 # java/io/FilePermission
 # java/io/FilePermission$1
 # jdk/internal/access/JavaIOFilePermissionAccess
@@ -2380,7 +3255,6 @@ opcodes:
 # java/io/FilePermissionCollection
 # java/lang/InterruptedException
 # java/io/StringBufferInputStream
-# java/util/StringTokenizer
 # java/lang/invoke/BoundMethodHandle$Species_LLLL
 # java/lang/invoke/MethodHandleImpl$CasesHolder
 # java/lang/invoke/MethodHandleImpl$LoopClauses
@@ -2397,10 +3271,9 @@ opcodes:
 # jdk/internal/misc/ThreadTracker$ThreadRef
 # sun/security/util/ManifestEntryVerifier
 # java/security/AccessControlException
-# java/net/URLClassLoader$2
-# java/lang/ExceptionInInitializerError
 # java/lang/StackTraceElement$HashedModules
 # java/util/ServiceConfigurationError
+# java/net/URLClassLoader$2
 # java/util/concurrent/atomic/AtomicIntegerArray
 # java/lang/invoke/VarHandleInts$Array
 # java/util/concurrent/atomic/AtomicReferenceFieldUpdater
@@ -2414,9 +3287,10 @@ opcodes:
 # java/io/StringWriter
 # java/io/EOFException
 # java/lang/ArrayIndexOutOfBoundsException
-# java/security/NoSuchAlgorithmException
+# sun/util/locale/LocaleExtensions
 # java/security/GeneralSecurityException
 # java/security/Key
+# java/security/NoSuchAlgorithmException
 # sun/security/provider/SHA2$SHA256
 # sun/security/provider/SHA2
 # sun/security/provider/ByteArrayAccess$BE
@@ -2429,6 +3303,9 @@ opcodes:
 # java/util/regex/Pattern$Branch
 # java/util/regex/Pattern$SliceS
 # java/util/concurrent/atomic/AtomicReferenceArray
+# java/text/Format
+# java/text/DateFormat
+# java/text/SimpleDateFormat
 # java/lang/invoke/VarHandleReferences$Array
 # java/util/concurrent/locks/ReentrantLock$FairSync
 # java/util/concurrent/atomic/AtomicBoolean
@@ -2448,6 +3325,7 @@ opcodes:
 # java/time/Clock
 # java/util/concurrent/ConcurrentLinkedQueue
 # java/util/concurrent/ConcurrentLinkedQueue$Node
+# java/util/function/IntConsumer
 # java/lang/Thread$ThreadNumbering
 # java/lang/ApplicationShutdownHooks
 # java/lang/ApplicationShutdownHooks$1
@@ -2462,11 +3340,9 @@ opcodes:
 # sun/security/provider/NativeSeedGenerator
 # sun/security/provider/SeedGenerator$URLSeedGenerator
 # sun/security/provider/SeedGenerator$URLSeedGenerator$1
-# java/io/PrintWriter
 # java/io/PrintWriter$1
 # jdk/internal/access/JavaIOPrintWriterAccess
 # java/text/MessageFormat
-# java/text/Format
 # java/text/FieldPosition
 # java/text/MessageFormat$Field
 # java/text/AttributedCharacterIterator$Attribute
@@ -2478,10 +3354,10 @@ opcodes:
 # java/lang/Math$RandomNumberGeneratorHolder
 # java/math/BigDecimal$StringBuilderHelper
 # java/util/ComparableTimSort
-# jdk/internal/event/ThreadSleepEvent
 # java/io/ObjectInputStream
 # java/io/ObjectInput
 # java/io/ObjectStreamConstants
+# jdk/internal/event/ThreadSleepEvent
 # jdk/internal/math/DoubleToDecimal
 # jdk/internal/math/MathUtils
 # java/time/OffsetTime
@@ -2491,7 +3367,6 @@ opcodes:
 # java/time/chrono/ChronoPeriod
 # java/time/Period
 # jdk/internal/math/FormattedFPDecimal
-# java/util/Formatter
 # java/util/regex/Pattern$GroupTail
 # java/util/regex/CharPredicates
 # java/util/regex/Pattern$BmpCharPropertyGreedy
@@ -2552,6 +3427,7 @@ opcodes:
 # java/io/FileOutputStream$1
 # java/util/HashMap$EntrySpliterator
 # java/util/HashMap$HashMapSpliterator
+# java/util/function/ToLongFunction
 # java/util/Collections$ReverseComparator
 # java/util/Comparators$NaturalOrderComparator
 # java/util/Collections$ReverseComparator2
