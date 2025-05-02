@@ -37,6 +37,12 @@ public class Rewriter {
         }
 
         @Override
+        public void visit(int version, int access, String name,
+                            String signature, String superName, String[] interfaces) {
+            super.visit(Opcodes.V1_8, access, name, signature, superName, interfaces);
+        }
+
+        @Override
         public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {
             MethodVisitor methodVisitor = super.visitMethod(access, name, descriptor, signature, exceptions);
             assert methodVisitor != null;
