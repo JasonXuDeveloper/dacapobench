@@ -1,69 +1,2946 @@
 # These statistics can be generated from a dacapo release using a command line like:
-#    java -javaagent:dacapo-evaluation-git-6b469af0/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar dacapo-evaluation-git-6b469af0.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
+#    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 663
-transformed-classes: 738
-transformed-bytecodes: 153460
-executed-bytecodes: 162210407292
-executed-bytecodes-unique: 26352
-executed-bytecodes-p90: 4339233
+skipped-classes: 671
+transformed-classes: 780
+transformed-bytecodes: 160656
+executed-bytecodes: 163152998481
+executed-bytecodes-unique: 27426
+executed-bytecodes-p90: 4339215
 executed-bytecodes-p99: 129527996
 executed-bytecodes-p999: 789329315
 executed-bytecodes-p9999: 958163983
-executed-calls: 8377636318
-executed-calls-unique: 3002
+executed-calls: 8525712456
+executed-calls-unique: 3211
+field-dereference-counts:
+  org.apache.lucene.backward_codecs.lucene87.Lucene87StoredFieldsFormat$Mode:
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 3
+    BEST_SPEED:
+      offset: 112
+      deref-count: 3
+  org.apache.lucene.index.CompositeReader:
+    readerContext:
+      offset: 24
+      deref-count: 2097156
+  org.apache.lucene.index.VectorSimilarityFunction:
+    EUCLIDEAN:
+      offset: 112
+      deref-count: 4696353
+    MAXIMUM_INNER_PRODUCT:
+      offset: 124
+      deref-count: 2
+    COSINE:
+      offset: 120
+      deref-count: 2
+    DOT_PRODUCT:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.index.Term:
+    field:
+      offset: 12
+      deref-count: 5871416
+    bytes:
+      offset: 16
+      deref-count: 3774264
+  org.apache.lucene.codecs.perfield.PerFieldPostingsFormat:
+    PER_FIELD_FORMAT_KEY:
+      offset: 116
+      deref-count: 4
+    PER_FIELD_SUFFIX_KEY:
+      offset: 120
+      deref-count: 4
+  org.apache.lucene.util.LongValues:
+    IDENTITY:
+      offset: 112
+      deref-count: 1
+    ZEROES:
+      offset: 116
+      deref-count: 1
+  java.lang.Integer:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.index.CompositeReaderContext:
+    leaves:
+      offset: 36
+      deref-count: 4194306
+    reader:
+      offset: 40
+      deref-count: 2
+    children:
+      offset: 32
+      deref-count: 1
+  org.apache.lucene.search.TaskExecutor$TaskGroup$1:
+    this$0:
+      offset: 36
+      deref-count: 1572864
+    val$startedOrCancelled:
+      offset: 32
+      deref-count: 1572864
+  java.lang.Long:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene87.Lucene87Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene87.Lucene87Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.codecs.lucene90.Lucene90NormsProducer$3:
+    val$slice:
+      offset: 20
+      deref-count: 26658357
+    this$0:
+      offset: 24
+      deref-count: 880560
+  org.apache.lucene.index.FieldInfos:
+    byName:
+      offset: 36
+      deref-count: 3858277
+    values:
+      offset: 40
+      deref-count: 3
+    parentField:
+      offset: 28
+      deref-count: 2
+    softDeletesField:
+      offset: 24
+      deref-count: 2
+    EMPTY:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.store.IOContext:
+    READ:
+      offset: 120
+      deref-count: 4
+    mergeInfo:
+      offset: 20
+      deref-count: 4
+    flushInfo:
+      offset: 24
+      deref-count: 4
+    context:
+      offset: 16
+      deref-count: 4
+    READONCE:
+      offset: 116
+      deref-count: 4
+    LOAD:
+      offset: 124
+      deref-count: 3
+    DEFAULT:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene90.Lucene90Codec$3:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene90.Lucene90Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.search.BooleanClause$Occur:
+    FILTER:
+      offset: 116
+      deref-count: 2
+    MUST_NOT:
+      offset: 124
+      deref-count: 2
+    MUST:
+      offset: 112
+      deref-count: 2
+    SHOULD:
+      offset: 120
+      deref-count: 2
+  org.apache.lucene.backward_codecs.lucene90.Lucene90Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.search.ScoringRewrite:
+    SCORING_BOOLEAN_REWRITE:
+      offset: 112
+      deref-count: 2
+    CONSTANT_SCORE_BOOLEAN_REWRITE:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.codecs.lucene99.Lucene99Codec$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 3
+    storedMode:
+      offset: 24
+      deref-count: 3
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.search.ImpactsDISI:
+    in:
+      offset: 24
+      deref-count: 26371992
+    maxScoreCache:
+      offset: 28
+      deref-count: 505828
+  org.apache.lucene.backward_codecs.lucene90.Lucene90ScoreSkipReader$1:
+    this$0:
+      offset: 12
+      deref-count: 299224
+  org.apache.lucene.backward_codecs.lucene91.Lucene91Codec$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 3
+    storedMode:
+      offset: 24
+      deref-count: 3
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.index.SegmentInfo:
+    name:
+      offset: 20
+      deref-count: 8
+    minVersion:
+      offset: 52
+      deref-count: 1
+  org.apache.lucene.internal.tests.TestSecrets:
+    indexWriterAccess:
+      offset: 124
+      deref-count: 2
+    segmentReaderAccess:
+      offset: 120
+      deref-count: 2
+    indexPackageAccess:
+      offset: 112
+      deref-count: 2
+    cmsAccess:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.util.fst.FSTCompiler:
+    NULL_FST_READER:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.search.MaxScoreCache:
+    impactsSource:
+      offset: 16
+      deref-count: 990076
+    scorer:
+      offset: 20
+      deref-count: 903449
+  java.nio.ByteOrder:
+    LITTLE_ENDIAN:
+      offset: 116
+      deref-count: 13
+    BIG_ENDIAN:
+      offset: 112
+      deref-count: 5
+  org.apache.lucene.backward_codecs.lucene80.Lucene80DocValuesFormat$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 4
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 3
+  org.apache.lucene.analysis.standard.StandardAnalyzer:
+    stopwords:
+      offset: 20
+      deref-count: 2048
+  org.dacapo.harness.CommandLineArgs$Methodology:
+    ITERATE:
+      offset: 112
+      deref-count: 5
+    CONVERGE:
+      offset: 116
+      deref-count: 3
+  org.apache.lucene.util.Accountable:
+    NULL_ACCOUNTABLE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.util.AttributeFactory:
+    NO_ARG_CTOR:
+      offset: 116
+      deref-count: 4
+    lookup:
+      offset: 112
+      deref-count: 4
+    NO_ARG_RETURNING_ATTRIBUTEIMPL:
+      offset: 120
+      deref-count: 4
+    DEFAULT_ATTRIBUTE_FACTORY:
+      offset: 124
+      deref-count: 2
+  org.apache.lucene.codecs.PostingsFormat:
+    name:
+      offset: 12
+      deref-count: 28
+  org.apache.lucene.backward_codecs.lucene87.Lucene87StoredFieldsFormat:
+    BEST_SPEED_MODE:
+      offset: 120
+      deref-count: 1
+    mode:
+      offset: 12
+      deref-count: 1
+    BEST_COMPRESSION_MODE:
+      offset: 116
+      deref-count: 1
+    MODE_KEY:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.util.AttributeFactory$StaticImplementationAttributeFactory:
+    clazz:
+      offset: 16
+      deref-count: 4097
+    delegate:
+      offset: 12
+      deref-count: 2049
+  org.apache.lucene.search.TopScoreDocCollector$ScorerLeafCollector:
+    scorer:
+      offset: 12
+      deref-count: 880560
+  org.apache.lucene.codecs.lucene90.Lucene90StoredFieldsFormat$Mode:
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 9
+    BEST_SPEED:
+      offset: 112
+      deref-count: 9
+  org.apache.lucene.store.NativeFSLockFactory:
+    INSTANCE:
+      offset: 112
+      deref-count: 2
+    LOCK_HELD:
+      offset: 116
+      deref-count: 1
+  org.apache.lucene.search.TermQuery$TermWeight:
+    this$0:
+      offset: 32
+      deref-count: 3690256
+    scoreMode:
+      offset: 28
+      deref-count: 3249976
+    termStates:
+      offset: 24
+      deref-count: 2097152
+    similarity:
+      offset: 16
+      deref-count: 1929136
+    simScorer:
+      offset: 20
+      deref-count: 1929136
+  org.apache.lucene.codecs.lucene90.blocktree.FieldReader:
+    parent:
+      offset: 64
+      deref-count: 29016668
+    fieldInfo:
+      offset: 48
+      deref-count: 21281261
+    index:
+      offset: 68
+      deref-count: 14559165
+    maxTerm:
+      offset: 60
+      deref-count: 2097155
+    minTerm:
+      offset: 56
+      deref-count: 2097155
+    rootCode:
+      offset: 52
+      deref-count: 3
+  org.apache.lucene.codecs.lucene90.blocktree.SegmentTermsEnum:
+    fr:
+      offset: 44
+      deref-count: 62215402
+    currentFrame:
+      offset: 40
+      deref-count: 36420804
+    outputAccumulator:
+      offset: 48
+      deref-count: 30202322
+    in:
+      offset: 28
+      deref-count: 15728640
+    term:
+      offset: 52
+      deref-count: 11618580
+    staticFrame:
+      offset: 36
+      deref-count: 6835984
+    fstReader:
+      offset: 56
+      deref-count: 6674602
+  org.apache.lucene.codecs.perfield.PerFieldPostingsFormat$FieldsReader:
+    fields:
+      offset: 12
+      deref-count: 2977716
+    formats:
+      offset: 16
+      deref-count: 9
+    segment:
+      offset: 20
+      deref-count: 1
+  org.apache.lucene.search.LRUQueryCache:
+    uniqueQueries:
+      offset: 72
+      deref-count: 2
+    cache:
+      offset: 80
+      deref-count: 1
+    leavesToCache:
+      offset: 68
+      deref-count: 1
+    lock:
+      offset: 84
+      deref-count: 1
+    mostRecentlyUsedQueries:
+      offset: 76
+      deref-count: 1
+  javax.xml.bind.DatatypeConverterImpl:
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
+  org.dacapo.harness.Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.util.VirtualMethod:
+    distanceOfClass:
+      offset: 24
+      deref-count: 1048578
+    baseClass:
+      offset: 12
+      deref-count: 104
+    method:
+      offset: 16
+      deref-count: 36
+    singletonSet:
+      offset: 112
+      deref-count: 3
+  org.dacapo.harness.Benchmark:
+    data:
+      offset: 24
+      deref-count: 2083
+    datDeps:
+      offset: 52
+      deref-count: 2075
+    config:
+      offset: 28
+      deref-count: 85
+    stats:
+      offset: 56
+      deref-count: 48
+    scratch:
+      offset: 20
+      deref-count: 26
+    err:
+      offset: 140
+      deref-count: 7
+    loader:
+      offset: 32
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    jarDeps:
+      offset: 48
+      deref-count: 7
+    savedErr:
+      offset: 136
+      deref-count: 4
+    savedClassLoader:
+      offset: 36
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    valRepFile:
+      offset: 116
+      deref-count: 1
+  org.apache.lucene.codecs.lucene90.compressing.Lucene90CompressingTermVectorsFormat:
+    segmentSuffix:
+      offset: 28
+      deref-count: 6
+    formatName:
+      offset: 24
+      deref-count: 6
+    compressionMode:
+      offset: 32
+      deref-count: 6
+  org.apache.lucene.analysis.CachingTokenFilter:
+    cache:
+      offset: 32
+      deref-count: 5242880
+    iterator:
+      offset: 36
+      deref-count: 4194304
+    input:
+      offset: 28
+      deref-count: 2097152
+    finalState:
+      offset: 40
+      deref-count: 524288
+  org.apache.commons.cli.PosixParser:
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
+  org.apache.lucene.store.FSDirectory:
+    pendingDeletes:
+      offset: 24
+      deref-count: 15
+    directory:
+      offset: 20
+      deref-count: 3
+    nextTempFileCounter:
+      offset: 32
+      deref-count: 1
+    opsSinceLastDelete:
+      offset: 28
+      deref-count: 1
+  org.apache.commons.cli.Option:
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
+  org.apache.lucene.analysis.LowerCaseFilter:
+    termAtt:
+      offset: 32
+      deref-count: 1050624
+    input:
+      offset: 28
+      deref-count: 1048576
+  org.apache.lucene.backward_codecs.lucene50.Lucene50StoredFieldsFormat:
+    FAST_MODE:
+      offset: 116
+      deref-count: 6
+    mode:
+      offset: 12
+      deref-count: 4
+    LZ4_DECOMPRESSOR:
+      offset: 120
+      deref-count: 1
+    MODE_KEY:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.store.IndexInput:
+    resourceDescription:
+      offset: 12
+      deref-count: 8678454
+  org.apache.lucene.analysis.StopwordAnalyzerBase:
+    stopwords:
+      offset: 20
+      deref-count: 2048
+  org.apache.lucene.backward_codecs.lucene80.Lucene80Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene80.Lucene80Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.search.TopScoreDocCollectorManager:
+    minScoreAcc:
+      offset: 28
+      deref-count: 2097152
+    hitsThresholdChecker:
+      offset: 24
+      deref-count: 2097152
+    after:
+      offset: 20
+      deref-count: 2097152
+  org.apache.lucene.util.fst.ReadWriteDataOutput:
+    byteBuffers:
+      offset: 40
+      deref-count: 9
+    dataOutput:
+      offset: 36
+      deref-count: 9
+  org.apache.lucene.store.IOContext$Context:
+    READ:
+      offset: 116
+      deref-count: 5
+    DEFAULT:
+      offset: 124
+      deref-count: 3
+    MERGE:
+      offset: 112
+      deref-count: 2
+    FLUSH:
+      offset: 120
+      deref-count: 2
+  org.apache.lucene.search.TotalHits:
+    relation:
+      offset: 12
+      deref-count: 1404849
+  org.apache.lucene.backward_codecs.lucene90.Lucene90Codec:
+    defaultDVFormat:
+      offset: 48
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    normsFormat:
+      offset: 36
+      deref-count: 1
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultKnnVectorsFormat:
+      offset: 56
+      deref-count: 1
+    defaultPostingsFormat:
+      offset: 40
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 64
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 52
+      deref-count: 1
+    knnVectorsFormat:
+      offset: 60
+      deref-count: 1
+    postingsFormat:
+      offset: 44
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene95.Lucene95Codec$3:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene95.Lucene95Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene95.Lucene95Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.search.Weight$DefaultBulkScorer:
+    twoPhase:
+      offset: 20
+      deref-count: 2641680
+    iterator:
+      offset: 16
+      deref-count: 1761120
+    scorer:
+      offset: 12
+      deref-count: 1761120
+  org.dacapo.parser.Token:
+    next:
+      offset: 36
+      deref-count: 1172
+    image:
+      offset: 32
+      deref-count: 534
+    specialToken:
+      offset: 40
+      deref-count: 333
+  org.apache.lucene.document.TextField:
+    TYPE_STORED:
+      offset: 116
+      deref-count: 4696353
+    TYPE_NOT_STORED:
+      offset: 112
+      deref-count: 4
+  org.apache.lucene.search.QueryVisitor:
+    EMPTY_VISITOR:
+      offset: 112
+      deref-count: 1
+  org.dacapo.lusearch.Search$QueryProcessor:
+    searcher:
+      offset: 44
+      deref-count: 3398798
+    out:
+      offset: 52
+      deref-count: 2794598
+    in:
+      offset: 48
+      deref-count: 530432
+    field:
+      offset: 36
+      deref-count: 444376
+    parent:
+      offset: 32
+      deref-count: 10260
+    reader:
+      offset: 40
+      deref-count: 2048
+    this$0:
+      offset: 56
+      deref-count: 2048
+  org.apache.lucene.search.TopDocsCollector:
+    pq:
+      offset: 16
+      deref-count: 17535000
+    totalHitsRelation:
+      offset: 20
+      deref-count: 1048576
+    EMPTY_TOPDOCS:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.search.similarities.BM25Similarity$BM25Scorer:
+    idf:
+      offset: 32
+      deref-count: 880560
+  org.dacapo.parser.Config$ThreadModel:
+    SINGLE:
+      offset: 112
+      deref-count: 6
+    FIXED:
+      offset: 116
+      deref-count: 6
+    PER_CPU:
+      offset: 120
+      deref-count: 5
+    description:
+      offset: 24
+      deref-count: 3
+  org.apache.lucene.codecs.KnnVectorsFormat:
+    name:
+      offset: 12
+      deref-count: 13
+    EMPTY:
+      offset: 112
+      deref-count: 1
+  org.dacapo.parser.Config$OutputFile:
+    digest:
+      offset: 32
+      deref-count: 86
+    this$0:
+      offset: 36
+      deref-count: 32
+    name:
+      offset: 28
+      deref-count: 32
+  org.apache.lucene.document.StoredField:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  org.apache.lucene.index.SegmentDocValues:
+    genDVProducers:
+      offset: 12
+      deref-count: 1
+  org.apache.lucene.util.AttributeFactory$DefaultAttributeFactory$1:
+    this$0:
+      offset: 24
+      deref-count: 3
+  org.apache.lucene.index.SegmentCoreReaders$2:
+    this$0:
+      offset: 24
+      deref-count: 1
+  org.apache.lucene.search.MultiTermQuery:
+    SCORING_BOOLEAN_REWRITE:
+      offset: 124
+      deref-count: 1
+    CONSTANT_SCORE_BOOLEAN_REWRITE:
+      offset: 128
+      deref-count: 1
+    CONSTANT_SCORE_REWRITE:
+      offset: 116
+      deref-count: 1
+    DOC_VALUES_REWRITE:
+      offset: 120
+      deref-count: 1
+    CONSTANT_SCORE_BLENDED_REWRITE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.index.SegmentCoreReaders$3:
+    cacheKey:
+      offset: 12
+      deref-count: 1
+    this$0:
+      offset: 16
+      deref-count: 1
+  java.lang.Short:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.index.SegmentCoreReaders$1:
+    this$0:
+      offset: 24
+      deref-count: 25
+  org.apache.lucene.util.fst.ByteSequenceOutputs:
+    NO_OUTPUT:
+      offset: 112
+      deref-count: 6870753
+    singleton:
+      offset: 116
+      deref-count: 5
+  org.apache.lucene.index.TermStates$TermStateInfo:
+    state:
+      offset: 28
+      deref-count: 1761120
+  org.apache.lucene.util.AttributeSource:
+    attributes:
+      offset: 12
+      deref-count: 3731456
+    attributeImpls:
+      offset: 16
+      deref-count: 3176448
+    factory:
+      offset: 24
+      deref-count: 1062912
+    implInterfaces:
+      offset: 112
+      deref-count: 4097
+  org.apache.lucene.analysis.tokenattributes.PackedTokenAttributeImpl:
+    type:
+      offset: 44
+      deref-count: 4196352
+  org.apache.lucene.codecs.lucene99.Lucene99Codec:
+    defaultDVFormat:
+      offset: 48
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    normsFormat:
+      offset: 36
+      deref-count: 1
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultKnnVectorsFormat:
+      offset: 56
+      deref-count: 1
+    defaultPostingsFormat:
+      offset: 40
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 64
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 52
+      deref-count: 1
+    knnVectorsFormat:
+      offset: 60
+      deref-count: 1
+    postingsFormat:
+      offset: 44
+      deref-count: 1
+  org.apache.lucene.index.Terms:
+    EMPTY:
+      offset: 116
+      deref-count: 1
+  org.apache.lucene.util.FrequencyTrackingRingBuffer:
+    frequencies:
+      offset: 24
+      deref-count: 257
+  org.apache.lucene.search.Scorer:
+    weight:
+      offset: 12
+      deref-count: 880560
+  org.apache.lucene.codecs.DocValuesFormat$Holder:
+    LOADER:
+      offset: 112
+      deref-count: 9
+  org.apache.lucene.index.SegmentReadState:
+    segmentInfo:
+      offset: 16
+      deref-count: 19
+    segmentSuffix:
+      offset: 28
+      deref-count: 15
+    fieldInfos:
+      offset: 20
+      deref-count: 9
+    directory:
+      offset: 12
+      deref-count: 9
+    context:
+      offset: 24
+      deref-count: 6
+  org.apache.lucene.codecs.PointsFormat:
+    EMPTY:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.util.HotspotVMOptions:
+    ACCESSOR:
+      offset: 120
+      deref-count: 7
+  org.apache.lucene.util.RamUsageEstimator:
+    primitiveSizes:
+      offset: 112
+      deref-count: 20
+  org.apache.lucene.backward_codecs.lucene94.Lucene94Codec$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 3
+    storedMode:
+      offset: 24
+      deref-count: 3
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.analysis.tokenattributes.CharTermAttributeImpl:
+    builder:
+      offset: 20
+      deref-count: 4196352
+  org.apache.lucene.codecs.lucene90.Lucene90NormsProducer:
+    data:
+      offset: 24
+      deref-count: 880564
+    norms:
+      offset: 20
+      deref-count: 880564
+  org.apache.lucene.index.LeafReader:
+    readerContext:
+      offset: 24
+      deref-count: 1
+  org.apache.lucene.analysis.TokenFilter:
+    input:
+      offset: 28
+      deref-count: 5246976
+  org.apache.lucene.backward_codecs.lucene94.Lucene94Codec:
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 2
+    normsFormat:
+      offset: 36
+      deref-count: 2
+    storedFieldsFormat:
+      offset: 64
+      deref-count: 2
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 2
+    postingsFormat:
+      offset: 44
+      deref-count: 2
+    defaultDVFormat:
+      offset: 48
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultKnnVectorsFormat:
+      offset: 56
+      deref-count: 1
+    defaultPostingsFormat:
+      offset: 40
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    docValuesFormat:
+      offset: 52
+      deref-count: 1
+    knnVectorsFormat:
+      offset: 60
+      deref-count: 1
+  org.apache.lucene.index.IndexReader:
+    refCount:
+      offset: 16
+      deref-count: 18200309
+    parentReaders:
+      offset: 20
+      deref-count: 9
+  org.apache.lucene.codecs.lucene90.compressing.Lucene90CompressingStoredFieldsReader:
+    state:
+      offset: 80
+      deref-count: 6619782
+    fieldInfos:
+      offset: 60
+      deref-count: 4696397
+    fieldsStream:
+      offset: 68
+      deref-count: 1923461
+    indexReader:
+      offset: 64
+      deref-count: 1923459
+    compressionMode:
+      offset: 72
+      deref-count: 49
+    decompressor:
+      offset: 76
+      deref-count: 49
+  org.apache.lucene.index.SegmentInfos$FindSegmentsFile:
+    directory:
+      offset: 12
+      deref-count: 3
+  org.apache.lucene.analysis.Tokenizer:
+    input:
+      offset: 28
+      deref-count: 4720640
+    inputPending:
+      offset: 32
+      deref-count: 2623488
+    ILLEGAL_STATE_READER:
+      offset: 112
+      deref-count: 2101249
+  org.apache.lucene.store.DataOutput:
+    groupVIntBytes:
+      offset: 12
+      deref-count: 6
+  org.apache.commons.cli.Options:
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
+  org.apache.lucene.backward_codecs.lucene91.Lucene91Codec$3:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene94.Lucene94Codec$3:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.index.SegmentCoreReaders:
+    fieldsReaderOrig:
+      offset: 24
+      deref-count: 24
+  org.apache.lucene.backward_codecs.lucene91.Lucene91Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene94.Lucene94Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.queryparser.classic.QueryParserTokenManager:
+    input_stream:
+      offset: 48
+      deref-count: 10453610
+    jjimage:
+      offset: 60
+      deref-count: 4096
+    image:
+      offset: 64
+      deref-count: 2048
+  org.apache.lucene.backward_codecs.lucene91.Lucene91Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene94.Lucene94Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.analysis.CharArrayMap:
+    EMPTY_MAP:
+      offset: 112
+      deref-count: 2
+    entrySet:
+      offset: 36
+      deref-count: 2
+    keySet:
+      offset: 40
+      deref-count: 2
+  org.apache.lucene.codecs.lucene90.compressing.FieldsIndexReader:
+    docs:
+      offset: 76
+      deref-count: 1923434
+    startPointers:
+      offset: 80
+      deref-count: 1923434
+    indexInput:
+      offset: 72
+      deref-count: 102
+    docsMeta:
+      offset: 64
+      deref-count: 74
+    startPointersMeta:
+      offset: 68
+      deref-count: 74
+  org.apache.lucene.util.AttributeFactory$DefaultAttributeFactory:
+    constructors:
+      offset: 12
+      deref-count: 2049
+  org.apache.lucene.util.fst.ReverseRandomAccessReader:
+    in:
+      offset: 12
+      deref-count: 117444194
+  org.apache.lucene.backward_codecs.lucene90.Lucene90PostingsReader$BlockImpactsDocsEnum:
+    skipper:
+      offset: 64
+      deref-count: 479259
+    docIn:
+      offset: 68
+      deref-count: 201436
+    pforUtil:
+      offset: 52
+      deref-count: 81925
+    this$0:
+      offset: 72
+      deref-count: 18837
+  java.nio.charset.CodingErrorAction:
+    REPORT:
+      offset: 120
+      deref-count: 880560
+  org.apache.commons.cli.CommandLine:
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
+  java.lang.Boolean:
+    TRUE:
+      offset: 112
+      deref-count: 1
+    TYPE:
+      offset: 120
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene95.Lucene95Codec$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 3
+    storedMode:
+      offset: 24
+      deref-count: 3
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.util.fst.FST$INPUT_TYPE:
+    BYTE1:
+      offset: 112
+      deref-count: 5299845
+    BYTE2:
+      offset: 116
+      deref-count: 2
+    BYTE4:
+      offset: 120
+      deref-count: 2
+  org.apache.lucene.backward_codecs.lucene87.Lucene87Codec$Mode:
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 3
+    dvMode:
+      offset: 28
+      deref-count: 3
+    storedMode:
+      offset: 24
+      deref-count: 3
+    BEST_SPEED:
+      offset: 112
+      deref-count: 2
+  org.apache.lucene.util.UnicodeUtil:
+    BIG_TERM:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.search.TaskExecutor:
+    executor:
+      offset: 12
+      deref-count: 1572865
+    numberOfRunningTasksInCurrentThread:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.queryparser.classic.QueryParser$Operator:
+    OR:
+      offset: 112
+      deref-count: 2
+    AND:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.util.AttributeSource$State:
+    attribute:
+      offset: 12
+      deref-count: 11517952
+    next:
+      offset: 16
+      deref-count: 9418752
+  org.apache.lucene.util.Version:
+    LATEST:
+      offset: 280
+      deref-count: 6
+    LUCENE_9_10_0:
+      offset: 276
+      deref-count: 2
+    LUCENE_8_10_0:
+      offset: 192
+      deref-count: 1
+    LUCENE_8_10_1:
+      offset: 196
+      deref-count: 1
+    LUCENE_8_11_0:
+      offset: 200
+      deref-count: 1
+    LUCENE_8_11_1:
+      offset: 204
+      deref-count: 1
+    LUCENE_8_12_0:
+      offset: 216
+      deref-count: 1
+    LUCENE_9_0_0:
+      offset: 220
+      deref-count: 1
+    LUCENE_8_11_2:
+      offset: 208
+      deref-count: 1
+    LUCENE_9_1_0:
+      offset: 224
+      deref-count: 1
+    LUCENE_8_6_3:
+      offset: 168
+      deref-count: 1
+    LUCENE_8_8_1:
+      offset: 180
+      deref-count: 1
+    LUCENE_8_9_0:
+      offset: 188
+      deref-count: 1
+    LUCENE_8_8_2:
+      offset: 184
+      deref-count: 1
+    LUCENE_8_5_2:
+      offset: 152
+      deref-count: 1
+    LUCENE_8_6_1:
+      offset: 160
+      deref-count: 1
+    LUCENE_8_7_0:
+      offset: 172
+      deref-count: 1
+    LUCENE_8_6_2:
+      offset: 164
+      deref-count: 1
+    LUCENE_8_8_0:
+      offset: 176
+      deref-count: 1
+    LUCENE_8_4_1:
+      offset: 140
+      deref-count: 1
+    LUCENE_8_5_0:
+      offset: 144
+      deref-count: 1
+    LUCENE_8_11_3:
+      offset: 212
+      deref-count: 1
+    LUCENE_8_5_1:
+      offset: 148
+      deref-count: 1
+    LUCENE_8_6_0:
+      offset: 156
+      deref-count: 1
+    LUCENE_8_3_0:
+      offset: 128
+      deref-count: 1
+    LUCENE_8_3_1:
+      offset: 132
+      deref-count: 1
+    LUCENE_8_4_0:
+      offset: 136
+      deref-count: 1
+    LUCENE_8_1_0:
+      offset: 116
+      deref-count: 1
+    LUCENE_8_1_1:
+      offset: 120
+      deref-count: 1
+    LUCENE_8_2_0:
+      offset: 124
+      deref-count: 1
+    LUCENE_8_0_0:
+      offset: 112
+      deref-count: 1
+    LUCENE_9_9_1:
+      offset: 268
+      deref-count: 1
+    LUCENE_9_9_2:
+      offset: 272
+      deref-count: 1
+    LUCENE_9_4_2:
+      offset: 244
+      deref-count: 1
+    LUCENE_9_6_0:
+      offset: 252
+      deref-count: 1
+    LUCENE_CURRENT:
+      offset: 284
+      deref-count: 1
+    LUCENE_9_7_0:
+      offset: 256
+      deref-count: 1
+    LUCENE_9_8_0:
+      offset: 260
+      deref-count: 1
+    LUCENE_9_9_0:
+      offset: 264
+      deref-count: 1
+    LUCENE_9_2_0:
+      offset: 228
+      deref-count: 1
+    LUCENE_9_3_0:
+      offset: 232
+      deref-count: 1
+    LUCENE_9_4_0:
+      offset: 236
+      deref-count: 1
+    LUCENE_9_4_1:
+      offset: 240
+      deref-count: 1
+    LUCENE_9_5_0:
+      offset: 248
+      deref-count: 1
+  org.apache.lucene.util.CloseableThreadLocal:
+    countUntilPurge:
+      offset: 20
+      deref-count: 2891784
+    t:
+      offset: 12
+      deref-count: 2876590
+    hardRefs:
+      offset: 16
+      deref-count: 40740
+  org.apache.lucene.backward_codecs.lucene80.Lucene80DocValuesFormat:
+    mode:
+      offset: 16
+      deref-count: 2
+    MODE_KEY:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene87.Lucene87Codec:
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultDVFormat:
+      offset: 56
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 52
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    pointsFormat:
+      offset: 36
+      deref-count: 1
+    normsFormat:
+      offset: 60
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 48
+      deref-count: 1
+    defaultFormat:
+      offset: 40
+      deref-count: 1
+    postingsFormat:
+      offset: 44
+      deref-count: 1
+  org.apache.lucene.util.Constants:
+    OS_NAME:
+      offset: 136
+      deref-count: 6
+    OS_ARCH:
+      offset: 140
+      deref-count: 5
+    JVM_VENDOR:
+      offset: 116
+      deref-count: 1
+    JVM_VERSION:
+      offset: 124
+      deref-count: 1
+    OS_VERSION:
+      offset: 144
+      deref-count: 1
+    JVM_SPEC_VERSION:
+      offset: 128
+      deref-count: 1
+    JAVA_VENDOR:
+      offset: 148
+      deref-count: 1
+    JVM_NAME:
+      offset: 120
+      deref-count: 1
+    JAVA_VERSION:
+      offset: 132
+      deref-count: 1
+  org.apache.lucene.store.BufferedChecksum:
+    in:
+      offset: 16
+      deref-count: 18
+  org.apache.lucene.codecs.Codec:
+    name:
+      offset: 12
+      deref-count: 22
+  org.apache.lucene.search.TopScoreDocCollector$SimpleTopScoreDocCollector:
+    pqTop:
+      offset: 32
+      deref-count: 47052102
+    minScoreAcc:
+      offset: 40
+      deref-count: 26658357
+    hitsThresholdChecker:
+      offset: 36
+      deref-count: 25777797
+    totalHitsRelation:
+      offset: 20
+      deref-count: 18686362
+    pq:
+      offset: 16
+      deref-count: 7091435
+  org.apache.lucene.index.IndexOptions:
+    DOCS_AND_FREQS_AND_POSITIONS:
+      offset: 124
+      deref-count: 16353519
+    DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS:
+      offset: 128
+      deref-count: 15491788
+    NONE:
+      offset: 112
+      deref-count: 8554646
+    DOCS:
+      offset: 116
+      deref-count: 5808323
+    DOCS_AND_FREQS:
+      offset: 120
+      deref-count: 880562
+  org.dacapo.harness.CommandLineArgs:
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
+  org.apache.lucene.codecs.lucene90.blocktree.SegmentTermsEnum$OutputAccumulator:
+    current:
+      offset: 28
+      deref-count: 59249146
+  org.apache.lucene.search.Query:
+    oldMethod:
+      offset: 112
+      deref-count: 524289
+    newMethod:
+      offset: 116
+      deref-count: 524289
+  java.lang.Float:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.queryparser.charstream.FastCharStream:
+    input:
+      offset: 32
+      deref-count: 2099200
+    READ_PAST_EOF:
+      offset: 112
+      deref-count: 1048577
+  java.lang.System:
+    out:
+      offset: 116
+      deref-count: 28
+    err:
+      offset: 120
+      deref-count: 4
+  org.apache.lucene.index.StandardDirectoryReader$3:
+    cacheKey:
+      offset: 12
+      deref-count: 1
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.index.CompositeReaderContext$Builder:
+    leaves:
+      offset: 20
+      deref-count: 4
+    reader:
+      offset: 16
+      deref-count: 2
+  org.apache.lucene.codecs.lucene90.blocktree.Lucene90BlockTreeTermsReader:
+    postingsReader:
+      offset: 24
+      deref-count: 23376348
+    NO_OUTPUT:
+      offset: 116
+      deref-count: 13966077
+    fieldMap:
+      offset: 28
+      deref-count: 2977714
+    termsIn:
+      offset: 16
+      deref-count: 1048580
+    indexIn:
+      offset: 20
+      deref-count: 7
+    segment:
+      offset: 36
+      deref-count: 4
+    FST_OUTPUTS:
+      offset: 112
+      deref-count: 2
+    fieldList:
+      offset: 32
+      deref-count: 1
+  org.apache.lucene.index.StoredFieldVisitor$Status:
+    YES:
+      offset: 112
+      deref-count: 4696351
+    NO:
+      offset: 116
+      deref-count: 3
+    STOP:
+      offset: 120
+      deref-count: 3
+  org.apache.lucene.util.packed.DirectReader$DirectPackedReader12:
+    in:
+      offset: 12
+      deref-count: 4147908
+  org.apache.lucene.codecs.lucene90.Lucene90StoredFieldsFormat:
+    mode:
+      offset: 12
+      deref-count: 6
+    BEST_SPEED_MODE:
+      offset: 120
+      deref-count: 2
+    MODE_KEY:
+      offset: 112
+      deref-count: 2
+    BEST_COMPRESSION_MODE:
+      offset: 116
+      deref-count: 1
+  org.apache.lucene.util.fst.FST$FSTMetadata:
+    emptyOutput:
+      offset: 40
+      deref-count: 8933139
+    inputType:
+      offset: 32
+      deref-count: 5299843
+    outputs:
+      offset: 36
+      deref-count: 6
+  java.nio.channels.FileChannel$MapMode:
+    READ_ONLY:
+      offset: 112
+      deref-count: 12
+  org.apache.lucene.backward_codecs.compressing.CompressionMode:
+    HIGH_COMPRESSION:
+      offset: 116
+      deref-count: 1
+    FAST_DECOMPRESSION:
+      offset: 120
+      deref-count: 1
+    LZ4_DECOMPRESSOR:
+      offset: 124
+      deref-count: 1
+    FAST:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.util.fst.FST$Arc:
+    nextFinalOutput:
+      offset: 76
+      deref-count: 15895212
+    output:
+      offset: 72
+      deref-count: 11494328
+  org.apache.lucene.document.Document:
+    fields:
+      offset: 12
+      deref-count: 9392696
+  org.apache.lucene.search.UsageTrackingQueryCachingPolicy:
+    recentlyUsedFilters:
+      offset: 12
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene84.Lucene84Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  java.lang.Character:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.codecs.perfield.PerFieldDocValuesFormat:
+    PER_FIELD_FORMAT_KEY:
+      offset: 116
+      deref-count: 1
+    PER_FIELD_SUFFIX_KEY:
+      offset: 120
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene84.Lucene84Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.codecs.perfield.PerFieldKnnVectorsFormat:
+    PER_FIELD_FORMAT_KEY:
+      offset: 116
+      deref-count: 1
+    PER_FIELD_SUFFIX_KEY:
+      offset: 120
+      deref-count: 1
+  org.apache.lucene.index.TermsEnum:
+    EMPTY:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.index.StandardDirectoryReader$1:
+    val$leafSorter:
+      offset: 20
+      deref-count: 2
+    directory:
+      offset: 12
+      deref-count: 2
+  org.dacapo.parser.ConfigFile:
+    token:
+      offset: 36
+      deref-count: 2287
+    token_source:
+      offset: 28
+      deref-count: 334
+    jj_nt:
+      offset: 40
+      deref-count: 254
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
+  org.apache.lucene.index.TermsEnum$1:
+    atts:
+      offset: 12
+      deref-count: 1
+  java.lang.Void:
+    TYPE:
+      offset: 112
+      deref-count: 2
+  org.apache.lucene.backward_codecs.lucene70.Lucene70Codec:
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultDVFormat:
+      offset: 36
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 48
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    normsFormat:
+      offset: 52
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 44
+      deref-count: 1
+    postingsFormat:
+      offset: 40
+      deref-count: 1
+  org.apache.lucene.store.ByteBuffersDataOutput:
+    currentBlock:
+      offset: 48
+      deref-count: 21
+    blocks:
+      offset: 44
+      deref-count: 18
+    blockAllocate:
+      offset: 36
+      deref-count: 6
+    ALLOCATE_BB_ON_HEAP:
+      offset: 120
+      deref-count: 4
+    EMPTY:
+      offset: 112
+      deref-count: 4
+    NO_REUSE:
+      offset: 124
+      deref-count: 4
+    blockReuse:
+      offset: 40
+      deref-count: 3
+  org.apache.lucene.search.TopScoreDocCollector$SimpleTopScoreDocCollector$1:
+    this$0:
+      offset: 16
+      deref-count: 184707484
+    scorer:
+      offset: 12
+      deref-count: 50420860
+  org.apache.commons.cli.Parser:
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
+  java.nio.charset.StandardCharsets:
+    UTF_8:
+      offset: 120
+      deref-count: 5136708
+  org.apache.lucene.codecs.Codec$Holder:
+    LOADER:
+      offset: 112
+      deref-count: 4
+    defaultCodec:
+      offset: 116
+      deref-count: 1
+  org.dacapo.harness.TeeOutputStream:
+    log:
+      offset: 28
+      deref-count: 1958
+    logFile:
+      offset: 32
+      deref-count: 6
+  org.apache.lucene.util.packed.DirectReader$DirectPackedReader16:
+    in:
+      offset: 12
+      deref-count: 1923434
+  org.apache.lucene.analysis.Analyzer$TokenStreamComponents:
+    sink:
+      offset: 16
+      deref-count: 526336
+    source:
+      offset: 12
+      deref-count: 526336
+  org.apache.lucene.util.AttributeFactory$1:
+    val$constr:
+      offset: 20
+      deref-count: 2049
+  org.dacapo.lusearch.Search$QueryThread:
+    parent:
+      offset: 140
+      deref-count: 2072
+    searcher:
+      offset: 148
+      deref-count: 2072
+    outBase:
+      offset: 156
+      deref-count: 2072
+    field:
+      offset: 164
+      deref-count: 2072
+    reader:
+      offset: 144
+      deref-count: 2072
+    this$0:
+      offset: 168
+      deref-count: 2072
+    queryBase:
+      offset: 160
+      deref-count: 2072
+    name:
+      offset: 152
+      deref-count: 24
+  javax.xml.bind.DatatypeConverter:
+    theConverter:
+      offset: 112
+      deref-count: 4160
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene84.Lucene84Codec:
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultDVFormat:
+      offset: 52
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 48
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    normsFormat:
+      offset: 56
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 44
+      deref-count: 1
+    defaultFormat:
+      offset: 36
+      deref-count: 1
+    postingsFormat:
+      offset: 40
+      deref-count: 1
+  org.apache.lucene.analysis.standard.StandardTokenizer:
+    scanner:
+      offset: 44
+      deref-count: 5244928
+    posIncrAtt:
+      offset: 56
+      deref-count: 1574912
+    input:
+      offset: 28
+      deref-count: 1574912
+    termAtt:
+      offset: 48
+      deref-count: 1050624
+    offsetAtt:
+      offset: 52
+      deref-count: 1050624
+    typeAtt:
+      offset: 60
+      deref-count: 526336
+  org.dacapo.harness.TeePrintStream:
+    out:
+      offset: 16
+      deref-count: 6
+  java.lang.Double:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.util.BytesRefBuilder:
+    ref:
+      offset: 12
+      deref-count: 31059770
+  org.apache.lucene.backward_codecs.lucene90.Lucene90ScoreSkipReader:
+    impacts:
+      offset: 132
+      deref-count: 100354
+    badi:
+      offset: 128
+      deref-count: 59849
+  org.apache.lucene.backward_codecs.lucene95.Lucene95Codec:
+    defaultDVFormat:
+      offset: 48
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    normsFormat:
+      offset: 36
+      deref-count: 1
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultKnnVectorsFormat:
+      offset: 56
+      deref-count: 1
+    defaultPostingsFormat:
+      offset: 40
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 64
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 52
+      deref-count: 1
+    knnVectorsFormat:
+      offset: 60
+      deref-count: 1
+    postingsFormat:
+      offset: 44
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene90.Lucene90Codec$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 3
+    storedMode:
+      offset: 24
+      deref-count: 3
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.backward_codecs.lucene92.Lucene92Codec:
+    defaultDVFormat:
+      offset: 48
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    normsFormat:
+      offset: 36
+      deref-count: 1
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultKnnVectorsFormat:
+      offset: 56
+      deref-count: 1
+    defaultPostingsFormat:
+      offset: 40
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 64
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 52
+      deref-count: 1
+    knnVectorsFormat:
+      offset: 60
+      deref-count: 1
+    postingsFormat:
+      offset: 44
+      deref-count: 1
+  org.apache.lucene.codecs.DocValuesFormat:
+    name:
+      offset: 12
+      deref-count: 24
+  org.apache.lucene.backward_codecs.lucene86.Lucene86Codec:
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultDVFormat:
+      offset: 56
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 52
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    pointsFormat:
+      offset: 36
+      deref-count: 1
+    normsFormat:
+      offset: 60
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 48
+      deref-count: 1
+    defaultFormat:
+      offset: 40
+      deref-count: 1
+    postingsFormat:
+      offset: 44
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene90.Lucene90PostingsReader$BlockDocsEnum:
+    docIn:
+      offset: 96
+      deref-count: 2697238
+    startDocIn:
+      offset: 92
+      deref-count: 1302600
+    pforUtil:
+      offset: 76
+      deref-count: 933730
+    this$0:
+      offset: 100
+      deref-count: 861723
+  org.apache.lucene.analysis.TokenStream:
+    DEFAULT_TOKEN_ATTRIBUTE_FACTORY:
+      offset: 112
+      deref-count: 2049
+  org.apache.lucene.analysis.Analyzer:
+    storedValue:
+      offset: 16
+      deref-count: 1052672
+  org.apache.lucene.util.IOUtils:
+    UTF_8:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.codecs.lucene90.compressing.Lucene90CompressingStoredFieldsFormat:
+    segmentSuffix:
+      offset: 28
+      deref-count: 2
+    formatName:
+      offset: 24
+      deref-count: 2
+    compressionMode:
+      offset: 32
+      deref-count: 2
+  java.io.File:
+    separator:
+      offset: 116
+      deref-count: 2050
+  org.apache.lucene.search.TopScoreDocCollector:
+    hitsThresholdChecker:
+      offset: 36
+      deref-count: 29193639
+    pqTop:
+      offset: 32
+      deref-count: 1097710
+    minScoreAcc:
+      offset: 40
+      deref-count: 1058206
+    pq:
+      offset: 16
+      deref-count: 1048576
+    totalHitsRelation:
+      offset: 20
+      deref-count: 890190
+    EMPTY_TOPDOCS:
+      offset: 112
+      deref-count: 168016
+  org.apache.lucene.search.BooleanClause:
+    occur:
+      offset: 16
+      deref-count: 524288
+    query:
+      offset: 12
+      deref-count: 524288
+  org.apache.lucene.search.ScoreMode:
+    TOP_SCORES:
+      offset: 120
+      deref-count: 2453426
+    COMPLETE:
+      offset: 112
+      deref-count: 1048578
+    TOP_DOCS_WITH_SCORES:
+      offset: 128
+      deref-count: 2
+    TOP_DOCS:
+      offset: 124
+      deref-count: 2
+    COMPLETE_NO_SCORES:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.index.SlowImpactsEnum:
+    delegate:
+      offset: 12
+      deref-count: 15075876
+    DUMMY_IMPACTS:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene70.Lucene70Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene70.Lucene70Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.index.TermsEnum$SeekStatus:
+    FOUND:
+      offset: 116
+      deref-count: 1929138
+    NOT_FOUND:
+      offset: 120
+      deref-count: 163770
+    END:
+      offset: 112
+      deref-count: 4250
+  org.apache.lucene.index.DocValuesType:
+    NONE:
+      offset: 112
+      deref-count: 4696362
+    NUMERIC:
+      offset: 116
+      deref-count: 2
+    SORTED_SET:
+      offset: 132
+      deref-count: 2
+    BINARY:
+      offset: 120
+      deref-count: 2
+    SORTED_NUMERIC:
+      offset: 128
+      deref-count: 2
+    SORTED:
+      offset: 124
+      deref-count: 2
+  org.apache.lucene.util.NamedSPILoader:
+    services:
+      offset: 12
+      deref-count: 18
+    clazz:
+      offset: 16
+      deref-count: 6
+  org.apache.lucene.index.FieldInfo:
+    indexOptions:
+      offset: 56
+      deref-count: 47088826
+    name:
+      offset: 48
+      deref-count: 4696360
+    docValuesType:
+      offset: 52
+      deref-count: 15
+    vectorSimilarityFunction:
+      offset: 68
+      deref-count: 9
+    attributes:
+      offset: 60
+      deref-count: 9
+    vectorEncoding:
+      offset: 64
+      deref-count: 3
+  org.apache.lucene.util.fst.FST:
+    metadata:
+      offset: 12
+      deref-count: 17210691
+    outputs:
+      offset: 20
+      deref-count: 10945259
+    fstReader:
+      offset: 16
+      deref-count: 1929139
+  org.apache.lucene.store.BaseDirectory:
+    lockFactory:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.index.BaseCompositeReader:
+    subReadersList:
+      offset: 48
+      deref-count: 3
+    numDocs:
+      offset: 44
+      deref-count: 1
+    subReadersSorter:
+      offset: 36
+      deref-count: 1
+  org.apache.lucene.index.LeafMetaData:
+    minVersion:
+      offset: 20
+      deref-count: 1
+    sort:
+      offset: 24
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene50.Lucene50StoredFieldsFormat$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 6
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.store.MMapDirectory:
+    PROVIDER:
+      offset: 136
+      deref-count: 16
+    preload:
+      offset: 40
+      deref-count: 13
+    directory:
+      offset: 20
+      deref-count: 12
+    NO_FILES:
+      offset: 120
+      deref-count: 2
+    LOG:
+      offset: 112
+      deref-count: 1
+    ALL_FILES:
+      offset: 116
+      deref-count: 1
+    BASED_ON_LOAD_IO_CONTEXT:
+      offset: 124
+      deref-count: 1
+    UNMAP_NOT_SUPPORTED_REASON:
+      offset: 140
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene91.Lucene91Codec:
+    defaultDVFormat:
+      offset: 48
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    normsFormat:
+      offset: 36
+      deref-count: 1
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultKnnVectorsFormat:
+      offset: 56
+      deref-count: 1
+    defaultPostingsFormat:
+      offset: 40
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 64
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 52
+      deref-count: 1
+    knnVectorsFormat:
+      offset: 60
+      deref-count: 1
+    postingsFormat:
+      offset: 44
+      deref-count: 1
+  org.apache.lucene.search.TermQuery$TermWeight$2:
+    this$1:
+      offset: 28
+      deref-count: 5723640
+    val$context:
+      offset: 20
+      deref-count: 1761120
+    val$termsEnum:
+      offset: 24
+      deref-count: 1761120
+  org.apache.lucene.document.FieldType:
+    indexOptions:
+      offset: 36
+      deref-count: 18785397
+    vectorSimilarityFunction:
+      offset: 48
+      deref-count: 14089047
+    docValuesType:
+      offset: 40
+      deref-count: 14089047
+    vectorEncoding:
+      offset: 44
+      deref-count: 14089047
+    attributes:
+      offset: 52
+      deref-count: 4696348
+  org.apache.lucene.codecs.lucene90.compressing.Lucene90CompressingStoredFieldsReader$SerializedDocument:
+    in:
+      offset: 20
+      deref-count: 11740870
+  org.apache.lucene.codecs.lucene90.blocktree.SegmentTermsEnumFrame:
+    state:
+      offset: 144
+      deref-count: 89226370
+    ste:
+      offset: 156
+      deref-count: 72363466
+    suffixesReader:
+      offset: 120
+      deref-count: 44872452
+    suffixLengthsReader:
+      offset: 128
+      deref-count: 27272302
+    floorDataReader:
+      offset: 140
+      deref-count: 25631590
+    bytesReader:
+      offset: 152
+      deref-count: 23544362
+    statsReader:
+      offset: 136
+      deref-count: 18153918
+    compressionAlg:
+      offset: 160
+      deref-count: 10000552
+    arc:
+      offset: 112
+      deref-count: 4591740
+  org.apache.lucene.util.BitUtil:
+    NATIVE_BYTE_ORDER:
+      offset: 112
+      deref-count: 6
+    VH_LE_FLOAT:
+      offset: 128
+      deref-count: 1
+    VH_BE_SHORT:
+      offset: 156
+      deref-count: 1
+    VH_NATIVE_DOUBLE:
+      offset: 152
+      deref-count: 1
+    VH_LE_LONG:
+      offset: 124
+      deref-count: 1
+    VH_NATIVE_SHORT:
+      offset: 136
+      deref-count: 1
+    VH_NATIVE_INT:
+      offset: 140
+      deref-count: 1
+    VH_NATIVE_LONG:
+      offset: 144
+      deref-count: 1
+    VH_NATIVE_FLOAT:
+      offset: 148
+      deref-count: 1
+    VH_BE_DOUBLE:
+      offset: 172
+      deref-count: 1
+    VH_LE_DOUBLE:
+      offset: 132
+      deref-count: 1
+    VH_BE_LONG:
+      offset: 164
+      deref-count: 1
+    VH_BE_INT:
+      offset: 160
+      deref-count: 1
+    VH_BE_FLOAT:
+      offset: 168
+      deref-count: 1
+    VH_LE_SHORT:
+      offset: 116
+      deref-count: 1
+    VH_LE_INT:
+      offset: 120
+      deref-count: 1
+  java.lang.foreign.ValueLayout:
+    JAVA_LONG_UNALIGNED:
+      offset: 164
+      deref-count: 1
+    JAVA_BYTE:
+      offset: 116
+      deref-count: 1
+    JAVA_INT_UNALIGNED:
+      offset: 160
+      deref-count: 1
+    JAVA_FLOAT_UNALIGNED:
+      offset: 168
+      deref-count: 1
+    JAVA_SHORT_UNALIGNED:
+      offset: 156
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene92.Lucene92Codec$Mode:
+    BEST_SPEED:
+      offset: 112
+      deref-count: 3
+    storedMode:
+      offset: 24
+      deref-count: 3
+    BEST_COMPRESSION:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.store.BufferedChecksumIndexInput:
+    main:
+      offset: 20
+      deref-count: 787
+    digest:
+      offset: 24
+      deref-count: 775
+  org.apache.lucene.analysis.FilteringTokenFilter:
+    posIncrAtt:
+      offset: 36
+      deref-count: 1050624
+    input:
+      offset: 28
+      deref-count: 1048576
+  org.apache.lucene.index.SlowImpactsEnum$1:
+    impacts:
+      offset: 12
+      deref-count: 1
+  org.apache.lucene.util.VirtualMethod$1:
+    this$0:
+      offset: 24
+      deref-count: 36
+  org.apache.lucene.search.TermScorer:
+    postingsEnum:
+      offset: 16
+      deref-count: 52436154
+    docScorer:
+      offset: 24
+      deref-count: 26658357
+    iterator:
+      offset: 20
+      deref-count: 1761120
+    impactsDisi:
+      offset: 28
+      deref-count: 1340100
+    maxScoreCache:
+      offset: 32
+      deref-count: 1320840
+  org.apache.lucene.backward_codecs.lucene90.Lucene90PostingsReader:
+    docIn:
+      offset: 16
+      deref-count: 880562
+    payIn:
+      offset: 24
+      deref-count: 2
+    posIn:
+      offset: 20
+      deref-count: 2
+  org.apache.lucene.util.fst.OffHeapFSTStore:
+    in:
+      offset: 12
+      deref-count: 1929142
+  org.apache.lucene.store.MemorySegmentIndexInput:
+    curSegment:
+      offset: 56
+      deref-count: 2325402541
+    LAYOUT_BYTE:
+      offset: 112
+      deref-count: 1497729284
+    LAYOUT_LE_SHORT:
+      offset: 116
+      deref-count: 786934220
+    LAYOUT_LE_LONG:
+      offset: 124
+      deref-count: 13610082
+    arena:
+      offset: 48
+      deref-count: 4339263
+    LAYOUT_LE_FLOAT:
+      offset: 128
+      deref-count: 1
+    LAYOUT_LE_INT:
+      offset: 120
+      deref-count: 1
+  org.apache.lucene.codecs.compressing.CompressionMode:
+    FAST:
+      offset: 112
+      deref-count: 7
+    HIGH_COMPRESSION:
+      offset: 116
+      deref-count: 1
+    FAST_DECOMPRESSION:
+      offset: 120
+      deref-count: 1
+    LZ4_DECOMPRESSOR:
+      offset: 124
+      deref-count: 1
+  org.apache.lucene.codecs.lucene90.blocktree.Lucene90BlockTreeTermsWriter:
+    EMPTY_BYTES_REF:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.store.MemorySegmentIndexInput$SingleSegmentImpl:
+    curSegment:
+      offset: 56
+      deref-count: 147364147
+    LAYOUT_BYTE:
+      offset: 112
+      deref-count: 141292855
+    LAYOUT_LE_SHORT:
+      offset: 116
+      deref-count: 6071292
+  org.apache.lucene.index.LeafReaderContext:
+    reader:
+      offset: 40
+      deref-count: 4738834
+    leaves:
+      offset: 44
+      deref-count: 2
+  org.apache.lucene.backward_codecs.lucene80.Lucene80Codec:
+    vectorsFormat:
+      offset: 16
+      deref-count: 1
+    defaultDVFormat:
+      offset: 44
+      deref-count: 1
+    liveDocsFormat:
+      offset: 28
+      deref-count: 1
+    fieldInfosFormat:
+      offset: 20
+      deref-count: 1
+    storedFieldsFormat:
+      offset: 48
+      deref-count: 1
+    compoundFormat:
+      offset: 32
+      deref-count: 1
+    normsFormat:
+      offset: 52
+      deref-count: 1
+    segmentInfosFormat:
+      offset: 24
+      deref-count: 1
+    docValuesFormat:
+      offset: 40
+      deref-count: 1
+    postingsFormat:
+      offset: 36
+      deref-count: 1
+  java.lang.Byte:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.index.TermStates:
+    term:
+      offset: 32
+      deref-count: 4906848
+    topReaderContextIdentity:
+      offset: 24
+      deref-count: 1048576
+    EMPTY_TERMSTATE:
+      offset: 112
+      deref-count: 1
+  org.apache.lucene.search.TopDocs$ScoreMergeSortQueue:
+    tieBreakerComparator:
+      offset: 28
+      deref-count: 524288
+  org.apache.lucene.document.DocumentStoredFieldVisitor:
+    doc:
+      offset: 12
+      deref-count: 9392696
+    fieldsToAdd:
+      offset: 16
+      deref-count: 7044522
+  org.apache.lucene.search.Explanation:
+    value:
+      offset: 16
+      deref-count: 3522240
+    description:
+      offset: 20
+      deref-count: 2641680
+    details:
+      offset: 24
+      deref-count: 2641680
+  org.apache.lucene.index.DirectoryReader:
+    directory:
+      offset: 52
+      deref-count: 1
+  java.nio.file.StandardOpenOption:
+    READ:
+      offset: 112
+      deref-count: 12
+  org.apache.lucene.index.SegmentReader$2:
+    this$0:
+      offset: 12
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene90.PForUtil:
+    forUtil:
+      offset: 12
+      deref-count: 1015469
+  org.apache.lucene.index.SegmentReader$1:
+    cacheKey:
+      offset: 12
+      deref-count: 1
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.index.SegmentCommitInfo:
+    fieldInfosFiles:
+      offset: 96
+      deref-count: 5
+    dvUpdatesFiles:
+      offset: 92
+      deref-count: 4
+    info:
+      offset: 84
+      deref-count: 4
+  org.apache.lucene.index.SegmentInfos:
+    segments:
+      offset: 56
+      deref-count: 5
+    infoStream:
+      offset: 116
+      deref-count: 2
+    userData:
+      offset: 52
+      deref-count: 2
+    minSegmentLuceneVersion:
+      offset: 68
+      deref-count: 2
+    luceneVersion:
+      offset: 64
+      deref-count: 1
+  org.apache.lucene.codecs.lucene90.compressing.Lucene90CompressingStoredFieldsWriter:
+    BULK_MERGE_ENABLED_SYSPROP:
+      offset: 128
+      deref-count: 2
+  org.apache.lucene.index.VectorEncoding:
+    FLOAT32:
+      offset: 116
+      deref-count: 4696353
+    BYTE:
+      offset: 112
+      deref-count: 2
+  org.apache.lucene.backward_codecs.lucene92.Lucene92Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene92.Lucene92Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene92.Lucene92Codec$3:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.dacapo.harness.Lusearch:
+    method:
+      offset: 44
+      deref-count: 2
+    benchmark:
+      offset: 60
+      deref-count: 2
+    data:
+      offset: 24
+      deref-count: 1
+    loader:
+      offset: 32
+      deref-count: 1
+    scratch:
+      offset: 20
+      deref-count: 1
+    config:
+      offset: 28
+      deref-count: 1
+  org.apache.lucene.search.TotalHits$Relation:
+    EQUAL_TO:
+      offset: 112
+      deref-count: 19734941
+    GREATER_THAN_OR_EQUAL_TO:
+      offset: 116
+      deref-count: 9632
+  org.apache.lucene.codecs.lucene90.blocktree.CompressionAlgorithm:
+    NO_COMPRESSION:
+      offset: 112
+      deref-count: 7903402
+    LZ4:
+      offset: 120
+      deref-count: 2
+    LOWERCASE_ASCII:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.analysis.CharArraySet:
+    map:
+      offset: 12
+      deref-count: 524289
+    EMPTY_SET:
+      offset: 112
+      deref-count: 10241
+    PLACEHOLDER:
+      offset: 116
+      deref-count: 1
+  org.dacapo.parser.ConfigFileTokenManager:
+    input_stream:
+      offset: 52
+      deref-count: 6132
+    image:
+      offset: 68
+      deref-count: 665
+    jjimage:
+      offset: 64
+      deref-count: 334
+    debugStream:
+      offset: 48
+      deref-count: 1
+  org.apache.lucene.search.Weight:
+    parentQuery:
+      offset: 12
+      deref-count: 1048576
+  org.dacapo.parser.SimpleCharStream:
+    inputStream:
+      offset: 60
+      deref-count: 4
+  org.apache.lucene.analysis.standard.StandardTokenizerImpl:
+    zzReader:
+      offset: 64
+      deref-count: 3147776
+  org.apache.lucene.index.StandardDirectoryReader:
+    readerClosedListeners:
+      offset: 64
+      deref-count: 3
+    writer:
+      offset: 56
+      deref-count: 2
+    segmentInfos:
+      offset: 60
+      deref-count: 1
+    cacheHelper:
+      offset: 68
+      deref-count: 1
+  org.apache.lucene.codecs.lucene99.Lucene99HnswVectorsFormat:
+    mergeExec:
+      offset: 28
+      deref-count: 1
+    flatVectorsFormat:
+      offset: 128
+      deref-count: 1
+  org.dacapo.parser.Config$Size:
+    outputFiles:
+      offset: 32
+      deref-count: 183
+    this$0:
+      offset: 36
+      deref-count: 35
+    name:
+      offset: 20
+      deref-count: 3
+  org.apache.lucene.codecs.lucene99.Lucene99Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene50.compressing.Lucene50CompressingTermVectorsFormat:
+    segmentSuffix:
+      offset: 28
+      deref-count: 5
+    formatName:
+      offset: 24
+      deref-count: 5
+    compressionMode:
+      offset: 32
+      deref-count: 5
+  org.apache.lucene.codecs.lucene99.Lucene99Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.search.TermStatistics:
+    term:
+      offset: 12
+      deref-count: 880560
+  org.apache.lucene.codecs.lucene99.Lucene99Codec$3:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.index.BaseTermsEnum:
+    atts:
+      offset: 12
+      deref-count: 1929136
+  org.apache.lucene.codecs.PostingsFormat$Holder:
+    LOADER:
+      offset: 112
+      deref-count: 7
+  org.apache.lucene.analysis.ReusableStringReader:
+    s:
+      offset: 28
+      deref-count: 2623488
+  org.apache.lucene.analysis.StopFilter:
+    termAtt:
+      offset: 44
+      deref-count: 1050624
+    stopWords:
+      offset: 40
+      deref-count: 526336
+  org.dacapo.harness.LatencyReporter:
+    callback:
+      offset: 132
+      deref-count: 2097158
+    globalIdx:
+      offset: 124
+      deref-count: 2050
+  org.dacapo.harness.TestHarness:
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 14
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
+  org.apache.lucene.search.IndexSearcher$CachingLeafSlicesSupplier:
+    leaves:
+      offset: 20
+      deref-count: 2
+    sliceProvider:
+      offset: 16
+      deref-count: 2
+  org.apache.lucene.index.IndexFileNames:
+    CODEC_FILE_PATTERN:
+      offset: 120
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene86.Lucene86Codec$2:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.apache.lucene.backward_codecs.lucene86.Lucene86Codec$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.dacapo.parser.Config:
+    sizes:
+      offset: 24
+      deref-count: 211
+    threadModel:
+      offset: 20
+      deref-count: 41
+    desc:
+      offset: 28
+      deref-count: 11
+    name:
+      offset: 12
+      deref-count: 5
+    className:
+      offset: 16
+      deref-count: 4
+  org.apache.lucene.search.LeafSimScorer:
+    norms:
+      offset: 16
+      deref-count: 78213951
+    scorer:
+      offset: 12
+      deref-count: 27538917
+  org.apache.lucene.search.TermQuery:
+    term:
+      offset: 20
+      deref-count: 9121392
+    perReaderTermState:
+      offset: 24
+      deref-count: 1572864
+  org.apache.lucene.search.CollectionStatistics:
+    field:
+      offset: 12
+      deref-count: 1048576
+  org.apache.lucene.queryparser.classic.Token:
+    image:
+      offset: 32
+      deref-count: 1048576
+  org.dacapo.harness.Callback$Mode:
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
+  org.apache.lucene.index.IndexReaderContext:
+    identity:
+      offset: 28
+      deref-count: 1048579
+    parent:
+      offset: 24
+      deref-count: 3
 opcodes:
-  aconst_null: 42172143
-  iconst_m1: 114289234
-  iconst_0: 403080518
-  iconst_1: 1080451259
-  iconst_2: 52750444
-  iconst_3: 46473528
-  iconst_4: 825699480
+  aconst_null: 42780438
+  iconst_m1: 115169794
+  iconst_0: 413236184
+  iconst_1: 1098437531
+  iconst_2: 52684585
+  iconst_3: 46446698
+  iconst_4: 825571859
   iconst_5: 889093
-  lconst_0: 86084377
-  lconst_1: 1281288561
-  fconst_0: 1952027
+  lconst_0: 86084374
+  lconst_1: 1277230079
+  fconst_0: 1511747
   fconst_1: 479096736
   dconst_0: 24
   dconst_1: 880560
-  bipush: 7796388392
-  sipush: 1191314399
-  ldc: 3583800352
-  iload: 31871419463
-  lload: 2455609184
+  bipush: 7790813943
+  sipush: 1191373991
+  ldc: 3611502507
+  iload: 31885456481
+  lload: 2453439400
   fload: 379044091
-  aload: 24022514406
+  aload: 24282442820
   iaload: 106629194
   laload: 360016438
   faload: 264990630
-  aaload: 259056460
+  aaload: 267726958
   baload: 359890132
   caload: 8844500
-  istore: 8218328892
-  lstore: 405679288
+  istore: 8244593143
+  lstore: 406989299
   fstore: 54282319
-  astore: 235729649
+  astore: 246520242
   iastore: 109063329
   lastore: 1936414512
   fastore: 227019371
-  aastore: 129086758
-  bastore: 247873735
-  pop: 33732560
-  pop2: 12
-  dup: 2956148971
-  dup_x1: 155574202
+  aastore: 133710343
+  bastore: 243697015
+  pop: 33325953
+  pop2: 185034
+  dup: 2964886749
+  dup_x1: 161216444
   dup_x2: 4352
   dup2: 26055166
-  dup2_x1: 124165279
-  iadd: 7193673136
-  ladd: 2418284561
+  dup2_x1: 120106799
+  iadd: 7213738645
+  ladd: 2418284547
   fadd: 252104606
   dadd: 2641680
-  isub: 1049737372
-  lsub: 154876254
+  isub: 1049689833
+  lsub: 151317274
   fsub: 252104606
-  imul: 1100061
+  imul: 1099267
   lmul: 21788705
   fmul: 490726294
   idiv: 2369104
@@ -71,23 +2948,23 @@ opcodes:
   fdiv: 477527967
   ddiv: 1761120
   irem: 545197
-  lrem: 15
+  lrem: 13
   lneg: 5342300
-  ishl: 266351609
-  lshl: 67140224
-  ishr: 23618775
+  ishl: 266351630
+  lshl: 67056932
+  ishr: 23605359
   iushr: 908267388
   lushr: 1589215763
-  iand: 3778809358
-  land: 1889556932
-  ior: 373827129
-  lor: 43391244
+  iand: 3777555964
+  land: 1889411888
+  ior: 373827147
+  lor: 43307952
   ixor: 397047
   lxor: 5342301
-  iinc: 1863314339
-  i2l: 811979204
+  iinc: 1859138405
+  i2l: 812333644
   i2f: 25800943
-  l2i: 133835490
+  l2i: 133835487
   l2f: 13366344
   l2d: 3522240
   f2i: 1
@@ -98,50 +2975,48 @@ opcodes:
   lcmp: 126583574
   fcmpl: 76124079
   fcmpg: 76265437
-  ifeq: 1132013023
-  ifne: 1208049014
-  iflt: 282260822
-  ifge: 112995788
-  ifgt: 59207822
-  ifle: 95447020
-  if_icmpeq: 45880533
-  if_icmpne: 1529871705
-  if_icmplt: 2410503149
-  if_icmpge: 1103046098
-  if_icmpgt: 119569494
-  if_icmple: 890104454
-  if_acmpeq: 9165423
-  if_acmpne: 44220409
-  goto: 1846457872
-  tableswitch: 47969524
-  lookupswitch: 6874805
-  ireturn: 2721739818
-  lreturn: 174229175
+  ifeq: 1135662679
+  ifne: 1224462722
+  iflt: 281781804
+  ifge: 114030972
+  ifgt: 59207032
+  ifle: 95447022
+  if_icmpeq: 77214002
+  if_icmpne: 1528552512
+  if_icmplt: 2433312752
+  if_icmpge: 1103539924
+  if_icmpgt: 119569704
+  if_icmple: 886002661
+  if_acmpeq: 19397340
+  if_acmpne: 39048249
+  goto: 1868649343
+  tableswitch: 47956108
+  lookupswitch: 5419735
+  ireturn: 2777534237
+  lreturn: 185241403
   freturn: 81141392
-  areturn: 404480603
-  return: 1359421224
-  getstatic: 3972573042
-  putstatic: 451
-  getfield: 12587866005
-  putfield: 3957417251
-  invokevirtual: 4030684851
-  invokespecial: 462756078
-  invokestatic: 1651217490
-  invokeinterface: 2225276279
-  invokedynamic: 7701620
-  new: 149023996
-  newarray: 71056466
-  anewarray: 20281051
-  arraylength: 386000245
+  areturn: 403357477
+  return: 1383539495
+  getstatic: 3979821824
+  putstatic: 487
+  getfield: 12768830291
+  putfield: 3970096201
+  invokevirtual: 4095799775
+  invokespecial: 520944895
+  invokestatic: 1649228674
+  invokeinterface: 2250988902
+  invokedynamic: 8750210
+  new: 152666542
+  newarray: 62315601
+  anewarray: 22210178
+  arraylength: 384619565
   athrow: 1048576
-  checkcast: 272014117
+  checkcast: 269853457
   instanceof: 6292934
-  monitorenter: 22186
-  monitorexit: 22186
-  ifnull: 90130308
-  ifnonnull: 84983357
-
-# sun/launcher/LauncherHelper
+  monitorenter: 21420
+  monitorexit: 21420
+  ifnull: 112940021
+  ifnonnull: 89554186# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -190,6 +3065,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -401,6 +3278,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -415,6 +3293,7 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
+# java/util/Formatter
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -430,6 +3309,10 @@ opcodes:
 # sun/security/jca/ProviderList$1
 # java/security/Provider$ServiceKey
 # java/security/Provider$EngineDescription
+# java/security/SecureRandomParameters
+# java/security/cert/CertStoreParameters
+# java/security/Policy$Parameters
+# javax/security/auth/login/Configuration$Parameters
 # jdk/internal/math/FloatingDecimal
 # jdk/internal/math/FloatingDecimal$ExceptionalBinaryToASCIIBuffer
 # jdk/internal/math/FloatingDecimal$BinaryToASCIIConverter
@@ -522,12 +3405,12 @@ opcodes:
 # javax/xml/datatype/FactoryFinder
 # jdk/xml/internal/SecuritySupport
 # javax/xml/datatype/FactoryFinder$1
+# jdk/internal/foreign/MemorySessionImpl
+# java/lang/foreign/MemorySegment$Scope
 # java/net/URLClassLoader$3
 # java/net/URLClassLoader$3$1
 # java/net/MalformedURLException
 # com/sun/org/apache/xerces/internal/jaxp/datatype/DatatypeFactoryImpl
-# jdk/internal/foreign/MemorySessionImpl
-# java/lang/foreign/MemorySegment$Scope
 # java/lang/invoke/MethodHandle$1
 # java/util/regex/Pattern$BnM
 # java/util/regex/MatchResult
@@ -544,13 +3427,82 @@ opcodes:
 # java/lang/SecurityException
 # java/util/AbstractList$RandomAccessSpliterator
 # java/util/StringJoiner
-# java/util/logging/Logger
+# com/sun/management/HotSpotDiagnosticMXBean
+# java/lang/management/PlatformManagedObject
+# java/lang/management/ManagementFactory
+# javax/management/MBeanServerConnection
+# java/lang/management/ClassLoadingMXBean
+# java/lang/management/MemoryMXBean
+# java/lang/management/ThreadMXBean
+# java/lang/management/RuntimeMXBean
+# java/lang/management/CompilationMXBean
+# java/lang/management/OperatingSystemMXBean
+# javax/management/MBeanServer
+# java/lang/management/ManagementFactory$PlatformMBeanFinder
+# java/lang/management/ManagementFactory$PlatformMBeanFinder$1
+# sun/management/spi/PlatformMBeanProvider
+# jdk/management/jfr/internal/FlightRecorderMXBeanProvider
+# java/util/concurrent/Callable
+# com/sun/management/internal/PlatformMBeanProviderImpl
+# com/sun/management/internal/PlatformMBeanProviderImpl$1
+# sun/management/spi/PlatformMBeanProvider$PlatformComponent
+# com/sun/management/internal/PlatformMBeanProviderImpl$2
+# com/sun/management/internal/PlatformMBeanProviderImpl$3
+# com/sun/management/internal/PlatformMBeanProviderImpl$4
+# java/util/Collections$SingletonSet
+# com/sun/management/internal/DiagnosticCommandImpl
+# com/sun/management/DiagnosticCommandMBean
+# javax/management/DynamicMBean
+# sun/management/NotificationEmitterSupport
+# javax/management/NotificationEmitter
+# javax/management/NotificationBroadcaster
+# sun/management/ManagementFactoryHelper
+# sun/management/VMManagementImpl
+# sun/management/VMManagement
+# com/sun/management/internal/PlatformMBeanProviderImpl$5
+# java/lang/management/DefaultPlatformMBeanProvider
+# java/lang/management/DefaultPlatformMBeanProvider$1
+# java/lang/management/DefaultPlatformMBeanProvider$2
+# java/lang/management/DefaultPlatformMBeanProvider$3
+# java/lang/management/DefaultPlatformMBeanProvider$4
+# java/lang/management/DefaultPlatformMBeanProvider$5
+# java/lang/management/DefaultPlatformMBeanProvider$6
+# java/lang/management/DefaultPlatformMBeanProvider$7
+# java/lang/management/DefaultPlatformMBeanProvider$8
+# sun/management/ManagementFactoryHelper$LoggingMXBeanAccess
+# sun/management/ManagementFactoryHelper$LoggingMXBeanAccess$1
+# java/util/logging/LogManager
+# java/lang/management/DefaultPlatformMBeanProvider$9
+# java/lang/management/DefaultPlatformMBeanProvider$10
+# java/lang/management/DefaultPlatformMBeanProvider$11
+# jdk/management/jfr/FlightRecorderMXBean
+# jdk/management/jfr/internal/FlightRecorderMXBeanProvider$SingleMBeanComponent
+# java/util/Collections$SingletonList
+# java/util/Collections$1
+# java/util/HashMap$HashMapSpliterator
+# java/util/HashMap$ValueSpliterator
+# java/util/stream/ReduceOps$2
+# java/util/stream/ReduceOps$2ReducingSink
+# com/sun/management/internal/HotSpotDiagnostic
+# java/util/Collections$SingletonMap
+# java/util/Collections$2
+# com/sun/management/HotSpotDiagnosticMXBean$ThreadDumpFormat
+# com/sun/management/VMOption
+# com/sun/management/VMOption$Origin
+# javax/management/openmbean/CompositeData
+# com/sun/management/internal/Flag
+# com/sun/management/internal/Flag$1
+# java/lang/invoke/MethodHandles$1
+# java/lang/invoke/BoundMethodHandle$Species_LJ
+# java/lang/invoke/BoundMethodHandle$Species_LLLL
+# java/lang/invoke/BoundMethodHandle$Species_LLLLL
+# java/lang/invoke/WrongMethodTypeException
+# java/util/function/BiPredicate
 # java/util/logging/Handler
 # java/util/logging/Level
 # java/util/logging/Level$KnownLevel
 # java/util/logging/Logger$LoggerBundle
 # java/util/logging/Logger$ConfigurationData
-# java/util/logging/LogManager
 # java/util/logging/LogManager$1
 # java/util/logging/LogManager$LoggerContext
 # java/util/logging/LogManager$SystemLoggerContext
@@ -595,7 +3547,6 @@ opcodes:
 # java/util/logging/Logger$SystemLoggerHelper
 # java/util/logging/Logger$SystemLoggerHelper$1
 # jdk/internal/logger/DefaultLoggerFinder$1
-# java/util/function/BiPredicate
 # java/text/ParseException
 # java/io/UncheckedIOException
 # sun/nio/fs/UnixSecureDirectoryStream
@@ -610,10 +3561,6 @@ opcodes:
 # java/util/regex/Pattern$Ques
 # java/util/regex/Pattern$BranchConn
 # java/util/regex/Pattern$Branch
-# java/lang/invoke/MethodHandles$1
-# java/lang/invoke/BoundMethodHandle$Species_LJ
-# java/lang/invoke/BoundMethodHandle$Species_LLLL
-# java/lang/invoke/BoundMethodHandle$Species_LLLLL
 # java/lang/foreign/Arena
 # java/lang/foreign/SegmentAllocator
 # jdk/internal/foreign/GlobalSession
@@ -641,8 +3588,16 @@ opcodes:
 # jdk/internal/foreign/MemorySessionImpl$ResourceList$ResourceCleanup$1
 # java/lang/foreign/ValueLayout
 # java/lang/foreign/MemoryLayout
-# jdk/internal/foreign/layout/ValueLayouts$OfAddressImpl
+# java/lang/foreign/ValueLayout$OfByte
+# java/lang/foreign/ValueLayout$OfShort
+# java/lang/foreign/ValueLayout$OfInt
+# java/lang/foreign/ValueLayout$OfLong
+# java/lang/foreign/ValueLayout$OfFloat
 # java/lang/foreign/AddressLayout
+# java/lang/foreign/ValueLayout$OfBoolean
+# java/lang/foreign/ValueLayout$OfChar
+# java/lang/foreign/ValueLayout$OfDouble
+# jdk/internal/foreign/layout/ValueLayouts$OfAddressImpl
 # jdk/internal/foreign/layout/ValueLayouts$AbstractValueLayout
 # jdk/internal/foreign/layout/AbstractLayout
 # jdk/internal/foreign/layout/ValueLayouts
@@ -650,93 +3605,21 @@ opcodes:
 # jdk/internal/foreign/Utils
 # jdk/internal/foreign/abi/SharedUtils
 # jdk/internal/foreign/layout/ValueLayouts$OfByteImpl
-# java/lang/foreign/ValueLayout$OfByte
 # jdk/internal/foreign/layout/ValueLayouts$OfBooleanImpl
-# java/lang/foreign/ValueLayout$OfBoolean
 # jdk/internal/foreign/layout/ValueLayouts$OfCharImpl
-# java/lang/foreign/ValueLayout$OfChar
 # jdk/internal/foreign/layout/ValueLayouts$OfShortImpl
-# java/lang/foreign/ValueLayout$OfShort
 # jdk/internal/foreign/layout/ValueLayouts$OfIntImpl
-# java/lang/foreign/ValueLayout$OfInt
 # jdk/internal/foreign/layout/ValueLayouts$OfLongImpl
-# java/lang/foreign/ValueLayout$OfLong
 # jdk/internal/foreign/layout/ValueLayouts$OfFloatImpl
-# java/lang/foreign/ValueLayout$OfFloat
 # jdk/internal/foreign/layout/ValueLayouts$OfDoubleImpl
-# java/lang/foreign/ValueLayout$OfDouble
 # java/lang/invoke/VarHandleSegmentAsBytes
 # java/lang/invoke/VarHandleSegmentViewBase
 # jdk/internal/foreign/Utils$1VarHandleCache
-# java/util/Collections$SingletonMap
 # java/util/Collections$UnmodifiableMap$UnmodifiableEntrySet
 # java/util/Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry
 # java/util/AbstractMap$SimpleImmutableEntry
-# java/util/Collections$SingletonSet
-# java/util/Collections$1
 # java/util/ImmutableCollections$Map1
 # java/security/AccessControlException
-# com/sun/management/HotSpotDiagnosticMXBean
-# java/lang/management/PlatformManagedObject
-# java/lang/management/ManagementFactory
-# javax/management/MBeanServerConnection
-# java/lang/management/ClassLoadingMXBean
-# java/lang/management/MemoryMXBean
-# java/lang/management/ThreadMXBean
-# java/lang/management/RuntimeMXBean
-# java/lang/management/CompilationMXBean
-# java/lang/management/OperatingSystemMXBean
-# javax/management/MBeanServer
-# java/lang/management/ManagementFactory$PlatformMBeanFinder
-# java/lang/management/ManagementFactory$PlatformMBeanFinder$1
-# sun/management/spi/PlatformMBeanProvider
-# com/sun/management/internal/PlatformMBeanProviderImpl
-# com/sun/management/internal/PlatformMBeanProviderImpl$1
-# sun/management/spi/PlatformMBeanProvider$PlatformComponent
-# com/sun/management/internal/PlatformMBeanProviderImpl$2
-# com/sun/management/internal/PlatformMBeanProviderImpl$3
-# com/sun/management/internal/PlatformMBeanProviderImpl$4
-# com/sun/management/internal/DiagnosticCommandImpl
-# com/sun/management/DiagnosticCommandMBean
-# javax/management/DynamicMBean
-# sun/management/NotificationEmitterSupport
-# javax/management/NotificationEmitter
-# javax/management/NotificationBroadcaster
-# sun/management/ManagementFactoryHelper
-# sun/management/VMManagementImpl
-# sun/management/VMManagement
-# com/sun/management/internal/PlatformMBeanProviderImpl$5
-# jdk/management/jfr/internal/FlightRecorderMXBeanProvider
-# java/util/concurrent/Callable
-# java/lang/management/DefaultPlatformMBeanProvider
-# java/lang/management/DefaultPlatformMBeanProvider$1
-# java/lang/management/DefaultPlatformMBeanProvider$2
-# java/lang/management/DefaultPlatformMBeanProvider$3
-# java/lang/management/DefaultPlatformMBeanProvider$4
-# java/lang/management/DefaultPlatformMBeanProvider$5
-# java/lang/management/DefaultPlatformMBeanProvider$6
-# java/lang/management/DefaultPlatformMBeanProvider$7
-# java/lang/management/DefaultPlatformMBeanProvider$8
-# sun/management/ManagementFactoryHelper$LoggingMXBeanAccess
-# sun/management/ManagementFactoryHelper$LoggingMXBeanAccess$1
-# java/lang/management/DefaultPlatformMBeanProvider$9
-# java/lang/management/DefaultPlatformMBeanProvider$10
-# java/lang/management/DefaultPlatformMBeanProvider$11
-# jdk/management/jfr/FlightRecorderMXBean
-# jdk/management/jfr/internal/FlightRecorderMXBeanProvider$SingleMBeanComponent
-# java/util/Collections$SingletonList
-# java/util/HashMap$HashMapSpliterator
-# java/util/HashMap$ValueSpliterator
-# java/util/stream/ReduceOps$2
-# java/util/stream/ReduceOps$2ReducingSink
-# com/sun/management/internal/HotSpotDiagnostic
-# java/util/Collections$2
-# com/sun/management/HotSpotDiagnosticMXBean$ThreadDumpFormat
-# com/sun/management/VMOption
-# com/sun/management/internal/Flag
-# com/sun/management/internal/Flag$1
-# com/sun/management/VMOption$Origin
-# javax/management/openmbean/CompositeData
 # java/lang/invoke/MethodHandleImpl$BindCaller
 # java/lang/invoke/MethodHandleImpl$BindCaller$1
 # java/lang/invoke/MethodHandleImpl$CasesHolder
@@ -750,23 +3633,18 @@ opcodes:
 # java/lang/invoke/MethodHandleImpl$WrappedMember
 # java/util/concurrent/CopyOnWriteArraySet
 # java/lang/invoke/BoundMethodHandle$Species_LLJ
+# java/util/function/IntFunction
+# java/lang/ThreadLocal$SuppliedThreadLocal
 # java/lang/invoke/BoundMethodHandle$Species_LLLJ
-# java/io/PrintWriter
 # java/io/PrintWriter$1
 # jdk/internal/access/JavaIOPrintWriterAccess
 # java/io/StringReader
 # java/lang/reflect/UndeclaredThrowableException
-# java/lang/ArrayIndexOutOfBoundsException
-# java/util/random/RandomGenerator
-# java/util/Random
-# java/util/concurrent/ThreadLocalRandom
-# jdk/internal/util/random/RandomSupport
 # java/nio/charset/CharacterCodingException
 # java/util/stream/IntStream
 # java/util/stream/ReferencePipeline$8
-# java/util/stream/IntPipeline
 # java/util/stream/IntPipeline$StatelessOp
-# java/util/function/IntFunction
+# java/util/stream/IntPipeline
 # java/util/stream/Nodes
 # java/util/stream/Node
 # java/util/stream/Nodes$EmptyNode
@@ -781,8 +3659,8 @@ opcodes:
 # java/util/stream/Nodes$IntSpinedNodeBuilder
 # java/util/stream/Node$Builder$OfInt
 # java/util/stream/Node$Builder
-# java/util/function/IntConsumer
 # java/util/stream/Sink$OfInt
+# java/util/function/IntConsumer
 # java/util/stream/SpinedBuffer$OfInt
 # java/util/stream/SpinedBuffer$OfPrimitive
 # java/util/stream/AbstractSpinedBuffer
@@ -790,6 +3668,11 @@ opcodes:
 # java/util/Spliterators$IntArraySpliterator
 # java/util/stream/IntPipeline$Head
 # java/util/function/ToIntFunction
+# java/util/concurrent/RunnableFuture
+# java/util/concurrent/Future
+# java/util/concurrent/atomic/AtomicBoolean
+# java/util/concurrent/FutureTask
+# java/util/concurrent/FutureTask$WaitNode
 # java/lang/invoke/VarHandleSegmentAsShorts
 # java/util/WeakHashMap$KeyIterator
 # java/util/WeakHashMap$HashIterator
@@ -804,3 +3687,13 @@ opcodes:
 # java/security/GeneralSecurityException
 # sun/security/provider/SHA
 # sun/security/provider/ByteArrayAccess$BE
+# java/util/HashMap$EntrySpliterator
+# java/util/function/ToLongFunction
+# java/util/Collections$ReverseComparator
+# java/util/Comparators$NaturalOrderComparator
+# java/util/Collections$ReverseComparator2
+# java/util/stream/SortedOps
+# java/util/stream/SortedOps$OfRef
+# java/util/stream/ReferencePipeline$StatefulOp
+# java/util/stream/SortedOps$SizedRefSortingSink
+# java/util/stream/SortedOps$AbstractRefSortingSink
