@@ -1,1333 +1,2506 @@
 # These statistics can be generated from a dacapo release using a command line like:
 #    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 1336
-transformed-classes: 873
-transformed-bytecodes: 142121
-executed-bytecodes: 17142858485
+skipped-classes: 1338
+transformed-classes: 882
+transformed-bytecodes: 142272
+executed-bytecodes: 17142856912
 executed-bytecodes-unique: 19274
 executed-bytecodes-p90: 2839
 executed-bytecodes-p99: 21793852
 executed-bytecodes-p999: 122227694
 executed-bytecodes-p9999: 496355838
-executed-calls: 3408615019
+executed-calls: 3408614646
 executed-calls-unique: 3059
 field-dereference-counts:
-  org/apache/logging/log4j/core/util/NetUtils:
-    LOGGER: 1
-  org/dacapo/harness/TestHarness:
-    commandLineArgs: 15
-    config: 10
-    BuildVersion: 4
-    BuildNickName: 1
-  org/apache/logging/log4j/core/util/datetime/FormatCache:
-    cInstanceCache: 3
-    cDateTimeInstanceCache: 1
-  org/apache/commons/cli/PosixParser:
-    tokens: 6
-    eatTheRest: 4
-    options: 3
-    currentOption: 1
-  org/dacapo/harness/Data:
-    DEFAULT_LOCAL_DACAPO_CONFIG: 2
-    DACAPO_CHECKSUM_RE_PATH: 1
-    WORKING_DIRE: 1
-  org/apache/logging/log4j/core/config/plugins/visitors/PluginConfigurationVisitor:
-    conversionType: 3
-  org/apache/logging/log4j/spi/Provider:
-    loggerContextFactoryClass: 7
-    priority: 4
-    versions: 4
-    className: 2
-    threadContextMap: 2
-    threadContextMapClass: 2
-    DEFAULT_PRIORITY: 1
-    LOGGER: 1
-    classLoader: 1
-    url: 1
-  org/apache/logging/log4j/core/layout/AbstractStringLayout:
-    charset: 4
-    headerSerializer: 4
-    footerSerializer: 3
-    textEncoder: 2
-    MAX_STRING_BUILDER_SIZE: 1
-    threadLocal: 1
-  org/apache/logging/log4j/core/jmx/AppenderAdmin:
-    contextName: 2
-    objectName: 2
-    appender: 1
-  org/apache/commons/cli/Option:
-    longOption: 222
-    option: 162
-    values: 71
-    description: 62
-    required: 62
-    argCount: 54
-    type: 31
-    valuesep: 18
-    argName: 14
-  org/apache/logging/log4j/spi/GarbageFreeSortedArrayThreadContextMap:
-    inheritableMap: 2
-    initialCapacity: 2
-  org/apache/logging/log4j/core/config/plugins/visitors/AbstractPluginVisitor:
-    clazz: 70
-    conversionType: 61
-    aliases: 35
-    annotation: 35
-    member: 35
-    substitutor: 35
-    LOGGER: 1
-  org/biojava/nbio/core/sequence/compound/AminoAcidCompoundSet:
-    aminoAcidCompoundCache: 120318782
-    aminoAcidCompoundCache3Letter: 1320197
-    equivalentsCache: 42587
-    aminoAcidCompoundSet: 5679
-  org/apache/logging/log4j/core/jmx/LoggerContextAdmin:
-    objectName: 2
-    LOGGER: 1
-    loggerContext: 1
-    sequenceNo: 1
-  org/apache/logging/log4j/core/appender/ConsoleAppender$FactoryData:
-    layout: 4
-    name: 4
-    os: 4
-  org/apache/logging/log4j/core/config/plugins/visitors/PluginVisitors:
-    LOGGER: 1
-  org/apache/logging/log4j/core/config/LoggerConfig$RootLogger$Builder:
-    config: 3
-    additivity: 1
-    filter: 1
-    includeLocation: 1
-    level: 1
-    levelAndRefs: 1
-    properties: 1
-    refs: 1
-  org/apache/logging/log4j/core/jmx/LoggerConfigAdmin:
-    objectName: 2
-    loggerConfig: 1
-    loggerContext: 1
-  org/biojava/nbio/aaproperties/PeptidePropertiesImpl:
-    cPk: 596302
-    EPSI: 2839
-    MAXLOOP: 2839
-    PH_MAX: 2839
-    PH_MIN: 2839
-    logger: 1
-  org/apache/logging/log4j/core/impl/ThreadContextDataInjector:
-    SERVICE_PROVIDERS: 23
-    contextDataProviders: 23
-    LOGGER: 1
-  com/fasterxml/jackson/databind/util/StdDateFormat:
-    DEFAULT_LOCALE: 4
-    DEFAULT_TIMEZONE: 3
-    DATE_FORMAT_RFC1123: 2
-    ALL_FORMATS: 1
-    CALENDAR: 1
-    PATTERN_ISO8601: 1
-    PATTERN_PLAIN: 1
-    _locale: 1
-    _tzSerializedWithColon: 1
-    instance: 1
-  org/apache/logging/log4j/core/LifeCycle$State:
-    INITIALIZED: 23
-    STARTED: 15
-    STARTING: 11
-    STOPPED: 8
-    STOPPING: 6
-    INITIALIZING: 2
-    $VALUES: 1
-  com/fasterxml/jackson/databind/type/TypeBindings:
-    EMPTY: 12
-    _types: 3
-    NO_STRINGS: 2
-    NO_TYPES: 2
-    _names: 2
-    _hashCode: 1
-    _unboundVariables: 1
-  org/slf4j/helpers/SubstituteLoggerFactory:
-    eventQueue: 3
-    loggers: 3
-    postInitialization: 2
-  org/apache/logging/log4j/core/pattern/FormattingInfo:
-    DEFAULT: 69
-    leftTruncate: 9
-    maxLength: 9
-    zeroPad: 9
-    leftAlign: 7
-    minLength: 7
-    EMPTY_ARRAY: 1
-    SPACES: 1
-    ZEROS: 1
-  com/fasterxml/jackson/core/Base64Variants:
-    MIME: 3
-    MIME_NO_LINEFEEDS: 2
-    MODIFIED_FOR_URL: 1
-    PEM: 1
-  org/dacapo/parser/Config$ThreadModel:
-    PER_CPU: 4
-    SINGLE: 4
-    FIXED: 3
-    description: 3
-    $VALUES: 2
-  com/fasterxml/jackson/databind/util/LRUMap:
-    _map: 2
-    _maxEntries: 2
-  com/fasterxml/jackson/databind/jsontype/impl/LaissezFaireSubTypeValidator:
-    instance: 1
-  org/apache/logging/log4j/core/util/DefaultShutdownCallbackRegistry:
-    state: 4
-    hooks: 3
-    threadFactory: 2
-    LOGGER: 1
-    shutdownHookRef: 1
-  org/apache/logging/log4j/core/jmx/StatusLoggerAdmin:
-    level: 2
-    objectName: 2
-    contextName: 1
-    sequenceNo: 1
-  org/apache/logging/log4j/core/config/plugins/validation/validators/RequiredValidator:
-    annotation: 4
-    LOGGER: 1
-  org/apache/logging/log4j/core/Appender:
-    EMPTY_ARRAY: 1
-  org/apache/logging/log4j/core/util/ShutdownCallbackRegistry:
-    SHUTDOWN_HOOK_MARKER: 1
-  org/dacapo/harness/Callback$Mode:
-    TIMING: 2
-    WARMUP: 2
-    $VALUES: 1
-  org/biojava/nbio/aaproperties/Utils:
-    logger: 1
-  org/apache/logging/log4j/core/config/Node:
-    children: 69
-    attributes: 44
-    type: 41
-    object: 23
-    name: 18
-    parent: 11
-    value: 2
-  org/apache/logging/log4j/core/util/Constants:
-    ENCODER_BYTE_BUFFER_SIZE: 6
-    ENABLE_DIRECT_ENCODERS: 3
-    ENCODER_CHAR_BUFFER_SIZE: 3
-    ENABLE_THREADLOCALS: 1
-    FORMAT_MESSAGES_IN_BACKGROUND: 1
-    FORMAT_MESSAGES_PATTERN_DISABLE_LOOKUPS: 1
-    INITIAL_REUSABLE_MESSAGE_SIZE: 1
-    IS_WEB_APP: 1
-    MAX_REUSABLE_MESSAGE_SIZE: 1
-  org/apache/logging/log4j/core/lookup/StrMatcher$StringMatcher:
-    chars: 229
-  org/apache/logging/log4j/core/pattern/PlainTextRenderer:
-    INSTANCE: 2
-  org/biojava/nbio/core/sequence/template/AbstractSequence:
-    sequenceStorage: 43769400
-    compoundSet: 17034
-    accession: 5678
-    annotationType: 5678
-    bioBegin: 5678
-    bioEnd: 5678
-    comments: 5678
-    databaseReferences: 5678
-    featureRetriever: 5678
-    features: 5678
-    featuresKeyWord: 5678
-    groupedFeatures: 5678
-    notesList: 5678
-    originalHeader: 5678
-    parentSequence: 5678
-    sequenceScore: 5678
-    source: 5678
-    logger: 1
-  org/biojava/nbio/core/sequence/io/GenericFastaHeaderParser:
-    logger: 1
-  com/fasterxml/jackson/core/Base64Variant$PaddingReadBehaviour:
-    PADDING_FORBIDDEN: 3
-    PADDING_REQUIRED: 3
-    PADDING_ALLOWED: 2
-    $VALUES: 1
-  org/apache/logging/log4j/core/util/datetime/FormatCache$MultipartKey:
-    hashCode: 5
-    keys: 2
-  org/apache/logging/log4j/core/pattern/NameAbbreviator$MaxElementAbbreviator:
-    count: 2
-    strategy: 2
-  org/apache/logging/log4j/core/config/ConfigurationSource:
-    source: 15
-    data: 5
-    stream: 4
-    NULL_SOURCE: 3
-    lastModified: 3
-    COMPOSITE_SOURCE: 1
-  org/apache/logging/log4j/core/util/DefaultShutdownCallbackRegistry$RegisteredCancellable:
-    callback: 1
-    registered: 1
-  org/apache/logging/log4j/core/util/datetime/FastDatePrinter$TwoDigitNumberField:
-    mField: 6
-  org/apache/logging/log4j/core/appender/AbstractManager:
-    LOCK: 7
-    count: 7
-    MAP: 6
-    LOGGER: 5
-    name: 5
-    loggerContext: 2
-  org/biojava/nbio/core/sequence/DataSource:
-    LOCAL: 5680
-    DDBJ: 2
-    ENA: 2
-    GENBANK: 2
-    GENERAL: 2
-    GENINFO: 2
-    NBRF: 2
-    NCBI: 2
-    PATENTS: 2
-    PDB1: 2
-    PDB2: 2
-    PDBe: 2
-    PFAM: 2
-    PRF: 2
-    UNIPROT: 2
-    UNKNOWN: 2
-    $VALUES: 1
-  org/dacapo/parser/SimpleCharStream:
-    bufpos: 10899
-    column: 5881
-    inBuf: 2440
-    bufcolumn: 2174
-    bufline: 2174
-    buffer: 2040
-    line: 2015
-    prevCharIsLF: 2014
-    maxNextCharInd: 1955
-    prevCharIsCR: 1912
-    tokenBegin: 1086
-    bufsize: 54
-    available: 5
-    tabSize: 5
-    inputStream: 4
-    trackLineColumn: 1
-  org/apache/logging/log4j/core/util/datetime/FixedDateFormat$FixedTimeZoneFormat:
-    length: 6
-    HH: 3
-    HHCMM: 3
-    HHMM: 3
-    timeSeparatorChar: 3
-    timeSeparatorCharLen: 3
-    useMinutes: 3
-    $VALUES: 1
-  org/apache/logging/log4j/core/util/ClockFactory:
-    LOGGER: 5
-  org/dacapo/harness/LatencyReporter:
-    callback: 2
-    globalIdx: 1
-    timerBase: 1
-  org/apache/logging/log4j/core/pattern/NameAbbreviator$MaxElementAbbreviator$Strategy:
-    RETAIN: 4
-    minCount: 4
-    DROP: 2
-    $VALUES: 1
-  org/apache/logging/log4j/core/util/BasicAuthorizationProvider:
-    PREFIXES: 4
-    LOGGER: 1
-    authString: 1
-  java/util/concurrent/TimeUnit:
-    HOURS: 1
-    MILLISECONDS: 1
-    MINUTES: 1
-  org/apache/logging/log4j/core/LoggerContext$1:
-    this$0: 1
-    val$shutdownTimeoutMillis: 1
-  org/apache/logging/log4j/status/StatusConsoleListener:
-    level: 2
-    filters: 1
-    logger: 1
-    stream: 1
-  org/biojava/nbio/aaproperties/CommandPrompt$PropertyName:
-    A: 2
-    Absorbance_False: 2
-    Absorbance_True: 2
-    ApliphaticIndex: 2
-    AverageHydropathyValue: 2
-    C: 2
-    D: 2
-    E: 2
-    ExtinctionCoefficient_False: 2
-    ExtinctionCoefficient_True: 2
-    F: 2
-    G: 2
-    H: 2
-    I: 2
-    InstabilityIndex: 2
-    IsoelectricPoint: 2
-    K: 2
-    L: 2
-    M: 2
-    MolecularWeight: 2
-    N: 2
-    NetCharge_pH_7: 2
-    P: 2
-    Q: 2
-    R: 2
-    S: 2
-    T: 2
-    V: 2
-    W: 2
-    Y: 2
-    $VALUES: 1
-  org/apache/logging/log4j/status/StatusLogger$BoundedQueue:
-    size: 1
-    this$0: 1
-  java/lang/Long:
-    TYPE: 3
-  org/apache/logging/log4j/core/jmx/ContextSelectorAdmin:
-    objectName: 2
-    selector: 1
-  org/apache/logging/log4j/core/config/plugins/processor/PluginEntry:
-    key: 621
-    className: 452
-    name: 452
-    defer: 238
-    printable: 230
-    category: 226
-  org/apache/logging/log4j/util/LazyUtil:
-    NULL: 71
-  com/fasterxml/jackson/core/Base64Variant:
-    _asciiToBase64: 139
-    _base64ToAsciiC: 138
-    _base64ToAsciiB: 136
-    _paddingReadBehaviour: 6
-    _paddingChar: 5
-    _writePadding: 5
-    _maxLineLength: 4
-    _name: 4
-  org/biojava/nbio/aaproperties/PeptideProperties$SingleLetterAACode:
-    $VALUES: 3
-    A: 2
-    C: 2
-    D: 2
-    E: 2
-    F: 2
-    G: 2
-    H: 2
-    I: 2
-    K: 2
-    L: 2
-    M: 2
-    N: 2
-    P: 2
-    Q: 2
-    R: 2
-    S: 2
-    T: 2
-    V: 2
-    W: 2
-    Y: 2
-  org/apache/logging/log4j/util/PropertySource$Util:
-    CACHE: 725
-    PREFIX_PATTERN: 145
-    PROPERTY_TOKENIZER: 55
-  org/apache/logging/log4j/Level:
-    intLevel: 314
-    TRACE: 122
-    DEBUG: 59
-    LEVELS: 13
-    name: 11
-    standardLevel: 8
-    ALL: 3
-    ERROR: 3
-    OFF: 3
-    WARN: 3
-    EMPTY_ARRAY: 1
-    FATAL: 1
-    INFO: 1
-  org/apache/logging/log4j/internal/LogManagerStatus:
-    initialized: 2
-  com/fasterxml/jackson/databind/type/TypeParser:
-    _factory: 1
-  org/apache/logging/log4j/core/filter/AbstractFilterable:
-    filter: 21
-    propertyArray: 11
-  org/apache/logging/log4j/core/lookup/PropertiesLookup:
-    configurationProperties: 9
-    contextProperties: 9
-  org/slf4j/impl/StaticLoggerBinder:
-    SINGLETON: 9
-    loggerFactory: 8
-    REQUESTED_API_VERSION: 2
-    LOGGER_FACTORY_CLASS_STR: 1
-  org/apache/logging/log4j/message/ParameterizedNoReferenceMessageFactory:
-    INSTANCE: 3
-  com/fasterxml/jackson/databind/introspect/DefaultAccessorNamingStrategy$Provider:
-    _baseNameValidator: 1
-    _getterPrefix: 1
-    _isGetterPrefix: 1
-    _setterPrefix: 1
-    _withPrefix: 1
-  org/apache/commons/cli/CommandLine:
-    options: 64
-    args: 5
-  org/slf4j/helpers/Util:
-    SECURITY_MANAGER_CREATION_ALREADY_ATTEMPTED: 1
-  org/apache/logging/log4j/core/layout/PatternLayout$Builder:
-    pattern: 5
-    alwaysWriteExceptions: 4
-    charset: 4
-    disableAnsi: 4
-    configuration: 3
-    footer: 2
-    header: 2
-    noConsoleNoAnsi: 2
-    patternSelector: 2
-    regexReplacement: 2
-  org/apache/logging/log4j/core/util/CloseShieldOutputStream:
-    delegate: 3
-  org/apache/logging/log4j/spi/AbstractLogger:
-    FQCN: 179
-    DEFAULT_MESSAGE_FACTORY_CLASS: 19
-    name: 17
-    DEFAULT_FLOW_MESSAGE_FACTORY_CLASS: 11
-    flowMessageFactory: 10
-    messageFactory: 10
-    EXCEPTION_MARKER: 3
-    FLOW_MARKER: 3
-    CATCHING_MARKER: 1
-    ENTRY_MARKER: 1
-    EXIT_MARKER: 1
-    THROWING_MARKER: 1
-    logBuilder: 1
-    recursionDepthHolder: 1
-  org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender$Builder:
-    bufferSize: 1
-    bufferedIo: 1
-    immediateFlush: 1
-  org/apache/commons/cli/Options:
-    shortOpts: 71
-    longOpts: 70
-    optionGroups: 4
-    requiredOpts: 3
-  org/apache/logging/log4j/core/async/ThreadNameCachingStrategy:
-    DEFAULT_STRATEGY: 3
-    UNCACHED: 3
-    CACHED: 2
-    LOGGER: 2
-    $VALUES: 1
-    THREADLOCAL_NAME: 1
-  org/apache/logging/slf4j/Log4jMarker:
-    factory: 1
-    marker: 1
-  org/apache/logging/log4j/core/impl/ThreadContextDataInjector$ForCopyOnWriteThreadContextMap:
-    providers: 11
-  org/apache/logging/log4j/core/util/OptionConverter:
-    LOGGER: 1
-  org/apache/logging/log4j/spi/AbstractLoggerAdapter:
-    lock: 17
-    registry: 10
-  org/dacapo/parser/ConfigFileTokenManager:
-    jjnewStateCnt: 9712
-    jjround: 9138
-    curChar: 7859
-    jjstateSet: 6849
-    jjrounds: 6197
-    jjnextStates: 2917
-    input_stream: 2661
-    jjmatchedKind: 1319
-    jjmatchedPos: 802
-    image: 227
-    jjimage: 115
-    jjstrLiteralImages: 115
-    curLexState: 114
-    jjnewLexState: 114
-    jjtoToken: 114
-    jjimageLen: 113
-    debugStream: 1
-    defaultLexState: 1
-    jjbitVec0: 1
-    jjbitVec2: 1
-    jjtoMore: 1
-    jjtoSkip: 1
-    jjtoSpecial: 1
-    lexStateNames: 1
-  org/dacapo/parser/Config$OutputFile:
-    digest: 24
-    text: 21
-    filter: 18
-    bytes: 12
-    existence: 12
-    lines: 12
-    keep: 9
-    name: 9
-    this$0: 9
-  org/apache/logging/log4j/MarkerManager$Log4jMarker:
-    parents: 13
-    name: 9
-  org/apache/logging/log4j/core/pattern/SimpleLiteralPatternConverter$StringValue:
-    literal: 6
-  org/apache/logging/log4j/core/pattern/ThrowablePatternConverter:
-    rawOption: 12
-    options: 6
-    formatters: 2
-    nonStandardLineSeparator: 2
-    subShortOption: 2
-  org/apache/logging/log4j/util/Strings:
-    EMPTY_ARRAY: 3
-    LINE_SEPARATOR: 3
-    tempStr: 1
-  org/apache/logging/log4j/core/lookup/Log4jLookup:
-    LOGGER: 1
-  org/biojava/nbio/core/sequence/io/ProteinSequenceCreator:
-    compoundSet: 2840
-  org/apache/logging/log4j/core/net/JndiManager:
-    FACTORY: 1
-  org/apache/logging/log4j/spi/LoggerRegistry:
-    map: 24
-    DEFAULT_FACTORY_KEY: 22
-    factory: 9
-  org/apache/logging/log4j/core/pattern/DatePatternConverter$CachedTime:
-    epochSecond: 2
-    formatted: 2
-    nanoOfSecond: 2
-    this$0: 2
-  org/apache/logging/slf4j/Log4jLoggerFactory:
-    CALLER_PREDICATE: 8
-    LOGGER: 8
-    markerFactory: 8
-  org/apache/logging/log4j/core/config/xml/XmlConfigurationFactory:
-    SUFFIXES: 6
-  org/apache/logging/log4j/core/config/plugins/visitors/PluginBuilderAttributeVisitor:
-    annotation: 38
-    aliases: 19
-    member: 19
-    substitutor: 19
-  com/fasterxml/jackson/core/StreamReadCapability:
-    _defaultState: 6
-    _mask: 3
-    $VALUES: 2
-    DUPLICATE_PROPERTIES: 2
-    SCALARS_AS_OBJECTS: 2
-    UNTYPED_SCALARS: 2
-  org/slf4j/impl/StaticMarkerBinder:
-    SINGLETON: 3
-    markerFactory: 3
-  org/apache/logging/log4j/core/config/AppenderControlArraySet:
-    appenderArray: 14
-    appenderArrayUpdater: 4
-  org/slf4j/MarkerFactory:
-    MARKER_FACTORY: 2
-  org/apache/logging/log4j/core/layout/PatternLayout$PatternFormatterPatternSerializer:
-    formatters: 9
-  java/lang/Short:
-    TYPE: 3
-  org/apache/logging/log4j/core/lookup/StrMatcher:
-    COMMA_MATCHER: 1
-    DOUBLE_QUOTE_MATCHER: 1
-    NONE_MATCHER: 1
-    QUOTE_MATCHER: 1
-    SINGLE_QUOTE_MATCHER: 1
-    SPACE_MATCHER: 1
-    SPLIT_MATCHER: 1
-    TAB_MATCHER: 1
-    TRIM_MATCHER: 1
-  java/lang/Character:
-    TYPE: 3
-  org/apache/logging/log4j/core/util/datetime/FixedDateFormat:
-    timeZone: 5
-    midnightToday: 4
-    dstOffsets: 3
-    midnightTomorrow: 3
-    secondFractionDigits: 3
-    timeSeparatorChar: 3
-    timeSeparatorLength: 3
-    fastDateFormat: 2
-    fixedTimeZoneFormat: 2
-    length: 2
-    millisSeparatorChar: 2
-    millisSeparatorLength: 2
-    TABLE: 1
-    cachedDate: 1
-    dateLength: 1
-    fixedFormat: 1
-  org/apache/logging/log4j/core/appender/AbstractAppender:
-    layout: 18
-    name: 9
-    handler: 2
-    ignoreExceptions: 2
-  org/biojava/nbio/core/sequence/ProteinSequence:
-    logger: 1
-  org/apache/logging/log4j/core/util/FileUtils:
-    LOGGER: 1
-  org/dacapo/parser/Token:
-    next: 398
-    kind: 313
-    image: 188
-    beginColumn: 114
-    beginLine: 114
-    endColumn: 114
-    endLine: 114
-    specialToken: 114
-  org/dacapo/harness/TeePrintStream:
-    out: 6
-  org/biojava/nbio/core/sequence/template/AbstractCompound:
-    base: 497633478
-    longName: 3832890
-    description: 2555280
-    molecularWeight: 2555280
-    shortName: 2555280
-    upperedBase: 1277640
-  java/lang/Byte:
-    TYPE: 3
-  org/apache/logging/log4j/util/OsgiServiceLocator:
-    OSGI_AVAILABLE: 9
-  com/fasterxml/jackson/core/util/JacksonFeatureSet:
-    _enabled: 1
-  org/apache/logging/log4j/core/lookup/JavaLookup:
-    spLookup: 9
-  org/apache/logging/log4j/core/pattern/LoggerPatternConverter:
-    INSTANCE: 1
-  org/apache/logging/log4j/core/appender/ConsoleAppender$Builder:
-    target: 4
-    follow: 2
-    direct: 1
-  org/apache/logging/log4j/core/util/datetime/FastDatePrinter$Rule:
-    EMPTY_ARRAY: 1
-  org/apache/logging/log4j/core/config/AppenderControl:
-    appender: 9
-    EMPTY_ARRAY: 6
-    appenderName: 2
-    intLevel: 2
-    level: 2
-    recursive: 2
-  org/apache/logging/log4j/core/appender/DefaultErrorHandler:
-    EXCEPTION_INTERVAL_NANOS: 3
-    appender: 2
-    exceptionCount: 2
-    lastExceptionInstantNanos: 2
-    LOGGER: 1
-  org/biojava/nbio/aaproperties/PeptideProperties:
-    standardAASet: 43596222
-    logger: 1
-  javax/xml/bind/DatatypeConverter:
-    theConverter: 12
-    SET_DATATYPE_CONVERTER_PERMISSION: 1
-  java/lang/Integer:
-    TYPE: 3
-  org/apache/logging/log4j/core/lookup/StrSubstitutor:
-    configuration: 25
-    enableSubstitutionInVariables: 25
-    escapeChar: 22
-    prefixMatcher: 22
-    suffixMatcher: 22
-    valueDelimiterMatcher: 22
-    variableResolver: 20
-    valueDelimiterString: 14
-    valueEscapeDelimiterMatcher: 14
-    DEFAULT_PREFIX: 9
-    DEFAULT_SUFFIX: 9
-    DEFAULT_VALUE_DELIMITER: 9
-    DEFAULT_VALUE_ESCAPE_DELIMITER: 9
-  org/biojava/nbio/aaproperties/Constraints:
-    aa2MolecularWeight: 78274899
-    aa2Hydrophathicity: 26091647
-    diAA2Instability: 23710315
-    aa2ExtinctionCoefficient: 28394
-    aa2CTerminalPka: 21
-    aa2NTerminalPka: 21
-    aaSet: 21
-    aa2PKa: 8
-    C: 7
-    Y: 7
-    D: 6
-    E: 6
-    H: 6
-    K: 6
-    R: 6
-    W: 6
-    A: 5
-    F: 5
-    G: 5
-    I: 5
-    L: 5
-    M: 5
-    N: 5
-    P: 5
-    Q: 5
-    S: 5
-    T: 5
-    V: 5
-  org/apache/logging/log4j/core/config/Loggers:
-    root: 3
-    map: 2
-  org/apache/logging/log4j/core/pattern/PatternParser$ParserState:
-    CONVERTER_STATE: 3
-    DOT_STATE: 3
-    LITERAL_STATE: 3
-    MAX_STATE: 3
-    MIN_STATE: 3
-    $VALUES: 2
-  org/apache/logging/log4j/core/lookup/StrMatcher$CharSetMatcher:
-    chars: 4
-  org/apache/logging/log4j/spi/StandardLevel:
-    intLevel: 59
-    OFF: 11
-    LEVELSET: 9
-    ALL: 3
-    DEBUG: 3
-    ERROR: 3
-    FATAL: 3
-    INFO: 3
-    TRACE: 3
-    WARN: 3
-    $VALUES: 2
-  org/apache/logging/log4j/core/pattern/MessagePatternConverter$SimpleMessagePatternConverter:
-    INSTANCE: 3
-  org/apache/logging/log4j/core/config/plugins/visitors/PluginElementVisitor:
-    conversionType: 28
-    annotation: 11
-  org/dacapo/harness/Benchmark:
-    stats: 48
-    config: 29
-    scratch: 10
-    data: 9
-    verbose: 9
-    err: 7
-    out: 7
-    validateOutput: 7
-    validationReport: 6
-    datDeps: 5
-    iteration: 5
-    loader: 4
-    printStats: 4
-    savedErr: 4
-    savedOut: 4
-    silentErr: 4
-    silentOut: 4
-    jarDeps: 3
-    preIterationGC: 3
-    preserve: 3
-    savedSystemProperties: 3
-    timeoutDialation: 3
-    validate: 3
-    watchdog: 3
-    dumpLatencyCSV: 2
-    dumpLatencyHDR: 2
-    dumpLatencySmoothing: 2
-    iterations: 2
-    latencyBaseFileName: 2
-    savedClassLoader: 2
-    dataSet: 1
-    valRepFile: 1
-  org/slf4j/LoggerFactory:
-    INITIALIZATION_STATE: 19
-    DETECT_LOGGER_NAME_MISMATCH: 8
-    SUBST_FACTORY: 6
-    API_COMPATIBILITY_LIST: 2
-    STATIC_LOGGER_BINDER_PATH: 2
-    NOP_FALLBACK_FACTORY: 1
-  org/apache/logging/log4j/core/util/DummyNanoClock:
-    fixedNanoTime: 4
-  org/apache/logging/log4j/core/config/plugins/convert/TypeConverterRegistry:
-    registry: 92
-    INSTANCE: 23
-    INSTANCE_LOCK: 3
-    LOGGER: 2
-  org/apache/logging/log4j/core/config/status/StatusConfiguration$Verbosity:
-    QUIET: 4
-    VERBOSE: 2
-    $VALUES: 1
-  org/apache/logging/log4j/util/LazyUtil$SafeLazy:
-    value: 72
-    lock: 4
-    supplier: 3
-  org/apache/logging/log4j/core/lookup/ResourceBundleLookup:
-    LOGGER: 1
-    LOOKUP: 1
-  com/fasterxml/jackson/databind/JavaType:
-    _asStatic: 9
-    _class: 9
-    _hash: 9
-    _typeHandler: 9
-    _valueHandler: 9
-  org/apache/logging/log4j/core/pattern/DatePatternConverter$PatternFormatter:
-    fastDateFormat: 2
-    cachedBuffer: 1
-  org/apache/logging/log4j/core/config/plugins/visitors/PluginAttributeVisitor:
-    conversionType: 34
-    annotation: 6
-    substitutor: 4
-    aliases: 2
-  java/io/File:
-    separator: 2
-  org/apache/logging/log4j/core/config/ConfigurationFactory$Factory:
-    substitutor: 2
-  org/apache/logging/log4j/util/PropertiesPropertySource:
-    properties: 516
-    priority: 15
-  com/fasterxml/jackson/databind/ext/Java7Support:
-    IMPL: 2
-  org/dacapo/parser/Config$Size:
-    outputFiles: 58
-    this$0: 12
-    threadLimit: 6
-    args: 4
-    nThreads: 3
-    name: 3
-  org/apache/logging/log4j/status/SimpleLoggerFactory:
-    INSTANCE: 3
-  com/fasterxml/jackson/databind/type/TypeBase:
-    _bindings: 9
-    _superClass: 9
-    _superInterfaces: 9
-    NO_BINDINGS: 1
-    NO_TYPES: 1
-  org/apache/logging/log4j/core/lookup/SystemPropertiesLookup:
-    LOGGER: 1
-    LOOKUP: 1
-  org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender:
-    manager: 5
-    immediateFlush: 2
-    LOGGER: 1
-  org/apache/logging/log4j/core/util/WatchManager$LocalUUID:
-    COUNT: 7
-  org/apache/logging/log4j/core/config/ConfigurationScheduler:
-    SIMPLE_NAME: 4
-    name: 3
-    scheduledItems: 3
-    LOGGER: 1
-    executorService: 1
-  javax/xml/bind/DatatypeConverterImpl:
-    hexCode: 161
-    $assertionsDisabled: 1
-    datatypeFactory: 1
-    decodeMap: 1
-    encodeMap: 1
-    theInstance: 1
-  org/apache/logging/log4j/util/Constants:
-    EMPTY_BYTE_ARRAY: 3
-    ENABLE_THREADLOCALS: 3
-    IS_WEB_APP: 3
-    JAVA_MAJOR_VERSION: 3
-    EMPTY_OBJECT_ARRAY: 1
-    MAX_REUSABLE_MESSAGE_SIZE: 1
-  org/apache/logging/log4j/core/pattern/PatternParser$1:
-    $SwitchMap$org$apache$logging$log4j$core$pattern$PatternParser$ParserState: 6
-  org/apache/logging/log4j/core/config/AppenderRef:
-    ref: 3
-    filter: 2
-    level: 2
-    LOGGER: 1
-  com/fasterxml/jackson/databind/ext/Java7SupportImpl:
-    _bogus: 1
-  java/lang/Double:
-    TYPE: 3
-  org/apache/logging/log4j/core/Logger$PrivateConfig:
-    loggerConfig: 21
-    loggerConfigLevel: 14
-    config: 7
-    intLevel: 7
-    logger: 7
-    requiresLocation: 7
-    this$0: 7
-  java/lang/System:
-    out: 8
-    err: 6
-  org/apache/logging/log4j/util/StringBuilders:
-    dateClass: 1
-    timeClass: 1
-  org/apache/logging/log4j/core/pattern/DatePatternConverter:
-    formatter: 4
-    cachedTime: 2
-    options: 2
-    threadLocalFormatter: 2
-    threadLocalMutableInstant: 2
-  java/lang/Boolean:
-    TYPE: 3
-  org/biojava/nbio/core/sequence/compound/AminoAcidCompound:
-    compoundSet: 1277640
-  org/apache/logging/log4j/core/config/AwaitCompletionReliabilityStrategy:
-    shutdownLock: 2
-    counter: 1
-    loggerConfig: 1
-    noLogEvents: 1
-    shutdown: 1
-  org/apache/logging/log4j/core/pattern/PatternFormatter:
-    converter: 99
-    field: 32
-    skipFormattingInfo: 22
-    EMPTY_ARRAY: 1
-  org/apache/logging/log4j/util/StackLocatorUtil:
-    stackLocator: 9
-  org/biojava/nbio/core/sequence/template/AbstractSequence$AnnotationType:
-    UNKNOWN: 5680
-    CURATED: 2
-    PREDICTED: 2
-    $VALUES: 1
-  org/apache/logging/log4j/core/config/status/StatusConfiguration:
-    status: 6
-    errorMessages: 3
-    logger: 3
-    DEFAULT_STATUS: 2
-    DEFAULT_STREAM: 2
-    DEFAULT_VERBOSITY: 2
-    destination: 2
-    initialized: 2
-    verboseClasses: 2
-    verbosity: 2
-  org/apache/commons/cli/Parser:
-    options: 7
-    cmd: 4
-    requiredOptions: 2
-  org/apache/commons/cli/Util:
-    EMPTY_STRING_ARRAY: 2
-  org/apache/logging/log4j/core/pattern/SimpleLiteralPatternConverter$Space:
-    INSTANCE: 3
-  org/apache/logging/log4j/core/config/LoggerConfig$LevelAndRefs:
-    level: 1
-    refs: 1
-  org/dacapo/parser/ConfigFile:
-    token: 780
-    jj_ntk: 350
-    jj_gen: 257
-    token_source: 115
-    jj_nt: 86
-    jj_la1: 50
-    jj_input_stream: 2
-    jj_expentries: 1
-    jj_kind: 1
-    jj_la1_0: 1
-    jj_la1_1: 1
-  org/apache/logging/log4j/core/util/datetime/FixedDateFormat$FixedFormat:
-    pattern: 68
-    datePattern: 22
-    escapeCount: 22
-    extraTimeZoneFormatLength: 22
-    fixedTimeZoneFormat: 22
-    millisSeparatorChar: 22
-    millisSeparatorLength: 22
-    secondFractionDigits: 22
-    timeSeparatorChar: 22
-    timeSeparatorLength: 22
-    $VALUES: 4
-    MILLI_FRACTION_DIGITS: 3
-    ABSOLUTE: 2
-    ABSOLUTE_MICROS: 2
-    ABSOLUTE_NANOS: 2
-    ABSOLUTE_PERIOD: 2
-    COMPACT: 2
-    DATE: 2
-    DATE_PERIOD: 2
-    DEFAULT: 2
-    DEFAULT_MICROS: 2
-    DEFAULT_NANOS: 2
-    DEFAULT_PERIOD: 2
-    ISO8601: 2
-    ISO8601_BASIC: 2
-    ISO8601_BASIC_PERIOD: 2
-    ISO8601_OFFSET_DATE_TIME_HH: 2
-    ISO8601_OFFSET_DATE_TIME_HHCMM: 2
-    ISO8601_OFFSET_DATE_TIME_HHMM: 2
-    ISO8601_PERIOD: 2
-    ISO8601_PERIOD_MICROS: 2
-    US_MONTH_DAY_YEAR2_TIME: 2
-    US_MONTH_DAY_YEAR4_TIME: 2
-    EMPTY_RANGE: 1
-  org/apache/logging/log4j/core/lookup/JmxRuntimeInputArgumentsLookup:
-    JMX_SINGLETON: 1
-  org/apache/logging/log4j/core/lookup/MapLookup:
-    map: 29
-  org/apache/logging/log4j/core/config/OrderComparator:
-    INSTANCE: 2
-  org/dacapo/harness/Callback$1:
-    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
-  org/apache/logging/log4j/core/config/json/JsonConfigurationFactory:
-    SUFFIXES: 6
-    dependencies: 2
-    isActive: 1
-  org/apache/logging/log4j/util/ServiceLoaderUtil$ServiceLoaderSpliterator:
-    serviceIterator: 88
-    logger: 8
-    serviceName: 8
-  org/apache/logging/log4j/core/appender/ConsoleAppender$Target:
-    $VALUES: 2
-    SYSTEM_ERR: 2
-    SYSTEM_OUT: 2
-  org/biojava/nbio/core/sequence/storage/ArrayListSequenceReader:
-    parsedCompounds: 65483760
-    compoundSet: 43599060
-    hashcode: 11356
-  org/dacapo/harness/CommandLineArgs:
-    OPTIONS: 125
-    line: 42
-    options: 33
-    $assertionsDisabled: 32
-    visibleOptions: 31
-    callback: 6
-    benchmarks: 3
-    parser: 2
-  org/apache/logging/log4j/core/pattern/DatePatternConverter$FixedFormatter:
-    fixedDateFormat: 2
-    cachedBuffer: 1
-    length: 1
-  org/apache/logging/log4j/core/config/plugins/processor/PluginCache:
-    categories: 10
-  org/apache/logging/log4j/simple/SimpleLogger:
-    level: 118
-    dateFormatter: 2
-    logName: 2
-    showContextMap: 2
-    showDateTime: 2
-    stream: 2
-  org/apache/logging/log4j/core/util/Log4jThreadFactory:
-    FACTORY_NUMBER: 2
-    THREAD_NUMBER: 1
-    daemon: 1
-    group: 1
-    priority: 1
-    threadNamePrefix: 1
-  org/apache/logging/log4j/core/config/yaml/YamlConfigurationFactory:
-    SUFFIXES: 6
-    dependencies: 2
-    LOGGER: 1
-    isActive: 1
-  org/apache/logging/log4j/core/util/datetime/FastDateFormat:
-    cache: 2
-    printer: 2
-  org/apache/logging/log4j/core/layout/PatternLayout:
-    eventSerializer: 16
-    conversionPattern: 3
-    patternSelector: 3
-  org/apache/logging/log4j/core/config/plugins/util/PluginRegistry:
-    INSTANCE: 32
-    pluginsByCategoryRef: 17
-    pluginsByCategoryByBundleId: 16
-    INSTANCE_LOCK: 2
-    LOGGER: 2
-    pluginsByCategoryByPackage: 1
-  org/apache/logging/log4j/core/util/Loader:
-    LOGGER: 94
-  org/apache/logging/log4j/spi/CopyOnWriteSortedArrayThreadContextMap:
-    inheritableMap: 3
-    EMPTY_CONTEXT_DATA: 2
-    initialCapacity: 2
-    localMap: 1
-  org/apache/logging/log4j/util/PropertiesUtil$Environment:
-    sources: 372
-    literal: 108
-    tokenized: 104
-  org/apache/logging/log4j/core/config/plugins/convert/TypeConverters:
-    LOGGER: 1
-  org/apache/logging/log4j/core/lookup/MainMapLookup:
-    MAIN_SINGLETON: 1
-  org/apache/logging/log4j/core/util/Source:
-    location: 5
-    uri: 4
-    file: 3
-    LOGGER: 2
-  org/apache/logging/log4j/core/config/plugins/util/PluginType:
-    pluginEntry: 637
-    pluginClass: 518
-    elementName: 242
-  java/util/Locale:
-    ROOT: 329
-    US: 1
-  java/lang/StackWalker$Option:
-    RETAIN_CLASS_REFERENCE: 1
-  org/apache/logging/log4j/core/pattern/AbstractPatternConverter:
-    name: 18
-    style: 18
-    LOGGER: 1
-  org/apache/logging/log4j/core/appender/AbstractAppender$Builder:
-    ignoreExceptions: 2
-    layout: 2
-    name: 2
-  org/apache/logging/log4j/message/DefaultFlowMessageFactory:
-    entryText: 10
-    exitText: 10
-    messageFactory: 10
-  org/apache/logging/log4j/core/pattern/LineSeparatorPatternConverter:
-    INSTANCE: 3
-  org/apache/logging/log4j/util/ProviderUtil:
-    PROVIDERS: 6
-    instance: 6
-    STARTUP_LOCK: 3
-    COMPATIBLE_API_VERSIONS: 2
-    LOGGER: 1
-  org/apache/logging/log4j/spi/LoggerContext:
-    EMPTY_ARRAY: 1
-  com/fasterxml/jackson/core/JsonParser:
-    DEFAULT_READ_CAPABILITIES: 1
-  org/dacapo/parser/Config:
-    sizes: 64
-    threadModel: 15
-    desc: 9
-    name: 5
-    className: 4
-    threadCountOverride: 2
-  org/dacapo/parser/Config$1:
-    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 9
-  com/fasterxml/jackson/databind/cfg/BaseSettings:
-    DEFAULT_TIMEZONE: 1
-    _accessorNaming: 1
-    _annotationIntrospector: 1
-    _classIntrospector: 1
-    _dateFormat: 1
-    _defaultBase64: 1
-    _handlerInstantiator: 1
-    _locale: 1
-    _propertyNamingStrategy: 1
-    _timeZone: 1
-    _typeFactory: 1
-    _typeResolverBuilder: 1
-    _typeValidator: 1
-  org/apache/logging/log4j/core/AbstractLifeCycle:
-    state: 60
-    DEFAULT_STOP_TIMEUNIT: 2
-    LOGGER: 1
-  org/apache/logging/log4j/core/util/datetime/FastDatePrinter$CharacterLiteral:
-    mValue: 4
-  org/apache/logging/log4j/core/config/plugins/convert/EnumConverter:
-    clazz: 2
-  org/apache/logging/log4j/util/LoaderUtil:
-    GET_CLASS_LOADER_DISABLED: 62
-    GET_CLASS_LOADER: 56
-    TCCL_GETTER: 56
-    ignoreTCCL: 25
-  org/apache/logging/log4j/ThreadContext$EmptyThreadContextStack:
-    EMPTY_ITERATOR: 1
-  org/dacapo/harness/TeeOutputStream:
-    log: 1579
-    toScreen: 525
-    logFile: 6
-    version: 2
-  org/apache/logging/log4j/util/SortedArrayStringMap:
-    EMPTY: 3
-    PUT_ALL: 1
-    immutable: 1
-    keys: 1
-    threshold: 1
-    values: 1
-  org/apache/logging/log4j/core/lookup/DateLookup:
-    LOGGER: 1
-    LOOKUP: 1
-  org/apache/logging/log4j/util/PropertiesUtil:
-    environment: 105
-    COMPONENT_PROPERTIES: 71
-  org/apache/logging/log4j/core/pattern/ThreadNamePatternConverter:
-    INSTANCE: 3
-  org/apache/logging/log4j/core/layout/StringBuilderEncoder:
-    byteBufferSize: 2
-    charBufferSize: 2
-    charset: 2
-    threadLocal: 2
-  org/apache/logging/log4j/util/StackLocator:
-    WALKER: 8
-    INSTANCE: 2
-    STACK_WALKER: 1
-  org/apache/logging/log4j/core/pattern/NamePatternConverter:
-    abbreviator: 3
-  org/apache/logging/log4j/core/lookup/AbstractConfigurationAwareLookup:
-    configuration: 4
-  org/apache/logging/log4j/core/config/plugins/util/PluginManager:
-    plugins: 52
-    category: 47
-    PACKAGES: 31
-    LOGGER: 16
-  java/lang/Float:
-    TYPE: 3
-  org/apache/logging/log4j/core/pattern/LevelPatternConverter:
-    INSTANCE: 3
-  org/apache/logging/log4j/core/lookup/ContextMapLookup:
-    injector: 9
-  org/apache/logging/log4j/status/StatusLogger:
-    listeners: 183
-    DEBUG_ENABLED: 180
-    logger: 117
-    listenersLevel: 65
-    STATUS_LOGGER: 56
-    PROPS: 7
-    listenersLock: 5
-    DEFAULT_STATUS_LEVEL: 2
-    MAX_ENTRIES: 2
-    messages: 1
-    msgLock: 1
-  org/apache/logging/log4j/core/config/DefaultReliabilityStrategy:
-    loggerConfig: 3
-  com/fasterxml/jackson/databind/util/ClassUtil:
-    CLS_OBJECT: 1
-    EMPTY_ITERATOR: 1
-    NO_ANNOTATIONS: 1
-    NO_CTORS: 1
-  org/apache/logging/log4j/core/selector/ClassLoaderContextSelector:
-    CONTEXT_MAP: 12
-    LOGGER: 1
-    defaultLoggerContext: 1
-  org/dacapo/harness/BioJava:
-    args: 2
-    method: 2
-    config: 1
-    data: 1
-    loader: 1
-    scratch: 1
-  org/dacapo/harness/CommandLineArgs$Methodology:
-    ITERATE: 5
-    CONVERGE: 3
-    $VALUES: 2
-  org/apache/logging/log4j/core/layout/AbstractLayout:
-    header: 4
-    footer: 3
-    configuration: 2
-    LOGGER: 1
-  org/apache/logging/log4j/core/filter/AbstractFilterable$Builder:
-    filter: 1
-    propertyArray: 1
-  org/apache/logging/log4j/MarkerManager:
-    MARKERS: 30
-  org/apache/logging/log4j/core/time/MutableInstant:
-    epochSecond: 8
-    nanoOfSecond: 8
-  org/apache/logging/log4j/core/appender/OutputStreamManager:
-    layout: 8
-    outputStream: 4
-    byteBuffer: 3
-    LOGGER: 1
-    skipFooter: 1
-  org/apache/logging/log4j/core/util/ExecutorServices:
-    LOGGER: 1
-  org/apache/logging/log4j/core/pattern/NameAbbreviator:
-    DEFAULT: 2
-  org/apache/logging/log4j/message/ReusableMessageFactory:
-    threadLocalObjectMessage: 18
-    threadLocalParameterized: 18
-    threadLocalSimpleMessage: 18
-    INSTANCE: 1
-  org/apache/logging/log4j/core/config/Property:
-    EMPTY_ARRAY: 20
-    LOGGER: 1
-  org/apache/logging/log4j/core/lookup/StrMatcher$CharMatcher:
-    ch: 5
-  org/biojava/nbio/core/sequence/AccessionID:
-    id: 8517
-    source: 5678
-    identifier: 2839
-  org/biojava/nbio/aaproperties/xml/CaseFreeAminoAcidCompoundSet:
-    aminoAcidCompoundCache: 21793915
-    aminoAcidCompoundSet: 2
-    equivalentsCache: 1
-  org/biojava/nbio/core/sequence/io/BufferedReaderBytesRead:
-    nChars: 22070673
-    cb: 22062306
-    nextChar: 55896
-    bytesRead: 28392
-    skipLF: 14049
-    in: 8376
-    lock: 5680
-    markedChar: 2694
-    markedSkipLF: 1
-    readAheadLimit: 1
-  org/apache/logging/log4j/spi/DefaultThreadContextMap:
-    inheritableMap: 2
+  org.apache.logging.log4j.core.config.plugins.visitors.PluginBuilderAttributeVisitor:
+    annotation:
+      offset: 16
+      deref-count: 38
+    substitutor:
+      offset: 28
+      deref-count: 19
+    member:
+      offset: 32
+      deref-count: 19
+  org.apache.logging.log4j.core.util.datetime.FixedDateFormat$FixedFormat:
+    pattern:
+      offset: 48
+      deref-count: 68
+    fixedTimeZoneFormat:
+      offset: 56
+      deref-count: 22
+    datePattern:
+      offset: 52
+      deref-count: 22
+    ABSOLUTE_MICROS:
+      offset: 116
+      deref-count: 2
+    DEFAULT_NANOS:
+      offset: 148
+      deref-count: 2
+    ISO8601_OFFSET_DATE_TIME_HHCMM:
+      offset: 176
+      deref-count: 2
+    DATE_PERIOD:
+      offset: 136
+      deref-count: 2
+    DEFAULT_MICROS:
+      offset: 144
+      deref-count: 2
+    DEFAULT_PERIOD:
+      offset: 152
+      deref-count: 2
+    ABSOLUTE_PERIOD:
+      offset: 124
+      deref-count: 2
+    ISO8601_PERIOD_MICROS:
+      offset: 184
+      deref-count: 2
+    ABSOLUTE:
+      offset: 112
+      deref-count: 2
+    COMPACT:
+      offset: 128
+      deref-count: 2
+    DATE:
+      offset: 132
+      deref-count: 2
+    ISO8601_OFFSET_DATE_TIME_HHMM:
+      offset: 172
+      deref-count: 2
+    ISO8601_OFFSET_DATE_TIME_HH:
+      offset: 168
+      deref-count: 2
+    US_MONTH_DAY_YEAR4_TIME:
+      offset: 192
+      deref-count: 2
+    ABSOLUTE_NANOS:
+      offset: 120
+      deref-count: 2
+    ISO8601:
+      offset: 164
+      deref-count: 2
+    ISO8601_PERIOD:
+      offset: 180
+      deref-count: 2
+    US_MONTH_DAY_YEAR2_TIME:
+      offset: 188
+      deref-count: 2
+    ISO8601_BASIC:
+      offset: 156
+      deref-count: 2
+    DEFAULT:
+      offset: 140
+      deref-count: 2
+    ISO8601_BASIC_PERIOD:
+      offset: 160
+      deref-count: 2
+  org.biojava.nbio.core.sequence.DataSource:
+    LOCAL:
+      offset: 168
+      deref-count: 5680
+    PDB2:
+      offset: 136
+      deref-count: 2
+    UNIPROT:
+      offset: 160
+      deref-count: 2
+    PRF:
+      offset: 128
+      deref-count: 2
+    PDB1:
+      offset: 132
+      deref-count: 2
+    PFAM:
+      offset: 164
+      deref-count: 2
+    NBRF:
+      offset: 124
+      deref-count: 2
+    GENERAL:
+      offset: 152
+      deref-count: 2
+    GENBANK:
+      offset: 112
+      deref-count: 2
+    PDBe:
+      offset: 140
+      deref-count: 2
+    PATENTS:
+      offset: 144
+      deref-count: 2
+    DDBJ:
+      offset: 120
+      deref-count: 2
+    GENINFO:
+      offset: 148
+      deref-count: 2
+    NCBI:
+      offset: 156
+      deref-count: 2
+    ENA:
+      offset: 116
+      deref-count: 2
+    UNKNOWN:
+      offset: 172
+      deref-count: 2
+  org.apache.logging.log4j.core.appender.DefaultErrorHandler:
+    appender:
+      offset: 24
+      deref-count: 2
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.OrderComparator:
+    INSTANCE:
+      offset: 112
+      deref-count: 2
+  java.lang.Integer:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  org.apache.logging.log4j.core.config.Node:
+    children:
+      offset: 32
+      deref-count: 69
+    attributes:
+      offset: 28
+      deref-count: 44
+    type:
+      offset: 24
+      deref-count: 41
+    object:
+      offset: 36
+      deref-count: 23
+    name:
+      offset: 16
+      deref-count: 18
+    parent:
+      offset: 12
+      deref-count: 11
+    value:
+      offset: 20
+      deref-count: 2
+  org.apache.logging.log4j.core.appender.AbstractAppender$Builder:
+    layout:
+      offset: 24
+      deref-count: 2
+    name:
+      offset: 28
+      deref-count: 2
+  java.lang.Long:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  org.apache.logging.log4j.core.pattern.DatePatternConverter:
+    formatter:
+      offset: 36
+      deref-count: 4
+    threadLocalMutableInstant:
+      offset: 24
+      deref-count: 2
+    threadLocalFormatter:
+      offset: 28
+      deref-count: 2
+    cachedTime:
+      offset: 32
+      deref-count: 2
+  org.biojava.nbio.aaproperties.PeptideProperties:
+    standardAASet:
+      offset: 116
+      deref-count: 43596222
+    logger:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.status.StatusConfiguration:
+    status:
+      offset: 28
+      deref-count: 6
+    errorMessages:
+      offset: 16
+      deref-count: 3
+    logger:
+      offset: 20
+      deref-count: 3
+    DEFAULT_STREAM:
+      offset: 112
+      deref-count: 2
+    DEFAULT_STATUS:
+      offset: 116
+      deref-count: 2
+    destination:
+      offset: 24
+      deref-count: 2
+    DEFAULT_VERBOSITY:
+      offset: 120
+      deref-count: 2
+    verbosity:
+      offset: 32
+      deref-count: 2
+  com.fasterxml.jackson.databind.type.TypeBase:
+    _bindings:
+      offset: 40
+      deref-count: 9
+    _superClass:
+      offset: 32
+      deref-count: 9
+    NO_BINDINGS:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.jmx.LoggerConfigAdmin:
+    objectName:
+      offset: 20
+      deref-count: 2
+    loggerConfig:
+      offset: 16
+      deref-count: 1
+    loggerContext:
+      offset: 12
+      deref-count: 1
+  org.biojava.nbio.aaproperties.Utils:
+    logger:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.status.StatusConsoleListener:
+    level:
+      offset: 12
+      deref-count: 2
+    stream:
+      offset: 20
+      deref-count: 1
+    logger:
+      offset: 24
+      deref-count: 1
+  org.dacapo.harness.CommandLineArgs$Methodology:
+    ITERATE:
+      offset: 112
+      deref-count: 5
+    CONVERGE:
+      offset: 116
+      deref-count: 3
+  org.apache.logging.log4j.core.jmx.AppenderAdmin:
+    contextName:
+      offset: 12
+      deref-count: 2
+    objectName:
+      offset: 20
+      deref-count: 2
+    appender:
+      offset: 16
+      deref-count: 1
+  org.apache.logging.log4j.core.config.plugins.validation.validators.RequiredValidator:
+    annotation:
+      offset: 12
+      deref-count: 4
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.lookup.PropertiesLookup:
+    contextProperties:
+      offset: 12
+      deref-count: 9
+    configurationProperties:
+      offset: 16
+      deref-count: 9
+  org.apache.logging.log4j.core.appender.OutputStreamManager:
+    layout:
+      offset: 28
+      deref-count: 8
+    outputStream:
+      offset: 36
+      deref-count: 4
+    byteBuffer:
+      offset: 32
+      deref-count: 3
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.ConfigurationSource:
+    source:
+      offset: 36
+      deref-count: 15
+    stream:
+      offset: 12
+      deref-count: 4
+    NULL_SOURCE:
+      offset: 112
+      deref-count: 3
+    COMPOSITE_SOURCE:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.core.util.datetime.FixedDateFormat$FixedTimeZoneFormat:
+    HH:
+      offset: 112
+      deref-count: 3
+    HHMM:
+      offset: 116
+      deref-count: 3
+    HHCMM:
+      offset: 120
+      deref-count: 3
+  org.apache.logging.log4j.core.config.plugins.visitors.AbstractPluginVisitor:
+    clazz:
+      offset: 12
+      deref-count: 70
+    conversionType:
+      offset: 24
+      deref-count: 61
+    annotation:
+      offset: 16
+      deref-count: 35
+    substitutor:
+      offset: 28
+      deref-count: 35
+    member:
+      offset: 32
+      deref-count: 35
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  com.fasterxml.jackson.databind.type.TypeParser:
+    _factory:
+      offset: 12
+      deref-count: 1
+  org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry$RegisteredCancellable:
+    callback:
+      offset: 12
+      deref-count: 1
+    registered:
+      offset: 16
+      deref-count: 1
+  org.apache.logging.log4j.core.util.datetime.FastDateFormat:
+    cache:
+      offset: 112
+      deref-count: 2
+    printer:
+      offset: 12
+      deref-count: 2
+  org.apache.logging.log4j.core.lookup.ResourceBundleLookup:
+    LOOKUP:
+      offset: 116
+      deref-count: 1
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.util.CloseShieldOutputStream:
+    delegate:
+      offset: 12
+      deref-count: 3
+  javax.xml.bind.DatatypeConverterImpl:
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
+  org.apache.logging.log4j.util.ServiceLoaderUtil$ServiceLoaderSpliterator:
+    serviceIterator:
+      offset: 12
+      deref-count: 88
+    logger:
+      offset: 16
+      deref-count: 8
+    serviceName:
+      offset: 20
+      deref-count: 8
+  org.dacapo.harness.Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
+  org.dacapo.harness.Benchmark:
+    stats:
+      offset: 56
+      deref-count: 48
+    config:
+      offset: 28
+      deref-count: 29
+    scratch:
+      offset: 20
+      deref-count: 10
+    data:
+      offset: 24
+      deref-count: 9
+    err:
+      offset: 140
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    datDeps:
+      offset: 52
+      deref-count: 5
+    savedErr:
+      offset: 136
+      deref-count: 4
+    loader:
+      offset: 32
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    jarDeps:
+      offset: 48
+      deref-count: 3
+    savedClassLoader:
+      offset: 36
+      deref-count: 2
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    valRepFile:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.ThrowablePatternConverter:
+    rawOption:
+      offset: 28
+      deref-count: 12
+    options:
+      offset: 32
+      deref-count: 6
+    formatters:
+      offset: 24
+      deref-count: 2
+  org.apache.commons.cli.PosixParser:
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
+  org.apache.logging.log4j.core.util.datetime.FixedDateFormat:
+    timeZone:
+      offset: 56
+      deref-count: 5
+    fixedTimeZoneFormat:
+      offset: 64
+      deref-count: 2
+    fastDateFormat:
+      offset: 60
+      deref-count: 2
+    fixedFormat:
+      offset: 52
+      deref-count: 1
+  org.apache.commons.cli.Option:
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
+  org.apache.logging.log4j.simple.SimpleLogger:
+    level:
+      offset: 32
+      deref-count: 118
+    logName:
+      offset: 40
+      deref-count: 2
+    stream:
+      offset: 36
+      deref-count: 2
+    dateFormatter:
+      offset: 28
+      deref-count: 2
+  org.apache.logging.slf4j.Log4jLoggerFactory:
+    CALLER_PREDICATE:
+      offset: 120
+      deref-count: 8
+    LOGGER:
+      offset: 112
+      deref-count: 8
+    markerFactory:
+      offset: 20
+      deref-count: 8
+  org.apache.logging.log4j.core.layout.AbstractLayout:
+    configuration:
+      offset: 12
+      deref-count: 2
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.lookup.Log4jLookup:
+    LOGGER:
+      offset: 120
+      deref-count: 1
+  org.apache.logging.log4j.util.PropertiesUtil$Environment:
+    sources:
+      offset: 12
+      deref-count: 351
+    literal:
+      offset: 16
+      deref-count: 108
+    tokenized:
+      offset: 20
+      deref-count: 104
+  org.apache.logging.log4j.spi.CopyOnWriteSortedArrayThreadContextMap:
+    EMPTY_CONTEXT_DATA:
+      offset: 120
+      deref-count: 2
+    localMap:
+      offset: 12
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.NameAbbreviator$MaxElementAbbreviator:
+    strategy:
+      offset: 16
+      deref-count: 2
+  org.apache.logging.log4j.core.pattern.NamePatternConverter:
+    abbreviator:
+      offset: 20
+      deref-count: 3
+  org.apache.logging.log4j.status.SimpleLoggerFactory:
+    INSTANCE:
+      offset: 112
+      deref-count: 3
+  org.apache.logging.log4j.core.pattern.NameAbbreviator$MaxElementAbbreviator$Strategy:
+    RETAIN:
+      offset: 116
+      deref-count: 4
+    DROP:
+      offset: 112
+      deref-count: 2
+  org.apache.logging.log4j.core.lookup.MapLookup:
+    map:
+      offset: 12
+      deref-count: 29
+  org.dacapo.parser.Token:
+    next:
+      offset: 36
+      deref-count: 398
+    image:
+      offset: 32
+      deref-count: 188
+    specialToken:
+      offset: 40
+      deref-count: 114
+  org.apache.logging.log4j.core.pattern.NameAbbreviator:
+    DEFAULT:
+      offset: 112
+      deref-count: 2
+  org.apache.logging.log4j.util.PropertiesPropertySource:
+    properties:
+      offset: 16
+      deref-count: 495
+  org.dacapo.parser.Config$ThreadModel:
+    SINGLE:
+      offset: 112
+      deref-count: 4
+    PER_CPU:
+      offset: 120
+      deref-count: 4
+    FIXED:
+      offset: 116
+      deref-count: 3
+    description:
+      offset: 24
+      deref-count: 3
+  org.apache.logging.log4j.core.impl.ThreadContextDataInjector:
+    SERVICE_PROVIDERS:
+      offset: 120
+      deref-count: 23
+    contextDataProviders:
+      offset: 116
+      deref-count: 23
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.util.Source:
+    location:
+      offset: 20
+      deref-count: 5
+    uri:
+      offset: 16
+      deref-count: 4
+    file:
+      offset: 12
+      deref-count: 3
+    LOGGER:
+      offset: 112
+      deref-count: 2
+  org.apache.logging.log4j.core.appender.AbstractManager:
+    LOCK:
+      offset: 120
+      deref-count: 7
+    MAP:
+      offset: 116
+      deref-count: 6
+    name:
+      offset: 16
+      deref-count: 5
+    LOGGER:
+      offset: 112
+      deref-count: 5
+    loggerContext:
+      offset: 20
+      deref-count: 2
+  org.dacapo.parser.Config$OutputFile:
+    digest:
+      offset: 32
+      deref-count: 24
+    this$0:
+      offset: 36
+      deref-count: 9
+    name:
+      offset: 28
+      deref-count: 9
+  org.biojava.nbio.core.sequence.io.GenericFastaHeaderParser:
+    logger:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.DefaultReliabilityStrategy:
+    loggerConfig:
+      offset: 12
+      deref-count: 3
+  org.apache.logging.log4j.core.config.ConfigurationScheduler:
+    SIMPLE_NAME:
+      offset: 116
+      deref-count: 4
+    name:
+      offset: 24
+      deref-count: 3
+    executorService:
+      offset: 20
+      deref-count: 1
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.plugins.visitors.PluginVisitors:
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.util.ClockFactory:
+    LOGGER:
+      offset: 116
+      deref-count: 5
+  java.util.Locale:
+    ROOT:
+      offset: 184
+      deref-count: 329
+    US:
+      offset: 172
+      deref-count: 1
+  java.lang.Short:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  com.fasterxml.jackson.databind.util.LRUMap:
+    _map:
+      offset: 20
+      deref-count: 2
+  org.apache.logging.log4j.core.config.plugins.convert.TypeConverters:
+    LOGGER:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.util.StackLocator:
+    WALKER:
+      offset: 112
+      deref-count: 8
+    INSTANCE:
+      offset: 120
+      deref-count: 2
+    STACK_WALKER:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.core.util.Loader:
+    LOGGER:
+      offset: 112
+      deref-count: 94
+  org.apache.logging.log4j.core.lookup.DateLookup:
+    LOOKUP:
+      offset: 116
+      deref-count: 1
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.message.DefaultFlowMessageFactory:
+    entryText:
+      offset: 12
+      deref-count: 10
+    exitText:
+      offset: 16
+      deref-count: 10
+    messageFactory:
+      offset: 20
+      deref-count: 10
+  org.apache.logging.log4j.core.config.plugins.processor.PluginEntry:
+    key:
+      offset: 16
+      deref-count: 621
+    name:
+      offset: 24
+      deref-count: 452
+    className:
+      offset: 20
+      deref-count: 452
+    category:
+      offset: 28
+      deref-count: 226
+  com.fasterxml.jackson.core.Base64Variant:
+    _paddingReadBehaviour:
+      offset: 36
+      deref-count: 6
+    _name:
+      offset: 32
+      deref-count: 4
+  org.apache.logging.log4j.core.pattern.AbstractPatternConverter:
+    name:
+      offset: 12
+      deref-count: 18
+    style:
+      offset: 16
+      deref-count: 18
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.biojava.nbio.core.sequence.template.AbstractSequence:
+    sequenceStorage:
+      offset: 20
+      deref-count: 43769400
+    compoundSet:
+      offset: 24
+      deref-count: 17034
+    comments:
+      offset: 88
+      deref-count: 5678
+    bioEnd:
+      offset: 48
+      deref-count: 5678
+    sequenceScore:
+      offset: 64
+      deref-count: 5678
+    annotationType:
+      offset: 28
+      deref-count: 5678
+    originalHeader:
+      offset: 36
+      deref-count: 5678
+    source:
+      offset: 56
+      deref-count: 5678
+    databaseReferences:
+      offset: 72
+      deref-count: 5678
+    accession:
+      offset: 16
+      deref-count: 5678
+    groupedFeatures:
+      offset: 84
+      deref-count: 5678
+    featureRetriever:
+      offset: 76
+      deref-count: 5678
+    notesList:
+      offset: 60
+      deref-count: 5678
+    features:
+      offset: 80
+      deref-count: 5678
+    parentSequence:
+      offset: 52
+      deref-count: 5678
+    bioBegin:
+      offset: 44
+      deref-count: 5678
+    featuresKeyWord:
+      offset: 68
+      deref-count: 5678
+    logger:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.SimpleLiteralPatternConverter$StringValue:
+    literal:
+      offset: 20
+      deref-count: 6
+  org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap:
+    providers:
+      offset: 12
+      deref-count: 11
+  org.apache.logging.log4j.core.pattern.LevelPatternConverter:
+    INSTANCE:
+      offset: 120
+      deref-count: 3
+  org.apache.logging.slf4j.Log4jMarker:
+    factory:
+      offset: 12
+      deref-count: 1
+    marker:
+      offset: 16
+      deref-count: 1
+  org.biojava.nbio.core.sequence.io.BufferedReaderBytesRead:
+    in:
+      offset: 48
+      deref-count: 8376
+    lock:
+      offset: 12
+      deref-count: 5680
+  org.apache.logging.log4j.core.jmx.StatusLoggerAdmin:
+    level:
+      offset: 36
+      deref-count: 2
+    objectName:
+      offset: 28
+      deref-count: 2
+    contextName:
+      offset: 32
+      deref-count: 1
+    sequenceNo:
+      offset: 24
+      deref-count: 1
+  org.apache.commons.cli.Options:
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
+  org.apache.logging.log4j.message.ParameterizedNoReferenceMessageFactory:
+    INSTANCE:
+      offset: 112
+      deref-count: 3
+  com.fasterxml.jackson.databind.ext.Java7SupportImpl:
+    _bogus:
+      offset: 12
+      deref-count: 1
+  com.fasterxml.jackson.databind.util.ClassUtil:
+    CLS_OBJECT:
+      offset: 112
+      deref-count: 1
+    EMPTY_ITERATOR:
+      offset: 124
+      deref-count: 1
+  org.apache.commons.cli.CommandLine:
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
+  java.lang.Boolean:
+    TYPE:
+      offset: 120
+      deref-count: 3
+  org.apache.logging.log4j.core.config.Loggers:
+    root:
+      offset: 16
+      deref-count: 3
+    map:
+      offset: 12
+      deref-count: 2
+  org.biojava.nbio.aaproperties.PeptideProperties$SingleLetterAACode:
+    A:
+      offset: 184
+      deref-count: 2
+    C:
+      offset: 116
+      deref-count: 2
+    D:
+      offset: 152
+      deref-count: 2
+    E:
+      offset: 168
+      deref-count: 2
+    F:
+      offset: 132
+      deref-count: 2
+    G:
+      offset: 180
+      deref-count: 2
+    H:
+      offset: 124
+      deref-count: 2
+    I:
+      offset: 144
+      deref-count: 2
+    K:
+      offset: 164
+      deref-count: 2
+    L:
+      offset: 188
+      deref-count: 2
+    M:
+      offset: 120
+      deref-count: 2
+    N:
+      offset: 140
+      deref-count: 2
+    P:
+      offset: 156
+      deref-count: 2
+    Q:
+      offset: 136
+      deref-count: 2
+    R:
+      offset: 148
+      deref-count: 2
+    S:
+      offset: 176
+      deref-count: 2
+    T:
+      offset: 160
+      deref-count: 2
+    V:
+      offset: 172
+      deref-count: 2
+    W:
+      offset: 112
+      deref-count: 2
+    Y:
+      offset: 128
+      deref-count: 2
+  org.apache.logging.log4j.core.config.yaml.YamlConfigurationFactory:
+    LOGGER:
+      offset: 136
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.DatePatternConverter$FixedFormatter:
+    fixedDateFormat:
+      offset: 28
+      deref-count: 2
+  org.apache.logging.log4j.core.filter.AbstractFilterable$Builder:
+    filter:
+      offset: 12
+      deref-count: 1
+  org.apache.logging.log4j.util.SortedArrayStringMap:
+    PUT_ALL:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.util.ExecutorServices:
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  com.fasterxml.jackson.core.JsonParser:
+    DEFAULT_READ_CAPABILITIES:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.AppenderRef:
+    ref:
+      offset: 12
+      deref-count: 3
+    filter:
+      offset: 20
+      deref-count: 2
+    level:
+      offset: 16
+      deref-count: 2
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.Logger$PrivateConfig:
+    loggerConfig:
+      offset: 20
+      deref-count: 21
+    loggerConfigLevel:
+      offset: 28
+      deref-count: 14
+    this$0:
+      offset: 36
+      deref-count: 7
+    logger:
+      offset: 32
+      deref-count: 7
+    config:
+      offset: 24
+      deref-count: 7
+  org.apache.logging.log4j.core.async.ThreadNameCachingStrategy:
+    DEFAULT_STRATEGY:
+      offset: 128
+      deref-count: 3
+    UNCACHED:
+      offset: 116
+      deref-count: 3
+    CACHED:
+      offset: 112
+      deref-count: 2
+    LOGGER:
+      offset: 120
+      deref-count: 2
+    THREADLOCAL_NAME:
+      offset: 124
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.PatternFormatter:
+    converter:
+      offset: 16
+      deref-count: 99
+    field:
+      offset: 20
+      deref-count: 32
+  org.apache.logging.log4j.core.layout.StringBuilderEncoder:
+    charset:
+      offset: 24
+      deref-count: 2
+    threadLocal:
+      offset: 20
+      deref-count: 2
+  org.apache.logging.log4j.core.pattern.DatePatternConverter$CachedTime:
+    formatted:
+      offset: 24
+      deref-count: 2
+    this$0:
+      offset: 28
+      deref-count: 2
+  org.apache.logging.log4j.util.StackLocatorUtil:
+    stackLocator:
+      offset: 112
+      deref-count: 9
+  org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry:
+    state:
+      offset: 12
+      deref-count: 4
+    hooks:
+      offset: 20
+      deref-count: 3
+    threadFactory:
+      offset: 16
+      deref-count: 2
+    shutdownHookRef:
+      offset: 24
+      deref-count: 1
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.LoggerConfig$RootLogger$Builder:
+    config:
+      offset: 36
+      deref-count: 3
+    filter:
+      offset: 40
+      deref-count: 1
+    levelAndRefs:
+      offset: 20
+      deref-count: 1
+    level:
+      offset: 16
+      deref-count: 1
+    includeLocation:
+      offset: 24
+      deref-count: 1
+  org.slf4j.helpers.SubstituteLoggerFactory:
+    eventQueue:
+      offset: 20
+      deref-count: 3
+    loggers:
+      offset: 16
+      deref-count: 3
+  com.fasterxml.jackson.core.Base64Variants:
+    MIME:
+      offset: 116
+      deref-count: 3
+    MIME_NO_LINEFEEDS:
+      offset: 120
+      deref-count: 2
+    MODIFIED_FOR_URL:
+      offset: 128
+      deref-count: 1
+    PEM:
+      offset: 124
+      deref-count: 1
+  org.apache.logging.log4j.core.util.datetime.FormatCache:
+    cInstanceCache:
+      offset: 12
+      deref-count: 3
+    cDateTimeInstanceCache:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.lookup.JmxRuntimeInputArgumentsLookup:
+    JMX_SINGLETON:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.LoggerPatternConverter:
+    INSTANCE:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.net.JndiManager:
+    FACTORY:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.plugins.util.PluginType:
+    pluginEntry:
+      offset: 12
+      deref-count: 637
+    pluginClass:
+      offset: 16
+      deref-count: 518
+    elementName:
+      offset: 20
+      deref-count: 242
+  org.biojava.nbio.core.sequence.template.AbstractCompound:
+    base:
+      offset: 12
+      deref-count: 497633478
+    longName:
+      offset: 24
+      deref-count: 3832890
+    description:
+      offset: 28
+      deref-count: 2555280
+    molecularWeight:
+      offset: 32
+      deref-count: 2555280
+    shortName:
+      offset: 20
+      deref-count: 2555280
+    upperedBase:
+      offset: 16
+      deref-count: 1277640
+  org.apache.logging.log4j.status.StatusLogger:
+    listeners:
+      offset: 32
+      deref-count: 183
+    logger:
+      offset: 28
+      deref-count: 117
+    STATUS_LOGGER:
+      offset: 136
+      deref-count: 56
+    PROPS:
+      offset: 128
+      deref-count: 7
+    listenersLock:
+      offset: 36
+      deref-count: 5
+    DEFAULT_STATUS_LEVEL:
+      offset: 132
+      deref-count: 2
+    msgLock:
+      offset: 44
+      deref-count: 1
+    messages:
+      offset: 40
+      deref-count: 1
+  org.biojava.nbio.core.sequence.storage.ArrayListSequenceReader:
+    parsedCompounds:
+      offset: 16
+      deref-count: 65483760
+    compoundSet:
+      offset: 12
+      deref-count: 43599060
+    hashcode:
+      offset: 20
+      deref-count: 11356
+  org.dacapo.harness.CommandLineArgs:
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
+  org.apache.logging.log4j.core.util.Log4jThreadFactory:
+    FACTORY_NUMBER:
+      offset: 116
+      deref-count: 2
+    THREAD_NUMBER:
+      offset: 120
+      deref-count: 1
+    threadNamePrefix:
+      offset: 24
+      deref-count: 1
+    group:
+      offset: 20
+      deref-count: 1
+  java.lang.Float:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  java.lang.System:
+    out:
+      offset: 116
+      deref-count: 8
+    err:
+      offset: 120
+      deref-count: 6
+  org.apache.logging.log4j.message.ReusableMessageFactory:
+    threadLocalSimpleMessage:
+      offset: 16
+      deref-count: 18
+    threadLocalObjectMessage:
+      offset: 20
+      deref-count: 18
+    threadLocalParameterized:
+      offset: 12
+      deref-count: 18
+    INSTANCE:
+      offset: 112
+      deref-count: 1
+  org.biojava.nbio.aaproperties.PeptidePropertiesImpl:
+    logger:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.Level:
+    TRACE:
+      offset: 144
+      deref-count: 122
+    DEBUG:
+      offset: 140
+      deref-count: 59
+    LEVELS:
+      offset: 116
+      deref-count: 13
+    name:
+      offset: 16
+      deref-count: 11
+    standardLevel:
+      offset: 20
+      deref-count: 8
+    ALL:
+      offset: 148
+      deref-count: 3
+    ERROR:
+      offset: 128
+      deref-count: 3
+    OFF:
+      offset: 120
+      deref-count: 3
+    WARN:
+      offset: 132
+      deref-count: 3
+    INFO:
+      offset: 136
+      deref-count: 1
+    FATAL:
+      offset: 124
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.DatePatternConverter$PatternFormatter:
+    fastDateFormat:
+      offset: 24
+      deref-count: 2
+    cachedBuffer:
+      offset: 28
+      deref-count: 1
+  org.biojava.nbio.core.sequence.template.AbstractSequence$AnnotationType:
+    UNKNOWN:
+      offset: 120
+      deref-count: 5680
+    PREDICTED:
+      offset: 116
+      deref-count: 2
+    CURATED:
+      offset: 112
+      deref-count: 2
+  org.apache.logging.log4j.spi.StandardLevel:
+    OFF:
+      offset: 112
+      deref-count: 11
+    LEVELSET:
+      offset: 144
+      deref-count: 9
+    TRACE:
+      offset: 136
+      deref-count: 3
+    ALL:
+      offset: 140
+      deref-count: 3
+    ERROR:
+      offset: 120
+      deref-count: 3
+    INFO:
+      offset: 128
+      deref-count: 3
+    FATAL:
+      offset: 116
+      deref-count: 3
+    DEBUG:
+      offset: 132
+      deref-count: 3
+    WARN:
+      offset: 124
+      deref-count: 3
+  java.lang.Character:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  com.fasterxml.jackson.databind.introspect.DefaultAccessorNamingStrategy$Provider:
+    _baseNameValidator:
+      offset: 28
+      deref-count: 1
+    _setterPrefix:
+      offset: 12
+      deref-count: 1
+    _isGetterPrefix:
+      offset: 24
+      deref-count: 1
+    _withPrefix:
+      offset: 16
+      deref-count: 1
+    _getterPrefix:
+      offset: 20
+      deref-count: 1
+  org.dacapo.parser.ConfigFile:
+    token:
+      offset: 36
+      deref-count: 780
+    token_source:
+      offset: 28
+      deref-count: 115
+    jj_nt:
+      offset: 40
+      deref-count: 86
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
+  org.apache.logging.log4j.MarkerManager$Log4jMarker:
+    name:
+      offset: 12
+      deref-count: 9
+  org.apache.logging.log4j.core.pattern.PatternParser$ParserState:
+    DOT_STATE:
+      offset: 120
+      deref-count: 3
+    MIN_STATE:
+      offset: 124
+      deref-count: 3
+    CONVERTER_STATE:
+      offset: 116
+      deref-count: 3
+    LITERAL_STATE:
+      offset: 112
+      deref-count: 3
+    MAX_STATE:
+      offset: 128
+      deref-count: 3
+  org.apache.logging.log4j.core.pattern.FormattingInfo:
+    DEFAULT:
+      offset: 120
+      deref-count: 69
+  org.apache.logging.log4j.core.LoggerContext$1:
+    this$0:
+      offset: 12
+      deref-count: 1
+  com.fasterxml.jackson.core.StreamReadCapability:
+    DUPLICATE_PROPERTIES:
+      offset: 112
+      deref-count: 2
+    UNTYPED_SCALARS:
+      offset: 120
+      deref-count: 2
+    SCALARS_AS_OBJECTS:
+      offset: 116
+      deref-count: 2
+  org.apache.logging.log4j.core.config.LoggerConfig$LevelAndRefs:
+    refs:
+      offset: 16
+      deref-count: 1
+    level:
+      offset: 12
+      deref-count: 1
+  org.apache.logging.log4j.core.config.AppenderControl:
+    appender:
+      offset: 32
+      deref-count: 9
+    level:
+      offset: 36
+      deref-count: 2
+    appenderName:
+      offset: 40
+      deref-count: 2
+    recursive:
+      offset: 28
+      deref-count: 2
+  org.apache.logging.log4j.core.pattern.ThreadNamePatternConverter:
+    INSTANCE:
+      offset: 112
+      deref-count: 3
+  org.apache.commons.cli.Parser:
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
+  org.apache.logging.log4j.ThreadContext$EmptyThreadContextStack:
+    EMPTY_ITERATOR:
+      offset: 112
+      deref-count: 1
+  org.dacapo.harness.TeeOutputStream:
+    log:
+      offset: 28
+      deref-count: 1579
+    logFile:
+      offset: 32
+      deref-count: 6
+  org.apache.logging.log4j.core.jmx.LoggerContextAdmin:
+    objectName:
+      offset: 28
+      deref-count: 2
+    sequenceNo:
+      offset: 24
+      deref-count: 1
+    LOGGER:
+      offset: 112
+      deref-count: 1
+    loggerContext:
+      offset: 32
+      deref-count: 1
+  org.apache.logging.log4j.util.StringBuilders:
+    dateClass:
+      offset: 116
+      deref-count: 1
+    timeClass:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.util.Strings:
+    LINE_SEPARATOR:
+      offset: 128
+      deref-count: 3
+    tempStr:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.lookup.StrMatcher:
+    NONE_MATCHER:
+      offset: 144
+      deref-count: 1
+    DOUBLE_QUOTE_MATCHER:
+      offset: 136
+      deref-count: 1
+    TAB_MATCHER:
+      offset: 116
+      deref-count: 1
+    QUOTE_MATCHER:
+      offset: 140
+      deref-count: 1
+    SPACE_MATCHER:
+      offset: 120
+      deref-count: 1
+    SPLIT_MATCHER:
+      offset: 124
+      deref-count: 1
+    TRIM_MATCHER:
+      offset: 128
+      deref-count: 1
+    SINGLE_QUOTE_MATCHER:
+      offset: 132
+      deref-count: 1
+    COMMA_MATCHER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.plugins.convert.TypeConverterRegistry:
+    registry:
+      offset: 12
+      deref-count: 92
+    INSTANCE:
+      offset: 116
+      deref-count: 23
+    INSTANCE_LOCK:
+      offset: 120
+      deref-count: 3
+    LOGGER:
+      offset: 112
+      deref-count: 2
+  javax.xml.bind.DatatypeConverter:
+    theConverter:
+      offset: 112
+      deref-count: 12
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.util.PropertySource$Util:
+    CACHE:
+      offset: 120
+      deref-count: 683
+    PREFIX_PATTERN:
+      offset: 112
+      deref-count: 138
+    PROPERTY_TOKENIZER:
+      offset: 116
+      deref-count: 55
+  org.apache.logging.log4j.spi.AbstractLoggerAdapter:
+    lock:
+      offset: 16
+      deref-count: 17
+    registry:
+      offset: 12
+      deref-count: 10
+  com.fasterxml.jackson.core.Base64Variant$PaddingReadBehaviour:
+    PADDING_FORBIDDEN:
+      offset: 112
+      deref-count: 3
+    PADDING_REQUIRED:
+      offset: 116
+      deref-count: 3
+    PADDING_ALLOWED:
+      offset: 120
+      deref-count: 2
+  org.apache.logging.log4j.util.ProviderUtil:
+    instance:
+      offset: 136
+      deref-count: 6
+    PROVIDERS:
+      offset: 116
+      deref-count: 6
+    STARTUP_LOCK:
+      offset: 120
+      deref-count: 3
+    LOGGER:
+      offset: 132
+      deref-count: 1
+  org.apache.logging.log4j.core.config.ConfigurationFactory$Factory:
+    substitutor:
+      offset: 12
+      deref-count: 2
+  org.dacapo.harness.TeePrintStream:
+    out:
+      offset: 16
+      deref-count: 6
+  java.lang.Double:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  org.biojava.nbio.core.sequence.AccessionID:
+    id:
+      offset: 12
+      deref-count: 8517
+    source:
+      offset: 16
+      deref-count: 5678
+    identifier:
+      offset: 24
+      deref-count: 2839
+  org.biojava.nbio.core.sequence.io.ProteinSequenceCreator:
+    compoundSet:
+      offset: 12
+      deref-count: 2840
+  org.apache.logging.log4j.core.config.AppenderControlArraySet:
+    appenderArrayUpdater:
+      offset: 112
+      deref-count: 4
+  org.slf4j.MarkerFactory:
+    MARKER_FACTORY:
+      offset: 112
+      deref-count: 2
+  org.apache.logging.log4j.spi.Provider:
+    loggerContextFactoryClass:
+      offset: 20
+      deref-count: 7
+    versions:
+      offset: 32
+      deref-count: 4
+    priority:
+      offset: 12
+      deref-count: 4
+    threadContextMapClass:
+      offset: 28
+      deref-count: 2
+    className:
+      offset: 16
+      deref-count: 2
+    threadContextMap:
+      offset: 24
+      deref-count: 2
+    classLoader:
+      offset: 40
+      deref-count: 1
+    DEFAULT_PRIORITY:
+      offset: 124
+      deref-count: 1
+    LOGGER:
+      offset: 128
+      deref-count: 1
+    url:
+      offset: 36
+      deref-count: 1
+  org.apache.logging.log4j.core.filter.AbstractFilterable:
+    filter:
+      offset: 16
+      deref-count: 21
+  org.biojava.nbio.core.sequence.ProteinSequence:
+    logger:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.plugins.convert.EnumConverter:
+    clazz:
+      offset: 12
+      deref-count: 2
+  com.fasterxml.jackson.databind.JavaType:
+    _class:
+      offset: 20
+      deref-count: 9
+    _valueHandler:
+      offset: 24
+      deref-count: 9
+    _typeHandler:
+      offset: 28
+      deref-count: 9
+  org.apache.logging.log4j.core.selector.ClassLoaderContextSelector:
+    CONTEXT_MAP:
+      offset: 116
+      deref-count: 12
+    defaultLoggerContext:
+      offset: 12
+      deref-count: 1
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.status.StatusConfiguration$Verbosity:
+    QUIET:
+      offset: 112
+      deref-count: 4
+    VERBOSE:
+      offset: 116
+      deref-count: 2
+  org.apache.logging.log4j.core.appender.AbstractAppender:
+    layout:
+      offset: 32
+      deref-count: 18
+    name:
+      offset: 28
+      deref-count: 9
+    handler:
+      offset: 36
+      deref-count: 2
+  org.biojava.nbio.core.sequence.compound.AminoAcidCompound:
+    compoundSet:
+      offset: 36
+      deref-count: 1277640
+  org.apache.logging.log4j.core.appender.ConsoleAppender$Target:
+    SYSTEM_OUT:
+      offset: 112
+      deref-count: 2
+    SYSTEM_ERR:
+      offset: 116
+      deref-count: 2
+  org.apache.logging.log4j.core.util.OptionConverter:
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  java.lang.StackWalker$Option:
+    RETAIN_CLASS_REFERENCE:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.core.config.plugins.visitors.PluginConfigurationVisitor:
+    conversionType:
+      offset: 24
+      deref-count: 3
+  java.io.File:
+    separator:
+      offset: 116
+      deref-count: 2
+  org.apache.logging.log4j.core.LifeCycle$State:
+    INITIALIZED:
+      offset: 116
+      deref-count: 23
+    STARTED:
+      offset: 124
+      deref-count: 15
+    STARTING:
+      offset: 120
+      deref-count: 11
+    STOPPED:
+      offset: 132
+      deref-count: 8
+    STOPPING:
+      offset: 128
+      deref-count: 6
+    INITIALIZING:
+      offset: 112
+      deref-count: 2
+  org.apache.logging.log4j.core.config.plugins.util.PluginManager:
+    plugins:
+      offset: 12
+      deref-count: 52
+    category:
+      offset: 16
+      deref-count: 47
+    PACKAGES:
+      offset: 112
+      deref-count: 31
+    LOGGER:
+      offset: 120
+      deref-count: 16
+  org.apache.logging.log4j.core.pattern.MessagePatternConverter$SimpleMessagePatternConverter:
+    INSTANCE:
+      offset: 112
+      deref-count: 3
+  org.apache.logging.log4j.core.util.FileUtils:
+    LOGGER:
+      offset: 120
+      deref-count: 1
+  org.biojava.nbio.aaproperties.xml.CaseFreeAminoAcidCompoundSet:
+    aminoAcidCompoundCache:
+      offset: 12
+      deref-count: 21793915
+    aminoAcidCompoundSet:
+      offset: 112
+      deref-count: 2
+    equivalentsCache:
+      offset: 16
+      deref-count: 1
+  org.slf4j.impl.StaticMarkerBinder:
+    SINGLETON:
+      offset: 112
+      deref-count: 3
+    markerFactory:
+      offset: 12
+      deref-count: 3
+  com.fasterxml.jackson.databind.util.StdDateFormat:
+    DEFAULT_LOCALE:
+      offset: 144
+      deref-count: 4
+    DEFAULT_TIMEZONE:
+      offset: 140
+      deref-count: 3
+    DATE_FORMAT_RFC1123:
+      offset: 148
+      deref-count: 2
+    instance:
+      offset: 152
+      deref-count: 1
+    CALENDAR:
+      offset: 156
+      deref-count: 1
+    PATTERN_PLAIN:
+      offset: 116
+      deref-count: 1
+    PATTERN_ISO8601:
+      offset: 120
+      deref-count: 1
+    _locale:
+      offset: 28
+      deref-count: 1
+  org.apache.logging.log4j.util.LazyUtil$SafeLazy:
+    value:
+      offset: 20
+      deref-count: 72
+    lock:
+      offset: 12
+      deref-count: 4
+    supplier:
+      offset: 16
+      deref-count: 3
+  org.biojava.nbio.aaproperties.CommandPrompt$PropertyName:
+    A:
+      offset: 152
+      deref-count: 2
+    C:
+      offset: 168
+      deref-count: 2
+    D:
+      offset: 164
+      deref-count: 2
+    E:
+      offset: 172
+      deref-count: 2
+    F:
+      offset: 204
+      deref-count: 2
+    G:
+      offset: 180
+      deref-count: 2
+    H:
+      offset: 184
+      deref-count: 2
+    I:
+      offset: 188
+      deref-count: 2
+    Absorbance_False:
+      offset: 120
+      deref-count: 2
+    K:
+      offset: 196
+      deref-count: 2
+    AverageHydropathyValue:
+      offset: 140
+      deref-count: 2
+    L:
+      offset: 192
+      deref-count: 2
+    M:
+      offset: 200
+      deref-count: 2
+    N:
+      offset: 160
+      deref-count: 2
+    P:
+      offset: 208
+      deref-count: 2
+    Q:
+      offset: 176
+      deref-count: 2
+    R:
+      offset: 156
+      deref-count: 2
+    ApliphaticIndex:
+      offset: 136
+      deref-count: 2
+    S:
+      offset: 212
+      deref-count: 2
+    T:
+      offset: 216
+      deref-count: 2
+    V:
+      offset: 228
+      deref-count: 2
+    W:
+      offset: 220
+      deref-count: 2
+    Absorbance_True:
+      offset: 116
+      deref-count: 2
+    Y:
+      offset: 224
+      deref-count: 2
+    MolecularWeight:
+      offset: 112
+      deref-count: 2
+    ExtinctionCoefficient_True:
+      offset: 124
+      deref-count: 2
+    ExtinctionCoefficient_False:
+      offset: 128
+      deref-count: 2
+    NetCharge_pH_7:
+      offset: 148
+      deref-count: 2
+    InstabilityIndex:
+      offset: 132
+      deref-count: 2
+    IsoelectricPoint:
+      offset: 144
+      deref-count: 2
+  org.apache.logging.log4j.core.appender.ConsoleAppender$Builder:
+    target:
+      offset: 44
+      deref-count: 4
+  org.apache.logging.log4j.core.pattern.LineSeparatorPatternConverter:
+    INSTANCE:
+      offset: 112
+      deref-count: 3
+  org.slf4j.LoggerFactory:
+    SUBST_FACTORY:
+      offset: 152
+      deref-count: 6
+    STATIC_LOGGER_BINDER_PATH:
+      offset: 172
+      deref-count: 2
+    NOP_FALLBACK_FACTORY:
+      offset: 156
+      deref-count: 1
+  org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender:
+    manager:
+      offset: 40
+      deref-count: 5
+    LOGGER:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.core.appender.ConsoleAppender$FactoryData:
+    layout:
+      offset: 20
+      deref-count: 4
+    os:
+      offset: 12
+      deref-count: 4
+    name:
+      offset: 16
+      deref-count: 4
+  org.apache.logging.log4j.core.lookup.ContextMapLookup:
+    injector:
+      offset: 12
+      deref-count: 9
+  org.apache.logging.log4j.core.layout.PatternLayout$Builder:
+    pattern:
+      offset: 16
+      deref-count: 5
+    charset:
+      offset: 32
+      deref-count: 4
+    configuration:
+      offset: 24
+      deref-count: 3
+    patternSelector:
+      offset: 20
+      deref-count: 2
+    footer:
+      offset: 40
+      deref-count: 2
+    header:
+      offset: 36
+      deref-count: 2
+    regexReplacement:
+      offset: 28
+      deref-count: 2
+  com.fasterxml.jackson.databind.jsontype.impl.LaissezFaireSubTypeValidator:
+    instance:
+      offset: 112
+      deref-count: 1
+  org.apache.logging.log4j.spi.LoggerRegistry:
+    map:
+      offset: 16
+      deref-count: 24
+    DEFAULT_FACTORY_KEY:
+      offset: 112
+      deref-count: 22
+    factory:
+      offset: 12
+      deref-count: 9
+  java.lang.Byte:
+    TYPE:
+      offset: 112
+      deref-count: 3
+  org.apache.logging.log4j.core.util.BasicAuthorizationProvider:
+    LOGGER:
+      offset: 148
+      deref-count: 1
+    authString:
+      offset: 12
+      deref-count: 1
+  org.apache.logging.log4j.core.jmx.ContextSelectorAdmin:
+    objectName:
+      offset: 12
+      deref-count: 2
+    selector:
+      offset: 16
+      deref-count: 1
+  org.apache.logging.log4j.core.AbstractLifeCycle:
+    state:
+      offset: 12
+      deref-count: 60
+    DEFAULT_STOP_TIMEUNIT:
+      offset: 112
+      deref-count: 2
+    LOGGER:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.core.pattern.SimpleLiteralPatternConverter$Space:
+    INSTANCE:
+      offset: 112
+      deref-count: 3
+  org.apache.logging.log4j.MarkerManager:
+    MARKERS:
+      offset: 112
+      deref-count: 30
+  org.apache.logging.log4j.core.lookup.SystemPropertiesLookup:
+    LOOKUP:
+      offset: 116
+      deref-count: 1
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  org.biojava.nbio.aaproperties.Constraints:
+    aa2MolecularWeight:
+      offset: 200
+      deref-count: 78274899
+    aa2Hydrophathicity:
+      offset: 204
+      deref-count: 26091647
+    diAA2Instability:
+      offset: 212
+      deref-count: 23710315
+    aa2ExtinctionCoefficient:
+      offset: 196
+      deref-count: 28394
+    aa2NTerminalPka:
+      offset: 216
+      deref-count: 21
+    aaSet:
+      offset: 112
+      deref-count: 21
+    aa2CTerminalPka:
+      offset: 220
+      deref-count: 21
+    aa2PKa:
+      offset: 208
+      deref-count: 8
+    C:
+      offset: 132
+      deref-count: 7
+    Y:
+      offset: 188
+      deref-count: 7
+    D:
+      offset: 128
+      deref-count: 6
+    E:
+      offset: 136
+      deref-count: 6
+    H:
+      offset: 148
+      deref-count: 6
+    K:
+      offset: 160
+      deref-count: 6
+    R:
+      offset: 120
+      deref-count: 6
+    W:
+      offset: 184
+      deref-count: 6
+    A:
+      offset: 116
+      deref-count: 5
+    F:
+      offset: 168
+      deref-count: 5
+    G:
+      offset: 144
+      deref-count: 5
+    I:
+      offset: 152
+      deref-count: 5
+    L:
+      offset: 156
+      deref-count: 5
+    M:
+      offset: 164
+      deref-count: 5
+    N:
+      offset: 124
+      deref-count: 5
+    P:
+      offset: 172
+      deref-count: 5
+    Q:
+      offset: 140
+      deref-count: 5
+    S:
+      offset: 176
+      deref-count: 5
+    T:
+      offset: 180
+      deref-count: 5
+    V:
+      offset: 192
+      deref-count: 5
+  org.apache.logging.log4j.core.layout.PatternLayout:
+    eventSerializer:
+      offset: 56
+      deref-count: 16
+    conversionPattern:
+      offset: 48
+      deref-count: 3
+    patternSelector:
+      offset: 52
+      deref-count: 3
+  org.dacapo.harness.BioJava:
+    method:
+      offset: 44
+      deref-count: 2
+    data:
+      offset: 24
+      deref-count: 1
+    loader:
+      offset: 32
+      deref-count: 1
+    scratch:
+      offset: 20
+      deref-count: 1
+    config:
+      offset: 28
+      deref-count: 1
+  org.apache.logging.log4j.core.config.plugins.processor.PluginCache:
+    categories:
+      offset: 12
+      deref-count: 10
+  org.apache.logging.log4j.core.lookup.StrSubstitutor:
+    configuration:
+      offset: 40
+      deref-count: 25
+    prefixMatcher:
+      offset: 16
+      deref-count: 22
+    suffixMatcher:
+      offset: 20
+      deref-count: 22
+    valueDelimiterMatcher:
+      offset: 28
+      deref-count: 22
+    variableResolver:
+      offset: 36
+      deref-count: 20
+    valueDelimiterString:
+      offset: 24
+      deref-count: 14
+    valueEscapeDelimiterMatcher:
+      offset: 32
+      deref-count: 14
+    DEFAULT_VALUE_DELIMITER:
+      offset: 124
+      deref-count: 9
+    DEFAULT_VALUE_ESCAPE_DELIMITER:
+      offset: 132
+      deref-count: 9
+    DEFAULT_SUFFIX:
+      offset: 116
+      deref-count: 9
+    DEFAULT_PREFIX:
+      offset: 112
+      deref-count: 9
+  org.apache.logging.log4j.core.pattern.PlainTextRenderer:
+    INSTANCE:
+      offset: 112
+      deref-count: 2
+  org.dacapo.parser.ConfigFileTokenManager:
+    input_stream:
+      offset: 52
+      deref-count: 2661
+    image:
+      offset: 68
+      deref-count: 227
+    jjimage:
+      offset: 64
+      deref-count: 115
+    debugStream:
+      offset: 48
+      deref-count: 1
+  org.apache.logging.log4j.util.LoaderUtil:
+    GET_CLASS_LOADER:
+      offset: 120
+      deref-count: 56
+    TCCL_GETTER:
+      offset: 124
+      deref-count: 56
+    ignoreTCCL:
+      offset: 116
+      deref-count: 25
+  org.apache.logging.log4j.util.PropertiesUtil:
+    environment:
+      offset: 12
+      deref-count: 105
+    COMPONENT_PROPERTIES:
+      offset: 120
+      deref-count: 71
+  org.dacapo.parser.SimpleCharStream:
+    inputStream:
+      offset: 60
+      deref-count: 4
+  org.apache.logging.log4j.core.util.NetUtils:
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  com.fasterxml.jackson.databind.type.TypeBindings:
+    EMPTY:
+      offset: 120
+      deref-count: 12
+  org.dacapo.parser.Config$Size:
+    outputFiles:
+      offset: 32
+      deref-count: 58
+    this$0:
+      offset: 36
+      deref-count: 12
+    name:
+      offset: 20
+      deref-count: 3
+  org.apache.logging.log4j.core.util.WatchManager$LocalUUID:
+    COUNT:
+      offset: 112
+      deref-count: 7
+  org.apache.logging.log4j.spi.AbstractLogger:
+    FQCN:
+      offset: 144
+      deref-count: 179
+    DEFAULT_MESSAGE_FACTORY_CLASS:
+      offset: 136
+      deref-count: 19
+    name:
+      offset: 12
+      deref-count: 17
+    DEFAULT_FLOW_MESSAGE_FACTORY_CLASS:
+      offset: 140
+      deref-count: 11
+    messageFactory:
+      offset: 16
+      deref-count: 10
+    flowMessageFactory:
+      offset: 20
+      deref-count: 10
+    FLOW_MARKER:
+      offset: 112
+      deref-count: 3
+    EXCEPTION_MARKER:
+      offset: 124
+      deref-count: 3
+    EXIT_MARKER:
+      offset: 120
+      deref-count: 1
+    logBuilder:
+      offset: 160
+      deref-count: 1
+    ENTRY_MARKER:
+      offset: 116
+      deref-count: 1
+    CATCHING_MARKER:
+      offset: 132
+      deref-count: 1
+    THROWING_MARKER:
+      offset: 128
+      deref-count: 1
+    recursionDepthHolder:
+      offset: 156
+      deref-count: 1
+  org.dacapo.harness.LatencyReporter:
+    callback:
+      offset: 132
+      deref-count: 2
+    globalIdx:
+      offset: 124
+      deref-count: 1
+  org.apache.logging.log4j.util.LazyUtil:
+    NULL:
+      offset: 112
+      deref-count: 71
+  org.apache.logging.log4j.status.StatusLogger$BoundedQueue:
+    this$0:
+      offset: 24
+      deref-count: 1
+  org.dacapo.harness.TestHarness:
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 10
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
+  org.apache.logging.log4j.core.layout.AbstractStringLayout:
+    charset:
+      offset: 36
+      deref-count: 4
+    headerSerializer:
+      offset: 44
+      deref-count: 4
+    footerSerializer:
+      offset: 40
+      deref-count: 3
+    textEncoder:
+      offset: 32
+      deref-count: 2
+    threadLocal:
+      offset: 112
+      deref-count: 1
+  org.slf4j.impl.StaticLoggerBinder:
+    SINGLETON:
+      offset: 120
+      deref-count: 9
+    loggerFactory:
+      offset: 12
+      deref-count: 8
+    REQUESTED_API_VERSION:
+      offset: 112
+      deref-count: 2
+    LOGGER_FACTORY_CLASS_STR:
+      offset: 116
+      deref-count: 1
+  com.fasterxml.jackson.databind.cfg.BaseSettings:
+    _propertyNamingStrategy:
+      offset: 24
+      deref-count: 1
+    DEFAULT_TIMEZONE:
+      offset: 112
+      deref-count: 1
+    _annotationIntrospector:
+      offset: 20
+      deref-count: 1
+    _handlerInstantiator:
+      offset: 44
+      deref-count: 1
+    _typeResolverBuilder:
+      offset: 32
+      deref-count: 1
+    _timeZone:
+      offset: 52
+      deref-count: 1
+    _typeValidator:
+      offset: 36
+      deref-count: 1
+    _accessorNaming:
+      offset: 28
+      deref-count: 1
+    _dateFormat:
+      offset: 40
+      deref-count: 1
+    _defaultBase64:
+      offset: 56
+      deref-count: 1
+    _classIntrospector:
+      offset: 16
+      deref-count: 1
+    _typeFactory:
+      offset: 12
+      deref-count: 1
+    _locale:
+      offset: 48
+      deref-count: 1
+  org.apache.logging.log4j.core.lookup.MainMapLookup:
+    MAIN_SINGLETON:
+      offset: 112
+      deref-count: 1
+  org.dacapo.parser.Config:
+    sizes:
+      offset: 24
+      deref-count: 64
+    threadModel:
+      offset: 20
+      deref-count: 15
+    desc:
+      offset: 28
+      deref-count: 9
+    name:
+      offset: 12
+      deref-count: 5
+    className:
+      offset: 16
+      deref-count: 4
+  org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy:
+    shutdownLock:
+      offset: 20
+      deref-count: 2
+    noLogEvents:
+      offset: 24
+      deref-count: 1
+    loggerConfig:
+      offset: 28
+      deref-count: 1
+    counter:
+      offset: 12
+      deref-count: 1
+    shutdown:
+      offset: 16
+      deref-count: 1
+  org.biojava.nbio.core.sequence.compound.AminoAcidCompoundSet:
+    aminoAcidCompoundCache:
+      offset: 12
+      deref-count: 120318782
+    aminoAcidCompoundCache3Letter:
+      offset: 16
+      deref-count: 1320197
+    equivalentsCache:
+      offset: 20
+      deref-count: 42587
+    aminoAcidCompoundSet:
+      offset: 112
+      deref-count: 5679
+  java.util.concurrent.TimeUnit:
+    MILLISECONDS:
+      offset: 120
+      deref-count: 1
+    HOURS:
+      offset: 132
+      deref-count: 1
+    MINUTES:
+      offset: 128
+      deref-count: 1
+  org.apache.logging.log4j.core.lookup.JavaLookup:
+    spLookup:
+      offset: 12
+      deref-count: 9
+  org.apache.logging.log4j.core.util.ShutdownCallbackRegistry:
+    SHUTDOWN_HOOK_MARKER:
+      offset: 120
+      deref-count: 1
+  com.fasterxml.jackson.databind.ext.Java7Support:
+    IMPL:
+      offset: 112
+      deref-count: 2
+  org.apache.logging.log4j.core.config.plugins.visitors.PluginAttributeVisitor:
+    conversionType:
+      offset: 24
+      deref-count: 34
+    annotation:
+      offset: 16
+      deref-count: 6
+    substitutor:
+      offset: 28
+      deref-count: 4
+  org.apache.logging.log4j.core.config.plugins.visitors.PluginElementVisitor:
+    conversionType:
+      offset: 24
+      deref-count: 28
+    annotation:
+      offset: 16
+      deref-count: 11
+  org.apache.logging.log4j.core.config.Property:
+    LOGGER:
+      offset: 116
+      deref-count: 1
+  org.apache.logging.log4j.core.lookup.AbstractConfigurationAwareLookup:
+    configuration:
+      offset: 12
+      deref-count: 4
+  org.apache.logging.log4j.core.config.plugins.util.PluginRegistry:
+    INSTANCE:
+      offset: 116
+      deref-count: 32
+    pluginsByCategoryRef:
+      offset: 12
+      deref-count: 17
+    pluginsByCategoryByBundleId:
+      offset: 16
+      deref-count: 16
+    INSTANCE_LOCK:
+      offset: 120
+      deref-count: 2
+    LOGGER:
+      offset: 112
+      deref-count: 2
+    pluginsByCategoryByPackage:
+      offset: 20
+      deref-count: 1
+  org.dacapo.harness.Callback$Mode:
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
 opcodes:
   aconst_null: 92707334
   iconst_m1: 8442
-  iconst_0: 4551498
+  iconst_0: 4551428
   iconst_1: 265837264
   iconst_2: 22622933
   iconst_3: 117905586
@@ -1339,27 +2512,27 @@ opcodes:
   dconst_1: 8598634
   bipush: 97370529
   sipush: 110
-  ldc: 29086386
-  iload: 1577929020
+  ldc: 29086399
+  iload: 1577928925
   lload: 59
   dload: 26051772
-  aload: 4131615406
+  aload: 4131614946
   iaload: 8973140
   daload: 593863
   aaload: 597831
   baload: 713016
   caload: 261784034
-  istore: 349350738
+  istore: 349350710
   lstore: 22
   dstore: 23959171
-  astore: 636291669
+  astore: 636291640
   iastore: 8595694
   dastore: 221842
   aastore: 74120
   bastore: 128
   castore: 28
-  pop: 400023337
-  dup: 1890671
+  pop: 400023330
+  dup: 1890664
   dup_x1: 1
   dup2: 8595548
   iadd: 117593189
@@ -1393,8 +2566,8 @@ opcodes:
   lcmp: 5
   dcmpl: 119238
   dcmpg: 53941
-  ifeq: 537545102
-  ifne: 217599316
+  ifeq: 537544953
+  ifne: 217599295
   iflt: 43840287
   ifge: 139122
   ifgt: 2
@@ -1407,33 +2580,33 @@ opcodes:
   if_icmple: 139467081
   if_acmpeq: 40
   if_acmpne: 119
-  goto: 761107255
+  goto: 761107267
   tableswitch: 7
   lookupswitch: 87175408
-  ireturn: 361671424
+  ireturn: 361671361
   lreturn: 5686
   dreturn: 1334552
-  areturn: 702876169
-  return: 7784703
-  getstatic: 171721846
+  areturn: 702876098
+  return: 7784619
+  getstatic: 171721797
   putstatic: 418
-  getfield: 838643606
+  getfield: 838643564
   putfield: 14372281
-  invokevirtual: 2119548176
-  invokespecial: 4204952
-  invokestatic: 211760843
-  invokeinterface: 1073097235
-  invokedynamic: 3813
-  new: 1574708
+  invokevirtual: 2119548125
+  invokespecial: 4204959
+  invokestatic: 211760759
+  invokeinterface: 1073097011
+  invokedynamic: 3792
+  new: 1574701
   newarray: 79546
   anewarray: 252470
   arraylength: 756279
-  checkcast: 509928933
+  checkcast: 509928919
   instanceof: 34507318
   monitorenter: 5686
   monitorexit: 5686
-  ifnull: 21895737
-  ifnonnull: 78116758# sun/launcher/LauncherHelper
+  ifnull: 21895695
+  ifnonnull: 78116771# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -1482,6 +2655,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -1693,6 +2868,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -1706,6 +2882,7 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
+# java/util/Formatter
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -1907,6 +3084,7 @@ opcodes:
 # java/util/concurrent/ConcurrentSkipListMap$KeyIterator
 # java/util/concurrent/ConcurrentSkipListMap$Iter
 # java/lang/ThreadLocal$SuppliedThreadLocal
+# sun/util/locale/LocaleExtensions
 # java/util/concurrent/ConcurrentLinkedQueue
 # java/util/concurrent/ConcurrentLinkedQueue$Node
 # java/util/RegularEnumSet$EnumSetIterator
@@ -1915,9 +3093,9 @@ opcodes:
 # java/text/SimpleDateFormat
 # java/util/concurrent/locks/ReentrantReadWriteLock$FairSync
 # java/lang/InterruptedException
+# java/util/concurrent/atomic/AtomicReference
 # java/util/concurrent/Executors
 # java/util/concurrent/Executors$DefaultThreadFactory
-# java/util/concurrent/atomic/AtomicReference
 # java/lang/ApplicationShutdownHooks
 # java/lang/ApplicationShutdownHooks$1
 # java/lang/Shutdown
@@ -1945,6 +3123,7 @@ opcodes:
 # java/util/concurrent/ConcurrentLinkedDeque$Node
 # javax/naming/Context
 # javax/naming/NamingException
+# javax/naming/InitialContext
 # java/lang/management/ManagementFactory
 # java/lang/management/RuntimeMXBean
 # java/lang/management/PlatformManagedObject
@@ -2343,7 +3522,6 @@ opcodes:
 # sun/net/InetAddressCachePolicy$1
 # java/net/InetAddress$CachedLookup
 # java/net/InetAddress$CachedLocalHost
-# java/util/Formatter
 # java/util/Formatter$Conversion
 # java/util/Formatter$FormatString
 # java/util/Formatter$FormatSpecifier
@@ -2379,8 +3557,6 @@ opcodes:
 # sun/reflect/generics/tree/Wildcard
 # sun/reflect/generics/reflectiveObjects/WildcardTypeImpl
 # java/lang/reflect/WildcardType
-# jdk/internal/reflect/MethodHandleFieldAccessorImpl
-# jdk/internal/reflect/MethodHandleObjectFieldAccessorImpl
 # jdk/internal/reflect/MethodHandleBooleanFieldAccessorImpl
 # sun/util/resources/LocaleData$CommonResourceBundleProvider
 # sun/util/resources/LocaleData$LocaleDataResourceBundleProvider
@@ -2538,7 +3714,6 @@ opcodes:
 # com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$IdentityMapping
 # com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$NonNullMXBeanMapping
 # com/sun/jmx/mbeanserver/MXBeanMapping
-# java/lang/invoke/DirectMethodHandle$StaticAccessor
 # javax/management/openmbean/ArrayType
 # com/sun/jmx/mbeanserver/MBeanAnalyzer$AttrMethods
 # sun/reflect/generics/scope/MethodScope
@@ -2735,12 +3910,12 @@ opcodes:
 # jdk/jfr/internal/management/StreamManager
 # javax/management/StandardMBean$MBeanInfoSafeAction
 # jdk/jfr/Recording
-# jdk/jfr/FlightRecorder
 # javax/management/NotificationListener
 # javax/management/NotificationFilter
-# javax/management/ListenerNotFoundException
 # jdk/management/jfr/FlightRecorderMXBeanImpl$MXBeanListener
 # jdk/jfr/FlightRecorderListener
+# jdk/jfr/FlightRecorder
+# javax/management/ListenerNotFoundException
 # javax/management/ObjectName$PatternProperty
 # java/beans/PropertyChangeListener
 # com/sun/jmx/mbeanserver/StandardMBeanSupport
@@ -2769,6 +3944,7 @@ opcodes:
 # java/io/FileOutputStream$1
 # sun/security/provider/SHA
 # sun/security/provider/ByteArrayAccess$BE
+# java/util/function/ToLongFunction
 # java/util/Collections$ReverseComparator
 # java/util/Comparators$NaturalOrderComparator
 # java/util/Collections$ReverseComparator2

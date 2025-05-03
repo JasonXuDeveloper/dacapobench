@@ -1,2284 +1,3614 @@
 # These statistics can be generated from a dacapo release using a command line like:
 #    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 425
-transformed-classes: 573
-transformed-bytecodes: 80833
-executed-bytecodes: 13741324835
+skipped-classes: 431
+transformed-classes: 582
+transformed-bytecodes: 81740
+executed-bytecodes: 13761311239
 executed-bytecodes-unique: 33054
 executed-bytecodes-p90: 608600
 executed-bytecodes-p99: 5912318
-executed-bytecodes-p999: 72520204
+executed-bytecodes-p999: 72517802
 executed-bytecodes-p9999: 72746136
-executed-calls: 1105085933
+executed-calls: 1106563252
 executed-calls-unique: 4106
 field-dereference-counts:
-  cck/help/HelpCategory$ParagraphSection:
-    para: 8
-    this$0: 8
-    title: 8
-  avrora/sim/mcu/USART$DataRegister:
-    receiveRegister: 18
-    this$0: 18
-    transmitRegister: 18
-  org/dacapo/harness/TestHarness:
-    commandLineArgs: 15
-    config: 10
-    BuildVersion: 4
-    BuildNickName: 1
-  cck/elf/ELFDataInputStream:
-    file: 7946
-    bigEndian: 2000
-    header: 10
-  avrora/arch/legacy/LegacyInstr$IMMIMM_class:
-    imm1: 221
-    imm2: 221
-  org/apache/commons/cli/PosixParser:
-    tokens: 6
-    eatTheRest: 4
-    options: 3
-    currentOption: 1
-  org/dacapo/harness/Data:
-    DEFAULT_LOCAL_DACAPO_CONFIG: 2
-    DACAPO_CHECKSUM_RE_PATH: 1
-    WORKING_DIRE: 1
-  avrora/sim/types/SensorSimulation$SensorNode:
-    this$0: 49
-    id: 45
-    sensorInput: 18
-    simulator: 18
-    startup: 18
-    path: 9
-    platform: 9
-    radio: 9
-    thread: 9
-  cck/util/Arithmetic:
-    $assertionsDisabled: 1
-    bitcountKey: 1
-    reverseKey: 1
-  avrora/sim/platform/sensors/AccelSensorPower$OnPin:
-    this$0: 144
-  avrora/sim/clock/DeltaQueue$Link:
-    delta: 234839383
-    next: 12252532
-    events: 12049350
-    this$0: 2037374
-  avrora/sim/mcu/USART$SerialPrinter:
-    this$0: 36
-    serialPrinter: 18
-    stream: 18
-  cck/text/Status$Item:
-    starttime: 4
-    title: 2
-  avrora/sim/radio/CC1000Radio$CALRegister:
-    calStart: 198
-    value: 180
-    this$0: 117
-    calComplete: 72
-    calCurrent: 72
-    calDual: 72
-    calIterate: 72
-    calWait: 72
-    calibrating: 54
-    calibrate: 27
-  org/apache/commons/cli/Option:
-    longOption: 222
-    option: 162
-    values: 71
-    description: 62
-    required: 62
-    argCount: 54
-    type: 31
-    valuesep: 18
-    argName: 14
-  avrora/arch/legacy/LegacyInstr$ADIW:
-    r1: 129490
-    imm1: 64745
-    props: 40
-    prototype: 1
-  avrora/sim/mcu/Timer8Bit:
-    blockCompareMatch: 814434
-    TCNTn_reg: 542980
-    OCRn_reg: 542962
-    period: 271499
-    timerClock: 271499
-    TCCRn_reg: 4212
-    OCFn: 2088
-    TIFR_reg: 2088
-    devicePrinter: 2079
-    tickers: 99
-    periods: 27
-    ticker: 27
-    OCIEn: 18
-    TIMSK_reg: 18
-    TOIEn: 18
-    TOVn: 18
-    externalClock: 18
-    mainClock: 18
-    microcontroller: 18
-    n: 18
-    outputComparePin: 18
-  avrora/sim/Interpreter:
-    innerLoop: 1428718
-    interrupts: 784578
-    simulator: 27
-    clock: 18
-  avrora/sim/energy/Energy:
-    clock: 126
-    ampere: 63
-    currentMode: 63
-    cycleTime: 63
-    deviceName: 63
-    energyControl: 63
-    stateMachine: 63
-  avrora/sim/radio/CC1000Radio$FrequencySeparationRegister$SubRegister:
-    value: 72
-    this$1: 54
-  avrora/sim/mcu/USART$DataRegister$TwoLevelFIFO:
-    waitQueue: 72
-    readyQueue: 18
-    this$1: 18
-  avrora/arch/legacy/LegacyInstr$SBRC:
-    imm1: 91984
-    r1: 91984
-    props: 22
-    prototype: 1
-  avrora/sim/util/ClockCycleTimeout:
-    simulator: 18
-    timeout: 18
-  avrora/sim/util/TransactionalList:
-    head: 10689936
-    nesting: 1404850
-    transHead: 561922
-    transTail: 280961
-    tail: 45
-  avrora/arch/legacy/LegacyInstr$LPM:
-    props: 38
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$BRTC:
-    props: 6
-    prototype: 1
-  avrora/Main:
-    mainOptions: 17
-    INPUT: 3
-    ACTION: 2
-    BANNER: 2
-    COLORS: 2
-    CONFIGFILE: 2
-    HELP: 2
-    HTML: 2
-    LICENSE: 2
-    STATUS: 2
-    STATUS_TIMING: 2
-    VERBOSE: 2
-  avrora/arch/legacy/LegacyInstr$JMP:
-    imm1: 643042
-    props: 76
-    prototype: 1
-  avrora/sim/mcu/ATMegaFamily:
-    interpreter: 36
-    ETIFR_reg: 27
-    ETIMSK_reg: 27
-    periods0: 10
-    periods1: 10
-    periods2: 10
-    periods3: 10
-    TIFR_reg: 9
-    TIMSK_reg: 9
-  avrora/sim/radio/CC1000Radio$MainRegister:
-    this$0: 12476
-    corePd: 10304
-    biasPd: 8832
-    rxtx: 8051
-    fsPd: 7279
-    oldVal: 5906
-    rxPd: 5170
-    txPd: 5152
-    fReg: 3680
-    resetN: 2962
-  avrora/arch/legacy/LegacyDisassembler:
-    pc: 18773
-    code: 11861
-    index: 11861
-    GPR_table: 6017
-    HGPR_table: 2653
-    EGPR_table: 1649
-    YZ_table: 284
-    RDL_table: 105
-    Z_table: 29
-    MGPR_table: 9
-    XYZ_table: 1
-  avrora/arch/legacy/LegacyInstr$WORD_class:
-    imm1: 1045
-  avrora/arch/legacy/LegacyInstr$BRCS:
-    imm1: 74635
-    props: 35
-    prototype: 1
-  avrora/sim/clock/DeltaQueue$EventList:
-    next: 8062247
-    event: 6084119
-  avrora/arch/legacy/LegacyInstr$CPC:
-    r1: 2100519
-    r2: 2100519
-    props: 321
-    prototype: 1
-  avrora/sim/mcu/ATMegaFamily$PinRegister:
-    pins: 751158
-  avrora/sim/radio/CC1000Radio$SPITicker:
-    this$0: 3816438
-    spiDevice: 636073
-    activated: 1508
-  avrora/sim/mcu/ADC:
-    interruptNum: 42636
-    interpreter: 42627
-    ADMUX_reg: 18279
-    SINGLE_ENDED_INPUT: 18262
-    devicePrinter: 12174
-    mainClock: 12174
-    connectedDevices: 6150
-    ADCH_reg: 6105
-    ADCL_reg: 6105
-    voltageRef: 6096
-    PRESCALER: 6088
-    ADCSRA_reg: 27
-    VBG_INPUT: 18
-    GND_INPUT: 10
-    channels: 9
-    GAIN: 1
-    NEG_INPUT: 1
-    POS_INPUT: 1
-  avrora/arch/legacy/LegacyRegister:
-    number: 76293505
-    REGS_0_31: 1810284
-    name: 11100
-    GPR_set: 6068
-    HGPR_set: 2661
-    EGPR_set: 1651
-    YZ_set: 286
-    RDL_set: 107
-    ADR_set: 68
-    Z: 55
-    registers: 36
-    width: 35
-    Z_set: 33
-    MGPR_set: 13
-    Y: 13
-    X: 12
-    R16: 11
-    R24: 10
-    R18: 9
-    R20: 9
-    R22: 9
-    R26: 9
-    R28: 9
-    R30: 9
-    R0: 8
-    R17: 7
-    R19: 7
-    R21: 7
-    R23: 7
-    R10: 5
-    R12: 5
-    R14: 5
-    R2: 5
-    R25: 5
-    R27: 5
-    R29: 5
-    R31: 5
-    R4: 5
-    R6: 5
-    R8: 5
-    R1: 4
-    R11: 3
-    R13: 3
-    R15: 3
-    R3: 3
-    R5: 3
-    R7: 3
-    R9: 3
-    EREGS: 2
-    REGS_16_23: 2
-    REGS_16_31: 2
-    REGS_RDL: 2
-    REGS_XYZ: 2
-    REGS_YZ: 2
-    REGS_Z: 2
-  avrora/arch/legacy/LegacyInstr$COM:
-    r1: 1294082
-    props: 27
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$BRCC:
-    imm1: 26930
-    props: 24
-    prototype: 1
-  avrora/sim/platform/ExternalFlash$Memory:
-    buffer1: 9
-    buffer2: 9
-    bytesPerPage: 9
-    pages: 9
-    this$0: 9
-  avrora/monitors/LEDMonitor$Mon:
-    printer: 6731
-    ledgroup: 3379
-    this$0: 9
-  org/dacapo/parser/Config$ThreadModel:
-    PER_CPU: 4
-    SINGLE: 4
-    FIXED: 3
-    description: 3
-    $VALUES: 2
-  avrora/sim/mcu/Timer16Bit$OutputCompareUnit$FOC_Field:
-    this$1: 54
-  avrora/arch/legacy/LegacyInstr$REGREGIMM_class:
-    imm1: 132
-    r1: 132
-    r2: 132
-  avrora/sim/output/EventBuffer:
-    sim: 9
-  avrora/sim/radio/Medium$Receiver$Ticker:
-    this$0: 12843510
-    $assertionsDisabled: 242947
-  avrora/arch/legacy/LegacyInstr$CALL:
-    imm1: 696900
-    props: 195
-    prototype: 1
-  org/dacapo/harness/Callback$Mode:
-    TIMING: 2
-    WARMUP: 2
-    $VALUES: 1
-  cck/text/Terminal:
-    useColors: 285711
-    COLORS: 28775
-    htmlColors: 14388
-    out: 9718
-    HTML_STRINGS: 34
-    HTML_COLORS: 18
-  avrora/arch/legacy/LegacyInstr$REGREG_class:
-    r1: 3283
-    r2: 3283
-  cck/text/CharUtil:
-    HEX_CHARS: 274407
-    LOW_HEX_CHARS: 1
-  avrora/arch/legacy/LegacyInstr$OR:
-    r1: 20262
-    r2: 10131
-    props: 50
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$FrequencySeparationRegister:
-    frequencySeparation: 108
-    reg0: 63
-    reg1: 63
-    this$0: 27
-  avrora/sim/Segment:
-    segment_data: 130652
-    segment_watches: 130616
-    length: 9
-    name: 9
-    state: 9
-    value: 9
-  avrora/sim/mcu/ATMega128:
-    MCUCR_reg: 640896
-    MCUCR_sm_perm: 640888
-    pins: 657
-    properties: 603
-    EIFR_reg: 81
-    interpreter: 27
-    simulator: 27
-    ETIFR_reg: 18
-    ETIMSK_reg: 18
-    idleModeNames: 11
-    modeAmpere: 10
-    props: 10
-    transitionTimeMatrix: 10
-    TIFR_reg: 9
-    TIMSK_reg: 9
-    sleepState: 9
-    wakeupTimes: 3
-  avrora/sim/mcu/USART$DataRegister$TwoLevelFIFO$USARTFrameWrapper:
-    this$2: 54
-  avrora/arch/legacy/LegacyInstr$ELPMPI:
-    r1: 36
-    props: 4
-    prototype: 1
-  avrora/sim/mcu/MCUProperties:
-    layout: 1252
-    pinAssignments: 586
-    interruptAssignments: 163
-    interrupt_name: 1
-    ioreg_name: 1
-    num_interrupts: 1
-  avrora/sim/InterruptTable:
-    posted: 6269067
-    globalProbe: 4911892
-    pending: 4110255
-    probes: 3399448
-    enabled: 2184497
-    interpreter: 1428736
-    notify: 1427800
-    numInterrupts: 9
-    state: 9
-  avrora/sim/platform/sensors/AccelSensor:
-    adcDevice: 36
-    asp: 18
-  avrora/sim/radio/CC1000Radio$RSSIOutput:
-    this$0: 6096
-  avrora/arch/legacy/LegacyInstr$BRPL:
-    imm1: 155499
-    props: 18
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$CPI:
-    imm1: 2567261
-    r1: 2567261
-    props: 197
-    prototype: 1
-  avrora/sim/mcu/Timer16Bit$Mode_Normal:
-    this$0: 18
-  avrora/sim/mcu/Timer16Bit$Mode_PWM_PNF:
-    compareRegHigh: 36
-    compareRegLow: 36
-    increment: 36
-    this$0: 36
-  avrora/sim/mcu/AtmelMicrocontroller$InterruptType:
-    bitValue: 1568962
-    LowLevel: 1568960
-    AnyLevel: 2
-    FallingEdge: 2
-    RisingEdge: 2
-    $VALUES: 1
-  avrora/sim/mcu/Timer16Bit$OCRnxPairedRegister:
-    this$0: 54
-  org/dacapo/parser/SimpleCharStream:
-    bufpos: 11187
-    column: 6347
-    inBuf: 2446
-    bufcolumn: 2265
-    bufline: 2265
-    line: 2142
-    prevCharIsLF: 2141
-    buffer: 2121
-    maxNextCharInd: 2046
-    prevCharIsCR: 1985
-    tokenBegin: 915
-    tabSize: 75
-    bufsize: 37
-    available: 5
-    inputStream: 4
-    trackLineColumn: 1
-  avrora/arch/legacy/LegacyDisassembler$InvalidInstruction:
-    pc: 40
-    this$0: 40
-    word1: 40
-  avrora/sim/radio/CC1000Radio$CALRegister$Calibrate:
-    this$1: 225
-  avrora/sim/mcu/RegisterSet$FieldWriter:
-    fobject: 324
-  avrora/sim/mcu/ReprogrammableCodeSegment$SPMCSR_reg$ResetEvent:
-    this$1: 9
-  cck/help/HelpCategory:
-    options: 48
-    sections: 34
-    name: 28
-    help: 13
-    COMPARATOR: 1
-  avrora/sim/mcu/Timer16Bit$Mode_FastPWM:
-    compareRegHigh: 90
-    compareRegLow: 90
-    this$0: 90
-    top: 90
-  avrora/sim/radio/CC1000Radio$DummyRegister:
-    this$0: 459
-  org/dacapo/harness/LatencyReporter:
-    callback: 2
-    globalIdx: 1
-    timerBase: 1
-  avrora/sim/platform/Mica2:
-    mcu: 90
-    radio: 54
-    sim: 54
-    accelXSensor: 18
-    accelYSensor: 18
-    ledGroup: 18
-    lightSensor: 18
-    externalFlash: 9
-    sensorboard: 9
-  avrora/sim/platform/ExternalFlash$PA3Output:
-    this$0: 6201
-  avrora/arch/legacy/LegacyInstr$AND:
-    r1: 2480302
-    r2: 1240151
-    props: 105
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$ROR:
-    r1: 321758
-    props: 6
-    prototype: 1
-  avrora/sim/mcu/AtmelMicrocontroller:
-    sleepState: 2563524
-    properties: 1404
-    interpreter: 738
-    pins: 585
-    devices: 135
-    mainClock: 9
-  cck/util/Option:
-    description: 211
-    name: 211
-    COMPARATOR: 1
-  avrora/sim/radio/CC1000Radio:
-    clock: 1272200
-    rxBuffer: 1127455
-    spiTick: 879010
-    txBuffer: 667863
-    receiver: 643677
-    radioPrinter: 286411
-    registers: 17475
-    MAIN_reg: 7243
-    stateMachine: 2208
-    transmitter: 1508
-    ticker: 1499
-    currentFrequencyRegister: 1481
-    FREQ_B_reg: 1472
-    LO_DRIVE: 1446
-    PA_DRIVE: 1446
-    VCO_CURRENT: 1446
-    PA_POW_reg: 1445
-    FREQ_A_reg: 799
-    PLL_reg: 745
-    sim: 81
-    XOSC_FREQ: 55
-    LOCK_reg: 45
-    config: 45
-    RESET_LOCK_THRESHOLD: 28
-    SETS_LOCK_THRESHOLD: 28
-    FSEP_reg: 27
-    xoscFrequency: 27
-    SETTLING: 19
-    medium: 18
-    rssiOutput: 18
-    allModeNames: 11
-    BAUDRATE: 10
-    BUF_CURRENT: 10
-    LNA_CURRENT: 10
-    ttm: 10
-    CAL_reg: 9
-    CURRENT_reg: 9
-    FRONT_END_reg: 9
-    FSCTRL_reg: 9
-    MATCH_reg: 9
-    MODEM_0_reg: 9
-    MODEM_1_reg: 9
-    MODEM_2_reg: 9
-    PRESCALER_reg: 9
-    mcu: 9
-    PRE_CURRENT: 1
-    PRE_SWING: 1
-  avrora/sim/radio/Medium:
-    synch: 1919006
-    Pr: 977589
-    transmissions: 965733
-    arbitrator: 745874
-    Pn: 728840
-    leadBits: 25234
-    maxLength: 728
-    bitsPerSecond: 46
-    minLength: 10
-  avrora/sim/RWRegister:
-    value: 126674460
-  avrora/sim/FiniteStateMachine$TransitionEvent:
-    this$0: 81
-  cck/elf/ELFIdentifier:
-    EM_names: 97
-    EM_help: 93
-    EM_386: 1
-    EM_486: 1
-    EM_68HC05: 1
-    EM_68HC08: 1
-    EM_68HC11: 1
-    EM_68HC12: 1
-    EM_68HC16: 1
-    EM_68K: 1
-    EM_860: 1
-    EM_88K: 1
-    EM_960: 1
-    EM_ALPHA: 1
-    EM_ARC: 1
-    EM_ARCA: 1
-    EM_ARC_A5: 1
-    EM_ARM: 1
-    EM_AVR: 1
-    EM_BLACKFIN: 1
-    EM_COLDFIRE: 1
-    EM_CR: 1
-    EM_CRIS: 1
-    EM_D10V: 1
-    EM_D30V: 1
-    EM_F2MC16: 1
-    EM_FIREPATH: 1
-    EM_FR20: 1
-    EM_FR30: 1
-    EM_FX66: 1
-    EM_H8S: 1
-    EM_H8_300: 1
-    EM_H8_300H: 1
-    EM_H8_500: 1
-    EM_HUANY: 1
-    EM_IA_64: 1
-    EM_IP2K: 1
-    EM_JAVELIN: 1
-    EM_M32: 1
-    EM_M32R: 1
-    EM_MAX: 1
-    EM_ME16: 1
-    EM_MIPS: 1
-    EM_MIPS_RS3_LE: 1
-    EM_MIPS_X: 1
-    EM_MMA: 1
-    EM_MMIX: 1
-    EM_MN10200: 1
-    EM_MN10300: 1
-    EM_MSP430: 1
-    EM_NCPU: 1
-    EM_NDR1: 1
-    EM_NONE: 1
-    EM_NS32K: 1
-    EM_OPENRISC: 1
-    EM_PARISC: 1
-    EM_PCP: 1
-    EM_PDSP: 1
-    EM_PJ: 1
-    EM_PPC: 1
-    EM_PPC64: 1
-    EM_PRISM: 1
-    EM_RCE: 1
-    EM_RH32: 1
-    EM_S370: 1
-    EM_S390: 1
-    EM_SEP: 1
-    EM_SE_C33: 1
-    EM_SH: 1
-    EM_SNP1K: 1
-    EM_SPARC: 1
-    EM_SPARC32PLUS: 1
-    EM_SPARC64: 1
-    EM_SPARCV9: 1
-    EM_ST100: 1
-    EM_ST19: 1
-    EM_ST200: 1
-    EM_ST7: 1
-    EM_ST9PLUS: 1
-    EM_STARCORE: 1
-    EM_SVX: 1
-    EM_TINYJ: 1
-    EM_TMM_GPP: 1
-    EM_TPC: 1
-    EM_TRICORE: 1
-    EM_UNICORE: 1
-    EM_V800: 1
-    EM_V850: 1
-    EM_VAX: 1
-    EM_VIDEOCORE: 1
-    EM_VPP500: 1
-    EM_X86_64: 1
-    EM_XTENSA: 1
-    EM_ZSP: 1
-  avrora/sim/platform/Platform:
-    devices: 81
-    mcu: 27
-  avrora/sim/mcu/Microcontroller$Pin$ListenableInput:
-    listeners: 105669
-  avrora/arch/legacy/LegacyInstr$MUL:
-    r1: 126
-    r2: 126
-    props: 32
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$LSR:
-    r1: 321758
-    props: 8
-    prototype: 1
-  avrora/sim/platform/sensors/LightSensor:
-    mcu: 36
-    adcDevice: 18
-    channel: 18
-    names: 10
-    fsm: 9
-  avrora/sim/clock/DeltaQueue:
-    head: 228040151
-    count: 153066977
-    freeEventLists: 11923597
-    freeLinks: 11864173
-  avrora/sim/mcu/ReprogrammableCodeSegment$SPMCSR_reg:
-    reset: 9
-    this$0: 9
-  avrora/sim/mcu/Timer8Bit$Mode_PWM:
-    increment: 18
-    this$0: 18
-  avrora/sim/mcu/Timer16Bit$OutputCompareUnit:
-    unit: 216
-    OCRnXH_reg: 180
-    OCRnXL_reg: 126
-    OCRnX_reg: 108
-    flagBit: 54
-    flagReg: 54
-    force: 54
-    mode: 54
-    outputComparePin: 54
-    this$0: 54
-  avrora/sim/mcu/ADC$1:
-    this$0: 9
-  avrora/arch/legacy/LegacyInstr$LDD:
-    imm1: 105870
-    r1: 105870
-    r2: 105870
-    props: 133
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$LDI:
-    imm1: 3349377
-    r1: 3349377
-    props: 790
-    prototype: 1
-  avrora/sim/radio/Medium$TXRX:
-    cyclesPerBit: 971454
-    medium: 108
-    probeList: 54
-    $assertionsDisabled: 37
-    clock: 36
-    cyclesPerByte: 36
-    leadCycles: 36
-  cck/util/Option$Str:
-    value: 681
-    defvalue: 181
-  cck/util/VersionTag:
-    commit: 7
-    prefix: 5
-    major: 3
-    minor: 3
-    string: 2
-    tags: 2
-    module: 1
-    suffix: 1
-  org/apache/commons/cli/CommandLine:
-    options: 64
-    args: 5
-  avrora/sim/mcu/EEPROM$EEPROMWriteFinishedEvent:
-    this$0: 9
-  avrora/sim/platform/LED$LEDProbe:
-    printer: 27
-    this$0: 27
-  avrora/sim/mcu/RegisterLayout$Field:
-    name: 362
-    subfields: 266
-    length: 20
-  avrora/sim/mcu/Timer16Bit$Mode_Reserved:
-    this$0: 18
-  avrora/arch/legacy/LegacyInstr$SBC:
-    r1: 22188
-    r2: 11094
-    props: 50
-    prototype: 1
-  avrora/sim/mcu/RegisterSet$MultiFieldRegister:
-    subFields: 54
-    this$0: 54
-  avrora/arch/legacy/LegacyInstr$LDS:
-    imm1: 5242871
-    r1: 5242871
-    props: 498
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$SBI:
-    imm1: 413791
-    imm2: 413791
-    props: 123
-    prototype: 1
-  avrora/sim/mcu/Timer16Bit$InputCapturePin:
-    this$0: 18
-  org/apache/commons/cli/Options:
-    shortOpts: 71
-    longOpts: 70
-    optionGroups: 4
-    requiredOpts: 3
-  avrora/arch/legacy/LegacyInstr$INC:
-    r1: 23072
-    props: 6
-    prototype: 1
-  avrora/sim/mcu/ReprogrammableCodeSegment:
-    buffer: 4626
-    mainClock: 27
-    SPMCSR: 18
-    pagesize: 18
-    ERASE_CYCLES: 9
-    WRITE_CYCLES: 9
-    addressMask: 9
-    disassembler: 9
-    flashPrinter: 9
-  avrora/sim/radio/CC1000Radio$FrequencyRegister:
-    frequency: 1303
-    reg0: 171
-    reg1: 171
-    reg2: 171
-    this$0: 72
-  avrora/sim/radio/CC1000Radio$MatchRegister:
-    rxMatch: 9
-    this$0: 9
-    txMatch: 9
-  avrora/sim/radio/Medium$BasicArbitrator:
-    $assertionsDisabled: 242947
-  avrora/sim/mcu/SPI$SPDReg:
-    receiveReg: 1270940
-    transmitReg: 1270940
-    this$0: 1269743
-  avrora/core/ProgramReader:
-    options: 6
-    ARCH: 4
-    INDIRECT_EDGES: 4
-    help: 4
-  org/dacapo/parser/ConfigFileTokenManager:
-    jjnewStateCnt: 12548
-    jjround: 12324
-    jjstateSet: 9227
-    curChar: 8933
-    jjrounds: 8929
-    jjnextStates: 4369
-    input_stream: 2725
-    jjmatchedKind: 1072
-    jjmatchedPos: 537
-    image: 227
-    jjimage: 115
-    jjstrLiteralImages: 115
-    curLexState: 114
-    jjnewLexState: 114
-    jjtoToken: 114
-    jjimageLen: 113
-    debugStream: 1
-    defaultLexState: 1
-    jjbitVec0: 1
-    jjbitVec2: 1
-    jjtoMore: 1
-    jjtoSkip: 1
-    jjtoSpecial: 1
-    lexStateNames: 1
-  org/dacapo/parser/Config$OutputFile:
-    digest: 8
-    filter: 7
-    text: 7
-    bytes: 4
-    existence: 4
-    lines: 4
-    keep: 3
-    name: 3
-    this$0: 3
-  avrora/arch/legacy/LegacyInstr$CBI:
-    imm1: 425529
-    imm2: 425529
-    props: 86
-    prototype: 1
-  avrora/sim/AtmelInterpreter$IORegBehavior:
-    reg: 4403890
-  avrora/sim/mcu/DefaultMCU:
-    pinPrinter: 10900033
-    pinPrinterInit: 6293068
-    simulator: 1535862
-    pins: 81
-    clockDomain: 72
-    registers: 36
-    platform: 27
-    sleepState: 9
-  avrora/sim/mcu/RegisterSet$TotalFieldWriter:
-    fieldWriter: 144
-  avrora/sim/radio/Medium$Transmitter$Ticker:
-    this$0: 354826
-  avrora/sim/mcu/Timer16Bit$Mode_CTC:
-    compareRegHigh: 36
-    compareRegLow: 36
-    this$0: 36
-  avrora/sim/mcu/EEPROM$EECRReg:
-    _eemwe: 9
-    _eere: 9
-    _eerie: 9
-    _eewe: 9
-    this$0: 9
-  avrora/sim/mcu/RegisterLayout$SubField:
-    field: 960
-    length: 346
-    ior_low_bit: 260
-    mask: 260
-    field_low_bit: 40
-    ior: 26
-    commit: 24
-  avrora/sim/mcu/USART$ControlRegisterC:
-    _umsel: 27
-    _stopBits: 18
-    _ucszLow: 18
-    this$0: 18
-  avrora/arch/legacy/LegacyInstr$ICALL:
-    props: 4
-    prototype: 1
-  avrora/sim/mcu/USART$ControlRegisterB:
-    _rxb8n: 18
-    _ucszHigh: 18
-    this$0: 18
-  avrora/sim/mcu/USART$ControlRegisterA:
-    this$0: 45
-    UDRE_flag: 36
-    TXC_flag: 27
-    _u2xn: 27
-    RXC_flag: 18
-    _dor: 18
-    value: 18
-  avrora/arch/legacy/LegacyInstr$ELPMD:
-    props: 4
-    prototype: 1
-  avrora/arch/legacy/LegacyInterpreter:
-    nextPC: 145817203
-    cyclesConsumed: 143687192
-    innerLoop: 79401644
-    shared_instr: 71288019
-    pc: 70645558
-    N: 29272189
-    V: 28723766
-    Z: 20112354
-    S: 15166746
-    C: 13803692
-    H: 8642785
-    sleeping: 5442326
-    justActivatedInterrupts: 4936070
-    delayCycles: 4226819
-    shouldRun: 3517536
-    I: 3451293
-    interrupts: 3282912
-    globalProbe: 2876652
-    clock: 1924597
-    simulator: 1281766
-    RZ: 142460
-    R0: 97135
-    RAMPZ: 72
-    FACTORY: 10
-    bootPC: 9
-    R1: 1
-  avrora/sim/platform/ExternalFlash$Page:
-    bytes: 18
-    this$0: 18
-  avrora/arch/legacy/LegacyInstr$BRGE:
-    imm1: 255163
-    props: 27
-    prototype: 1
-  cck/help/ClassMapValueItem:
-    indent: 47
-    map: 47
-    optname: 47
-    optvalue: 47
-  avrora/arch/legacy/LegacyInstr$MULS:
-    props: 602
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$DEC:
-    r1: 485496
-    props: 20
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$CurrentRegister:
-    loDrive: 1454
-    paDrive: 1454
-    vcoCurrent: 1454
-    this$0: 9
-  avrora/arch/legacy/LegacyInstr$RCALL:
-    props: 36
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$PUSH:
-    r1: 10998396
-    props: 245
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$FSCTRLRegister:
-    fsResetN: 9
-    this$0: 9
-  avrora/sim/mcu/RegisterSet:
-    registers: 2034
-    fields: 513
-    layout: 9
-  avrora/sim/platform/sensors/AccelSensor$ADCInput:
-    this$0: 18
-  avrora/sim/mcu/Timer8Bit$BufferedRegister:
-    register: 545032
-    this$0: 4194
-    value: 2088
-  avrora/sim/radio/CC1000Radio$SerialConfigurationInterface$PCLKOutput:
-    this$1: 1626630
-    last: 1307688
-  cck/elf/ELFSymbolTable:
-    entries: 1702
-    entry: 428
-    header: 4
-    strtab: 4
-  avrora/arch/legacy/LegacyInstr$STS:
-    imm1: 1152021
-    r1: 1152021
-    props: 667
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$RadioRegister:
-    value: 21792
-    this$0: 5352
-    id: 648
-  avrora/sim/types/SensorSimulation:
-    stagger: 27
-    RANDOM_START: 19
-    cc1000_medium: 18
-    STAGGER_START: 10
-    UPDATE_NODE_ID: 10
-    topology: 10
-    NOISE: 3
-    noise: 3
-    HELP: 2
-    LOSSY_MODEL: 2
-    NODECOUNT: 2
-    SENSOR_DATA: 2
-    TOPOLOGY: 2
-    options: 2
-    synchronizer: 2
-    MONITORS: 1
-    PLATFORM: 1
-    RANGE: 1
-    help: 1
-    radiusModel: 1
-  avrora/sim/radio/CC1000Radio$PA_POWRegister:
-    this$0: 7243
-    value: 5080
-    paHighPower: 1463
-    paLowPower: 1463
-  avrora/sim/mcu/ReprogrammableCodeSegment$Factory:
-    pagesize: 10
-    size: 1
-  avrora/sim/mcu/USART$Transmitter:
-    this$0: 18
-    transmit: 18
-  avrora/sim/Simulator:
-    simulation: 1535844
-    microcontroller: 1281820
-    clock: 987984
-    id: 9595
-    interpreter: 135
-    energyControl: 72
-    program: 18
-    events: 9
-  avrora/sim/energy/EnergyControl:
-    consumer: 72
-    active: 63
-    subscriber: 9
-  avrora/arch/legacy/LegacyInstrProperties:
-    size: 244148
-    cycles: 80
-    name: 80
-    variant: 80
-  avrora/arch/legacy/LegacyInstr$SBCI:
-    r1: 743634
-    imm1: 371817
-    props: 128
-    prototype: 1
-  avrora/sim/mcu/ATMegaFamily$Timer3:
-    this$0: 45
-    ICFn: 9
-    OCFnA: 9
-    OCFnB: 9
-    OCFnC: 9
-    OCIEnA: 9
-    OCIEnB: 9
-    OCIEnC: 9
-    TOIEn: 9
-    TOVn: 9
-    cTIFR_reg: 9
-    cTIMSK_reg: 9
-    periods: 9
-    xTIFR_reg: 9
-    xTIMSK_reg: 9
-  avrora/arch/legacy/LegacyInstr$BRTS:
-    props: 6
-    prototype: 1
-  avrora/sim/mcu/ATMegaFamily$Timer2:
-    this$0: 9
-  avrora/sim/mcu/ATMegaFamily$Timer1:
-    this$0: 45
-    ICFn: 9
-    OCFnA: 9
-    OCFnB: 9
-    OCFnC: 9
-    OCIEnA: 9
-    OCIEnB: 9
-    OCIEnC: 9
-    TOIEn: 9
-    TOVn: 9
-    cTIFR_reg: 9
-    cTIMSK_reg: 9
-    periods: 9
-    xTIFR_reg: 9
-    xTIMSK_reg: 9
-  avrora/sim/clock/RippleSynchronizer$NotifyEvent:
-    lastLink: 3402188
-    this$0: 409320
-    clock: 261856
-    removed: 130919
-    thread: 9
-  java/lang/String:
-    CASE_INSENSITIVE_ORDER: 10
-  avrora/sim/mcu/ATMegaFamily$Timer0:
-    externalClock: 18
-    timerClock: 18
-    this$0: 9
-  avrora/sim/platform/sensors/AccelSensorPower:
-    on: 90
-    fsm: 54
-    names: 10
-  avrora/arch/legacy/LegacyInstr$STD:
-    imm1: 81513
-    r1: 81513
-    r2: 81513
-    props: 154
-    prototype: 1
-  avrora/sim/state/RegisterUtil$BoolView:
-    reg: 4086732
-    low: 2779984
-    listener: 2726365
-  avrora/sim/radio/CC1000Radio$PrescalerRegister:
-    preCurrent: 9
-    preSwing: 9
-    this$0: 9
-  avrora/Defaults:
-    monitorMap: 34
-    actions: 13
-    inputs: 13
-    platforms: 8
-    simMap: 8
-    mainCategories: 6
-  org/dacapo/parser/Token:
-    next: 372
-    kind: 300
-    image: 209
-    beginColumn: 114
-    beginLine: 114
-    endColumn: 114
-    endLine: 114
-    specialToken: 114
-  avrora/sim/mcu/Timer16Bit$PairedRegister:
-    high: 90
-    low: 90
-    this$0: 90
-  org/dacapo/harness/TeePrintStream:
-    out: 6
-  avrora/arch/legacy/LegacyRegister$Set:
-    registerSet: 11051
-    contents: 8
-  avrora/arch/legacy/LegacyInstr$REGIMM_class:
-    imm1: 2307
-    r1: 2307
-  avrora/core/SourceMapping:
-    labels: 311
-    reverseMap: 266
-    program: 2
-    LOCATION_COMPARATOR: 1
-  avrora/sim/radio/CC1000Radio$SerialConfigurationInterface$PDATAOutput:
-    this$1: 561513
-  avrora/arch/legacy/LegacyInstr$BREQ:
-    imm1: 202978
-    props: 111
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$LD:
-    r1: 31581
-    r2: 31581
-    props: 25
-    prototype: 1
-  cck/elf/ELFHeader:
-    e_ident: 26
-    e_shentsize: 24
-    e_phentsize: 8
-    e_shstrndx: 6
-    e_machine: 4
-    e_phnum: 4
-    e_phoff: 4
-    e_shnum: 4
-    e_shoff: 4
-    bigEndian: 2
-    e_ehsize: 2
-    e_entry: 2
-    e_flags: 2
-    e_type: 2
-    e_version: 2
-  avrora/arch/legacy/LegacyInstr$POP:
-    r1: 10998379
-    props: 245
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$SEC:
-    props: 4
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$SEI:
-    props: 10
-    prototype: 1
-  avrora/sim/mcu/Timer16Bit$TCNTnRegister:
-    this$0: 18
-  avrora/sim/mcu/SPI$Frame:
-    data: 1272384
-  avrora/sim/radio/CC1000Radio$Modem1Register:
-    settling: 27
-    lockAvgMode: 18
-    lockAvgN: 18
-    mlimit: 18
-    modemResetN: 18
-    this$0: 9
-  avrora/sim/radio/Medium$Receiver:
-    medium: 4620058
-    clock: 3411496
-    cyclesPerByte: 1208830
-    locked: 977381
-    activated: 967084
-    leadCycles: 722374
-    probeList: 496890
-    ticker: 1499
-    frequency: 727
-    $assertionsDisabled: 1
-  cck/help/HelpSystem:
-    categoryMap: 50
-  avrora/arch/legacy/LegacyInstr$SBRS:
-    imm1: 410331
-    r1: 410331
-    props: 34
-    prototype: 1
-  avrora/sim/mcu/EEPROM:
-    EEARH_reg: 18
-    EEARL_reg: 18
-    EECR_reg: 18
-    EEDR_reg: 18
-    EEPROM_SIZE: 18
-    EEPROM_SIZE_numBits: 9
-    EEPROM_data: 9
-    ticker: 9
-    writeCount: 9
-    writeFinishedEvent: 9
-  avrora/sim/mcu/Microcontroller$Pin$ListenableBooleanViewInput:
-    level: 199557
-  avrora/arch/avr/AVRProperties:
-    num_pins: 604
-    ioreg_size: 19
-    codeSegmentFactory: 10
-    eeprom_size: 10
-    flash_size: 10
-    sram_size: 10
-    num_interrupts: 9
-  avrora/arch/legacy/LegacyInstr$BST:
-    props: 8
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$SUB:
-    r1: 18104
-    r2: 9052
-    props: 16
-    prototype: 1
-  avrora/sim/Simulation$Node:
-    simulator: 959597
-    this$0: 55
-    monitors: 36
-    id: 27
-    guiMonitors: 18
-    path: 18
-    platform: 18
-    platformFactory: 18
-    thread: 18
-  avrora/sim/mcu/USART$UBRRnLReg:
-    this$0: 27
-  avrora/sim/mcu/ADC$ControlRegister$ConversionEvent:
-    this$1: 54792
-  cck/elf/ELFProgramHeaderTable$Entry32:
-    p_paddr: 18248
-    p_vaddr: 604
-    p_filesz: 26
-    p_type: 18
-    p_offset: 14
-    p_flags: 10
-    p_align: 6
-    p_memsz: 6
-    this$0: 6
-  avrora/sim/mcu/ADC$MUXRegister:
-    _mux: 18270
-    this$0: 9
-  avrora/sim/Simulation:
-    nodes: 174
-    num_nodes: 18
-    monitorFactoryList: 12
-    synchronizer: 12
-    running: 11
-    EELOADIMAGE: 10
-    SECONDS: 10
-    PLATFORM: 3
-    MONITORS: 2
-    SCHEDULE: 2
-    options: 2
-    CLOCKSPEED: 1
-    EXTCLOCKSPEED: 1
-    MCU: 1
-    RANDOMSEED: 1
-  avrora/sim/clock/MainClock:
-    eventQueue: 80509802
-  avrora/sim/state/AbstractRegisterView:
-    listeners: 4602024
-  javax/xml/bind/DatatypeConverter:
-    theConverter: 1252
-    SET_DATATYPE_CONVERTER_PERMISSION: 1
-  avrora/sim/radio/CC1000Radio$SerialConfigurationInterface$PDATAInput:
-    this$1: 9
-  avrora/arch/legacy/LegacyInstr$FMUL:
-    props: 4
-    prototype: 1
-  avrora/sim/radio/Medium$Transmission:
-    firstBit: 552486
-    data: 315490
-    lastBit: 281175
-    $assertionsDisabled: 248751
-    counter: 64316
-    origin: 2154
-    end: 1436
-    start: 1436
-    Pt: 718
-    f: 718
-    power: 718
-    this$0: 718
-  avrora/sim/mcu/SPI$SPCRReg:
-    _master: 1270940
-    this$0: 59049
-    prev_spie: 21438
-    _spr: 10746
-    _enabled: 9
-  avrora/arch/legacy/LegacyInstr$SBIC:
-    imm1: 93888
-    imm2: 93888
-    props: 8
-    prototype: 1
-  avrora/sim/mcu/USART$Receiver$Receive:
-    this$1: 18
-  avrora/sim/platform/sensors/LightSensor$OnPin:
-    this$0: 9
-  avrora/sim/platform/sensors/LightSensor$ADCInput:
-    this$0: 9
-  cck/text/StringUtil:
-    EMPTY_STRING_ARRAY: 1
-    spacers: 1
-  org/dacapo/harness/Benchmark:
-    data: 629
-    datDeps: 625
-    stats: 48
-    config: 15
-    err: 7
-    out: 7
-    scratch: 7
-    verbose: 7
-    iteration: 5
-    validateOutput: 5
-    loader: 4
-    printStats: 4
-    savedErr: 4
-    savedOut: 4
-    silentErr: 4
-    silentOut: 4
-    validationReport: 4
-    jarDeps: 3
-    preIterationGC: 3
-    preserve: 3
-    savedSystemProperties: 3
-    timeoutDialation: 3
-    validate: 3
-    watchdog: 3
-    dumpLatencyCSV: 2
-    dumpLatencyHDR: 2
-    dumpLatencySmoothing: 2
-    iterations: 2
-    latencyBaseFileName: 2
-    savedClassLoader: 2
-    dataSet: 1
-    valRepFile: 1
-  cck/util/Option$Long:
-    value: 25
-    defvalue: 5
-  cck/text/Verbose$Printer:
-    enabled: 1
-  avrora/sim/mcu/ATMegaFamily$Timer0$ASSRRegister:
-    this$1: 45
-  avrora/arch/legacy/LegacyInstr$SBIS:
-    props: 8
-    prototype: 1
-  cck/elf/ELFProgramHeaderTable:
-    entries: 1506
-    header: 12
-  avrora/arch/legacy/LegacyInstr$SBIW:
-    r1: 1074812
-    imm1: 537406
-    props: 68
-    prototype: 1
-  avrora/monitors/PacketMonitor$Mon:
-    bufferPos: 1110686
-    bufferData: 1110483
-    bits: 548723
-    bytesReceived: 485901
-    matchStart: 271331
-    bytesTransmitted: 63607
-    simulator: 18693
-    printer: 12441
-    startCycle: 12441
-    packetsReceived: 11007
-    showPackets: 6225
-    startSymbol: 6174
-    bytesCorrupted: 6079
-    cc2420radio: 5518
-    packetsTransmitted: 1443
-    this$0: 20
-  java/io/File:
-    separator: 2
-  cck/text/Status:
-    inside: 7
-    stack: 7
-    ENABLED: 6
-    TIMING: 6
-  avrora/sim/CodeSegment$NoLegacyInstr:
-    this$0: 9
-  avrora/sim/mcu/SPI$TransferEvent:
-    transmitting: 636064
-    this$0: 634876
-  avrora/arch/msp430/MSP430Architecture:
-    INSTANCE: 2
-  org/dacapo/parser/Config$Size:
-    outputFiles: 23
-    this$0: 6
-    threadLimit: 6
-    args: 4
-    nThreads: 3
-    name: 3
-  avrora/sim/mcu/AtmelInternalDevice:
-    microcontroller: 531
-    simulator: 243
-    name: 162
-    devicePrinter: 81
-    interpreter: 81
-    mainClock: 81
-  avrora/arch/legacy/LegacyInstr$FMULS:
-    props: 4
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$Modem2Register:
-    peakDetect: 18
-    peakLevelOffset: 18
-    this$0: 9
-  avrora/sim/mcu/Timer16Bit$OCRnxTempHighRegister:
-    register: 54
-    this$0: 54
-  avrora/sim/radio/Medium$Transmitter:
-    transmission: 97550
-    probeList: 65032
-    activated: 34715
-    clock: 33953
-    shutdown: 33951
-    cyclesPerByte: 31799
-    leadCycles: 1436
-    medium: 1436
-    ticker: 736
-  cck/elf/ELFSymbolTable$Entry:
-    st_info: 1192
-    st_shndx: 952
-    st_value: 952
-    st_name: 688
-    st_size: 688
-    st_other: 424
-    this$0: 424
-  cck/util/Option$List:
-    orig: 27
-    value: 18
-  cck/util/ClassMap:
-    classMap: 169
-    reverseMap: 108
-    objMap: 73
-    clazz: 22
-    type: 7
-  avrora/arch/legacy/LegacyInstr$SWAP:
-    props: 4
-    prototype: 1
-  avrora/sim/mcu/SPI:
-    spifAccessed: 1911153
-    SPSR_reg: 1287041
-    interruptNum: 1281686
-    interpreter: 1281677
-    frameCache: 1272387
-    SPDR_reg: 1272146
-    SPCR_reg: 1270949
-    transferEvent: 1270940
-    devicePrinter: 10737
-    period: 10737
-    FF_FRAME: 1
-    ZERO_FRAME: 1
-  avrora/sim/AtmelInterpreter$SREGBehavior:
-    this$0: 12067433
-  javax/xml/bind/DatatypeConverterImpl:
-    hexCode: 20001
-    $assertionsDisabled: 1
-    datatypeFactory: 1
-    decodeMap: 1
-    encodeMap: 1
-    theInstance: 1
-  avrora/arch/legacy/LegacyInstr$IN:
-    imm1: 2067785
-    r1: 2067785
-    props: 186
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$FrontEndRegister:
-    bufCurrent: 18
-    lnaCurrent: 18
-    ifRSSI: 9
-    this$0: 9
-    xoscBypassExternal: 9
-  java/lang/System:
-    out: 10
-    err: 4
-  avrora/sim/state/Register:
-    value: 93897
-    mask: 9
-    width: 9
-  avrora/monitors/MonitorFactory:
-    options: 4
-    help: 2
-  avrora/sim/mcu/EEPROM$EEARHReg:
-    this$0: 9
-  avrora/sim/radio/CC1000Radio$FrequencyRegister$FrequencySubRegister:
-    value: 351
-    this$1: 171
-  avrora/sim/state/RegisterUtil$BitRangeView:
-    mask: 1698885
-    low: 1604295
-    reg: 1604277
-    width: 207
-  avrora/sim/mcu/USART$Receiver:
-    receive: 18
-    this$0: 18
-  avrora/sim/radio/Medium$Probe$List:
-    head: 280961
-  avrora/sim/CodeSegment:
-    segment_instr: 235130
-    segment_data: 81726
-    NO_INSTR: 18
-    NO_INSTR_PROPS: 10
-    codeSharer: 9
-    interpreter: 9
-  avrora/sim/mcu/RegisterSet$SubRegWriter:
-    ior_low_bit: 234
-    length: 234
-    mask: 234
-  avrora/core/Program:
-    program_start: 270890
-    program_end: 250118
-    flash_data: 99748
-    flash_instrs: 55132
-    sourceMapping: 11
-    arch: 4
-    indirectEdges: 2
-    program_length: 2
-  avrora/Version:
-    TAG: 2
-  avrora/arch/legacy/LegacyArchitecture:
-    INSTANCE: 2
-  avrora/sim/mcu/ATMegaFamily$InterruptFlag:
-    interpreter: 135
-    inum: 135
-    view: 81
-    autoclear: 54
-  avrora/sim/output/SimPrinter:
-    simulator: 9622
-  avrora/sim/radio/CC1000Radio$PLLRegister:
-    refDiv: 745
-    alarmDisable: 9
-    alarmHigh: 9
-    alarmLow: 9
-    extFilter: 9
-    this$0: 9
-    value: 9
-  avrora/sim/radio/CC1000Radio$Receiver:
-    cyclesPerByte: 1121974
-    this$0: 982800
-    clock: 242946
-  avrora/arch/legacy/LegacyInstr$ADD:
-    r1: 1259050
-    r2: 629525
-    props: 229
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$RET:
-    props: 74
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$ADC:
-    r1: 698832
-    r2: 349416
-    props: 206
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$LockRegister:
-    resetLockThreshold: 36
-    setsLockThreshold: 36
-    lockContinuous: 27
-    lockInstant: 27
-    lockSelect: 27
-    pllLockLength: 27
-    value: 18
-    LOCK_SELECT: 9
-    this$0: 9
-  avrora/sim/clock/RippleSynchronizer:
-    $assertionsDisabled: 4792858
-    goal: 3204447
-    threadMap: 959537
-    waitListHead: 208664
-    notifyPeriod: 147474
-    action: 1
-  org/apache/commons/cli/Parser:
-    options: 7
-    cmd: 4
-    requiredOptions: 2
-  cck/elf/ELFStringTable:
-    data: 11814
-    map: 802
-    entry: 8
-  avrora/sim/mcu/Timer16Bit$1:
-    this$0: 18
-  avrora/sim/mcu/Timer16Bit$2:
-    this$0: 18
-  org/apache/commons/cli/Util:
-    EMPTY_STRING_ARRAY: 2
-  avrora/sim/util/MulticastFSMProbe:
-    head: 36396
-  avrora/arch/legacy/LegacyInstr$NOP:
-    props: 208
-    prototype: 1
-  avrora/sim/mcu/ATMegaFamily$MaskRegister:
-    mapping: 1008
-    interpreter: 504
-    value: 63
-  avrora/arch/legacy/LegacyInstr$CPSE:
-    r1: 634867
-    r2: 634867
-    props: 16
-    prototype: 1
-  avrora/sim/mcu/RegisterSet$SubFieldWriter:
-    fieldWriter: 36
-    subField: 36
-  org/dacapo/parser/ConfigFile:
-    token: 762
-    jj_ntk: 300
-    jj_gen: 245
-    token_source: 115
-    jj_nt: 73
-    jj_la1: 38
-    jj_input_stream: 2
-    jj_expentries: 1
-    jj_kind: 1
-    jj_la1_0: 1
-    jj_la1_1: 1
-  avrora/syntax/elf/ELFParser:
-    pht: 1490
-    sht: 534
-    header: 12
-    SYMBOLS: 6
-    arch: 6
-    symbolTables: 4
-    ARCH: 2
-    shstrtab: 2
-  avrora/arch/avr/AVRArchitecture:
-    INSTANCE: 2
-  avrora/sim/mcu/SPI$SPSReg:
-    _spif: 1276295
-    this$0: 1276295
-    _spi2x: 10746
-  avrora/monitors/PacketMonitor:
-    monitors: 21
-    BITS: 10
-    PACKETS: 10
-    START_SYMBOL: 10
-  cck/text/Printer:
-    begLine: 3
-    o: 3
-    STDERR: 1
-    STDOUT: 1
-  avrora/sim/radio/CC1000Radio$SerialConfigurationInterface$PALEOutput:
-    last: 1695912
-    this$1: 142599
-  org/dacapo/harness/Callback$1:
-    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
-  avrora/sim/clock/RippleSynchronizer$WaitLink:
-    time: 5328586
-    numPassed: 5193342
-    next: 2122262
-  avrora/sim/FiniteStateMachine$State:
-    probes: 5211370
-    transition_time: 1945652
-    name: 2574
-    this$0: 2574
-  avrora/arch/legacy/LegacyInstr$LDPI:
-    r2: 216
-    r1: 108
-    props: 4
-    prototype: 1
-  avrora/sim/platform/ExternalFlash$PD2Input:
-    this$0: 93906
-  org/dacapo/harness/CommandLineArgs:
-    OPTIONS: 125
-    line: 42
-    options: 33
-    $assertionsDisabled: 32
-    visibleOptions: 31
-    callback: 6
-    benchmarks: 3
-    parser: 2
-  avrora/arch/legacy/LegacyInstr$LDPD:
-    props: 8
-    prototype: 1
-  org/dacapo/harness/Avrora:
-    args: 2
-    config: 2
-    method: 2
-    data: 1
-    loader: 1
-    scratch: 1
-  avrora/arch/legacy/LegacyInstr$ANDI:
-    r1: 121904
-    imm1: 60952
-    props: 92
-    prototype: 1
-  avrora/sim/mcu/USART$UBRRnHReg:
-    this$0: 18
-  avrora/sim/platform/sensors/SensorBoard:
-    modeAmpere: 18
-    modeName: 18
-    sim: 18
-  avrora/sim/mcu/Timer8Bit$TCNTnRegister:
-    this$0: 271508
-    value: 271490
-  avrora/arch/legacy/LegacyInstr$BRID:
-    props: 4
-    prototype: 1
-  avrora/sim/platform/LED$LEDGroup:
-    leds: 3379
-    sim: 9
-  avrora/core/SourceMapping$Location:
-    lma_addr: 282
-    name: 264
-    section: 264
-    size: 264
-    this$0: 264
-    vma_addr: 264
-  cck/elf/ELFSectionHeaderTable:
-    entries: 894
-    strtab: 532
-    header: 28
-  avrora/arch/legacy/LegacyInstr$SUBI:
-    r1: 1217200
-    imm1: 608600
-    props: 181
-    prototype: 1
-  avrora/sim/clock/ClockDomain:
-    mainClock: 81
-    clockMap: 63
-  cck/util/Option$Double:
-    value: 16
-    defvalue: 2
-  avrora/arch/legacy/LegacyInstr$LPMD:
-    r1: 33572
-    props: 24
-    prototype: 1
-  cck/help/HelpCategory$OptionsSection:
-    options: 8
-    para: 8
-    this$0: 8
-  avrora/sim/radio/noise:
-    noise: 2
-  avrora/sim/mcu/USART$USARTProperties:
-    UCSR_name: 72
-    USART_name: 72
-    UBRR_name: 54
-    USART_RX_inum: 54
-    USART_TX_inum: 54
-    USART_UDRE_inum: 54
-    UDR_name: 36
-    interruptMapping: 36
-    subID: 18
-  avrora/arch/legacy/LegacyInstr$ORI:
-    r1: 1470738
-    imm1: 735369
-    props: 76
-    prototype: 1
-  avrora/arch/legacy/LegacyInstr$BRNE:
-    imm1: 837114
-    props: 128
-    prototype: 1
-  avrora/sim/mcu/DefaultMCU$Pin:
-    this$0: 18729413
-    outputDir: 8126955
-    level: 7567670
-    output: 7461256
-    input: 563436
-    pullup: 187848
-    number: 657
-  avrora/sim/state/BooleanRegister:
-    listener: 211293
-    value: 199530
-  avrora/sim/platform/ExternalFlash:
-    isSelected: 790500
-    si: 784470
-    so: 93915
-    clock: 54
-    mcu: 54
-    dfStatus: 45
-    sim: 36
-    printer: 27
-    dfOpcode: 18
-    i: 18
-    stateMachine: 18
-    step: 18
-    tick: 18
-    modeAmpere: 10
-    modeName: 10
-    delay: 9
-    dfByteOffset: 9
-    dfPageAddress: 9
-    isReading: 9
-    memory: 9
-  avrora/arch/ArchitectureRegistry:
-    archMap: 14
-  avrora/sim/radio/CC1000Radio$Transmitter:
-    this$0: 63616
-  avrora/sim/mcu/AtmelMicrocontroller$INTPin$InterruptTableNotification:
-    this$1: 18
-    underlyingNotification: 18
-  avrora/sim/mcu/ATMegaFamily$FlagRegister:
-    value: 1577238
-    mapping: 1573539
-    interpreter: 1573152
-  avrora/sim/platform/ExternalFlash$PD3Output:
-    this$0: 784479
-  avrora/sim/util/TransactionalList$Link:
-    object: 317402
-    next: 317357
-  avrora/sim/platform/ExternalFlash$Delay:
-    this$0: 27
-  avrora/sim/radio/CC1000Radio$Modem0Register:
-    baudrate: 63
-    dataFormat: 63
-    bitrate: 36
-    xoscFreqRange: 36
-    this$0: 27
-    value: 9
-  avrora/arch/legacy/LegacyInstr$REGIMMREG_class:
-    imm1: 153
-    r1: 153
-    r2: 153
-  avrora/arch/legacy/LegacyInstr$MOV:
-    r1: 2500802
-    r2: 2500802
-    props: 291
-    prototype: 1
-  cck/text/Verbose:
-    printerMap: 1535793
-    verbosePrinter: 2
-    ALL: 1
-  org/dacapo/parser/Config:
-    sizes: 29
-    threadModel: 19
-    desc: 10
-    name: 6
-    className: 4
-    threadCountOverride: 2
-  avrora/arch/legacy/LegacyInstr$SLEEP:
-    props: 4
-    prototype: 1
-  org/dacapo/parser/Config$1:
-    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 11
-  avrora/arch/legacy/LegacyInstr$IMMREG_class:
-    imm1: 883
-    r1: 883
-  avrora/arch/legacy/LegacyInstr$STPD:
-    props: 6
-    prototype: 1
-  avrora/actions/SimAction$ShutdownThread:
-    this$0: 1
-  avrora/sim/platform/LED:
-    state: 28362
-    colornum: 5153
-    sim: 108
-    modeAmpere: 28
-    modeName: 28
-    color: 27
-    probe: 27
-  avrora/actions/SimAction$TimeoutException:
-    address: 9
-    state: 9
-    timeout: 9
-  avrora/sim/AtmelInterpreter:
-    sram: 160411042
-    cyclesConsumed: 143859948
-    sram_watches: 80018218
-    clock: 72571930
-    pc: 71288028
-    nextPC: 71288019
-    SPH_reg: 54807395
-    SPL_reg: 54807395
-    sram_start: 40009127
-    sram_volatile: 5916953
-    interrupts: 3625853
-    I: 2980070
-    C: 1508428
-    H: 1508428
-    N: 1508428
-    S: 1508428
-    T: 1508428
-    V: 1508428
-    Z: 1508428
-    innerLoop: 739051
-    justActivatedInterrupts: 709267
-    interruptBase: 643024
-    flash: 331591
-    ioregs: 4815
-    state: 36
-    SREG: 18
-    delayCycles: 18
-    registers: 18
-    sram_max: 18
-    RAMPZ: 9
-    globalProbe: 9
-    shared_instr: 9
-    shouldRun: 9
-  avrora/actions/Action:
-    options: 2
-    help: 1
-  avrora/arch/legacy/LegacyInstr$LPMPI:
-    props: 4
-    prototype: 1
-  org/dacapo/harness/TeeOutputStream:
-    log: 4100154
-    toScreen: 1366716
-    logFile: 6
-    version: 2
-  avrora/arch/legacy/LegacyInstr$STPI:
-    r1: 7392
-    r2: 3696
-    props: 10
-    prototype: 1
-  avrora/core/LoadableProgram:
-    program: 38
-    fname: 4
-    file: 2
-  avrora/arch/legacy/LegacyInstr$EOR:
-    r1: 3694522
-    r2: 1847261
-    props: 367
-    prototype: 1
-  avrora/sim/util/SimUtil:
-    REPORT_SECONDS: 9579
-    ID_LENGTH: 9578
-    TIME_LENGTH: 9578
-    SECONDS_PRECISION: 2
-  avrora/arch/legacy/LegacyInstr$MOVW:
-    r1: 79338
-    r2: 79338
-    props: 826
-    prototype: 1
-  avrora/sim/mcu/ATMegaFamily$PortRegister:
-    pins: 6178542
-    value: 772311
-  avrora/sim/mcu/ATMegaFamily$DirectionRegister:
-    pins: 298286
-    value: 37279
-  avrora/sim/mcu/ATMegaFamily$FlagRegister$Notification:
-    this$0: 6408
-    bit: 2268
-  avrora/sim/Simulation$Iter:
-    cursor: 186
-    this$0: 124
-  avrora/arch/legacy/LegacyInstr$RETI:
-    props: 12
-    prototype: 1
-  avrora/sim/mcu/RegisterLayout$RegisterInfo:
-    subfields: 1239
-    ior_num: 888
-    name: 210
-  cck/help/HelpCategory$Section:
-    this$0: 21
-  avrora/arch/legacy/LegacyInstr$ST:
-    r1: 78147
-    r2: 78147
-    props: 20
-    prototype: 1
-  avrora/sim/mcu/SPI$SPDReg$TransmitRegister:
-    this$1: 634876
-  avrora/arch/legacy/LegacyInstr$BRLT:
-    imm1: 416871
-    props: 30
-    prototype: 1
-  cck/help/HelpCategory$ListSection:
-    list: 5
-    para: 5
-    this$0: 5
-    title: 5
-  avrora/sim/AtmelInterpreter$StateImpl:
-    this$0: 18
-  avrora/sim/mcu/Timer8Bit$Mode_FastPWM:
-    this$0: 18
-  avrora/sim/mcu/EEPROM$EEARLReg:
-    this$0: 9
-  cck/elf/ELFSectionHeaderTable$Entry32:
-    this$0: 550
-    sh_entsize: 448
-    sh_addr: 286
-    sh_name: 286
-    sh_type: 46
-    sh_offset: 28
-    sh_size: 28
-    sh_link: 24
-    sh_addralign: 22
-    sh_flags: 22
-    sh_info: 22
-  avrora/arch/legacy/LegacyInstr$CLI:
-    props: 122
-    prototype: 1
-  avrora/sim/mcu/USART:
-    properties: 198
-    interpreter: 72
-    UBRRnH_reg: 45
-    UBRRnL_reg: 45
-    UCSRnC_reg: 45
-    UBRRMultiplier: 36
-    UCSRnA_reg: 36
-    UCSRnB_reg: 36
-    UDRn_reg: 36
-    period: 27
-    connectedDevice: 18
-    devicePrinter: 18
-    receiver: 18
-    simulator: 18
-    transmitter: 18
-    FRAME_SIZE: 1
-  avrora/sim/mcu/Timer16Bit:
-    tickers: 306
-    n: 288
-    ICRnH_reg: 108
-    ICRnL_reg: 108
-    compareUnits: 90
-    highTempReg: 54
-    ICRn_reg: 36
-    TCNTnH_reg: 36
-    TCNTnL_reg: 36
-    TCNTn_reg: 36
-    xTIFR_reg: 36
-    CSn: 18
-    ICESn_flag: 18
-    OCFnA: 18
-    OCFnB: 18
-    OCFnC: 18
-    WGMn: 18
-    cTIFR_reg: 18
-    externalClock: 18
-    inputCaptureInterrupt: 18
-    inputCapturePin: 18
-    mainClock: 18
-    timerClock: 18
-  avrora/sim/mcu/Timer8Bit$Mode_CTC:
-    this$0: 1085906
-  avrora/sim/mcu/Timer16Bit$BufferedRegister:
-    register: 108
-    this$0: 108
-  avrora/arch/legacy/LegacyInstr:
-    properties: 253121
-    GPR_default: 52
-    SREL_default: 12
-    HGPR_default: 9
-    IMM3_default: 8
-    ADR_default: 7
-    IMM6_default: 7
-    IMM8_default: 7
-    IMM5_default: 5
-    MGPR_default: 5
-    Z_default: 5
-    DADDR_default: 3
-    EGPR_default: 3
-    LREL_default: 3
-    PADDR_default: 3
-    RDL_default: 3
-    YZ_default: 3
-  avrora/arch/legacy/LegacyInstr$OUT:
-    imm1: 2069260
-    r1: 2069260
-    props: 218
-    prototype: 1
-  avrora/sim/radio/CC1000Radio$SerialConfigurationInterface:
-    bitsRead: 1511814
-    PALE_in: 878724
-    inputPin: 729216
-    writeCommand: 698874
-    address: 506850
-    readData: 117378
-    PDATA_out: 105660
-    writeValue: 94788
-    readerPrinter: 16377
-    this$0: 16359
-    PCLK_in: 18
-    PDATA_in: 18
-  avrora/sim/mcu/USART$Transmitter$Transmit:
-    this$1: 18
-  org/dacapo/harness/CommandLineArgs$Methodology:
-    ITERATE: 5
-    CONVERGE: 3
-    $VALUES: 2
-  avrora/sim/mcu/EEPROM$EEPROMTicker:
-    this$0: 9
-  avrora/actions/SimAction:
-    simulation: 6
-    REPORT_SECONDS: 2
-    SECONDS_PRECISION: 2
-    SIMULATION: 2
-    THROUGHPUT: 2
-    reported: 2
-    startms: 2
-    options: 1
-  avrora/sim/mcu/ADC$ControlRegister:
-    this$0: 152202
-    _adif: 42627
-    _adsc: 30453
-    converting: 30444
-    _aden: 24366
-    _adie: 24366
-    value: 24357
-    conversion: 12183
-    cycles: 12183
-    _adfr: 6096
-    _prescaler: 6096
-  avrora/sim/state/RegisterUtil$PermutedView:
-    bits: 108
-    reg: 36
-  avrora/sim/mcu/Timer8Bit$Mode_Normal:
-    this$0: 18
-  cck/util/Option$Interval:
-    high: 12
-    low: 12
-    default_high: 1
-    default_low: 1
-  avrora/sim/mcu/RegisterLayout:
-    ioreg_size: 2366
-    info: 2346
-    ioregAssignments: 898
-    UNUSED: 241
-    RESERVED: 235
-    fields: 48
-    ioreg_length: 7
-  avrora/sim/mcu/Timer16Bit$Mode_PWMPhaseCorrect:
-    compareRegHigh: 90
-    compareRegLow: 90
-    increment: 90
-    this$0: 90
-    top: 90
-  avrora/sim/mcu/AtmelMicrocontroller$INTPin:
-    outputDir: 3067329
-    intNum: 1569048
-    EICRx_bits: 1569030
-    EIFR_reg: 1569030
-    oldValue: 1569030
-    notification: 784515
-    this$0: 72
-    input: 9
-  avrora/arch/legacy/LegacyInstr$REG_class:
-    r1: 553
-  avrora/sim/clock/Clock:
-    hz: 752278
-    name: 27
-  avrora/sim/FiniteStateMachine:
-    curState: 11068635
-    states: 7154529
-    globalProbe: 2604506
-    numStates: 2880
-    clock: 144
-    startState: 144
-    transEvent: 81
-  avrora/sim/mcu/Timer8Bit$ControlRegister:
-    mode: 4230
-    this$0: 108
-    scale: 45
-    CSn: 36
-    WGMn: 36
-    COMn: 18
-    value: 18
-  avrora/arch/legacy/LegacyInstr$BRMI:
-    props: 6
-    prototype: 1
-  avrora/sim/platform/ExternalFlash$PD5Output:
-    this$0: 784479
-  avrora/arch/legacy/LegacyInstr$RJMP:
-    imm1: 3176854
-    props: 358
-    prototype: 1
-  avrora/sim/clock/DerivedClock:
-    divider: 542971
-    driveClock: 542971
-  avrora/sim/radio/RadioEnergy:
-    modeName: 258
-    modeAmpere: 10
-  cck/util/Option$Bool:
-    value: 83
-    defvalue: 15
-  avrora/arch/legacy/LegacyInstr$CP:
-    r1: 1360634
-    r2: 1360634
-    props: 81
-    prototype: 1
+  avrora.arch.legacy.LegacyInstr$LPMPI:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.AtmelMicrocontroller$INTPin:
+    EICRx_bits:
+      offset: 40
+      deref-count: 1569030
+    EIFR_reg:
+      offset: 36
+      deref-count: 1569030
+    notification:
+      offset: 44
+      deref-count: 784515
+    this$0:
+      offset: 48
+      deref-count: 72
+    input:
+      offset: 20
+      deref-count: 9
+  avrora.sim.platform.LED:
+    state:
+      offset: 24
+      deref-count: 28362
+    sim:
+      offset: 16
+      deref-count: 108
+    color:
+      offset: 20
+      deref-count: 27
+    probe:
+      offset: 28
+      deref-count: 27
+  avrora.arch.legacy.LegacyInstrProperties:
+    name:
+      offset: 20
+      deref-count: 80
+    variant:
+      offset: 24
+      deref-count: 80
+  avrora.sim.mcu.ReprogrammableCodeSegment$SPMCSR_reg:
+    this$0:
+      offset: 24
+      deref-count: 9
+    reset:
+      offset: 20
+      deref-count: 9
+  avrora.actions.SimAction$TimeoutException:
+    state:
+      offset: 48
+      deref-count: 9
+  avrora.arch.legacy.LegacyRegister$Set:
+    registerSet:
+      offset: 16
+      deref-count: 11051
+    contents:
+      offset: 12
+      deref-count: 8
+  avrora.arch.legacy.LegacyInstr$OUT:
+    r1:
+      offset: 20
+      deref-count: 2069260
+    props:
+      offset: 112
+      deref-count: 218
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.Medium$Transmission:
+    origin:
+      offset: 72
+      deref-count: 2154
+    this$0:
+      offset: 80
+      deref-count: 718
+  avrora.arch.legacy.LegacyDisassembler$InvalidInstruction:
+    this$0:
+      offset: 44
+      deref-count: 40
+  avrora.sim.mcu.RegisterSet$MultiFieldRegister:
+    this$0:
+      offset: 20
+      deref-count: 54
+  avrora.sim.mcu.Timer16Bit:
+    ICRnL_reg:
+      offset: 124
+      deref-count: 108
+    ICRnH_reg:
+      offset: 120
+      deref-count: 108
+    highTempReg:
+      offset: 116
+      deref-count: 54
+    TCNTnH_reg:
+      offset: 96
+      deref-count: 36
+    xTIFR_reg:
+      offset: 156
+      deref-count: 36
+    TCNTnL_reg:
+      offset: 100
+      deref-count: 36
+    ICRn_reg:
+      offset: 128
+      deref-count: 36
+    TCNTn_reg:
+      offset: 104
+      deref-count: 36
+    mainClock:
+      offset: 32
+      deref-count: 18
+    inputCapturePin:
+      offset: 144
+      deref-count: 18
+    timerClock:
+      offset: 152
+      deref-count: 18
+    externalClock:
+      offset: 148
+      deref-count: 18
+    ICESn_flag:
+      offset: 92
+      deref-count: 18
+    WGMn:
+      offset: 136
+      deref-count: 18
+    cTIFR_reg:
+      offset: 164
+      deref-count: 18
+    CSn:
+      offset: 140
+      deref-count: 18
+  avrora.sim.mcu.ADC$ControlRegister:
+    this$0:
+      offset: 52
+      deref-count: 152202
+    _adif:
+      offset: 40
+      deref-count: 42627
+    _adsc:
+      offset: 32
+      deref-count: 30453
+    _aden:
+      offset: 28
+      deref-count: 24366
+    _adie:
+      offset: 44
+      deref-count: 24366
+    conversion:
+      offset: 24
+      deref-count: 12183
+    _adfr:
+      offset: 36
+      deref-count: 6096
+    _prescaler:
+      offset: 48
+      deref-count: 6096
+  avrora.arch.legacy.LegacyInstr$STPI:
+    r1:
+      offset: 16
+      deref-count: 7392
+    r2:
+      offset: 20
+      deref-count: 3696
+    props:
+      offset: 112
+      deref-count: 10
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$LPMD:
+    r1:
+      offset: 16
+      deref-count: 33572
+    props:
+      offset: 112
+      deref-count: 24
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.monitors.PacketMonitor$Mon:
+    simulator:
+      offset: 60
+      deref-count: 18693
+    printer:
+      offset: 64
+      deref-count: 12441
+    this$0:
+      offset: 68
+      deref-count: 20
+  avrora.arch.legacy.LegacyInstr$STPD:
+    props:
+      offset: 112
+      deref-count: 6
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.Interpreter:
+    interrupts:
+      offset: 24
+      deref-count: 784578
+    simulator:
+      offset: 16
+      deref-count: 27
+    clock:
+      offset: 20
+      deref-count: 18
+  avrora.sim.mcu.ADC$MUXRegister:
+    _mux:
+      offset: 20
+      deref-count: 18270
+    this$0:
+      offset: 24
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$BRMI:
+    props:
+      offset: 112
+      deref-count: 6
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.Medium$Receiver:
+    medium:
+      offset: 40
+      deref-count: 4619662
+    clock:
+      offset: 44
+      deref-count: 3411530
+    probeList:
+      offset: 48
+      deref-count: 496890
+    ticker:
+      offset: 52
+      deref-count: 1499
+  avrora.sim.clock.DerivedClock:
+    driveClock:
+      offset: 32
+      deref-count: 542971
+  avrora.sim.radio.CC1000Radio$Modem0Register:
+    this$0:
+      offset: 40
+      deref-count: 27
+  avrora.sim.platform.sensors.AccelSensor:
+    adcDevice:
+      offset: 20
+      deref-count: 36
+    asp:
+      offset: 16
+      deref-count: 18
+  avrora.sim.clock.RippleSynchronizer$NotifyEvent:
+    lastLink:
+      offset: 24
+      deref-count: 3751554
+    this$0:
+      offset: 28
+      deref-count: 671065
+    clock:
+      offset: 20
+      deref-count: 436710
+    thread:
+      offset: 16
+      deref-count: 9
+  avrora.sim.platform.sensors.LightSensor$ADCInput:
+    this$0:
+      offset: 12
+      deref-count: 9
+  avrora.sim.mcu.Timer8Bit$TCNTnRegister:
+    this$0:
+      offset: 20
+      deref-count: 271508
+  cck.util.Option:
+    name:
+      offset: 12
+      deref-count: 211
+    description:
+      offset: 16
+      deref-count: 211
+    COMPARATOR:
+      offset: 112
+      deref-count: 1
+  avrora.sim.mcu.ReprogrammableCodeSegment$SPMCSR_reg$ResetEvent:
+    this$1:
+      offset: 12
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$RETI:
+    props:
+      offset: 112
+      deref-count: 12
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.Defaults:
+    monitorMap:
+      offset: 136
+      deref-count: 34
+    inputs:
+      offset: 128
+      deref-count: 13
+    actions:
+      offset: 124
+      deref-count: 13
+    simMap:
+      offset: 140
+      deref-count: 8
+    platforms:
+      offset: 120
+      deref-count: 8
+    mainCategories:
+      offset: 112
+      deref-count: 6
+  avrora.arch.avr.AVRProperties:
+    codeSegmentFactory:
+      offset: 56
+      deref-count: 10
+  org.dacapo.harness.CommandLineArgs$Methodology:
+    ITERATE:
+      offset: 112
+      deref-count: 5
+    CONVERGE:
+      offset: 116
+      deref-count: 3
+  avrora.arch.legacy.LegacyInstr$IMMREG_class:
+    r1:
+      offset: 20
+      deref-count: 883
+  avrora.sim.mcu.Timer16Bit$Mode_Normal:
+    this$0:
+      offset: 12
+      deref-count: 18
+  avrora.arch.legacy.LegacyInstr$CLI:
+    props:
+      offset: 112
+      deref-count: 122
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.Timer16Bit$InputCapturePin:
+    this$0:
+      offset: 20
+      deref-count: 18
+  avrora.sim.radio.CC1000Radio$PA_POWRegister:
+    this$0:
+      offset: 32
+      deref-count: 7243
+  avrora.arch.legacy.LegacyInstr$BRNE:
+    props:
+      offset: 112
+      deref-count: 128
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.Timer16Bit$Mode_PWMPhaseCorrect:
+    compareRegHigh:
+      offset: 20
+      deref-count: 90
+    this$0:
+      offset: 28
+      deref-count: 90
+    compareRegLow:
+      offset: 24
+      deref-count: 90
+  cck.help.HelpCategory:
+    options:
+      offset: 12
+      deref-count: 48
+    sections:
+      offset: 24
+      deref-count: 34
+    name:
+      offset: 16
+      deref-count: 28
+    help:
+      offset: 20
+      deref-count: 13
+    COMPARATOR:
+      offset: 112
+      deref-count: 1
+  avrora.arch.msp430.MSP430Architecture:
+    INSTANCE:
+      offset: 112
+      deref-count: 2
+  avrora.sim.radio.CC1000Radio:
+    clock:
+      offset: 120
+      deref-count: 1272200
+    receiver:
+      offset: 140
+      deref-count: 643677
+    radioPrinter:
+      offset: 104
+      deref-count: 286411
+    MAIN_reg:
+      offset: 40
+      deref-count: 7243
+    stateMachine:
+      offset: 124
+      deref-count: 2208
+    transmitter:
+      offset: 136
+      deref-count: 1508
+    ticker:
+      offset: 144
+      deref-count: 1499
+    currentFrequencyRegister:
+      offset: 108
+      deref-count: 1481
+    FREQ_B_reg:
+      offset: 48
+      deref-count: 1472
+    PA_POW_reg:
+      offset: 64
+      deref-count: 1445
+    FREQ_A_reg:
+      offset: 44
+      deref-count: 799
+    PLL_reg:
+      offset: 68
+      deref-count: 745
+    sim:
+      offset: 116
+      deref-count: 81
+    LOCK_reg:
+      offset: 72
+      deref-count: 45
+    config:
+      offset: 128
+      deref-count: 45
+    FSEP_reg:
+      offset: 52
+      deref-count: 27
+    rssiOutput:
+      offset: 148
+      deref-count: 18
+    medium:
+      offset: 132
+      deref-count: 18
+    FSCTRL_reg:
+      offset: 96
+      deref-count: 9
+    MODEM_2_reg:
+      offset: 80
+      deref-count: 9
+    CAL_reg:
+      offset: 76
+      deref-count: 9
+    CURRENT_reg:
+      offset: 56
+      deref-count: 9
+    MODEM_1_reg:
+      offset: 84
+      deref-count: 9
+    mcu:
+      offset: 112
+      deref-count: 9
+    FRONT_END_reg:
+      offset: 60
+      deref-count: 9
+    PRESCALER_reg:
+      offset: 100
+      deref-count: 9
+    MODEM_0_reg:
+      offset: 88
+      deref-count: 9
+    MATCH_reg:
+      offset: 92
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr:
+    properties:
+      offset: 12
+      deref-count: 253121
+    GPR_default:
+      offset: 112
+      deref-count: 52
+    HGPR_default:
+      offset: 120
+      deref-count: 9
+    ADR_default:
+      offset: 128
+      deref-count: 7
+    MGPR_default:
+      offset: 116
+      deref-count: 5
+    Z_default:
+      offset: 140
+      deref-count: 5
+    EGPR_default:
+      offset: 124
+      deref-count: 3
+    YZ_default:
+      offset: 136
+      deref-count: 3
+    RDL_default:
+      offset: 132
+      deref-count: 3
+  avrora.sim.radio.Medium$Probe$List:
+    head:
+      offset: 16
+      deref-count: 280961
+  cck.help.HelpCategory$OptionsSection:
+    para:
+      offset: 16
+      deref-count: 8
+    this$0:
+      offset: 24
+      deref-count: 8
+    options:
+      offset: 20
+      deref-count: 8
+  avrora.arch.legacy.LegacyInstr$MOV:
+    r2:
+      offset: 20
+      deref-count: 2500802
+    r1:
+      offset: 16
+      deref-count: 2500802
+    props:
+      offset: 112
+      deref-count: 291
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.USART:
+    properties:
+      offset: 76
+      deref-count: 198
+    interpreter:
+      offset: 24
+      deref-count: 72
+    UBRRnH_reg:
+      offset: 64
+      deref-count: 45
+    UCSRnC_reg:
+      offset: 56
+      deref-count: 45
+    UBRRnL_reg:
+      offset: 60
+      deref-count: 45
+    UCSRnB_reg:
+      offset: 52
+      deref-count: 36
+    UDRn_reg:
+      offset: 44
+      deref-count: 36
+    UCSRnA_reg:
+      offset: 48
+      deref-count: 36
+    connectedDevice:
+      offset: 80
+      deref-count: 18
+    simulator:
+      offset: 20
+      deref-count: 18
+    receiver:
+      offset: 72
+      deref-count: 18
+    devicePrinter:
+      offset: 28
+      deref-count: 18
+    transmitter:
+      offset: 68
+      deref-count: 18
+  avrora.sim.mcu.SPI$SPCRReg:
+    _master:
+      offset: 20
+      deref-count: 1270940
+    this$0:
+      offset: 32
+      deref-count: 59049
+    _spr:
+      offset: 28
+      deref-count: 10746
+    _enabled:
+      offset: 24
+      deref-count: 9
+  avrora.sim.Simulator:
+    simulation:
+      offset: 32
+      deref-count: 1535844
+    microcontroller:
+      offset: 20
+      deref-count: 1281820
+    clock:
+      offset: 28
+      deref-count: 987870
+    interpreter:
+      offset: 24
+      deref-count: 135
+    energyControl:
+      offset: 40
+      deref-count: 72
+    program:
+      offset: 16
+      deref-count: 18
+    events:
+      offset: 36
+      deref-count: 9
+  avrora.Version:
+    TAG:
+      offset: 112
+      deref-count: 2
+  avrora.sim.radio.Medium$TXRX:
+    medium:
+      offset: 40
+      deref-count: 108
+    probeList:
+      offset: 48
+      deref-count: 54
+    clock:
+      offset: 44
+      deref-count: 36
+  avrora.arch.legacy.LegacyInstr$EOR:
+    r1:
+      offset: 16
+      deref-count: 3694522
+    r2:
+      offset: 20
+      deref-count: 1847261
+    props:
+      offset: 112
+      deref-count: 367
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$RJMP:
+    props:
+      offset: 112
+      deref-count: 358
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.Timer16Bit$Mode_CTC:
+    compareRegHigh:
+      offset: 12
+      deref-count: 36
+    this$0:
+      offset: 20
+      deref-count: 36
+    compareRegLow:
+      offset: 16
+      deref-count: 36
+  avrora.sim.mcu.Microcontroller$Pin$ListenableBooleanViewInput:
+    level:
+      offset: 20
+      deref-count: 199557
+  javax.xml.bind.DatatypeConverterImpl:
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
+  avrora.sim.state.AbstractRegisterView:
+    listeners:
+      offset: 12
+      deref-count: 4602024
+  org.dacapo.harness.Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
+  avrora.sim.mcu.Timer8Bit$BufferedRegister:
+    register:
+      offset: 20
+      deref-count: 545032
+    this$0:
+      offset: 24
+      deref-count: 4194
+  avrora.sim.mcu.Timer16Bit$OutputCompareUnit:
+    OCRnXH_reg:
+      offset: 20
+      deref-count: 180
+    OCRnXL_reg:
+      offset: 24
+      deref-count: 126
+    OCRnX_reg:
+      offset: 28
+      deref-count: 108
+    mode:
+      offset: 36
+      deref-count: 54
+    outputComparePin:
+      offset: 32
+      deref-count: 54
+    flagReg:
+      offset: 44
+      deref-count: 54
+    this$0:
+      offset: 48
+      deref-count: 54
+    force:
+      offset: 40
+      deref-count: 54
+  org.dacapo.harness.Benchmark:
+    data:
+      offset: 24
+      deref-count: 629
+    datDeps:
+      offset: 52
+      deref-count: 625
+    stats:
+      offset: 56
+      deref-count: 48
+    config:
+      offset: 28
+      deref-count: 15
+    err:
+      offset: 140
+      deref-count: 7
+    scratch:
+      offset: 20
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    savedErr:
+      offset: 136
+      deref-count: 4
+    loader:
+      offset: 32
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    jarDeps:
+      offset: 48
+      deref-count: 3
+    savedClassLoader:
+      offset: 36
+      deref-count: 2
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    valRepFile:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.ReprogrammableCodeSegment:
+    mainClock:
+      offset: 92
+      deref-count: 27
+    SPMCSR:
+      offset: 88
+      deref-count: 18
+    disassembler:
+      offset: 80
+      deref-count: 9
+    flashPrinter:
+      offset: 76
+      deref-count: 9
+  avrora.sim.radio.CC1000Radio$LockRegister:
+    this$0:
+      offset: 40
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$ST:
+    r2:
+      offset: 20
+      deref-count: 78147
+    r1:
+      offset: 16
+      deref-count: 78147
+    props:
+      offset: 112
+      deref-count: 20
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.AtmelInterpreter$IORegBehavior:
+    reg:
+      offset: 12
+      deref-count: 4403890
+  org.apache.commons.cli.PosixParser:
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$MOVW:
+    r2:
+      offset: 20
+      deref-count: 79338
+    r1:
+      offset: 16
+      deref-count: 79338
+    props:
+      offset: 112
+      deref-count: 826
+    prototype:
+      offset: 116
+      deref-count: 1
+  org.apache.commons.cli.Option:
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
+  avrora.syntax.elf.ELFParser:
+    pht:
+      offset: 40
+      deref-count: 1490
+    sht:
+      offset: 44
+      deref-count: 534
+    header:
+      offset: 36
+      deref-count: 12
+    SYMBOLS:
+      offset: 60
+      deref-count: 6
+    arch:
+      offset: 56
+      deref-count: 6
+    symbolTables:
+      offset: 48
+      deref-count: 4
+    ARCH:
+      offset: 28
+      deref-count: 2
+    shstrtab:
+      offset: 52
+      deref-count: 2
+  avrora.sim.Simulation$Node:
+    simulator:
+      offset: 36
+      deref-count: 959483
+    this$0:
+      offset: 44
+      deref-count: 55
+    monitors:
+      offset: 24
+      deref-count: 36
+    path:
+      offset: 16
+      deref-count: 18
+    guiMonitors:
+      offset: 28
+      deref-count: 18
+    thread:
+      offset: 40
+      deref-count: 18
+    platform:
+      offset: 32
+      deref-count: 18
+    platformFactory:
+      offset: 20
+      deref-count: 18
+  avrora.arch.legacy.LegacyInstr$SBIC:
+    props:
+      offset: 112
+      deref-count: 8
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.clock.ClockDomain:
+    mainClock:
+      offset: 16
+      deref-count: 81
+    clockMap:
+      offset: 12
+      deref-count: 63
+  avrora.sim.mcu.ATMegaFamily:
+    interpreter:
+      offset: 48
+      deref-count: 36
+    ETIFR_reg:
+      offset: 72
+      deref-count: 27
+    ETIMSK_reg:
+      offset: 76
+      deref-count: 27
+    TIFR_reg:
+      offset: 64
+      deref-count: 9
+    TIMSK_reg:
+      offset: 68
+      deref-count: 9
+  avrora.sim.mcu.Timer8Bit$ControlRegister:
+    this$0:
+      offset: 40
+      deref-count: 108
+    WGMn:
+      offset: 36
+      deref-count: 36
+    CSn:
+      offset: 28
+      deref-count: 36
+    COMn:
+      offset: 32
+      deref-count: 18
+  avrora.sim.platform.Platform:
+    devices:
+      offset: 16
+      deref-count: 81
+    mcu:
+      offset: 12
+      deref-count: 27
+  avrora.sim.radio.CC1000Radio$FrequencySeparationRegister:
+    reg1:
+      offset: 16
+      deref-count: 63
+    reg0:
+      offset: 20
+      deref-count: 63
+    this$0:
+      offset: 24
+      deref-count: 27
+  cck.elf.ELFSectionHeaderTable:
+    strtab:
+      offset: 20
+      deref-count: 532
+    header:
+      offset: 12
+      deref-count: 28
+  avrora.arch.legacy.LegacyInstr$BRLT:
+    props:
+      offset: 112
+      deref-count: 30
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$RadioRegister:
+    this$0:
+      offset: 20
+      deref-count: 5352
+    id:
+      offset: 16
+      deref-count: 648
+  avrora.sim.radio.CC1000Radio$Transmitter:
+    this$0:
+      offset: 60
+      deref-count: 63616
+  avrora.sim.mcu.AtmelMicrocontroller$InterruptType:
+    LowLevel:
+      offset: 112
+      deref-count: 1568960
+    AnyLevel:
+      offset: 116
+      deref-count: 2
+    RisingEdge:
+      offset: 124
+      deref-count: 2
+    FallingEdge:
+      offset: 120
+      deref-count: 2
+  avrora.arch.legacy.LegacyInstr$SBIS:
+    props:
+      offset: 112
+      deref-count: 8
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$ORI:
+    r1:
+      offset: 20
+      deref-count: 1470738
+    props:
+      offset: 112
+      deref-count: 76
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.monitors.PacketMonitor:
+    monitors:
+      offset: 40
+      deref-count: 21
+    START_SYMBOL:
+      offset: 36
+      deref-count: 10
+    BITS:
+      offset: 28
+      deref-count: 10
+    PACKETS:
+      offset: 32
+      deref-count: 10
+  org.dacapo.parser.Token:
+    next:
+      offset: 36
+      deref-count: 372
+    image:
+      offset: 32
+      deref-count: 209
+    specialToken:
+      offset: 40
+      deref-count: 114
+  avrora.sim.platform.ExternalFlash$Page:
+    this$0:
+      offset: 16
+      deref-count: 18
+  avrora.sim.state.RegisterUtil$BoolView:
+    reg:
+      offset: 16
+      deref-count: 4086732
+    listener:
+      offset: 20
+      deref-count: 2726365
+  avrora.arch.legacy.LegacyInstr$SBIW:
+    r1:
+      offset: 20
+      deref-count: 1074812
+    props:
+      offset: 112
+      deref-count: 68
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.Timer8Bit:
+    TCNTn_reg:
+      offset: 68
+      deref-count: 542980
+    OCRn_reg:
+      offset: 72
+      deref-count: 542962
+    timerClock:
+      offset: 84
+      deref-count: 271499
+    TCCRn_reg:
+      offset: 64
+      deref-count: 4212
+    TIFR_reg:
+      offset: 96
+      deref-count: 2088
+    devicePrinter:
+      offset: 28
+      deref-count: 2079
+    ticker:
+      offset: 76
+      deref-count: 27
+    microcontroller:
+      offset: 16
+      deref-count: 18
+    externalClock:
+      offset: 80
+      deref-count: 18
+    outputComparePin:
+      offset: 88
+      deref-count: 18
+    mainClock:
+      offset: 32
+      deref-count: 18
+    TIMSK_reg:
+      offset: 100
+      deref-count: 18
+  avrora.sim.radio.CC1000Radio$PLLRegister:
+    this$0:
+      offset: 32
+      deref-count: 9
+  org.dacapo.parser.Config$ThreadModel:
+    SINGLE:
+      offset: 112
+      deref-count: 4
+    PER_CPU:
+      offset: 120
+      deref-count: 4
+    FIXED:
+      offset: 116
+      deref-count: 3
+    description:
+      offset: 24
+      deref-count: 3
+  avrora.arch.legacy.LegacyInstr$AND:
+    r1:
+      offset: 16
+      deref-count: 2480302
+    r2:
+      offset: 20
+      deref-count: 1240151
+    props:
+      offset: 112
+      deref-count: 105
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$ROR:
+    r1:
+      offset: 16
+      deref-count: 321758
+    props:
+      offset: 112
+      deref-count: 6
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$SerialConfigurationInterface:
+    PALE_in:
+      offset: 36
+      deref-count: 878724
+    PDATA_out:
+      offset: 32
+      deref-count: 105660
+    readerPrinter:
+      offset: 40
+      deref-count: 16377
+    this$0:
+      offset: 44
+      deref-count: 16359
+    PDATA_in:
+      offset: 28
+      deref-count: 18
+    PCLK_in:
+      offset: 24
+      deref-count: 18
+  avrora.sim.mcu.EEPROM:
+    EECR_reg:
+      offset: 64
+      deref-count: 18
+    EEARL_reg:
+      offset: 68
+      deref-count: 18
+    EEARH_reg:
+      offset: 72
+      deref-count: 18
+    EEDR_reg:
+      offset: 60
+      deref-count: 18
+    ticker:
+      offset: 76
+      deref-count: 9
+    writeFinishedEvent:
+      offset: 80
+      deref-count: 9
+  org.dacapo.parser.Config$OutputFile:
+    digest:
+      offset: 32
+      deref-count: 8
+    this$0:
+      offset: 36
+      deref-count: 3
+    name:
+      offset: 28
+      deref-count: 3
+  avrora.actions.SimAction$ShutdownThread:
+    this$0:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$LSR:
+    r1:
+      offset: 16
+      deref-count: 321758
+    props:
+      offset: 112
+      deref-count: 8
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$SPITicker:
+    this$0:
+      offset: 20
+      deref-count: 3816438
+    spiDevice:
+      offset: 16
+      deref-count: 636073
+  avrora.Main:
+    mainOptions:
+      offset: 112
+      deref-count: 17
+    INPUT:
+      offset: 116
+      deref-count: 3
+    HELP:
+      offset: 144
+      deref-count: 2
+    COLORS:
+      offset: 124
+      deref-count: 2
+    STATUS:
+      offset: 132
+      deref-count: 2
+    ACTION:
+      offset: 120
+      deref-count: 2
+    BANNER:
+      offset: 128
+      deref-count: 2
+    HTML:
+      offset: 152
+      deref-count: 2
+    VERBOSE:
+      offset: 140
+      deref-count: 2
+    STATUS_TIMING:
+      offset: 136
+      deref-count: 2
+    LICENSE:
+      offset: 148
+      deref-count: 2
+    CONFIGFILE:
+      offset: 156
+      deref-count: 2
+  avrora.sim.mcu.Timer16Bit$2:
+    this$0:
+      offset: 16
+      deref-count: 18
+  avrora.sim.radio.CC1000Radio$Modem2Register:
+    this$0:
+      offset: 28
+      deref-count: 9
+  cck.util.ClassMap:
+    classMap:
+      offset: 20
+      deref-count: 169
+    reverseMap:
+      offset: 24
+      deref-count: 108
+    objMap:
+      offset: 28
+      deref-count: 73
+    clazz:
+      offset: 16
+      deref-count: 22
+    type:
+      offset: 12
+      deref-count: 7
+  cck.help.HelpCategory$ListSection:
+    para:
+      offset: 20
+      deref-count: 5
+    this$0:
+      offset: 28
+      deref-count: 5
+    title:
+      offset: 16
+      deref-count: 5
+    list:
+      offset: 24
+      deref-count: 5
+  avrora.arch.legacy.LegacyInstr$MUL:
+    r2:
+      offset: 20
+      deref-count: 126
+    r1:
+      offset: 16
+      deref-count: 126
+    props:
+      offset: 112
+      deref-count: 32
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.platform.ExternalFlash$PD2Input:
+    this$0:
+      offset: 20
+      deref-count: 93906
+  avrora.sim.mcu.Timer16Bit$1:
+    this$0:
+      offset: 16
+      deref-count: 18
+  avrora.sim.platform.sensors.AccelSensor$ADCInput:
+    this$0:
+      offset: 12
+      deref-count: 18
+  avrora.sim.mcu.RegisterSet:
+    fields:
+      offset: 12
+      deref-count: 513
+    layout:
+      offset: 20
+      deref-count: 9
+  avrora.sim.AtmelInterpreter$StateImpl:
+    this$0:
+      offset: 12
+      deref-count: 18
+  avrora.arch.ArchitectureRegistry:
+    archMap:
+      offset: 112
+      deref-count: 14
+  cck.text.Printer:
+    o:
+      offset: 24
+      deref-count: 3
+    STDERR:
+      offset: 116
+      deref-count: 1
+    STDOUT:
+      offset: 112
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$CP:
+    r2:
+      offset: 20
+      deref-count: 1360634
+    r1:
+      offset: 16
+      deref-count: 1360634
+    props:
+      offset: 112
+      deref-count: 81
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.FiniteStateMachine$TransitionEvent:
+    this$0:
+      offset: 20
+      deref-count: 81
+  avrora.arch.legacy.LegacyInstr$ADIW:
+    r1:
+      offset: 20
+      deref-count: 129490
+    props:
+      offset: 112
+      deref-count: 40
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.Simulation:
+    synchronizer:
+      offset: 84
+      deref-count: 12
+    monitorFactoryList:
+      offset: 80
+      deref-count: 12
+    EELOADIMAGE:
+      offset: 68
+      deref-count: 10
+    SECONDS:
+      offset: 56
+      deref-count: 10
+    PLATFORM:
+      offset: 36
+      deref-count: 3
+    MONITORS:
+      offset: 60
+      deref-count: 2
+    options:
+      offset: 12
+      deref-count: 2
+    SCHEDULE:
+      offset: 64
+      deref-count: 2
+    CLOCKSPEED:
+      offset: 40
+      deref-count: 1
+    RANDOMSEED:
+      offset: 52
+      deref-count: 1
+    EXTCLOCKSPEED:
+      offset: 44
+      deref-count: 1
+    MCU:
+      offset: 48
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$REGREG_class:
+    r2:
+      offset: 20
+      deref-count: 3283
+    r1:
+      offset: 16
+      deref-count: 3283
+  avrora.sim.mcu.ATMegaFamily$FlagRegister:
+    interpreter:
+      offset: 24
+      deref-count: 1573152
+  avrora.sim.mcu.Timer16Bit$OutputCompareUnit$FOC_Field:
+    this$1:
+      offset: 16
+      deref-count: 54
+  avrora.sim.mcu.ATMegaFamily$Timer0$ASSRRegister:
+    this$1:
+      offset: 20
+      deref-count: 45
+  avrora.sim.state.RegisterUtil$BitRangeView:
+    reg:
+      offset: 24
+      deref-count: 1604277
+  avrora.arch.legacy.LegacyInstr$CPI:
+    r1:
+      offset: 20
+      deref-count: 2567261
+    props:
+      offset: 112
+      deref-count: 197
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$Receiver:
+    this$0:
+      offset: 64
+      deref-count: 982800
+    clock:
+      offset: 44
+      deref-count: 242946
+  avrora.sim.state.BooleanRegister:
+    listener:
+      offset: 16
+      deref-count: 211293
+  avrora.arch.legacy.LegacyInstr$CPC:
+    r2:
+      offset: 20
+      deref-count: 2100519
+    r1:
+      offset: 16
+      deref-count: 2100519
+    props:
+      offset: 112
+      deref-count: 321
+    prototype:
+      offset: 116
+      deref-count: 1
+  org.apache.commons.cli.Options:
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
+  avrora.sim.CodeSegment:
+    NO_INSTR:
+      offset: 52
+      deref-count: 18
+    NO_INSTR_PROPS:
+      offset: 112
+      deref-count: 10
+    codeSharer:
+      offset: 56
+      deref-count: 9
+    interpreter:
+      offset: 44
+      deref-count: 9
+  avrora.sim.clock.RippleSynchronizer$WaitLink:
+    next:
+      offset: 24
+      deref-count: 2203102
+  avrora.arch.legacy.LegacyInstr$JMP:
+    props:
+      offset: 112
+      deref-count: 76
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.Timer8Bit$Mode_CTC:
+    this$0:
+      offset: 12
+      deref-count: 1085906
+  avrora.sim.output.EventBuffer:
+    sim:
+      offset: 12
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$FMULS:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.USART$UBRRnHReg:
+    this$0:
+      offset: 20
+      deref-count: 18
+  avrora.arch.legacy.LegacyInstr$COM:
+    r1:
+      offset: 16
+      deref-count: 1294082
+    props:
+      offset: 112
+      deref-count: 27
+    prototype:
+      offset: 116
+      deref-count: 1
+  org.apache.commons.cli.CommandLine:
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
+  avrora.sim.InterruptTable:
+    globalProbe:
+      offset: 40
+      deref-count: 4911892
+    interpreter:
+      offset: 52
+      deref-count: 1428736
+    state:
+      offset: 56
+      deref-count: 9
+  avrora.sim.clock.Clock:
+    name:
+      offset: 12
+      deref-count: 27
+  avrora.sim.radio.CC1000Radio$SerialConfigurationInterface$PCLKOutput:
+    this$1:
+      offset: 16
+      deref-count: 1626630
+  avrora.arch.legacy.LegacyInterpreter:
+    interrupts:
+      offset: 24
+      deref-count: 3282912
+    globalProbe:
+      offset: 124
+      deref-count: 2876652
+    clock:
+      offset: 20
+      deref-count: 1964195
+    simulator:
+      offset: 16
+      deref-count: 1281766
+    RZ:
+      offset: 124
+      deref-count: 142460
+    R0:
+      offset: 116
+      deref-count: 97135
+    FACTORY:
+      offset: 112
+      deref-count: 10
+    R1:
+      offset: 120
+      deref-count: 1
+  avrora.sim.mcu.USART$SerialPrinter:
+    this$0:
+      offset: 24
+      deref-count: 36
+    serialPrinter:
+      offset: 16
+      deref-count: 18
+  avrora.sim.platform.ExternalFlash:
+    so:
+      offset: 68
+      deref-count: 93915
+    clock:
+      offset: 56
+      deref-count: 54
+    mcu:
+      offset: 60
+      deref-count: 54
+    sim:
+      offset: 52
+      deref-count: 36
+    printer:
+      offset: 64
+      deref-count: 27
+    stateMachine:
+      offset: 76
+      deref-count: 18
+    memory:
+      offset: 72
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$SUBI:
+    r1:
+      offset: 20
+      deref-count: 1217200
+    props:
+      offset: 112
+      deref-count: 181
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.Timer16Bit$BufferedRegister:
+    this$0:
+      offset: 24
+      deref-count: 108
+    register:
+      offset: 20
+      deref-count: 108
+  avrora.sim.mcu.ATMega128:
+    MCUCR_reg:
+      offset: 80
+      deref-count: 640896
+    properties:
+      offset: 52
+      deref-count: 603
+    EIFR_reg:
+      offset: 60
+      deref-count: 81
+    simulator:
+      offset: 28
+      deref-count: 27
+    interpreter:
+      offset: 48
+      deref-count: 27
+    ETIFR_reg:
+      offset: 72
+      deref-count: 18
+    ETIMSK_reg:
+      offset: 76
+      deref-count: 18
+    props:
+      offset: 128
+      deref-count: 10
+    sleepState:
+      offset: 40
+      deref-count: 9
+    TIFR_reg:
+      offset: 64
+      deref-count: 9
+    TIMSK_reg:
+      offset: 68
+      deref-count: 9
+  cck.help.HelpCategory$Section:
+    this$0:
+      offset: 12
+      deref-count: 21
+  avrora.sim.mcu.DefaultMCU$Pin:
+    this$0:
+      offset: 28
+      deref-count: 18729413
+    output:
+      offset: 24
+      deref-count: 7461256
+    input:
+      offset: 20
+      deref-count: 563436
+  avrora.arch.legacy.LegacyInstr$RCALL:
+    props:
+      offset: 112
+      deref-count: 36
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$CALL:
+    props:
+      offset: 112
+      deref-count: 195
+    prototype:
+      offset: 116
+      deref-count: 1
+  cck.help.ClassMapValueItem:
+    optvalue:
+      offset: 24
+      deref-count: 47
+    optname:
+      offset: 20
+      deref-count: 47
+    map:
+      offset: 28
+      deref-count: 47
+  avrora.sim.clock.DeltaQueue:
+    head:
+      offset: 12
+      deref-count: 228355384
+    freeEventLists:
+      offset: 28
+      deref-count: 12220910
+    freeLinks:
+      offset: 24
+      deref-count: 12115987
+  avrora.sim.mcu.SPI$SPDReg$TransmitRegister:
+    this$1:
+      offset: 20
+      deref-count: 634876
+  avrora.arch.legacy.LegacyInstr$LPM:
+    props:
+      offset: 112
+      deref-count: 38
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.RegisterLayout:
+    ioregAssignments:
+      offset: 20
+      deref-count: 898
+    UNUSED:
+      offset: 112
+      deref-count: 241
+    RESERVED:
+      offset: 116
+      deref-count: 235
+    fields:
+      offset: 28
+      deref-count: 48
+  avrora.sim.mcu.EEPROM$EEPROMTicker:
+    this$0:
+      offset: 12
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$REGIMMREG_class:
+    r2:
+      offset: 24
+      deref-count: 153
+    r1:
+      offset: 20
+      deref-count: 153
+  avrora.sim.types.SensorSimulation:
+    RANDOM_START:
+      offset: 116
+      deref-count: 19
+    cc1000_medium:
+      offset: 152
+      deref-count: 18
+    STAGGER_START:
+      offset: 120
+      deref-count: 10
+    topology:
+      offset: 132
+      deref-count: 10
+    UPDATE_NODE_ID:
+      offset: 128
+      deref-count: 10
+    NOISE:
+      offset: 108
+      deref-count: 3
+    noise:
+      offset: 136
+      deref-count: 3
+    HELP:
+      offset: 112
+      deref-count: 2
+    TOPOLOGY:
+      offset: 100
+      deref-count: 2
+    LOSSY_MODEL:
+      offset: 104
+      deref-count: 2
+    SENSOR_DATA:
+      offset: 124
+      deref-count: 2
+    synchronizer:
+      offset: 84
+      deref-count: 2
+    options:
+      offset: 12
+      deref-count: 2
+    NODECOUNT:
+      offset: 96
+      deref-count: 2
+    PLATFORM:
+      offset: 36
+      deref-count: 1
+    help:
+      offset: 20
+      deref-count: 1
+    MONITORS:
+      offset: 60
+      deref-count: 1
+    radiusModel:
+      offset: 144
+      deref-count: 1
+    RANGE:
+      offset: 112
+      deref-count: 1
+  avrora.sim.AtmelInterpreter:
+    clock:
+      offset: 20
+      deref-count: 72571930
+    SPL_reg:
+      offset: 104
+      deref-count: 54807395
+    SPH_reg:
+      offset: 108
+      deref-count: 54807395
+    interrupts:
+      offset: 24
+      deref-count: 3625853
+    flash:
+      offset: 100
+      deref-count: 331591
+    state:
+      offset: 116
+      deref-count: 36
+    registers:
+      offset: 112
+      deref-count: 18
+    globalProbe:
+      offset: 124
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$ICALL:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$BRPL:
+    props:
+      offset: 112
+      deref-count: 18
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.ATMegaFamily$MaskRegister:
+    interpreter:
+      offset: 24
+      deref-count: 504
+  avrora.sim.clock.DeltaQueue$EventList:
+    next:
+      offset: 16
+      deref-count: 8320901
+    event:
+      offset: 12
+      deref-count: 6300745
+  avrora.sim.radio.CC1000Radio$SerialConfigurationInterface$PDATAOutput:
+    this$1:
+      offset: 12
+      deref-count: 561513
+  org.dacapo.harness.CommandLineArgs:
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
+  avrora.sim.radio.noise:
+    noise:
+      offset: 112
+      deref-count: 2
+  avrora.sim.mcu.ADC:
+    interpreter:
+      offset: 24
+      deref-count: 42627
+    ADMUX_reg:
+      offset: 52
+      deref-count: 18279
+    devicePrinter:
+      offset: 28
+      deref-count: 12174
+    mainClock:
+      offset: 32
+      deref-count: 12174
+    ADCH_reg:
+      offset: 60
+      deref-count: 6105
+    ADCL_reg:
+      offset: 64
+      deref-count: 6105
+    ADCSRA_reg:
+      offset: 56
+      deref-count: 27
+    VBG_INPUT:
+      offset: 48
+      deref-count: 18
+    GND_INPUT:
+      offset: 112
+      deref-count: 10
+  avrora.sim.mcu.ADC$1:
+    this$0:
+      offset: 12
+      deref-count: 9
+  avrora.sim.platform.sensors.SensorBoard:
+    sim:
+      offset: 12
+      deref-count: 18
+  avrora.sim.FiniteStateMachine:
+    globalProbe:
+      offset: 32
+      deref-count: 2604506
+    clock:
+      offset: 24
+      deref-count: 144
+    transEvent:
+      offset: 28
+      deref-count: 81
+  avrora.arch.legacy.LegacyInstr$SEI:
+    props:
+      offset: 112
+      deref-count: 10
+    prototype:
+      offset: 116
+      deref-count: 1
+  java.lang.System:
+    out:
+      offset: 116
+      deref-count: 10
+    err:
+      offset: 120
+      deref-count: 4
+  cck.text.Status:
+    stack:
+      offset: 112
+      deref-count: 7
+  avrora.arch.legacy.LegacyInstr$POP:
+    r1:
+      offset: 16
+      deref-count: 10998379
+    props:
+      offset: 112
+      deref-count: 245
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$BREQ:
+    props:
+      offset: 112
+      deref-count: 111
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$SEC:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.platform.Mica2:
+    mcu:
+      offset: 12
+      deref-count: 90
+    sim:
+      offset: 20
+      deref-count: 54
+    radio:
+      offset: 24
+      deref-count: 54
+    ledGroup:
+      offset: 48
+      deref-count: 18
+    accelXSensor:
+      offset: 40
+      deref-count: 18
+    lightSensor:
+      offset: 36
+      deref-count: 18
+    accelYSensor:
+      offset: 44
+      deref-count: 18
+    externalFlash:
+      offset: 32
+      deref-count: 9
+    sensorboard:
+      offset: 28
+      deref-count: 9
+  avrora.sim.radio.CC1000Radio$FSCTRLRegister:
+    this$0:
+      offset: 24
+      deref-count: 9
+  avrora.sim.mcu.AtmelMicrocontroller$INTPin$InterruptTableNotification:
+    this$1:
+      offset: 16
+      deref-count: 18
+    underlyingNotification:
+      offset: 12
+      deref-count: 18
+  avrora.sim.mcu.ATMegaFamily$InterruptFlag:
+    interpreter:
+      offset: 20
+      deref-count: 135
+    view:
+      offset: 24
+      deref-count: 81
+  avrora.arch.legacy.LegacyInstr$ELPMPI:
+    r1:
+      offset: 16
+      deref-count: 36
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$PUSH:
+    r1:
+      offset: 16
+      deref-count: 10998396
+    props:
+      offset: 112
+      deref-count: 245
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$MainRegister:
+    this$0:
+      offset: 32
+      deref-count: 12476
+  avrora.sim.mcu.RegisterSet$SubFieldWriter:
+    fieldWriter:
+      offset: 24
+      deref-count: 36
+    subField:
+      offset: 28
+      deref-count: 36
+  avrora.sim.radio.Medium$Transmitter:
+    transmission:
+      offset: 52
+      deref-count: 97550
+    probeList:
+      offset: 48
+      deref-count: 65032
+    clock:
+      offset: 44
+      deref-count: 33953
+    medium:
+      offset: 40
+      deref-count: 1436
+    ticker:
+      offset: 56
+      deref-count: 736
+  avrora.sim.radio.CC1000Radio$SerialConfigurationInterface$PALEOutput:
+    this$1:
+      offset: 16
+      deref-count: 142599
+  avrora.arch.legacy.LegacyInstr$BST:
+    props:
+      offset: 112
+      deref-count: 8
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.DefaultMCU:
+    pinPrinter:
+      offset: 32
+      deref-count: 10900033
+    simulator:
+      offset: 28
+      deref-count: 1535862
+    clockDomain:
+      offset: 36
+      deref-count: 72
+    registers:
+      offset: 20
+      deref-count: 36
+    platform:
+      offset: 24
+      deref-count: 27
+    sleepState:
+      offset: 40
+      deref-count: 9
+  avrora.sim.platform.sensors.LightSensor$OnPin:
+    this$0:
+      offset: 12
+      deref-count: 9
+  avrora.arch.avr.AVRArchitecture:
+    INSTANCE:
+      offset: 112
+      deref-count: 2
+  avrora.sim.mcu.Timer8Bit$Mode_PWM:
+    this$0:
+      offset: 16
+      deref-count: 18
+  avrora.arch.legacy.LegacyInstr$REG_class:
+    r1:
+      offset: 16
+      deref-count: 553
+  avrora.arch.legacy.LegacyInstr$SUB:
+    r1:
+      offset: 16
+      deref-count: 18104
+    r2:
+      offset: 20
+      deref-count: 9052
+    props:
+      offset: 112
+      deref-count: 16
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.CodeSegment$NoLegacyInstr:
+    this$0:
+      offset: 16
+      deref-count: 9
+  org.dacapo.parser.ConfigFile:
+    token:
+      offset: 36
+      deref-count: 762
+    token_source:
+      offset: 28
+      deref-count: 115
+    jj_nt:
+      offset: 40
+      deref-count: 73
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
+  cck.text.Status$Item:
+    title:
+      offset: 12
+      deref-count: 2
+  avrora.sim.mcu.Timer16Bit$PairedRegister:
+    high:
+      offset: 20
+      deref-count: 90
+    low:
+      offset: 24
+      deref-count: 90
+    this$0:
+      offset: 28
+      deref-count: 90
+  avrora.sim.mcu.RegisterLayout$RegisterInfo:
+    name:
+      offset: 16
+      deref-count: 210
+  avrora.sim.types.SensorSimulation$SensorNode:
+    this$0:
+      offset: 64
+      deref-count: 49
+    simulator:
+      offset: 36
+      deref-count: 18
+    sensorInput:
+      offset: 60
+      deref-count: 18
+    path:
+      offset: 16
+      deref-count: 9
+    thread:
+      offset: 40
+      deref-count: 9
+    platform:
+      offset: 32
+      deref-count: 9
+    radio:
+      offset: 56
+      deref-count: 9
+  avrora.sim.radio.CC1000Radio$CALRegister:
+    this$0:
+      offset: 36
+      deref-count: 117
+    calibrate:
+      offset: 32
+      deref-count: 27
+  avrora.arch.legacy.LegacyInstr$REGIMM_class:
+    r1:
+      offset: 20
+      deref-count: 2307
+  cck.elf.ELFDataInputStream:
+    file:
+      offset: 20
+      deref-count: 7946
+    header:
+      offset: 16
+      deref-count: 10
+  avrora.arch.legacy.LegacyInstr$STS:
+    r1:
+      offset: 20
+      deref-count: 1152021
+    props:
+      offset: 112
+      deref-count: 667
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$SerialConfigurationInterface$PDATAInput:
+    this$1:
+      offset: 24
+      deref-count: 9
+  org.apache.commons.cli.Parser:
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
+  avrora.sim.mcu.Timer16Bit$TCNTnRegister:
+    this$0:
+      offset: 20
+      deref-count: 18
+  avrora.sim.mcu.EEPROM$EECRReg:
+    _eerie:
+      offset: 20
+      deref-count: 9
+    this$0:
+      offset: 36
+      deref-count: 9
+    _eemwe:
+      offset: 28
+      deref-count: 9
+    _eewe:
+      offset: 32
+      deref-count: 9
+    _eere:
+      offset: 24
+      deref-count: 9
+  avrora.core.LoadableProgram:
+    program:
+      offset: 20
+      deref-count: 38
+    fname:
+      offset: 12
+      deref-count: 4
+    file:
+      offset: 16
+      deref-count: 2
+  org.dacapo.harness.TeeOutputStream:
+    log:
+      offset: 28
+      deref-count: 4100394
+    logFile:
+      offset: 32
+      deref-count: 6
+  avrora.monitors.LEDMonitor$Mon:
+    printer:
+      offset: 16
+      deref-count: 6731
+    ledgroup:
+      offset: 12
+      deref-count: 3379
+    this$0:
+      offset: 20
+      deref-count: 9
+  avrora.sim.mcu.SPI$SPSReg:
+    this$0:
+      offset: 28
+      deref-count: 1276295
+    _spif:
+      offset: 20
+      deref-count: 1276295
+    _spi2x:
+      offset: 24
+      deref-count: 10746
+  avrora.arch.legacy.LegacyInstr$SBCI:
+    r1:
+      offset: 20
+      deref-count: 743634
+    props:
+      offset: 112
+      deref-count: 128
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$STD:
+    r2:
+      offset: 24
+      deref-count: 81513
+    r1:
+      offset: 20
+      deref-count: 81513
+    props:
+      offset: 112
+      deref-count: 154
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.Timer8Bit$Mode_FastPWM:
+    this$0:
+      offset: 12
+      deref-count: 18
+  avrora.sim.mcu.ATMegaFamily$FlagRegister$Notification:
+    this$0:
+      offset: 16
+      deref-count: 6408
+  javax.xml.bind.DatatypeConverter:
+    theConverter:
+      offset: 112
+      deref-count: 1252
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
+  avrora.sim.Segment:
+    name:
+      offset: 24
+      deref-count: 9
+    state:
+      offset: 20
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$BRTC:
+    props:
+      offset: 112
+      deref-count: 6
+    prototype:
+      offset: 116
+      deref-count: 1
+  org.dacapo.harness.TeePrintStream:
+    out:
+      offset: 16
+      deref-count: 6
+  avrora.arch.legacy.LegacyInstr$BRCS:
+    props:
+      offset: 112
+      deref-count: 35
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$ELPMD:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.energy.EnergyControl:
+    consumer:
+      offset: 16
+      deref-count: 72
+    subscriber:
+      offset: 20
+      deref-count: 9
+  avrora.sim.mcu.Timer16Bit$Mode_FastPWM:
+    compareRegHigh:
+      offset: 16
+      deref-count: 90
+    this$0:
+      offset: 24
+      deref-count: 90
+    compareRegLow:
+      offset: 20
+      deref-count: 90
+  avrora.sim.radio.CC1000Radio$FrequencyRegister:
+    reg1:
+      offset: 20
+      deref-count: 171
+    reg0:
+      offset: 24
+      deref-count: 171
+    reg2:
+      offset: 16
+      deref-count: 171
+    this$0:
+      offset: 28
+      deref-count: 72
+  avrora.sim.mcu.Timer16Bit$Mode_PWM_PNF:
+    compareRegHigh:
+      offset: 16
+      deref-count: 36
+    this$0:
+      offset: 24
+      deref-count: 36
+    compareRegLow:
+      offset: 20
+      deref-count: 36
+  avrora.sim.mcu.AtmelInternalDevice:
+    microcontroller:
+      offset: 16
+      deref-count: 531
+    simulator:
+      offset: 20
+      deref-count: 243
+    name:
+      offset: 12
+      deref-count: 162
+    devicePrinter:
+      offset: 28
+      deref-count: 81
+    interpreter:
+      offset: 24
+      deref-count: 81
+    mainClock:
+      offset: 32
+      deref-count: 81
+  avrora.sim.Simulation$Iter:
+    this$0:
+      offset: 16
+      deref-count: 124
+  cck.elf.ELFSymbolTable:
+    entry:
+      offset: 16
+      deref-count: 428
+    strtab:
+      offset: 24
+      deref-count: 4
+    header:
+      offset: 12
+      deref-count: 4
+  avrora.sim.mcu.USART$Receiver:
+    receive:
+      offset: 16
+      deref-count: 18
+    this$0:
+      offset: 20
+      deref-count: 18
+  avrora.arch.legacy.LegacyInstr$SBRS:
+    r1:
+      offset: 20
+      deref-count: 410331
+    props:
+      offset: 112
+      deref-count: 34
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.AtmelMicrocontroller:
+    sleepState:
+      offset: 40
+      deref-count: 2563524
+    properties:
+      offset: 52
+      deref-count: 1404
+    interpreter:
+      offset: 48
+      deref-count: 738
+    devices:
+      offset: 56
+      deref-count: 135
+    mainClock:
+      offset: 44
+      deref-count: 9
+  avrora.sim.mcu.SPI$SPDReg:
+    receiveReg:
+      offset: 12
+      deref-count: 1270940
+    transmitReg:
+      offset: 16
+      deref-count: 1270940
+    this$0:
+      offset: 20
+      deref-count: 1269743
+  avrora.sim.radio.CC1000Radio$FrontEndRegister:
+    this$0:
+      offset: 40
+      deref-count: 9
+  avrora.sim.mcu.Timer16Bit$OCRnxPairedRegister:
+    this$0:
+      offset: 32
+      deref-count: 54
+  avrora.arch.legacy.LegacyInstr$BRCC:
+    props:
+      offset: 112
+      deref-count: 24
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.RegisterSet$TotalFieldWriter:
+    fieldWriter:
+      offset: 24
+      deref-count: 144
+  avrora.arch.legacy.LegacyInstr$DEC:
+    r1:
+      offset: 16
+      deref-count: 485496
+    props:
+      offset: 112
+      deref-count: 20
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.USART$UBRRnLReg:
+    this$0:
+      offset: 20
+      deref-count: 27
+  java.lang.String:
+    CASE_INSENSITIVE_ORDER:
+      offset: 116
+      deref-count: 10
+  avrora.sim.mcu.USART$Transmitter:
+    this$0:
+      offset: 20
+      deref-count: 18
+    transmit:
+      offset: 16
+      deref-count: 18
+  avrora.sim.mcu.USART$Receiver$Receive:
+    this$1:
+      offset: 16
+      deref-count: 18
+  avrora.sim.radio.Medium$Transmitter$Ticker:
+    this$0:
+      offset: 12
+      deref-count: 354826
+  avrora.arch.legacy.LegacyInstr$LDS:
+    r1:
+      offset: 20
+      deref-count: 5242871
+    props:
+      offset: 112
+      deref-count: 498
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$SBI:
+    props:
+      offset: 112
+      deref-count: 123
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$IN:
+    r1:
+      offset: 20
+      deref-count: 2067785
+    props:
+      offset: 112
+      deref-count: 186
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$SBC:
+    r1:
+      offset: 16
+      deref-count: 22188
+    r2:
+      offset: 20
+      deref-count: 11094
+    props:
+      offset: 112
+      deref-count: 50
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$LDI:
+    r1:
+      offset: 20
+      deref-count: 3349377
+    props:
+      offset: 112
+      deref-count: 790
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.util.MulticastFSMProbe:
+    head:
+      offset: 16
+      deref-count: 36396
+  avrora.sim.platform.ExternalFlash$Memory:
+    buffer2:
+      offset: 24
+      deref-count: 9
+    this$0:
+      offset: 28
+      deref-count: 9
+    buffer1:
+      offset: 20
+      deref-count: 9
+  java.io.File:
+    separator:
+      offset: 116
+      deref-count: 2
+  avrora.arch.legacy.LegacyInstr$LDD:
+    r2:
+      offset: 24
+      deref-count: 105870
+    r1:
+      offset: 20
+      deref-count: 105870
+    props:
+      offset: 112
+      deref-count: 133
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$CBI:
+    props:
+      offset: 112
+      deref-count: 86
+    prototype:
+      offset: 116
+      deref-count: 1
+  cck.elf.ELFSymbolTable$Entry:
+    this$0:
+      offset: 36
+      deref-count: 424
+  avrora.sim.mcu.EEPROM$EEARLReg:
+    this$0:
+      offset: 20
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$REGREGIMM_class:
+    r2:
+      offset: 24
+      deref-count: 132
+    r1:
+      offset: 20
+      deref-count: 132
+  avrora.sim.platform.ExternalFlash$Delay:
+    this$0:
+      offset: 12
+      deref-count: 27
+  avrora.actions.Action:
+    options:
+      offset: 12
+      deref-count: 2
+    help:
+      offset: 20
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$BRTS:
+    props:
+      offset: 112
+      deref-count: 6
+    prototype:
+      offset: 116
+      deref-count: 1
+  cck.elf.ELFProgramHeaderTable$Entry32:
+    this$0:
+      offset: 44
+      deref-count: 6
+  avrora.sim.mcu.Timer8Bit$Mode_Normal:
+    this$0:
+      offset: 12
+      deref-count: 18
+  avrora.arch.legacy.LegacyInstr$INC:
+    r1:
+      offset: 16
+      deref-count: 23072
+    props:
+      offset: 112
+      deref-count: 6
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.FiniteStateMachine$State:
+    probes:
+      offset: 20
+      deref-count: 5211370
+    this$0:
+      offset: 24
+      deref-count: 2574
+    name:
+      offset: 12
+      deref-count: 2574
+  avrora.sim.radio.CC1000Radio$MatchRegister:
+    this$0:
+      offset: 32
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$SBRC:
+    r1:
+      offset: 20
+      deref-count: 91984
+    props:
+      offset: 112
+      deref-count: 22
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$FrequencyRegister$FrequencySubRegister:
+    this$1:
+      offset: 24
+      deref-count: 171
+  avrora.sim.radio.Medium:
+    synch:
+      offset: 28
+      deref-count: 1918778
+    transmissions:
+      offset: 36
+      deref-count: 965619
+    arbitrator:
+      offset: 32
+      deref-count: 746005
+  avrora.sim.mcu.Timer16Bit$OCRnxTempHighRegister:
+    this$0:
+      offset: 24
+      deref-count: 54
+    register:
+      offset: 20
+      deref-count: 54
+  avrora.arch.legacy.LegacyInstr$CPSE:
+    r2:
+      offset: 20
+      deref-count: 634867
+    r1:
+      offset: 16
+      deref-count: 634867
+    props:
+      offset: 112
+      deref-count: 16
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.platform.ExternalFlash$PA3Output:
+    this$0:
+      offset: 12
+      deref-count: 6201
+  avrora.sim.platform.ExternalFlash$PD3Output:
+    this$0:
+      offset: 12
+      deref-count: 784479
+  avrora.monitors.MonitorFactory:
+    options:
+      offset: 12
+      deref-count: 4
+    help:
+      offset: 20
+      deref-count: 2
+  avrora.arch.legacy.LegacyInstr$SWAP:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$NOP:
+    props:
+      offset: 112
+      deref-count: 208
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.ADC$ControlRegister$ConversionEvent:
+    this$1:
+      offset: 12
+      deref-count: 54792
+  avrora.sim.mcu.Microcontroller$Pin$ListenableInput:
+    listeners:
+      offset: 16
+      deref-count: 105669
+  avrora.arch.legacy.LegacyInstr$ANDI:
+    r1:
+      offset: 20
+      deref-count: 121904
+    props:
+      offset: 112
+      deref-count: 92
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$BRID:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.RegisterSet$FieldWriter:
+    fobject:
+      offset: 20
+      deref-count: 324
+  avrora.sim.platform.LED$LEDGroup:
+    sim:
+      offset: 12
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$FMUL:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.Medium$Receiver$Ticker:
+    this$0:
+      offset: 12
+      deref-count: 12843008
+  org.dacapo.harness.Avrora:
+    method:
+      offset: 44
+      deref-count: 2
+    config:
+      offset: 28
+      deref-count: 2
+    data:
+      offset: 24
+      deref-count: 1
+    loader:
+      offset: 32
+      deref-count: 1
+    scratch:
+      offset: 20
+      deref-count: 1
+  cck.elf.ELFSectionHeaderTable$Entry32:
+    this$0:
+      offset: 52
+      deref-count: 550
+  avrora.sim.clock.DeltaQueue$Link:
+    next:
+      offset: 24
+      deref-count: 12537357
+    events:
+      offset: 12
+      deref-count: 12391441
+    this$0:
+      offset: 28
+      deref-count: 2124687
+  avrora.arch.legacy.LegacyInstr$LDPD:
+    props:
+      offset: 112
+      deref-count: 8
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.MCUProperties:
+    layout:
+      offset: 20
+      deref-count: 1252
+    pinAssignments:
+      offset: 16
+      deref-count: 586
+    interruptAssignments:
+      offset: 24
+      deref-count: 163
+  cck.util.Option$Str:
+    value:
+      offset: 24
+      deref-count: 681
+    defvalue:
+      offset: 20
+      deref-count: 181
+  cck.util.VersionTag:
+    prefix:
+      offset: 28
+      deref-count: 5
+    string:
+      offset: 32
+      deref-count: 2
+    tags:
+      offset: 112
+      deref-count: 2
+    module:
+      offset: 24
+      deref-count: 1
+    suffix:
+      offset: 36
+      deref-count: 1
+  avrora.sim.mcu.USART$DataRegister$TwoLevelFIFO:
+    waitQueue:
+      offset: 24
+      deref-count: 72
+    readyQueue:
+      offset: 20
+      deref-count: 18
+    this$1:
+      offset: 28
+      deref-count: 18
+  avrora.sim.radio.CC1000Radio$RSSIOutput:
+    this$0:
+      offset: 12
+      deref-count: 6096
+  avrora.sim.platform.sensors.AccelSensorPower$OnPin:
+    this$0:
+      offset: 12
+      deref-count: 144
+  avrora.sim.state.RegisterUtil$PermutedView:
+    reg:
+      offset: 12
+      deref-count: 36
+  avrora.sim.mcu.Timer16Bit$Mode_Reserved:
+    this$0:
+      offset: 12
+      deref-count: 18
+  avrora.arch.legacy.LegacyArchitecture:
+    INSTANCE:
+      offset: 112
+      deref-count: 2
+  avrora.arch.legacy.LegacyInstr$LDPI:
+    r2:
+      offset: 20
+      deref-count: 216
+    r1:
+      offset: 16
+      deref-count: 108
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.core.ProgramReader:
+    options:
+      offset: 12
+      deref-count: 6
+    help:
+      offset: 20
+      deref-count: 4
+    ARCH:
+      offset: 28
+      deref-count: 4
+    INDIRECT_EDGES:
+      offset: 32
+      deref-count: 4
+  avrora.arch.legacy.LegacyInstr$LD:
+    r2:
+      offset: 20
+      deref-count: 31581
+    r1:
+      offset: 16
+      deref-count: 31581
+    props:
+      offset: 112
+      deref-count: 25
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$ADD:
+    r1:
+      offset: 16
+      deref-count: 1259050
+    r2:
+      offset: 20
+      deref-count: 629525
+    props:
+      offset: 112
+      deref-count: 229
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$RET:
+    props:
+      offset: 112
+      deref-count: 74
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.ATMegaFamily$Timer3:
+    this$0:
+      offset: 176
+      deref-count: 45
+    cTIMSK_reg:
+      offset: 168
+      deref-count: 9
+    xTIMSK_reg:
+      offset: 160
+      deref-count: 9
+    cTIFR_reg:
+      offset: 164
+      deref-count: 9
+    xTIFR_reg:
+      offset: 156
+      deref-count: 9
+  avrora.sim.mcu.ATMegaFamily$Timer2:
+    this$0:
+      offset: 108
+      deref-count: 9
+  avrora.arch.legacy.LegacyInstr$ADC:
+    r1:
+      offset: 16
+      deref-count: 698832
+    r2:
+      offset: 20
+      deref-count: 349416
+    props:
+      offset: 112
+      deref-count: 206
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.ATMegaFamily$Timer1:
+    this$0:
+      offset: 176
+      deref-count: 45
+    cTIMSK_reg:
+      offset: 168
+      deref-count: 9
+    xTIMSK_reg:
+      offset: 160
+      deref-count: 9
+    cTIFR_reg:
+      offset: 164
+      deref-count: 9
+    xTIFR_reg:
+      offset: 156
+      deref-count: 9
+  avrora.sim.platform.sensors.LightSensor:
+    mcu:
+      offset: 24
+      deref-count: 36
+    adcDevice:
+      offset: 32
+      deref-count: 18
+    fsm:
+      offset: 28
+      deref-count: 9
+  avrora.sim.mcu.ATMegaFamily$Timer0:
+    timerClock:
+      offset: 84
+      deref-count: 18
+    externalClock:
+      offset: 80
+      deref-count: 18
+    this$0:
+      offset: 108
+      deref-count: 9
+  avrora.sim.mcu.USART$Transmitter$Transmit:
+    this$1:
+      offset: 16
+      deref-count: 18
+  avrora.sim.mcu.USART$ControlRegisterB:
+    this$0:
+      offset: 36
+      deref-count: 18
+    _ucszHigh:
+      offset: 28
+      deref-count: 18
+    _rxb8n:
+      offset: 32
+      deref-count: 18
+  avrora.actions.SimAction:
+    simulation:
+      offset: 56
+      deref-count: 6
+    REPORT_SECONDS:
+      offset: 40
+      deref-count: 2
+    THROUGHPUT:
+      offset: 52
+      deref-count: 2
+    SECONDS_PRECISION:
+      offset: 44
+      deref-count: 2
+    SIMULATION:
+      offset: 48
+      deref-count: 2
+    options:
+      offset: 12
+      deref-count: 1
+  avrora.sim.mcu.USART$ControlRegisterC:
+    _umsel:
+      offset: 28
+      deref-count: 27
+    _stopBits:
+      offset: 20
+      deref-count: 18
+    _ucszLow:
+      offset: 24
+      deref-count: 18
+    this$0:
+      offset: 32
+      deref-count: 18
+  avrora.sim.clock.MainClock:
+    eventQueue:
+      offset: 24
+      deref-count: 80724043
+  avrora.sim.clock.RippleSynchronizer:
+    threadMap:
+      offset: 40
+      deref-count: 959423
+    waitListHead:
+      offset: 48
+      deref-count: 207956
+    action:
+      offset: 44
+      deref-count: 1
+  avrora.sim.mcu.RegisterLayout$SubField:
+    field:
+      offset: 36
+      deref-count: 960
+  avrora.sim.AtmelInterpreter$SREGBehavior:
+    this$0:
+      offset: 12
+      deref-count: 12067433
+  avrora.sim.mcu.USART$ControlRegisterA:
+    this$0:
+      offset: 40
+      deref-count: 45
+    UDRE_flag:
+      offset: 20
+      deref-count: 36
+    _u2xn:
+      offset: 36
+      deref-count: 27
+    TXC_flag:
+      offset: 24
+      deref-count: 27
+    _dor:
+      offset: 32
+      deref-count: 18
+    RXC_flag:
+      offset: 28
+      deref-count: 18
+  org.dacapo.parser.ConfigFileTokenManager:
+    input_stream:
+      offset: 52
+      deref-count: 2725
+    image:
+      offset: 68
+      deref-count: 227
+    jjimage:
+      offset: 64
+      deref-count: 115
+    debugStream:
+      offset: 48
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$DummyRegister:
+    this$0:
+      offset: 24
+      deref-count: 459
+  avrora.core.Program:
+    sourceMapping:
+      offset: 32
+      deref-count: 11
+    arch:
+      offset: 24
+      deref-count: 4
+    indirectEdges:
+      offset: 28
+      deref-count: 2
+  avrora.sim.mcu.SPI$TransferEvent:
+    this$0:
+      offset: 20
+      deref-count: 634876
+  cck.text.Terminal:
+    out:
+      offset: 112
+      deref-count: 9718
+  org.dacapo.parser.SimpleCharStream:
+    inputStream:
+      offset: 60
+      deref-count: 4
+  avrora.sim.radio.CC1000Radio$CurrentRegister:
+    this$0:
+      offset: 40
+      deref-count: 9
+  avrora.sim.output.SimPrinter:
+    simulator:
+      offset: 12
+      deref-count: 9622
+  cck.elf.ELFStringTable:
+    map:
+      offset: 12
+      deref-count: 802
+    entry:
+      offset: 20
+      deref-count: 8
+  avrora.sim.platform.ExternalFlash$PD5Output:
+    this$0:
+      offset: 16
+      deref-count: 784479
+  org.dacapo.parser.Config$Size:
+    outputFiles:
+      offset: 32
+      deref-count: 23
+    this$0:
+      offset: 36
+      deref-count: 6
+    name:
+      offset: 20
+      deref-count: 3
+  avrora.arch.legacy.LegacyInstr$BRGE:
+    props:
+      offset: 112
+      deref-count: 27
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.util.TransactionalList:
+    head:
+      offset: 16
+      deref-count: 10689936
+    transHead:
+      offset: 24
+      deref-count: 561922
+    transTail:
+      offset: 28
+      deref-count: 280961
+    tail:
+      offset: 20
+      deref-count: 45
+  avrora.arch.legacy.LegacyInstr$SLEEP:
+    props:
+      offset: 112
+      deref-count: 4
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.util.TransactionalList$Link:
+    object:
+      offset: 16
+      deref-count: 317402
+    next:
+      offset: 20
+      deref-count: 317357
+  avrora.arch.legacy.LegacyInstr$OR:
+    r1:
+      offset: 16
+      deref-count: 20262
+    r2:
+      offset: 20
+      deref-count: 10131
+    props:
+      offset: 112
+      deref-count: 50
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.radio.CC1000Radio$Modem1Register:
+    this$0:
+      offset: 32
+      deref-count: 9
+  avrora.sim.platform.sensors.AccelSensorPower:
+    fsm:
+      offset: 16
+      deref-count: 54
+  avrora.arch.legacy.LegacyRegister:
+    name:
+      offset: 20
+      deref-count: 11100
+    GPR_set:
+      offset: 288
+      deref-count: 6068
+    HGPR_set:
+      offset: 292
+      deref-count: 2661
+    EGPR_set:
+      offset: 300
+      deref-count: 1651
+    YZ_set:
+      offset: 312
+      deref-count: 286
+    RDL_set:
+      offset: 308
+      deref-count: 107
+    ADR_set:
+      offset: 304
+      deref-count: 68
+    Z:
+      offset: 252
+      deref-count: 55
+    registers:
+      offset: 112
+      deref-count: 36
+    Z_set:
+      offset: 316
+      deref-count: 33
+    Y:
+      offset: 248
+      deref-count: 13
+    MGPR_set:
+      offset: 296
+      deref-count: 13
+    X:
+      offset: 244
+      deref-count: 12
+    R16:
+      offset: 180
+      deref-count: 11
+    R24:
+      offset: 212
+      deref-count: 10
+    R20:
+      offset: 196
+      deref-count: 9
+    R22:
+      offset: 204
+      deref-count: 9
+    R26:
+      offset: 220
+      deref-count: 9
+    R28:
+      offset: 228
+      deref-count: 9
+    R30:
+      offset: 236
+      deref-count: 9
+    R18:
+      offset: 188
+      deref-count: 9
+    R0:
+      offset: 116
+      deref-count: 8
+    R21:
+      offset: 200
+      deref-count: 7
+    R23:
+      offset: 208
+      deref-count: 7
+    R17:
+      offset: 184
+      deref-count: 7
+    R19:
+      offset: 192
+      deref-count: 7
+    R25:
+      offset: 216
+      deref-count: 5
+    R27:
+      offset: 224
+      deref-count: 5
+    R29:
+      offset: 232
+      deref-count: 5
+    R2:
+      offset: 124
+      deref-count: 5
+    R4:
+      offset: 132
+      deref-count: 5
+    R6:
+      offset: 140
+      deref-count: 5
+    R8:
+      offset: 148
+      deref-count: 5
+    R10:
+      offset: 156
+      deref-count: 5
+    R31:
+      offset: 240
+      deref-count: 5
+    R12:
+      offset: 164
+      deref-count: 5
+    R14:
+      offset: 172
+      deref-count: 5
+    R1:
+      offset: 120
+      deref-count: 4
+    R3:
+      offset: 128
+      deref-count: 3
+    R5:
+      offset: 136
+      deref-count: 3
+    R7:
+      offset: 144
+      deref-count: 3
+    R9:
+      offset: 152
+      deref-count: 3
+    R11:
+      offset: 160
+      deref-count: 3
+    R13:
+      offset: 168
+      deref-count: 3
+    R15:
+      offset: 176
+      deref-count: 3
+  cck.text.Verbose:
+    printerMap:
+      offset: 112
+      deref-count: 1535793
+    verbosePrinter:
+      offset: 116
+      deref-count: 2
+  org.dacapo.harness.LatencyReporter:
+    callback:
+      offset: 132
+      deref-count: 2
+    globalIdx:
+      offset: 124
+      deref-count: 1
+  org.dacapo.harness.TestHarness:
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 10
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
+  avrora.arch.legacy.LegacyInstr$MULS:
+    props:
+      offset: 112
+      deref-count: 602
+    prototype:
+      offset: 116
+      deref-count: 1
+  avrora.sim.mcu.USART$DataRegister:
+    receiveRegister:
+      offset: 24
+      deref-count: 18
+    this$0:
+      offset: 28
+      deref-count: 18
+    transmitRegister:
+      offset: 20
+      deref-count: 18
+  avrora.sim.mcu.EEPROM$EEPROMWriteFinishedEvent:
+    this$0:
+      offset: 12
+      deref-count: 9
+  avrora.sim.mcu.SPI:
+    SPSR_reg:
+      offset: 56
+      deref-count: 1287041
+    interpreter:
+      offset: 24
+      deref-count: 1281677
+    SPDR_reg:
+      offset: 48
+      deref-count: 1272146
+    SPCR_reg:
+      offset: 52
+      deref-count: 1270949
+    transferEvent:
+      offset: 64
+      deref-count: 1270940
+    devicePrinter:
+      offset: 28
+      deref-count: 10737
+    ZERO_FRAME:
+      offset: 116
+      deref-count: 1
+    FF_FRAME:
+      offset: 120
+      deref-count: 1
+  avrora.sim.util.ClockCycleTimeout:
+    simulator:
+      offset: 12
+      deref-count: 18
+  avrora.sim.mcu.RegisterLayout$Field:
+    name:
+      offset: 16
+      deref-count: 362
+  org.dacapo.parser.Config:
+    sizes:
+      offset: 24
+      deref-count: 29
+    threadModel:
+      offset: 20
+      deref-count: 19
+    desc:
+      offset: 28
+      deref-count: 10
+    name:
+      offset: 12
+      deref-count: 6
+    className:
+      offset: 16
+      deref-count: 4
+  avrora.core.SourceMapping$Location:
+    this$0:
+      offset: 32
+      deref-count: 264
+    name:
+      offset: 28
+      deref-count: 264
+    section:
+      offset: 24
+      deref-count: 264
+  avrora.sim.platform.LED$LEDProbe:
+    this$0:
+      offset: 16
+      deref-count: 27
+    printer:
+      offset: 12
+      deref-count: 27
+  avrora.sim.mcu.USART$USARTProperties:
+    UCSR_name:
+      offset: 40
+      deref-count: 72
+    USART_name:
+      offset: 32
+      deref-count: 72
+    UBRR_name:
+      offset: 44
+      deref-count: 54
+    UDR_name:
+      offset: 36
+      deref-count: 36
+    subID:
+      offset: 24
+      deref-count: 18
+  cck.util.Option$List:
+    orig:
+      offset: 24
+      deref-count: 27
+    value:
+      offset: 20
+      deref-count: 18
+  avrora.sim.energy.Energy:
+    clock:
+      offset: 52
+      deref-count: 126
+    stateMachine:
+      offset: 48
+      deref-count: 63
+    energyControl:
+      offset: 56
+      deref-count: 63
+    deviceName:
+      offset: 36
+      deref-count: 63
+  avrora.sim.radio.CC1000Radio$CALRegister$Calibrate:
+    this$1:
+      offset: 12
+      deref-count: 225
+  avrora.sim.radio.CC1000Radio$FrequencySeparationRegister$SubRegister:
+    this$1:
+      offset: 24
+      deref-count: 54
+  avrora.core.SourceMapping:
+    labels:
+      offset: 16
+      deref-count: 311
+    reverseMap:
+      offset: 20
+      deref-count: 266
+    program:
+      offset: 12
+      deref-count: 2
+    LOCATION_COMPARATOR:
+      offset: 112
+      deref-count: 1
+  avrora.sim.mcu.EEPROM$EEARHReg:
+    this$0:
+      offset: 20
+      deref-count: 9
+  cck.help.HelpSystem:
+    categoryMap:
+      offset: 112
+      deref-count: 50
+  cck.elf.ELFProgramHeaderTable:
+    header:
+      offset: 12
+      deref-count: 12
+  org.dacapo.harness.Callback$Mode:
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
+  cck.help.HelpCategory$ParagraphSection:
+    para:
+      offset: 20
+      deref-count: 8
+    this$0:
+      offset: 24
+      deref-count: 8
+    title:
+      offset: 16
+      deref-count: 8
+  avrora.sim.radio.CC1000Radio$PrescalerRegister:
+    this$0:
+      offset: 40
+      deref-count: 9
+  avrora.sim.mcu.USART$DataRegister$TwoLevelFIFO$USARTFrameWrapper:
+    this$2:
+      offset: 16
+      deref-count: 54
 opcodes:
-  aconst_null: 9122914
+  aconst_null: 9293875
   iconst_m1: 2904425
-  iconst_0: 206775577
-  iconst_1: 177389852
-  iconst_2: 108565938
+  iconst_0: 206775573
+  iconst_1: 177384883
+  iconst_2: 108565867
   iconst_3: 907956
-  iconst_4: 11982104
-  iconst_5: 984472
-  lconst_0: 10264322
-  lconst_1: 4001485
+  iconst_4: 11982097
+  iconst_5: 984458
+  lconst_0: 10272504
+  lconst_1: 4001502
   fconst_0: 11594
   fconst_1: 718
   dconst_0: 485906
   dconst_1: 243030
-  bipush: 106788138
+  bipush: 106788152
   sipush: 108951760
-  ldc: 41000699
-  iload: 1377052460
-  lload: 344071586
+  ldc: 41000786
+  iload: 1377052532
+  lload: 345211863
   fload: 60226
   dload: 2729180
-  aload: 3213339905
+  aload: 3220281958
   iaload: 5443419
   daload: 1454
-  aaload: 99812224
+  aaload: 99812238
   baload: 67106700
   caload: 823267
   saload: 6087
-  istore: 245877912
-  lstore: 10953557
+  istore: 245877919
+  lstore: 11225569
   fstore: 18390
   dstore: 2212323
-  astore: 123410716
+  astore: 124141094
   iastore: 985
   dastore: 302
   aastore: 70083
   bastore: 53955591
   castore: 823965
   sastore: 40
-  pop: 2739042
+  pop: 2739056
   pop2: 242946
-  dup: 224722314
-  dup_x1: 2662731
+  dup: 224930495
+  dup_x1: 2657596
   dup_x2: 3001029
   dup2: 242946
   dup2_x1: 2
-  iadd: 176707492
-  ladd: 74850981
+  iadd: 176702364
+  ladd: 74893343
   dadd: 734642
   isub: 32761496
-  lsub: 81259915
+  lsub: 81478031
   fsub: 6216
   dsub: 249468
-  imul: 9386501
-  lmul: 254184
+  imul: 9386430
+  lmul: 254315
   fmul: 5378
-  dmul: 1778359
+  dmul: 1778490
   idiv: 1601228
-  ldiv: 1203243
+  ldiv: 1203129
   fdiv: 5378
-  ddiv: 2008506
+  ddiv: 2008637
   irem: 18648
   lrem: 242946
-  lneg: 15431
+  lneg: 16276
   dneg: 242946
   ishl: 45750145
   lshl: 2387797
@@ -2292,66 +3622,66 @@ opcodes:
   ixor: 3452323
   lxor: 654898
   iinc: 11035432
-  i2l: 72759499
+  i2l: 72759428
   i2d: 263830
   l2i: 1926640
   l2f: 6216
-  l2d: 2047185
+  l2d: 2047447
   f2i: 5378
   f2l: 6216
   f2d: 6216
-  d2i: 764530
+  d2i: 764661
   d2l: 542998
   d2f: 6216
   i2b: 95027526
   i2c: 30421948
   i2s: 11331
-  lcmp: 95491923
+  lcmp: 95928377
   fcmpl: 12303
   dcmpl: 9
   dcmpg: 718
-  ifeq: 352806861
-  ifne: 91789577
-  iflt: 304569
-  ifge: 43350279
-  ifgt: 1007395
-  ifle: 82962420
-  if_icmpeq: 15547886
-  if_icmpne: 7708061
-  if_icmplt: 2159449
-  if_icmpge: 93790109
-  if_icmple: 276360
+  ifeq: 352846434
+  ifne: 92128469
+  iflt: 304593
+  ifge: 43436109
+  ifgt: 1007472
+  ifle: 83142694
+  if_icmpeq: 15547893
+  if_icmpne: 7708046
+  if_icmplt: 2154314
+  if_icmpge: 93933225
+  if_icmple: 276353
   if_acmpeq: 784481
   if_acmpne: 34664
-  goto: 171783661
+  goto: 172391136
   tableswitch: 30960
   lookupswitch: 4434
-  ireturn: 394130708
-  lreturn: 13021401
+  ireturn: 394130856
+  lreturn: 13196078
   freturn: 6087
-  dreturn: 1979872
-  areturn: 24253647
-  return: 650144290
-  getstatic: 14518997
+  dreturn: 1980003
+  areturn: 24731717
+  return: 650781675
+  getstatic: 14600237
   putstatic: 486331
-  getfield: 2164680554
-  putfield: 646504203
-  invokevirtual: 661612500
-  invokespecial: 167527319
-  invokestatic: 167076862
-  invokeinterface: 108869252
-  new: 832408
+  getfield: 2168261583
+  putfield: 647430827
+  invokevirtual: 662312465
+  invokespecial: 168043019
+  invokestatic: 167251146
+  invokeinterface: 108956622
+  new: 876982
   newarray: 281583
   anewarray: 429
   arraylength: 42940624
   athrow: 49
-  checkcast: 7372557
+  checkcast: 7372406
   instanceof: 45
-  monitorenter: 2065018
-  monitorexit: 2065018
+  monitorenter: 2152217
+  monitorexit: 2152217
   multianewarray: 64
-  ifnull: 128343362
-  ifnonnull: 96628225# sun/launcher/LauncherHelper
+  ifnull: 128778272
+  ifnonnull: 97058916# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -2400,6 +3730,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -2434,9 +3766,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
+# java/util/zip/ZipException
 # java/nio/file/ProviderMismatchException
 # java/security/PrivilegedActionException
-# java/util/zip/ZipException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -2611,6 +3943,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -2624,6 +3957,7 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
+# java/util/Formatter
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -2758,6 +4092,8 @@ opcodes:
 # java/util/Stack
 # java/util/Collections$3
 # java/lang/Class$1
+# java/util/random/RandomGenerator
+# java/util/Random
 # java/text/StringCharacterIterator
 # jdk/internal/math/DoubleToDecimal
 # jdk/internal/math/MathUtils
@@ -2778,6 +4114,7 @@ opcodes:
 # java/util/ComparableTimSort
 # java/util/HashMap$EntrySpliterator
 # java/util/HashMap$HashMapSpliterator
+# java/util/function/ToLongFunction
 # java/util/Collections$ReverseComparator
 # java/util/Comparators$NaturalOrderComparator
 # java/util/Collections$ReverseComparator2

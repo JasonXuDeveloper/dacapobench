@@ -4,13 +4,13 @@
 skipped-classes: 1284
 transformed-classes: 2718
 transformed-bytecodes: 684103
-executed-bytecodes: 1540216660
+executed-bytecodes: 1540194855
 executed-bytecodes-unique: 177071
 executed-bytecodes-p90: 4374
 executed-bytecodes-p99: 204591
 executed-bytecodes-p999: 1313261
 executed-bytecodes-p9999: 2300295
-executed-calls: 147564519
+executed-calls: 147562846
 executed-calls-unique: 26947
 field-dereference-counts:
   java.awt.Color:
@@ -1629,7 +1629,7 @@ field-dereference-counts:
   org.apache.fop.fo.properties.NumberProperty:
     number:
       offset: 16
-      deref-count: 123919
+      deref-count: 123891
     CACHE:
       offset: 112
       deref-count: 9026
@@ -1725,7 +1725,7 @@ field-dereference-counts:
   org.apache.fop.fo.properties.StringProperty:
     str:
       offset: 16
-      deref-count: 208303
+      deref-count: 208311
     CACHE:
       offset: 112
       deref-count: 1668
@@ -5452,10 +5452,10 @@ field-dereference-counts:
   org.apache.fop.fo.properties.PropertyCache:
     map:
       offset: 16
-      deref-count: 240515
+      deref-count: 240536
     putCounter:
       offset: 20
-      deref-count: 1835
+      deref-count: 1856
     hashCodeCollisionCounter:
       offset: 28
       deref-count: 16
@@ -7359,10 +7359,10 @@ field-dereference-counts:
   org.apache.fop.fo.properties.CondLengthProperty:
     length:
       offset: 24
-      deref-count: 880735
+      deref-count: 880721
     conditionality:
       offset: 28
-      deref-count: 598336
+      deref-count: 598322
     CACHE:
       offset: 112
       deref-count: 117777
@@ -10920,28 +10920,28 @@ field-dereference-counts:
   org.apache.fop.fo.properties.CommonFont:
     fontFamily:
       offset: 16
-      deref-count: 99525
+      deref-count: 99539
     fontStyle:
       offset: 28
-      deref-count: 99525
+      deref-count: 99539
     fontWeight:
       offset: 36
-      deref-count: 99525
+      deref-count: 99539
     fontSize:
       offset: 40
-      deref-count: 98841
+      deref-count: 98855
     fontSelectionStrategy:
       offset: 20
-      deref-count: 31846
+      deref-count: 31860
     fontStretch:
       offset: 24
-      deref-count: 31846
+      deref-count: 31860
     fontSizeAdjust:
       offset: 44
-      deref-count: 31846
+      deref-count: 31860
     fontVariant:
       offset: 32
-      deref-count: 31846
+      deref-count: 31860
     CACHE:
       offset: 112
       deref-count: 8038
@@ -10982,16 +10982,16 @@ field-dereference-counts:
   org.apache.fop.fo.properties.CommonBorderPaddingBackground:
     backgroundColor:
       offset: 24
-      deref-count: 42940
+      deref-count: 42920
     backgroundImage:
       offset: 28
-      deref-count: 36654
+      deref-count: 36644
     backgroundPositionVertical:
       offset: 36
-      deref-count: 36503
+      deref-count: 36483
     backgroundPositionHorizontal:
       offset: 32
-      deref-count: 36503
+      deref-count: 36483
     backgroungImageTargetHeight:
       offset: 44
       deref-count: 29444
@@ -11653,16 +11653,16 @@ field-dereference-counts:
   org.apache.fop.fo.properties.CommonBorderPaddingBackground$BorderInfo:
     radiusStart:
       offset: 28
-      deref-count: 175617
+      deref-count: 175615
     radiusEnd:
       offset: 32
-      deref-count: 175617
+      deref-count: 175615
     mWidth:
       offset: 24
-      deref-count: 157650
+      deref-count: 157648
     mColor:
       offset: 20
-      deref-count: 148544
+      deref-count: 148542
     CACHE:
       offset: 112
       deref-count: 29446
@@ -11738,7 +11738,7 @@ field-dereference-counts:
   org.apache.fop.fo.properties.ColorProperty:
     color:
       offset: 16
-      deref-count: 46907
+      deref-count: 46903
     CACHE:
       offset: 112
       deref-count: 157
@@ -11938,7 +11938,7 @@ field-dereference-counts:
   org.apache.fop.fo.properties.ListProperty:
     list:
       offset: 16
-      deref-count: 110419
+      deref-count: 110423
   org.apache.xml.serializer.SecuritySupport$4:
     val$propName:
       offset: 12
@@ -12235,10 +12235,10 @@ field-dereference-counts:
       offset: 112
       deref-count: 1
 opcodes:
-  aconst_null: 6481642
+  aconst_null: 6481638
   iconst_m1: 2797371
-  iconst_0: 25258736
-  iconst_1: 26823958
+  iconst_0: 25258734
+  iconst_1: 26823100
   iconst_2: 1195902
   iconst_3: 2924377
   iconst_4: 1151535
@@ -12250,27 +12250,27 @@ opcodes:
   fconst_2: 1884
   dconst_0: 2287497
   dconst_1: 2850841
-  bipush: 13053544
-  sipush: 20428220
-  ldc: 14075820
-  iload: 171191801
+  bipush: 13051894
+  sipush: 20427416
+  ldc: 14075830
+  iload: 171185950
   lload: 669931
   fload: 326781
-  dload: 31576465
-  aload: 337120548
+  dload: 31576463
+  aload: 337119641
   iaload: 989013
   laload: 735
-  faload: 160541
+  faload: 160525
   daload: 1553809
   aaload: 10706656
-  baload: 2521103
+  baload: 2520278
   caload: 4716267
   saload: 87792
-  istore: 31784680
+  istore: 31783831
   lstore: 296233
   fstore: 52278
   dstore: 12059431
-  astore: 32656560
+  astore: 32656749
   iastore: 1515791
   lastore: 19
   fastore: 29465
@@ -12279,8 +12279,8 @@ opcodes:
   bastore: 351314
   castore: 1261192
   sastore: 61046
-  pop: 3521456
-  dup: 9556263
+  pop: 3521477
+  dup: 9556284
   dup_x1: 2514407
   dup_x2: 22152
   dup2: 528353
@@ -12300,7 +12300,7 @@ opcodes:
   ldiv: 35116
   fdiv: 38942
   ddiv: 806922
-  irem: 128808
+  irem: 128829
   lrem: 80710
   ineg: 27653
   fneg: 1177
@@ -12310,12 +12310,12 @@ opcodes:
   lshr: 56
   iushr: 906115
   lushr: 94
-  iand: 4363489
+  iand: 4362664
   land: 56
   ior: 576612
   ixor: 51704
   lxor: 94
-  iinc: 12162195
+  iinc: 12161362
   i2l: 16442
   i2f: 39384
   i2d: 2602447
@@ -12329,55 +12329,55 @@ opcodes:
   i2b: 337494
   i2c: 1226748
   i2s: 62480
-  lcmp: 225630
-  fcmpl: 81815
+  lcmp: 225629
+  fcmpl: 81807
   fcmpg: 5627
   dcmpl: 3659457
   dcmpg: 8090848
-  ifeq: 38151649
-  ifne: 13796200
+  ifeq: 38150751
+  ifne: 13795373
   iflt: 6272881
   ifge: 2455136
   ifgt: 4353320
   ifle: 6526714
-  if_icmpeq: 11280120
-  if_icmpne: 12453331
-  if_icmplt: 7280778
-  if_icmpge: 16600457
-  if_icmpgt: 2186168
-  if_icmple: 3911740
-  if_acmpeq: 1552732
-  if_acmpne: 1442931
-  goto: 27613958
+  if_icmpeq: 11280118
+  if_icmpne: 12452476
+  if_icmplt: 7279953
+  if_icmpge: 16600447
+  if_icmpgt: 2185343
+  if_icmple: 3911730
+  if_acmpeq: 1552729
+  if_acmpne: 1442907
+  goto: 27613085
   tableswitch: 1203391
   lookupswitch: 2473700
-  ireturn: 58107432
+  ireturn: 58106553
   lreturn: 3714
   freturn: 62229
   dreturn: 3726340
   areturn: 44487927
-  return: 15757542
-  getstatic: 12428590
+  return: 15757563
+  getstatic: 12427765
   putstatic: 1667
-  getfield: 161971983
-  putfield: 29433054
-  invokevirtual: 94029384
-  invokespecial: 14412980
-  invokestatic: 26370077
-  invokeinterface: 12751739
+  getfield: 161971929
+  putfield: 29433061
+  invokevirtual: 94028549
+  invokespecial: 14413001
+  invokestatic: 26369197
+  invokeinterface: 12751760
   invokedynamic: 339
-  new: 2800353
+  new: 2800374
   newarray: 242241
   anewarray: 322488
-  arraylength: 1941374
+  arraylength: 1941368
   athrow: 421
-  checkcast: 10066982
-  instanceof: 2675840
+  checkcast: 10066960
+  instanceof: 2675812
   monitorenter: 9233
   monitorexit: 9233
   multianewarray: 53732
   ifnull: 20761485
-  ifnonnull: 15294573# sun/launcher/LauncherHelper
+  ifnonnull: 15294531# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -13091,8 +13091,8 @@ opcodes:
 # java/lang/invoke/VarHandleReferences$FieldInstanceReadWrite
 # sun/java2d/DefaultDisposerRecord
 # sun/java2d/DisposerRecord
-# sun/java2d/DisposerTarget
 # java/util/concurrent/AbstractExecutorService
+# sun/java2d/DisposerTarget
 # sun/java2d/cmm/lcms/LCMSProfile
 # java/util/concurrent/ForkJoinPool
 # java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory
@@ -13154,9 +13154,9 @@ opcodes:
 # java/lang/StringIndexOutOfBoundsException
 # java/io/PushbackInputStream
 # java/io/StringWriter
+# java/text/ParseException
 # java/text/DateFormat
 # java/text/SimpleDateFormat
-# java/text/ParseException
 # java/text/DateFormat$Field
 # java/util/spi/LocaleServiceProvider
 # sun/util/spi/CalendarProvider

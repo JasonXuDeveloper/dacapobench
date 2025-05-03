@@ -2,8 +2,8 @@
 #    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
 skipped-classes: 967
-transformed-classes: 559
-transformed-bytecodes: 119843
+transformed-classes: 565
+transformed-bytecodes: 120885
 executed-bytecodes: 39109
 executed-bytecodes-unique: 1411
 executed-bytecodes-p90: 15
@@ -13,1407 +13,2719 @@ executed-bytecodes-p9999: 1135
 executed-calls: 6367
 executed-calls-unique: 253
 field-dereference-counts:
-  org/eclipse/osgi/internal/service/security/KeyStoreTrustEngine:
-    name: 1
-    password: 1
-    path: 1
-    signedBundleHook: 1
-    type: 1
-  org/dacapo/harness/TestHarness:
-    commandLineArgs: 15
-    config: 10
-    BuildVersion: 4
-    BuildNickName: 1
-  org/eclipse/osgi/internal/log/EquinoxLogFactory$1:
-    val$logger: 4
-    this$0: 3
-    val$logWriter: 3
-  org/eclipse/osgi/internal/framework/OSGiFrameworkHooks:
-    resolverHookFactory: 9
-    collisionHook: 1
-  org/apache/commons/cli/PosixParser:
-    tokens: 6
-    eatTheRest: 4
-    options: 3
-    currentOption: 1
-  org/dacapo/harness/Data:
-    DEFAULT_LOCAL_DACAPO_CONFIG: 2
-    DACAPO_CHECKSUM_RE_PATH: 1
-    WORKING_DIRE: 1
-  org/eclipse/osgi/storage/BundleInfo$CachedManifest:
-    cached: 177
-    generation: 90
-  org/eclipse/osgi/internal/container/Capabilities$NamespaceSet:
-    name: 731
-    indexes: 663
-    all: 353
-    matchMandatory: 31
-    nonStringIndexes: 29
-  org/apache/commons/cli/Option:
-    longOption: 222
-    option: 162
-    values: 71
-    description: 62
-    required: 62
-    argCount: 54
-    type: 31
-    valuesep: 18
-    argName: 14
-  org/eclipse/osgi/internal/framework/FilterImpl$Equal:
-    value: 175
-    cached: 57
-    attr: 27
-  org/eclipse/osgi/container/ModuleResolutionReport$Builder:
-    resourceToEntries: 8
-  org/eclipse/osgi/internal/url/MultiplexingFactory:
-    container: 2
-    context: 2
-    factories: 1
-    internalSecurityManager: 1
-    setAccessible: 1
-    systemLoaders: 1
-  org/eclipse/osgi/container/builders/OSGiManifestBuilderFactory:
-    PROHIBITED_CAPABILITIES: 32
-    DEFINED_OSGI_VALIDATE_HEADERS: 4
-    SYSTEM_CAPABILITIES: 1
-  org/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap:
-    entries: 480
-    emptyArray: 58
-  org/apache/felix/resolver/WireImpl:
-    m_cap: 36
-    m_provider: 36
-    m_req: 36
-    m_requirer: 36
-  org/eclipse/osgi/internal/container/AtomicLazyInitializer:
-    holder: 62
-  org/eclipse/osgi/internal/framework/OSGiFrameworkHooks$BundleCollisionHook:
-    container: 1
-    debug: 1
-  org/eclipse/osgi/internal/log/LoggerContextTargetMap:
-    loggerContexts: 28
-    qualifiedNameToTargets: 19
-    logServices: 10
-    targetToQualifiedNames: 10
-  org/osgi/framework/VersionRange:
-    leftClosed: 33
-    right: 33
-    left: 22
-    empty: 11
-    rightClosed: 11
-  org/eclipse/osgi/util/NLS$MessagesProperties:
-    fields: 110
-    isAccessible: 110
-    bundleName: 1
-  org/eclipse/osgi/internal/container/NamespaceList$Builder:
-    size: 1282
-    lastBuildElements: 901
-    namespaceElements: 746
-    getNamespace: 501
-  org/eclipse/osgi/internal/log/ConfigAdminListener:
-    configTracker: 2
-    context: 1
-    factory: 1
-  org/eclipse/osgi/internal/serviceregistry/ShrinkableCollection:
-    list: 43
-    collection: 25
-    $assertionsDisabled: 13
-  org/eclipse/osgi/internal/log/OrderedExecutor:
-    nThreads: 2
-    queue: 2
-    coreSize: 1
-    delegate: 1
-    logThreadName: 1
-  org/eclipse/core/runtime/adaptor/EclipseStarter$InitialBundle:
-    level: 2
-    location: 2
-    locationString: 2
-    start: 2
-  org/eclipse/osgi/internal/framework/EquinoxContainerAdaptor:
-    container: 40
-    lazyResolverExecutorCreator: 17
-    resolverExecutor: 17
-    storage: 13
-    $SWITCH_TABLE$org$eclipse$osgi$container$ModuleContainerAdaptor$ModuleEvent: 10
-    hooks: 9
-    $SWITCH_TABLE$org$eclipse$osgi$container$ModuleContainerAdaptor$ContainerEvent: 5
-    lazyStartLevelExecutorCreator: 3
-    startLevelExecutor: 3
-    moduleClassLoaderParent: 2
-    initial: 1
-    lastSecurityAdminFlush: 1
-  org/dacapo/parser/Config$ThreadModel:
-    PER_CPU: 3
-    SINGLE: 3
-    description: 3
-    FIXED: 2
-    $VALUES: 1
-  org/eclipse/osgi/container/ModuleResolver$ResolveProcess$ResolveLogger:
-    errors: 10
-    this$1: 4
-  org/osgi/framework/Version:
-    major: 631
-    minor: 481
-    micro: 403
-    qualifier: 402
-    emptyVersion: 255
-    versionString: 38
-  org/eclipse/osgi/internal/loader/classpath/ClasspathManager$DefineContext:
-    currentlyDefining: 1
-    currentlyProcessing: 1
-  org/dacapo/harness/Callback$Mode:
-    TIMING: 2
-    WARMUP: 2
-    $VALUES: 1
-  org/eclipse/osgi/internal/log/ExtendedLogReaderServiceFactory:
-    listenersLock: 91
-    nestedCallCount: 90
-    filters: 44
-    ALWAYS_LOG: 42
-    listeners: 9
-    NULL_LOGGER_FILTER: 4
-    history: 3
-    defaultLevel: 2
-    executor: 1
-    maxHistory: 1
-  org/eclipse/osgi/container/ModuleRevisionBuilder$GenericInfo:
-    namespace: 1065
-    mutable: 1037
-    attributes: 712
-    directives: 711
-    GETNAMESPACE: 7
-  org/eclipse/osgi/framework/log/FrameworkLogEntry:
-    severity: 7
-    message: 5
-    throwable: 5
-    bundleCode: 4
-    children: 4
-    entry: 4
-    stackCode: 3
-    context: 2
-  org/eclipse/osgi/container/ModuleContainer$ResolutionLock$Permits:
-    this$1: 12
-    closed: 10
-    aquiredPermits: 8
-  org/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap$Entry:
-    key: 424
-    value: 358
-  org/eclipse/osgi/container/ModuleResolver:
-    DEBUG_USES: 4
-    NON_PAYLOAD_REQUIREMENTS: 2
-    NON_PAYLOAD_CAPABILITIES: 1
-    NON_SUBSTITUTED_REQUIREMENTS: 1
-  org/eclipse/osgi/internal/loader/SystemBundleLoader$SystemModuleClassLoader:
-    this$0: 2
-  org/eclipse/osgi/internal/container/NamespaceList:
-    elements: 135
-    namespaces: 122
-    getNamespace: 72
-    CAPABILITY: 4
-    REQUIREMENT: 4
-    WIRE: 1
-  org/eclipse/osgi/framework/eventmgr/EventManager$1:
-    this$0: 9
-  org/dacapo/parser/SimpleCharStream:
-    bufpos: 5831
-    column: 3086
-    inBuf: 1395
-    bufcolumn: 1164
-    bufline: 1164
-    buffer: 1079
-    line: 1055
-    prevCharIsLF: 1054
-    maxNextCharInd: 1015
-    prevCharIsCR: 982
-    tokenBegin: 644
-    bufsize: 47
-    tabSize: 19
-    available: 5
-    inputStream: 4
-    trackLineColumn: 1
-  org/eclipse/osgi/internal/framework/StorageSaver:
-    delay: 10
-    container: 3
-    task: 3
-    future: 1
-    hook: 1
-  org/eclipse/osgi/internal/serviceregistry/FilteredServiceListener:
-    objectClass: 405
-    debug: 74
-    unfiltered: 51
-    context: 45
-    allservices: 42
-    filter: 42
-    listener: 42
-    removed: 12
-  org/eclipse/osgi/container/SystemModule:
-    inStart: 4
-    ACTIVE_SET: 2
-    forStop: 2
-  org/dacapo/harness/LatencyReporter:
-    callback: 2
-    globalIdx: 1
-    timerBase: 1
-  java/util/concurrent/TimeUnit:
-    SECONDS: 24
-    NANOSECONDS: 7
-    MILLISECONDS: 1
-  java/lang/Long:
-    TYPE: 1
-  org/eclipse/osgi/container/ModuleContainer$ContainerWiring:
-    this$0: 9
-    refreshThread: 5
-    monitor: 3
-  org/eclipse/osgi/internal/permadmin/SecurityTable:
-    evaluationCache: 1
-    rows: 1
-    securityAdmin: 1
-  org/apache/felix/resolver/util/ArrayMap:
-    size: 22
-    table: 22
-    values: 6
-  org/eclipse/osgi/storage/bundlefile/ZipBundleEntry:
-    zipEntry: 13
-    bundleFile: 12
-  org/eclipse/osgi/internal/container/Capabilities:
-    namespaceSets: 375
-    MANDATORY_ATTR: 1
-  org/eclipse/osgi/container/ModuleRequirement:
-    namespace: 193
-    directives: 169
-    revision: 43
-    attributes: 41
-  org/eclipse/osgi/container/ModuleCapability:
-    transientAttrs: 3281
-    attributes: 3278
-    namespace: 3226
-    directives: 1752
-    revision: 1744
-  org/eclipse/osgi/storage/StorageUtil:
-    IS_WINDOWS: 1
-    RESERVED_NAMES: 1
-  org/apache/felix/resolver/ResolverImpl$Packages:
-    m_exportedPkgs: 6
-    m_substitePkgs: 6
-    m_importedPkgs: 3
-    m_requiredPkgs: 3
-    m_sources: 3
-    m_usedPkgs: 3
-  org/eclipse/osgi/container/ModuleWire:
-    capability: 186
-    hostingProvider: 90
-    requirement: 74
-    hostingRequirer: 52
-    isValid: 40
-  org/dacapo/harness/Eclipse:
-    run: 3
-    OSGI_BOOTSTRAP_JAR: 2
-    data: 2
-    isRunning: 2
-    method: 2
-    scratch: 2
-    config: 1
-    loader: 1
-    oldJavaHome: 1
-    shutdown: 1
-  org/eclipse/osgi/internal/framework/EquinoxContainer$ConnectModules:
-    connectModules: 3
-    moduleConnector: 3
-    contents: 1
-  org/eclipse/osgi/container/ModuleContainer$ContainerStartLevel$2:
-    this$1: 5
-    val$module: 5
-    val$done: 4
-    val$toStartLevel: 2
-  org/eclipse/osgi/storage/bundlefile/BundleFile:
-    mruIndex: 21
-    basefile: 10
-    secureAction: 7
-  org/apache/commons/cli/CommandLine:
-    options: 64
-    args: 5
-  org/eclipse/osgi/internal/log/ExtendedLogServiceFactory$EquinoxLoggerAdmin:
-    this$0: 9
-  org/eclipse/osgi/container/Module$State:
-    UNINSTALLED: 48
-    STARTING: 14
-    RESOLVED: 10
-    ACTIVE: 9
-    INSTALLED: 9
-    LAZY_STARTING: 7
-    STOPPING: 7
-    ENUM$VALUES: 3
-  org/eclipse/osgi/internal/signedcontent/SignedContentConstants:
-    DEFAULT_TRUST_ENGINE: 2
-    DSA_OID: 1
-    EMPTY_STRING: 1
-    MD2_OID: 1
-    MD5_OID: 1
-    RSA_OID: 1
-    SHA1_OID: 1
-    SHA224_OID: 1
-    SHA256_OID: 1
-    SHA384_OID: 1
-    SHA512_224_OID: 1
-    SHA512_256_OID: 1
-    SHA512_OID: 1
-    SIGNEDDATA_OID: 1
-    SIGNING_TIME: 1
-    TIMESTAMP_OID: 1
-    TIMESTAMP_TST_OID: 1
-    digestManifestSearchLen: 1
-  org/eclipse/osgi/internal/debug/Debug:
-    DEBUG_EVENTS: 67
-    DEBUG_HOOKS: 29
-    DEBUG_FILTER: 12
-    DEBUG_SERVICES: 10
-    DEBUG_MANIFEST: 5
-    DEBUG_MESSAGE_BUNDLES: 5
-    MONITOR_ACTIVATION: 5
-    DEBUG_SYSTEM_BUNDLE: 4
-    DEBUG_BUNDLE_FILE: 3
-    DEBUG_BUNDLE_FILE_CLOSE: 3
-    DEBUG_BUNDLE_FILE_OPEN: 3
-    DEBUG_BUNDLE_TIME: 3
-    DEBUG_CACHED_MANIFEST: 3
-    DEBUG_GENERAL: 3
-    DEBUG_LOADER: 3
-    DEBUG_LOCATION: 3
-    DEBUG_PACKAGEADMIN: 3
-    DEBUG_PACKAGEADMIN_TIMING: 3
-    DEBUG_SECURITY: 3
-    DEBUG_STARTLEVEL: 3
-    DEBUG_STORAGE: 3
-    out: 1
-  org/eclipse/osgi/container/ModuleWiring$LoaderInitializer:
-    this$0: 22
-  org/apache/commons/cli/Options:
-    shortOpts: 71
-    longOpts: 70
-    optionGroups: 4
-    requiredOpts: 3
-  org/eclipse/osgi/container/ModuleDatabase$Sort:
-    BY_DEPENDENCY: 2
-    BY_ID: 2
-    BY_START_LEVEL: 2
-    ENUM$VALUES: 1
-  org/eclipse/osgi/framework/eventmgr/EventManager$EventThread:
-    head: 99
-    running: 43
-    tail: 33
-  org/eclipse/osgi/internal/loader/sources/PackageSource:
-    id: 30
-  org/eclipse/osgi/container/ModuleResolver$ResolveProcess:
-    moduleDatabase: 1
-    wirings: 1
-  org/apache/felix/resolver/util/CopyOnWriteSet:
-    data: 39
-  org/apache/felix/resolver/Candidates$1:
-    this$0: 2
-  org/osgi/util/tracker/ServiceTracker:
-    customizer: 3
-  org/dacapo/parser/ConfigFileTokenManager:
-    jjnewStateCnt: 4040
-    curChar: 3803
-    jjround: 3672
-    jjstateSet: 2723
-    jjrounds: 2295
-    input_stream: 1518
-    jjnextStates: 1000
-    jjmatchedKind: 917
-    jjmatchedPos: 567
-    image: 157
-    jjimage: 80
-    jjstrLiteralImages: 80
-    curLexState: 79
-    jjnewLexState: 79
-    jjtoToken: 79
-    jjimageLen: 78
-    debugStream: 1
-    defaultLexState: 1
-    jjbitVec0: 1
-    jjbitVec2: 1
-    jjtoMore: 1
-    jjtoSkip: 1
-    jjtoSpecial: 1
-    lexStateNames: 1
-  org/dacapo/parser/Config$OutputFile:
-    digest: 16
-    filter: 14
-    text: 14
-    bytes: 8
-    existence: 8
-    lines: 8
-    keep: 6
-    name: 6
-    this$0: 6
-  org/eclipse/osgi/internal/framework/StorageSaver$StorageSaverTask:
-    container: 1
-  org/eclipse/osgi/storage/url/reference/ReferenceInputStream:
-    reference: 4
-  org/eclipse/osgi/internal/framework/FilterImpl$Or:
-    operands: 7
-  org/osgi/service/permissionadmin/PermissionInfo:
-    actions: 26
-    name: 26
-    type: 26
-  org/eclipse/osgi/internal/container/ComputeNodeOrder$Digraph:
-    vertexMap: 52
-    initialized: 44
-    vertexList: 24
-    time: 16
-    cycles: 6
-  org/eclipse/osgi/internal/weaving/WeavingHookConfigurator:
-    wovenClassContext: 4
-    container: 3
-    deniedHooks: 2
-  org/dacapo/harness/FileCopy:
-    src: 10
-    tgt: 10
-  org/apache/felix/resolver/ResolverImpl$PermutationType:
-    IMPORT: 3
-    SUBSTITUTE: 3
-    USES: 3
-    ENUM$VALUES: 2
-  org/eclipse/osgi/container/ModuleRevision:
-    revisions: 70
-    capabilities: 67
-    symbolicName: 64
-    revisionInfo: 44
-    types: 32
-    requirements: 29
-    lazyActivationPolicy: 10
-    version: 6
-  org/eclipse/osgi/internal/serviceregistry/ServiceReferenceImpl:
-    registration: 271
-  org/osgi/service/log/LogLevel:
-    TRACE: 7
-    ERROR: 4
-    WARN: 4
-    AUDIT: 2
-    DEBUG: 2
-    INFO: 2
-    ENUM$VALUES: 1
-  org/apache/felix/resolver/util/OpenHashMap$KeySet:
-    this$0: 6
-  org/eclipse/osgi/internal/url/ContentHandlerFactoryImpl:
-    contentHandlerTracker: 2
-    ignoredClasses: 1
-    proxies: 1
-  org/apache/felix/resolver/util/OpenHashMap$KeyIterator:
-    this$0: 4
-  org/eclipse/osgi/launch/Equinox:
-    systemBundle: 4
-  org/eclipse/osgi/internal/log/ExtendedLogEntryImpl:
-    nextSequenceNumber: 5
-    contextObject: 4
-    bundle: 3
-    level: 3
-    message: 3
-    threadIds: 3
-    throwable: 3
-    logLevelEnum: 2
-    loggerName: 2
-    ref: 2
-    sequenceNumber: 2
-    stackTraceElement: 2
-    threadId: 2
-    threadName: 2
-    time: 2
-    nextThreadId: 1
-  org/apache/felix/resolver/util/OpenHashMap$MapIterator:
-    next: 3907
-    curr: 3849
-    index: 2923
-    prev: 984
-    this$0: 984
-  org/eclipse/osgi/container/ModuleContainerAdaptor$ContainerEvent:
-    ERROR: 4
-    REFRESH: 4
-    STARTED: 4
-    INFO: 3
-    START_LEVEL: 3
-    STOPPED: 3
-    STOPPED_REFRESH: 3
-    STOPPED_TIMEOUT: 3
-    STOPPED_UPDATE: 3
-    WARNING: 3
-    ENUM$VALUES: 2
-  org/eclipse/osgi/internal/weaving/DynamicImportList:
-    imports: 1
-    wovenClass: 1
-  org/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap$Snapshot:
-    entries: 571
-  org/eclipse/osgi/internal/hooks/EclipseLazyStarter:
-    initiatingClassName: 9
-    activationStack: 3
-    alreadyActive: 3
-    container: 1
-    errors: 1
-    secureAction: 1
-  org/eclipse/osgi/internal/serviceregistry/ServiceFactoryUse$1:
-    this$0: 4
-  org/eclipse/osgi/internal/loader/classpath/ClasspathEntry:
-    bundlefile: 5
-    mrBundleFiles: 5
-    domain: 4
-    mainManifestPackageAttributes: 4
-    perPackageManifestAttributes: 4
-    data: 3
-    userObjects: 3
-  org/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap$Snapshot$SnapshotIterator:
-    cursor: 1336
-    length: 1052
-    this$1: 384
-  org/eclipse/osgi/internal/weaving/WovenClassImpl:
-    hookFlags: 5
-    registry: 2
-    className: 1
-    classpathEntry: 1
-    clazz: 1
-    container: 1
-    deniedHooks: 1
-    dynamicImports: 1
-    entry: 1
-    error: 1
-    loader: 1
-    resultBytes: 1
-    state: 1
-    validBytes: 1
-  org/eclipse/osgi/internal/serviceregistry/ServiceConsumer:
-    prototypeConsumer: 1
-    singletonConsumer: 1
-  org/eclipse/osgi/internal/framework/EquinoxContainer:
-    secureAction: 241
-  org/eclipse/osgi/compatibility/state/PlatformAdminImpl:
-    monitor: 2
-    bc: 1
-    equinoxContainer: 1
-    factory: 1
-    reg: 1
-  org/dacapo/parser/Token:
-    next: 280
-    kind: 219
-    image: 130
-    beginColumn: 79
-    beginLine: 79
-    endColumn: 79
-    endLine: 79
-    specialToken: 79
-  org/dacapo/harness/TeePrintStream:
-    out: 6
-  org/eclipse/osgi/internal/hookregistry/StorageHookFactory:
-    KEY: 1
-  org/apache/felix/resolver/util/OpenHashMap$FastEntryIterator:
-    entry: 1885
-    this$0: 19
-  org/eclipse/osgi/framework/util/FilePath:
-    segments: 64
-    flags: 38
-    WINDOWS: 7
-    device: 4
-    NO_SEGMENTS: 1
-  org/eclipse/osgi/container/ModuleContainer$ContainerStartLevel:
-    debugStartLevel: 2
-  org/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap$Snapshot$EntryIterator:
-    this$1: 100
-  org/eclipse/osgi/framework/eventmgr/EventManager$EventThread$Queued:
-    next: 34
-    action: 30
-    dispatcher: 30
-    listeners: 30
-    object: 30
-  org/eclipse/osgi/internal/log/ExtendedLogServiceFactory$EquinoxLoggerContext:
-    this$0: 26
-    contextLogLevels: 18
-    contextName: 4
-  org/apache/felix/resolver/util/OpenHashMap$MapEntry:
-    index: 2233
-    this$0: 1319
-  org/eclipse/osgi/internal/container/NamespaceList$Builder$1:
-    inner: 8442
-    val$outer: 128
-    lastInnerList: 119
-    this$1: 9
-  org/eclipse/osgi/internal/container/NamespaceList$Builder$5:
-    val$filter: 14
-    this$1: 8
-  org/eclipse/osgi/container/ModuleContainerAdaptor$ModuleEvent:
-    STARTED: 24
-    STOPPED: 7
-    LAZY_ACTIVATION: 6
-    STARTING: 6
-    UNINSTALLED: 6
-    STOPPING: 5
-    UNRESOLVED: 5
-    UPDATED: 5
-    ENUM$VALUES: 4
-    INSTALLED: 4
-    RESOLVED: 4
-  org/apache/felix/resolver/util/OpenHashMap$EntryIterator:
-    this$0: 14
-    entry: 12
-  org/eclipse/osgi/internal/container/NamespaceList$Builder$2:
-    this$1: 497
-  org/eclipse/osgi/internal/loader/ModuleClassLoader$GenerationProtectionDomain:
-    generation: 3
-  org/eclipse/osgi/container/ModuleContainer$ContainerWiring$1:
-    val$bundles: 3
-    this$1: 1
-  org/eclipse/osgi/internal/container/NamespaceList$Builder$8:
-    val$start: 266
-    this$1: 152
-  org/eclipse/osgi/internal/container/NamespaceList$Builder$7:
-    this$1: 40
-    val$filter: 40
-  org/eclipse/osgi/internal/container/NamespaceList$Builder$6:
-    this$1: 54
-    val$filter: 54
-  org/eclipse/osgi/framework/util/CaseInsensitiveDictionaryMap:
-    map: 381
-    KEY_SERVICE_RANKING: 45
-    KEY_SERVICE_OBJECTCLASS: 35
-    entrySet: 32
-    keySet: 32
-    KEY_SERVICE_ID: 31
-    KEY_SERVICE_BUNDLE_ID: 30
-    KEY_SERVICE_SCOPE: 30
-    KEY_SERVICE_PID: 18
-    KEY_BUNDLE_FRAGMENT_HOST: 13
-    KEY_BUNDLE_SYMBOLICNAME: 10
-    KEY_BUNDLE_EXPORT_PACKAGE: 9
-    KEY_BUNDLE_IMPORT_PACKAGE: 8
-    KEY_BUNDLE_REQUIRE_BUNDLE: 8
-    KEY_BUNDLE_DYNAMICIMPORT_PACKAGE: 7
-    KEY_BUNDLE_MANIFESTVERSION: 7
-    KEY_BUNDLE_VERSION: 7
-    KEY_BUNDLE_ACTIVATOR: 6
-    KEY_BUNDLE_REQUIREDEXECUTIONENVIRONMENT: 6
-    KEY_BUNDLE_ACTIVATIONPOLICY: 5
-    KEY_BUNDLE_NATIVECODE: 5
-    KEY_BUNDLE_PROVIDE_CAPABILITY: 5
-    KEY_BUNDLE_REQUIRE_CAPABILITY: 5
-    KEY_BUNDLE_CLASSPATH: 4
-    KEY_BUNDLE_NAME: 4
-    KEY_BUNDLE_VENDOR: 4
-    KEY_JAR_MANIFESTVERSION: 4
-    KEY_BUNDLE_LOCALIZATION: 3
-    KEY_BUNDLE_DESCRIPTION: 2
-    KEY_BUNDLE_LICENSE: 1
-    KEY_BUNDLE_SCM: 1
-    KEY_COMPONENT_ID: 1
-    KEY_COMPONENT_NAME: 1
-    KEY_EVENT_FILTER: 1
-    KEY_EVENT_TOPICS: 1
-    KEY_JMX_OBJECTNAME: 1
-    KEY_METATYPE_FACTORY_PID: 1
-    KEY_METATYPE_PID: 1
-    KEY_SERVICE_CHANGECOUNT: 1
-    KEY_SERVICE_DESCRIPTION: 1
-    KEY_SERVICE_VENDER: 1
-  org/eclipse/osgi/internal/framework/EquinoxBundle$SystemBundle:
-    initListeners: 3
-  org/eclipse/osgi/internal/serviceregistry/ServiceRegistry$2:
-    val$serviceObject: 50
-  javax/xml/bind/DatatypeConverter:
-    theConverter: 886
-    SET_DATATYPE_CONVERTER_PERMISSION: 1
-  org/apache/felix/resolver/ResolverImpl$ResolveSession:
-    m_resolveContext: 77
-    m_isCancelled: 19
-    m_usesPermutations: 14
-    m_dynamicHost: 12
-    m_mandatoryResources: 12
-    m_usesCache: 12
-    m_currentError: 10
-    m_optionalResources: 10
-    m_multipleCardCandidates: 8
-    m_usesIndex: 8
-    m_importPermutations: 6
-    m_processedDeltas: 6
-    m_relatedResources: 6
-    m_substPermutations: 6
-    m_executor: 4
-    m_importIndex: 4
-    m_mutated: 4
-    m_substituteIndex: 4
-    $SWITCH_TABLE$org$apache$felix$resolver$ResolverImpl$PermutationType: 3
-    m_dynamicReq: 3
-    m_dynamicCandidates: 2
-    m_sub_mutated: 2
-    m_validRelatedResources: 2
-  org/osgi/util/tracker/AbstractTracked:
-    closed: 26
-    tracked: 21
-    adding: 18
-    initial: 18
-    trackingCount: 15
-  org/eclipse/osgi/internal/container/ComputeNodeOrder$Digraph$Vertex:
-    color: 16
-    adjacent: 8
-    finishTime: 8
-    id: 8
-    predecessor: 4
-  org/osgi/framework/BundleEvent:
-    type: 23
-    bundle: 19
-    origin: 9
-  org/eclipse/osgi/internal/signedcontent/SignedBundleHook$1:
-    this$0: 2
-  org/apache/felix/resolver/ResolverImpl$1Computer:
-    val$tasks: 22
-    resource: 12
-    val$allCandidates: 10
-    val$allWireCandidates: 10
-    val$session: 10
-    val$executor: 8
-    this$0: 6
-  org/dacapo/harness/Benchmark:
-    data: 446
-    datDeps: 442
-    stats: 48
-    config: 22
-    scratch: 9
-    err: 7
-    out: 7
-    validateOutput: 6
-    verbose: 6
-    iteration: 5
-    validationReport: 5
-    loader: 4
-    printStats: 4
-    savedErr: 4
-    savedOut: 4
-    silentErr: 4
-    silentOut: 4
-    jarDeps: 3
-    preIterationGC: 3
-    preserve: 3
-    savedSystemProperties: 3
-    timeoutDialation: 3
-    validate: 3
-    watchdog: 3
-    dumpLatencyCSV: 2
-    dumpLatencyHDR: 2
-    dumpLatencySmoothing: 2
-    iterations: 2
-    latencyBaseFileName: 2
-    savedClassLoader: 2
-    dataSet: 1
-    valRepFile: 1
-  org/eclipse/osgi/framework/util/SecureAction:
-    controlContext: 9
-  org/eclipse/osgi/internal/hookregistry/StorageHookFactory$StorageHook:
-    factoryClass: 4
-    generation: 2
-  org/eclipse/osgi/storage/BundleInfo$Generation:
-    rawHeaders: 181
-    genMonitor: 152
-    this$0: 65
-    bundleFile: 43
-    contentType: 15
-    revision: 13
-    cachedHeaders: 9
-    isDirectory: 9
-    generationId: 8
-    content: 7
-    headerLocalization: 7
-    hasPackageInfo: 5
-    isMRJar: 5
-    storageHooks: 5
-    lastModified: 3
-  java/io/File:
-    separatorChar: 18
-    separator: 14
-  org/eclipse/osgi/internal/location/EquinoxLocations:
-    equinoxConfig: 27
-    container: 9
-    debugLocations: 9
-    configurationLocation: 6
-    installLocation: 3
-    eclipseHomeLocation: 2
-    instanceLocation: 2
-    userLocation: 2
-  org/dacapo/parser/Config$Size:
-    outputFiles: 42
-    this$0: 9
-    threadLimit: 6
-    args: 4
-    nThreads: 3
-    name: 3
-  org/eclipse/osgi/internal/loader/classpath/TitleVersionVendor:
-    NONE: 3
-    title: 3
-    vendor: 3
-    version: 3
-  org/eclipse/osgi/internal/framework/EquinoxBundle$EquinoxModule:
-    this$0: 29
-  org/eclipse/osgi/internal/loader/ModuleClassLoader:
-    classNameLocks: 8
-    ALLPERMISSIONS: 6
-    pkgLock: 4
-    REGISTERED_AS_PARALLEL: 3
-  org/apache/felix/resolver/util/ArrayMap$1:
-    this$0: 10
-  org/eclipse/osgi/internal/connect/ConnectHookConfigurator$1$1:
-    val$m: 4
-    hasModule: 2
-    this$1: 2
-    val$generation: 2
-  org/apache/felix/resolver/ResolverImpl$EnhancedExecutor:
-    awaiting: 44
-    throwable: 38
-    executor: 18
-  org/eclipse/osgi/container/Module$StartOptions:
-    TRANSIENT: 21
-    LAZY_TRIGGER: 11
-    TRANSIENT_IF_AUTO_START: 10
-    TRANSIENT_RESUME: 7
-    USE_ACTIVATION_POLICY: 5
-    ENUM$VALUES: 1
-  org/eclipse/osgi/storage/url/reference/Handler:
-    installPath: 12
-  org/eclipse/osgi/internal/framework/AliasMapper:
-    osnameAliasTable: 3
-    osnameCanonicalTable: 3
-    processorAliasTable: 3
-    processorCanonicalTable: 3
-  org/eclipse/osgi/internal/signedcontent/SignedBundleHook:
-    context: 5
-    CACERTS_PATH: 2
-    supportSignedBundles: 2
-    container: 1
-    secureAction: 1
-    signedContentFactoryReg: 1
-    systemTrustEngineReg: 1
-    trustEngineNameProp: 1
-  javax/xml/bind/DatatypeConverterImpl:
-    hexCode: 14145
-    $assertionsDisabled: 1
-    datatypeFactory: 1
-    decodeMap: 1
-    encodeMap: 1
-    theInstance: 1
-  org/eclipse/osgi/internal/loader/classpath/ClasspathEntry$PDEData:
-    fileName: 3
-    symbolicName: 3
-  org/eclipse/osgi/internal/framework/EquinoxContainerAdaptor$1$1:
-    this$1: 1
-  org/eclipse/osgi/internal/framework/EquinoxContainerAdaptor$1$2:
-    val$threadName: 17
-    this$1: 1
-  org/eclipse/osgi/internal/framework/FilterImpl$Parser:
-    pos: 9693
-    filterChars: 3959
-    debug: 106
-    filterstring: 42
-  org/eclipse/osgi/internal/messages/Msg:
-    ECLIPSE_STARTUP_ERROR_NO_APPLICATION: 2
-    Module_StartError: 1
-  org/eclipse/osgi/internal/framework/FilterImpl$And:
-    operands: 65
-  java/lang/System:
-    out: 7
-    err: 6
-  org/eclipse/osgi/internal/framework/EquinoxContainerAdaptor$1:
-    val$maxThreads: 6
-    val$queue: 3
-    val$threadName: 3
-    this$0: 2
-  org/eclipse/osgi/framework/eventmgr/EventManager:
-    thread: 35
-    closed: 16
-    threadGroup: 6
-    threadName: 6
-  org/eclipse/osgi/storage/BundleInfo:
-    bundleId: 49
-    generationLocks: 15
-    storage: 13
-    nextGenerationId: 12
-    infoMonitor: 9
-    location: 6
-    MULTI_RELEASE_FILTER_PREFIXES: 1
-  org/apache/felix/resolver/ResolverImpl$Packages$3$1:
-    this$2: 2
-  org/eclipse/osgi/internal/framework/EquinoxBundle$SystemBundle$EquinoxSystemModule:
-    this$1: 32
-  org/apache/felix/resolver/ResolverImpl$EnhancedExecutor$1:
-    val$runnable: 32
-    this$1: 16
-  java/lang/Boolean:
-    FALSE: 2
-    TRUE: 2
-    TYPE: 1
-  org/eclipse/osgi/container/ModuleContainerAdaptor:
-    defaultExecutor: 1
-  org/eclipse/osgi/internal/container/LockSet:
-    locks: 59
-  org/apache/felix/resolver/ResolverImpl$Blame:
-    m_cap: 620
-    m_reqs: 612
-  org/apache/commons/cli/Parser:
-    options: 7
-    cmd: 4
-    requiredOptions: 2
-  org/apache/felix/resolver/ResolverImpl$WireCandidate:
-    capability: 28
-    requirement: 14
-  org/eclipse/osgi/storage/url/reference/ReferenceURLConnection:
-    connected: 10
-    installPath: 8
-    reference: 6
-  org/apache/commons/cli/Util:
-    EMPTY_STRING_ARRAY: 2
-  org/eclipse/osgi/framework/internal/reliablefile/ReliableFile:
-    fileSharing: 5
-    defaultMaxGenerations: 3
-    nextTemp: 3
-    cacheFiles: 1
-    identifier1: 1
-    identifier2: 1
-    lastGenerationFile: 1
-    lastGenerationLock: 1
-    lastGenerations: 1
-    maxInputStreamBuffer: 1
-  org/dacapo/parser/ConfigFile:
-    token: 545
-    jj_ntk: 255
-    jj_gen: 181
-    token_source: 80
-    jj_nt: 62
-    jj_la1: 44
-    jj_input_stream: 2
-    jj_expentries: 1
-    jj_kind: 1
-    jj_la1_0: 1
-    jj_la1_1: 1
-  org/eclipse/osgi/internal/framework/EquinoxConfiguration:
-    CLASS_CERTIFICATE: 3
-    PROP_WITH_ECLIPSE_STARTER_DEFAULTS: 1
-    supportSignedBundles: 1
-  org/eclipse/osgi/internal/location/BasicLocation:
-    location: 44
-    property: 23
-    defaultValue: 19
-    isReadOnly: 16
-    configValues: 14
-    dataAreaPrefix: 11
-    debug: 11
-    container: 10
-    serviceRegistration: 10
-    DEFAULT_LOCK_FILENAME: 6
-    lockFile: 5
-    parent: 4
-  org/eclipse/osgi/internal/framework/OSGiFrameworkHooks$CoreResolverHookFactory:
-    debug: 27
-    inInit: 6
-    container: 5
-    storage: 5
-  org/eclipse/osgi/internal/loader/ModuleClassLoader$DefineClassResult:
-    clazz: 1
-    defined: 1
-  org/dacapo/harness/Callback$1:
-    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
-  org/apache/felix/resolver/util/OpenHashMap$1:
-    this$0: 34
-  org/eclipse/osgi/internal/location/Locker_JavaNio:
-    fileLock: 15
-    raFile: 15
-    lockFile: 5
-    debug: 2
-  org/apache/felix/resolver/util/OpenHashMap$2:
-    this$0: 8
-  org/osgi/util/tracker/ServiceTracker$Tracked:
-    this$0: 15
-    closed: 3
-  org/eclipse/osgi/internal/serviceregistry/ServiceFactoryUse:
-    factoryInUse: 4
-    $assertionsDisabled: 2
-    cachedService: 2
-    factory: 2
-    registration: 2
-    context: 1
-    debug: 1
-  org/eclipse/osgi/storage/Storage$1:
-    val$in: 4
-    this$0: 2
-  org/dacapo/harness/CommandLineArgs:
-    OPTIONS: 125
-    line: 42
-    options: 33
-    $assertionsDisabled: 32
-    visibleOptions: 31
-    callback: 6
-    benchmarks: 3
-    parser: 2
-  java/nio/charset/StandardCharsets:
-    UTF_8: 4
-  org/osgi/service/condition/Condition:
-    INSTANCE: 1
-  org/eclipse/osgi/internal/serviceregistry/ServiceUse:
-    useCount: 29
-    lock: 14
-    debug: 13
-    registration: 13
-    $assertionsDisabled: 7
-    context: 7
-  org/eclipse/osgi/internal/framework/legacy/StartLevelImpl:
-    frameworkStartLevel: 1
-  org/eclipse/osgi/internal/util/SupplementDebug:
-    STATIC_DEBUG_MANIFEST: 1182
-    STATIC_DEBUG_MESSAGE_BUNDLES: 3
-  org/osgi/framework/BundleException:
-    type: 1
-  org/eclipse/osgi/internal/container/LockSet$LockHolder:
-    lock: 36
-    useCount: 27
-  org/eclipse/osgi/internal/log/LogServiceManager:
-    logReaderServiceFactory: 48
-    logServiceFactory: 8
-    systemBundleLog: 6
-    LOGREADERSERVICE_CLASSES: 2
-    LOGSERVICE_CLASSES: 2
-    configAdminListener: 2
-    eventAdminAdapter: 2
-    logServiceRegistration: 2
-    logReaderServiceRegistration: 1
-    loggerAdminRegistration: 1
-  org/eclipse/osgi/internal/weaving/WeavingHookConfigurator$WovenClassContext:
-    wovenClassStack: 5
-    processClassNameStack: 4
-  org/eclipse/osgi/util/NLS:
-    ASSIGNED: 218
-  org/eclipse/osgi/internal/framework/EquinoxConfiguration$ConfigValues:
-    useSystemProperties: 244
-    NULL_CONFIG: 192
-    initialConfig: 24
-    populateInitConfig: 2
-    exceptions: 1
-    localConfig: 1
-  org/apache/felix/resolver/Logger:
-    m_logLevel: 10
-  org/apache/felix/resolver/util/CandidateSelector:
-    unmodifiable: 182
-    currentIndex: 145
-    isUnmodifiable: 12
-  org/eclipse/osgi/internal/framework/ContextFinder:
-    THIS: 1
-    contextFinder: 1
-    cycleDetector: 1
-    finderClassLoader: 1
-    parentContextClassLoader: 1
-  org/eclipse/osgi/internal/loader/sources/SingleSourcePackage:
-    supplier: 11
-  org/eclipse/osgi/internal/log/EquinoxLogWriter:
-    loggerName: 176
-    writer: 122
-    consoleLog: 110
-    enabled: 87
-    environmentInfo: 18
-    LINE_SEPARATOR: 15
-    outFile: 12
-    loggerAdmin: 10
-    logLevel: 7
-    maxLogSize: 6
-    includeCommandLine: 5
-    newSession: 5
-    backupIdx: 2
-    maxLogFiles: 2
-  org/eclipse/osgi/internal/framework/FilterImpl$Item:
-    debug: 151
-    attr: 114
-  org/eclipse/osgi/framework/util/ArrayMap:
-    keys: 22
-    values: 17
-  org/eclipse/osgi/container/ModuleWiring:
-    isValid: 40
-    revision: 38
-    substitutedPkgNames: 37
-    providedWires: 34
-    requiredWires: 34
-    capabilities: 33
-    loader: 30
-    requirements: 30
-    loaderInitializer: 28
-    dynamicMissRef: 18
-    GET_CLASSLOADER_PERM: 1
-  org/apache/felix/resolver/ResolverImpl$UsedBlames:
-    m_blames: 10
-    m_caps: 10
-  org/osgi/framework/ServiceEvent:
-    reference: 270
-    type: 93
-  org/osgi/util/tracker/ServiceTracker$AllTracked:
-    this$0: 2
-  org/dacapo/parser/Config:
-    sizes: 48
-    desc: 11
-    name: 5
-    threadModel: 5
-    className: 4
-    threadCountOverride: 2
-  org/apache/felix/resolver/util/OpenHashMap$MapEntrySet:
-    this$0: 4
-  org/apache/felix/resolver/ResolverImpl$3:
-    val$packages: 9
-    val$allCandidates: 6
-    val$resource: 6
-    val$session: 6
-    this$0: 3
-  org/osgi/framework/FrameworkEvent:
-    type: 14
-    bundle: 8
-    throwable: 5
-  org/eclipse/osgi/internal/log/EquinoxLogServices:
-    logServiceManager: 5
-    logWriter: 5
-    eclipseLogFactory: 4
-    perfWriter: 4
-    frameworkLogReg: 1
-    perfLogReg: 1
-    rootFrameworkLog: 1
-  org/apache/felix/resolver/ResolverImpl$4:
-    val$allPackages: 9
-    val$resource: 9
-    val$allCandidates: 6
-    val$allWireCandidates: 6
-    val$session: 6
-    this$0: 3
-  org/eclipse/osgi/storage/Storage:
-    secureAction: 6
-  org/eclipse/osgi/util/ManifestElement:
-    attributes: 1220
-    directives: 872
-    valueComponents: 857
-    mainValue: 439
-  org/apache/felix/resolver/ResolverImpl$5:
-    val$allPackages: 6
-    val$packages: 6
-    val$resource: 6
-    val$session: 6
-    this$0: 3
-  org/apache/felix/resolver/util/ArrayMap$1$1:
-    index: 12
-    this$1: 10
-  org/eclipse/osgi/internal/connect/ConnectHookConfigurator:
-    CONNECT_TAG_NAMESPACES: 1
-  org/dacapo/harness/TeeOutputStream:
-    log: 3419
-    toScreen: 1139
-    logFile: 6
-    version: 2
-  org/eclipse/osgi/container/ModuleRevisionBuilder:
-    capabilityInfos: 349
-    version: 318
-    SINGLETON_MAP_CLASS: 21
-    requirementInfos: 21
-    symbolicName: 18
-    types: 14
-    id: 13
-    UNMODIFIABLE_MAP_CLASS: 3
-  org/eclipse/osgi/internal/log/EquinoxLogFactory:
-    logManager: 4
-    defaultWriter: 2
-  org/apache/felix/resolver/ResolverImpl$Packages$2:
-    this$1: 3
-  org/apache/felix/resolver/ResolverImpl$6:
-    this$0: 6
-    val$allPackages: 6
-    val$allWireCandidates: 6
-    val$resource: 6
-    val$session: 6
-  org/apache/felix/resolver/ResolverImpl$Packages$1:
-    this$1: 3
-  org/eclipse/osgi/storage/bundlefile/ZipBundleFile:
-    zipFile: 16
-    verify: 6
-    basefile: 3
-  org/apache/felix/resolver/ResolverImpl$Packages$3:
-    this$1: 3
-  org/eclipse/osgi/container/ModuleContainer:
-    DEBUG_BUNDLE_START_TIME: 8
-    adaptor: 6
-    moduleDatabase: 4
-  org/eclipse/osgi/internal/framework/BundleContextImpl$2:
-    this$0: 3
-    val$bundleActivator: 3
-  org/eclipse/osgi/service/datalocation/Location:
-    CONFIGURATION_FILTER: 1
-    ECLIPSE_HOME_FILTER: 1
-    INSTALL_FILTER: 1
-    INSTANCE_FILTER: 1
-    USER_FILTER: 1
-  org/eclipse/osgi/container/ModuleResolutionReport:
-    resolutionResult: 8
-    entries: 6
-    resolutionException: 4
-  org/eclipse/osgi/internal/framework/EquinoxBundle:
-    module: 249
-    equinoxContainer: 26
-    context: 24
-    monitor: 14
-    $SWITCH_TABLE$org$eclipse$osgi$container$Module$State: 7
-  org/eclipse/core/runtime/internal/adaptor/ConsoleManager:
-    consolePort: 3
-    context: 3
-    consoleBundle: 2
-  org/eclipse/osgi/container/Module$Settings:
-    USE_ACTIVATION_POLICY: 15
-    AUTO_START: 8
-    ENUM$VALUES: 2
-    PARALLEL_ACTIVATION: 2
-  org/eclipse/osgi/internal/loader/EquinoxClassLoader:
-    delegate: 14
-    generation: 6
-    configuration: 5
-    isRegisteredAsParallel: 5
-    manager: 5
-    EQUINOX_REGISTERED_AS_PARALLEL: 3
-    debug: 2
-  org/eclipse/osgi/storage/bundlefile/CloseableBundleFile$BundleEntryInputStream:
-    streamClosed: 18
-    this$0: 12
-  org/eclipse/osgi/storage/ContentProvider$Type:
-    CONNECT: 5
-    REFERENCE: 4
-    DEFAULT: 2
-    ENUM$VALUES: 1
-  org/eclipse/osgi/container/ModuleDatabase$1:
-    this$0: 4
-  org/eclipse/osgi/container/ModuleDatabase$2:
-    this$0: 3
-  org/eclipse/osgi/internal/loader/classpath/FragmentClasspath:
-    generation: 2
-    entries: 1
-  org/eclipse/osgi/internal/loader/BundleLoader$3:
-    val$cl: 4
-    val$hooks: 2
-    this$0: 1
-  org/eclipse/osgi/internal/log/ExtendedLogServiceFactory:
-    contextsLock: 29
-    secureAction: 7
-    loggerContextTargetMap: 6
-    logReaderServiceFactory: 4
-    loggerAdmin: 4
-    captureLogEntryLocation: 3
-    logPermission: 1
-  org/eclipse/core/runtime/adaptor/EclipseStarter$StartupEventListener:
-    frameworkEventType: 4
-    semaphore: 4
-  org/eclipse/osgi/internal/log/LoggerImpl:
-    THIS_PACKAGE_NAME: 11
-    enabledLevel: 11
-    name: 10
-    logServiceImpl: 8
-    EMPTY: 1
-    pattern: 1
-  org/eclipse/core/runtime/internal/adaptor/EclipseAppLauncher:
-    context: 3
-    failOnNoDefault: 2
-    relaunch: 2
-    runnable: 2
-    appContext: 1
-    equinoxConfig: 1
-    log: 1
-    runningLock: 1
-    waitForAppLock: 1
-  org/eclipse/osgi/internal/util/Tokenizer:
-    max: 31788
-    cursor: 14426
-    value: 7946
-  org/eclipse/osgi/storage/PermissionData:
-    locations: 4
-    condPermInfos: 1
-    defaultInfos: 1
-  org/apache/felix/resolver/util/OpenHashMap$ValueIterator:
-    this$0: 14
-  org/dacapo/harness/CommandLineArgs$Methodology:
-    ITERATE: 5
-    CONVERGE: 3
-    $VALUES: 2
-  org/eclipse/osgi/internal/loader/SystemBundleLoader:
-    classLoader: 4
-    moduleClassLoader: 2
-  org/eclipse/osgi/compatibility/state/Activator:
-    platformAdmin: 2
-  org/apache/felix/resolver/util/OpenHashMap:
-    last: 8815
-    link: 7594
-    size: 6670
-    mask: 5284
-    key: 4283
-    value: 2766
-    maxFill: 2260
-    defRetValue: 2217
-    n: 268
-    first: 122
-    f: 59
-    fast: 53
-    values: 12
-    keys: 10
-    entries: 6
-    containsNullKey: 4
-  java/nio/file/FileVisitResult:
-    CONTINUE: 9
-  org/eclipse/osgi/container/ModuleContainer$ResolutionLock:
-    reenterLock: 13
-    permitPool: 9
-  org/eclipse/osgi/container/Module:
-    revisions: 183
-    id: 166
-    state: 98
-    stateTransitionEvents: 63
-    startlevel: 49
-    stateChangeLock: 49
-    settings: 21
-    inStart: 18
-    $SWITCH_TABLE$org$eclipse$osgi$container$ModuleContainerAdaptor$ModuleEvent: 16
-    lastModified: 6
-    RESOLVED_SET: 5
-    VALID_RESOLVED_TRANSITION: 5
-    location: 5
-    ACTIVE_SET: 4
-    VALID_STOPPED_TRANSITION: 1
-  org/eclipse/osgi/framework/eventmgr/CopyOnWriteIdentityMap$Snapshot$EntrySet:
-    this$1: 287
-  org/eclipse/osgi/internal/framework/XMLParsingServiceFactory:
-    isSax: 2
-    setTccl: 2
-  org/eclipse/osgi/container/ModuleResolver$ResolveProcess$DynamicFragments:
-    this$1: 5
-    fragments: 4
-    hostCapability: 4
-    fragmentAdded: 3
-    validProviders: 3
-  org/eclipse/osgi/internal/framework/OSGiFrameworkHooks$CoreResolverHookFactory$CoreResolverHook:
-    this$1: 27
-    hooks: 26
-    systemModule: 12
-    resolutionReport: 4
-  org/eclipse/osgi/internal/permadmin/PermissionAdminTable:
-    locations: 1
-  org/eclipse/osgi/internal/loader/classpath/ManifestPackageAttributes:
-    NONE: 4
-    implementation: 2
-    specification: 2
-  org/eclipse/osgi/container/ModuleRevisions:
-    revisions: 258
-    monitor: 137
-    uninstalled: 130
-    container: 73
-    module: 46
-  org/eclipse/osgi/container/ModuleRevision$1:
-    this$0: 344
-  org/eclipse/osgi/container/ModuleRevision$2:
-    this$0: 17
-  org/eclipse/osgi/internal/container/InternalUtils$CopyOnFirstWriteList:
-    copy: 1325
-    copied: 3
-  org/eclipse/osgi/framework/util/CaseInsensitiveDictionaryMap$CaseInsensitiveKey:
-    hashCode: 451
-    key: 114
-  org/eclipse/osgi/internal/framework/legacy/PackageAdminImpl:
-    frameworkWiring: 2
-    equinoxContainer: 1
+  org.eclipse.osgi.internal.log.LogServiceManager:
+    logReaderServiceFactory:
+      offset: 24
+      deref-count: 48
+    logServiceFactory:
+      offset: 28
+      deref-count: 8
+    systemBundleLog:
+      offset: 32
+      deref-count: 6
+    logServiceRegistration:
+      offset: 16
+      deref-count: 2
+    eventAdminAdapter:
+      offset: 36
+      deref-count: 2
+    configAdminListener:
+      offset: 40
+      deref-count: 2
+    loggerAdminRegistration:
+      offset: 20
+      deref-count: 1
+    logReaderServiceRegistration:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleRevision$2:
+    this$0:
+      offset: 12
+      deref-count: 17
+  org.eclipse.osgi.container.ModuleRevision$1:
+    this$0:
+      offset: 12
+      deref-count: 344
+  org.eclipse.osgi.internal.container.Capabilities$NamespaceSet:
+    name:
+      offset: 16
+      deref-count: 731
+    indexes:
+      offset: 20
+      deref-count: 663
+    all:
+      offset: 24
+      deref-count: 353
+    nonStringIndexes:
+      offset: 28
+      deref-count: 29
+  org.osgi.util.tracker.ServiceTracker$Tracked:
+    this$0:
+      offset: 32
+      deref-count: 15
+  org.eclipse.osgi.util.NLS$MessagesProperties:
+    fields:
+      offset: 60
+      deref-count: 110
+    bundleName:
+      offset: 56
+      deref-count: 1
+  org.eclipse.osgi.internal.location.Locker_JavaNio:
+    fileLock:
+      offset: 20
+      deref-count: 15
+    raFile:
+      offset: 24
+      deref-count: 15
+    lockFile:
+      offset: 16
+      deref-count: 5
+  org.eclipse.osgi.internal.permadmin.PermissionAdminTable:
+    locations:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleResolutionReport:
+    resolutionResult:
+      offset: 20
+      deref-count: 8
+    entries:
+      offset: 12
+      deref-count: 6
+    resolutionException:
+      offset: 16
+      deref-count: 4
+  java.lang.Long:
+    TYPE:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleRevisions:
+    revisions:
+      offset: 28
+      deref-count: 258
+    monitor:
+      offset: 16
+      deref-count: 137
+    container:
+      offset: 24
+      deref-count: 73
+    module:
+      offset: 20
+      deref-count: 46
+  org.eclipse.osgi.internal.connect.ConnectHookConfigurator:
+    CONNECT_TAG_NAMESPACES:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.container.builders.OSGiManifestBuilderFactory:
+    PROHIBITED_CAPABILITIES:
+      offset: 156
+      deref-count: 32
+    SYSTEM_CAPABILITIES:
+      offset: 152
+      deref-count: 1
+  org.eclipse.osgi.storage.Storage:
+    secureAction:
+      offset: 152
+      deref-count: 6
+  org.eclipse.osgi.framework.util.ArrayMap:
+    keys:
+      offset: 12
+      deref-count: 22
+    values:
+      offset: 16
+      deref-count: 17
+  org.eclipse.osgi.internal.log.ExtendedLogServiceFactory$EquinoxLoggerContext:
+    this$0:
+      offset: 20
+      deref-count: 26
+    contextLogLevels:
+      offset: 16
+      deref-count: 18
+    contextName:
+      offset: 12
+      deref-count: 4
+  org.eclipse.osgi.framework.internal.reliablefile.ReliableFile:
+    nextTemp:
+      offset: 148
+      deref-count: 3
+    cacheFiles:
+      offset: 152
+      deref-count: 1
+    lastGenerationFile:
+      offset: 136
+      deref-count: 1
+    lastGenerationLock:
+      offset: 144
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleContainerAdaptor:
+    defaultExecutor:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.internal.loader.classpath.ClasspathEntry$PDEData:
+    fileName:
+      offset: 12
+      deref-count: 3
+    symbolicName:
+      offset: 16
+      deref-count: 3
+  org.eclipse.osgi.storage.StorageUtil:
+    RESERVED_NAMES:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.internal.log.ExtendedLogReaderServiceFactory:
+    listenersLock:
+      offset: 16
+      deref-count: 91
+    nestedCallCount:
+      offset: 28
+      deref-count: 90
+    listeners:
+      offset: 20
+      deref-count: 9
+    NULL_LOGGER_FILTER:
+      offset: 112
+      deref-count: 4
+    history:
+      offset: 32
+      deref-count: 3
+    defaultLevel:
+      offset: 36
+      deref-count: 2
+    executor:
+      offset: 40
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.BundleContextImpl$2:
+    this$0:
+      offset: 12
+      deref-count: 3
+    val$bundleActivator:
+      offset: 16
+      deref-count: 3
+  org.eclipse.osgi.container.ModuleWiring$LoaderInitializer:
+    this$0:
+      offset: 12
+      deref-count: 22
+  org.osgi.framework.Version:
+    qualifier:
+      offset: 28
+      deref-count: 402
+    emptyVersion:
+      offset: 116
+      deref-count: 255
+    versionString:
+      offset: 32
+      deref-count: 38
+  org.eclipse.osgi.container.Module:
+    revisions:
+      offset: 32
+      deref-count: 183
+    id:
+      offset: 24
+      deref-count: 166
+    state:
+      offset: 52
+      deref-count: 98
+    stateTransitionEvents:
+      offset: 40
+      deref-count: 63
+    stateChangeLock:
+      offset: 36
+      deref-count: 49
+    settings:
+      offset: 44
+      deref-count: 21
+    inStart:
+      offset: 48
+      deref-count: 18
+    VALID_RESOLVED_TRANSITION:
+      offset: 120
+      deref-count: 5
+    RESOLVED_SET:
+      offset: 116
+      deref-count: 5
+    location:
+      offset: 28
+      deref-count: 5
+    ACTIVE_SET:
+      offset: 112
+      deref-count: 4
+    VALID_STOPPED_TRANSITION:
+      offset: 124
+      deref-count: 1
+  java.nio.file.FileVisitResult:
+    CONTINUE:
+      offset: 112
+      deref-count: 9
+  org.dacapo.harness.CommandLineArgs$Methodology:
+    ITERATE:
+      offset: 112
+      deref-count: 5
+    CONVERGE:
+      offset: 116
+      deref-count: 3
+  org.eclipse.osgi.container.ModuleRevisionBuilder:
+    capabilityInfos:
+      offset: 32
+      deref-count: 349
+    version:
+      offset: 28
+      deref-count: 318
+    SINGLETON_MAP_CLASS:
+      offset: 112
+      deref-count: 21
+    requirementInfos:
+      offset: 36
+      deref-count: 21
+    symbolicName:
+      offset: 24
+      deref-count: 18
+    UNMODIFIABLE_MAP_CLASS:
+      offset: 116
+      deref-count: 3
+  org.eclipse.osgi.container.ModuleRevision:
+    revisions:
+      offset: 32
+      deref-count: 70
+    capabilities:
+      offset: 24
+      deref-count: 67
+    symbolicName:
+      offset: 16
+      deref-count: 64
+    revisionInfo:
+      offset: 36
+      deref-count: 44
+    requirements:
+      offset: 28
+      deref-count: 29
+    lazyActivationPolicy:
+      offset: 40
+      deref-count: 10
+    version:
+      offset: 20
+      deref-count: 6
+  org.eclipse.osgi.internal.loader.classpath.ClasspathManager$DefineContext:
+    currentlyDefining:
+      offset: 16
+      deref-count: 1
+    currentlyProcessing:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.internal.permadmin.SecurityTable:
+    evaluationCache:
+      offset: 24
+      deref-count: 1
+    securityAdmin:
+      offset: 20
+      deref-count: 1
+  org.eclipse.osgi.storage.url.reference.ReferenceInputStream:
+    reference:
+      offset: 12
+      deref-count: 4
+  org.eclipse.osgi.internal.url.ContentHandlerFactoryImpl:
+    contentHandlerTracker:
+      offset: 24
+      deref-count: 2
+    ignoredClasses:
+      offset: 124
+      deref-count: 1
+    proxies:
+      offset: 28
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleContainer$ResolutionLock:
+    reenterLock:
+      offset: 16
+      deref-count: 13
+    permitPool:
+      offset: 12
+      deref-count: 9
+  org.apache.felix.resolver.util.OpenHashMap$MapIterator:
+    this$0:
+      offset: 28
+      deref-count: 984
+  org.eclipse.osgi.internal.hooks.EclipseLazyStarter:
+    initiatingClassName:
+      offset: 12
+      deref-count: 9
+    activationStack:
+      offset: 16
+      deref-count: 3
+    alreadyActive:
+      offset: 112
+      deref-count: 3
+    container:
+      offset: 24
+      deref-count: 1
+    secureAction:
+      offset: 116
+      deref-count: 1
+    errors:
+      offset: 20
+      deref-count: 1
+  org.eclipse.osgi.storage.bundlefile.CloseableBundleFile$BundleEntryInputStream:
+    this$0:
+      offset: 20
+      deref-count: 12
+  org.eclipse.osgi.internal.serviceregistry.ServiceUse:
+    lock:
+      offset: 28
+      deref-count: 14
+    debug:
+      offset: 24
+      deref-count: 13
+    registration:
+      offset: 20
+      deref-count: 13
+    context:
+      offset: 16
+      deref-count: 7
+  org.osgi.framework.VersionRange:
+    right:
+      offset: 24
+      deref-count: 33
+    left:
+      offset: 20
+      deref-count: 22
+  org.eclipse.osgi.container.ModuleContainer$ContainerWiring:
+    this$0:
+      offset: 20
+      deref-count: 9
+    refreshThread:
+      offset: 16
+      deref-count: 5
+    monitor:
+      offset: 12
+      deref-count: 3
+  org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$2:
+    val$threadName:
+      offset: 16
+      deref-count: 17
+    this$1:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.compatibility.state.PlatformAdminImpl:
+    monitor:
+      offset: 16
+      deref-count: 2
+    factory:
+      offset: 12
+      deref-count: 1
+    bc:
+      offset: 24
+      deref-count: 1
+    reg:
+      offset: 36
+      deref-count: 1
+    equinoxContainer:
+      offset: 20
+      deref-count: 1
+  org.eclipse.osgi.internal.weaving.WeavingHookConfigurator:
+    wovenClassContext:
+      offset: 16
+      deref-count: 4
+    container:
+      offset: 20
+      deref-count: 3
+    deniedHooks:
+      offset: 12
+      deref-count: 2
+  org.eclipse.osgi.internal.container.LockSet$LockHolder:
+    lock:
+      offset: 16
+      deref-count: 36
+    useCount:
+      offset: 12
+      deref-count: 27
+  org.eclipse.osgi.framework.util.FilePath:
+    device:
+      offset: 16
+      deref-count: 4
+  org.eclipse.osgi.internal.serviceregistry.ServiceRegistry$2:
+    val$serviceObject:
+      offset: 12
+      deref-count: 50
+  org.eclipse.osgi.container.Module$State:
+    UNINSTALLED:
+      offset: 136
+      deref-count: 48
+    STARTING:
+      offset: 124
+      deref-count: 14
+    RESOLVED:
+      offset: 116
+      deref-count: 10
+    ACTIVE:
+      offset: 128
+      deref-count: 9
+    INSTALLED:
+      offset: 112
+      deref-count: 9
+    LAZY_STARTING:
+      offset: 120
+      deref-count: 7
+    STOPPING:
+      offset: 132
+      deref-count: 7
+  org.eclipse.osgi.internal.framework.OSGiFrameworkHooks:
+    resolverHookFactory:
+      offset: 12
+      deref-count: 9
+    collisionHook:
+      offset: 16
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1:
+    this$1:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.internal.service.security.KeyStoreTrustEngine:
+    path:
+      offset: 24
+      deref-count: 1
+    name:
+      offset: 32
+      deref-count: 1
+    type:
+      offset: 20
+      deref-count: 1
+    signedBundleHook:
+      offset: 36
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.FilterImpl$Equal:
+    value:
+      offset: 24
+      deref-count: 175
+    cached:
+      offset: 28
+      deref-count: 57
+    attr:
+      offset: 20
+      deref-count: 27
+  org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher:
+    context:
+      offset: 32
+      deref-count: 3
+    runnable:
+      offset: 16
+      deref-count: 2
+    equinoxConfig:
+      offset: 40
+      deref-count: 1
+    log:
+      offset: 36
+      deref-count: 1
+    appContext:
+      offset: 20
+      deref-count: 1
+    waitForAppLock:
+      offset: 28
+      deref-count: 1
+    runningLock:
+      offset: 24
+      deref-count: 1
+  javax.xml.bind.DatatypeConverterImpl:
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
+  org.apache.felix.resolver.util.OpenHashMap$MapEntrySet:
+    this$0:
+      offset: 12
+      deref-count: 4
+  org.dacapo.harness.Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
+  org.dacapo.harness.Benchmark:
+    data:
+      offset: 24
+      deref-count: 446
+    datDeps:
+      offset: 52
+      deref-count: 442
+    stats:
+      offset: 56
+      deref-count: 48
+    config:
+      offset: 28
+      deref-count: 22
+    scratch:
+      offset: 20
+      deref-count: 9
+    err:
+      offset: 140
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    savedErr:
+      offset: 136
+      deref-count: 4
+    loader:
+      offset: 32
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    jarDeps:
+      offset: 48
+      deref-count: 3
+    savedClassLoader:
+      offset: 36
+      deref-count: 2
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    valRepFile:
+      offset: 116
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.EquinoxContainer$ConnectModules:
+    connectModules:
+      offset: 16
+      deref-count: 3
+    moduleConnector:
+      offset: 12
+      deref-count: 3
+    contents:
+      offset: 20
+      deref-count: 1
+  org.eclipse.osgi.internal.signedcontent.SignedBundleHook$1:
+    this$0:
+      offset: 12
+      deref-count: 2
+  org.apache.commons.cli.PosixParser:
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.StorageSaver:
+    container:
+      offset: 12
+      deref-count: 3
+    task:
+      offset: 32
+      deref-count: 3
+    hook:
+      offset: 28
+      deref-count: 1
+    future:
+      offset: 24
+      deref-count: 1
+  org.apache.commons.cli.Option:
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
+  org.eclipse.osgi.internal.log.LoggerImpl:
+    enabledLevel:
+      offset: 20
+      deref-count: 11
+    THIS_PACKAGE_NAME:
+      offset: 112
+      deref-count: 11
+    name:
+      offset: 16
+      deref-count: 10
+    logServiceImpl:
+      offset: 12
+      deref-count: 8
+    pattern:
+      offset: 120
+      deref-count: 1
+  org.osgi.util.tracker.AbstractTracked:
+    tracked:
+      offset: 20
+      deref-count: 21
+    initial:
+      offset: 28
+      deref-count: 18
+    adding:
+      offset: 24
+      deref-count: 18
+  org.apache.felix.resolver.ResolverImpl$EnhancedExecutor$1:
+    val$runnable:
+      offset: 16
+      deref-count: 32
+    this$1:
+      offset: 12
+      deref-count: 16
+  org.dacapo.harness.Eclipse:
+    run:
+      offset: 64
+      deref-count: 3
+    OSGI_BOOTSTRAP_JAR:
+      offset: 120
+      deref-count: 2
+    method:
+      offset: 44
+      deref-count: 2
+    data:
+      offset: 24
+      deref-count: 2
+    isRunning:
+      offset: 60
+      deref-count: 2
+    scratch:
+      offset: 20
+      deref-count: 2
+    oldJavaHome:
+      offset: 124
+      deref-count: 1
+    loader:
+      offset: 32
+      deref-count: 1
+    config:
+      offset: 28
+      deref-count: 1
+    shutdown:
+      offset: 68
+      deref-count: 1
+  org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap$Snapshot$EntryIterator:
+    this$1:
+      offset: 24
+      deref-count: 100
+  org.eclipse.osgi.internal.framework.legacy.PackageAdminImpl:
+    frameworkWiring:
+      offset: 12
+      deref-count: 2
+    equinoxContainer:
+      offset: 16
+      deref-count: 1
+  org.eclipse.osgi.internal.weaving.WeavingHookConfigurator$WovenClassContext:
+    wovenClassStack:
+      offset: 12
+      deref-count: 5
+    processClassNameStack:
+      offset: 16
+      deref-count: 4
+  org.apache.felix.resolver.ResolverImpl$Packages$3$1:
+    this$2:
+      offset: 32
+      deref-count: 2
+  org.eclipse.osgi.internal.connect.ConnectHookConfigurator$1$1:
+    val$m:
+      offset: 28
+      deref-count: 4
+    this$1:
+      offset: 24
+      deref-count: 2
+    val$generation:
+      offset: 32
+      deref-count: 2
+  org.dacapo.harness.FileCopy:
+    tgt:
+      offset: 16
+      deref-count: 10
+    src:
+      offset: 12
+      deref-count: 10
+  org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap:
+    map:
+      offset: 12
+      deref-count: 381
+    KEY_SERVICE_RANKING:
+      offset: 136
+      deref-count: 45
+    KEY_SERVICE_OBJECTCLASS:
+      offset: 112
+      deref-count: 35
+    keySet:
+      offset: 20
+      deref-count: 32
+    entrySet:
+      offset: 16
+      deref-count: 32
+    KEY_SERVICE_ID:
+      offset: 128
+      deref-count: 31
+    KEY_SERVICE_SCOPE:
+      offset: 140
+      deref-count: 30
+    KEY_SERVICE_BUNDLE_ID:
+      offset: 116
+      deref-count: 30
+    KEY_SERVICE_PID:
+      offset: 132
+      deref-count: 18
+    KEY_BUNDLE_FRAGMENT_HOST:
+      offset: 244
+      deref-count: 13
+    KEY_BUNDLE_SYMBOLICNAME:
+      offset: 224
+      deref-count: 10
+    KEY_BUNDLE_EXPORT_PACKAGE:
+      offset: 240
+      deref-count: 9
+    KEY_BUNDLE_IMPORT_PACKAGE:
+      offset: 248
+      deref-count: 8
+    KEY_BUNDLE_REQUIRE_BUNDLE:
+      offset: 252
+      deref-count: 8
+    KEY_BUNDLE_MANIFESTVERSION:
+      offset: 204
+      deref-count: 7
+    KEY_BUNDLE_DYNAMICIMPORT_PACKAGE:
+      offset: 236
+      deref-count: 7
+    KEY_BUNDLE_VERSION:
+      offset: 232
+      deref-count: 7
+    KEY_BUNDLE_REQUIREDEXECUTIONENVIRONMENT:
+      offset: 216
+      deref-count: 6
+    KEY_BUNDLE_ACTIVATOR:
+      offset: 184
+      deref-count: 6
+    KEY_BUNDLE_NATIVECODE:
+      offset: 212
+      deref-count: 5
+    KEY_BUNDLE_PROVIDE_CAPABILITY:
+      offset: 260
+      deref-count: 5
+    KEY_BUNDLE_ACTIVATIONPOLICY:
+      offset: 180
+      deref-count: 5
+    KEY_BUNDLE_REQUIRE_CAPABILITY:
+      offset: 256
+      deref-count: 5
+    KEY_JAR_MANIFESTVERSION:
+      offset: 176
+      deref-count: 4
+    KEY_BUNDLE_CLASSPATH:
+      offset: 188
+      deref-count: 4
+    KEY_BUNDLE_VENDOR:
+      offset: 228
+      deref-count: 4
+    KEY_BUNDLE_NAME:
+      offset: 208
+      deref-count: 4
+    KEY_BUNDLE_LOCALIZATION:
+      offset: 200
+      deref-count: 3
+    KEY_BUNDLE_DESCRIPTION:
+      offset: 192
+      deref-count: 2
+    KEY_BUNDLE_SCM:
+      offset: 220
+      deref-count: 1
+    KEY_COMPONENT_ID:
+      offset: 152
+      deref-count: 1
+    KEY_EVENT_TOPICS:
+      offset: 164
+      deref-count: 1
+    KEY_SERVICE_DESCRIPTION:
+      offset: 124
+      deref-count: 1
+    KEY_SERVICE_CHANGECOUNT:
+      offset: 120
+      deref-count: 1
+    KEY_BUNDLE_LICENSE:
+      offset: 196
+      deref-count: 1
+    KEY_METATYPE_FACTORY_PID:
+      offset: 160
+      deref-count: 1
+    KEY_SERVICE_VENDER:
+      offset: 144
+      deref-count: 1
+    KEY_COMPONENT_NAME:
+      offset: 148
+      deref-count: 1
+    KEY_METATYPE_PID:
+      offset: 156
+      deref-count: 1
+    KEY_JMX_OBJECTNAME:
+      offset: 172
+      deref-count: 1
+    KEY_EVENT_FILTER:
+      offset: 168
+      deref-count: 1
+  org.eclipse.osgi.internal.messages.Msg:
+    ECLIPSE_STARTUP_ERROR_NO_APPLICATION:
+      offset: 312
+      deref-count: 2
+    Module_StartError:
+      offset: 464
+      deref-count: 1
+  org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1:
+    this$0:
+      offset: 12
+      deref-count: 4
+  org.eclipse.osgi.internal.log.ExtendedLogServiceFactory$EquinoxLoggerAdmin:
+    this$0:
+      offset: 12
+      deref-count: 9
+  org.eclipse.osgi.internal.loader.BundleLoader$3:
+    val$cl:
+      offset: 20
+      deref-count: 4
+    val$hooks:
+      offset: 16
+      deref-count: 2
+    this$0:
+      offset: 12
+      deref-count: 1
+  org.dacapo.parser.Token:
+    next:
+      offset: 36
+      deref-count: 280
+    image:
+      offset: 32
+      deref-count: 130
+    specialToken:
+      offset: 40
+      deref-count: 79
+  org.eclipse.osgi.internal.log.EquinoxLogWriter:
+    loggerName:
+      offset: 40
+      deref-count: 176
+    writer:
+      offset: 36
+      deref-count: 122
+    environmentInfo:
+      offset: 44
+      deref-count: 18
+    LINE_SEPARATOR:
+      offset: 136
+      deref-count: 15
+    outFile:
+      offset: 32
+      deref-count: 12
+    loggerAdmin:
+      offset: 48
+      deref-count: 10
+  org.apache.felix.resolver.util.OpenHashMap$FastEntryIterator:
+    entry:
+      offset: 32
+      deref-count: 1885
+    this$0:
+      offset: 36
+      deref-count: 19
+  org.eclipse.osgi.container.ModuleRequirement:
+    namespace:
+      offset: 12
+      deref-count: 193
+    directives:
+      offset: 16
+      deref-count: 169
+    revision:
+      offset: 24
+      deref-count: 43
+    attributes:
+      offset: 20
+      deref-count: 41
+  org.apache.felix.resolver.util.OpenHashMap$KeyIterator:
+    this$0:
+      offset: 32
+      deref-count: 4
+  org.dacapo.parser.Config$ThreadModel:
+    SINGLE:
+      offset: 112
+      deref-count: 3
+    PER_CPU:
+      offset: 120
+      deref-count: 3
+    description:
+      offset: 24
+      deref-count: 3
+    FIXED:
+      offset: 116
+      deref-count: 2
+  org.eclipse.osgi.internal.loader.SystemBundleLoader:
+    classLoader:
+      offset: 84
+      deref-count: 4
+    moduleClassLoader:
+      offset: 88
+      deref-count: 2
+  org.eclipse.osgi.internal.framework.EquinoxConfiguration:
+    PROP_WITH_ECLIPSE_STARTER_DEFAULTS:
+      offset: 448
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleContainerAdaptor$ModuleEvent:
+    STARTED:
+      offset: 124
+      deref-count: 24
+    STOPPED:
+      offset: 132
+      deref-count: 7
+    STARTING:
+      offset: 128
+      deref-count: 6
+    UNINSTALLED:
+      offset: 140
+      deref-count: 6
+    LAZY_ACTIVATION:
+      offset: 116
+      deref-count: 6
+    UPDATED:
+      offset: 148
+      deref-count: 5
+    UNRESOLVED:
+      offset: 144
+      deref-count: 5
+    STOPPING:
+      offset: 136
+      deref-count: 5
+    RESOLVED:
+      offset: 120
+      deref-count: 4
+    INSTALLED:
+      offset: 112
+      deref-count: 4
+  org.apache.felix.resolver.ResolverImpl$EnhancedExecutor:
+    awaiting:
+      offset: 16
+      deref-count: 44
+    throwable:
+      offset: 20
+      deref-count: 38
+    executor:
+      offset: 12
+      deref-count: 18
+  org.dacapo.parser.Config$OutputFile:
+    digest:
+      offset: 32
+      deref-count: 16
+    this$0:
+      offset: 36
+      deref-count: 6
+    name:
+      offset: 28
+      deref-count: 6
+  org.eclipse.osgi.container.ModuleWire:
+    capability:
+      offset: 16
+      deref-count: 186
+    hostingProvider:
+      offset: 20
+      deref-count: 90
+    requirement:
+      offset: 24
+      deref-count: 74
+    hostingRequirer:
+      offset: 28
+      deref-count: 52
+  org.apache.felix.resolver.util.ArrayMap:
+    values:
+      offset: 28
+      deref-count: 6
+  org.eclipse.osgi.internal.framework.OSGiFrameworkHooks$CoreResolverHookFactory$CoreResolverHook:
+    this$1:
+      offset: 24
+      deref-count: 27
+    hooks:
+      offset: 12
+      deref-count: 26
+    systemModule:
+      offset: 16
+      deref-count: 12
+    resolutionReport:
+      offset: 20
+      deref-count: 4
+  org.eclipse.osgi.internal.framework.StorageSaver$StorageSaverTask:
+    container:
+      offset: 12
+      deref-count: 1
+  org.apache.felix.resolver.ResolverImpl$PermutationType:
+    IMPORT:
+      offset: 116
+      deref-count: 3
+    SUBSTITUTE:
+      offset: 120
+      deref-count: 3
+    USES:
+      offset: 112
+      deref-count: 3
+  org.eclipse.osgi.service.datalocation.Location:
+    CONFIGURATION_FILTER:
+      offset: 152
+      deref-count: 1
+    USER_FILTER:
+      offset: 156
+      deref-count: 1
+    INSTANCE_FILTER:
+      offset: 144
+      deref-count: 1
+    INSTALL_FILTER:
+      offset: 148
+      deref-count: 1
+    ECLIPSE_HOME_FILTER:
+      offset: 160
+      deref-count: 1
+  org.osgi.service.log.LogLevel:
+    TRACE:
+      offset: 132
+      deref-count: 7
+    ERROR:
+      offset: 116
+      deref-count: 4
+    WARN:
+      offset: 120
+      deref-count: 4
+    AUDIT:
+      offset: 112
+      deref-count: 2
+    INFO:
+      offset: 124
+      deref-count: 2
+    DEBUG:
+      offset: 128
+      deref-count: 2
+  org.apache.felix.resolver.WireImpl:
+    m_req:
+      offset: 16
+      deref-count: 36
+    m_requirer:
+      offset: 12
+      deref-count: 36
+    m_cap:
+      offset: 24
+      deref-count: 36
+    m_provider:
+      offset: 20
+      deref-count: 36
+  org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule:
+    this$0:
+      offset: 56
+      deref-count: 29
+  org.eclipse.osgi.internal.loader.EquinoxClassLoader:
+    delegate:
+      offset: 96
+      deref-count: 14
+    generation:
+      offset: 100
+      deref-count: 6
+    manager:
+      offset: 104
+      deref-count: 5
+    configuration:
+      offset: 88
+      deref-count: 5
+    debug:
+      offset: 92
+      deref-count: 2
+  org.eclipse.osgi.internal.loader.ModuleClassLoader$GenerationProtectionDomain:
+    generation:
+      offset: 36
+      deref-count: 3
+  org.eclipse.osgi.internal.loader.sources.PackageSource:
+    id:
+      offset: 12
+      deref-count: 30
+  org.eclipse.osgi.container.SystemModule:
+    inStart:
+      offset: 48
+      deref-count: 4
+    forStop:
+      offset: 56
+      deref-count: 2
+    ACTIVE_SET:
+      offset: 112
+      deref-count: 2
+  org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse:
+    cachedService:
+      offset: 40
+      deref-count: 2
+    factory:
+      offset: 36
+      deref-count: 2
+    registration:
+      offset: 20
+      deref-count: 2
+    debug:
+      offset: 24
+      deref-count: 1
+    context:
+      offset: 16
+      deref-count: 1
+  org.apache.felix.resolver.util.ArrayMap$1$1:
+    this$1:
+      offset: 16
+      deref-count: 10
+  org.eclipse.osgi.framework.util.SecureAction:
+    controlContext:
+      offset: 12
+      deref-count: 9
+  org.eclipse.core.runtime.adaptor.EclipseStarter$StartupEventListener:
+    semaphore:
+      offset: 16
+      deref-count: 4
+  org.eclipse.osgi.container.ModuleResolver$ResolveProcess:
+    moduleDatabase:
+      offset: 32
+      deref-count: 1
+    wirings:
+      offset: 36
+      deref-count: 1
+  org.eclipse.osgi.internal.weaving.WovenClassImpl:
+    registry:
+      offset: 40
+      deref-count: 2
+    container:
+      offset: 68
+      deref-count: 1
+    entry:
+      offset: 24
+      deref-count: 1
+    dynamicImports:
+      offset: 28
+      deref-count: 1
+    deniedHooks:
+      offset: 44
+      deref-count: 1
+    classpathEntry:
+      offset: 32
+      deref-count: 1
+    loader:
+      offset: 36
+      deref-count: 1
+    className:
+      offset: 20
+      deref-count: 1
+    error:
+      offset: 56
+      deref-count: 1
+    clazz:
+      offset: 64
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleContainer$ResolutionLock$Permits:
+    this$1:
+      offset: 20
+      deref-count: 12
+    closed:
+      offset: 16
+      deref-count: 10
+  org.eclipse.osgi.internal.framework.EquinoxConfiguration$ConfigValues:
+    NULL_CONFIG:
+      offset: 112
+      deref-count: 192
+    initialConfig:
+      offset: 16
+      deref-count: 24
+    populateInitConfig:
+      offset: 116
+      deref-count: 2
+    localConfig:
+      offset: 20
+      deref-count: 1
+    exceptions:
+      offset: 24
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.OSGiFrameworkHooks$BundleCollisionHook:
+    container:
+      offset: 16
+      deref-count: 1
+    debug:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.framework.eventmgr.EventManager:
+    thread:
+      offset: 16
+      deref-count: 35
+    threadGroup:
+      offset: 24
+      deref-count: 6
+    threadName:
+      offset: 20
+      deref-count: 6
+  org.eclipse.osgi.internal.debug.Debug:
+    out:
+      offset: 208
+      deref-count: 1
+  org.eclipse.osgi.internal.location.EquinoxLocations:
+    equinoxConfig:
+      offset: 12
+      deref-count: 27
+    container:
+      offset: 16
+      deref-count: 9
+    debugLocations:
+      offset: 20
+      deref-count: 9
+    configurationLocation:
+      offset: 28
+      deref-count: 6
+    installLocation:
+      offset: 24
+      deref-count: 3
+    userLocation:
+      offset: 32
+      deref-count: 2
+    eclipseHomeLocation:
+      offset: 40
+      deref-count: 2
+    instanceLocation:
+      offset: 36
+      deref-count: 2
+  org.apache.commons.cli.Options:
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
+  org.eclipse.osgi.internal.container.ComputeNodeOrder$Digraph$Vertex:
+    color:
+      offset: 16
+      deref-count: 16
+    adjacent:
+      offset: 28
+      deref-count: 8
+    id:
+      offset: 24
+      deref-count: 8
+    predecessor:
+      offset: 20
+      deref-count: 4
+  org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1:
+    val$queue:
+      offset: 20
+      deref-count: 3
+    val$threadName:
+      offset: 24
+      deref-count: 3
+    this$0:
+      offset: 16
+      deref-count: 2
+  org.apache.felix.resolver.ResolverImpl$Packages:
+    m_exportedPkgs:
+      offset: 12
+      deref-count: 6
+    m_substitePkgs:
+      offset: 16
+      deref-count: 6
+    m_requiredPkgs:
+      offset: 24
+      deref-count: 3
+    m_usedPkgs:
+      offset: 28
+      deref-count: 3
+    m_sources:
+      offset: 32
+      deref-count: 3
+    m_importedPkgs:
+      offset: 20
+      deref-count: 3
+  org.osgi.framework.BundleEvent:
+    bundle:
+      offset: 20
+      deref-count: 19
+    origin:
+      offset: 24
+      deref-count: 9
+  org.apache.felix.resolver.ResolverImpl$Blame:
+    m_cap:
+      offset: 12
+      deref-count: 620
+    m_reqs:
+      offset: 16
+      deref-count: 612
+  org.eclipse.osgi.storage.bundlefile.BundleFile:
+    basefile:
+      offset: 16
+      deref-count: 10
+    secureAction:
+      offset: 112
+      deref-count: 7
+  org.eclipse.osgi.container.ModuleResolver:
+    NON_PAYLOAD_REQUIREMENTS:
+      offset: 148
+      deref-count: 2
+    NON_PAYLOAD_CAPABILITIES:
+      offset: 144
+      deref-count: 1
+    NON_SUBSTITUTED_REQUIREMENTS:
+      offset: 152
+      deref-count: 1
+  org.osgi.service.permissionadmin.PermissionInfo:
+    name:
+      offset: 16
+      deref-count: 26
+    type:
+      offset: 12
+      deref-count: 26
+    actions:
+      offset: 20
+      deref-count: 26
+  org.apache.commons.cli.CommandLine:
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
+  java.lang.Boolean:
+    TRUE:
+      offset: 112
+      deref-count: 2
+    FALSE:
+      offset: 116
+      deref-count: 2
+    TYPE:
+      offset: 120
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.ContextFinder:
+    cycleDetector:
+      offset: 112
+      deref-count: 1
+    finderClassLoader:
+      offset: 116
+      deref-count: 1
+    contextFinder:
+      offset: 120
+      deref-count: 1
+    THIS:
+      offset: 124
+      deref-count: 1
+    parentContextClassLoader:
+      offset: 80
+      deref-count: 1
+  org.eclipse.osgi.internal.container.LockSet:
+    locks:
+      offset: 12
+      deref-count: 59
+  org.eclipse.osgi.internal.container.NamespaceList$Builder$8:
+    this$1:
+      offset: 12
+      deref-count: 152
+  org.eclipse.osgi.internal.framework.AliasMapper:
+    processorAliasTable:
+      offset: 112
+      deref-count: 3
+    processorCanonicalTable:
+      offset: 116
+      deref-count: 3
+    osnameAliasTable:
+      offset: 120
+      deref-count: 3
+    osnameCanonicalTable:
+      offset: 124
+      deref-count: 3
+  org.eclipse.osgi.internal.container.NamespaceList$Builder$7:
+    this$1:
+      offset: 12
+      deref-count: 40
+    val$filter:
+      offset: 16
+      deref-count: 40
+  org.eclipse.osgi.internal.log.EquinoxLogServices:
+    logServiceManager:
+      offset: 12
+      deref-count: 5
+    logWriter:
+      offset: 20
+      deref-count: 5
+    eclipseLogFactory:
+      offset: 16
+      deref-count: 4
+    perfWriter:
+      offset: 24
+      deref-count: 4
+    perfLogReg:
+      offset: 36
+      deref-count: 1
+    rootFrameworkLog:
+      offset: 28
+      deref-count: 1
+    frameworkLogReg:
+      offset: 32
+      deref-count: 1
+  org.eclipse.osgi.internal.container.NamespaceList$Builder$6:
+    this$1:
+      offset: 12
+      deref-count: 54
+    val$filter:
+      offset: 16
+      deref-count: 54
+  org.eclipse.osgi.internal.container.NamespaceList$Builder$5:
+    val$filter:
+      offset: 16
+      deref-count: 14
+    this$1:
+      offset: 12
+      deref-count: 8
+  org.apache.felix.resolver.util.OpenHashMap$EntryIterator:
+    this$0:
+      offset: 36
+      deref-count: 14
+    entry:
+      offset: 32
+      deref-count: 12
+  org.eclipse.osgi.internal.container.NamespaceList$Builder$2:
+    this$1:
+      offset: 12
+      deref-count: 497
+  org.eclipse.osgi.internal.container.NamespaceList$Builder$1:
+    inner:
+      offset: 12
+      deref-count: 8442
+    val$outer:
+      offset: 24
+      deref-count: 128
+    lastInnerList:
+      offset: 16
+      deref-count: 119
+    this$1:
+      offset: 20
+      deref-count: 9
+  org.apache.felix.resolver.util.OpenHashMap:
+    defRetValue:
+      offset: 56
+      deref-count: 2217
+    fast:
+      offset: 60
+      deref-count: 53
+    values:
+      offset: 72
+      deref-count: 12
+    keys:
+      offset: 68
+      deref-count: 10
+    entries:
+      offset: 64
+      deref-count: 6
+  org.osgi.util.tracker.ServiceTracker$AllTracked:
+    this$0:
+      offset: 36
+      deref-count: 2
+  org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule:
+    this$1:
+      offset: 60
+      deref-count: 32
+  org.eclipse.osgi.internal.container.ComputeNodeOrder$Digraph:
+    vertexMap:
+      offset: 24
+      deref-count: 52
+    vertexList:
+      offset: 20
+      deref-count: 24
+  org.eclipse.osgi.container.ModuleRevisionBuilder$GenericInfo:
+    namespace:
+      offset: 16
+      deref-count: 1065
+    attributes:
+      offset: 24
+      deref-count: 712
+    directives:
+      offset: 20
+      deref-count: 711
+    GETNAMESPACE:
+      offset: 112
+      deref-count: 7
+  org.dacapo.harness.CommandLineArgs:
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
+  org.eclipse.osgi.container.ModuleWiring:
+    revision:
+      offset: 16
+      deref-count: 38
+    substitutedPkgNames:
+      offset: 28
+      deref-count: 37
+    requiredWires:
+      offset: 44
+      deref-count: 34
+    providedWires:
+      offset: 40
+      deref-count: 34
+    capabilities:
+      offset: 20
+      deref-count: 33
+    requirements:
+      offset: 24
+      deref-count: 30
+    loader:
+      offset: 32
+      deref-count: 30
+    loaderInitializer:
+      offset: 36
+      deref-count: 28
+    dynamicMissRef:
+      offset: 48
+      deref-count: 18
+    GET_CLASSLOADER_PERM:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor:
+    container:
+      offset: 12
+      deref-count: 40
+    lazyResolverExecutorCreator:
+      offset: 40
+      deref-count: 17
+    resolverExecutor:
+      offset: 36
+      deref-count: 17
+    storage:
+      offset: 16
+      deref-count: 13
+    hooks:
+      offset: 20
+      deref-count: 9
+    lazyStartLevelExecutorCreator:
+      offset: 48
+      deref-count: 3
+    startLevelExecutor:
+      offset: 44
+      deref-count: 3
+    moduleClassLoaderParent:
+      offset: 28
+      deref-count: 2
+    initial:
+      offset: 24
+      deref-count: 1
+    lastSecurityAdminFlush:
+      offset: 32
+      deref-count: 1
+  java.lang.System:
+    out:
+      offset: 116
+      deref-count: 7
+    err:
+      offset: 120
+      deref-count: 6
+  org.apache.felix.resolver.Candidates$1:
+    this$0:
+      offset: 76
+      deref-count: 2
+  org.osgi.framework.ServiceEvent:
+    reference:
+      offset: 20
+      deref-count: 270
+  org.eclipse.osgi.internal.framework.EquinoxBundle:
+    module:
+      offset: 16
+      deref-count: 249
+    equinoxContainer:
+      offset: 12
+      deref-count: 26
+    context:
+      offset: 24
+      deref-count: 24
+    monitor:
+      offset: 20
+      deref-count: 14
+  org.eclipse.osgi.container.Module$Settings:
+    USE_ACTIVATION_POLICY:
+      offset: 116
+      deref-count: 15
+    AUTO_START:
+      offset: 112
+      deref-count: 8
+    PARALLEL_ACTIVATION:
+      offset: 120
+      deref-count: 2
+  org.apache.felix.resolver.util.CandidateSelector:
+    unmodifiable:
+      offset: 20
+      deref-count: 182
+    isUnmodifiable:
+      offset: 16
+      deref-count: 12
+  org.eclipse.osgi.framework.eventmgr.EventManager$1:
+    this$0:
+      offset: 12
+      deref-count: 9
+  org.eclipse.osgi.internal.loader.sources.SingleSourcePackage:
+    supplier:
+      offset: 16
+      deref-count: 11
+  org.eclipse.osgi.internal.container.Capabilities:
+    namespaceSets:
+      offset: 12
+      deref-count: 375
+    MANDATORY_ATTR:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.internal.container.AtomicLazyInitializer:
+    holder:
+      offset: 12
+      deref-count: 62
+  org.dacapo.parser.ConfigFile:
+    token:
+      offset: 36
+      deref-count: 545
+    token_source:
+      offset: 28
+      deref-count: 80
+    jj_nt:
+      offset: 40
+      deref-count: 62
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.FilterImpl$Item:
+    attr:
+      offset: 20
+      deref-count: 114
+  org.apache.felix.resolver.ResolverImpl$WireCandidate:
+    capability:
+      offset: 16
+      deref-count: 28
+    requirement:
+      offset: 12
+      deref-count: 14
+  org.eclipse.osgi.internal.location.BasicLocation:
+    location:
+      offset: 40
+      deref-count: 44
+    property:
+      offset: 20
+      deref-count: 23
+    defaultValue:
+      offset: 16
+      deref-count: 19
+    configValues:
+      offset: 28
+      deref-count: 14
+    dataAreaPrefix:
+      offset: 24
+      deref-count: 11
+    debug:
+      offset: 32
+      deref-count: 11
+    container:
+      offset: 36
+      deref-count: 10
+    serviceRegistration:
+      offset: 56
+      deref-count: 10
+    DEFAULT_LOCK_FILENAME:
+      offset: 112
+      deref-count: 6
+    lockFile:
+      offset: 48
+      deref-count: 5
+    parent:
+      offset: 44
+      deref-count: 4
+  org.eclipse.osgi.internal.loader.classpath.ManifestPackageAttributes:
+    NONE:
+      offset: 112
+      deref-count: 4
+    implementation:
+      offset: 12
+      deref-count: 2
+    specification:
+      offset: 16
+      deref-count: 2
+  org.eclipse.osgi.compatibility.state.Activator:
+    platformAdmin:
+      offset: 12
+      deref-count: 2
+  org.apache.felix.resolver.util.OpenHashMap$KeySet:
+    this$0:
+      offset: 12
+      deref-count: 6
+  org.eclipse.osgi.container.ModuleContainer$ContainerWiring$1:
+    val$bundles:
+      offset: 16
+      deref-count: 3
+    this$1:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleDatabase$2:
+    this$0:
+      offset: 12
+      deref-count: 3
+  org.eclipse.osgi.internal.log.EquinoxLogFactory:
+    logManager:
+      offset: 16
+      deref-count: 4
+    defaultWriter:
+      offset: 12
+      deref-count: 2
+  org.eclipse.osgi.container.ModuleDatabase$1:
+    this$0:
+      offset: 12
+      deref-count: 4
+  org.eclipse.osgi.internal.hookregistry.StorageHookFactory$StorageHook:
+    factoryClass:
+      offset: 12
+      deref-count: 4
+    generation:
+      offset: 16
+      deref-count: 2
+  org.osgi.framework.FrameworkEvent:
+    bundle:
+      offset: 20
+      deref-count: 8
+    throwable:
+      offset: 24
+      deref-count: 5
+  org.apache.commons.cli.Parser:
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
+  org.eclipse.osgi.storage.url.reference.ReferenceURLConnection:
+    installPath:
+      offset: 44
+      deref-count: 8
+    reference:
+      offset: 48
+      deref-count: 6
+  java.nio.charset.StandardCharsets:
+    UTF_8:
+      offset: 120
+      deref-count: 4
+  org.eclipse.osgi.internal.serviceregistry.ServiceReferenceImpl:
+    registration:
+      offset: 12
+      deref-count: 271
+  org.eclipse.osgi.container.ModuleResolver$ResolveProcess$DynamicFragments:
+    this$1:
+      offset: 28
+      deref-count: 5
+    hostCapability:
+      offset: 16
+      deref-count: 4
+    fragments:
+      offset: 20
+      deref-count: 4
+    validProviders:
+      offset: 24
+      deref-count: 3
+  org.eclipse.osgi.storage.url.reference.Handler:
+    installPath:
+      offset: 12
+      deref-count: 12
+  org.dacapo.harness.TeeOutputStream:
+    log:
+      offset: 28
+      deref-count: 3419
+    logFile:
+      offset: 32
+      deref-count: 6
+  org.eclipse.osgi.internal.weaving.DynamicImportList:
+    imports:
+      offset: 16
+      deref-count: 1
+    wovenClass:
+      offset: 20
+      deref-count: 1
+  org.apache.felix.resolver.ResolverImpl$UsedBlames:
+    m_caps:
+      offset: 12
+      deref-count: 10
+    m_blames:
+      offset: 16
+      deref-count: 10
+  org.eclipse.osgi.internal.log.OrderedExecutor:
+    queue:
+      offset: 28
+      deref-count: 2
+    delegate:
+      offset: 24
+      deref-count: 1
+    logThreadName:
+      offset: 20
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleResolver$ResolveProcess$ResolveLogger:
+    errors:
+      offset: 16
+      deref-count: 10
+    this$1:
+      offset: 20
+      deref-count: 4
+  org.eclipse.core.runtime.internal.adaptor.ConsoleManager:
+    consolePort:
+      offset: 20
+      deref-count: 3
+    context:
+      offset: 12
+      deref-count: 3
+    consoleBundle:
+      offset: 16
+      deref-count: 2
+  javax.xml.bind.DatatypeConverter:
+    theConverter:
+      offset: 112
+      deref-count: 886
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
+  org.eclipse.osgi.storage.ContentProvider$Type:
+    CONNECT:
+      offset: 116
+      deref-count: 5
+    REFERENCE:
+      offset: 112
+      deref-count: 4
+    DEFAULT:
+      offset: 120
+      deref-count: 2
+  org.eclipse.osgi.storage.BundleInfo:
+    generationLocks:
+      offset: 40
+      deref-count: 15
+    storage:
+      offset: 12
+      deref-count: 13
+    infoMonitor:
+      offset: 36
+      deref-count: 9
+    location:
+      offset: 32
+      deref-count: 6
+    MULTI_RELEASE_FILTER_PREFIXES:
+      offset: 124
+      deref-count: 1
+  org.eclipse.osgi.internal.serviceregistry.ShrinkableCollection:
+    list:
+      offset: 16
+      deref-count: 43
+    collection:
+      offset: 12
+      deref-count: 25
+  org.dacapo.harness.TeePrintStream:
+    out:
+      offset: 16
+      deref-count: 6
+  org.eclipse.osgi.storage.BundleInfo$CachedManifest:
+    cached:
+      offset: 12
+      deref-count: 177
+    generation:
+      offset: 16
+      deref-count: 90
+  org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap$Snapshot$EntrySet:
+    this$1:
+      offset: 12
+      deref-count: 287
+  org.osgi.service.condition.Condition:
+    INSTANCE:
+      offset: 120
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.legacy.StartLevelImpl:
+    frameworkStartLevel:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.internal.url.MultiplexingFactory:
+    container:
+      offset: 12
+      deref-count: 2
+    context:
+      offset: 16
+      deref-count: 2
+    setAccessible:
+      offset: 112
+      deref-count: 1
+    internalSecurityManager:
+      offset: 120
+      deref-count: 1
+    factories:
+      offset: 20
+      deref-count: 1
+    systemLoaders:
+      offset: 116
+      deref-count: 1
+  org.eclipse.osgi.internal.loader.ModuleClassLoader$DefineClassResult:
+    clazz:
+      offset: 16
+      deref-count: 1
+  org.eclipse.osgi.internal.log.LoggerContextTargetMap:
+    loggerContexts:
+      offset: 16
+      deref-count: 28
+    qualifiedNameToTargets:
+      offset: 24
+      deref-count: 19
+    targetToQualifiedNames:
+      offset: 20
+      deref-count: 10
+    logServices:
+      offset: 12
+      deref-count: 10
+  org.eclipse.osgi.internal.container.InternalUtils$CopyOnFirstWriteList:
+    copy:
+      offset: 20
+      deref-count: 1325
+  org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener:
+    objectClass:
+      offset: 28
+      deref-count: 405
+    debug:
+      offset: 32
+      deref-count: 74
+    context:
+      offset: 24
+      deref-count: 45
+    filter:
+      offset: 16
+      deref-count: 42
+    listener:
+      offset: 20
+      deref-count: 42
+  org.apache.felix.resolver.ResolverImpl$ResolveSession:
+    m_resolveContext:
+      offset: 24
+      deref-count: 77
+    m_isCancelled:
+      offset: 96
+      deref-count: 19
+    m_usesPermutations:
+      offset: 56
+      deref-count: 14
+    m_mandatoryResources:
+      offset: 28
+      deref-count: 12
+    m_dynamicHost:
+      offset: 36
+      deref-count: 12
+    m_usesCache:
+      offset: 88
+      deref-count: 12
+    m_optionalResources:
+      offset: 32
+      deref-count: 10
+    m_currentError:
+      offset: 92
+      deref-count: 10
+    m_multipleCardCandidates:
+      offset: 68
+      deref-count: 8
+    m_relatedResources:
+      offset: 52
+      deref-count: 6
+    m_importPermutations:
+      offset: 60
+      deref-count: 6
+    m_substPermutations:
+      offset: 64
+      deref-count: 6
+    m_processedDeltas:
+      offset: 72
+      deref-count: 6
+    m_executor:
+      offset: 76
+      deref-count: 4
+    m_mutated:
+      offset: 80
+      deref-count: 4
+    m_dynamicReq:
+      offset: 40
+      deref-count: 3
+    m_validRelatedResources:
+      offset: 48
+      deref-count: 2
+    m_sub_mutated:
+      offset: 84
+      deref-count: 2
+    m_dynamicCandidates:
+      offset: 44
+      deref-count: 2
+  org.eclipse.osgi.internal.framework.FilterImpl$Parser:
+    filterstring:
+      offset: 20
+      deref-count: 42
+  java.io.File:
+    separator:
+      offset: 116
+      deref-count: 14
+  org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap$Entry:
+    key:
+      offset: 12
+      deref-count: 424
+    value:
+      offset: 16
+      deref-count: 358
+  org.eclipse.osgi.internal.loader.classpath.TitleVersionVendor:
+    vendor:
+      offset: 20
+      deref-count: 3
+    NONE:
+      offset: 112
+      deref-count: 3
+    title:
+      offset: 12
+      deref-count: 3
+    version:
+      offset: 16
+      deref-count: 3
+  org.eclipse.osgi.framework.eventmgr.EventManager$EventThread:
+    head:
+      offset: 120
+      deref-count: 99
+    tail:
+      offset: 124
+      deref-count: 33
+  org.apache.felix.resolver.util.OpenHashMap$1:
+    this$0:
+      offset: 12
+      deref-count: 34
+  org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap$CaseInsensitiveKey:
+    key:
+      offset: 16
+      deref-count: 114
+  org.apache.felix.resolver.util.OpenHashMap$2:
+    this$0:
+      offset: 12
+      deref-count: 8
+  org.eclipse.osgi.internal.log.ConfigAdminListener:
+    configTracker:
+      offset: 12
+      deref-count: 2
+    factory:
+      offset: 16
+      deref-count: 1
+    context:
+      offset: 20
+      deref-count: 1
+  org.osgi.util.tracker.ServiceTracker:
+    customizer:
+      offset: 20
+      deref-count: 3
+  org.eclipse.osgi.internal.log.EquinoxLogFactory$1:
+    val$logger:
+      offset: 20
+      deref-count: 4
+    val$logWriter:
+      offset: 16
+      deref-count: 3
+    this$0:
+      offset: 12
+      deref-count: 3
+  org.eclipse.osgi.storage.PermissionData:
+    locations:
+      offset: 16
+      deref-count: 4
+  org.apache.felix.resolver.ResolverImpl$1Computer:
+    val$tasks:
+      offset: 32
+      deref-count: 22
+    resource:
+      offset: 12
+      deref-count: 12
+    val$session:
+      offset: 20
+      deref-count: 10
+    val$allWireCandidates:
+      offset: 28
+      deref-count: 10
+    val$allCandidates:
+      offset: 24
+      deref-count: 10
+    val$executor:
+      offset: 36
+      deref-count: 8
+    this$0:
+      offset: 16
+      deref-count: 6
+  org.eclipse.osgi.framework.log.FrameworkLogEntry:
+    throwable:
+      offset: 32
+      deref-count: 5
+    message:
+      offset: 28
+      deref-count: 5
+    entry:
+      offset: 24
+      deref-count: 4
+    context:
+      offset: 40
+      deref-count: 2
+  org.eclipse.osgi.internal.log.ExtendedLogEntryImpl:
+    contextObject:
+      offset: 64
+      deref-count: 4
+    throwable:
+      offset: 60
+      deref-count: 3
+    message:
+      offset: 52
+      deref-count: 3
+    bundle:
+      offset: 44
+      deref-count: 3
+    threadIds:
+      offset: 112
+      deref-count: 3
+    ref:
+      offset: 56
+      deref-count: 2
+    logLevelEnum:
+      offset: 48
+      deref-count: 2
+    loggerName:
+      offset: 40
+      deref-count: 2
+    stackTraceElement:
+      offset: 72
+      deref-count: 2
+    threadName:
+      offset: 68
+      deref-count: 2
+  org.eclipse.osgi.storage.BundleInfo$Generation:
+    rawHeaders:
+      offset: 48
+      deref-count: 181
+    genMonitor:
+      offset: 32
+      deref-count: 152
+    this$0:
+      offset: 76
+      deref-count: 65
+    bundleFile:
+      offset: 44
+      deref-count: 43
+    contentType:
+      offset: 72
+      deref-count: 15
+    revision:
+      offset: 52
+      deref-count: 13
+    cachedHeaders:
+      offset: 36
+      deref-count: 9
+    headerLocalization:
+      offset: 56
+      deref-count: 7
+    content:
+      offset: 40
+      deref-count: 7
+    storageHooks:
+      offset: 68
+      deref-count: 5
+  org.eclipse.osgi.internal.signedcontent.SignedBundleHook:
+    context:
+      offset: 40
+      deref-count: 5
+    CACERTS_PATH:
+      offset: 116
+      deref-count: 2
+    container:
+      offset: 44
+      deref-count: 1
+    signedContentFactoryReg:
+      offset: 24
+      deref-count: 1
+    secureAction:
+      offset: 112
+      deref-count: 1
+    systemTrustEngineReg:
+      offset: 28
+      deref-count: 1
+    trustEngineNameProp:
+      offset: 20
+      deref-count: 1
+  org.eclipse.osgi.internal.loader.ModuleClassLoader:
+    classNameLocks:
+      offset: 80
+      deref-count: 8
+    ALLPERMISSIONS:
+      offset: 112
+      deref-count: 6
+    pkgLock:
+      offset: 84
+      deref-count: 4
+  org.eclipse.osgi.internal.container.NamespaceList:
+    elements:
+      offset: 12
+      deref-count: 135
+    namespaces:
+      offset: 16
+      deref-count: 122
+    getNamespace:
+      offset: 20
+      deref-count: 72
+    CAPABILITY:
+      offset: 116
+      deref-count: 4
+    REQUIREMENT:
+      offset: 120
+      deref-count: 4
+    WIRE:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleResolutionReport$Builder:
+    resourceToEntries:
+      offset: 12
+      deref-count: 8
+  org.eclipse.core.runtime.adaptor.EclipseStarter$InitialBundle:
+    locationString:
+      offset: 20
+      deref-count: 2
+    location:
+      offset: 24
+      deref-count: 2
+  org.eclipse.osgi.container.ModuleDatabase$Sort:
+    BY_START_LEVEL:
+      offset: 116
+      deref-count: 2
+    BY_DEPENDENCY:
+      offset: 112
+      deref-count: 2
+    BY_ID:
+      offset: 120
+      deref-count: 2
+  org.apache.felix.resolver.util.ArrayMap$1:
+    this$0:
+      offset: 12
+      deref-count: 10
+  org.eclipse.osgi.storage.bundlefile.ZipBundleFile:
+    zipFile:
+      offset: 48
+      deref-count: 16
+    basefile:
+      offset: 16
+      deref-count: 3
+  org.eclipse.osgi.launch.Equinox:
+    systemBundle:
+      offset: 12
+      deref-count: 4
+  org.apache.felix.resolver.ResolverImpl$4:
+    val$resource:
+      offset: 32
+      deref-count: 9
+    val$allPackages:
+      offset: 28
+      deref-count: 9
+    val$session:
+      offset: 16
+      deref-count: 6
+    val$allWireCandidates:
+      offset: 24
+      deref-count: 6
+    val$allCandidates:
+      offset: 20
+      deref-count: 6
+    this$0:
+      offset: 12
+      deref-count: 3
+  org.apache.felix.resolver.ResolverImpl$5:
+    val$resource:
+      offset: 24
+      deref-count: 6
+    val$session:
+      offset: 16
+      deref-count: 6
+    val$packages:
+      offset: 28
+      deref-count: 6
+    val$allPackages:
+      offset: 20
+      deref-count: 6
+    this$0:
+      offset: 12
+      deref-count: 3
+  org.eclipse.osgi.util.NLS:
+    ASSIGNED:
+      offset: 136
+      deref-count: 218
+  org.apache.felix.resolver.ResolverImpl$3:
+    val$packages:
+      offset: 28
+      deref-count: 9
+    val$resource:
+      offset: 24
+      deref-count: 6
+    val$session:
+      offset: 16
+      deref-count: 6
+    val$allCandidates:
+      offset: 20
+      deref-count: 6
+    this$0:
+      offset: 12
+      deref-count: 3
+  org.eclipse.osgi.internal.framework.EquinoxContainer:
+    secureAction:
+      offset: 116
+      deref-count: 241
+  org.apache.felix.resolver.ResolverImpl$6:
+    val$resource:
+      offset: 28
+      deref-count: 6
+    val$session:
+      offset: 16
+      deref-count: 6
+    val$allWireCandidates:
+      offset: 20
+      deref-count: 6
+    this$0:
+      offset: 12
+      deref-count: 6
+    val$allPackages:
+      offset: 24
+      deref-count: 6
+  org.eclipse.osgi.storage.Storage$1:
+    val$in:
+      offset: 48
+      deref-count: 4
+    this$0:
+      offset: 44
+      deref-count: 2
+  org.eclipse.osgi.internal.hookregistry.StorageHookFactory:
+    KEY:
+      offset: 12
+      deref-count: 1
+  org.eclipse.osgi.container.ModuleCapability:
+    transientAttrs:
+      offset: 24
+      deref-count: 3281
+    attributes:
+      offset: 20
+      deref-count: 3278
+    namespace:
+      offset: 12
+      deref-count: 3226
+    directives:
+      offset: 16
+      deref-count: 1752
+    revision:
+      offset: 28
+      deref-count: 1744
+  org.eclipse.osgi.framework.eventmgr.EventManager$EventThread$Queued:
+    next:
+      offset: 28
+      deref-count: 34
+    listeners:
+      offset: 16
+      deref-count: 30
+    dispatcher:
+      offset: 20
+      deref-count: 30
+    object:
+      offset: 24
+      deref-count: 30
+  org.eclipse.osgi.container.ModuleContainerAdaptor$ContainerEvent:
+    REFRESH:
+      offset: 112
+      deref-count: 4
+    STARTED:
+      offset: 120
+      deref-count: 4
+    ERROR:
+      offset: 140
+      deref-count: 4
+    START_LEVEL:
+      offset: 116
+      deref-count: 3
+    STOPPED_UPDATE:
+      offset: 128
+      deref-count: 3
+    STOPPED_REFRESH:
+      offset: 132
+      deref-count: 3
+    STOPPED:
+      offset: 124
+      deref-count: 3
+    STOPPED_TIMEOUT:
+      offset: 136
+      deref-count: 3
+    INFO:
+      offset: 148
+      deref-count: 3
+    WARNING:
+      offset: 144
+      deref-count: 3
+  org.eclipse.osgi.internal.loader.classpath.FragmentClasspath:
+    generation:
+      offset: 12
+      deref-count: 2
+  org.eclipse.osgi.internal.loader.classpath.ClasspathEntry:
+    bundlefile:
+      offset: 12
+      deref-count: 5
+    mrBundleFiles:
+      offset: 28
+      deref-count: 5
+    mainManifestPackageAttributes:
+      offset: 20
+      deref-count: 4
+    perPackageManifestAttributes:
+      offset: 24
+      deref-count: 4
+    domain:
+      offset: 16
+      deref-count: 4
+    data:
+      offset: 36
+      deref-count: 3
+    userObjects:
+      offset: 32
+      deref-count: 3
+  org.eclipse.osgi.internal.serviceregistry.ServiceConsumer:
+    singletonConsumer:
+      offset: 116
+      deref-count: 1
+    prototypeConsumer:
+      offset: 112
+      deref-count: 1
+  org.eclipse.osgi.internal.container.NamespaceList$Builder:
+    lastBuildElements:
+      offset: 24
+      deref-count: 901
+    namespaceElements:
+      offset: 20
+      deref-count: 746
+    getNamespace:
+      offset: 16
+      deref-count: 501
+  org.eclipse.osgi.container.Module$StartOptions:
+    TRANSIENT:
+      offset: 112
+      deref-count: 21
+    LAZY_TRIGGER:
+      offset: 128
+      deref-count: 11
+    TRANSIENT_IF_AUTO_START:
+      offset: 124
+      deref-count: 10
+    TRANSIENT_RESUME:
+      offset: 120
+      deref-count: 7
+    USE_ACTIVATION_POLICY:
+      offset: 116
+      deref-count: 5
+  org.dacapo.parser.ConfigFileTokenManager:
+    input_stream:
+      offset: 52
+      deref-count: 1518
+    image:
+      offset: 68
+      deref-count: 157
+    jjimage:
+      offset: 64
+      deref-count: 80
+    debugStream:
+      offset: 48
+      deref-count: 1
+  org.eclipse.osgi.storage.bundlefile.ZipBundleEntry:
+    zipEntry:
+      offset: 12
+      deref-count: 13
+    bundleFile:
+      offset: 16
+      deref-count: 12
+  org.apache.felix.resolver.ResolverImpl$Packages$3:
+    this$1:
+      offset: 76
+      deref-count: 3
+  org.apache.felix.resolver.ResolverImpl$Packages$2:
+    this$1:
+      offset: 76
+      deref-count: 3
+  org.apache.felix.resolver.ResolverImpl$Packages$1:
+    this$1:
+      offset: 76
+      deref-count: 3
+  org.eclipse.osgi.internal.loader.SystemBundleLoader$SystemModuleClassLoader:
+    this$0:
+      offset: 108
+      deref-count: 2
+  org.dacapo.parser.SimpleCharStream:
+    inputStream:
+      offset: 60
+      deref-count: 4
+  org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2:
+    this$1:
+      offset: 16
+      deref-count: 5
+    val$module:
+      offset: 24
+      deref-count: 5
+    val$done:
+      offset: 20
+      deref-count: 4
+  org.dacapo.parser.Config$Size:
+    outputFiles:
+      offset: 32
+      deref-count: 42
+    this$0:
+      offset: 36
+      deref-count: 9
+    name:
+      offset: 20
+      deref-count: 3
+  org.eclipse.osgi.internal.signedcontent.SignedContentConstants:
+    DEFAULT_TRUST_ENGINE:
+      offset: 244
+      deref-count: 2
+  org.dacapo.harness.LatencyReporter:
+    callback:
+      offset: 132
+      deref-count: 2
+    globalIdx:
+      offset: 124
+      deref-count: 1
+  org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle:
+    initListeners:
+      offset: 32
+      deref-count: 3
+  org.dacapo.harness.TestHarness:
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 10
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
+  org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap$Snapshot$SnapshotIterator:
+    this$1:
+      offset: 20
+      deref-count: 384
+  org.eclipse.osgi.internal.framework.OSGiFrameworkHooks$CoreResolverHookFactory:
+    debug:
+      offset: 16
+      deref-count: 27
+    container:
+      offset: 20
+      deref-count: 5
+    storage:
+      offset: 24
+      deref-count: 5
+  org.eclipse.osgi.internal.log.ExtendedLogServiceFactory:
+    contextsLock:
+      offset: 16
+      deref-count: 29
+    secureAction:
+      offset: 112
+      deref-count: 7
+    loggerContextTargetMap:
+      offset: 20
+      deref-count: 6
+    loggerAdmin:
+      offset: 32
+      deref-count: 4
+    logReaderServiceFactory:
+      offset: 28
+      deref-count: 4
+    logPermission:
+      offset: 24
+      deref-count: 1
+  org.apache.felix.resolver.util.OpenHashMap$ValueIterator:
+    this$0:
+      offset: 32
+      deref-count: 14
+  org.dacapo.parser.Config:
+    sizes:
+      offset: 24
+      deref-count: 48
+    desc:
+      offset: 28
+      deref-count: 11
+    threadModel:
+      offset: 20
+      deref-count: 5
+    name:
+      offset: 12
+      deref-count: 5
+    className:
+      offset: 16
+      deref-count: 4
+  org.eclipse.osgi.container.ModuleContainer:
+    adaptor:
+      offset: 44
+      deref-count: 6
+    moduleDatabase:
+      offset: 40
+      deref-count: 4
+  java.util.concurrent.TimeUnit:
+    SECONDS:
+      offset: 124
+      deref-count: 24
+    NANOSECONDS:
+      offset: 112
+      deref-count: 7
+    MILLISECONDS:
+      offset: 120
+      deref-count: 1
+  org.eclipse.osgi.util.ManifestElement:
+    attributes:
+      offset: 20
+      deref-count: 1220
+    directives:
+      offset: 24
+      deref-count: 872
+    mainValue:
+      offset: 12
+      deref-count: 439
+  org.apache.felix.resolver.util.OpenHashMap$MapEntry:
+    this$0:
+      offset: 16
+      deref-count: 1319
+  org.dacapo.harness.Callback$Mode:
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
 opcodes:
   aconst_null: 6
   iconst_m1: 47
@@ -1522,6 +2834,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -1556,9 +2870,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
-# java/util/zip/ZipException
 # java/nio/file/ProviderMismatchException
 # java/security/PrivilegedActionException
+# java/util/zip/ZipException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -1733,6 +3047,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -1747,6 +3062,7 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
+# java/util/Formatter
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -2231,6 +3547,7 @@ opcodes:
 # java/util/logging/LogManager$4
 # sun/util/logging/internal/LoggingProviderImpl$JULWrapper
 # sun/util/logging/PlatformLogger$ConfigurableBridge$LoggerConfiguration
+# java/util/concurrent/ScheduledExecutorService
 # java/net/URLDecoder
 # java/util/random/RandomGenerator
 # java/util/Random
@@ -2244,10 +3561,6 @@ opcodes:
 # java/lang/ClassFormatError
 # java/lang/SecurityException
 # java/util/Collections$SingletonMap
-# sun/misc/Unsafe
-# java/lang/invoke/DirectMethodHandle$StaticAccessor
-# jdk/internal/reflect/MethodHandleFieldAccessorImpl
-# jdk/internal/reflect/MethodHandleObjectFieldAccessorImpl
 # java/lang/Deprecated
 # java/lang/annotation/Documented
 # jdk/proxy1/$Proxy2
@@ -2267,8 +3580,8 @@ opcodes:
 # java/util/HashMap$KeySpliterator
 # java/io/SyncFailedException
 # java/nio/channels/OverlappingFileLockException
-# sun/nio/ch/FileLockImpl
 # java/nio/channels/FileLock
+# sun/nio/ch/FileLockImpl
 # sun/nio/ch/FileLockTable
 # sun/nio/ch/FileKey
 # sun/nio/ch/FileLockTable$FileLockReference
@@ -2334,7 +3647,6 @@ opcodes:
 # jdk/internal/util/random/RandomSupport
 # java/util/EventObject
 # java/util/concurrent/ScheduledThreadPoolExecutor
-# java/util/concurrent/ScheduledExecutorService
 # java/util/concurrent/ScheduledThreadPoolExecutor$DelayedWorkQueue
 # java/util/concurrent/RunnableScheduledFuture
 # java/util/concurrent/ScheduledFuture
@@ -2349,6 +3661,8 @@ opcodes:
 # java/net/ContentHandlerFactory
 # java/net/ContentHandler
 # java/security/KeyStoreException
+# java/security/KeyStore
+# java/net/FileNameMap
 # java/util/MissingResourceException
 # java/util/concurrent/locks/AbstractQueuedSynchronizer$SharedNode
 # java/util/ArrayList$ListItr
@@ -2358,7 +3672,6 @@ opcodes:
 # java/util/function/BiPredicate
 # java/util/concurrent/CountDownLatch
 # java/util/concurrent/CountDownLatch$Sync
-# java/lang/ExceptionInInitializerError
 # java/lang/StackTraceElement$HashedModules
 # java/lang/Thread$Builder$OfPlatform
 # java/lang/Thread$Builder
@@ -2431,7 +3744,6 @@ opcodes:
 # sun/util/resources/Bundles$CacheKeyReference
 # sun/util/resources/Bundles$BundleReference
 # sun/util/locale/provider/LocaleResources$ResourceReference
-# java/io/PrintWriter
 # java/io/PrintWriter$1
 # jdk/internal/access/JavaIOPrintWriterAccess
 # java/lang/Throwable$WrappedPrintWriter
@@ -2441,6 +3753,7 @@ opcodes:
 # java/lang/Throwable$WrappedPrintStream
 # sun/security/provider/SHA
 # java/util/HashMap$EntrySpliterator
+# java/util/function/ToLongFunction
 # java/util/stream/SortedOps
 # java/util/stream/SortedOps$OfRef
 # java/util/stream/ReferencePipeline$StatefulOp
