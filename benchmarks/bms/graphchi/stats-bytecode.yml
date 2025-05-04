@@ -2,645 +2,908 @@
 #    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
 skipped-classes: 1043
-transformed-classes: 203
-transformed-bytecodes: 53726
-executed-bytecodes: 369042117097
+transformed-classes: 205
+transformed-bytecodes: 53825
+executed-bytecodes: 369043102677
 executed-bytecodes-unique: 8195
 executed-bytecodes-p90: 5000000
 executed-bytecodes-p99: 2384487000
 executed-bytecodes-p999: 4768974000
 executed-bytecodes-p9999: 4768974000
-executed-calls: 11504490378
+executed-calls: 11504593796
 executed-calls-unique: 1188
 field-dereference-counts:
-  javax/xml/bind/DatatypeConverter:
-    theConverter: 346
-    SET_DATATYPE_CONVERTER_PERMISSION: 1
-  org/apache/commons/math/linear/CholeskyDecompositionImpl$Solver:
-    lTData: 314290400
-  org/dacapo/harness/TestHarness:
-    commandLineArgs: 15
-    config: 10
-    BuildVersion: 4
-    BuildNickName: 1
-  edu/cmu/graphchi/shards/ShardIndex:
-    vertices: 2470
-    edgePointer: 2460
-    fileOffset: 1235
-    indexFile: 30
-  java/util/logging/Level:
-    SEVERE: 1
-  edu/cmu/graphchi/engine/GraphChiEngine$MockScheduler:
-    this$0: 1
-  org/apache/commons/cli/PosixParser:
-    tokens: 6
-    eatTheRest: 4
-    options: 3
-    currentOption: 1
-  org/dacapo/harness/Data:
-    DEFAULT_LOCAL_DACAPO_CONFIG: 2
-    DACAPO_CHECKSUM_RE_PATH: 1
-    WORKING_DIRE: 1
-  com/yammer/metrics/core/Histogram:
-    variance: 141
-    count: 135
-    max: 99
-    min: 98
-    sample: 81
-    sum: 81
-  org/apache/commons/cli/CommandLine:
-    options: 64
-    args: 5
-  org/dacapo/harness/Benchmark:
-    data: 176
-    datDeps: 172
-    stats: 48
-    config: 22
-    scratch: 8
-    verbose: 8
-    err: 7
-    out: 7
-    validateOutput: 6
-    iteration: 5
-    validationReport: 5
-    loader: 4
-    printStats: 4
-    savedErr: 4
-    savedOut: 4
-    silentErr: 4
-    silentOut: 4
-    jarDeps: 3
-    preIterationGC: 3
-    preserve: 3
-    savedSystemProperties: 3
-    timeoutDialation: 3
-    validate: 3
-    watchdog: 3
-    dumpLatencyCSV: 2
-    dumpLatencyHDR: 2
-    dumpLatencySmoothing: 2
-    iterations: 2
-    latencyBaseFileName: 2
-    savedClassLoader: 2
-    dataSet: 1
-    valRepFile: 1
-  org/slf4j/LoggerFactory:
-    API_COMPATIBILITY_LIST: 6
-    INITIALIZATION_STATE: 6
-    STATIC_LOGGER_BINDER_PATH: 2
-    TEMP_FACTORY: 2
-    NOP_FALLBACK_FACTORY: 1
-  com/yammer/metrics/reporting/JmxReporter$AbstractBean:
-    objectName: 7
-  org/slf4j/helpers/NOPLogger:
-    NOP_LOGGER: 2
-  com/yammer/metrics/core/Histogram$SampleType:
-    BIASED: 9
-    UNIFORM: 2
-    $VALUES: 1
-  nom/tam/util/BufferedDataInputStream:
-    savedIntByte: 12489165
-    bufferOffset: 10
-  org/apache/commons/cli/Options:
-    shortOpts: 71
-    longOpts: 70
-    optionGroups: 4
-    requiredOpts: 3
-  edu/cmu/graphchi/shards/ShardIndex$IndexEntry:
-    edgePointer: 20
-    fileOffset: 20
-    vertex: 20
-  org/apache/commons/cli/Option:
-    longOption: 222
-    option: 162
-    values: 71
-    description: 62
-    required: 62
-    argCount: 54
-    type: 31
-    valuesep: 18
-    argName: 14
-  edu/cmu/graphchi/engine/GraphChiEngine:
-    enableScheduler: 2850502
-    degreeHandler: 2850501
-    skipZeroDegreeVertices: 1495796
-    vertexDataConverter: 1425282
-    memBudget: 1425251
-    logger: 23232
-    nupdates: 1302
-    chiContext: 715
-    parallelExecutor: 672
-    subIntervalStart: 170
-    nShards: 84
-    subIntervalEnd: 80
-    intervals: 65
-    disableOutEdges: 52
-    edataConverter: 45
-    onlyAdjacency: 45
-    disableInEdges: 42
-    slidingShards: 41
-    blockManager: 33
-    autoLoadNext: 31
-    baseFilename: 26
-    maxWindow: 21
-    scheduler: 16
-    modifiesOutedges: 14
-    enableDeterministicExecution: 12
-    loadingExecutor: 12
-    modifiesInedges: 12
-    determineNextWindowTimer: 11
-    executionTimer: 11
-    initVerticesTimer: 11
-    loadTimer: 11
-    useStaticWindowSize: 11
-    vertexDataHandler: 11
-    hasSetEdgeDataConverter: 3
-    hasSetVertexDataConverter: 3
-    vertexIdTranslate: 2
-    waitForFutureTimer: 1
-  edu/cmu/graphchi/datablocks/ChiPointer:
-    blockId: 26995660
-    offset: 26995660
-  edu/cmu/graphchi/datablocks/DataBlockManager:
-    blocks: 11000180
-  java/io/File:
-    separator: 2
-  org/dacapo/parser/ConfigFileTokenManager:
-    jjnewStateCnt: 6484
-    jjround: 6126
-    curChar: 5298
-    jjstateSet: 4553
-    jjrounds: 4135
-    jjnextStates: 1912
-    input_stream: 1836
-    jjmatchedKind: 935
-    jjmatchedPos: 574
-    image: 161
-    jjimage: 82
-    jjstrLiteralImages: 82
-    curLexState: 81
-    jjnewLexState: 81
-    jjtoToken: 81
-    jjimageLen: 80
-    debugStream: 1
-    defaultLexState: 1
-    jjbitVec0: 1
-    jjbitVec2: 1
-    jjtoMore: 1
-    jjtoSkip: 1
-    jjtoSpecial: 1
-    lexStateNames: 1
-  org/dacapo/parser/Config$OutputFile:
-    digest: 16
-    filter: 14
-    text: 14
-    bytes: 8
-    existence: 8
-    lines: 8
-    keep: 6
-    name: 6
-    this$0: 6
-  com/yammer/metrics/core/MetricsRegistry:
-    metrics: 41
-    listeners: 9
-    clock: 8
-    threadPools: 8
-  edu/cmu/graphchi/engine/auxdata/DegreeData:
-    degreeData: 5701010
-    vertexSt: 2850531
-    $assertionsDisabled: 2850491
-    vertexEn: 31
-    degreeFile: 21
-    sparse: 12
-    lastId: 1
-    lastQuery: 1
-  org/dacapo/parser/Config$Size:
-    outputFiles: 42
-    this$0: 9
-    nThreads: 7
-    threadLimit: 7
-    args: 4
-    name: 3
-  edu/cmu/graphchi/engine/GraphChiEngine$GraphChiContextInternal:
-    this$0: 1
-  com/yammer/metrics/reporting/JmxReporter:
-    server: 15
-    registeredBeans: 8
-    INSTANCE: 2
-    LOGGER: 1
-  com/yammer/metrics/stats/ThreadLocalRandom:
-    rnd: 361
-    localRandom: 61
-    initialized: 2
-  edu/cmu/graphchi/shards/SlidingShard$Block:
-    ptr: 7493510
-    active: 4995670
-    blockId: 2497860
-    end: 2497850
-    this$0: 30
-    blockFileName: 20
-    offset: 20
-  com/yammer/metrics/stats/ExponentiallyDecayingSample:
-    values: 388
-    startTime: 256
-    lock: 219
-    clock: 194
-    alpha: 192
-    count: 113
-    nextScaleTime: 113
-    reservoirSize: 67
-    RESCALE_THRESHOLD: 47
-  edu/cmu/graphchi/ChiFilenames:
-    $assertionsDisabled: 13
-    vertexDataSuffix: 1
-  org/slf4j/helpers/SubstituteLoggerFactory:
-    loggerNameList: 3
-  edu/cmu/graphchi/ChiVertex$Edge:
-    dataPtr: 22000000
-    vertexId: 22000000
-    this$0: 11000000
-  org/dacapo/parser/Config:
-    sizes: 53
-    threadModel: 13
-    desc: 9
-    threadCountOverride: 6
-    name: 5
-    className: 4
-  org/dacapo/parser/Config$1:
-    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 8
-  com/yammer/metrics/core/TimerContext:
-    clock: 120
-    startTime: 120
-    timer: 120
-  edu/cmu/graphchi/engine/auxdata/VertexDegree:
-    inDegree: 5700980
-    outDegree: 5700980
-  org/apache/commons/math/linear/RealVectorFormat:
-    format: 1
-    prefix: 1
-    separator: 1
-    suffix: 1
-    trimmedPrefix: 1
-    trimmedSeparator: 1
-    trimmedSuffix: 1
-  com/yammer/metrics/core/ThreadPools:
-    threadPools: 10
-  com/yammer/metrics/reporting/AbstractReporter:
-    metricsRegistry: 2
-  javax/xml/bind/DatatypeConverterImpl:
-    hexCode: 5505
-    $assertionsDisabled: 1
-    datatypeFactory: 1
-    decodeMap: 1
-    encodeMap: 1
-    theInstance: 1
-  edu/cmu/graphchi/preprocessing/FastSharder:
-    baseFilename: 3
-    edgeValueTypeBytesToValueConverter: 3
-    vertexValueTypeBytesToValueConverter: 3
-    initialIntervalLength: 2
-    $assertionsDisabled: 1
-    allowSparseDegreesAndVertexData: 1
-    edgeProcessor: 1
-    logger: 1
-    maxVertexId: 1
-    memoryEfficientDegreeCount: 1
-    numEdges: 1
-    numShards: 1
-    preIdTranslate: 1
-    random: 1
-    shovelStreams: 1
-    useSparseDegrees: 1
-    valueTemplate: 1
-    vertexProcessor: 1
-    vertexShovelStreams: 1
-    vertexValueTemplate: 1
-  org/dacapo/harness/TeeOutputStream:
-    log: 563
-    toScreen: 187
-    logFile: 6
-    version: 2
-  org/dacapo/parser/Config$ThreadModel:
-    PER_CPU: 5
-    FIXED: 3
-    SINGLE: 3
-    description: 3
-    $VALUES: 2
-  com/yammer/metrics/core/MetricName:
-    mBeanName: 114
-    group: 25
-    name: 25
-    scope: 25
-    type: 25
-  edu/cmu/graphchi/shards/MemoryShard:
-    blocksize: 15004410
-    onlyAdjacency: 15004380
-    blockIds: 7502230
-    rangeEnd: 6703080
-    rangeStart: 5517075
-    hasSetRangeOffset: 2370505
-    hasSetOffset: 2370500
-    $assertionsDisabled: 2370486
-    index: 70
-    adjDataFilename: 50
-    adjData: 40
-    converter: 40
-    dataBlockManager: 40
-    edataFilesize: 40
-    loaded: 40
-    blockSizes: 30
-    edgeDataFilename: 30
-    adjDataLength: 20
-    loadAdjTimer: 20
-    loadVerticesTimers: 20
-    streamingOffset: 15
-    streamingOffsetEdgePtr: 15
-    streamingOffsetVid: 15
-    rangeStartEdgePtr: 10
-    rangeStartOffset: 10
-    logger: 1
-  edu/cmu/graphchi/util/HugeDoubleMatrix:
-    BLOCKSIZE: 76188017
-    ncols: 49094001
-    data: 38094005
-    nrows: 1
-  java/lang/System:
-    out: 12
-    err: 4
-  com/yammer/metrics/core/ThreadPools$NamedThreadFactory:
-    group: 3
-    namePrefix: 3
-    threadNumber: 3
-  com/yammer/metrics/reporting/JmxReporter$Meter:
-    metric: 7
-  org/dacapo/harness/Callback$Mode:
-    TIMING: 2
-    WARMUP: 2
-    $VALUES: 1
-  com/yammer/metrics/core/Timer:
-    histogram: 74
-    clock: 67
-    meter: 67
-    durationUnit: 7
-    rateUnit: 7
-  edu/cmu/graphchi/engine/GraphChiEngine$2:
-    this$0: 30
-    val$countDown: 20
-    val$termlock: 20
-    val$vertices: 20
-    val$program: 10
-  edu/cmu/graphchi/apps/ALSMatrixFactorization:
-    D: 2885251903
-    vertexValueMatrix: 38094002
-    LAMBDA: 27094001
-    rmse: 484
-    baseFilename: 2
-    logger: 1
-    numShards: 1
-  edu/cmu/graphchi/engine/GraphChiEngine$1:
-    this$0: 20
-    val$_blockId: 20
-    val$_firstVertex: 20
-  edu/cmu/graphchi/GraphChiContext:
-    iteration: 1356010
-    numIterations: 1356001
-    curInterval: 1310
-    numVertices: 1307
-    numEdges: 1301
-    scheduler: 1301
-    vertexIdTranslate: 1301
-    threadLocal: 651
-    threadId: 650
-  edu/cmu/graphchi/engine/GraphChiEngine$4:
-    val$terminationLock: 30
-    val$countDown: 20
-    val$shard: 20
-    val$startVertex: 20
-    val$vertices: 20
-    this$0: 10
-  edu/cmu/graphchi/engine/GraphChiEngine$3:
-    val$vertices: 1426540
-    val$program: 1425890
-    this$0: 1920
-    val$termlock: 1290
-    val$chunkEnd: 1280
-    val$chunkStart: 1280
-    val$countDown: 1280
-    val$myId: 1280
-  org/apache/commons/math/linear/AbstractRealMatrix:
-    lu: 1354700
-  com/yammer/metrics/core/Meter$1:
-    this$0: 48723
-  org/apache/commons/math/linear/BlockRealMatrix:
-    blockColumns: 9594845400
-    blocks: 4797422700
-    columns: 4774392800
-    rows: 6773500
-    blockRows: 4064100
-  com/yammer/metrics/Metrics:
-    DEFAULT_REGISTRY: 27
-    SHUTDOWN_HOOK: 2
-  org/apache/commons/cli/Parser:
-    options: 7
-    cmd: 4
-    requiredOptions: 2
-  edu/cmu/graphchi/ChiLogger$SingleLineFormatter:
-    args: 5
-    dat: 5
-    lineSeparator: 5
-  org/dacapo/parser/Token:
-    next: 284
-    kind: 223
-    image: 134
-    beginColumn: 81
-    beginLine: 81
-    endColumn: 81
-    endLine: 81
-    specialToken: 81
-  org/dacapo/harness/TeePrintStream:
-    out: 6
-  com/yammer/metrics/reporting/JmxReporter$Context:
-    objectName: 21
-    metricName: 14
-  org/apache/commons/cli/Util:
-    EMPTY_STRING_ARRAY: 2
-  org/dacapo/parser/SimpleCharStream:
-    bufpos: 7397
-    column: 3974
-    inBuf: 1699
-    bufcolumn: 1478
-    bufline: 1478
-    buffer: 1389
-    line: 1361
-    prevCharIsLF: 1360
-    maxNextCharInd: 1325
-    prevCharIsCR: 1294
-    tokenBegin: 682
-    bufsize: 45
-    available: 5
-    inputStream: 4
-    tabSize: 3
-    trackLineColumn: 1
-  edu/cmu/graphchi/preprocessing/VertexIdTranslate:
-    numShards: 2
-    vertexIntervalLength: 2
-  com/yammer/metrics/reporting/JmxReporter$Timer:
-    metric: 7
-  edu/cmu/graphchi/shards/MemoryShard$1:
-    val$waitLock: 30
-    this$0: 20
-    val$_chunk: 20
-    val$countDown: 20
-    val$disableOutEdges: 20
-    val$sizeOf: 20
-    val$vertices: 20
-    val$windowEnd: 20
-    val$windowStart: 20
-  ucar/unidata/io/RandomAccessFile:
-    filePosition: 81
-    buffer: 41
-    bufferStart: 41
-    file: 41
-    dataSize: 31
-    dataEnd: 27
-    debugAccess: 21
-    endOfFile: 21
-    extendMode: 21
-    bufferModified: 11
-    debugLeaks: 3
-    location: 2
-    allFiles: 1
-    debug_nbytes: 1
-    debug_nseeks: 1
-    minLength: 1
-    openFiles: 1
-    readonly: 1
-    showOpen: 1
-    showRead: 1
-  org/dacapo/parser/ConfigFile:
-    token: 555
-    jj_ntk: 257
-    jj_gen: 185
-    token_source: 82
-    jj_nt: 62
-    jj_la1: 44
-    jj_input_stream: 2
-    jj_expentries: 1
-    jj_kind: 1
-    jj_la1_0: 1
-    jj_la1_1: 1
-  org/apache/commons/math/linear/CholeskyDecompositionImpl:
-    lTData: 571683400
-    cachedL: 1354700
-    cachedLT: 1354700
-  edu/cmu/graphchi/ChiVertex:
-    nInedges: 63570381
-    nOutedges: 46299441
-    inEdgeDataArray: 35850500
-    edgeValueConverter: 34850510
-    outEdgeDataArray: 32850500
-    id: 28519250
-    blockManager: 11000010
-    parallelSafe: 10705340
-    unsafe: 10000003
-    valueOffset_nInedges: 5000001
-    valueOffset_nOutedges: 5000001
-    disableInedges: 1425251
-    disableOutedges: 1425251
-    vertexValueConverter: 10
-  org/dacapo/harness/CommandLineArgs$Methodology:
-    ITERATE: 5
-    CONVERGE: 3
-    $VALUES: 2
-  edu/cmu/graphchi/io/CompressedIO:
-    COMPRESSION_ENABLED: 41
-  org/dacapo/harness/LatencyReporter:
-    callback: 2
-    globalIdx: 1
-    timerBase: 1
-  java/util/concurrent/TimeUnit:
-    MILLISECONDS: 106
-    NANOSECONDS: 60
-    SECONDS: 53
-    MINUTES: 25
-    HOURS: 1
-  org/dacapo/harness/GraphChi:
-    args: 2
-    cls: 2
-    method: 2
-    config: 1
-    data: 1
-    loader: 1
-    scratch: 1
-  org/dacapo/harness/Callback$1:
-    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
-  edu/cmu/graphchi/shards/SlidingShard:
-    curBlock: 17484862
-    adjOffset: 7649492
-    edataOffset: 7493542
-    sizeOf: 7493496
-    onlyAdjacency: 4995704
-    $assertionsDisabled: 4866796
-    adjFile: 3824815
-    curvid: 2653822
-    rangeEnd: 2497832
-    rangeStart: 2497832
-    activeBlocks: 72
-    blockSize: 54
-    blockManager: 32
-    adjDataFilename: 22
-    edataFilesize: 18
-    converter: 14
-    modifiesOutedges: 14
-    asyncEdataLoading: 12
-    edgeDataFilename: 12
-    adjFilesize: 2
-    logger: 1
-  edu/cmu/graphchi/engine/VertexInterval:
-    lastVertex: 59
-    firstVertex: 54
-  org/dacapo/harness/CommandLineArgs:
-    OPTIONS: 125
-    line: 42
-    options: 33
-    $assertionsDisabled: 32
-    visibleOptions: 31
-    callback: 6
-    benchmarks: 3
-    parser: 2
-  com/yammer/metrics/core/Clock:
-    DEFAULT: 9
-  org/apache/commons/math/linear/ArrayRealVector:
-    data: 475158100
-    DEFAULT_FORMAT: 1
-  com/yammer/metrics/stats/EWMA:
-    rate: 438423
-    uncounted: 146349
-    initialized: 146190
-    interval: 146169
-    alpha: 146148
-    M15_ALPHA: 8
-    M1_ALPHA: 8
-    M5_ALPHA: 8
-  com/yammer/metrics/core/Meter:
-    m15Rate: 48783
-    m1Rate: 48783
-    m5Rate: 48783
-    count: 67
-    clock: 14
-    eventType: 7
-    future: 7
-    rateUnit: 7
-    startTime: 7
-  edu/cmu/graphchi/apps/ALSMatrixFactorization$BipartiteGraphInfo:
-    numLeft: 2
-    numRight: 2
-    this$0: 1
-  org/slf4j/impl/StaticLoggerBinder:
-    SINGLETON: 3
-    REQUESTED_API_VERSION: 2
-    loggerFactory: 2
-    loggerFactoryClassStr: 1
+  org.dacapo.parser.Config$ThreadModel:
+    PER_CPU:
+      offset: 120
+      deref-count: 5
+    SINGLE:
+      offset: 112
+      deref-count: 3
+    FIXED:
+      offset: 116
+      deref-count: 3
+    description:
+      offset: 24
+      deref-count: 3
+  ucar.unidata.io.RandomAccessFile:
+    file:
+      offset: 60
+      deref-count: 41
+    location:
+      offset: 56
+      deref-count: 2
+    debug_nbytes:
+      offset: 124
+      deref-count: 1
+    openFiles:
+      offset: 116
+      deref-count: 1
+    allFiles:
+      offset: 112
+      deref-count: 1
+    debug_nseeks:
+      offset: 120
+      deref-count: 1
+  java.lang.System:
+    out:
+      offset: 116
+      deref-count: 12
+    err:
+      offset: 120
+      deref-count: 4
+  org.dacapo.parser.Config$OutputFile:
+    digest:
+      offset: 32
+      deref-count: 16
+    this$0:
+      offset: 36
+      deref-count: 6
+    name:
+      offset: 28
+      deref-count: 6
+  edu.cmu.graphchi.ChiLogger$SingleLineFormatter:
+    dat:
+      offset: 12
+      deref-count: 5
+    lineSeparator:
+      offset: 24
+      deref-count: 5
+  org.slf4j.LoggerFactory:
+    TEMP_FACTORY:
+      offset: 144
+      deref-count: 2
+    STATIC_LOGGER_BINDER_PATH:
+      offset: 156
+      deref-count: 2
+    NOP_FALLBACK_FACTORY:
+      offset: 148
+      deref-count: 1
+  edu.cmu.graphchi.engine.GraphChiEngine$GraphChiContextInternal:
+    this$0:
+      offset: 56
+      deref-count: 1
+  com.yammer.metrics.stats.ThreadLocalRandom:
+    localRandom:
+      offset: 112
+      deref-count: 61
+  edu.cmu.graphchi.engine.GraphChiEngine$3:
+    val$program:
+      offset: 28
+      deref-count: 1425890
+    this$0:
+      offset: 40
+      deref-count: 1920
+    val$termlock:
+      offset: 36
+      deref-count: 1290
+    val$countDown:
+      offset: 32
+      deref-count: 1280
+  edu.cmu.graphchi.engine.GraphChiEngine$4:
+    val$terminationLock:
+      offset: 28
+      deref-count: 30
+    val$countDown:
+      offset: 24
+      deref-count: 20
+    val$shard:
+      offset: 16
+      deref-count: 20
+    this$0:
+      offset: 32
+      deref-count: 10
+  edu.cmu.graphchi.engine.GraphChiEngine$1:
+    this$0:
+      offset: 20
+      deref-count: 20
+  edu.cmu.graphchi.engine.GraphChiEngine$2:
+    this$0:
+      offset: 28
+      deref-count: 30
+    val$countDown:
+      offset: 20
+      deref-count: 20
+    val$termlock:
+      offset: 24
+      deref-count: 20
+    val$program:
+      offset: 16
+      deref-count: 10
+  edu.cmu.graphchi.apps.ALSMatrixFactorization:
+    vertexValueMatrix:
+      offset: 36
+      deref-count: 38094002
+    baseFilename:
+      offset: 40
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 1
+  com.yammer.metrics.core.MetricsRegistry:
+    metrics:
+      offset: 16
+      deref-count: 41
+    listeners:
+      offset: 24
+      deref-count: 9
+    clock:
+      offset: 12
+      deref-count: 8
+    threadPools:
+      offset: 20
+      deref-count: 8
+  org.dacapo.parser.ConfigFile:
+    token:
+      offset: 36
+      deref-count: 555
+    token_source:
+      offset: 28
+      deref-count: 82
+    jj_nt:
+      offset: 40
+      deref-count: 62
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
+  com.yammer.metrics.core.ThreadPools$NamedThreadFactory:
+    namePrefix:
+      offset: 20
+      deref-count: 3
+    threadNumber:
+      offset: 16
+      deref-count: 3
+    group:
+      offset: 12
+      deref-count: 3
+  org.apache.commons.math.linear.CholeskyDecompositionImpl:
+    cachedLT:
+      offset: 20
+      deref-count: 1354700
+    cachedL:
+      offset: 16
+      deref-count: 1354700
+  edu.cmu.graphchi.ChiVertex:
+    edgeValueConverter:
+      offset: 120
+      deref-count: 34850510
+    blockManager:
+      offset: 112
+      deref-count: 11000010
+    unsafe:
+      offset: 124
+      deref-count: 10000003
+    vertexValueConverter:
+      offset: 116
+      deref-count: 10
+  edu.cmu.graphchi.apps.ALSMatrixFactorization$BipartiteGraphInfo:
+    this$0:
+      offset: 20
+      deref-count: 1
+  com.yammer.metrics.stats.ExponentiallyDecayingSample:
+    values:
+      offset: 32
+      deref-count: 738
+    lock:
+      offset: 36
+      deref-count: 279
+    clock:
+      offset: 48
+      deref-count: 224
+    nextScaleTime:
+      offset: 44
+      deref-count: 143
+    count:
+      offset: 40
+      deref-count: 143
+  org.apache.commons.cli.Parser:
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
+  edu.cmu.graphchi.engine.GraphChiEngine$MockScheduler:
+    this$0:
+      offset: 12
+      deref-count: 1
+  com.yammer.metrics.core.TimerContext:
+    timer:
+      offset: 12
+      deref-count: 120
+    clock:
+      offset: 24
+      deref-count: 120
+  com.yammer.metrics.core.ThreadPools:
+    threadPools:
+      offset: 12
+      deref-count: 10
+  org.dacapo.harness.TeeOutputStream:
+    log:
+      offset: 28
+      deref-count: 563
+    logFile:
+      offset: 32
+      deref-count: 6
+  org.apache.commons.math.linear.ArrayRealVector:
+    DEFAULT_FORMAT:
+      offset: 116
+      deref-count: 1
+  org.dacapo.harness.CommandLineArgs$Methodology:
+    ITERATE:
+      offset: 112
+      deref-count: 5
+    CONVERGE:
+      offset: 116
+      deref-count: 3
+  org.dacapo.harness.GraphChi:
+    method:
+      offset: 44
+      deref-count: 2
+    cls:
+      offset: 64
+      deref-count: 2
+    data:
+      offset: 24
+      deref-count: 1
+    loader:
+      offset: 32
+      deref-count: 1
+    scratch:
+      offset: 20
+      deref-count: 1
+    config:
+      offset: 28
+      deref-count: 1
+  com.yammer.metrics.core.Timer:
+    histogram:
+      offset: 24
+      deref-count: 74
+    meter:
+      offset: 20
+      deref-count: 67
+    clock:
+      offset: 28
+      deref-count: 67
+    rateUnit:
+      offset: 16
+      deref-count: 7
+    durationUnit:
+      offset: 12
+      deref-count: 7
+  javax.xml.bind.DatatypeConverter:
+    theConverter:
+      offset: 112
+      deref-count: 346
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
+  com.yammer.metrics.reporting.JmxReporter$Meter:
+    metric:
+      offset: 16
+      deref-count: 7
+  edu.cmu.graphchi.shards.MemoryShard$1:
+    val$waitLock:
+      offset: 40
+      deref-count: 30
+    val$countDown:
+      offset: 36
+      deref-count: 20
+    this$0:
+      offset: 44
+      deref-count: 20
+  edu.cmu.graphchi.GraphChiContext:
+    curInterval:
+      offset: 48
+      deref-count: 1310
+    scheduler:
+      offset: 44
+      deref-count: 1301
+    vertexIdTranslate:
+      offset: 52
+      deref-count: 1301
+    threadLocal:
+      offset: 40
+      deref-count: 651
+  edu.cmu.graphchi.engine.auxdata.DegreeData:
+    degreeFile:
+      offset: 32
+      deref-count: 21
+  org.dacapo.harness.TeePrintStream:
+    out:
+      offset: 16
+      deref-count: 6
+  org.apache.commons.cli.Options:
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
+  org.dacapo.parser.ConfigFileTokenManager:
+    input_stream:
+      offset: 52
+      deref-count: 1836
+    image:
+      offset: 68
+      deref-count: 161
+    jjimage:
+      offset: 64
+      deref-count: 82
+    debugStream:
+      offset: 48
+      deref-count: 1
+  edu.cmu.graphchi.ChiFilenames:
+    vertexDataSuffix:
+      offset: 112
+      deref-count: 1
+  edu.cmu.graphchi.shards.MemoryShard:
+    index:
+      offset: 96
+      deref-count: 70
+    adjDataFilename:
+      offset: 64
+      deref-count: 50
+    dataBlockManager:
+      offset: 80
+      deref-count: 40
+    converter:
+      offset: 84
+      deref-count: 40
+    edgeDataFilename:
+      offset: 60
+      deref-count: 30
+    loadVerticesTimers:
+      offset: 92
+      deref-count: 20
+    loadAdjTimer:
+      offset: 88
+      deref-count: 20
+    logger:
+      offset: 112
+      deref-count: 1
+  edu.cmu.graphchi.engine.GraphChiEngine:
+    degreeHandler:
+      offset: 92
+      deref-count: 2850501
+    vertexDataConverter:
+      offset: 72
+      deref-count: 1425282
+    logger:
+      offset: 112
+      deref-count: 27531
+    chiContext:
+      offset: 76
+      deref-count: 715
+    parallelExecutor:
+      offset: 84
+      deref-count: 672
+    intervals:
+      offset: 60
+      deref-count: 65
+    edataConverter:
+      offset: 68
+      deref-count: 45
+    slidingShards:
+      offset: 64
+      deref-count: 41
+    blockManager:
+      offset: 80
+      deref-count: 33
+    baseFilename:
+      offset: 56
+      deref-count: 26
+    scheduler:
+      offset: 100
+      deref-count: 16
+    loadingExecutor:
+      offset: 88
+      deref-count: 12
+    determineNextWindowTimer:
+      offset: 128
+      deref-count: 11
+    initVerticesTimer:
+      offset: 124
+      deref-count: 11
+    loadTimer:
+      offset: 112
+      deref-count: 11
+    vertexDataHandler:
+      offset: 96
+      deref-count: 11
+    executionTimer:
+      offset: 116
+      deref-count: 11
+    vertexIdTranslate:
+      offset: 104
+      deref-count: 2
+    waitForFutureTimer:
+      offset: 120
+      deref-count: 1
+  com.yammer.metrics.core.Histogram:
+    variance:
+      offset: 28
+      deref-count: 141
+    count:
+      offset: 32
+      deref-count: 135
+    min:
+      offset: 16
+      deref-count: 108
+    max:
+      offset: 20
+      deref-count: 88
+    sum:
+      offset: 24
+      deref-count: 81
+    sample:
+      offset: 12
+      deref-count: 81
+  org.apache.commons.math.linear.RealVectorFormat:
+    trimmedSuffix:
+      offset: 28
+      deref-count: 1
+    trimmedPrefix:
+      offset: 24
+      deref-count: 1
+    trimmedSeparator:
+      offset: 32
+      deref-count: 1
+    prefix:
+      offset: 12
+      deref-count: 1
+    format:
+      offset: 36
+      deref-count: 1
+    suffix:
+      offset: 16
+      deref-count: 1
+    separator:
+      offset: 20
+      deref-count: 1
+  com.yammer.metrics.reporting.JmxReporter:
+    server:
+      offset: 20
+      deref-count: 15
+    registeredBeans:
+      offset: 16
+      deref-count: 8
+    INSTANCE:
+      offset: 116
+      deref-count: 2
+    LOGGER:
+      offset: 112
+      deref-count: 1
+  java.util.logging.Level:
+    SEVERE:
+      offset: 120
+      deref-count: 1
+  org.dacapo.parser.SimpleCharStream:
+    inputStream:
+      offset: 60
+      deref-count: 4
+  edu.cmu.graphchi.shards.ShardIndex:
+    indexFile:
+      offset: 12
+      deref-count: 30
+  com.yammer.metrics.stats.EWMA:
+    uncounted:
+      offset: 40
+      deref-count: 173418
+  com.yammer.metrics.reporting.JmxReporter$AbstractBean:
+    objectName:
+      offset: 12
+      deref-count: 7
+  javax.xml.bind.DatatypeConverterImpl:
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
+  com.yammer.metrics.core.Clock:
+    DEFAULT:
+      offset: 112
+      deref-count: 9
+  com.yammer.metrics.reporting.AbstractReporter:
+    metricsRegistry:
+      offset: 12
+      deref-count: 2
+  org.dacapo.harness.Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
+  org.dacapo.parser.Config$Size:
+    outputFiles:
+      offset: 32
+      deref-count: 42
+    this$0:
+      offset: 36
+      deref-count: 9
+    name:
+      offset: 20
+      deref-count: 3
+  org.dacapo.harness.Benchmark:
+    data:
+      offset: 24
+      deref-count: 176
+    datDeps:
+      offset: 52
+      deref-count: 172
+    stats:
+      offset: 56
+      deref-count: 48
+    config:
+      offset: 28
+      deref-count: 22
+    scratch:
+      offset: 20
+      deref-count: 8
+    err:
+      offset: 140
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    savedErr:
+      offset: 136
+      deref-count: 4
+    loader:
+      offset: 32
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    jarDeps:
+      offset: 48
+      deref-count: 3
+    savedClassLoader:
+      offset: 36
+      deref-count: 2
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    valRepFile:
+      offset: 116
+      deref-count: 1
+  org.apache.commons.cli.CommandLine:
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
+  com.yammer.metrics.core.MetricName:
+    mBeanName:
+      offset: 28
+      deref-count: 114
+    scope:
+      offset: 24
+      deref-count: 25
+    name:
+      offset: 20
+      deref-count: 25
+    type:
+      offset: 16
+      deref-count: 25
+    group:
+      offset: 12
+      deref-count: 25
+  edu.cmu.graphchi.ChiVertex$Edge:
+    dataPtr:
+      offset: 16
+      deref-count: 22000000
+    this$0:
+      offset: 20
+      deref-count: 11000000
+  org.apache.commons.cli.PosixParser:
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
+  edu.cmu.graphchi.preprocessing.FastSharder:
+    edgeValueTypeBytesToValueConverter:
+      offset: 64
+      deref-count: 3
+    vertexValueTypeBytesToValueConverter:
+      offset: 68
+      deref-count: 3
+    baseFilename:
+      offset: 36
+      deref-count: 3
+    edgeProcessor:
+      offset: 72
+      deref-count: 1
+    random:
+      offset: 116
+      deref-count: 1
+    preIdTranslate:
+      offset: 40
+      deref-count: 1
+    logger:
+      offset: 112
+      deref-count: 1
+    vertexProcessor:
+      offset: 76
+      deref-count: 1
+  com.yammer.metrics.core.Meter:
+    m15Rate:
+      offset: 28
+      deref-count: 57806
+    m5Rate:
+      offset: 24
+      deref-count: 57806
+    m1Rate:
+      offset: 12
+      deref-count: 57806
+    count:
+      offset: 32
+      deref-count: 67
+    clock:
+      offset: 48
+      deref-count: 14
+    future:
+      offset: 44
+      deref-count: 7
+    rateUnit:
+      offset: 36
+      deref-count: 7
+    eventType:
+      offset: 40
+      deref-count: 7
+  com.yammer.metrics.core.Meter$1:
+    this$0:
+      offset: 12
+      deref-count: 57746
+  com.yammer.metrics.reporting.JmxReporter$Timer:
+    metric:
+      offset: 20
+      deref-count: 7
+  org.apache.commons.cli.Option:
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
+  edu.cmu.graphchi.shards.SlidingShard:
+    curBlock:
+      offset: 76
+      deref-count: 17484862
+    adjFile:
+      offset: 84
+      deref-count: 3824815
+    activeBlocks:
+      offset: 72
+      deref-count: 72
+    blockManager:
+      offset: 68
+      deref-count: 32
+    adjDataFilename:
+      offset: 64
+      deref-count: 22
+    converter:
+      offset: 80
+      deref-count: 14
+    edgeDataFilename:
+      offset: 60
+      deref-count: 12
+    logger:
+      offset: 112
+      deref-count: 1
+  org.dacapo.harness.LatencyReporter:
+    callback:
+      offset: 132
+      deref-count: 2
+    globalIdx:
+      offset: 124
+      deref-count: 1
+  org.dacapo.harness.TestHarness:
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 10
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
+  edu.cmu.graphchi.datablocks.DataBlockManager:
+    blocks:
+      offset: 12
+      deref-count: 11000180
+  org.apache.commons.math.linear.AbstractRealMatrix:
+    lu:
+      offset: 12
+      deref-count: 1354700
+  org.slf4j.impl.StaticLoggerBinder:
+    SINGLETON:
+      offset: 112
+      deref-count: 3
+    REQUESTED_API_VERSION:
+      offset: 116
+      deref-count: 2
+    loggerFactory:
+      offset: 12
+      deref-count: 2
+    loggerFactoryClassStr:
+      offset: 120
+      deref-count: 1
+  edu.cmu.graphchi.shards.SlidingShard$Block:
+    this$0:
+      offset: 36
+      deref-count: 30
+    blockFileName:
+      offset: 32
+      deref-count: 20
+  org.dacapo.parser.Config:
+    sizes:
+      offset: 24
+      deref-count: 53
+    threadModel:
+      offset: 20
+      deref-count: 13
+    desc:
+      offset: 28
+      deref-count: 9
+    name:
+      offset: 12
+      deref-count: 5
+    className:
+      offset: 16
+      deref-count: 4
+  java.io.File:
+    separator:
+      offset: 116
+      deref-count: 2
+  org.slf4j.helpers.SubstituteLoggerFactory:
+    loggerNameList:
+      offset: 12
+      deref-count: 3
+  java.util.concurrent.TimeUnit:
+    MILLISECONDS:
+      offset: 120
+      deref-count: 136
+    NANOSECONDS:
+      offset: 112
+      deref-count: 60
+    SECONDS:
+      offset: 124
+      deref-count: 53
+    MINUTES:
+      offset: 128
+      deref-count: 25
+    HOURS:
+      offset: 132
+      deref-count: 1
+  org.slf4j.helpers.NOPLogger:
+    NOP_LOGGER:
+      offset: 112
+      deref-count: 2
+  com.yammer.metrics.reporting.JmxReporter$Context:
+    objectName:
+      offset: 16
+      deref-count: 21
+    metricName:
+      offset: 12
+      deref-count: 14
+  org.dacapo.parser.Token:
+    next:
+      offset: 36
+      deref-count: 284
+    image:
+      offset: 32
+      deref-count: 134
+    specialToken:
+      offset: 40
+      deref-count: 81
+  com.yammer.metrics.Metrics:
+    DEFAULT_REGISTRY:
+      offset: 112
+      deref-count: 27
+    SHUTDOWN_HOOK:
+      offset: 116
+      deref-count: 2
+  org.dacapo.harness.CommandLineArgs:
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
+  org.dacapo.harness.Callback$Mode:
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
+  com.yammer.metrics.core.Histogram$SampleType:
+    BIASED:
+      offset: 116
+      deref-count: 9
+    UNIFORM:
+      offset: 112
+      deref-count: 2
 opcodes:
   aconst_null: 10356603
   iconst_m1: 47
@@ -650,50 +913,50 @@ opcodes:
   iconst_3: 43049313
   iconst_4: 31673429
   iconst_5: 3
-  lconst_0: 146368
+  lconst_0: 173437
   lconst_1: 61
   dconst_0: 258393293
   dconst_1: 27094005
   bipush: 23928488043
   sipush: 80178159
-  ldc: 2757169
-  iload: 91771782894
-  lload: 80612191
+  ldc: 2765771
+  iload: 91771782901
+  lload: 80639523
   fload: 202000000
-  dload: 5029690523
-  aload: 46625946005
+  dload: 5029717592
+  aload: 46626163489
   iaload: 40503415
   daload: 14502431168
   aaload: 5753173261
   baload: 76795457
   istore: 15231591379
-  lstore: 41091071
+  lstore: 41118170
   fstore: 11000000
-  dstore: 876607666
-  astore: 691219481
+  dstore: 876634735
+  astore: 691219839
   iastore: 30003695
   dastore: 5540963382
   aastore: 2779956
-  pop: 2498970
+  pop: 2499115
   pop2: 360
-  dup: 46867932
+  dup: 46899330
   dup_x1: 1
   dup2: 2628118000
   iadd: 9839389737
-  ladd: 29945348
-  dadd: 2365017696
+  ladd: 29945378
+  dadd: 2365044765
   isub: 19160034466
-  lsub: 322
-  dsub: 2592853512
+  lsub: 467
+  dsub: 2592880581
   imul: 23911069594
   lmul: 38094161
-  dmul: 5196340723
+  dmul: 5196368082
   idiv: 9550869041
   ldiv: 38094017
-  ddiv: 81428263
+  ddiv: 81455332
   irem: 7502192
   lrem: 38094006
-  dneg: 125
+  dneg: 270
   ishl: 57596430
   lushr: 120
   iand: 75624350
@@ -701,20 +964,20 @@ opcodes:
   ior: 7493490
   lxor: 1
   iinc: 5726148739
-  i2l: 144227348
+  i2l: 144227378
   i2d: 27094000
   l2i: 87188223
-  l2d: 146588
+  l2d: 173802
   f2d: 202000000
   lcmp: 1425604
   dcmpl: 257393061
   dcmpg: 27094000
-  ifeq: 41871541
+  ifeq: 41898822
   ifne: 35718432
   iflt: 39075256
   ifge: 28136142
   ifgt: 5207305
-  ifle: 264131605
+  ifle: 264140203
   if_icmpeq: 2354722
   if_icmpne: 4774812032
   if_icmplt: 15102610
@@ -723,33 +986,33 @@ opcodes:
   if_icmple: 293688574
   if_acmpeq: 18
   if_acmpne: 18
-  goto: 13060478678
+  goto: 13060514524
   tableswitch: 1
   ireturn: 4877700937
-  lreturn: 495
+  lreturn: 555
   dreturn: 2614581060
-  areturn: 91832686
-  return: 2678363088
-  getstatic: 78812540
+  areturn: 91832690
+  return: 2678408293
+  getstatic: 78816899
   putstatic: 80
-  getfield: 24058561572
-  putfield: 113589783
-  invokevirtual: 251060038
-  invokespecial: 4854981279
-  invokestatic: 1143881212
-  invokeinterface: 5254567849
-  new: 36572566
+  getfield: 24058760897
+  putfield: 113616882
+  invokevirtual: 251158363
+  invokespecial: 4854985732
+  invokestatic: 1143881532
+  invokeinterface: 5254568169
+  new: 36576895
   newarray: 20765297
   anewarray: 1354720
   arraylength: 54843558
   athrow: 5
-  checkcast: 26710067
+  checkcast: 26710357
   instanceof: 1000020
   monitorenter: 963
   monitorexit: 963
   multianewarray: 1354700
   ifnull: 52019250
-  ifnonnull: 28350741# sun/launcher/LauncherHelper
+  ifnonnull: 28350745# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -798,6 +1061,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -832,9 +1097,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
-# java/security/PrivilegedActionException
 # java/util/zip/ZipException
 # java/nio/file/ProviderMismatchException
+# java/security/PrivilegedActionException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -1009,6 +1274,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -1023,6 +1289,7 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
+# java/util/Formatter
 # jdk/internal/foreign/MemorySessionImpl
 # java/lang/foreign/MemorySegment$Scope
 # java/io/BufferedReader$1
@@ -1218,10 +1485,15 @@ opcodes:
 # java/util/logging/Handler$1
 # java/util/logging/StreamHandler$1
 # java/io/StringWriter
+# java/text/MessageFormat
+# java/text/Format
 # java/util/random/RandomGenerator
 # java/util/Random
 # java/lang/InterruptedException
 # java/util/concurrent/Callable
+# java/util/concurrent/FutureTask
+# java/util/concurrent/RunnableFuture
+# java/util/concurrent/Future
 # java/lang/Thread$ThreadNumbering
 # java/util/EventListener
 # javax/management/InstanceNotFoundException
@@ -1229,6 +1501,8 @@ opcodes:
 # javax/management/JMException
 # javax/management/MBeanRegistrationException
 # javax/management/MBeanException
+# javax/management/MBeanServer
+# javax/management/MBeanServerConnection
 # java/lang/management/ManagementFactory
 # javax/management/MBeanServerFactory
 # com/sun/jmx/mbeanserver/GetPropertyAction
@@ -1236,8 +1510,6 @@ opcodes:
 # java/lang/Class$1
 # com/sun/jmx/mbeanserver/JmxMBeanServer
 # com/sun/jmx/mbeanserver/SunJmxMBeanServer
-# javax/management/MBeanServer
-# javax/management/MBeanServerConnection
 # com/sun/jmx/mbeanserver/MBeanServerDelegateImpl
 # javax/management/DynamicMBean
 # javax/management/MBeanRegistration
@@ -1368,9 +1640,6 @@ opcodes:
 # com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$IdentityMapping
 # com/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$NonNullMXBeanMapping
 # com/sun/jmx/mbeanserver/MXBeanMapping
-# java/lang/invoke/DirectMethodHandle$StaticAccessor
-# jdk/internal/reflect/MethodHandleFieldAccessorImpl
-# jdk/internal/reflect/MethodHandleObjectFieldAccessorImpl
 # javax/management/openmbean/ArrayType
 # com/sun/jmx/mbeanserver/MBeanAnalyzer$AttrMethods
 # sun/reflect/generics/scope/MethodScope
@@ -1568,7 +1837,6 @@ opcodes:
 # jdk/jfr/internal/util/Tokenizer
 # jdk/jfr/internal/query/ViewFile$ViewConfiguration
 # jdk/jfr/internal/util/Columnizer$Column
-# java/util/Formatter
 # java/util/regex/Pattern$Ques
 # java/util/regex/Pattern$BranchConn
 # java/util/regex/Pattern$Branch
@@ -1662,9 +1930,9 @@ opcodes:
 # jdk/jfr/FlightRecorder
 # javax/management/NotificationListener
 # javax/management/NotificationFilter
-# javax/management/ListenerNotFoundException
 # jdk/management/jfr/FlightRecorderMXBeanImpl$MXBeanListener
 # jdk/jfr/FlightRecorderListener
+# javax/management/ListenerNotFoundException
 # java/util/concurrent/Executors
 # java/util/concurrent/ScheduledThreadPoolExecutor
 # java/util/concurrent/ScheduledExecutorService
@@ -1676,8 +1944,6 @@ opcodes:
 # java/util/concurrent/BlockingQueue
 # java/util/AbstractQueue
 # java/util/concurrent/RunnableScheduledFuture
-# java/util/concurrent/RunnableFuture
-# java/util/concurrent/Future
 # java/util/concurrent/ScheduledFuture
 # java/util/concurrent/Delayed
 # jdk/internal/vm/StackableScope
@@ -1698,7 +1964,6 @@ opcodes:
 # java/util/concurrent/ConcurrentSkipListMap$Node
 # java/util/concurrent/atomic/AtomicReference
 # java/util/concurrent/ScheduledThreadPoolExecutor$ScheduledFutureTask
-# java/util/concurrent/FutureTask
 # java/lang/invoke/VarHandleInts$FieldInstanceReadWrite
 # java/lang/invoke/VarHandleInts$FieldInstanceReadOnly
 # java/util/concurrent/FutureTask$WaitNode
@@ -1727,9 +1992,7 @@ opcodes:
 # java/lang/invoke/VarHandleLongs$FieldInstanceReadOnly
 # java/lang/invoke/VarHandleLongs$FieldInstanceReadWrite
 # java/util/concurrent/atomic/Striped64$1
-# sun/misc/Unsafe
 # java/lang/ArrayIndexOutOfBoundsException
-# java/text/Format
 # java/text/ParseException
 # java/text/NumberFormat
 # java/util/spi/LocaleServiceProvider
@@ -1792,6 +2055,7 @@ opcodes:
 # java/security/GeneralSecurityException
 # sun/security/provider/SHA
 # sun/security/provider/ByteArrayAccess$BE
+# java/util/function/ToLongFunction
 # java/util/Collections$ReverseComparator
 # java/util/Comparators$NaturalOrderComparator
 # java/util/Collections$ReverseComparator2
