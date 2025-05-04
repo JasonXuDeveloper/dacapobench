@@ -1,2095 +1,3721 @@
 # These statistics can be generated from a dacapo release using a command line like:
 #    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 1003
-transformed-classes: 826
-transformed-bytecodes: 269631
-executed-bytecodes: 1461078635
-executed-bytecodes-unique: 34964
+skipped-classes: 1005
+transformed-classes: 855
+transformed-bytecodes: 281403
+executed-bytecodes: 1461081568
+executed-bytecodes-unique: 35238
 executed-bytecodes-p90: 542
 executed-bytecodes-p99: 1463014
 executed-bytecodes-p999: 3145728
 executed-bytecodes-p9999: 7259706
-executed-calls: 80218400
-executed-calls-unique: 4256
+executed-calls: 80218771
+executed-calls-unique: 4306
 field-dereference-counts:
-  org/dacapo/harness/TestHarness:
-    commandLineArgs: 15
-    config: 14
-    BuildVersion: 4
-    BuildNickName: 1
-  com/jme3/scene/shape/Box:
-    GEOMETRY_INDICES_DATA: 2
-    GEOMETRY_NORMALS_DATA: 2
-    GEOMETRY_TEXTURE_DATA: 2
-  com/jme3/texture/Texture$ShadowCompareMode:
-    Off: 26
-    GreaterOrEqual: 2
-    LessOrEqual: 2
-    $VALUES: 1
-  org/apache/commons/cli/PosixParser:
-    tokens: 6
-    eatTheRest: 4
-    options: 3
-    currentOption: 1
-  org/dacapo/harness/Data:
-    DEFAULT_LOCAL_DACAPO_CONFIG: 2
-    DACAPO_CHECKSUM_RE_PATH: 1
-    WORKING_DIRE: 1
-  com/jme3/renderer/queue/RenderQueue:
-    guiList: 2
-    opaqueList: 2
-    skyList: 2
-    translucentList: 2
-    transparentList: 2
-    $assertionsDisabled: 1
-  com/jme3/scene/VertexBuffer$Usage:
-    CpuOnly: 2
-    Dynamic: 2
-    Static: 2
-    Stream: 2
-    $VALUES: 1
-  com/jme3/app/state/ConstantVerifierState:
-    $assertionsDisabled: 10401
-    errorType: 10401
-    checkers: 402
-    DEFAULT_CHECKS: 2
-    log: 1
-  com/jme3/texture/image/ByteOffsetImageCodec:
-    redPos: 524297
-    bpp: 524288
-    alphaPos: 262153
-    bluePos: 262153
-    greenPos: 262153
-  org/apache/commons/cli/Option:
-    longOption: 222
-    option: 162
-    values: 71
-    description: 62
-    required: 62
-    argCount: 54
-    type: 31
-    valuesep: 18
-    argName: 14
-  com/jme3/scene/VertexBuffer:
-    data: 479181
-    instanceSpan: 2245
-    bufType: 1632
-    lastLimit: 1236
-    components: 1229
-    usage: 1192
-    componentsLength: 816
-    id: 812
-    dataSizeChanged: 424
-    normalized: 410
-    format: 408
-    offset: 408
-    stride: 408
-  com/jme3/texture/plugins/AWTLoader:
-    AWT_RGBA4444: 1
-    AWT_RGBA5551: 1
-  com/jme3/scene/VertexBuffer$Format:
-    componentSize: 426
-    UnsignedShort: 68
-    UnsignedByte: 4
-    UnsignedInt: 4
-    $VALUES: 3
-    Byte: 3
-    Double: 3
-    Float: 3
-    Half: 3
-    Int: 3
-    Short: 3
-  com/jme3/util/ReflectionAllocator:
-    viewedBufferMethod: 4
-    cleanMethod: 2
-    cleanerMethod: 2
-    freeMethod: 1
-  com/jme3/light/LightList:
-    listSize: 1513
-    list: 1352
-    distToOwner: 648
-    owner: 193
-    c: 1
-  jme3test/awt/TestAwtPanels:
-    panelsAreReady: 1
-    panelsClosed: 1
-  com/jme3/effect/ParticleMesh$Type:
-    Point: 3
-    Triangle: 2
-    $VALUES: 1
-  com/jme3/scene/Geometry:
-    mesh: 304767
-    cachedWorldMat: 601
-    worldTransform: 534
-    ignoreTransform: 337
-    worldBound: 335
-    groupNode: 266
-    worldLights: 202
-    nbSimultaneousGPUMorph: 138
-    dirtyMorph: 69
-    lodLevel: 69
-    material: 69
-    startIndex: 69
-    $assertionsDisabled: 1
-    logger: 1
-  com/jme3/util/ListMap:
-    backingMap: 111
-    entries: 63
-    $assertionsDisabled: 1
-  com/jme3/app/state/AbstractAppState:
-    enabled: 4804
-    initialized: 8
-    id: 4
-  jme3test/water/TestMultiPostWater:
-    assetManager: 13
-    lightDir: 5
-    rootNode: 4
-    cam: 3
-    flyCam: 1
-    viewPort: 1
-  com/jme3/util/ListSort:
-    length: 10
-    minGallop: 10
-    nbRuns: 10
-    runsIndices: 10
-    runsLength: 10
-  com/jme3/input/InputManager$Mapping:
-    listeners: 54
-    triggers: 38
-    name: 18
-  com/jme3/input/controls/MouseAxisTrigger:
-    mouseAxis: 12
-    negative: 12
-    $assertionsDisabled: 7
-  com/jme3/scene/shape/Quad:
-    height: 2
-    width: 2
-  com/jme3/post/FilterPostProcessor:
-    filters: 13
-    lastFilterIndex: 10
-    viewPort: 6
-    FPP: 1
-    assetManager: 1
-    cameraInit: 1
-    computeDepth: 1
-    depthFormat: 1
-    fbFormat: 1
-    multiView: 1
-    numSamples: 1
-  com/jme3/asset/plugins/UrlAssetInfo:
-    in: 68
-    url: 17
-  com/jme3/util/blockparser/BlockLanguageParser:
-    reader: 15429
-    lineNumber: 1416
-    statementStack: 844
-    lastStatement: 747
-  com/jme3/font/Rectangle:
-    x: 36
-    y: 6
-    height: 1
-    width: 1
-  com/jme3/util/blockparser/Statement:
-    contents: 750
-    line: 738
-    lineNumber: 353
-  com/jme3/shader/DefineList:
-    values: 25
-    $assertionsDisabled: 3
-    isSet: 3
-  jme3test/network/MovingAverage:
-    samples: 1
-  org/dacapo/parser/Config$ThreadModel:
-    SINGLE: 10
-    PER_CPU: 4
-    FIXED: 3
-    description: 3
-    $VALUES: 2
-  com/jme3/bounding/BoundingBox$1:
-    $SwitchMap$com$jme3$bounding$BoundingVolume$Type: 136
-  jme3test/TestChooser$2:
-    val$appClass: 2
-    this$0: 1
-  jme3test/TestChooser$3:
-    this$0: 1
-  com/jme3/renderer/ViewPort:
-    clearColor: 4
-    clearDepth: 4
-    clearStencil: 4
-    sceneList: 4
-    processors: 3
-    backColor: 2
-    cam: 2
-    enabled: 2
-    name: 2
-    out: 2
-    queue: 2
-  com/jme3/light/Light:
-    color: 2
-    enabled: 1
-    frustumCheckNeeded: 1
-    intersectsFrustum: 1
-    lastDistance: 1
-  com/jme3/system/AppSettings:
-    defaults: 30
-  com/jme3/scene/Mesh$1:
-    $SwitchMap$com$jme3$scene$VertexBuffer$Format: 10
-    $SwitchMap$com$jme3$scene$Mesh$Mode: 9
-  org/dacapo/harness/Callback$Mode:
-    TIMING: 2
-    WARMUP: 2
-    $VALUES: 1
-  jme3test/opencl/TestWriteToTexture:
-    LOG: 1
-  com/jme3/terrain/heightmap/ImageBasedHeightMap:
-    backwardsCompScale: 262145
-    heightData: 262145
-    heightScale: 262145
-    colorImage: 4
-    size: 1
-  com/jme3/system/JmeSystem:
-    systemDelegate: 42
-    logger: 1
-  com/jme3/input/dummy/DummyMouseInput:
-    inited: 1
-  com/jme3/asset/ImplHandler:
-    classToLoaderMap: 79
-    parentAssetKey: 63
-    extensionToLoaderMap: 57
-    locatorsList: 36
-    classToCacheMap: 27
-    assetManager: 18
-    classToProcMap: 17
-    logger: 1
-  com/jme3/util/clone/Cloner:
-    functions: 119
-    index: 95
-    log: 43
-    methodCache: 23
-  com/jme3/scene/Spatial$CullHint:
-    Never: 8
-    Always: 2
-    Dynamic: 2
-    Inherit: 2
-    $VALUES: 1
-  com/jme3/light/WeightedProbeBlendingStrategy:
-    lightProbes: 1
-  com/jme3/system/Platform$Os:
-    Android: 8
-    MacOS: 7
-    Linux: 6
-    Windows: 6
-    iOS: 4
-    $VALUES: 1
-  com/jme3/texture/plugins/PFMLoader:
-    logger: 1
-  com/jme3/material/RenderState$BlendFunc:
-    One: 62
-    Dst_Alpha: 2
-    Dst_Color: 2
-    One_Minus_Dst_Alpha: 2
-    One_Minus_Dst_Color: 2
-    One_Minus_Src_Alpha: 2
-    One_Minus_Src_Color: 2
-    Src_Alpha: 2
-    Src_Alpha_Saturate: 2
-    Src_Color: 2
-    Zero: 2
-    $VALUES: 1
-  com/jme3/texture/Image:
-    needGeneratedMips: 55
-    colorSpace: 48
-    data: 46
-    mipMapSizes: 35
-    mipsWereGenerated: 23
-    height: 14
-    width: 14
-    format: 13
-    lastTextureState: 12
-    multiSamples: 12
-    depth: 1
-  com/jme3/math/Matrix4f:
-    m00: 8219
-    m11: 8219
-    m22: 8219
-    m02: 8217
-    m12: 8217
-    m01: 8215
-    m10: 8215
-    m20: 8215
-    m21: 8215
-    m32: 6754
-    m30: 6752
-    m31: 6752
-    m23: 6623
-    m03: 6621
-    m13: 6621
-    m33: 6490
-    IDENTITY: 2
-    ZERO: 2
-    logger: 1
-  com/jme3/math/Eigen3f:
-    eigenValues: 3
-    eigenVectors: 3
-    ROOT_THREE_DOUBLE: 1
-    logger: 1
-  com/jme3/app/DebugKeysAppState:
-    inputManager: 4
-    keyListener: 2
-    app: 1
-  com/jme3/asset/ImplHandler$ImplThreadLocal:
-    path: 32
-    type: 31
-    extensions: 26
-  com/jme3/terrain/geomipmap/picking/BresenhamYUpGridTracer$Direction:
-    None: 23
-    NegativeX: 2
-    NegativeY: 2
-    NegativeZ: 2
-    PositiveX: 2
-    PositiveY: 2
-    PositiveZ: 2
-    $VALUES: 1
-  com/jme3/system/JmeSystem$StorageFolderType:
-    $VALUES: 2
-    External: 2
-    Internal: 2
-  com/jme3/util/ListMap$ListMapEntry:
-    key: 26
-    value: 26
-  com/jme3/water/WaterFilter$AreaShape:
-    Circular: 5
-    Square: 2
-    $VALUES: 1
-  org/dacapo/parser/SimpleCharStream:
-    bufpos: 7560
-    column: 4021
-    inBuf: 1756
-    bufcolumn: 1500
-    bufline: 1500
-    buffer: 1410
-    line: 1385
-    prevCharIsLF: 1384
-    maxNextCharInd: 1335
-    prevCharIsCR: 1297
-    tokenBegin: 798
-    bufsize: 52
-    tabSize: 7
-    available: 5
-    inputStream: 4
-    trackLineColumn: 1
-  com/jme3/collision/CollisionResults:
-    results: 3
-    sorted: 3
-  com/jme3/renderer/IDList:
-    newLen: 1
-    newList: 1
-    oldLen: 1
-    oldList: 1
-  org/dacapo/harness/LatencyReporter:
-    idx: 2001
-    callback: 1606
-    next_idx: 1601
-    txend: 1201
-    reporters: 803
-    stride: 802
-    timerBase: 802
-    txbegin: 802
-    globalIdx: 402
-    id: 401
-    txowner: 401
-    max: 1
-    requestsFinished: 1
-    requestsStarted: 1
-  java/util/concurrent/TimeUnit:
-    SECONDS: 1
-  jme3test/scene/instancing/TestInstanceNodeWithLight:
-    offset: 1
-  com/jme3/system/Platform:
-    is64bit: 21
-    os: 21
-    Linux32: 11
-    Linux64: 11
-    MacOSX32: 11
-    MacOSX64: 11
-    Windows32: 11
-    Windows64: 11
-    Linux_ARM32: 3
-    Linux_ARM64: 3
-    MacOSX_ARM64: 3
-    Android_ARM5: 2
-    Android_ARM6: 2
-    Android_ARM7: 2
-    Android_ARM8: 2
-    Android_Other: 2
-    Android_X86: 2
-    MacOSX_PPC32: 2
-    MacOSX_PPC64: 2
-    Windows_ARM32: 2
-    Windows_ARM64: 2
-    iOS_ARM: 2
-    iOS_X86: 2
-    $VALUES: 1
-  com/jme3/input/controls/MouseButtonTrigger:
-    $assertionsDisabled: 2
-    mouseButton: 2
-  com/jme3/texture/Texture$MinFilter:
-    usesMipMapLevels: 30
-    BilinearNoMipMaps: 16
-    BilinearNearestMipMap: 2
-    NearestLinearMipMap: 2
-    NearestNearestMipMap: 2
-    NearestNoMipMaps: 2
-    Trilinear: 2
-    $VALUES: 1
-  jme3test/bullet/TestIssue1125:
-    logger: 1
-  com/jme3/app/FlyCamAppState:
-    flyCam: 3
-    app: 1
-  com/jme3/material/plugins/J3MLoader$1:
-    $SwitchMap$com$jme3$shader$VarType: 10
-    $SwitchMap$com$jme3$material$TechniqueDef$LightMode: 6
-  com/jme3/material/RenderState$FaceCullMode:
-    Back: 17
-    Off: 3
-    $VALUES: 2
-    Front: 2
-    FrontAndBack: 2
-  com/jme3/renderer/Statistics:
-    fbosUsed: 801
-    shadersUsed: 801
-    texturesUsed: 801
-    numFboSwitches: 800
-    numObjects: 800
-    numShaderSwitches: 800
-    numTextureBinds: 800
-    numTriangles: 800
-    numUniformsSet: 800
-    numVertices: 800
-    lastShader: 401
-    memoryFrameBuffers: 400
-    memoryShaders: 400
-    memoryTextures: 400
-    enabled: 3
-    $assertionsDisabled: 1
-  com/jme3/texture/Image$Format:
-    bpp: 89
-    isFloatingPoint: 34
-    isCompressed: 19
-    isDepth: 19
-    BGR8: 10
-    ABGR8: 5
-    Luminance8: 5
-    RGB5A1: 4
-    RGBA8: 4
-    ARGB8: 3
-    Alpha8: 3
-    BGRA8: 3
-    Depth: 3
-    Luminance16F: 3
-    Luminance16FAlpha16F: 3
-    Luminance32F: 3
-    Luminance8Alpha8: 3
-    RGB10A2: 3
-    RGB111110F: 3
-    RGB16F: 3
-    RGB16F_to_RGB111110F: 3
-    RGB16F_to_RGB9E5: 3
-    RGB32F: 3
-    RGB565: 3
-    RGB8: 3
-    RGBA16F: 3
-    RGBA32F: 3
-    $VALUES: 2
-    BC6H_SF16: 2
-    BC6H_UF16: 2
-    BC7_UNORM: 2
-    BC7_UNORM_SRGB: 2
-    DXT1: 2
-    DXT1A: 2
-    DXT3: 2
-    DXT5: 2
-    Depth16: 2
-    Depth24: 2
-    Depth24Stencil8: 2
-    Depth32: 2
-    Depth32F: 2
-    ETC1: 2
-    R16F: 2
-    R16I: 2
-    R16UI: 2
-    R32F: 2
-    R32I: 2
-    R32UI: 2
-    R8I: 2
-    R8UI: 2
-    RG16F: 2
-    RG16I: 2
-    RG16UI: 2
-    RG32F: 2
-    RG32I: 2
-    RG32UI: 2
-    RG8I: 2
-    RG8UI: 2
-    RGB16I: 2
-    RGB16UI: 2
-    RGB32I: 2
-    RGB32UI: 2
-    RGB8I: 2
-    RGB8UI: 2
-    RGB9E5: 2
-    RGBA16I: 2
-    RGBA16UI: 2
-    RGBA32I: 2
-    RGBA32UI: 2
-    RGBA8I: 2
-    RGBA8UI: 2
-    RGTC1: 2
-    RGTC2: 2
-    Reserved1: 2
-    Reserved10: 2
-    Reserved11: 2
-    Reserved12: 2
-    Reserved2: 2
-    Reserved3: 2
-    Reserved4: 2
-    Reserved5: 2
-    Reserved6: 2
-    Reserved7: 2
-    Reserved8: 2
-    Reserved9: 2
-    SIGNED_RGTC1: 2
-    SIGNED_RGTC2: 2
-  com/jme3/math/Matrix3f:
-    m00: 551
-    m01: 551
-    m02: 551
-    m10: 551
-    m11: 551
-    m12: 551
-    m20: 551
-    m21: 551
-    m22: 551
-    IDENTITY: 2
-    ZERO: 2
-    logger: 1
-  com/jme3/math/Transform:
-    scale: 45152
-    rot: 1856
-    translation: 1635
-    IDENTITY: 1
-  com/jme3/system/NanoTimer:
-    startTime: 7338
-    tpf: 2000
-    frameCount: 1200
-    previousTime: 801
-    fps: 400
-  com/jme3/texture/plugins/HDRLoader:
-    $assertionsDisabled: 1
-    logger: 1
-  com/jme3/util/TempVars$TempVarsStack:
-    index: 13559
-    tempVars: 4523
-  com/jme3/system/JmeVersion:
-    props: 11
-    FULL_NAME: 3
-    BRANCH_NAME: 2
-    BUILD_DATE: 2
-    GIT_SHORT_HASH: 2
-    GIT_HASH: 1
-    GIT_TAG: 1
-    VERSION_FULL: 1
-    VERSION_NUMBER: 1
-    VERSION_TAG: 1
-    logger: 1
-  com/jme3/texture/Texture2D:
-    wrapS: 19
-    wrapT: 19
-  com/jme3/math/Quaternion:
-    x: 15981
-    y: 15714
-    z: 15447
-    w: 13258
-    IDENTITY: 195
-    DIRECTION_Z: 3
-    ZERO: 2
-    logger: 1
-  com/jme3/util/SafeArrayList:
-    size: 39854
-    backingArray: 24375
-    buffer: 6312
-    elementType: 1042
-  com/jme3/terrain/geomipmap/LODGeomap$VerboseBuffer:
-    count: 1625408
-    delegate: 541888
-    this$0: 64
-  com/jme3/scene/Mesh$Mode:
-    TriangleStrip: 67
-    listMode: 18
-    LineLoop: 3
-    LineStrip: 3
-    Lines: 3
-    Patch: 3
-    Points: 3
-    TriangleFan: 3
-    Triangles: 3
-    $VALUES: 2
-    Hybrid: 2
-  com/jme3/util/BufferUtils:
-    allocator: 835
-    trackDirectMemory: 835
-    removeCollected: 1
-    trackedBuffers: 1
-  com/jme3/input/InputManager:
-    lastUpdateTime: 1201
-    eventsPermitted: 801
-    inputQueue: 801
-    keys: 801
-    mouse: 402
-    axisValues: 401
-    frameDelta: 401
-    joystick: 401
-    lastLastUpdateTime: 401
-    pressedButtons: 401
-    rawListeners: 401
-    safeMode: 401
-    touch: 401
-    frameTPF: 400
-    mappings: 53
-    bindings: 41
-    mouseVisible: 4
-    $assertionsDisabled: 1
-    cursorPos: 1
-    globalAxisDeadZone: 1
-    joystickConnectionListeners: 1
-    joysticks: 1
-    logger: 1
-  com/jme3/renderer/queue/RenderQueue$Bucket:
-    Gui: 4
-    Inherit: 2
-    Opaque: 2
-    Sky: 2
-    Translucent: 2
-    Transparent: 2
-    $VALUES: 1
-  org/apache/commons/cli/CommandLine:
-    options: 64
-    args: 5
-  com/jme3/asset/cache/WeakRefCloneAssetCache:
-    assetLoadStack: 27
-    smartCache: 26
-    refQueue: 25
-    logger: 1
-  com/jme3/util/BufferAllocatorFactory:
-    LOGGER: 1
-  com/jme3/texture/TextureCubeMap:
-    wrapR: 2
-    wrapS: 2
-    wrapT: 2
-  org/apache/commons/cli/Options:
-    shortOpts: 71
-    longOpts: 70
-    optionGroups: 4
-    requiredOpts: 3
-  com/jme3/texture/image/LastTextureState:
-    anisoFilter: 12
-    magFilter: 12
-    minFilter: 12
-    rWrap: 12
-    sWrap: 12
-    shadowCompareMode: 12
-    tWrap: 12
-  com/jme3/scene/plugins/ogre/MeshLoader:
-    $assertionsDisabled: 1
-    AUTO_INTERLEAVE: 1
-    TEXCOORD_TYPES: 1
-    logger: 1
-  com/jme3/app/LostFocusBehavior:
-    Disabled: 2
-    PauseOnLostFocus: 2
-    ThrottleOnLostFocus: 2
-    $VALUES: 1
-  com/jme3/app/state/AppStateManager:
-    app: 7207
-    states: 3239
-    initializing: 420
-    terminating: 401
-    stateIndex: 1
-  com/jme3/shader/VarType:
-    textureType: 147
-    usesMultiData: 36
-    glslType: 21
-    Boolean: 5
-    Int: 5
-    $VALUES: 3
-    Float: 3
-    Texture3D: 3
-    TextureArray: 3
-    TextureCubeMap: 3
-    Vector2: 3
-    Vector3: 3
-    Vector4: 3
-    BufferObject: 2
-    FloatArray: 2
-    IntArray: 2
-    Matrix3: 2
-    Matrix3Array: 2
-    Matrix4: 2
-    Matrix4Array: 2
-    Texture2D: 2
-    TextureBuffer: 2
-    Vector2Array: 2
-    Vector3Array: 2
-    Vector4Array: 2
-  com/jme3/asset/AssetKey:
-    name: 117
-    extension: 54
-    folder: 6
-  jme3test/bullet/TestQ3:
-    useHttp: 1
-  com/jme3/input/FlyByCamera:
-    moveSpeed: 3
-    dragToRotate: 2
-    enabled: 2
-    mappings: 2
-    cam: 1
-    canRotate: 1
-    initialUpVec: 1
-    inputManager: 1
-    invertY: 1
-    motionAllowed: 1
-    rotationSpeed: 1
-    zoomSpeed: 1
-  org/dacapo/parser/ConfigFileTokenManager:
-    jjnewStateCnt: 5676
-    jjround: 5238
-    curChar: 5156
-    jjstateSet: 3935
-    jjrounds: 3357
-    input_stream: 1894
-    jjmatchedKind: 1819
-    jjnextStates: 1531
-    jjmatchedPos: 891
-    jjimageLen: 236
-    image: 173
-    curLexState: 168
-    jjnewLexState: 168
-    jjtoToken: 162
-    jjimage: 88
-    jjstrLiteralImages: 88
-    jjtoSkip: 79
-    lengthOfMatch: 75
-    jjtoSpecial: 4
-    jjbitVec0: 2
-    debugStream: 1
-    defaultLexState: 1
-    jjbitVec2: 1
-    jjtoMore: 1
-    lexStateNames: 1
-  org/dacapo/parser/Config$OutputFile:
-    digest: 16
-    filter: 14
-    text: 14
-    bytes: 8
-    existence: 8
-    lines: 8
-    keep: 6
-    name: 6
-    this$0: 6
-  com/jme3/font/BitmapCharacter:
-    height: 879
-    width: 879
-    page: 599
-    x: 599
-    xAdvance: 599
-    xOffset: 599
-    y: 599
-    yOffset: 599
-    kerning: 582
-  com/jme3/material/RenderState$BlendEquationAlpha:
-    InheritColor: 17
-    Add: 2
-    Max: 2
-    Min: 2
-    ReverseSubtract: 2
-    Subtract: 2
-    $VALUES: 1
-  com/jme3/asset/cache/WeakRefCloneAssetCache$KeyRef:
-    clonedKey: 24
-  com/jme3/app/SimpleApplication:
-    prof: 2400
-    stateManager: 1206
-    renderManager: 1200
-    cam: 1198
-    guiNode: 805
-    rootNode: 802
-    framesToRender: 801
-    speed: 800
-    timer: 800
-    context: 403
-    dacapoRequestEnd: 401
-    dacapoRequestStart: 401
-    paused: 400
-    random: 400
-    inputManager: 4
-    actionListener: 3
-    flyCam: 3
-    dacapoRequestsFinished: 2
-    dacapoRequestsStarting: 2
-    guiFont: 2
-    assetManager: 1
-    fpsText: 1
-    guiViewPort: 1
-    showSettings: 1
-    viewPort: 1
-  com/jme3/material/RenderState$BlendMode:
-    Off: 17
-    Alpha: 5
-    AlphaAdditive: 4
-    $VALUES: 2
-    Additive: 2
-    AlphaSumA: 2
-    Color: 2
-    Custom: 2
-    Exclusion: 2
-    Modulate: 2
-    ModulateX2: 2
-    PremultAlpha: 2
-    Screen: 2
-  com/jme3/scene/plugins/ogre/SkeletonLoader:
-    $assertionsDisabled: 1
-    logger: 1
-  com/jme3/material/TechniqueDef$LightMode:
-    Disable: 35
-    MultiPass: 6
-    $VALUES: 3
-    SinglePass: 3
-    SinglePassAndImageBased: 3
-    StaticPass: 3
-    FixedPipeline: 2
-  com/jme3/scene/plugins/gltf/MaterialAdapter:
-    paramsMapping: 13
-  com/jme3/asset/cache/WeakRefCloneAssetCache$AssetRef:
-    asset: 13
-  com/jme3/font/BitmapText:
-    block: 839
-    needRefresh: 813
-    textPages: 25
-    letters: 17
-    font: 8
-  com/jme3/util/IntMap:
-    table: 485573
-    mask: 482066
-    capacity: 6810
-    size: 5318
-    threshold: 1157
-    loadFactor: 408
-  com/jme3/bounding/BoundingVolume$Type:
-    AABB: 315
-    Sphere: 4
-    $VALUES: 2
-    Capsule: 2
-  com/jme3/material/MaterialDef:
-    matParams: 290
-    techniques: 45
-    assetName: 14
-    logger: 4
-    assetManager: 3
-    name: 3
-  com/jme3/system/JmeSystemDelegate:
-    lowPermissions: 18
-    initialized: 1
-    logger: 1
-    softTextDialogInput: 1
-    storageFolders: 1
-  com/jme3/texture/Texture$Type:
-    TwoDimensional: 25
-    CubeMap: 5
-    ThreeDimensional: 3
-    TwoDimensionalArray: 3
-    $VALUES: 2
-  com/jme3/app/DebugKeysAppState$DebugKeyListener:
-    this$0: 1
-  jme3test/renderer/TestAlphaToCoverage:
-    $assertionsDisabled: 1
-  com/jme3/app/StatsView:
-    stringBuilder: 6001
-    statLabels: 5604
-    statData: 5601
-    statText: 405
-    statistics: 404
-    enabled: 403
-  jme3test/opencl/TestOpenCLLibraries:
-    LOG: 1
-  com/jme3/asset/cache/WeakRefCloneAssetCache$1:
-    this$0: 1
-  com/jme3/audio/AudioListenerState:
-    listener: 401
-    lastTpf: 400
-    camera: 1
-  com/jme3/terrain/geomipmap/picking/BresenhamTerrainPicker:
-    calcVec1: 21
-    gridTriA: 21
-    gridTriB: 21
-    multipleCollisions: 21
-    root: 21
-    tracer: 21
-    workRay: 21
-    worldPickRay: 21
-  com/jme3/app/state/ConstantVerifierState$ErrorType:
-    Assert: 4
-    Exception: 3
-    Log: 3
-    $VALUES: 2
-  com/jme3/material/RenderState$TestFunction:
-    Always: 32
-    LessOrEqual: 17
-    $VALUES: 2
-    Equal: 2
-    Greater: 2
-    GreaterOrEqual: 2
-    Less: 2
-    Never: 2
-    NotEqual: 2
-  com/jme3/material/TechniqueDef$LightSpace:
-    Legacy: 3
-    World: 3
-    View: 2
-    $VALUES: 1
-  com/jme3/util/SkyFactory$EnvMapType:
-    CubeMap: 4
-    EquirectMap: 3
-    SphereMap: 3
-    $VALUES: 2
-  com/jme3/math/Triangle:
-    pointa: 87
-    pointb: 87
-    pointc: 87
-  com/jme3/renderer/Caps:
-    $VALUES: 2
-    BinaryShader: 2
-    CoreProfile: 2
-    Depth24: 2
-    DepthTexture: 2
-    FloatColorBuffer: 2
-    FloatDepthBuffer: 2
-    FloatTexture: 2
-    FrameBuffer: 2
-    FrameBufferBlit: 2
-    FrameBufferMRT: 2
-    FrameBufferMultisample: 2
-    GLSL100: 2
-    GLSL110: 2
-    GLSL120: 2
-    GLSL130: 2
-    GLSL140: 2
-    GLSL150: 2
-    GLSL300: 2
-    GLSL310: 2
-    GLSL320: 2
-    GLSL330: 2
-    GLSL400: 2
-    GLSL410: 2
-    GLSL420: 2
-    GLSL430: 2
-    GLSL440: 2
-    GLSL450: 2
-    GeometryShader: 2
-    IntegerIndexBuffer: 2
-    IntegerTexture: 2
-    MeshInstancing: 2
-    Multisample: 2
-    NonPowerOfTwoTextures: 2
-    OpenGL20: 2
-    OpenGL21: 2
-    OpenGL30: 2
-    OpenGL31: 2
-    OpenGL32: 2
-    OpenGL33: 2
-    OpenGL40: 2
-    OpenGL41: 2
-    OpenGL42: 2
-    OpenGL43: 2
-    OpenGL44: 2
-    OpenGL45: 2
-    OpenGLES20: 2
-    OpenGLES30: 2
-    OpenGLES31: 2
-    OpenGLES32: 2
-    PackedDepthStencilBuffer: 2
-    PackedFloatColorBuffer: 2
-    PackedFloatTexture: 2
-    PartialNonPowerOfTwoTextures: 2
-    Reserved0: 2
-    Reserved1: 2
-    Rgba8: 2
-    SeamlessCubemap: 2
-    ShaderStorageBufferObject: 2
-    SharedExponentColorBuffer: 2
-    SharedExponentTexture: 2
-    Srgb: 2
-    TesselationShader: 2
-    TextureArray: 2
-    TextureBuffer: 2
-    TextureCompressionBPTC: 2
-    TextureCompressionETC1: 2
-    TextureCompressionETC2: 2
-    TextureCompressionRGTC: 2
-    TextureCompressionS3TC: 2
-    TextureFilterAnisotropic: 2
-    TextureMultisample: 2
-    UniformBufferObject: 2
-    UnpackRowLength: 2
-    VertexBufferArray: 2
-    VertexTextureFetch: 2
-  com/jme3/terrain/geomipmap/TerrainQuad:
-    children: 9486
-    quadrant: 4505
-    lastScale: 421
-    affectedAreaBBox: 409
-    stepScale: 273
-    offset: 189
-    neighbourFinder: 180
-    offsetAmount: 147
-    totalSize: 105
-    size: 102
-    maxLod: 21
-    patchSize: 21
-    picker: 21
-  com/jme3/asset/cache/SimpleAssetCache:
-    keyToAssetMap: 13
-  com/jme3/terrain/GeoMap:
-    width: 10564544
-    hdata: 4276544
-    height: 829312
-    $assertionsDisabled: 65
-    maxval: 64
-  org/dacapo/harness/JME:
-    args: 4
-    method: 2
-    config: 1
-    data: 1
-    loader: 1
-    scratch: 1
-  jme3test/opencl/TestContextSwitching:
-    LOG: 1
-  com/jme3/math/FastMath:
-    rand: 1
-  com/jme3/asset/DesktopAssetManager:
-    handler: 135
-    logger: 45
-    eventListeners: 38
-    classLoaders: 1
-  org/dacapo/parser/Token:
-    next: 294
-    kind: 234
-    image: 143
-    beginColumn: 87
-    beginLine: 87
-    endColumn: 87
-    endLine: 87
-    specialToken: 84
-  com/jme3/util/SkyFactory$1:
-    $SwitchMap$com$jme3$util$SkyFactory$EnvMapType: 4
-  org/dacapo/harness/TeePrintStream:
-    out: 6
-  com/jme3/bounding/BoundingBox:
-    center: 8218
-    xExtent: 2853
-    yExtent: 2853
-    zExtent: 2853
-    $assertionsDisabled: 421
-    checkPlane: 48
-  com/jme3/scene/VertexBuffer$Type:
-    Position: 217049
-    Normal: 86803
-    Binormal: 86798
-    Tangent: 86798
-    InstanceData: 410
-    TexCoord: 207
-    Index: 78
-    Color: 11
-    TexCoord2: 3
-    TexCoord3: 3
-    TexCoord4: 3
-    TexCoord5: 3
-    TexCoord6: 3
-    TexCoord7: 3
-    TexCoord8: 3
-    BindPoseNormal: 2
-    BindPosePosition: 2
-    BindPoseTangent: 2
-    BoneIndex: 2
-    BoneWeight: 2
-    HWBoneIndex: 2
-    HWBoneWeight: 2
-    InterleavedData: 2
-    MorphTarget0: 2
-    MorphTarget1: 2
-    MorphTarget10: 2
-    MorphTarget11: 2
-    MorphTarget12: 2
-    MorphTarget13: 2
-    MorphTarget2: 2
-    MorphTarget3: 2
-    MorphTarget4: 2
-    MorphTarget5: 2
-    MorphTarget6: 2
-    MorphTarget7: 2
-    MorphTarget8: 2
-    MorphTarget9: 2
-    Reserved0: 2
-    Size: 2
-    $VALUES: 1
-  com/jme3/util/TempVars:
-    vect1: 4900937
-    vect8: 811203
-    isUsed: 6780
-    varsLocal: 4519
-    vect2: 1551
-    vect3: 1015
-    matrixWrite: 545
-    vect4: 195
-    vect5: 195
-    vect6: 195
-    skinPositions: 140
-    tempMat3: 137
-    tempMat4: 136
-    bbox: 3
-    bihStack: 3
-    bihSwapTmp: 3
-    collisionResults: 3
-    color: 3
-    eigen: 3
-    fADdU: 3
-    fAWdU: 3
-    fAWxDdU: 3
-    fDdU: 3
-    fWdU: 3
-    floatBuffer16: 3
-    intBuffer1: 3
-    intBuffer16: 3
-    plane: 3
-    quat1: 3
-    quat2: 3
-    skinNormals: 3
-    skinTangents: 3
-    spatialStack: 3
-    tempMat42: 3
-    tri: 3
-    triangle: 3
-    vect10: 3
-    vect2d: 3
-    vect2d2: 3
-    vect4f1: 3
-    vect4f2: 3
-    vect7: 3
-    vect9: 3
-  com/jme3/input/dummy/DummyInput:
-    inited: 806
-  com/jme3/util/IntMap$Entry:
-    key: 480100
-    value: 479592
-    next: 1734
-  com/jme3/renderer/queue/OpaqueComparator:
-    tempVec: 2
-    tempVec2: 2
-  jme3test/water/TestSceneWater:
-    useHttp: 1
-  com/jme3/material/RenderState:
-    cachedHashCode: 37
-    applyBlendMode: 22
-    applyDepthWrite: 22
-    blendMode: 21
-    depthWrite: 21
-    applyPolyOffset: 19
-    applyColorWrite: 18
-    applyCullMode: 18
-    applyDepthTest: 18
-    cullMode: 18
-    depthTest: 18
-    offsetEnabled: 18
-    offsetFactor: 18
-    offsetUnits: 18
-    colorWrite: 17
-    applyDepthFunc: 16
-    applyWireFrame: 16
-    depthFunc: 16
-    applyLineWidth: 15
-    applyStencilTest: 15
-    backStencilDepthFailOperation: 15
-    backStencilDepthPassOperation: 15
-    backStencilFunction: 15
-    backStencilStencilFailOperation: 15
-    blendEquation: 15
-    blendEquationAlpha: 15
-    dfactorAlpha: 15
-    dfactorRGB: 15
-    frontStencilDepthFailOperation: 15
-    frontStencilDepthPassOperation: 15
-    frontStencilFunction: 15
-    frontStencilStencilFailOperation: 15
-    lineWidth: 15
-    sfactorAlpha: 15
-    sfactorRGB: 15
-    stencilTest: 15
-    wireframe: 15
-    ADDITIONAL: 8
-    NULL: 3
-    DEFAULT: 1
-  com/jme3/app/StatsAppState:
-    secondCounter: 1219
-    frameCounter: 819
-    app: 404
-    showFps: 403
-    fpsText: 20
-    guiNode: 7
-    statsView: 6
-    darkenFps: 5
-    darkenStats: 5
-    showStats: 4
-    darkenBehind: 3
-    guiFont: 3
-    showSettings: 1
-  com/jme3/math/Vector2f:
-    x: 1082191
-    y: 1082191
-    UNIT_XY: 2
-    ZERO: 2
-    logger: 1
-  com/jme3/renderer/queue/RenderQueue$ShadowMode:
-    Receive: 3
-    Cast: 2
-    CastAndReceive: 2
-    Inherit: 2
-    Off: 2
-    $VALUES: 1
-  com/jme3/material/TechniqueDef:
-    defineNames: 400
-    defineTypes: 258
-    paramToDefineId: 254
-    weight: 213
-    worldBinds: 152
-    requiredCaps: 149
-    shaderLanguages: 117
-    shaderNames: 117
-    name: 95
-    lightMode: 87
-    noRender: 74
-    shadowMode: 74
-    usesNodes: 74
-    logic: 53
-    shaderPrologue: 53
-    sortId: 53
-    lightSpace: 46
-    forcedRenderState: 35
-    definesToShaderMap: 32
-    renderState: 30
-    shaderNodes: 21
-  javax/xml/bind/DatatypeConverter:
-    theConverter: 136
-    SET_DATATYPE_CONVERTER_PERMISSION: 1
-  java/lang/Integer:
-    TYPE: 2
-  com/jme3/texture/image/ImageCodec:
-    isGray: 262163
-    maxAlpha: 262163
-    maxBlue: 262163
-    maxGreen: 262163
-    maxRed: 262163
-    type: 262163
-    params: 24
-    bpp: 20
-  com/jme3/system/NativeLibraryLoader:
-    nativeLibraryMap: 58
-    buf: 1
-    extractionFolder: 1
-    extractionFolderOverride: 1
-    logger: 1
-  com/jme3/material/logic/DefaultTechniqueDefLogic:
-    techniqueDef: 32
-  com/jme3/light/DirectionalLight:
-    direction: 4
-  org/dacapo/harness/Benchmark:
-    data: 71
-    jarDeps: 69
-    stats: 48
-    config: 22
-    scratch: 8
-    verbose: 8
-    err: 7
-    out: 7
-    validateOutput: 6
-    iteration: 5
-    validationReport: 5
-    loader: 4
-    printStats: 4
-    savedErr: 4
-    savedOut: 4
-    silentErr: 4
-    silentOut: 4
-    preIterationGC: 3
-    preserve: 3
-    savedSystemProperties: 3
-    timeoutDialation: 3
-    validate: 3
-    watchdog: 3
-    dumpLatencyCSV: 2
-    dumpLatencyHDR: 2
-    dumpLatencySmoothing: 2
-    iterations: 2
-    latencyBaseFileName: 2
-    savedClassLoader: 2
-    datDeps: 1
-    dataSet: 1
-    valRepFile: 1
-  com/jme3/terrain/geomipmap/LODGeomap$1:
-    $SwitchMap$com$jme3$scene$VertexBuffer$Format: 68
-  jme3test/TestChooser:
-    executorService: 2
-    logger: 2
-    selectedClass: 1
-    showSetting: 1
-  com/jme3/font/BitmapTextPage:
-    pageQuads: 862
-    pos: 567
-    color: 562
-    idx: 562
-    tc: 562
-    page: 282
-    texture: 2
-  com/jme3/terrain/geomipmap/NormalRecalcControl:
-    terrain: 402
-  com/jme3/math/Vector3f:
-    x: 68084068
-    z: 68083822
-    y: 67809620
-    ZERO: 206
-    UNIT_XYZ: 24
-    UNIT_Y: 11
-    UNIT_X: 5
-    UNIT_Z: 5
-    NAN: 2
-    NEGATIVE_INFINITY: 2
-    POSITIVE_INFINITY: 2
-    logger: 1
-  java/io/File:
-    separator: 2
-  com/jme3/system/NullContext$1:
-    this$0: 1
-  com/jme3/asset/AssetConfig:
-    logger: 1
-  org/dacapo/parser/Config$Size:
-    outputFiles: 42
-    threadLimit: 11
-    this$0: 9
-    nThreads: 6
-    args: 4
-    name: 3
-  com/jme3/font/LineWrapMode:
-    Word: 4
-    Character: 2
-    Clip: 2
-    NoWrap: 2
-    $VALUES: 1
-  jme3test/scene/TestSceneStress:
-    BOX: 1
-  com/jme3/terrain/geomipmap/TerrainPatch:
-    size: 651172
-    quadrant: 6854
-    geomap: 384
-    lod: 64
-    maxLod: 64
-    offset: 64
-    offsetAmount: 64
-    previousLod: 64
-    searchedForNeighboursAlready: 64
-    stepScale: 64
-    totalSize: 64
-  com/jme3/system/NativeLibrary:
-    extractedAsFileName: 57
-    name: 57
-    pathInNativesJar: 57
-    platform: 57
-  com/jme3/texture/image/ColorSpace:
-    sRGB: 14
-    Linear: 2
-    $VALUES: 1
-  jme3test/stress/TestParallelTangentGeneration:
-    executor: 1
-  com/jme3/scene/Spatial$BatchHint:
-    Never: 68
-    Always: 2
-    Inherit: 2
-    $VALUES: 1
-  javax/xml/bind/DatatypeConverterImpl:
-    hexCode: 2145
-    $assertionsDisabled: 1
-    datatypeFactory: 1
-    decodeMap: 1
-    encodeMap: 1
-    theInstance: 1
-  com/jme3/font/LetterQuad:
-    previous: 3464
-    bitmapChar: 3148
-    x0: 2591
-    next: 2394
-    sizeScale: 2270
-    font: 1496
-    y0: 1468
-    eol: 1460
-    rightToLeft: 1431
-    xAdvance: 1431
-    colorInt: 1417
-    width: 1188
-    height: 1175
-    c: 1152
-    u0: 1140
-    lineY: 889
-    u1: 860
-    v0: 860
-    index: 590
-    alignX: 580
-    alignY: 580
-    v1: 580
-    UNBOUNDED: 309
-    style: 296
-  com/jme3/asset/plugins/ClasspathLocator:
-    root: 21
-    logger: 1
-  com/jme3/app/state/BaseAppState:
-    enabled: 2804
-    log: 5
-    app: 2
-    id: 2
-    initialized: 2
-  com/jme3/app/state/ConstantVerifierState$1:
-    $SwitchMap$com$jme3$app$state$ConstantVerifierState$ErrorType: 10404
-  com/jme3/math/Vector4f:
-    w: 43
-    x: 43
-    y: 43
-    z: 43
-    NAN: 2
-    NEGATIVE_INFINITY: 2
-    POSITIVE_INFINITY: 2
-    UNIT_W: 2
-    UNIT_X: 2
-    UNIT_XYZW: 2
-    UNIT_Y: 2
-    UNIT_Z: 2
-    ZERO: 2
-    logger: 1
-  java/lang/System:
-    out: 22
-    err: 4
-  com/jme3/texture/Texture$MagFilter:
-    Bilinear: 16
-    Nearest: 2
-    $VALUES: 1
-  com/jme3/asset/TextureKey:
-    textureTypeHint: 90
-    flipY: 53
-    generateMips: 52
-    anisotropy: 39
-  com/jme3/system/JmeContext$Type:
-    Headless: 5
-    Display: 3
-    Canvas: 2
-    OffscreenSurface: 2
-    $VALUES: 1
-  com/jme3/scene/mesh/IndexShortBuffer:
-    buf: 541952
-    $assertionsDisabled: 541825
-    maxValue: 128
-  com/jme3/renderer/RenderManager:
-    renderer: 801
-    postViewPorts: 2
-    uniformBindingManager: 2
-    viewPorts: 2
-    filteredLightList: 1
-    forcedMaterial: 1
-    forcedOverrides: 1
-    forcedRenderState: 1
-    forcedTechnique: 1
-    handleTranslucentBucket: 1
-    lightFilter: 1
-    logger: 1
-    orthoMatrix: 1
-    preViewPorts: 1
-    preferredLightMode: 1
-    prevCam: 1
-    singlePassLightBatchSize: 1
-  com/jme3/water/WaterFilter:
-    material: 34
-    waterHeight: 9
-    lightDirection: 6
-    maxAmplitude: 6
-    plane: 6
-    waveScale: 6
-    deepWaterColor: 5
-    foamExistence: 5
-    refractionStrength: 5
-    waterColor: 5
-    colorExtinction: 4
-    lightColor: 4
-    refractionConstant: 4
-    shininess: 4
-    shoreHardness: 4
-    speed: 4
-    sunScale: 4
-    useFoam: 4
-    useRipples: 4
-    waterTransparency: 4
-    biasMatrix: 3
-    causticsIntensity: 3
-    center: 3
-    foamHardness: 3
-    foamIntensity: 3
-    normalScale: 3
-    radius: 3
-    reflectionDisplace: 3
-    reflectionMapSize: 3
-    reflectionProcessor: 3
-    reflectionScene: 3
-    shapeType: 3
-    targetLocation: 3
-    textureProjMatrix: 3
-    time: 3
-    underWaterFogDistance: 3
-    useCaustics: 3
-    useHQShoreline: 3
-    useRefraction: 3
-    useSpecular: 3
-    windDirection: 3
-    foamTexture: 2
-  com/jme3/texture/Texture:
-    image: 104
-    minificationFilter: 48
-    key: 37
-    name: 30
-    magnificationFilter: 15
-    anisotropicFilter: 13
-    shadowCompareMode: 12
-  jme3test/post/TestMultiplesFilters:
-    useHttp: 1
-  com/jme3/material/TechniqueDef$ShadowMode:
-    Disable: 34
-    InPass: 2
-    PostPass: 2
-    $VALUES: 1
-  com/jme3/terrain/geomipmap/picking/BresenhamYUpGridTracer:
-    gridLocation: 21
-    gridOrigin: 21
-    gridSpacing: 21
-    rayLocation: 21
-    stepDirection: 21
-    walkRay: 21
-    TOLERANCE: 1
-  org/apache/commons/cli/Parser:
-    options: 7
-    cmd: 4
-    requiredOptions: 2
-  com/jme3/shader/UniformBindingManager:
-    camDir: 1
-    camLeft: 1
-    camLoc: 1
-    camUp: 1
-    nearFar: 1
-    normalMatrix: 1
-    normalMatrixInv: 1
-    projMatrix: 1
-    projMatrixInv: 1
-    resolution: 1
-    resolutionInv: 1
-    tempMatrix: 1
-    timer: 1
-    viewMatrix: 1
-    viewMatrixInv: 1
-    viewPort: 1
-    viewProjMatrix: 1
-    viewProjMatrixInv: 1
-    worldMatrix: 1
-    worldMatrixInv: 1
-    worldMatrixInvTrsp: 1
-    worldNormalMatrix: 1
-    worldViewMatrix: 1
-    worldViewMatrixInv: 1
-    worldViewProjMatrix: 1
-    worldViewProjMatrixInv: 1
-  com/jme3/font/BitmapCharacterSet:
-    characters: 1244
-    height: 562
-    width: 562
-    renderedSize: 308
-    lineHeight: 20
-    base: 2
-    pageSize: 2
-  com/jme3/renderer/Limits:
-    $VALUES: 2
-    ColorTextureSamples: 2
-    CubemapSize: 2
-    DepthTextureSamples: 2
-    FragmentTextureUnits: 2
-    FragmentUniformVectors: 2
-    FrameBufferAttachments: 2
-    FrameBufferMrtAttachments: 2
-    FrameBufferSamples: 2
-    RenderBufferSize: 2
-    ShaderStorageBufferObjectMaxBlockSize: 2
-    ShaderStorageBufferObjectMaxCombineBlocks: 2
-    ShaderStorageBufferObjectMaxComputeBlocks: 2
-    ShaderStorageBufferObjectMaxFragmentBlocks: 2
-    ShaderStorageBufferObjectMaxGeometryBlocks: 2
-    ShaderStorageBufferObjectMaxTessControlBlocks: 2
-    ShaderStorageBufferObjectMaxTessEvaluationBlocks: 2
-    ShaderStorageBufferObjectMaxVertexBlocks: 2
-    TextureAnisotropy: 2
-    TextureSize: 2
-    UniformBufferObjectMaxBlockSize: 2
-    UniformBufferObjectMaxFragmentBlocks: 2
-    UniformBufferObjectMaxGeometryBlocks: 2
-    UniformBufferObjectMaxVertexBlocks: 2
-    VertexAttributes: 2
-    VertexTextureUnits: 2
-    VertexUniformVectors: 2
-  jme3test/app/TestIDList:
-    enabledSlots: 1
-    list: 1
-    slots: 1
-  com/jme3/material/logic/SinglePassLightingLogic:
-    ADDITIVE_LIGHT: 3
-    ambientLightColor: 2
-    nbLightsDefineId: 2
-    singlePassLightingDefineId: 2
-  org/apache/commons/cli/Util:
-    EMPTY_STRING_ARRAY: 2
-  org/dacapo/parser/ConfigFile:
-    token: 576
-    jj_ntk: 270
-    jj_gen: 191
-    token_source: 85
-    jj_nt: 64
-    jj_la1: 44
-    jj_input_stream: 2
-    jj_expentries: 1
-    jj_kind: 1
-    jj_la1_0: 1
-    jj_la1_1: 1
-  com/jme3/font/StringBlock:
-    text: 829
-    textBox: 609
-    size: 308
-    tabWidth: 300
-    tabPos: 298
-    kerning: 265
-    ellipsisChar: 7
-    lineCount: 6
-    alignment: 4
-    color: 4
-    valignment: 2
-    wrapType: 2
-  com/jme3/shader/Shader$ShaderType:
-    Geometry: 66
-    TessellationControl: 66
-    $VALUES: 24
-    extension: 5
-    Fragment: 2
-    TessellationEvaluation: 2
-    Vertex: 2
-  com/jme3/shader/UniformBinding:
-    glslType: 32
-    $VALUES: 2
-    AmbientLightColor: 2
-    Aspect: 2
-    CameraDirection: 2
-    CameraLeft: 2
-    CameraPosition: 2
-    CameraUp: 2
-    FrameRate: 2
-    FrustumNearFar: 2
-    LightColor: 2
-    LightDirection: 2
-    LightPosition: 2
-    NormalMatrix: 2
-    NormalMatrixInverse: 2
-    ProjectionMatrix: 2
-    ProjectionMatrixInverse: 2
-    Resolution: 2
-    ResolutionInverse: 2
-    Time: 2
-    Tpf: 2
-    ViewMatrix: 2
-    ViewMatrixInverse: 2
-    ViewPort: 2
-    ViewProjectionMatrix: 2
-    ViewProjectionMatrixInverse: 2
-    WorldMatrix: 2
-    WorldMatrixInverse: 2
-    WorldMatrixInverseTranspose: 2
-    WorldNormalMatrix: 2
-    WorldViewMatrix: 2
-    WorldViewMatrixInverse: 2
-    WorldViewProjectionMatrix: 2
-    WorldViewProjectionMatrixInverse: 2
-  jme3test/app/TestTempVars:
-    sumCompute: 1
-  com/jme3/asset/AssetInfo:
-    key: 46
-    manager: 22
-  org/dacapo/harness/Callback$1:
-    $SwitchMap$org$dacapo$harness$CommandLineArgs$Methodology: 3
-  com/jme3/texture/plugins/DDSLoader:
-    alphaMask: 786439
-    in: 393237
-    redMask: 393229
-    blueMask: 393223
-    greenMask: 393223
-    mipMapCount: 17
-    depth: 14
-    width: 11
-    height: 10
-    pixelFormat: 10
-    bpp: 9
-    compressed: 8
-    grayscaleOrAlpha: 6
-    sizes: 6
-    caps1: 3
-    caps2: 3
-    directx10: 3
-    flags: 3
-    texture3D: 3
-    LOG2: 2
-    logger: 2
-    pitchOrSize: 2
-    $assertionsDisabled: 1
-  com/jme3/renderer/queue/GeometryList:
-    comparator: 10
-    geometries: 10
-    listSort: 10
-    size: 10
-  com/jme3/font/Letters:
-    current: 1774
-    block: 613
-    baseColor: 295
-    head: 50
-    colorTags: 23
-    plainText: 19
-    tail: 16
-    font: 12
-    totalHeight: 7
-    totalWidth: 7
-    baseAlpha: 2
-  com/jme3/system/NativeLibrary$Key:
-    name: 114
-    platform: 114
-  org/dacapo/harness/CommandLineArgs:
-    OPTIONS: 125
-    line: 42
-    options: 33
-    $assertionsDisabled: 32
-    visibleOptions: 31
-    callback: 6
-    benchmarks: 3
-    parser: 2
-  com/jme3/material/RenderState$StencilOperation:
-    Keep: 92
-    Decrement: 2
-    DecrementWrap: 2
-    Increment: 2
-    IncrementWrap: 2
-    Invert: 2
-    Replace: 2
-    Zero: 2
-    $VALUES: 1
-  com/jme3/math/ColorRGBA:
-    b: 786482
-    g: 786482
-    r: 786482
-    a: 262194
-    White: 10
-    Red: 4
-    Brown: 3
-    Black: 1
-    BlackNoAlpha: 1
-    Blue: 1
-    Cyan: 1
-    DarkGray: 1
-    Gray: 1
-    Green: 1
-    LightGray: 1
-    Magenta: 1
-    Orange: 1
-    Pink: 1
-    Yellow: 1
-  java/util/logging/Level:
-    FINER: 85
-    FINE: 7
-    FINEST: 4
-  com/jme3/material/MatParam:
-    value: 293
-    type: 289
-    name: 125
-    prefixedName: 118
-  com/jme3/material/logic/MultiPassLightingLogic:
-    ADDITIVE_LIGHT: 3
-    ambientLightColor: 2
-    NULL_DIR_LIGHT: 1
-  com/jme3/font/BitmapFont$VAlign:
-    Top: 4
-    Bottom: 2
-    Center: 2
-    $VALUES: 1
-  com/jme3/math/Ray:
-    direction: 63
-    limit: 63
-    origin: 63
-    $assertionsDisabled: 1
-  com/jme3/bounding/BoundingVolume:
-    center: 240
-    checkPlane: 238
-  jme3test/effect/TestExplosionEffect:
-    EMITTER_TYPE: 1
-  com/jme3/audio/plugins/WAVLoader:
-    logger: 1
-  java/util/Locale:
-    US: 2
-  jme3test/scene/TestSceneLoading:
-    useHttp: 1
-  com/jme3/font/BitmapFont$Align:
-    Left: 6
-    Center: 2
-    Right: 2
-    $VALUES: 1
-  jme3test/network/TestLatency:
-    average: 1
-    startTime: 1
-  com/jme3/util/NativeObject:
-    updateNeeded: 261842
-    handleRef: 840
-    id: 420
-    objectManager: 420
-  com/jme3/font/ColorTags:
-    colors: 16
-    text: 14
-    colorPattern: 8
-    original: 7
-    baseAlpha: 2
-  jme3test/texture/TestSkyRotation:
-    $assertionsDisabled: 1
-  com/jme3/terrain/heightmap/AbstractHeightMap:
-    heightData: 2
-    NORMALIZE_RANGE: 1
-    filter: 1
-    heightScale: 1
-    logger: 1
-    size: 1
-  jme3test/opencl/TestMultipleApplications:
-    LOG: 1
-    sync: 1
-  org/dacapo/parser/Config:
-    sizes: 56
-    threadModel: 19
-    desc: 10
-    name: 5
-    className: 4
-    threadCountOverride: 2
-  org/dacapo/parser/Config$1:
-    $SwitchMap$org$dacapo$parser$Config$ThreadModel: 8
-  com/jme3/font/BitmapFont:
-    charSet: 929
-    pages: 6
-    glyphParser: 5
-    rightToLeft: 4
-  com/jme3/texture/image/ByteAlignedImageCodec:
-    ap: 4
-    az: 4
-    bp: 4
-    bz: 4
-    gp: 4
-    gz: 4
-    rp: 4
-    rz: 4
-  org/dacapo/harness/TeeOutputStream:
-    log: 473
-    toScreen: 157
-    logFile: 6
-    version: 2
-  com/jme3/util/LittleEndien:
-    in: 393291
-  com/jme3/post/Filter:
-    enabled: 12
-    name: 3
-  com/jme3/material/Material$1:
-    $SwitchMap$com$jme3$texture$Texture$Type: 5
-  com/jme3/scene/shape/AbstractBox:
-    center: 10
-    xExtent: 2
-    yExtent: 2
-    zExtent: 2
-  com/jme3/material/RenderState$BlendEquation:
-    Add: 17
-    Max: 2
-    Min: 2
-    ReverseSubtract: 2
-    Subtract: 2
-    $VALUES: 1
-  com/jme3/input/controls/KeyTrigger:
-    keyCode: 26
-    $assertionsDisabled: 14
-  com/jme3/texture/image/DefaultImageRaster:
-    codec: 1835012
-    components: 1310721
-    buffer: 524289
-    width: 524289
-    convertToLinear: 262145
-    height: 262145
-    offset: 262145
-    temp: 262145
-    image: 1
-    slice: 1
-  com/jme3/scene/shape/Sphere$TextureMode:
-    Original: 91
-    Polar: 4
-    Projected: 2
-    $VALUES: 1
-  com/jme3/app/state/ConstantVerifierState$Checker:
-    constant: 26
-    goodValue: 26
-  com/jme3/light/DefaultLightFilter:
-    probeBlendStrategy: 1
-    processedLights: 1
-  com/jme3/audio/AudioContext:
-    audioRenderer: 401
-  com/jme3/material/MatParamTexture:
-    colorSpace: 73
-    texture: 51
-  jme3test/water/TestPostWaterLake:
-    useHttp: 1
-  com/jme3/renderer/Camera:
-    worldPlane: 5363
-    location: 3656
-    coeffBottom: 2464
-    coeffLeft: 2464
-    coeffRight: 2464
-    coeffTop: 2464
-    rotation: 1233
-    viewMatrix: 820
-    frustumNear: 428
-    parallelProjection: 420
-    frustumFar: 417
-    projectionMatrix: 415
-    viewProjectionMatrix: 411
-    overrideProjection: 409
-    frustumBottom: 17
-    frustumLeft: 17
-    frustumRight: 17
-    frustumTop: 17
-    guiBounding: 10
-    height: 7
-    width: 7
-    viewPortBottom: 4
-    viewPortLeft: 4
-    viewPortRight: 4
-    viewPortTop: 4
-    viewportChanged: 4
-    logger: 3
-    projectionMatrixOverride: 2
-  com/jme3/util/IntMap$IntMapIterator:
-    el: 2400
-    this$0: 2400
-    idx: 1600
-    cur: 800
-  jme3test/app/TestChangeAppIcon:
-    log: 1
-  com/jme3/renderer/Camera$FrustumIntersect:
-    Inside: 2
-    Intersects: 2
-    Outside: 2
-    $VALUES: 1
-  org/dacapo/harness/CommandLineArgs$Methodology:
-    ITERATE: 5
-    CONVERGE: 3
-    $VALUES: 2
-  com/jme3/math/Plane:
-    normal: 2890
-    constant: 2492
-    logger: 1
-  com/jme3/util/SafeArrayList$ArrayIterator:
-    next: 6650
-    array: 5226
-    lastReturned: 3325
-    this$0: 477
-  com/jme3/scene/control/AbstractControl:
-    enabled: 401
-    spatial: 2
-  com/jme3/texture/image/BitMaskImageCodec:
-    be: 7
-    as: 6
-    bs: 6
-    gs: 6
-    rs: 6
-  com/jme3/bounding/BoundingSphere:
-    center: 8
-    radius: 7
-    $assertionsDisabled: 1
-    logger: 1
-  com/jme3/renderer/queue/TransparentComparator:
-    tempVec: 4
-  com/jme3/system/NullContext:
-    timer: 6935
-    frameRate: 803
-    timeLate: 799
-    timeThen: 799
-    listener: 402
-    needClose: 401
-    created: 5
-    createdLock: 5
-    logger: 3
-    settings: 3
-    renderer: 2
-  com/jme3/scene/shape/Sphere:
-    radialSamples: 214
-    interior: 173
-    textureMode: 91
-    radius: 27
-    vertCount: 24
-    zSamples: 22
-    useEvenSlices: 9
-    triCount: 2
-  com/jme3/texture/Texture$WrapMode:
-    EdgeClamp: 27
-    Repeat: 10
-    BorderClamp: 2
-    Clamp: 2
-    MirrorBorderClamp: 2
-    MirrorClamp: 2
-    MirrorEdgeClamp: 2
-    MirroredRepeat: 2
-    $VALUES: 1
-  jme3test/network/TestThroughput:
-    counter: 1
-    lastTime: 1
-    total: 1
-  com/jme3/system/NullRenderer:
-    stats: 402
-    caps: 1
-    limits: 1
-  com/jme3/app/SimpleApplication$AppActionListener:
-    this$0: 1
+  com.jme3.util.LittleEndien:
+    in:
+      offset: 12
+      deref-count: 393291
+  com.jme3.light.DirectionalLight:
+    direction:
+      offset: 28
+      deref-count: 4
+  com.jme3.system.JmeSystemDelegate:
+    logger:
+      offset: 16
+      deref-count: 1
+    storageFolders:
+      offset: 20
+      deref-count: 1
+    softTextDialogInput:
+      offset: 24
+      deref-count: 1
+  com.jme3.audio.plugins.WAVLoader:
+    logger:
+      offset: 112
+      deref-count: 1
+  java.lang.Integer:
+    TYPE:
+      offset: 112
+      deref-count: 2
+  com.jme3.light.LightList:
+    owner:
+      offset: 28
+      deref-count: 193
+    c:
+      offset: 112
+      deref-count: 1
+  com.jme3.system.Platform:
+    os:
+      offset: 28
+      deref-count: 21
+    Windows32:
+      offset: 112
+      deref-count: 11
+    Windows64:
+      offset: 116
+      deref-count: 11
+    MacOSX32:
+      offset: 144
+      deref-count: 11
+    MacOSX64:
+      offset: 148
+      deref-count: 11
+    Linux32:
+      offset: 128
+      deref-count: 11
+    Linux64:
+      offset: 132
+      deref-count: 11
+    Linux_ARM32:
+      offset: 136
+      deref-count: 3
+    Linux_ARM64:
+      offset: 140
+      deref-count: 3
+    MacOSX_ARM64:
+      offset: 152
+      deref-count: 3
+    MacOSX_PPC32:
+      offset: 156
+      deref-count: 2
+    Android_Other:
+      offset: 192
+      deref-count: 2
+    Android_X86:
+      offset: 180
+      deref-count: 2
+    Windows_ARM64:
+      offset: 124
+      deref-count: 2
+    Windows_ARM32:
+      offset: 120
+      deref-count: 2
+    MacOSX_PPC64:
+      offset: 160
+      deref-count: 2
+    iOS_ARM:
+      offset: 188
+      deref-count: 2
+    Android_ARM5:
+      offset: 164
+      deref-count: 2
+    Android_ARM6:
+      offset: 168
+      deref-count: 2
+    Android_ARM7:
+      offset: 172
+      deref-count: 2
+    Android_ARM8:
+      offset: 176
+      deref-count: 2
+    iOS_X86:
+      offset: 184
+      deref-count: 2
+  com.jme3.util.blockparser.Statement:
+    contents:
+      offset: 20
+      deref-count: 750
+    line:
+      offset: 16
+      deref-count: 738
+  com.jme3.app.DebugKeysAppState$DebugKeyListener:
+    this$0:
+      offset: 12
+      deref-count: 1
+  com.jme3.post.Filter:
+    name:
+      offset: 16
+      deref-count: 3
+  com.jme3.texture.image.ImageCodec:
+    params:
+      offset: 112
+      deref-count: 24
+  com.jme3.texture.Texture$WrapMode:
+    EdgeClamp:
+      offset: 136
+      deref-count: 27
+    Repeat:
+      offset: 112
+      deref-count: 10
+    MirrorEdgeClamp:
+      offset: 140
+      deref-count: 2
+    BorderClamp:
+      offset: 128
+      deref-count: 2
+    MirroredRepeat:
+      offset: 116
+      deref-count: 2
+    Clamp:
+      offset: 120
+      deref-count: 2
+    MirrorClamp:
+      offset: 124
+      deref-count: 2
+    MirrorBorderClamp:
+      offset: 132
+      deref-count: 2
+  jme3test.stress.TestParallelTangentGeneration:
+    executor:
+      offset: 112
+      deref-count: 1
+  com.jme3.terrain.geomipmap.picking.BresenhamYUpGridTracer$Direction:
+    None:
+      offset: 112
+      deref-count: 23
+    PositiveY:
+      offset: 124
+      deref-count: 2
+    PositiveZ:
+      offset: 132
+      deref-count: 2
+    NegativeY:
+      offset: 128
+      deref-count: 2
+    NegativeZ:
+      offset: 136
+      deref-count: 2
+    PositiveX:
+      offset: 116
+      deref-count: 2
+    NegativeX:
+      offset: 120
+      deref-count: 2
+  com.jme3.asset.cache.WeakRefCloneAssetCache$KeyRef:
+    clonedKey:
+      offset: 28
+      deref-count: 24
+  com.jme3.bounding.BoundingSphere:
+    center:
+      offset: 16
+      deref-count: 8
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.texture.plugins.DDSLoader:
+    in:
+      offset: 76
+      deref-count: 393237
+    pixelFormat:
+      offset: 68
+      deref-count: 10
+    logger:
+      offset: 112
+      deref-count: 2
+  com.jme3.renderer.Camera:
+    location:
+      offset: 68
+      deref-count: 3656
+    rotation:
+      offset: 72
+      deref-count: 1233
+    viewMatrix:
+      offset: 100
+      deref-count: 820
+    projectionMatrix:
+      offset: 104
+      deref-count: 415
+    viewProjectionMatrix:
+      offset: 108
+      deref-count: 411
+    guiBounding:
+      offset: 112
+      deref-count: 10
+    logger:
+      offset: 112
+      deref-count: 3
+    projectionMatrixOverride:
+      offset: 96
+      deref-count: 2
+  com.jme3.terrain.geomipmap.TerrainQuad:
+    children:
+      offset: 92
+      deref-count: 9486
+    lastScale:
+      offset: 140
+      deref-count: 421
+    affectedAreaBBox:
+      offset: 132
+      deref-count: 409
+    stepScale:
+      offset: 128
+      deref-count: 273
+    offset:
+      offset: 124
+      deref-count: 189
+    neighbourFinder:
+      offset: 144
+      deref-count: 180
+    picker:
+      offset: 136
+      deref-count: 21
+  com.jme3.light.Light:
+    color:
+      offset: 20
+      deref-count: 2
+  com.jme3.material.TechniqueDef:
+    defineNames:
+      offset: 44
+      deref-count: 400
+    defineTypes:
+      offset: 48
+      deref-count: 258
+    paramToDefineId:
+      offset: 52
+      deref-count: 254
+    worldBinds:
+      offset: 88
+      deref-count: 152
+    requiredCaps:
+      offset: 24
+      deref-count: 149
+    shaderLanguages:
+      offset: 32
+      deref-count: 117
+    shaderNames:
+      offset: 36
+      deref-count: 117
+    name:
+      offset: 28
+      deref-count: 95
+    lightMode:
+      offset: 76
+      deref-count: 87
+    shadowMode:
+      offset: 80
+      deref-count: 74
+    shaderPrologue:
+      offset: 40
+      deref-count: 53
+    logic:
+      offset: 84
+      deref-count: 53
+    lightSpace:
+      offset: 92
+      deref-count: 46
+    forcedRenderState:
+      offset: 72
+      deref-count: 35
+    definesToShaderMap:
+      offset: 56
+      deref-count: 32
+    renderState:
+      offset: 68
+      deref-count: 30
+    shaderNodes:
+      offset: 60
+      deref-count: 21
+  org.dacapo.harness.CommandLineArgs$Methodology:
+    ITERATE:
+      offset: 112
+      deref-count: 5
+    CONVERGE:
+      offset: 116
+      deref-count: 3
+  com.jme3.scene.Geometry:
+    mesh:
+      offset: 104
+      deref-count: 304767
+    cachedWorldMat:
+      offset: 112
+      deref-count: 601
+    worldTransform:
+      offset: 72
+      deref-count: 534
+    worldBound:
+      offset: 32
+      deref-count: 335
+    groupNode:
+      offset: 116
+      deref-count: 268
+    worldLights:
+      offset: 40
+      deref-count: 202
+    material:
+      offset: 108
+      deref-count: 69
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.font.BitmapFont$Align:
+    Left:
+      offset: 112
+      deref-count: 6
+    Center:
+      offset: 116
+      deref-count: 2
+    Right:
+      offset: 120
+      deref-count: 2
+  com.jme3.font.StringBlock:
+    text:
+      offset: 28
+      deref-count: 829
+    textBox:
+      offset: 32
+      deref-count: 609
+    color:
+      offset: 44
+      deref-count: 4
+    alignment:
+      offset: 36
+      deref-count: 4
+    valignment:
+      offset: 40
+      deref-count: 2
+    wrapType:
+      offset: 48
+      deref-count: 2
+  com.jme3.terrain.heightmap.ImageBasedHeightMap:
+    colorImage:
+      offset: 32
+      deref-count: 4
+  com.jme3.scene.shape.AbstractBox:
+    center:
+      offset: 92
+      deref-count: 10
+  jme3test.network.TestLatency:
+    average:
+      offset: 116
+      deref-count: 1
+  com.jme3.util.BufferAllocatorFactory:
+    LOGGER:
+      offset: 116
+      deref-count: 1
+  javax.xml.bind.DatatypeConverterImpl:
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
+  org.dacapo.harness.Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
+  com.jme3.input.FlyByCamera:
+    inputManager:
+      offset: 40
+      deref-count: 33
+    motionAllowed:
+      offset: 36
+      deref-count: 1
+    initialUpVec:
+      offset: 32
+      deref-count: 1
+    cam:
+      offset: 28
+      deref-count: 1
+  org.dacapo.harness.Benchmark:
+    data:
+      offset: 24
+      deref-count: 71
+    jarDeps:
+      offset: 48
+      deref-count: 69
+    stats:
+      offset: 56
+      deref-count: 48
+    config:
+      offset: 28
+      deref-count: 22
+    scratch:
+      offset: 20
+      deref-count: 8
+    err:
+      offset: 140
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    savedErr:
+      offset: 136
+      deref-count: 4
+    loader:
+      offset: 32
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    savedClassLoader:
+      offset: 36
+      deref-count: 2
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    datDeps:
+      offset: 52
+      deref-count: 1
+    valRepFile:
+      offset: 116
+      deref-count: 1
+  com.jme3.system.NullContext:
+    timer:
+      offset: 48
+      deref-count: 6933
+    listener:
+      offset: 52
+      deref-count: 403
+    needClose:
+      offset: 36
+      deref-count: 402
+    createdLock:
+      offset: 40
+      deref-count: 7
+    created:
+      offset: 32
+      deref-count: 6
+    logger:
+      offset: 112
+      deref-count: 4
+    settings:
+      offset: 44
+      deref-count: 3
+    renderer:
+      offset: 56
+      deref-count: 2
+  org.apache.commons.cli.PosixParser:
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
+  org.apache.commons.cli.Option:
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
+  com.jme3.material.MatParam:
+    value:
+      offset: 24
+      deref-count: 293
+    type:
+      offset: 12
+      deref-count: 289
+    name:
+      offset: 16
+      deref-count: 125
+    prefixedName:
+      offset: 20
+      deref-count: 118
+  com.jme3.app.StatsAppState:
+    app:
+      offset: 32
+      deref-count: 404
+    fpsText:
+      offset: 44
+      deref-count: 21
+    guiNode:
+      offset: 40
+      deref-count: 11
+    statsView:
+      offset: 36
+      deref-count: 7
+    darkenStats:
+      offset: 56
+      deref-count: 6
+    darkenFps:
+      offset: 52
+      deref-count: 6
+    guiFont:
+      offset: 48
+      deref-count: 3
+  com.jme3.bounding.BoundingVolume$Type:
+    AABB:
+      offset: 116
+      deref-count: 315
+    Sphere:
+      offset: 112
+      deref-count: 4
+    Capsule:
+      offset: 120
+      deref-count: 2
+  com.jme3.scene.VertexBuffer$Usage:
+    Dynamic:
+      offset: 116
+      deref-count: 2
+    CpuOnly:
+      offset: 124
+      deref-count: 2
+    Stream:
+      offset: 120
+      deref-count: 2
+    Static:
+      offset: 112
+      deref-count: 2
+  com.jme3.bounding.BoundingVolume:
+    center:
+      offset: 16
+      deref-count: 240
+  com.jme3.asset.plugins.UrlAssetInfo:
+    in:
+      offset: 24
+      deref-count: 68
+    url:
+      offset: 20
+      deref-count: 17
+  com.jme3.terrain.geomipmap.TerrainPatch:
+    geomap:
+      offset: 172
+      deref-count: 384
+    stepScale:
+      offset: 176
+      deref-count: 64
+    offset:
+      offset: 180
+      deref-count: 64
+  com.jme3.util.blockparser.BlockLanguageParser:
+    reader:
+      offset: 16
+      deref-count: 15429
+    statementStack:
+      offset: 20
+      deref-count: 844
+    lastStatement:
+      offset: 24
+      deref-count: 747
+  com.jme3.texture.Image$Format:
+    BGR8:
+      offset: 156
+      deref-count: 10
+    Luminance8:
+      offset: 120
+      deref-count: 5
+    ABGR8:
+      offset: 188
+      deref-count: 5
+    RGBA8:
+      offset: 184
+      deref-count: 4
+    RGB5A1:
+      offset: 180
+      deref-count: 4
+    RGB16F:
+      offset: 292
+      deref-count: 3
+    Luminance32F:
+      offset: 132
+      deref-count: 3
+    Luminance16F:
+      offset: 128
+      deref-count: 3
+    RGB8:
+      offset: 160
+      deref-count: 3
+    RGB32F:
+      offset: 300
+      deref-count: 3
+    Luminance8Alpha8:
+      offset: 136
+      deref-count: 3
+    RGB565:
+      offset: 172
+      deref-count: 3
+    RGB16F_to_RGB111110F:
+      offset: 276
+      deref-count: 3
+    RGBA16F:
+      offset: 296
+      deref-count: 3
+    Alpha8:
+      offset: 112
+      deref-count: 3
+    RGBA32F:
+      offset: 304
+      deref-count: 3
+    RGB10A2:
+      offset: 436
+      deref-count: 3
+    BGRA8:
+      offset: 196
+      deref-count: 3
+    Depth:
+      offset: 256
+      deref-count: 3
+    ARGB8:
+      offset: 192
+      deref-count: 3
+    RGB16F_to_RGB9E5:
+      offset: 284
+      deref-count: 3
+    Luminance16FAlpha16F:
+      offset: 144
+      deref-count: 3
+    RGB111110F:
+      offset: 280
+      deref-count: 3
+    BC6H_UF16:
+      offset: 240
+      deref-count: 2
+    RGB16I:
+      offset: 380
+      deref-count: 2
+    RG32UI:
+      offset: 368
+      deref-count: 2
+    RGB16UI:
+      offset: 384
+      deref-count: 2
+    RGB32I:
+      offset: 388
+      deref-count: 2
+    R16F:
+      offset: 420
+      deref-count: 2
+    RGB8UI:
+      offset: 376
+      deref-count: 2
+    Depth32F:
+      offset: 272
+      deref-count: 2
+    R32F:
+      offset: 424
+      deref-count: 2
+    R16I:
+      offset: 332
+      deref-count: 2
+    DXT1A:
+      offset: 208
+      deref-count: 2
+    R8UI:
+      offset: 328
+      deref-count: 2
+    ETC1:
+      offset: 320
+      deref-count: 2
+    R32I:
+      offset: 340
+      deref-count: 2
+    R32UI:
+      offset: 344
+      deref-count: 2
+    RG8I:
+      offset: 348
+      deref-count: 2
+    RGBA32UI:
+      offset: 416
+      deref-count: 2
+    Depth32:
+      offset: 268
+      deref-count: 2
+    RGBA8I:
+      offset: 396
+      deref-count: 2
+    RGBA32I:
+      offset: 412
+      deref-count: 2
+    RGBA16I:
+      offset: 404
+      deref-count: 2
+    RGBA8UI:
+      offset: 400
+      deref-count: 2
+    RGB32UI:
+      offset: 392
+      deref-count: 2
+    RG16UI:
+      offset: 360
+      deref-count: 2
+    Depth24:
+      offset: 264
+      deref-count: 2
+    BC6H_SF16:
+      offset: 236
+      deref-count: 2
+    SIGNED_RGTC1:
+      offset: 232
+      deref-count: 2
+    RGB9E5:
+      offset: 288
+      deref-count: 2
+    RG16F:
+      offset: 428
+      deref-count: 2
+    SIGNED_RGTC2:
+      offset: 224
+      deref-count: 2
+    RG16I:
+      offset: 356
+      deref-count: 2
+    BC7_UNORM:
+      offset: 244
+      deref-count: 2
+    Reserved12:
+      offset: 316
+      deref-count: 2
+    DXT1:
+      offset: 204
+      deref-count: 2
+    Reserved11:
+      offset: 308
+      deref-count: 2
+    R16UI:
+      offset: 336
+      deref-count: 2
+    RG32I:
+      offset: 364
+      deref-count: 2
+    DXT3:
+      offset: 212
+      deref-count: 2
+    RG8UI:
+      offset: 352
+      deref-count: 2
+    DXT5:
+      offset: 216
+      deref-count: 2
+    RG32F:
+      offset: 432
+      deref-count: 2
+    RGB8I:
+      offset: 372
+      deref-count: 2
+    Reserved10:
+      offset: 252
+      deref-count: 2
+    R8I:
+      offset: 324
+      deref-count: 2
+    Reserved5:
+      offset: 152
+      deref-count: 2
+    RGTC1:
+      offset: 228
+      deref-count: 2
+    RGBA16UI:
+      offset: 408
+      deref-count: 2
+    Reserved4:
+      offset: 148
+      deref-count: 2
+    Depth16:
+      offset: 260
+      deref-count: 2
+    Reserved7:
+      offset: 168
+      deref-count: 2
+    Reserved6:
+      offset: 164
+      deref-count: 2
+    RGTC2:
+      offset: 220
+      deref-count: 2
+    Reserved1:
+      offset: 116
+      deref-count: 2
+    Depth24Stencil8:
+      offset: 312
+      deref-count: 2
+    Reserved3:
+      offset: 140
+      deref-count: 2
+    Reserved2:
+      offset: 124
+      deref-count: 2
+    BC7_UNORM_SRGB:
+      offset: 248
+      deref-count: 2
+    Reserved9:
+      offset: 200
+      deref-count: 2
+    Reserved8:
+      offset: 176
+      deref-count: 2
+  com.jme3.material.RenderState$BlendFunc:
+    One:
+      offset: 116
+      deref-count: 62
+    Dst_Color:
+      offset: 128
+      deref-count: 2
+    Src_Alpha:
+      offset: 136
+      deref-count: 2
+    Zero:
+      offset: 112
+      deref-count: 2
+    One_Minus_Dst_Color:
+      offset: 132
+      deref-count: 2
+    Src_Alpha_Saturate:
+      offset: 152
+      deref-count: 2
+    Src_Color:
+      offset: 120
+      deref-count: 2
+    One_Minus_Src_Alpha:
+      offset: 140
+      deref-count: 2
+    One_Minus_Dst_Alpha:
+      offset: 148
+      deref-count: 2
+    One_Minus_Src_Color:
+      offset: 124
+      deref-count: 2
+    Dst_Alpha:
+      offset: 144
+      deref-count: 2
+  org.dacapo.parser.Token:
+    next:
+      offset: 36
+      deref-count: 294
+    image:
+      offset: 32
+      deref-count: 143
+    specialToken:
+      offset: 40
+      deref-count: 84
+  jme3test.effect.TestExplosionEffect:
+    EMITTER_TYPE:
+      offset: 112
+      deref-count: 1
+  com.jme3.asset.ImplHandler:
+    classToLoaderMap:
+      offset: 24
+      deref-count: 79
+    parentAssetKey:
+      offset: 16
+      deref-count: 63
+    extensionToLoaderMap:
+      offset: 28
+      deref-count: 57
+    locatorsList:
+      offset: 20
+      deref-count: 36
+    classToCacheMap:
+      offset: 36
+      deref-count: 27
+    assetManager:
+      offset: 12
+      deref-count: 18
+    classToProcMap:
+      offset: 32
+      deref-count: 17
+    logger:
+      offset: 112
+      deref-count: 1
+  org.dacapo.parser.Config$ThreadModel:
+    SINGLE:
+      offset: 112
+      deref-count: 10
+    PER_CPU:
+      offset: 120
+      deref-count: 4
+    FIXED:
+      offset: 116
+      deref-count: 3
+    description:
+      offset: 24
+      deref-count: 3
+  com.jme3.font.BitmapFont:
+    charSet:
+      offset: 16
+      deref-count: 929
+    glyphParser:
+      offset: 24
+      deref-count: 5
+  com.jme3.texture.Texture$MinFilter:
+    BilinearNoMipMaps:
+      offset: 116
+      deref-count: 16
+    NearestNearestMipMap:
+      offset: 120
+      deref-count: 2
+    NearestLinearMipMap:
+      offset: 128
+      deref-count: 2
+    NearestNoMipMaps:
+      offset: 112
+      deref-count: 2
+    BilinearNearestMipMap:
+      offset: 124
+      deref-count: 2
+    Trilinear:
+      offset: 132
+      deref-count: 2
+  com.jme3.math.Plane:
+    normal:
+      offset: 16
+      deref-count: 2890
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.input.InputManager:
+    inputQueue:
+      offset: 92
+      deref-count: 801
+    keys:
+      offset: 48
+      deref-count: 801
+    mouse:
+      offset: 52
+      deref-count: 403
+    rawListeners:
+      offset: 88
+      deref-count: 401
+    joystick:
+      offset: 56
+      deref-count: 401
+    touch:
+      offset: 60
+      deref-count: 401
+    axisValues:
+      offset: 84
+      deref-count: 401
+    pressedButtons:
+      offset: 80
+      deref-count: 401
+    mappings:
+      offset: 76
+      deref-count: 87
+    bindings:
+      offset: 72
+      deref-count: 60
+    logger:
+      offset: 112
+      deref-count: 1
+    joystickConnectionListeners:
+      offset: 96
+      deref-count: 1
+    cursorPos:
+      offset: 64
+      deref-count: 1
+  org.dacapo.parser.Config$OutputFile:
+    digest:
+      offset: 32
+      deref-count: 16
+    this$0:
+      offset: 36
+      deref-count: 6
+    name:
+      offset: 28
+      deref-count: 6
+  com.jme3.asset.ImplHandler$ImplThreadLocal:
+    path:
+      offset: 20
+      deref-count: 32
+    type:
+      offset: 16
+      deref-count: 31
+  com.jme3.light.DefaultLightFilter:
+    processedLights:
+      offset: 16
+      deref-count: 1
+    probeBlendStrategy:
+      offset: 20
+      deref-count: 1
+  com.jme3.renderer.Statistics:
+    texturesUsed:
+      offset: 64
+      deref-count: 801
+    shadersUsed:
+      offset: 60
+      deref-count: 801
+    fbosUsed:
+      offset: 68
+      deref-count: 801
+  com.jme3.asset.cache.WeakRefCloneAssetCache:
+    assetLoadStack:
+      offset: 20
+      deref-count: 27
+    smartCache:
+      offset: 16
+      deref-count: 26
+    refQueue:
+      offset: 12
+      deref-count: 25
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.renderer.Caps:
+    FrameBufferMRT:
+      offset: 116
+      deref-count: 2
+    PackedFloatTexture:
+      offset: 268
+      deref-count: 2
+    PartialNonPowerOfTwoTextures:
+      offset: 356
+      deref-count: 2
+    GLSL300:
+      offset: 384
+      deref-count: 2
+    OpenGLES32:
+      offset: 396
+      deref-count: 2
+    GLSL420:
+      offset: 216
+      deref-count: 2
+    UniformBufferObject:
+      offset: 372
+      deref-count: 2
+    GLSL100:
+      offset: 180
+      deref-count: 2
+    OpenGLES30:
+      offset: 380
+      deref-count: 2
+    PackedFloatColorBuffer:
+      offset: 276
+      deref-count: 2
+    OpenGLES31:
+      offset: 388
+      deref-count: 2
+    GLSL140:
+      offset: 196
+      deref-count: 2
+    SharedExponentTexture:
+      offset: 272
+      deref-count: 2
+    SeamlessCubemap:
+      offset: 360
+      deref-count: 2
+    TextureArray:
+      offset: 244
+      deref-count: 2
+    TesselationShader:
+      offset: 240
+      deref-count: 2
+    FloatColorBuffer:
+      offset: 260
+      deref-count: 2
+    TextureCompressionS3TC:
+      offset: 316
+      deref-count: 2
+    CoreProfile:
+      offset: 364
+      deref-count: 2
+    TextureBuffer:
+      offset: 248
+      deref-count: 2
+    GLSL410:
+      offset: 212
+      deref-count: 2
+    TextureFilterAnisotropic:
+      offset: 320
+      deref-count: 2
+    ShaderStorageBufferObject:
+      offset: 376
+      deref-count: 2
+    FloatTexture:
+      offset: 252
+      deref-count: 2
+    GLSL330:
+      offset: 204
+      deref-count: 2
+    FrameBufferBlit:
+      offset: 312
+      deref-count: 2
+    GLSL450:
+      offset: 228
+      deref-count: 2
+    SharedExponentColorBuffer:
+      offset: 280
+      deref-count: 2
+    OpenGL45:
+      offset: 172
+      deref-count: 2
+    GLSL130:
+      offset: 192
+      deref-count: 2
+    GeometryShader:
+      offset: 236
+      deref-count: 2
+    OpenGL44:
+      offset: 168
+      deref-count: 2
+    OpenGL43:
+      offset: 164
+      deref-count: 2
+    OpenGL42:
+      offset: 160
+      deref-count: 2
+    OpenGL41:
+      offset: 156
+      deref-count: 2
+    OpenGL40:
+      offset: 152
+      deref-count: 2
+    PackedDepthStencilBuffer:
+      offset: 304
+      deref-count: 2
+    FloatDepthBuffer:
+      offset: 264
+      deref-count: 2
+    Srgb:
+      offset: 308
+      deref-count: 2
+    Depth24:
+      offset: 404
+      deref-count: 2
+    DepthTexture:
+      offset: 348
+      deref-count: 2
+    GLSL400:
+      offset: 208
+      deref-count: 2
+    TextureCompressionRGTC:
+      offset: 336
+      deref-count: 2
+    FrameBuffer:
+      offset: 112
+      deref-count: 2
+    GLSL320:
+      offset: 400
+      deref-count: 2
+    GLSL440:
+      offset: 224
+      deref-count: 2
+    MeshInstancing:
+      offset: 292
+      deref-count: 2
+    GLSL120:
+      offset: 188
+      deref-count: 2
+    OpenGL33:
+      offset: 148
+      deref-count: 2
+    IntegerTexture:
+      offset: 256
+      deref-count: 2
+    NonPowerOfTwoTextures:
+      offset: 288
+      deref-count: 2
+    OpenGL32:
+      offset: 144
+      deref-count: 2
+    BinaryShader:
+      offset: 368
+      deref-count: 2
+    OpenGL31:
+      offset: 140
+      deref-count: 2
+    OpenGL30:
+      offset: 136
+      deref-count: 2
+    TextureCompressionBPTC:
+      offset: 332
+      deref-count: 2
+    TextureCompressionETC2:
+      offset: 328
+      deref-count: 2
+    TextureCompressionETC1:
+      offset: 324
+      deref-count: 2
+    Rgba8:
+      offset: 344
+      deref-count: 2
+    VertexTextureFetch:
+      offset: 232
+      deref-count: 2
+    TextureMultisample:
+      offset: 124
+      deref-count: 2
+    UnpackRowLength:
+      offset: 408
+      deref-count: 2
+    VertexBufferArray:
+      offset: 296
+      deref-count: 2
+    FrameBufferMultisample:
+      offset: 120
+      deref-count: 2
+    GLSL310:
+      offset: 392
+      deref-count: 2
+    GLSL430:
+      offset: 220
+      deref-count: 2
+    Reserved1:
+      offset: 284
+      deref-count: 2
+    Reserved0:
+      offset: 176
+      deref-count: 2
+    GLSL110:
+      offset: 184
+      deref-count: 2
+    OpenGLES20:
+      offset: 340
+      deref-count: 2
+    OpenGL21:
+      offset: 132
+      deref-count: 2
+    GLSL150:
+      offset: 200
+      deref-count: 2
+    OpenGL20:
+      offset: 128
+      deref-count: 2
+    Multisample:
+      offset: 300
+      deref-count: 2
+    IntegerIndexBuffer:
+      offset: 352
+      deref-count: 2
+  com.jme3.asset.cache.WeakRefCloneAssetCache$1:
+    this$0:
+      offset: 16
+      deref-count: 1
+  com.jme3.math.Vector4f:
+    POSITIVE_INFINITY:
+      offset: 144
+      deref-count: 2
+    ZERO:
+      offset: 116
+      deref-count: 2
+    NEGATIVE_INFINITY:
+      offset: 148
+      deref-count: 2
+    UNIT_X:
+      offset: 124
+      deref-count: 2
+    UNIT_W:
+      offset: 136
+      deref-count: 2
+    UNIT_Z:
+      offset: 132
+      deref-count: 2
+    UNIT_Y:
+      offset: 128
+      deref-count: 2
+    NAN:
+      offset: 120
+      deref-count: 2
+    UNIT_XYZW:
+      offset: 140
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 1
+  java.util.Locale:
+    US:
+      offset: 172
+      deref-count: 2
+  com.jme3.material.RenderState$BlendEquationAlpha:
+    InheritColor:
+      offset: 112
+      deref-count: 17
+    Add:
+      offset: 116
+      deref-count: 2
+    ReverseSubtract:
+      offset: 124
+      deref-count: 2
+    Min:
+      offset: 128
+      deref-count: 2
+    Max:
+      offset: 132
+      deref-count: 2
+    Subtract:
+      offset: 120
+      deref-count: 2
+  com.jme3.scene.Spatial$BatchHint:
+    Never:
+      offset: 120
+      deref-count: 68
+    Always:
+      offset: 116
+      deref-count: 2
+    Inherit:
+      offset: 112
+      deref-count: 2
+  com.jme3.font.LineWrapMode:
+    Word:
+      offset: 120
+      deref-count: 4
+    Clip:
+      offset: 124
+      deref-count: 2
+    NoWrap:
+      offset: 112
+      deref-count: 2
+    Character:
+      offset: 116
+      deref-count: 2
+  jme3test.opencl.TestWriteToTexture:
+    LOG:
+      offset: 112
+      deref-count: 1
+  com.jme3.post.FilterPostProcessor:
+    filters:
+      offset: 84
+      deref-count: 13
+    viewPort:
+      offset: 64
+      deref-count: 6
+    FPP:
+      offset: 112
+      deref-count: 1
+    fbFormat:
+      offset: 104
+      deref-count: 1
+    assetManager:
+      offset: 88
+      deref-count: 1
+    depthFormat:
+      offset: 108
+      deref-count: 1
+  com.jme3.material.RenderState$FaceCullMode:
+    Back:
+      offset: 120
+      deref-count: 17
+    Off:
+      offset: 112
+      deref-count: 3
+    Front:
+      offset: 116
+      deref-count: 2
+    FrontAndBack:
+      offset: 124
+      deref-count: 2
+  com.jme3.asset.DesktopAssetManager:
+    handler:
+      offset: 16
+      deref-count: 135
+    logger:
+      offset: 112
+      deref-count: 45
+    eventListeners:
+      offset: 20
+      deref-count: 38
+    classLoaders:
+      offset: 24
+      deref-count: 1
+  com.jme3.scene.control.AbstractControl:
+    spatial:
+      offset: 16
+      deref-count: 2
+  com.jme3.texture.Texture$Type:
+    TwoDimensional:
+      offset: 112
+      deref-count: 25
+    CubeMap:
+      offset: 124
+      deref-count: 5
+    TwoDimensionalArray:
+      offset: 116
+      deref-count: 3
+    ThreeDimensional:
+      offset: 120
+      deref-count: 3
+  com.jme3.material.logic.MultiPassLightingLogic:
+    ADDITIVE_LIGHT:
+      offset: 112
+      deref-count: 3
+    ambientLightColor:
+      offset: 16
+      deref-count: 2
+    NULL_DIR_LIGHT:
+      offset: 116
+      deref-count: 1
+  com.jme3.texture.TextureCubeMap:
+    wrapT:
+      offset: 44
+      deref-count: 2
+    wrapR:
+      offset: 48
+      deref-count: 2
+    wrapS:
+      offset: 40
+      deref-count: 2
+  com.jme3.texture.plugins.HDRLoader:
+    logger:
+      offset: 112
+      deref-count: 1
+  jme3test.app.TestTempVars:
+    sumCompute:
+      offset: 112
+      deref-count: 1
+  com.jme3.texture.image.LastTextureState:
+    sWrap:
+      offset: 16
+      deref-count: 12
+    rWrap:
+      offset: 24
+      deref-count: 12
+    minFilter:
+      offset: 32
+      deref-count: 12
+    tWrap:
+      offset: 20
+      deref-count: 12
+    shadowCompareMode:
+      offset: 36
+      deref-count: 12
+    magFilter:
+      offset: 28
+      deref-count: 12
+  jme3test.opencl.TestOpenCLLibraries:
+    LOG:
+      offset: 112
+      deref-count: 1
+  com.jme3.app.SimpleApplication:
+    prof:
+      offset: 92
+      deref-count: 2400
+    stateManager:
+      offset: 88
+      deref-count: 1206
+    renderManager:
+      offset: 32
+      deref-count: 1200
+    cam:
+      offset: 56
+      deref-count: 1198
+    guiNode:
+      offset: 124
+      deref-count: 805
+    rootNode:
+      offset: 120
+      deref-count: 802
+    timer:
+      offset: 52
+      deref-count: 800
+    context:
+      offset: 44
+      deref-count: 403
+    dacapoRequestStart:
+      offset: 112
+      deref-count: 401
+    dacapoRequestEnd:
+      offset: 116
+      deref-count: 401
+    random:
+      offset: 144
+      deref-count: 400
+    inputManager:
+      offset: 84
+      deref-count: 4
+    flyCam:
+      offset: 136
+      deref-count: 3
+    actionListener:
+      offset: 140
+      deref-count: 3
+    dacapoRequestsStarting:
+      offset: 104
+      deref-count: 2
+    guiFont:
+      offset: 132
+      deref-count: 2
+    dacapoRequestsFinished:
+      offset: 108
+      deref-count: 2
+    fpsText:
+      offset: 128
+      deref-count: 1
+    viewPort:
+      offset: 36
+      deref-count: 1
+    guiViewPort:
+      offset: 40
+      deref-count: 1
+    assetManager:
+      offset: 20
+      deref-count: 1
+  jme3test.TestChooser$3:
+    this$0:
+      offset: 12
+      deref-count: 1
+  com.jme3.font.BitmapFont$VAlign:
+    Top:
+      offset: 112
+      deref-count: 4
+    Center:
+      offset: 116
+      deref-count: 2
+    Bottom:
+      offset: 120
+      deref-count: 2
+  jme3test.TestChooser$2:
+    val$appClass:
+      offset: 12
+      deref-count: 2
+    this$0:
+      offset: 16
+      deref-count: 1
+  com.jme3.renderer.Limits:
+    FrameBufferMrtAttachments:
+      offset: 140
+      deref-count: 2
+    ShaderStorageBufferObjectMaxTessControlBlocks:
+      offset: 200
+      deref-count: 2
+    TextureSize:
+      offset: 148
+      deref-count: 2
+    ColorTextureSamples:
+      offset: 156
+      deref-count: 2
+    VertexUniformVectors:
+      offset: 124
+      deref-count: 2
+    VertexAttributes:
+      offset: 128
+      deref-count: 2
+    FrameBufferAttachments:
+      offset: 136
+      deref-count: 2
+    VertexTextureUnits:
+      offset: 112
+      deref-count: 2
+    DepthTextureSamples:
+      offset: 160
+      deref-count: 2
+    ShaderStorageBufferObjectMaxGeometryBlocks:
+      offset: 196
+      deref-count: 2
+    FragmentUniformVectors:
+      offset: 120
+      deref-count: 2
+    FragmentTextureUnits:
+      offset: 116
+      deref-count: 2
+    RenderBufferSize:
+      offset: 144
+      deref-count: 2
+    CubemapSize:
+      offset: 152
+      deref-count: 2
+    UniformBufferObjectMaxGeometryBlocks:
+      offset: 176
+      deref-count: 2
+    ShaderStorageBufferObjectMaxFragmentBlocks:
+      offset: 192
+      deref-count: 2
+    FrameBufferSamples:
+      offset: 132
+      deref-count: 2
+    UniformBufferObjectMaxFragmentBlocks:
+      offset: 172
+      deref-count: 2
+    ShaderStorageBufferObjectMaxCombineBlocks:
+      offset: 212
+      deref-count: 2
+    UniformBufferObjectMaxVertexBlocks:
+      offset: 168
+      deref-count: 2
+    ShaderStorageBufferObjectMaxVertexBlocks:
+      offset: 188
+      deref-count: 2
+    TextureAnisotropy:
+      offset: 164
+      deref-count: 2
+    ShaderStorageBufferObjectMaxTessEvaluationBlocks:
+      offset: 204
+      deref-count: 2
+    ShaderStorageBufferObjectMaxComputeBlocks:
+      offset: 208
+      deref-count: 2
+    UniformBufferObjectMaxBlockSize:
+      offset: 180
+      deref-count: 2
+    ShaderStorageBufferObjectMaxBlockSize:
+      offset: 184
+      deref-count: 2
+  com.jme3.material.MatParamTexture:
+    colorSpace:
+      offset: 32
+      deref-count: 73
+    texture:
+      offset: 28
+      deref-count: 51
+  com.jme3.bounding.BoundingBox:
+    center:
+      offset: 16
+      deref-count: 8218
+  org.apache.commons.cli.Options:
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
+  com.jme3.math.Vector2f:
+    ZERO:
+      offset: 116
+      deref-count: 2
+    UNIT_XY:
+      offset: 120
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 1
+  jme3test.water.TestMultiPostWater:
+    assetManager:
+      offset: 20
+      deref-count: 13
+    lightDir:
+      offset: 148
+      deref-count: 5
+    rootNode:
+      offset: 120
+      deref-count: 4
+    cam:
+      offset: 56
+      deref-count: 3
+    viewPort:
+      offset: 36
+      deref-count: 1
+    flyCam:
+      offset: 136
+      deref-count: 1
+  com.jme3.math.FastMath:
+    rand:
+      offset: 112
+      deref-count: 1
+  jme3test.opencl.TestContextSwitching:
+    LOG:
+      offset: 112
+      deref-count: 1
+  com.jme3.renderer.queue.GeometryList:
+    comparator:
+      offset: 24
+      deref-count: 10
+    listSort:
+      offset: 20
+      deref-count: 10
+  com.jme3.asset.cache.WeakRefCloneAssetCache$AssetRef:
+    asset:
+      offset: 28
+      deref-count: 13
+  java.util.logging.Level:
+    FINER:
+      offset: 140
+      deref-count: 85
+    FINEST:
+      offset: 144
+      deref-count: 8
+    FINE:
+      offset: 136
+      deref-count: 7
+  com.jme3.material.logic.DefaultTechniqueDefLogic:
+    techniqueDef:
+      offset: 12
+      deref-count: 32
+  com.jme3.scene.plugins.gltf.MaterialAdapter:
+    paramsMapping:
+      offset: 12
+      deref-count: 13
+  com.jme3.math.Eigen3f:
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.scene.plugins.ogre.SkeletonLoader:
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.app.state.ConstantVerifierState:
+    errorType:
+      offset: 28
+      deref-count: 10401
+    checkers:
+      offset: 24
+      deref-count: 402
+    log:
+      offset: 112
+      deref-count: 1
+  com.jme3.system.NativeLibraryLoader:
+    nativeLibraryMap:
+      offset: 128
+      deref-count: 58
+    extractionFolderOverride:
+      offset: 120
+      deref-count: 1
+    logger:
+      offset: 112
+      deref-count: 1
+    extractionFolder:
+      offset: 124
+      deref-count: 1
+  org.apache.commons.cli.CommandLine:
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
+  jme3test.bullet.TestIssue1125:
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.app.FlyCamAppState:
+    flyCam:
+      offset: 24
+      deref-count: 4
+    app:
+      offset: 20
+      deref-count: 2
+  com.jme3.texture.Texture2D:
+    wrapT:
+      offset: 44
+      deref-count: 19
+    wrapS:
+      offset: 40
+      deref-count: 19
+  com.jme3.renderer.queue.TransparentComparator:
+    tempVec:
+      offset: 16
+      deref-count: 4
+  com.jme3.terrain.geomipmap.LODGeomap$VerboseBuffer:
+    delegate:
+      offset: 16
+      deref-count: 541888
+    this$0:
+      offset: 20
+      deref-count: 64
+  com.jme3.math.Vector3f:
+    ZERO:
+      offset: 116
+      deref-count: 206
+    UNIT_XYZ:
+      offset: 136
+      deref-count: 24
+    UNIT_Y:
+      offset: 128
+      deref-count: 11
+    UNIT_X:
+      offset: 124
+      deref-count: 5
+    UNIT_Z:
+      offset: 132
+      deref-count: 5
+    POSITIVE_INFINITY:
+      offset: 140
+      deref-count: 2
+    NEGATIVE_INFINITY:
+      offset: 144
+      deref-count: 2
+    NAN:
+      offset: 120
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.font.Letters:
+    current:
+      offset: 36
+      deref-count: 1774
+    block:
+      offset: 40
+      deref-count: 613
+    baseColor:
+      offset: 48
+      deref-count: 295
+    head:
+      offset: 24
+      deref-count: 50
+    colorTags:
+      offset: 44
+      deref-count: 23
+    plainText:
+      offset: 52
+      deref-count: 19
+    tail:
+      offset: 28
+      deref-count: 16
+    font:
+      offset: 32
+      deref-count: 12
+  jme3test.opencl.TestMultipleApplications:
+    LOG:
+      offset: 112
+      deref-count: 1
+    sync:
+      offset: 116
+      deref-count: 1
+  com.jme3.texture.plugins.AWTLoader:
+    AWT_RGBA5551:
+      offset: 116
+      deref-count: 1
+    AWT_RGBA4444:
+      offset: 112
+      deref-count: 1
+  jme3test.awt.TestAwtPanels:
+    panelsAreReady:
+      offset: 112
+      deref-count: 1
+  com.jme3.math.Ray:
+    origin:
+      offset: 16
+      deref-count: 63
+    direction:
+      offset: 20
+      deref-count: 63
+  com.jme3.math.Triangle:
+    pointa:
+      offset: 20
+      deref-count: 87
+    pointb:
+      offset: 24
+      deref-count: 87
+    pointc:
+      offset: 28
+      deref-count: 87
+  com.jme3.app.LostFocusBehavior:
+    ThrottleOnLostFocus:
+      offset: 120
+      deref-count: 2
+    PauseOnLostFocus:
+      offset: 116
+      deref-count: 2
+    Disabled:
+      offset: 112
+      deref-count: 2
+  org.dacapo.harness.CommandLineArgs:
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
+  com.jme3.math.Transform:
+    scale:
+      offset: 20
+      deref-count: 45152
+    rot:
+      offset: 12
+      deref-count: 1856
+    translation:
+      offset: 16
+      deref-count: 1635
+    IDENTITY:
+      offset: 112
+      deref-count: 1
+  com.jme3.renderer.queue.RenderQueue$ShadowMode:
+    Receive:
+      offset: 120
+      deref-count: 3
+    Cast:
+      offset: 116
+      deref-count: 2
+    CastAndReceive:
+      offset: 124
+      deref-count: 2
+    Off:
+      offset: 112
+      deref-count: 2
+    Inherit:
+      offset: 128
+      deref-count: 2
+  com.jme3.water.WaterFilter$AreaShape:
+    Circular:
+      offset: 112
+      deref-count: 5
+    Square:
+      offset: 116
+      deref-count: 2
+  com.jme3.scene.VertexBuffer$Type:
+    Position:
+      offset: 112
+      deref-count: 217049
+    Normal:
+      offset: 120
+      deref-count: 86803
+    Binormal:
+      offset: 136
+      deref-count: 86798
+    Tangent:
+      offset: 132
+      deref-count: 86798
+    InstanceData:
+      offset: 208
+      deref-count: 410
+    TexCoord:
+      offset: 124
+      deref-count: 207
+    Index:
+      offset: 148
+      deref-count: 78
+    Color:
+      offset: 128
+      deref-count: 11
+    TexCoord8:
+      offset: 192
+      deref-count: 3
+    TexCoord7:
+      offset: 188
+      deref-count: 3
+    TexCoord6:
+      offset: 184
+      deref-count: 3
+    TexCoord5:
+      offset: 180
+      deref-count: 3
+    TexCoord4:
+      offset: 176
+      deref-count: 3
+    TexCoord3:
+      offset: 172
+      deref-count: 3
+    TexCoord2:
+      offset: 168
+      deref-count: 3
+    MorphTarget8:
+      offset: 244
+      deref-count: 2
+    MorphTarget10:
+      offset: 252
+      deref-count: 2
+    InterleavedData:
+      offset: 140
+      deref-count: 2
+    MorphTarget7:
+      offset: 240
+      deref-count: 2
+    MorphTarget11:
+      offset: 256
+      deref-count: 2
+    MorphTarget6:
+      offset: 236
+      deref-count: 2
+    MorphTarget12:
+      offset: 260
+      deref-count: 2
+    MorphTarget5:
+      offset: 232
+      deref-count: 2
+    MorphTarget13:
+      offset: 264
+      deref-count: 2
+    MorphTarget4:
+      offset: 228
+      deref-count: 2
+    MorphTarget3:
+      offset: 224
+      deref-count: 2
+    Size:
+      offset: 116
+      deref-count: 2
+    MorphTarget2:
+      offset: 220
+      deref-count: 2
+    MorphTarget1:
+      offset: 216
+      deref-count: 2
+    BoneIndex:
+      offset: 164
+      deref-count: 2
+    MorphTarget0:
+      offset: 212
+      deref-count: 2
+    BindPoseNormal:
+      offset: 156
+      deref-count: 2
+    HWBoneIndex:
+      offset: 204
+      deref-count: 2
+    BoneWeight:
+      offset: 160
+      deref-count: 2
+    HWBoneWeight:
+      offset: 200
+      deref-count: 2
+    Reserved0:
+      offset: 144
+      deref-count: 2
+    BindPoseTangent:
+      offset: 196
+      deref-count: 2
+    BindPosePosition:
+      offset: 152
+      deref-count: 2
+    MorphTarget9:
+      offset: 248
+      deref-count: 2
+  java.lang.System:
+    out:
+      offset: 116
+      deref-count: 22
+    err:
+      offset: 120
+      deref-count: 4
+  jme3test.app.TestChangeAppIcon:
+    log:
+      offset: 112
+      deref-count: 1
+  com.jme3.system.NullContext$1:
+    this$0:
+      offset: 12
+      deref-count: 1
+  com.jme3.math.Matrix3f:
+    IDENTITY:
+      offset: 120
+      deref-count: 2
+    ZERO:
+      offset: 116
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.util.IntMap$IntMapIterator:
+    this$0:
+      offset: 24
+      deref-count: 2400
+    cur:
+      offset: 20
+      deref-count: 800
+  com.jme3.material.RenderState:
+    blendMode:
+      offset: 56
+      deref-count: 21
+    cullMode:
+      offset: 44
+      deref-count: 18
+    depthFunc:
+      offset: 60
+      deref-count: 16
+    backStencilStencilFailOperation:
+      offset: 76
+      deref-count: 15
+    frontStencilStencilFailOperation:
+      offset: 64
+      deref-count: 15
+    frontStencilDepthPassOperation:
+      offset: 72
+      deref-count: 15
+    backStencilDepthPassOperation:
+      offset: 84
+      deref-count: 15
+    backStencilFunction:
+      offset: 92
+      deref-count: 15
+    backStencilDepthFailOperation:
+      offset: 80
+      deref-count: 15
+    dfactorRGB:
+      offset: 100
+      deref-count: 15
+    sfactorRGB:
+      offset: 96
+      deref-count: 15
+    frontStencilDepthFailOperation:
+      offset: 68
+      deref-count: 15
+    dfactorAlpha:
+      offset: 108
+      deref-count: 15
+    blendEquation:
+      offset: 48
+      deref-count: 15
+    blendEquationAlpha:
+      offset: 52
+      deref-count: 15
+    sfactorAlpha:
+      offset: 104
+      deref-count: 15
+    frontStencilFunction:
+      offset: 88
+      deref-count: 15
+    ADDITIONAL:
+      offset: 120
+      deref-count: 8
+    NULL:
+      offset: 116
+      deref-count: 3
+    DEFAULT:
+      offset: 112
+      deref-count: 1
+  com.jme3.util.TempVars:
+    vect1:
+      offset: 52
+      deref-count: 4900937
+    vect8:
+      offset: 80
+      deref-count: 811203
+    varsLocal:
+      offset: 112
+      deref-count: 4519
+    vect2:
+      offset: 56
+      deref-count: 1551
+    vect3:
+      offset: 60
+      deref-count: 1015
+    vect6:
+      offset: 72
+      deref-count: 195
+    vect4:
+      offset: 64
+      deref-count: 195
+    vect5:
+      offset: 68
+      deref-count: 195
+    tempMat3:
+      offset: 112
+      deref-count: 137
+    tempMat4:
+      offset: 116
+      deref-count: 136
+    plane:
+      offset: 136
+      deref-count: 3
+    vect4f2:
+      offset: 96
+      deref-count: 3
+    vect2d2:
+      offset: 108
+      deref-count: 3
+    tempMat42:
+      offset: 120
+      deref-count: 3
+    color:
+      offset: 48
+      deref-count: 3
+    bbox:
+      offset: 28
+      deref-count: 3
+    collisionResults:
+      offset: 168
+      deref-count: 3
+    vect2d:
+      offset: 104
+      deref-count: 3
+    triangle:
+      offset: 44
+      deref-count: 3
+    quat2:
+      offset: 128
+      deref-count: 3
+    quat1:
+      offset: 124
+      deref-count: 3
+    intBuffer1:
+      offset: 16
+      deref-count: 3
+    floatBuffer16:
+      offset: 24
+      deref-count: 3
+    vect10:
+      offset: 88
+      deref-count: 3
+    bihStack:
+      offset: 176
+      deref-count: 3
+    eigen:
+      offset: 132
+      deref-count: 3
+    intBuffer16:
+      offset: 20
+      deref-count: 3
+    vect9:
+      offset: 84
+      deref-count: 3
+    vect7:
+      offset: 76
+      deref-count: 3
+    vect4f1:
+      offset: 92
+      deref-count: 3
+  com.jme3.system.JmeSystem$StorageFolderType:
+    Internal:
+      offset: 112
+      deref-count: 2
+    External:
+      offset: 116
+      deref-count: 2
+  com.jme3.terrain.heightmap.AbstractHeightMap:
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.material.RenderState$BlendMode:
+    Off:
+      offset: 112
+      deref-count: 17
+    Alpha:
+      offset: 132
+      deref-count: 5
+    AlphaAdditive:
+      offset: 124
+      deref-count: 4
+    PremultAlpha:
+      offset: 120
+      deref-count: 2
+    Additive:
+      offset: 116
+      deref-count: 2
+    Screen:
+      offset: 148
+      deref-count: 2
+    Color:
+      offset: 128
+      deref-count: 2
+    Exclusion:
+      offset: 152
+      deref-count: 2
+    ModulateX2:
+      offset: 144
+      deref-count: 2
+    Custom:
+      offset: 156
+      deref-count: 2
+    AlphaSumA:
+      offset: 136
+      deref-count: 2
+    Modulate:
+      offset: 140
+      deref-count: 2
+  com.jme3.texture.Texture$MagFilter:
+    Bilinear:
+      offset: 116
+      deref-count: 16
+    Nearest:
+      offset: 112
+      deref-count: 2
+  jme3test.app.TestIDList:
+    list:
+      offset: 112
+      deref-count: 1
+  com.jme3.font.BitmapTextPage:
+    pageQuads:
+      offset: 152
+      deref-count: 862
+    texture:
+      offset: 148
+      deref-count: 2
+  com.jme3.font.BitmapCharacter:
+    kerning:
+      offset: 48
+      deref-count: 582
+  org.dacapo.parser.ConfigFile:
+    token:
+      offset: 36
+      deref-count: 576
+    token_source:
+      offset: 28
+      deref-count: 85
+    jj_nt:
+      offset: 40
+      deref-count: 64
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
+  com.jme3.terrain.geomipmap.picking.BresenhamYUpGridTracer:
+    rayLocation:
+      offset: 52
+      deref-count: 21
+    gridSpacing:
+      offset: 44
+      deref-count: 21
+    stepDirection:
+      offset: 60
+      deref-count: 21
+    gridOrigin:
+      offset: 40
+      deref-count: 21
+    gridLocation:
+      offset: 48
+      deref-count: 21
+    walkRay:
+      offset: 56
+      deref-count: 21
+  com.jme3.util.NativeObject:
+    handleRef:
+      offset: 24
+      deref-count: 840
+    objectManager:
+      offset: 20
+      deref-count: 420
+  com.jme3.scene.VertexBuffer:
+    data:
+      offset: 56
+      deref-count: 479181
+    bufType:
+      offset: 64
+      deref-count: 1632
+    usage:
+      offset: 60
+      deref-count: 1192
+    format:
+      offset: 68
+      deref-count: 408
+  com.jme3.shader.UniformBindingManager:
+    viewProjMatrixInv:
+      offset: 116
+      deref-count: 1
+    viewPort:
+      offset: 132
+      deref-count: 1
+    camLeft:
+      offset: 52
+      deref-count: 1
+    camDir:
+      offset: 56
+      deref-count: 1
+    camLoc:
+      offset: 60
+      deref-count: 1
+    worldNormalMatrix:
+      offset: 96
+      deref-count: 1
+    resolution:
+      offset: 136
+      deref-count: 1
+    worldMatrixInv:
+      offset: 100
+      deref-count: 1
+    projMatrixInv:
+      offset: 112
+      deref-count: 1
+    timer:
+      offset: 36
+      deref-count: 1
+    normalMatrixInv:
+      offset: 124
+      deref-count: 1
+    nearFar:
+      offset: 144
+      deref-count: 1
+    tempMatrix:
+      offset: 64
+      deref-count: 1
+    worldViewProjMatrix:
+      offset: 88
+      deref-count: 1
+    worldViewProjMatrixInv:
+      offset: 128
+      deref-count: 1
+    camUp:
+      offset: 48
+      deref-count: 1
+    viewMatrixInv:
+      offset: 108
+      deref-count: 1
+    worldViewMatrix:
+      offset: 84
+      deref-count: 1
+    worldMatrix:
+      offset: 80
+      deref-count: 1
+    normalMatrix:
+      offset: 92
+      deref-count: 1
+    worldMatrixInvTrsp:
+      offset: 104
+      deref-count: 1
+    viewProjMatrix:
+      offset: 76
+      deref-count: 1
+    worldViewMatrixInv:
+      offset: 120
+      deref-count: 1
+    projMatrix:
+      offset: 72
+      deref-count: 1
+    viewMatrix:
+      offset: 68
+      deref-count: 1
+    resolutionInv:
+      offset: 140
+      deref-count: 1
+  com.jme3.light.WeightedProbeBlendingStrategy:
+    lightProbes:
+      offset: 12
+      deref-count: 1
+  com.jme3.scene.shape.Sphere$TextureMode:
+    Original:
+      offset: 112
+      deref-count: 91
+    Polar:
+      offset: 120
+      deref-count: 4
+    Projected:
+      offset: 116
+      deref-count: 2
+  com.jme3.system.AppSettings:
+    defaults:
+      offset: 112
+      deref-count: 30
+  com.jme3.material.RenderState$StencilOperation:
+    Keep:
+      offset: 112
+      deref-count: 92
+    Replace:
+      offset: 120
+      deref-count: 2
+    Invert:
+      offset: 140
+      deref-count: 2
+    Zero:
+      offset: 116
+      deref-count: 2
+    DecrementWrap:
+      offset: 136
+      deref-count: 2
+    IncrementWrap:
+      offset: 128
+      deref-count: 2
+    Decrement:
+      offset: 132
+      deref-count: 2
+    Increment:
+      offset: 124
+      deref-count: 2
+  org.apache.commons.cli.Parser:
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
+  com.jme3.font.BitmapCharacterSet:
+    characters:
+      offset: 36
+      deref-count: 1244
+  org.dacapo.harness.TeeOutputStream:
+    log:
+      offset: 28
+      deref-count: 473
+    logFile:
+      offset: 32
+      deref-count: 6
+  com.jme3.renderer.Camera$FrustumIntersect:
+    Intersects:
+      offset: 120
+      deref-count: 2
+    Inside:
+      offset: 116
+      deref-count: 2
+    Outside:
+      offset: 112
+      deref-count: 2
+  com.jme3.system.NativeLibrary:
+    extractedAsFileName:
+      offset: 24
+      deref-count: 57
+    name:
+      offset: 12
+      deref-count: 57
+    pathInNativesJar:
+      offset: 20
+      deref-count: 57
+    platform:
+      offset: 16
+      deref-count: 57
+  com.jme3.system.Platform$Os:
+    Android:
+      offset: 128
+      deref-count: 8
+    MacOS:
+      offset: 124
+      deref-count: 7
+    Linux:
+      offset: 112
+      deref-count: 6
+    Windows:
+      offset: 116
+      deref-count: 6
+    iOS:
+      offset: 120
+      deref-count: 4
+  com.jme3.collision.CollisionResults:
+    results:
+      offset: 16
+      deref-count: 3
+  javax.xml.bind.DatatypeConverter:
+    theConverter:
+      offset: 112
+      deref-count: 136
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
+  com.jme3.material.logic.SinglePassLightingLogic:
+    ADDITIVE_LIGHT:
+      offset: 120
+      deref-count: 3
+    ambientLightColor:
+      offset: 24
+      deref-count: 2
+  com.jme3.app.DebugKeysAppState:
+    inputManager:
+      offset: 28
+      deref-count: 9
+    keyListener:
+      offset: 24
+      deref-count: 3
+    app:
+      offset: 20
+      deref-count: 1
+  org.dacapo.harness.TeePrintStream:
+    out:
+      offset: 16
+      deref-count: 6
+  com.jme3.scene.Spatial$CullHint:
+    Never:
+      offset: 124
+      deref-count: 8
+    Dynamic:
+      offset: 116
+      deref-count: 2
+    Always:
+      offset: 120
+      deref-count: 2
+    Inherit:
+      offset: 112
+      deref-count: 2
+  com.jme3.audio.AudioContext:
+    audioRenderer:
+      offset: 112
+      deref-count: 401
+  com.jme3.util.clone.Cloner:
+    functions:
+      offset: 16
+      deref-count: 119
+    index:
+      offset: 12
+      deref-count: 95
+    log:
+      offset: 112
+      deref-count: 43
+    methodCache:
+      offset: 116
+      deref-count: 23
+  com.jme3.material.MaterialDef:
+    matParams:
+      offset: 28
+      deref-count: 290
+    techniques:
+      offset: 24
+      deref-count: 45
+    assetName:
+      offset: 16
+      deref-count: 14
+    logger:
+      offset: 112
+      deref-count: 4
+    name:
+      offset: 12
+      deref-count: 3
+    assetManager:
+      offset: 20
+      deref-count: 3
+  com.jme3.effect.ParticleMesh$Type:
+    Point:
+      offset: 112
+      deref-count: 3
+    Triangle:
+      offset: 116
+      deref-count: 2
+  com.jme3.util.SafeArrayList:
+    buffer:
+      offset: 20
+      deref-count: 6344
+    elementType:
+      offset: 16
+      deref-count: 1045
+  com.jme3.scene.shape.Sphere:
+    textureMode:
+      offset: 104
+      deref-count: 91
+  com.jme3.material.RenderState$BlendEquation:
+    Add:
+      offset: 112
+      deref-count: 17
+    ReverseSubtract:
+      offset: 120
+      deref-count: 2
+    Min:
+      offset: 124
+      deref-count: 2
+    Max:
+      offset: 128
+      deref-count: 2
+    Subtract:
+      offset: 116
+      deref-count: 2
+  com.jme3.renderer.ViewPort:
+    sceneList:
+      offset: 28
+      deref-count: 4
+    processors:
+      offset: 32
+      deref-count: 3
+    backColor:
+      offset: 40
+      deref-count: 2
+    name:
+      offset: 16
+      deref-count: 2
+    queue:
+      offset: 24
+      deref-count: 2
+    cam:
+      offset: 20
+      deref-count: 2
+    out:
+      offset: 36
+      deref-count: 2
+  com.jme3.app.state.ConstantVerifierState$ErrorType:
+    Assert:
+      offset: 112
+      deref-count: 4
+    Log:
+      offset: 120
+      deref-count: 3
+    Exception:
+      offset: 116
+      deref-count: 3
+  com.jme3.system.NativeLibrary$Key:
+    name:
+      offset: 12
+      deref-count: 114
+    platform:
+      offset: 16
+      deref-count: 114
+  com.jme3.renderer.queue.RenderQueue$Bucket:
+    Gui:
+      offset: 128
+      deref-count: 4
+    Sky:
+      offset: 120
+      deref-count: 2
+    Transparent:
+      offset: 116
+      deref-count: 2
+    Opaque:
+      offset: 112
+      deref-count: 2
+    Translucent:
+      offset: 124
+      deref-count: 2
+    Inherit:
+      offset: 132
+      deref-count: 2
+  com.jme3.scene.mesh.IndexShortBuffer:
+    buf:
+      offset: 16
+      deref-count: 541952
+  com.jme3.util.BufferUtils:
+    allocator:
+      offset: 112
+      deref-count: 835
+    removeCollected:
+      offset: 116
+      deref-count: 1
+    trackedBuffers:
+      offset: 120
+      deref-count: 1
+  com.jme3.asset.AssetConfig:
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.math.Matrix4f:
+    IDENTITY:
+      offset: 120
+      deref-count: 2
+    ZERO:
+      offset: 116
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.app.StatsView:
+    stringBuilder:
+      offset: 116
+      deref-count: 6001
+    statText:
+      offset: 100
+      deref-count: 405
+    statistics:
+      offset: 104
+      deref-count: 404
+  java.io.File:
+    separator:
+      offset: 116
+      deref-count: 2
+  com.jme3.texture.image.DefaultImageRaster:
+    codec:
+      offset: 44
+      deref-count: 1835012
+    buffer:
+      offset: 36
+      deref-count: 524289
+    image:
+      offset: 40
+      deref-count: 1
+  com.jme3.system.JmeContext$Type:
+    Headless:
+      offset: 124
+      deref-count: 5
+    Display:
+      offset: 112
+      deref-count: 3
+    OffscreenSurface:
+      offset: 120
+      deref-count: 2
+    Canvas:
+      offset: 116
+      deref-count: 2
+  com.jme3.scene.VertexBuffer$Format:
+    UnsignedShort:
+      offset: 136
+      deref-count: 68
+    UnsignedInt:
+      offset: 144
+      deref-count: 4
+    UnsignedByte:
+      offset: 128
+      deref-count: 4
+    Half:
+      offset: 112
+      deref-count: 3
+    Float:
+      offset: 116
+      deref-count: 3
+    Byte:
+      offset: 124
+      deref-count: 3
+    Double:
+      offset: 120
+      deref-count: 3
+    Short:
+      offset: 132
+      deref-count: 3
+    Int:
+      offset: 140
+      deref-count: 3
+  com.jme3.asset.AssetInfo:
+    key:
+      offset: 16
+      deref-count: 46
+    manager:
+      offset: 12
+      deref-count: 22
+  com.jme3.font.BitmapText:
+    block:
+      offset: 104
+      deref-count: 839
+    letters:
+      offset: 112
+      deref-count: 17
+    font:
+      offset: 100
+      deref-count: 8
+  com.jme3.texture.Texture$ShadowCompareMode:
+    Off:
+      offset: 112
+      deref-count: 26
+    LessOrEqual:
+      offset: 116
+      deref-count: 2
+    GreaterOrEqual:
+      offset: 120
+      deref-count: 2
+  com.jme3.scene.Mesh$Mode:
+    TriangleStrip:
+      offset: 132
+      deref-count: 67
+    Points:
+      offset: 112
+      deref-count: 3
+    Triangles:
+      offset: 128
+      deref-count: 3
+    LineLoop:
+      offset: 124
+      deref-count: 3
+    Patch:
+      offset: 144
+      deref-count: 3
+    Lines:
+      offset: 116
+      deref-count: 3
+    LineStrip:
+      offset: 120
+      deref-count: 3
+    TriangleFan:
+      offset: 136
+      deref-count: 3
+    Hybrid:
+      offset: 140
+      deref-count: 2
+  com.jme3.material.TechniqueDef$ShadowMode:
+    Disable:
+      offset: 112
+      deref-count: 34
+    InPass:
+      offset: 116
+      deref-count: 2
+    PostPass:
+      offset: 120
+      deref-count: 2
+  com.jme3.terrain.geomipmap.NormalRecalcControl:
+    terrain:
+      offset: 20
+      deref-count: 402
+  com.jme3.texture.Image:
+    colorSpace:
+      offset: 60
+      deref-count: 48
+    data:
+      offset: 56
+      deref-count: 46
+    format:
+      offset: 48
+      deref-count: 13
+    lastTextureState:
+      offset: 64
+      deref-count: 12
+  com.jme3.terrain.geomipmap.picking.BresenhamTerrainPicker:
+    calcVec1:
+      offset: 24
+      deref-count: 21
+    root:
+      offset: 36
+      deref-count: 21
+    gridTriB:
+      offset: 20
+      deref-count: 21
+    gridTriA:
+      offset: 16
+      deref-count: 21
+    tracer:
+      offset: 40
+      deref-count: 21
+    worldPickRay:
+      offset: 32
+      deref-count: 21
+    workRay:
+      offset: 28
+      deref-count: 21
+  com.jme3.util.SkyFactory$EnvMapType:
+    CubeMap:
+      offset: 112
+      deref-count: 4
+    EquirectMap:
+      offset: 120
+      deref-count: 3
+    SphereMap:
+      offset: 116
+      deref-count: 3
+  com.jme3.app.state.BaseAppState:
+    log:
+      offset: 112
+      deref-count: 9
+    app:
+      offset: 16
+      deref-count: 4
+    id:
+      offset: 20
+      deref-count: 2
+  com.jme3.shader.UniformBinding:
+    glslType:
+      offset: 24
+      deref-count: 32
+    WorldViewMatrixInverse:
+      offset: 160
+      deref-count: 2
+    ViewProjectionMatrixInverse:
+      offset: 156
+      deref-count: 2
+    WorldMatrixInverse:
+      offset: 144
+      deref-count: 2
+    ProjectionMatrix:
+      offset: 120
+      deref-count: 2
+    ViewProjectionMatrix:
+      offset: 136
+      deref-count: 2
+    FrustumNearFar:
+      offset: 176
+      deref-count: 2
+    Time:
+      offset: 208
+      deref-count: 2
+    Tpf:
+      offset: 212
+      deref-count: 2
+    Aspect:
+      offset: 188
+      deref-count: 2
+    CameraPosition:
+      offset: 192
+      deref-count: 2
+    WorldViewProjectionMatrixInverse:
+      offset: 168
+      deref-count: 2
+    LightColor:
+      offset: 232
+      deref-count: 2
+    WorldMatrixInverseTranspose:
+      offset: 140
+      deref-count: 2
+    FrameRate:
+      offset: 216
+      deref-count: 2
+    ResolutionInverse:
+      offset: 184
+      deref-count: 2
+    CameraDirection:
+      offset: 196
+      deref-count: 2
+    ViewMatrix:
+      offset: 116
+      deref-count: 2
+    NormalMatrix:
+      offset: 128
+      deref-count: 2
+    ViewMatrixInverse:
+      offset: 148
+      deref-count: 2
+    CameraUp:
+      offset: 204
+      deref-count: 2
+    WorldNormalMatrix:
+      offset: 236
+      deref-count: 2
+    WorldViewMatrix:
+      offset: 124
+      deref-count: 2
+    WorldViewProjectionMatrix:
+      offset: 132
+      deref-count: 2
+    CameraLeft:
+      offset: 200
+      deref-count: 2
+    LightPosition:
+      offset: 224
+      deref-count: 2
+    AmbientLightColor:
+      offset: 228
+      deref-count: 2
+    ProjectionMatrixInverse:
+      offset: 152
+      deref-count: 2
+    LightDirection:
+      offset: 220
+      deref-count: 2
+    WorldMatrix:
+      offset: 112
+      deref-count: 2
+    ViewPort:
+      offset: 172
+      deref-count: 2
+    NormalMatrixInverse:
+      offset: 164
+      deref-count: 2
+    Resolution:
+      offset: 180
+      deref-count: 2
+  com.jme3.system.JmeSystem:
+    systemDelegate:
+      offset: 116
+      deref-count: 42
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.util.SafeArrayList$ArrayIterator:
+    this$0:
+      offset: 24
+      deref-count: 477
+  com.jme3.texture.Texture:
+    image:
+      offset: 20
+      deref-count: 104
+    minificationFilter:
+      offset: 28
+      deref-count: 48
+    key:
+      offset: 24
+      deref-count: 37
+    name:
+      offset: 16
+      deref-count: 30
+    magnificationFilter:
+      offset: 32
+      deref-count: 15
+    shadowCompareMode:
+      offset: 36
+      deref-count: 12
+  com.jme3.material.TechniqueDef$LightSpace:
+    Legacy:
+      offset: 120
+      deref-count: 3
+    World:
+      offset: 112
+      deref-count: 3
+    View:
+      offset: 116
+      deref-count: 2
+  com.jme3.asset.plugins.ClasspathLocator:
+    root:
+      offset: 12
+      deref-count: 21
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.asset.cache.SimpleAssetCache:
+    keyToAssetMap:
+      offset: 12
+      deref-count: 13
+  com.jme3.util.IntMap$Entry:
+    value:
+      offset: 16
+      deref-count: 479611
+    next:
+      offset: 20
+      deref-count: 1743
+  com.jme3.app.state.AppStateManager:
+    app:
+      offset: 28
+      deref-count: 7207
+    states:
+      offset: 16
+      deref-count: 3241
+    initializing:
+      offset: 12
+      deref-count: 420
+    terminating:
+      offset: 20
+      deref-count: 401
+    stateIndex:
+      offset: 24
+      deref-count: 1
+  com.jme3.util.ReflectionAllocator:
+    viewedBufferMethod:
+      offset: 120
+      deref-count: 4
+    cleanerMethod:
+      offset: 112
+      deref-count: 2
+    cleanMethod:
+      offset: 116
+      deref-count: 2
+    freeMethod:
+      offset: 124
+      deref-count: 1
+  com.jme3.app.state.ConstantVerifierState$Checker:
+    constant:
+      offset: 12
+      deref-count: 26
+    goodValue:
+      offset: 16
+      deref-count: 26
+  com.jme3.water.WaterFilter:
+    material:
+      offset: 28
+      deref-count: 34
+    plane:
+      offset: 188
+      deref-count: 6
+    lightDirection:
+      offset: 180
+      deref-count: 6
+    foamExistence:
+      offset: 204
+      deref-count: 5
+    waterColor:
+      offset: 192
+      deref-count: 5
+    deepWaterColor:
+      offset: 196
+      deref-count: 5
+    lightColor:
+      offset: 184
+      deref-count: 4
+    colorExtinction:
+      offset: 200
+      deref-count: 4
+    biasMatrix:
+      offset: 164
+      deref-count: 3
+    reflectionScene:
+      offset: 124
+      deref-count: 3
+    reflectionProcessor:
+      offset: 160
+      deref-count: 3
+    center:
+      offset: 212
+      deref-count: 3
+    targetLocation:
+      offset: 156
+      deref-count: 3
+    shapeType:
+      offset: 216
+      deref-count: 3
+    textureProjMatrix:
+      offset: 168
+      deref-count: 3
+    windDirection:
+      offset: 208
+      deref-count: 3
+    foamTexture:
+      offset: 140
+      deref-count: 2
+  com.jme3.renderer.queue.OpaqueComparator:
+    tempVec:
+      offset: 16
+      deref-count: 2
+    tempVec2:
+      offset: 20
+      deref-count: 2
+  com.jme3.renderer.queue.RenderQueue:
+    translucentList:
+      offset: 24
+      deref-count: 2
+    opaqueList:
+      offset: 12
+      deref-count: 2
+    guiList:
+      offset: 16
+      deref-count: 2
+    transparentList:
+      offset: 20
+      deref-count: 2
+    skyList:
+      offset: 28
+      deref-count: 2
+  com.jme3.font.ColorTags:
+    colors:
+      offset: 16
+      deref-count: 16
+    text:
+      offset: 20
+      deref-count: 14
+    colorPattern:
+      offset: 112
+      deref-count: 8
+    original:
+      offset: 24
+      deref-count: 7
+  com.jme3.util.ListMap:
+    backingMap:
+      offset: 20
+      deref-count: 111
+  com.jme3.system.NullRenderer:
+    stats:
+      offset: 20
+      deref-count: 402
+    limits:
+      offset: 16
+      deref-count: 1
+    caps:
+      offset: 12
+      deref-count: 1
+  com.jme3.renderer.RenderManager:
+    renderer:
+      offset: 36
+      deref-count: 801
+    viewPorts:
+      offset: 48
+      deref-count: 2
+    uniformBindingManager:
+      offset: 40
+      deref-count: 2
+    postViewPorts:
+      offset: 52
+      deref-count: 2
+    forcedOverrides:
+      offset: 72
+      deref-count: 1
+    preferredLightMode:
+      offset: 92
+      deref-count: 1
+    logger:
+      offset: 112
+      deref-count: 1
+    preViewPorts:
+      offset: 44
+      deref-count: 1
+    filteredLightList:
+      offset: 80
+      deref-count: 1
+    forcedTechnique:
+      offset: 64
+      deref-count: 1
+    lightFilter:
+      offset: 88
+      deref-count: 1
+    prevCam:
+      offset: 56
+      deref-count: 1
+    forcedRenderState:
+      offset: 68
+      deref-count: 1
+    orthoMatrix:
+      offset: 76
+      deref-count: 1
+    forcedMaterial:
+      offset: 60
+      deref-count: 1
+  com.jme3.scene.plugins.ogre.MeshLoader:
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.asset.TextureKey:
+    textureTypeHint:
+      offset: 32
+      deref-count: 90
+  com.jme3.app.SimpleApplication$AppActionListener:
+    this$0:
+      offset: 12
+      deref-count: 1
+  com.jme3.system.JmeVersion:
+    props:
+      offset: 116
+      deref-count: 11
+    FULL_NAME:
+      offset: 152
+      deref-count: 3
+    BUILD_DATE:
+      offset: 120
+      deref-count: 2
+    GIT_SHORT_HASH:
+      offset: 132
+      deref-count: 2
+    BRANCH_NAME:
+      offset: 124
+      deref-count: 2
+    GIT_TAG:
+      offset: 136
+      deref-count: 1
+    GIT_HASH:
+      offset: 128
+      deref-count: 1
+    VERSION_NUMBER:
+      offset: 140
+      deref-count: 1
+    logger:
+      offset: 112
+      deref-count: 1
+    VERSION_FULL:
+      offset: 148
+      deref-count: 1
+    VERSION_TAG:
+      offset: 144
+      deref-count: 1
+  com.jme3.shader.Shader$ShaderType:
+    Geometry:
+      offset: 120
+      deref-count: 66
+    TessellationControl:
+      offset: 124
+      deref-count: 66
+    extension:
+      offset: 24
+      deref-count: 5
+    Vertex:
+      offset: 116
+      deref-count: 2
+    Fragment:
+      offset: 112
+      deref-count: 2
+    TessellationEvaluation:
+      offset: 128
+      deref-count: 2
+  jme3test.scene.TestSceneStress:
+    BOX:
+      offset: 112
+      deref-count: 1
+  org.dacapo.parser.ConfigFileTokenManager:
+    input_stream:
+      offset: 52
+      deref-count: 1894
+    image:
+      offset: 68
+      deref-count: 173
+    jjimage:
+      offset: 64
+      deref-count: 88
+    debugStream:
+      offset: 48
+      deref-count: 1
+  com.jme3.texture.plugins.PFMLoader:
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.shader.VarType:
+    glslType:
+      offset: 28
+      deref-count: 21
+    Int:
+      offset: 188
+      deref-count: 5
+    Boolean:
+      offset: 148
+      deref-count: 5
+    Texture3D:
+      offset: 176
+      deref-count: 3
+    Vector3:
+      offset: 120
+      deref-count: 3
+    Vector4:
+      offset: 124
+      deref-count: 3
+    Float:
+      offset: 112
+      deref-count: 3
+    Vector2:
+      offset: 116
+      deref-count: 3
+    TextureCubeMap:
+      offset: 184
+      deref-count: 3
+    TextureArray:
+      offset: 180
+      deref-count: 3
+    Texture2D:
+      offset: 172
+      deref-count: 2
+    Vector3Array:
+      offset: 140
+      deref-count: 2
+    BufferObject:
+      offset: 192
+      deref-count: 2
+    Matrix4Array:
+      offset: 164
+      deref-count: 2
+    Matrix3Array:
+      offset: 160
+      deref-count: 2
+    TextureBuffer:
+      offset: 168
+      deref-count: 2
+    Matrix4:
+      offset: 156
+      deref-count: 2
+    Matrix3:
+      offset: 152
+      deref-count: 2
+    FloatArray:
+      offset: 132
+      deref-count: 2
+    IntArray:
+      offset: 128
+      deref-count: 2
+    Vector4Array:
+      offset: 144
+      deref-count: 2
+    Vector2Array:
+      offset: 136
+      deref-count: 2
+  org.dacapo.parser.SimpleCharStream:
+    inputStream:
+      offset: 60
+      deref-count: 4
+  org.dacapo.parser.Config$Size:
+    outputFiles:
+      offset: 32
+      deref-count: 42
+    this$0:
+      offset: 36
+      deref-count: 9
+    name:
+      offset: 20
+      deref-count: 3
+  com.jme3.util.ListMap$ListMapEntry:
+    value:
+      offset: 16
+      deref-count: 26
+    key:
+      offset: 12
+      deref-count: 26
+  com.jme3.material.RenderState$TestFunction:
+    Always:
+      offset: 140
+      deref-count: 32
+    LessOrEqual:
+      offset: 124
+      deref-count: 17
+    NotEqual:
+      offset: 136
+      deref-count: 2
+    Equal:
+      offset: 116
+      deref-count: 2
+    Never:
+      offset: 112
+      deref-count: 2
+    Greater:
+      offset: 128
+      deref-count: 2
+    GreaterOrEqual:
+      offset: 132
+      deref-count: 2
+    Less:
+      offset: 120
+      deref-count: 2
+  org.dacapo.harness.LatencyReporter:
+    callback:
+      offset: 132
+      deref-count: 1606
+    globalIdx:
+      offset: 124
+      deref-count: 402
+  jme3test.TestChooser:
+    executorService:
+      offset: 16
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 2
+    selectedClass:
+      offset: 12
+      deref-count: 1
+  org.dacapo.harness.TestHarness:
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 14
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
+  com.jme3.audio.AudioListenerState:
+    listener:
+      offset: 28
+      deref-count: 401
+    camera:
+      offset: 32
+      deref-count: 1
+  com.jme3.font.LetterQuad:
+    previous:
+      offset: 88
+      deref-count: 3464
+    bitmapChar:
+      offset: 84
+      deref-count: 3148
+    next:
+      offset: 92
+      deref-count: 2394
+    font:
+      offset: 80
+      deref-count: 1496
+    UNBOUNDED:
+      offset: 112
+      deref-count: 309
+  com.jme3.input.InputManager$Mapping:
+    listeners:
+      offset: 20
+      deref-count: 60
+    triggers:
+      offset: 16
+      deref-count: 54
+    name:
+      offset: 12
+      deref-count: 18
+  org.dacapo.harness.JME:
+    method:
+      offset: 44
+      deref-count: 2
+    data:
+      offset: 24
+      deref-count: 1
+    loader:
+      offset: 32
+      deref-count: 1
+    scratch:
+      offset: 20
+      deref-count: 1
+    config:
+      offset: 28
+      deref-count: 1
+  org.dacapo.parser.Config:
+    sizes:
+      offset: 24
+      deref-count: 56
+    threadModel:
+      offset: 20
+      deref-count: 19
+    desc:
+      offset: 28
+      deref-count: 10
+    name:
+      offset: 12
+      deref-count: 5
+    className:
+      offset: 16
+      deref-count: 4
+  java.util.concurrent.TimeUnit:
+    SECONDS:
+      offset: 124
+      deref-count: 1
+  com.jme3.math.Quaternion:
+    IDENTITY:
+      offset: 116
+      deref-count: 195
+    DIRECTION_Z:
+      offset: 120
+      deref-count: 3
+    ZERO:
+      offset: 124
+      deref-count: 2
+    logger:
+      offset: 112
+      deref-count: 1
+  com.jme3.texture.image.ColorSpace:
+    sRGB:
+      offset: 112
+      deref-count: 14
+    Linear:
+      offset: 116
+      deref-count: 2
+  com.jme3.asset.AssetKey:
+    name:
+      offset: 12
+      deref-count: 117
+    extension:
+      offset: 20
+      deref-count: 54
+    folder:
+      offset: 16
+      deref-count: 6
+  com.jme3.math.ColorRGBA:
+    White:
+      offset: 116
+      deref-count: 10
+    Red:
+      offset: 132
+      deref-count: 4
+    Brown:
+      offset: 160
+      deref-count: 3
+    Gray:
+      offset: 124
+      deref-count: 1
+    DarkGray:
+      offset: 120
+      deref-count: 1
+    Cyan:
+      offset: 152
+      deref-count: 1
+    Blue:
+      offset: 140
+      deref-count: 1
+    Magenta:
+      offset: 148
+      deref-count: 1
+    Black:
+      offset: 112
+      deref-count: 1
+    Orange:
+      offset: 156
+      deref-count: 1
+    LightGray:
+      offset: 128
+      deref-count: 1
+    Pink:
+      offset: 164
+      deref-count: 1
+    Yellow:
+      offset: 144
+      deref-count: 1
+    BlackNoAlpha:
+      offset: 168
+      deref-count: 1
+    Green:
+      offset: 136
+      deref-count: 1
+  com.jme3.material.TechniqueDef$LightMode:
+    Disable:
+      offset: 112
+      deref-count: 35
+    MultiPass:
+      offset: 120
+      deref-count: 6
+    StaticPass:
+      offset: 132
+      deref-count: 3
+    SinglePassAndImageBased:
+      offset: 124
+      deref-count: 3
+    SinglePass:
+      offset: 116
+      deref-count: 3
+    FixedPipeline:
+      offset: 128
+      deref-count: 2
+  org.dacapo.harness.Callback$Mode:
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
+  com.jme3.app.state.AbstractAppState:
+    id:
+      offset: 16
+      deref-count: 4
 opcodes:
-  aconst_null: 5924292
+  aconst_null: 5924300
   iconst_m1: 1065587
-  iconst_0: 1401511
-  iconst_1: 12749660
+  iconst_0: 1401528
+  iconst_1: 12749677
   iconst_2: 5109752
   iconst_3: 10168467
   iconst_4: 401202
   iconst_5: 3286
-  lconst_0: 202
-  lconst_1: 7017
+  lconst_0: 203
+  lconst_1: 7013
   fconst_0: 13456047
   fconst_1: 11402805
   fconst_2: 8177
@@ -2097,36 +3723,36 @@ opcodes:
   dconst_1: 10
   bipush: 1294437
   sipush: 1836323
-  ldc: 2539050
-  iload: 74208785
-  lload: 22809
+  ldc: 2539089
+  iload: 74209045
+  lload: 22803
   fload: 162886175
   dload: 7
-  aload: 357958088
+  aload: 357958951
   iaload: 1064375
   faload: 6721484
-  aaload: 536381
+  aaload: 536425
   baload: 1835186
-  istore: 4667920
-  lstore: 8536
+  istore: 4667982
+  lstore: 8533
   fstore: 61202124
   dstore: 4
-  astore: 4250018
+  astore: 4250204
   iastore: 267796
   fastore: 1077842
   aastore: 23172
   bastore: 1120
   sastore: 1728
-  pop: 25852744
+  pop: 25852773
   pop2: 1
-  dup: 17139711
+  dup: 17139717
   dup_x1: 5067018
   iadd: 21621756
-  ladd: 6934
+  ladd: 6931
   fadd: 21054632
   dadd: 524290
-  isub: 4948947
-  lsub: 9180
+  isub: 4948963
+  lsub: 9178
   fsub: 34999696
   imul: 18857848
   lmul: 401
@@ -2142,11 +3768,11 @@ opcodes:
   ishl: 1181314
   lshl: 42
   ishr: 1574071
-  iand: 3891640
+  iand: 3891659
   land: 1
   ior: 1179709
   lor: 1
-  iinc: 5644540
+  iinc: 5644580
   i2l: 402
   i2f: 4701170
   i2d: 1
@@ -2159,49 +3785,49 @@ opcodes:
   i2b: 1573984
   i2c: 15426
   i2s: 543360
-  lcmp: 6936
+  lcmp: 6934
   fcmpl: 6338581
   fcmpg: 2064557
-  ifeq: 5287471
-  ifne: 2681906
-  iflt: 1214365
-  ifge: 1846326
+  ifeq: 5287561
+  ifne: 2681910
+  iflt: 1214400
+  ifge: 1846327
   ifgt: 800
-  ifle: 1639506
-  if_icmpeq: 1109358
-  if_icmpne: 3751134
+  ifle: 1639503
+  if_icmpeq: 1109359
+  if_icmpne: 3751162
   if_icmplt: 263456
-  if_icmpge: 6458641
+  if_icmpge: 6458668
   if_icmpgt: 436
   if_icmple: 5424
   if_acmpeq: 3231
-  if_acmpne: 3671897
-  goto: 4964801
+  if_acmpne: 3671902
+  goto: 4964886
   tableswitch: 273836
   lookupswitch: 155
-  ireturn: 7584819
-  lreturn: 8136
+  ireturn: 7584843
+  lreturn: 8134
   freturn: 9179754
-  areturn: 29356789
-  return: 9250196
-  getstatic: 1058064
+  areturn: 29356894
+  return: 9250239
+  getstatic: 1058074
   putstatic: 725
-  getfield: 178312762
-  putfield: 71013938
-  invokevirtual: 53977295
-  invokespecial: 13316506
-  invokestatic: 12495971
-  invokeinterface: 428628
-  new: 4662308
+  getfield: 178313059
+  putfield: 71013970
+  invokevirtual: 53977564
+  invokespecial: 13316545
+  invokestatic: 12495995
+  invokeinterface: 428667
+  new: 4662312
   newarray: 503
   anewarray: 2806
-  arraylength: 1984375
-  checkcast: 341101
+  arraylength: 1984382
+  checkcast: 341168
   instanceof: 7879
-  monitorenter: 2071
-  monitorexit: 2071
-  ifnull: 864435
-  ifnonnull: 8149009# sun/launcher/LauncherHelper
+  monitorenter: 2073
+  monitorexit: 2073
+  ifnull: 864490
+  ifnonnull: 8149065# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -2250,6 +3876,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -2284,9 +3912,9 @@ opcodes:
 # sun/net/www/protocol/jrt/Handler
 # java/nio/file/FileSystemNotFoundException
 # java/nio/file/FileSystemAlreadyExistsException
+# java/util/zip/ZipException
 # java/nio/file/ProviderMismatchException
 # java/security/PrivilegedActionException
-# java/util/zip/ZipException
 # java/nio/file/AccessMode
 # java/nio/file/attribute/FileAttribute
 # java/nio/channels/SeekableByteChannel
@@ -2461,6 +4089,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -2475,8 +4104,7 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
-# jdk/internal/foreign/MemorySessionImpl
-# java/lang/foreign/MemorySegment$Scope
+# java/util/Formatter
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -2588,6 +4216,8 @@ opcodes:
 # javax/xml/datatype/FactoryFinder
 # jdk/xml/internal/SecuritySupport
 # javax/xml/datatype/FactoryFinder$1
+# jdk/internal/foreign/MemorySessionImpl
+# java/lang/foreign/MemorySegment$Scope
 # java/net/URLClassLoader$3
 # java/net/URLClassLoader$3$1
 # java/net/MalformedURLException
@@ -2680,10 +4310,6 @@ opcodes:
 # java/util/logging/Logger$SystemLoggerHelper
 # java/util/logging/Logger$SystemLoggerHelper$1
 # jdk/internal/logger/DefaultLoggerFinder$1
-# sun/misc/Unsafe
-# java/lang/invoke/DirectMethodHandle$StaticAccessor
-# jdk/internal/reflect/MethodHandleFieldAccessorImpl
-# jdk/internal/reflect/MethodHandleObjectFieldAccessorImpl
 # javax/swing/UIManager
 # javax/swing/UIManager$LookAndFeelInfo
 # sun/awt/OSInfo
@@ -2906,29 +4532,44 @@ opcodes:
 # sun/awt/AWTAccessor$WindowAccessor
 # java/awt/Frame$1
 # sun/awt/AWTAccessor$FrameAccessor
+# java/awt/event/WindowListener
+# javax/swing/event/ChangeListener
+# javax/swing/JSlider
+# java/util/StringJoiner
+# java/util/prefs/BackingStoreException
 # java/nio/FloatBuffer
+# java/nio/DoubleBuffer
+# java/lang/Class$1
+# java/nio/DirectFloatBufferU
+# java/util/random/RandomGenerator
+# java/util/Random
+# java/nio/DirectShortBufferU
 # java/util/concurrent/Executors
 # java/util/concurrent/LinkedBlockingQueue
 # java/util/concurrent/LinkedBlockingQueue$Node
 # java/util/concurrent/Executors$DefaultThreadFactory
-# java/util/StringJoiner
+# java/awt/Canvas
+# java/util/concurrent/CountDownLatch
+# java/util/concurrent/CountDownLatch$Sync
+# java/util/logging/Formatter
+# java/util/logging/ConsoleHandler
+# java/util/logging/StreamHandler
+# javax/swing/JTabbedPane
 # java/applet/Applet
 # java/awt/Panel
-# java/awt/Canvas
 # java/awt/Graphics
 # java/applet/AudioClip
 # java/applet/AppletStub
 # java/awt/Image
 # java/applet/AppletContext
 # javax/accessibility/AccessibleContext
+# java/awt/event/ContainerListener
 # java/awt/Point
 # java/awt/geom/Point2D
 # java/awt/HeadlessException
 # java/awt/Event
 # java/awt/ComponentOrientation
-# java/awt/event/ContainerListener
 # java/awt/FocusTraversalPolicy
-# java/io/PrintWriter
 # java/awt/dnd/DropTarget
 # java/awt/dnd/DropTargetListener
 # java/awt/GraphicsConfiguration
@@ -2960,22 +4601,6 @@ opcodes:
 # java/awt/ImageCapabilities
 # java/awt/AWTException
 # java/awt/event/FocusEvent$Cause
-# java/awt/event/WindowListener
-# java/util/logging/Formatter
-# java/util/logging/ConsoleHandler
-# java/util/logging/StreamHandler
-# javax/swing/JTabbedPane
-# java/util/concurrent/CountDownLatch
-# java/util/concurrent/CountDownLatch$Sync
-# javax/swing/event/ChangeListener
-# javax/swing/JSlider
-# java/nio/DoubleBuffer
-# java/lang/Class$1
-# java/nio/DirectFloatBufferU
-# java/util/random/RandomGenerator
-# java/util/Random
-# java/nio/DirectShortBufferU
-# java/util/prefs/BackingStoreException
 # java/util/concurrent/FutureTask
 # java/util/concurrent/RunnableFuture
 # java/util/concurrent/FutureTask$WaitNode
@@ -2983,10 +4608,10 @@ opcodes:
 # java/util/concurrent/ThreadPoolExecutor$Worker
 # java/util/concurrent/ConcurrentLinkedQueue
 # java/util/concurrent/ConcurrentLinkedQueue$Node
+# java/awt/image/BufferedImageOp
 # java/awt/image/RenderedImage
 # javax/imageio/stream/ImageOutputStream
 # javax/imageio/stream/ImageInputStream
-# java/awt/image/BufferedImageOp
 # java/lang/UnsatisfiedLinkError
 # java/io/UncheckedIOException
 # java/util/JumboEnumSet
@@ -3047,6 +4672,7 @@ opcodes:
 # java/text/FieldPosition
 # java/text/DigitList
 # java/math/RoundingMode
+# sun/util/locale/LocaleExtensions
 # java/util/regex/Pattern$BranchConn
 # java/util/regex/Pattern$Branch
 # java/util/regex/Pattern$Dollar
@@ -3056,6 +4682,7 @@ opcodes:
 # org/xml/sax/DTDHandler
 # org/xml/sax/ContentHandler
 # org/xml/sax/ErrorHandler
+# java/util/Stack
 # java/awt/image/DirectColorModel
 # java/awt/image/PackedColorModel
 # java/awt/image/ComponentColorModel
@@ -3076,7 +4703,6 @@ opcodes:
 # sun/awt/image/SunWritableRaster
 # java/awt/image/WritableRaster
 # java/awt/image/Raster
-# java/util/Stack
 # java/util/EnumMap$KeySet
 # java/util/EnumMap$KeyIterator
 # java/util/EnumMap$EnumMapIterator
@@ -3116,9 +4742,9 @@ opcodes:
 # javax/imageio/spi/IIORegistry$1
 # javax/imageio/ImageReader
 # javax/imageio/metadata/IIOMetadataFormat
+# javax/imageio/ImageTypeSpecifier
 # javax/imageio/ImageWriter
 # javax/imageio/ImageTranscoder
-# javax/imageio/ImageTypeSpecifier
 # javax/imageio/ImageIO$ContainsFilter
 # javax/imageio/spi/ServiceRegistry$Filter
 # javax/imageio/spi/PartialOrderIterator
@@ -3140,10 +4766,10 @@ opcodes:
 # java/util/concurrent/ForkJoinPool
 # java/util/concurrent/ForkJoinPool$ForkJoinWorkerThreadFactory
 # java/util/concurrent/ForkJoinPool$WorkQueue
-# com/sun/imageio/plugins/common/ReaderUtil
 # java/util/concurrent/ForkJoinPool$DefaultForkJoinWorkerThreadFactory
 # jdk/internal/access/JavaUtilConcurrentFJPAccess
 # java/util/concurrent/ForkJoinPool$2
+# com/sun/imageio/plugins/common/ReaderUtil
 # com/sun/imageio/plugins/png/PNGImageReader
 # com/sun/imageio/plugins/png/PNGMetadata
 # javax/imageio/metadata/IIOMetadata
@@ -3202,10 +4828,13 @@ opcodes:
 # java/security/NoSuchAlgorithmException
 # java/security/GeneralSecurityException
 # sun/security/provider/SHA
+# java/util/IdentityHashMap$IdentityHashMapIterator
+# java/util/IdentityHashMap$KeyIterator
 # sun/security/provider/ByteArrayAccess$BE
 # java/util/ComparableTimSort
 # java/util/HashMap$EntrySpliterator
 # java/util/HashMap$HashMapSpliterator
+# java/util/function/ToLongFunction
 # java/util/Collections$ReverseComparator
 # java/util/Comparators$NaturalOrderComparator
 # java/util/Collections$ReverseComparator2
