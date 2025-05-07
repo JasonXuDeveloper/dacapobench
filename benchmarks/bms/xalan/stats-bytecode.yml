@@ -1,22 +1,2700 @@
 # These statistics can be generated from a dacapo release using a command line like:
-#    java -javaagent:dacapo-evaluation-git-6b469af0/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar dacapo-evaluation-git-6b469af0.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
+#    java -javaagent:<dacapo_version>/jar/bccagent.jar -Ddacapo.bcc.yml=<output_file> -jar <dacapo_version>.jar -callback org.dacapo.analysis.BytecodeCallback <benchmark>
 #
-skipped-classes: 484
-transformed-classes: 711
-transformed-bytecodes: 162212
-executed-bytecodes: 23280384898
+skipped-classes: 492
+transformed-classes: 720
+transformed-bytecodes: 163481
+executed-bytecodes: 23280382962
 executed-bytecodes-unique: 21324
 executed-bytecodes-p90: 1751688
 executed-bytecodes-p99: 14440734
 executed-bytecodes-p999: 91642811
 executed-bytecodes-p9999: 115443685
-executed-calls: 1044735149
+executed-calls: 1044734967
 executed-calls-unique: 2532
+field-dereference-counts:
+  org.apache.xerces.impl.XMLDocumentScannerImpl$TrailingMiscDispatcher:
+    this$0:
+      offset: 12
+      deref-count: 48157
+  org.apache.xml.serializer.ToHTMLStream$Trie$Node:
+    m_Value:
+      offset: 16
+      deref-count: 1783539
+  javax.xml.transform.stream.StreamResult:
+    outputStream:
+      offset: 16
+      deref-count: 17432
+    writer:
+      offset: 20
+      deref-count: 8704
+  java.lang.Integer:
+    TYPE:
+      offset: 112
+      deref-count: 2
+  org.apache.xalan.templates.ElemIf:
+    m_test:
+      offset: 76
+      deref-count: 799264
+  org.apache.xalan.transformer.MsgMgr:
+    m_transformer:
+      offset: 12
+      deref-count: 38443
+  org.apache.xerces.util.SymbolTable$Entry:
+    symbol:
+      offset: 12
+      deref-count: 1868423
+    next:
+      offset: 20
+      deref-count: 478634
+  org.apache.xpath.objects.XRTreeFrag:
+    m_xmlStr:
+      offset: 32
+      deref-count: 4
+  org.apache.xml.serializer.NamespaceMappings$Stack:
+    this$0:
+      offset: 24
+      deref-count: 52224
+  org.apache.xml.serializer.SerializerBase:
+    m_OutputProps:
+      offset: 92
+      deref-count: 3051372
+    m_elemContext:
+      offset: 72
+      deref-count: 983157
+    m_OutputPropsDefault:
+      offset: 96
+      deref-count: 936258
+    m_transformer:
+      offset: 52
+      deref-count: 821998
+    m_tracer:
+      offset: 60
+      deref-count: 612398
+    m_prefixMap:
+      offset: 56
+      deref-count: 261010
+    m_StringOfCDATASections:
+      offset: 84
+      deref-count: 224442
+    m_attributes:
+      offset: 28
+      deref-count: 224442
+    m_version:
+      offset: 44
+      deref-count: 224442
+    m_CdataElems:
+      offset: 88
+      deref-count: 224442
+    m_sourceLocator:
+      offset: 64
+      deref-count: 207034
+    m_doctypePublic:
+      offset: 36
+      deref-count: 207034
+    m_doctypeSystem:
+      offset: 32
+      deref-count: 207034
+    m_standalone:
+      offset: 40
+      deref-count: 207034
+    m_mediatype:
+      offset: 48
+      deref-count: 198330
+    m_writer:
+      offset: 68
+      deref-count: 26112
+    PKG_NAME:
+      offset: 112
+      deref-count: 54
+    PKG_PATH:
+      offset: 116
+      deref-count: 3
+    class$org$apache$xml$serializer$SerializerBase:
+      offset: 120
+      deref-count: 2
+  org.apache.xml.utils.NamespaceSupport2:
+    currentContext:
+      offset: 28
+      deref-count: 7092
+  org.apache.xml.dtm.ref.DTMDefaultBaseTraversers$AttributeTraverser:
+    this$0:
+      offset: 12
+      deref-count: 172600
+  org.apache.xpath.compiler.XPathParser:
+    m_ops:
+      offset: 20
+      deref-count: 1123082
+    m_token:
+      offset: 24
+      deref-count: 324283
+    m_functionTable:
+      offset: 40
+      deref-count: 22085
+    m_sourceLocator:
+      offset: 36
+      deref-count: 22003
+    m_namespaceContext:
+      offset: 28
+      deref-count: 22003
+    m_errorListener:
+      offset: 32
+      deref-count: 22003
+  org.apache.xalan.templates.ElemTemplateElement:
+    m_nextSibling:
+      offset: 64
+      deref-count: 2566
+  org.apache.xerces.impl.XMLNSDocumentScannerImpl$NSContentDispatcher:
+    this$0:
+      offset: 20
+      deref-count: 95780
+  org.apache.xerces.impl.XMLEntityManager:
+    fCurrentEntity:
+      offset: 76
+      deref-count: 78380
+    fEntityStack:
+      offset: 72
+      deref-count: 8704
+  org.apache.xerces.impl.dtd.XMLDTDDescription:
+    fPossibleRoots:
+      offset: 36
+      deref-count: 50
+    fRootName:
+      offset: 32
+      deref-count: 50
+  org.apache.xerces.parsers.AbstractSAXParser$LocatorProxy:
+    fLocator:
+      offset: 12
+      deref-count: 21709
+    this$0:
+      offset: 16
+      deref-count: 8705
+  org.apache.xml.utils.SAXSourceLocator:
+    m_locator:
+      offset: 28
+      deref-count: 8593
+  org.apache.xml.serializer.ToHTMLStream:
+    m_elemContext:
+      offset: 72
+      deref-count: 10800475
+    m_writer:
+      offset: 68
+      deref-count: 5639396
+    m_tracer:
+      offset: 60
+      deref-count: 5357788
+    m_attributes:
+      offset: 28
+      deref-count: 3744080
+    m_charInfo:
+      offset: 132
+      deref-count: 3237834
+    m_htmlInfo:
+      offset: 148
+      deref-count: 1800436
+    m_CdataElems:
+      offset: 88
+      deref-count: 1621014
+    m_htmlcharInfo:
+      offset: 144
+      deref-count: 34816
+    m_elementFlags:
+      offset: 112
+      deref-count: 17410
+    m_prefixMap:
+      offset: 56
+      deref-count: 17408
+    m_dummy:
+      offset: 116
+      deref-count: 1
+  org.apache.xerces.parsers.AbstractSAXParser$AttributesProxy:
+    fAttributes:
+      offset: 12
+      deref-count: 4331980
+  org.apache.xalan.transformer.StackGuard:
+    m_transformer:
+      offset: 16
+      deref-count: 79968
+  org.apache.xalan.templates.ElemElement:
+    m_name_avt:
+      offset: 80
+      deref-count: 498294
+    m_namespace_avt:
+      offset: 84
+      deref-count: 166128
+  org.dacapo.harness.CommandLineArgs$Methodology:
+    ITERATE:
+      offset: 112
+      deref-count: 5
+    CONVERGE:
+      offset: 116
+      deref-count: 3
+  org.apache.xerces.parsers.AbstractXMLDocumentParser:
+    fDocumentSource:
+      offset: 20
+      deref-count: 17410
+    fDTDContentModelSource:
+      offset: 28
+      deref-count: 8705
+    fDTDSource:
+      offset: 24
+      deref-count: 8705
+  org.apache.xerces.impl.XMLScanner:
+    fEntityScanner:
+      offset: 36
+      deref-count: 24170898
+    fEntityManager:
+      offset: 32
+      deref-count: 8705
+    fSymbolTable:
+      offset: 24
+      deref-count: 2
+  org.apache.xml.dtm.ref.DTMDefaultBaseIterators:
+    m_expandedNameTable:
+      offset: 80
+      deref-count: 2575
+  org.apache.xerces.impl.XMLEntityScanner:
+    fCurrentEntity:
+      offset: 20
+      deref-count: 657319268
+    fSymbolTable:
+      offset: 24
+      deref-count: 1892710
+    fEntityManager:
+      offset: 16
+      deref-count: 34870
+    fErrorReporter:
+      offset: 28
+      deref-count: 26140
+  org.apache.xalan.transformer.CountersTable:
+    m_newFound:
+      offset: 48
+      deref-count: 445562
+  org.apache.xerces.impl.XMLNSDocumentScannerImpl:
+    fDTDValidator:
+      offset: 220
+      deref-count: 69640
+  org.apache.xerces.util.URI:
+    m_scheme:
+      offset: 16
+      deref-count: 6
+    m_host:
+      offset: 24
+      deref-count: 2
+    m_path:
+      offset: 32
+      deref-count: 2
+    m_regAuthority:
+      offset: 28
+      deref-count: 1
+    m_userinfo:
+      offset: 20
+      deref-count: 1
+    m_queryString:
+      offset: 36
+      deref-count: 1
+    m_fragment:
+      offset: 40
+      deref-count: 1
+  org.apache.xalan.templates.ElemNumber$NumberFormatStringTokenizer:
+    str:
+      offset: 20
+      deref-count: 1565425
+    this$0:
+      offset: 24
+      deref-count: 82458
+  javax.xml.transform.TransformerException:
+    locator:
+      offset: 36
+      deref-count: 32292
+    containedException:
+      offset: 40
+      deref-count: 32292
+  org.apache.xerces.impl.dv.SecuritySupport:
+    securitySupport:
+      offset: 112
+      deref-count: 26
+  javax.xml.transform.stream.StreamSource:
+    systemId:
+      offset: 16
+      deref-count: 34819
+    inputStream:
+      offset: 20
+      deref-count: 26113
+    reader:
+      offset: 24
+      deref-count: 8705
+    publicId:
+      offset: 12
+      deref-count: 8705
+  org.apache.xerces.impl.dtd.XMLAttributeDecl:
+    simpleType:
+      offset: 20
+      deref-count: 25
+    name:
+      offset: 16
+      deref-count: 25
+  org.apache.xerces.parsers.XMLParser:
+    fConfiguration:
+      offset: 12
+      deref-count: 8830
+  org.dacapo.xalan.XSLTBench:
+    template:
+      offset: 20
+      deref-count: 8706
+    data:
+      offset: 16
+      deref-count: 8705
+    scratch:
+      offset: 12
+      deref-count: 25
+    index:
+      offset: 120
+      deref-count: 1
+  org.apache.xpath.compiler.Compiler:
+    m_currentPattern:
+      offset: 12
+      deref-count: 22003
+    m_opMap:
+      offset: 20
+      deref-count: 22003
+  org.apache.xalan.templates.TemplateSubPatternAssociation:
+    m_template:
+      offset: 24
+      deref-count: 4736526
+    m_stepPattern:
+      offset: 16
+      deref-count: 2949950
+    m_next:
+      offset: 28
+      deref-count: 1415011
+    m_targetString:
+      offset: 32
+      deref-count: 332
+    m_pattern:
+      offset: 20
+      deref-count: 163
+  javax.xml.bind.DatatypeConverterImpl:
+    theInstance:
+      offset: 112
+      deref-count: 1
+    datatypeFactory:
+      offset: 128
+      deref-count: 1
+  org.dacapo.harness.Data:
+    DEFAULT_LOCAL_DACAPO_CONFIG:
+      offset: 116
+      deref-count: 2
+    DACAPO_CHECKSUM_RE_PATH:
+      offset: 124
+      deref-count: 1
+    WORKING_DIRE:
+      offset: 112
+      deref-count: 1
+  org.dacapo.harness.Benchmark:
+    stats:
+      offset: 56
+      deref-count: 48
+    data:
+      offset: 24
+      deref-count: 28
+    config:
+      offset: 28
+      deref-count: 22
+    datDeps:
+      offset: 52
+      deref-count: 20
+    loader:
+      offset: 32
+      deref-count: 9
+    scratch:
+      offset: 20
+      deref-count: 8
+    err:
+      offset: 140
+      deref-count: 7
+    out:
+      offset: 144
+      deref-count: 7
+    jarDeps:
+      offset: 48
+      deref-count: 7
+    savedClassLoader:
+      offset: 36
+      deref-count: 5
+    savedErr:
+      offset: 136
+      deref-count: 4
+    savedOut:
+      offset: 132
+      deref-count: 4
+    timeoutDialation:
+      offset: 120
+      deref-count: 3
+    watchdog:
+      offset: 128
+      deref-count: 3
+    savedSystemProperties:
+      offset: 40
+      deref-count: 3
+    latencyBaseFileName:
+      offset: 124
+      deref-count: 2
+    valRepFile:
+      offset: 116
+      deref-count: 1
+  org.apache.xml.serializer.NamespaceMappings$MappingRecord:
+    m_uri:
+      offset: 20
+      deref-count: 1817844
+    m_prefix:
+      offset: 16
+      deref-count: 34816
+  org.apache.xpath.axes.PredicatedNodeTest$PredOwner:
+    this$0:
+      offset: 16
+      deref-count: 66
+  org.apache.commons.cli.PosixParser:
+    tokens:
+      offset: 28
+      deref-count: 6
+    options:
+      offset: 36
+      deref-count: 3
+    currentOption:
+      offset: 32
+      deref-count: 1
+  org.apache.xalan.templates.ElemTextLiteral:
+    m_str:
+      offset: 84
+      deref-count: 12
+  org.apache.commons.cli.Option:
+    longOption:
+      offset: 24
+      deref-count: 222
+    option:
+      offset: 20
+      deref-count: 162
+    values:
+      offset: 40
+      deref-count: 71
+    description:
+      offset: 32
+      deref-count: 62
+    type:
+      offset: 36
+      deref-count: 31
+    argName:
+      offset: 28
+      deref-count: 14
+  org.apache.xerces.impl.dtd.XMLDTDValidator:
+    fDocumentHandler:
+      offset: 76
+      deref-count: 47643
+    fDocumentSource:
+      offset: 80
+      deref-count: 26115
+    fValidationState:
+      offset: 44
+      deref-count: 17460
+    fDTDGrammar:
+      offset: 84
+      deref-count: 17410
+    fGrammarBucket:
+      offset: 60
+      deref-count: 8756
+    fValidationManager:
+      offset: 40
+      deref-count: 8755
+    fRootElement:
+      offset: 96
+      deref-count: 8730
+    fNamespaceContext:
+      offset: 68
+      deref-count: 8730
+    fGrammarPool:
+      offset: 56
+      deref-count: 8730
+    fSchemaType:
+      offset: 88
+      deref-count: 8730
+    fDocLocation:
+      offset: 64
+      deref-count: 8705
+    fTempElementDecl:
+      offset: 120
+      deref-count: 25
+    fTempAttDecl:
+      offset: 124
+      deref-count: 25
+    fTempQName:
+      offset: 132
+      deref-count: 25
+    fDatatypeValidatorFactory:
+      offset: 72
+      deref-count: 25
+    fEntityDecl:
+      offset: 128
+      deref-count: 25
+    fSymbolTable:
+      offset: 48
+      deref-count: 25
+    fErrorReporter:
+      offset: 52
+      deref-count: 25
+    fBuffer:
+      offset: 136
+      deref-count: 25
+    fCurrentElement:
+      offset: 92
+      deref-count: 25
+  org.apache.xml.serializer.ElemContext:
+    m_elementDesc:
+      offset: 20
+      deref-count: 4608105
+    m_prev:
+      offset: 40
+      deref-count: 2066362
+    m_elementName:
+      offset: 28
+      deref-count: 2066362
+    m_elementLocalName:
+      offset: 24
+      deref-count: 2012410
+    m_elementURI:
+      offset: 32
+      deref-count: 2012410
+    m_next:
+      offset: 36
+      deref-count: 1841920
+  org.apache.xerces.util.AugmentationsImpl:
+    fAugmentationsContainer:
+      offset: 12
+      deref-count: 278500
+  org.apache.xml.serializer.ToStream:
+    m_charInfo:
+      offset: 132
+      deref-count: 92466013
+    m_elemContext:
+      offset: 72
+      deref-count: 13528564
+    m_writer:
+      offset: 68
+      deref-count: 10206307
+    m_tracer:
+      offset: 60
+      deref-count: 3974527
+    m_disableOutputEscapingStates:
+      offset: 116
+      deref-count: 3026186
+    m_prefixMap:
+      offset: 56
+      deref-count: 1751688
+    m_attributes:
+      offset: 28
+      deref-count: 1517430
+    m_preserves:
+      offset: 124
+      deref-count: 224442
+    m_encodingInfo:
+      offset: 120
+      deref-count: 34816
+    m_outputStream:
+      offset: 136
+      deref-count: 17408
+    m_mediatype:
+      offset: 48
+      deref-count: 8704
+    m_version:
+      offset: 44
+      deref-count: 8704
+    m_doctypePublic:
+      offset: 36
+      deref-count: 8704
+  org.apache.xpath.patterns.UnionPattern$UnionPathPartOwner:
+    this$0:
+      offset: 16
+      deref-count: 69
+  org.apache.xml.dtm.ref.DTMDefaultBaseTraversers$ChildTraverser:
+    this$0:
+      offset: 12
+      deref-count: 737215
+  org.apache.xml.dtm.ref.DTMStringPool:
+    m_intToString:
+      offset: 12
+      deref-count: 1030423
+    m_hashChain:
+      offset: 20
+      deref-count: 340659
+  org.apache.xpath.operations.Equals:
+    m_right:
+      offset: 20
+      deref-count: 101499
+    m_left:
+      offset: 16
+      deref-count: 101499
+  org.apache.xml.dtm.ref.DTMNodeProxy:
+    dtm:
+      offset: 20
+      deref-count: 21504
+    implementation:
+      offset: 116
+      deref-count: 1
+  javax.xml.parsers.SecuritySupport$4:
+    val$cl:
+      offset: 12
+      deref-count: 3
+    val$name:
+      offset: 16
+      deref-count: 2
+    this$0:
+      offset: 20
+      deref-count: 1
+  javax.xml.parsers.SecuritySupport$5:
+    val$f:
+      offset: 12
+      deref-count: 2
+    this$0:
+      offset: 16
+      deref-count: 1
+  org.dacapo.parser.Token:
+    next:
+      offset: 36
+      deref-count: 286
+    image:
+      offset: 32
+      deref-count: 134
+    specialToken:
+      offset: 40
+      deref-count: 81
+  javax.xml.parsers.SecuritySupport$2:
+    val$propName:
+      offset: 12
+      deref-count: 6
+    this$0:
+      offset: 16
+      deref-count: 3
+  org.apache.xml.utils.Context2:
+    declarations:
+      offset: 36
+      deref-count: 2167
+    prefixTable:
+      offset: 16
+      deref-count: 1994
+    defaultNS:
+      offset: 32
+      deref-count: 1988
+    parent:
+      offset: 40
+      deref-count: 1988
+    uriTable:
+      offset: 20
+      deref-count: 1988
+    child:
+      offset: 44
+      deref-count: 1988
+    elementNameTable:
+      offset: 24
+      deref-count: 1981
+    attributeNameTable:
+      offset: 28
+      deref-count: 1981
+    EMPTY_ENUMERATION:
+      offset: 112
+      deref-count: 1155
+  org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher:
+    this$0:
+      offset: 12
+      deref-count: 35983347
+  javax.xml.parsers.SecuritySupport$1:
+    this$0:
+      offset: 12
+      deref-count: 2
+  org.apache.xalan.templates.AVTPartXPath:
+    m_xpath:
+      offset: 12
+      deref-count: 83006
+  org.apache.xml.dtm.ref.DTMDefaultBase:
+    m_mgrDefault:
+      offset: 56
+      deref-count: 160081121
+    m_exptype:
+      offset: 20
+      deref-count: 45586097
+    m_expandedNameTable:
+      offset: 80
+      deref-count: 26183980
+    m_dtmIdent:
+      offset: 60
+      deref-count: 9266517
+    m_shouldStripWhitespaceStack:
+      offset: 72
+      deref-count: 5899120
+    m_nextsib:
+      offset: 28
+      deref-count: 4383323
+    m_parent:
+      offset: 36
+      deref-count: 2359047
+    m_firstch:
+      offset: 24
+      deref-count: 1956856
+    m_prevsib:
+      offset: 32
+      deref-count: 570932
+    m_namespaceDeclSetElements:
+      offset: 44
+      deref-count: 214152
+    m_namespaceDeclSets:
+      offset: 40
+      deref-count: 97496
+    m_mgr:
+      offset: 52
+      deref-count: 80088
+    m_documentBaseURI:
+      offset: 64
+      deref-count: 17408
+    m_wsfilter:
+      offset: 68
+      deref-count: 8704
+    m_xstrf:
+      offset: 76
+      deref-count: 8704
+    m_namespaceLists:
+      offset: 88
+      deref-count: 8704
+  org.dacapo.parser.Config$ThreadModel:
+    SINGLE:
+      offset: 112
+      deref-count: 6
+    FIXED:
+      offset: 116
+      deref-count: 6
+    PER_CPU:
+      offset: 120
+      deref-count: 5
+    description:
+      offset: 24
+      deref-count: 3
+  javax.xml.transform.SecuritySupport$2:
+    val$propName:
+      offset: 12
+      deref-count: 4
+    this$0:
+      offset: 16
+      deref-count: 2
+  javax.xml.transform.SecuritySupport$1:
+    this$0:
+      offset: 12
+      deref-count: 1
+  org.apache.xml.dtm.ref.ExpandedNameTable$HashEntry:
+    key:
+      offset: 20
+      deref-count: 2120279
+    next:
+      offset: 24
+      deref-count: 568089
+  org.dacapo.parser.Config$OutputFile:
+    digest:
+      offset: 32
+      deref-count: 16
+    this$0:
+      offset: 36
+      deref-count: 6
+    name:
+      offset: 28
+      deref-count: 6
+  org.apache.xalan.templates.StylesheetComposed:
+    m_includesComposed:
+      offset: 180
+      deref-count: 8707
+  org.apache.xml.serializer.OutputPropertiesFactory$1:
+    val$resourceName:
+      offset: 12
+      deref-count: 40
+  org.apache.xalan.templates.XUnresolvedVariable:
+    m_transformer:
+      offset: 36
+      deref-count: 55810
+    m_obj:
+      offset: 16
+      deref-count: 3586
+  org.apache.xml.utils.XMLReaderManager:
+    m_inUse:
+      offset: 16
+      deref-count: 34793
+    m_readers:
+      offset: 12
+      deref-count: 26137
+    m_singletonManager:
+      offset: 120
+      deref-count: 8705
+  org.apache.xpath.compiler.Lexer:
+    m_compiler:
+      offset: 16
+      deref-count: 133725
+    m_namespaceContext:
+      offset: 20
+      deref-count: 65635
+    m_processor:
+      offset: 24
+      deref-count: 44006
+  org.xml.sax.helpers.LocatorImpl:
+    systemId:
+      offset: 24
+      deref-count: 1
+    publicId:
+      offset: 20
+      deref-count: 1
+  org.apache.xalan.transformer.DecimalToRoman:
+    m_preLetter:
+      offset: 32
+      deref-count: 7
+    m_postLetter:
+      offset: 12
+      deref-count: 7
+  org.apache.xml.serializer.EncodingInfo:
+    name:
+      offset: 16
+      deref-count: 1105640
+    javaName:
+      offset: 20
+      deref-count: 35048
+  org.apache.xerces.impl.validation.ValidationManager:
+    fVSs:
+      offset: 16
+      deref-count: 17435
+  org.apache.xpath.XPathContext$XPathExpressionContext:
+    this$0:
+      offset: 12
+      deref-count: 8704
+  org.apache.xpath.Expression:
+    m_parent:
+      offset: 12
+      deref-count: 100147
+  org.apache.xpath.compiler.Keywords:
+    m_nodetests:
+      offset: 120
+      deref-count: 192
+    m_nodetypes:
+      offset: 124
+      deref-count: 112
+    m_axisnames:
+      offset: 116
+      deref-count: 59
+    m_keywords:
+      offset: 112
+      deref-count: 4
+  org.apache.xpath.functions.FunctionDef1Arg:
+    m_arg0:
+      offset: 16
+      deref-count: 541300
+  org.apache.xpath.axes.FilterExprWalker$filterExprOwner:
+    this$0:
+      offset: 12
+      deref-count: 15
+  org.apache.xml.serializer.ElemDesc:
+    m_attrs:
+      offset: 16
+      deref-count: 1519310
+  org.apache.xpath.axes.ChildTestIterator:
+    m_traverser:
+      offset: 96
+      deref-count: 2345646
+    m_cdtm:
+      offset: 84
+      deref-count: 1237725
+  org.apache.xerces.util.AugmentationsImpl$SmallContainer:
+    this$0:
+      offset: 24
+      deref-count: 129
+  org.apache.xerces.impl.XMLErrorReporter:
+    fMessageFormatters:
+      offset: 20
+      deref-count: 8805
+    fLocale:
+      offset: 16
+      deref-count: 8730
+    fLocator:
+      offset: 28
+      deref-count: 8730
+    fErrorHandler:
+      offset: 24
+      deref-count: 8729
+    fSaxProxy:
+      offset: 36
+      deref-count: 25
+  org.apache.xml.serializer.NamespaceMappings:
+    m_namespaces:
+      offset: 16
+      deref-count: 1835252
+    m_nodeStack:
+      offset: 20
+      deref-count: 17408
+  org.apache.xerces.impl.Constants:
+    NS_XMLSCHEMA:
+      offset: 112
+      deref-count: 8705
+  org.apache.xpath.operations.Operation$LeftExprOwner:
+    this$0:
+      offset: 12
+      deref-count: 79
+  org.apache.xml.serializer.Encodings:
+    _encodingTableKeyJava:
+      offset: 120
+      deref-count: 17547
+    _encodingTableKeyMime:
+      offset: 124
+      deref-count: 8937
+    ENCODINGS_FILE:
+      offset: 112
+      deref-count: 2
+  org.xml.sax.helpers.SecuritySupport12$4:
+    val$cl:
+      offset: 12
+      deref-count: 72
+    val$name:
+      offset: 16
+      deref-count: 48
+    this$0:
+      offset: 20
+      deref-count: 24
+  org.xml.sax.helpers.SecuritySupport12$2:
+    val$propName:
+      offset: 12
+      deref-count: 48
+    this$0:
+      offset: 16
+      deref-count: 24
+  org.apache.commons.cli.Options:
+    shortOpts:
+      offset: 12
+      deref-count: 71
+    longOpts:
+      offset: 16
+      deref-count: 70
+    optionGroups:
+      offset: 24
+      deref-count: 4
+    requiredOpts:
+      offset: 20
+      deref-count: 3
+  org.apache.xalan.templates.Stylesheet:
+    m_href:
+      offset: 148
+      deref-count: 8706
+    m_templates:
+      offset: 136
+      deref-count: 543
+    m_stylesheetRoot:
+      offset: 160
+      deref-count: 299
+    m_ExtensionElementURIs:
+      offset: 84
+      deref-count: 262
+    m_topLevelVariables:
+      offset: 132
+      deref-count: 27
+    m_output:
+      offset: 120
+      deref-count: 7
+    m_whitespaceStrippingElements:
+      offset: 112
+      deref-count: 7
+    m_ExcludeResultPrefixs:
+      offset: 88
+      deref-count: 4
+    m_systemId:
+      offset: 156
+      deref-count: 3
+    m_imports:
+      offset: 100
+      deref-count: 2
+    m_includes:
+      offset: 104
+      deref-count: 2
+    m_attributeSets:
+      offset: 128
+      deref-count: 1
+    m_DecimalFormatDeclarations:
+      offset: 108
+      deref-count: 1
+    m_Version:
+      offset: 96
+      deref-count: 1
+    m_whitespacePreservingElements:
+      offset: 116
+      deref-count: 1
+    m_publicId:
+      offset: 152
+      deref-count: 1
+    m_keyDeclarations:
+      offset: 124
+      deref-count: 1
+    m_prefix_aliases:
+      offset: 140
+      deref-count: 1
+  org.apache.xerces.parsers.XIncludeAwareParserConfiguration:
+    fNonXIncludeNSContext:
+      offset: 176
+      deref-count: 8780
+    fCurrentNSContext:
+      offset: 184
+      deref-count: 8730
+  org.apache.xml.serializer.CharInfo:
+    m_charKey:
+      offset: 36
+      deref-count: 1651562
+    m_charToString:
+      offset: 20
+      deref-count: 856513
+    m_getCharInfoCache:
+      offset: 120
+      deref-count: 17433
+    HTML_ENTITIES_RESOURCE:
+      offset: 112
+      deref-count: 17409
+    XML_ENTITIES_RESOURCE:
+      offset: 116
+      deref-count: 1
+  org.apache.xml.serializer.CharInfo$1:
+    val$entitiesFileName:
+      offset: 16
+      deref-count: 48
+    val$method:
+      offset: 20
+      deref-count: 48
+  org.apache.xml.dtm.ref.DTMDefaultBaseIterators$ParentIterator:
+    this$0:
+      offset: 44
+      deref-count: 327792
+  org.xml.sax.helpers.SecuritySupport12$1:
+    this$0:
+      offset: 12
+      deref-count: 48
+  org.apache.commons.cli.CommandLine:
+    options:
+      offset: 16
+      deref-count: 64
+    args:
+      offset: 12
+      deref-count: 5
+  java.lang.Boolean:
+    TRUE:
+      offset: 112
+      deref-count: 17510
+    FALSE:
+      offset: 116
+      deref-count: 17464
+  org.apache.xerces.jaxp.SAXParserFactoryImpl:
+    features:
+      offset: 16
+      deref-count: 1
+    grammar:
+      offset: 20
+      deref-count: 1
+  org.apache.xpath.patterns.NodeTest:
+    SCORE_NONE:
+      offset: 136
+      deref-count: 7290755
+    m_namespace:
+      offset: 24
+      deref-count: 6885945
+    m_name:
+      offset: 28
+      deref-count: 6833467
+    m_score:
+      offset: 32
+      deref-count: 4672002
+    SCORE_QNAME:
+      offset: 128
+      deref-count: 43688
+    SCORE_OTHER:
+      offset: 132
+      deref-count: 8705
+    SCORE_NODETEST:
+      offset: 120
+      deref-count: 222
+    SCORE_NSWILD:
+      offset: 124
+      deref-count: 1
+  org.xml.sax.InputSource:
+    systemId:
+      offset: 16
+      deref-count: 26115
+    characterStream:
+      offset: 28
+      deref-count: 17410
+    byteStream:
+      offset: 20
+      deref-count: 17410
+    publicId:
+      offset: 12
+      deref-count: 17410
+    encoding:
+      offset: 24
+      deref-count: 8705
+  org.apache.xpath.compiler.FunctionTable:
+    m_functionID_customer:
+      offset: 20
+      deref-count: 21600
+    m_functionID:
+      offset: 116
+      deref-count: 120
+    class$org$apache$xpath$functions$FuncCeiling:
+      offset: 188
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncDoclocation:
+      offset: 252
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncLocalPart:
+      offset: 144
+      deref-count: 2
+    class$org$apache$xalan$templates$FuncKey:
+      offset: 140
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncQname:
+      offset: 152
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncTrue:
+      offset: 164
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncSubstringBefore:
+      offset: 212
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncTranslate:
+      offset: 224
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncExtElementAvailable:
+      offset: 240
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncFloor:
+      offset: 184
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncLast:
+      offset: 124
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncBoolean:
+      offset: 172
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncExtFunctionAvailable:
+      offset: 236
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncRound:
+      offset: 192
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncNamespace:
+      offset: 148
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncId:
+      offset: 136
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncSubstringAfter:
+      offset: 216
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncStartsWith:
+      offset: 204
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncCount:
+      offset: 132
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncSum:
+      offset: 196
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncStringLength:
+      offset: 248
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncGenerateId:
+      offset: 156
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncSystemProperty:
+      offset: 232
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncContains:
+      offset: 208
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncLang:
+      offset: 176
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncSubstring:
+      offset: 244
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncConcat:
+      offset: 228
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncNormalizeSpace:
+      offset: 220
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncUnparsedEntityURI:
+      offset: 256
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncCurrent:
+      offset: 120
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncString:
+      offset: 200
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncPosition:
+      offset: 128
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncFalse:
+      offset: 168
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncNumber:
+      offset: 180
+      deref-count: 2
+    class$org$apache$xpath$functions$FuncNot:
+      offset: 160
+      deref-count: 2
+  org.apache.xpath.functions.Function2Args$Arg1Owner:
+    this$0:
+      offset: 12
+      deref-count: 2
+  org.apache.xalan.templates.AVTPartSimple:
+    m_val:
+      offset: 12
+      deref-count: 3
+  org.apache.xml.dtm.ObjectFactory:
+    class$org$apache$xml$dtm$ObjectFactory:
+      offset: 124
+      deref-count: 34816
+    fXalanProperties:
+      offset: 120
+      deref-count: 17409
+  org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser:
+    fSAXParser:
+      offset: 96
+      deref-count: 3
+    fInitFeatures:
+      offset: 88
+      deref-count: 1
+    fInitProperties:
+      offset: 92
+      deref-count: 1
+  org.apache.xml.dtm.ref.DTMDefaultBaseIterators$PrecedingSiblingIterator:
+    this$0:
+      offset: 44
+      deref-count: 15450
+  org.apache.xerces.impl.dv.dtd.ListDatatypeValidator:
+    fItemValidator:
+      offset: 12
+      deref-count: 3
+  org.apache.xpath.axes.PredicatedNodeTest:
+    m_lpi:
+      offset: 44
+      deref-count: 1589787
+  org.apache.xerces.impl.XMLEntityManager$ScannedEntity:
+    reader:
+      offset: 52
+      deref-count: 87085
+    entityLocation:
+      offset: 56
+      deref-count: 26798
+    fBuffer:
+      offset: 72
+      deref-count: 26115
+    this$0:
+      offset: 76
+      deref-count: 17409
+    xmlVersion:
+      offset: 64
+      deref-count: 8706
+    stream:
+      offset: 48
+      deref-count: 8705
+    encoding:
+      offset: 60
+      deref-count: 8705
+  org.apache.xpath.objects.XMLStringFactoryImpl:
+    m_xstringfactory:
+      offset: 112
+      deref-count: 17409
+  org.dacapo.harness.CommandLineArgs:
+    line:
+      offset: 12
+      deref-count: 42
+    options:
+      offset: 284
+      deref-count: 33
+    visibleOptions:
+      offset: 288
+      deref-count: 31
+    callback:
+      offset: 16
+      deref-count: 6
+    benchmarks:
+      offset: 20
+      deref-count: 3
+    parser:
+      offset: 280
+      deref-count: 2
+  org.apache.xalan.extensions.ExpressionVisitor:
+    m_sroot:
+      offset: 12
+      deref-count: 494
+  org.apache.xpath.functions.FuncStartsWith:
+    m_arg0:
+      offset: 16
+      deref-count: 64584
+    m_arg1:
+      offset: 20
+      deref-count: 64584
+  java.lang.System:
+    out:
+      offset: 116
+      deref-count: 26
+    err:
+      offset: 120
+      deref-count: 4
+  org.apache.xerces.impl.dv.SecuritySupport$1:
+    this$0:
+      offset: 12
+      deref-count: 25
+  org.apache.xerces.impl.dv.SecuritySupport$2:
+    this$0:
+      offset: 12
+      deref-count: 25
+  org.apache.xpath.functions.Function2Args:
+    m_arg1:
+      offset: 20
+      deref-count: 10
+  org.apache.xerces.impl.dv.SecuritySupport$3:
+    val$cl:
+      offset: 12
+      deref-count: 150
+    this$0:
+      offset: 16
+      deref-count: 50
+  org.apache.xalan.trace.TraceManager:
+    m_traceListeners:
+      offset: 16
+      deref-count: 215738
+    m_transformer:
+      offset: 12
+      deref-count: 8704
+  org.apache.xml.serializer.ObjectFactory:
+    fXalanProperties:
+      offset: 120
+      deref-count: 1
+  org.apache.xerces.parsers.SecuritySupport$7:
+    val$f:
+      offset: 12
+      deref-count: 50
+    this$0:
+      offset: 16
+      deref-count: 25
+  org.apache.xml.serializer.AttributesImplSerializer:
+    m_indexFromQName:
+      offset: 20
+      deref-count: 26112
+    m_buff:
+      offset: 24
+      deref-count: 26112
+  org.apache.xalan.transformer.KeyManager:
+    m_key_tables:
+      offset: 12
+      deref-count: 17408
+  org.apache.xerces.parsers.SecuritySupport$3:
+    val$cl:
+      offset: 12
+      deref-count: 300
+    this$0:
+      offset: 16
+      deref-count: 100
+  org.apache.xerces.impl.dtd.XMLNSDTDValidator:
+    fAttributeQName:
+      offset: 172
+      deref-count: 25
+  org.apache.xerces.parsers.SecuritySupport$4:
+    val$propName:
+      offset: 12
+      deref-count: 100
+    this$0:
+      offset: 16
+      deref-count: 50
+  org.apache.xerces.parsers.SecuritySupport$6:
+    val$cl:
+      offset: 12
+      deref-count: 75
+    val$name:
+      offset: 16
+      deref-count: 50
+    this$0:
+      offset: 20
+      deref-count: 25
+  org.apache.xpath.axes.NodeSequence:
+    m_iter:
+      offset: 32
+      deref-count: 22192870
+    m_cache:
+      offset: 28
+      deref-count: 17040450
+    m_dtmMgr:
+      offset: 36
+      deref-count: 2079246
+  org.apache.xerces.parsers.SecuritySupport$1:
+    this$0:
+      offset: 12
+      deref-count: 50
+  org.apache.xerces.parsers.SecuritySupport$2:
+    this$0:
+      offset: 12
+      deref-count: 50
+  org.dacapo.parser.ConfigFile:
+    token:
+      offset: 36
+      deref-count: 558
+    token_source:
+      offset: 28
+      deref-count: 82
+    jj_nt:
+      offset: 40
+      deref-count: 63
+    jj_input_stream:
+      offset: 32
+      deref-count: 2
+    jj_expentries:
+      offset: 48
+      deref-count: 1
+  org.apache.xml.utils.StringBufferPool:
+    m_stringBufPool:
+      offset: 112
+      deref-count: 164917
+    class$org$apache$xml$utils$FastStringBuffer:
+      offset: 116
+      deref-count: 2
+  org.apache.xalan.processor.ProcessorOutputElem:
+    m_outputProperties:
+      offset: 84
+      deref-count: 12
+  org.apache.xml.utils.QName:
+    _localName:
+      offset: 16
+      deref-count: 330718
+    _namespaceURI:
+      offset: 20
+      deref-count: 330533
+    _prefix:
+      offset: 24
+      deref-count: 305
+  org.apache.xerces.impl.XMLEntityManager$RewindableInputStream:
+    fInputStream:
+      offset: 32
+      deref-count: 139315
+    this$0:
+      offset: 40
+      deref-count: 78380
+  org.apache.xml.utils.FastStringBuffer:
+    m_innerFSB:
+      offset: 44
+      deref-count: 2616018
+  org.apache.xalan.templates.ElemForEach:
+    m_selectExpression:
+      offset: 80
+      deref-count: 32111
+    m_sortElems:
+      offset: 88
+      deref-count: 31930
+    m_firstChild:
+      offset: 68
+      deref-count: 2566
+    m_xpath:
+      offset: 84
+      deref-count: 379
+  org.apache.xml.dtm.ref.DTMTreeWalker:
+    m_contentHandler:
+      offset: 16
+      deref-count: 8704
+  org.apache.commons.cli.Parser:
+    options:
+      offset: 16
+      deref-count: 7
+    cmd:
+      offset: 12
+      deref-count: 4
+    requiredOptions:
+      offset: 20
+      deref-count: 2
+  org.apache.xerces.xni.parser.XMLInputSource:
+    fByteStream:
+      offset: 24
+      deref-count: 17410
+    fPublicId:
+      offset: 12
+      deref-count: 17410
+    fEncoding:
+      offset: 32
+      deref-count: 17410
+    fSystemId:
+      offset: 16
+      deref-count: 17410
+    fBaseSystemId:
+      offset: 20
+      deref-count: 17410
+    fCharStream:
+      offset: 28
+      deref-count: 17410
+  org.apache.xalan.processor.ProcessorCharacters:
+    m_accumulator:
+      offset: 88
+      deref-count: 5478
+    m_firstBackPointer:
+      offset: 84
+      deref-count: 4334
+    m_xslTextElement:
+      offset: 92
+      deref-count: 1898
+  org.apache.xml.dtm.ref.DTMDefaultBaseTraversers$ParentTraverser:
+    this$0:
+      offset: 12
+      deref-count: 1047888
+  org.apache.xpath.axes.LocPathIterator:
+    m_execContext:
+      offset: 92
+      deref-count: 7528698
+    m_clones:
+      offset: 80
+      deref-count: 5666378
+    m_cdtm:
+      offset: 84
+      deref-count: 5665984
+    m_prefixResolver:
+      offset: 88
+      deref-count: 3526872
+  org.apache.xpath.compiler.OpMap:
+    m_opMap:
+      offset: 20
+      deref-count: 1409995
+    m_tokenQueue:
+      offset: 16
+      deref-count: 383379
+  org.apache.xerces.impl.io.UTF8Reader:
+    fInputStream:
+      offset: 28
+      deref-count: 95790
+    fLocale:
+      offset: 40
+      deref-count: 17410
+    fFormatter:
+      offset: 36
+      deref-count: 17410
+  org.dacapo.harness.TeeOutputStream:
+    log:
+      offset: 28
+      deref-count: 980
+    logFile:
+      offset: 32
+      deref-count: 6
+  org.apache.xml.dtm.DTMManager:
+    m_xsf:
+      offset: 16
+      deref-count: 43520
+    defaultClassName:
+      offset: 116
+      deref-count: 17409
+  org.apache.xpath.operations.And:
+    m_left:
+      offset: 16
+      deref-count: 51236
+    m_right:
+      offset: 20
+      deref-count: 2048
+  org.apache.xerces.util.AugmentationsImpl$AugmentationsItemsContainer:
+    this$0:
+      offset: 12
+      deref-count: 129
+  javax.xml.bind.DatatypeConverter:
+    theConverter:
+      offset: 112
+      deref-count: 50
+    SET_DATATYPE_CONVERTER_PERMISSION:
+      offset: 116
+      deref-count: 1
+  org.apache.xml.dtm.SecuritySupport$4:
+    val$propName:
+      offset: 12
+      deref-count: 69632
+  org.apache.xalan.processor.XSLTElementDef:
+    m_name:
+      offset: 32
+      deref-count: 22384
+    m_namespace:
+      offset: 28
+      deref-count: 14761
+    m_nameAlias:
+      offset: 36
+      deref-count: 4649
+    m_elementProcessor:
+      offset: 48
+      deref-count: 3084
+    m_classObject:
+      offset: 52
+      deref-count: 1032
+    m_requiredFound:
+      offset: 56
+      deref-count: 912
+  org.apache.xml.dtm.SecuritySupport$3:
+    val$cl:
+      offset: 12
+      deref-count: 208896
+  org.apache.xml.dtm.SecuritySupport$6:
+    val$cl:
+      offset: 12
+      deref-count: 52224
+    val$name:
+      offset: 16
+      deref-count: 34816
+  org.apache.xpath.axes.IteratorPool:
+    m_freeStack:
+      offset: 16
+      deref-count: 11065106
+    m_orig:
+      offset: 12
+      deref-count: 267266
+  org.apache.xerces.impl.dtd.XMLElementDecl:
+    simpleType:
+      offset: 28
+      deref-count: 25
+    name:
+      offset: 20
+      deref-count: 25
+  org.dacapo.harness.TeePrintStream:
+    out:
+      offset: 16
+      deref-count: 6
+  org.apache.xml.dtm.SecuritySupport$7:
+    val$f:
+      offset: 12
+      deref-count: 34816
+  org.apache.xalan.templates.AVT:
+    m_simpleString:
+      offset: 12
+      deref-count: 1760927
+    m_uri:
+      offset: 28
+      deref-count: 590386
+    m_rawName:
+      offset: 20
+      deref-count: 590278
+    m_name:
+      offset: 24
+      deref-count: 590278
+    m_parts:
+      offset: 16
+      deref-count: 249483
+  org.apache.xpath.axes.WalkingIterator:
+    m_firstWalker:
+      offset: 100
+      deref-count: 1642360
+    m_lastUsedWalker:
+      offset: 96
+      deref-count: 1159776
+    m_execContext:
+      offset: 92
+      deref-count: 306424
+  org.apache.xalan.templates.XMLNSDecl:
+    m_prefix:
+      offset: 16
+      deref-count: 332084
+    m_uri:
+      offset: 20
+      deref-count: 7
+  org.apache.xalan.processor.StylesheetHandler:
+    m_processors:
+      offset: 68
+      deref-count: 13543
+    m_stylesheets:
+      offset: 56
+      deref-count: 4259
+    m_spacePreserveStack:
+      offset: 104
+      deref-count: 4140
+    m_stylesheetLocatorStack:
+      offset: 84
+      deref-count: 4028
+    m_elems:
+      offset: 76
+      deref-count: 3392
+    m_nsSupportStack:
+      offset: 96
+      deref-count: 3134
+    m_originatingNode:
+      offset: 100
+      deref-count: 2662
+    m_stylesheetRoot:
+      offset: 60
+      deref-count: 2486
+    m_prefixMappings:
+      offset: 44
+      deref-count: 1985
+    m_stylesheetProcessor:
+      offset: 52
+      deref-count: 1272
+    m_funcTable:
+      offset: 40
+      deref-count: 497
+    m_schema:
+      offset: 72
+      deref-count: 3
+    m_baseIdentifiers:
+      offset: 80
+      deref-count: 2
+    class$org$apache$xalan$templates$FuncFormatNumb:
+      offset: 116
+      deref-count: 2
+    class$org$apache$xalan$templates$FuncDocument:
+      offset: 112
+      deref-count: 2
+    m_lastPoppedStylesheet:
+      offset: 64
+      deref-count: 2
+    m_importStack:
+      offset: 88
+      deref-count: 1
+    m_importSourceStack:
+      offset: 92
+      deref-count: 1
+  org.apache.xpath.XPathContext:
+    m_currentNodes:
+      offset: 84
+      deref-count: 25542179
+    m_dtmManager:
+      offset: 40
+      deref-count: 17835386
+    m_saxLocations:
+      offset: 44
+      deref-count: 13824660
+    m_prefixResolvers:
+      offset: 104
+      deref-count: 10421993
+    m_currentExpressionNodes:
+      offset: 96
+      deref-count: 9296811
+    m_variableStacks:
+      offset: 56
+      deref-count: 6734031
+    m_contextNodeLists:
+      offset: 80
+      deref-count: 4671125
+    m_axesIteratorStack:
+      offset: 108
+      deref-count: 974762
+    m_rtfdtm_stack:
+      offset: 28
+      deref-count: 233224
+    m_predicatePos:
+      offset: 100
+      deref-count: 216140
+    m_last_pushed_rtfdtm:
+      offset: 24
+      deref-count: 215816
+    m_ownerGetErrorListener:
+      offset: 52
+      deref-count: 51712
+    m_owner:
+      offset: 48
+      deref-count: 38912
+    m_global_rtfdtm:
+      offset: 32
+      deref-count: 26112
+    m_errorListener:
+      offset: 64
+      deref-count: 21504
+    m_sourceTreeManager:
+      offset: 60
+      deref-count: 17408
+    m_DTMXRTreeFrags:
+      offset: 36
+      deref-count: 17408
+    m_predicateRoots:
+      offset: 92
+      deref-count: 17408
+    m_iteratorRoots:
+      offset: 88
+      deref-count: 17408
+    expressionContext:
+      offset: 112
+      deref-count: 8704
+  org.apache.xalan.templates.ElemNumber:
+    m_fromMatchPattern:
+      offset: 88
+      deref-count: 454239
+    m_countMatchPattern:
+      offset: 84
+      deref-count: 393368
+    m_lettervalue_avt:
+      offset: 104
+      deref-count: 185895
+    m_lang_avt:
+      offset: 100
+      deref-count: 184360
+    m_groupingSize_avt:
+      offset: 112
+      deref-count: 184359
+    m_groupingSeparator_avt:
+      offset: 108
+      deref-count: 184359
+    m_format_avt:
+      offset: 96
+      deref-count: 164972
+    m_valueExpr:
+      offset: 92
+      deref-count: 82486
+    m_alphaCountTable:
+      offset: 80
+      deref-count: 3087
+  org.apache.xpath.SourceTreeManager:
+    m_sourceTree:
+      offset: 12
+      deref-count: 17408
+  org.xml.sax.helpers.NamespaceSupport:
+    EMPTY_ENUMERATION:
+      offset: 120
+      deref-count: 1
+  org.apache.xalan.processor.XSLTSchema:
+    m_availElems:
+      offset: 60
+      deref-count: 43
+    class$org$apache$xalan$templates$ElemTextLiteral:
+      offset: 112
+      deref-count: 4
+    class$org$apache$xalan$templates$ElemExtensionScript:
+      offset: 228
+      deref-count: 4
+    class$org$apache$xalan$templates$ElemVariable:
+      offset: 180
+      deref-count: 4
+    class$org$apache$xalan$templates$ElemParam:
+      offset: 184
+      deref-count: 4
+    class$org$apache$xalan$templates$ElemExtensionDecl:
+      offset: 232
+      deref-count: 4
+    class$org$apache$xalan$templates$ElemIf:
+      offset: 156
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemExsltFuncResult:
+      offset: 220
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemCopyOf:
+      offset: 128
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemPI:
+      offset: 192
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemValueOf:
+      offset: 124
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemForEach:
+      offset: 152
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemChoose:
+      offset: 168
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemElement:
+      offset: 196
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemWhen:
+      offset: 160
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemCallTemplate:
+      offset: 176
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemApplyTemplates:
+      offset: 144
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemOtherwise:
+      offset: 164
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemMessage:
+      offset: 208
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemText:
+      offset: 188
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemCopy:
+      offset: 204
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemUnknown:
+      offset: 120
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemFallback:
+      offset: 212
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemTemplate:
+      offset: 224
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemLiteralResult:
+      offset: 116
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemSort:
+      offset: 136
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemWithParam:
+      offset: 140
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemExsltFunction:
+      offset: 216
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemComment:
+      offset: 200
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemApplyImport:
+      offset: 148
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemAttribute:
+      offset: 172
+      deref-count: 2
+    class$org$apache$xalan$templates$ElemNumber:
+      offset: 132
+      deref-count: 2
+  org.apache.xerces.impl.validation.ValidationState:
+    fIdRefTable:
+      offset: 32
+      deref-count: 8730
+    fIdTable:
+      offset: 28
+      deref-count: 8730
+    fEntityState:
+      offset: 16
+      deref-count: 25
+    fSymbolTable:
+      offset: 24
+      deref-count: 25
+    fNamespaceContext:
+      offset: 20
+      deref-count: 25
+    fNullValue:
+      offset: 112
+      deref-count: 1
+  org.apache.xml.dtm.ref.DTMDefaultBaseIterators$InternalAxisIteratorBase:
+    this$0:
+      offset: 36
+      deref-count: 166471
+  org.apache.xerces.impl.XMLEntityManager$Entity:
+    name:
+      offset: 16
+      deref-count: 8755
+  org.apache.xerces.util.XMLResourceIdentifierImpl:
+    fExpandedSystemId:
+      offset: 24
+      deref-count: 43823
+    fPublicId:
+      offset: 12
+      deref-count: 34982
+    fBaseSystemId:
+      offset: 20
+      deref-count: 34845
+    fNamespace:
+      offset: 28
+      deref-count: 34845
+    fLiteralSystemId:
+      offset: 16
+      deref-count: 34845
+  java.io.File:
+    separator:
+      offset: 116
+      deref-count: 34818
+  org.apache.xalan.templates.ElemLiteralResult:
+    m_rawName:
+      offset: 100
+      deref-count: 7007013
+    m_localName:
+      offset: 96
+      deref-count: 7007013
+    m_namespace:
+      offset: 92
+      deref-count: 5255847
+    m_avts:
+      offset: 84
+      deref-count: 2654730
+    m_ExtensionElementURIs:
+      offset: 104
+      deref-count: 713
+    m_xslAttr:
+      offset: 88
+      deref-count: 261
+    m_excludeResultPrefixes:
+      offset: 112
+      deref-count: 261
+  org.apache.xalan.templates.ElemWhen:
+    m_test:
+      offset: 76
+      deref-count: 357216
+  org.apache.xpath.NodeSetDTM:
+    m_manager:
+      offset: 44
+      deref-count: 283867
+  org.apache.xerces.xni.NamespaceContext:
+    XML_URI:
+      offset: 112
+      deref-count: 8708
+    XMLNS_URI:
+      offset: 116
+      deref-count: 8708
+  org.apache.xerces.util.XMLSymbols:
+    EMPTY_STRING:
+      offset: 112
+      deref-count: 2555898
+    PREFIX_XMLNS:
+      offset: 120
+      deref-count: 2025998
+    fCDATASymbol:
+      offset: 128
+      deref-count: 278372
+    PREFIX_XML:
+      offset: 116
+      deref-count: 8710
+    fNMTOKENSymbol:
+      offset: 152
+      deref-count: 1
+    fNOTATIONSymbol:
+      offset: 160
+      deref-count: 1
+    fENUMERATIONSymbol:
+      offset: 164
+      deref-count: 1
+    fENTITYSymbol:
+      offset: 144
+      deref-count: 1
+    fNMTOKENSSymbol:
+      offset: 156
+      deref-count: 1
+    fENTITIESSymbol:
+      offset: 148
+      deref-count: 1
+    fIMPLIEDSymbol:
+      offset: 168
+      deref-count: 1
+    fIDREFSSymbol:
+      offset: 140
+      deref-count: 1
+    fANYSymbol:
+      offset: 124
+      deref-count: 1
+    fIDSymbol:
+      offset: 132
+      deref-count: 1
+    fFIXEDSymbol:
+      offset: 176
+      deref-count: 1
+    fIDREFSymbol:
+      offset: 136
+      deref-count: 1
+    fREQUIREDSymbol:
+      offset: 172
+      deref-count: 1
+  org.apache.xalan.transformer.Counter:
+    m_countNodes:
+      offset: 24
+      deref-count: 1209950
+    m_numberElem:
+      offset: 28
+      deref-count: 41473
+  org.apache.xpath.axes.AxesWalker:
+    m_dtm:
+      offset: 68
+      deref-count: 1443740
+    m_nextWalker:
+      offset: 72
+      deref-count: 1217167
+    m_lpi:
+      offset: 44
+      deref-count: 1181038
+    m_traverser:
+      offset: 80
+      deref-count: 1137316
+    m_prevWalker:
+      offset: 76
+      deref-count: 331162
+  org.apache.xml.dtm.ref.ExpandedNameTable:
+    hashET:
+      offset: 28
+      deref-count: 3355617
+  org.apache.xpath.objects.XRTreeFragSelectWrapper:
+    m_obj:
+      offset: 16
+      deref-count: 3590
+  org.apache.xpath.axes.NodeSequence$IteratorCache:
+    m_vec2:
+      offset: 20
+      deref-count: 2348388
+  org.apache.xerces.impl.XMLDocumentScannerImpl$PrologDispatcher:
+    this$0:
+      offset: 12
+      deref-count: 131239
+  org.apache.xerces.impl.dtd.XMLDTDProcessor:
+    fNDataDeclNotations:
+      offset: 68
+      deref-count: 8730
+    fDTDContentModelHandler:
+      offset: 52
+      deref-count: 8705
+    fDTDGrammar:
+      offset: 60
+      deref-count: 8705
+    fDTDContentModelSource:
+      offset: 56
+      deref-count: 8705
+    fDTDHandler:
+      offset: 44
+      deref-count: 8705
+    fDTDSource:
+      offset: 48
+      deref-count: 8705
+    fValidator:
+      offset: 32
+      deref-count: 75
+    fDTDElementDecls:
+      offset: 80
+      deref-count: 25
+    fGrammarPool:
+      offset: 36
+      deref-count: 25
+    fMixedElementTypes:
+      offset: 76
+      deref-count: 25
+    fGrammarBucket:
+      offset: 28
+      deref-count: 25
+    fEntityDecl:
+      offset: 64
+      deref-count: 25
+    fSymbolTable:
+      offset: 20
+      deref-count: 25
+    fErrorReporter:
+      offset: 24
+      deref-count: 25
+    fDTDElementDeclName:
+      offset: 72
+      deref-count: 25
+  org.apache.xpath.axes.AttributeIterator:
+    m_cdtm:
+      offset: 84
+      deref-count: 1360284
+  org.apache.xerces.impl.XMLDocumentFragmentScannerImpl:
+    fElementQName:
+      offset: 104
+      deref-count: 20447423
+    fDocumentHandler:
+      offset: 76
+      deref-count: 5789116
+    fAttributes:
+      offset: 112
+      deref-count: 5001470
+    fCurrentElement:
+      offset: 88
+      deref-count: 3216851
+    fElementStack:
+      offset: 92
+      deref-count: 2938480
+    fAttributeQName:
+      offset: 108
+      deref-count: 2540135
+    fTempString:
+      offset: 116
+      deref-count: 556742
+    fTempString2:
+      offset: 120
+      deref-count: 281975
+    fContentDispatcher:
+      offset: 100
+      deref-count: 8705
+    fExternalSubsetResolver:
+      offset: 84
+      deref-count: 8705
+  org.apache.xerces.parsers.SecuritySupport:
+    securitySupport:
+      offset: 112
+      deref-count: 101
+  org.apache.xerces.util.XMLAttributesImpl$Attribute:
+    name:
+      offset: 16
+      deref-count: 1760950
+    value:
+      offset: 24
+      deref-count: 835111
+    nonNormalizedValue:
+      offset: 28
+      deref-count: 560346
+    type:
+      offset: 20
+      deref-count: 556073
+    augs:
+      offset: 32
+      deref-count: 278475
+  org.apache.xalan.templates.ElemTemplate:
+    m_mode:
+      offset: 112
+      deref-count: 1786296
+    m_stylesheet:
+      offset: 100
+      deref-count: 3089
+    m_matchPattern:
+      offset: 104
+      deref-count: 844
+    m_name:
+      offset: 108
+      deref-count: 418
+    m_publicId:
+      offset: 92
+      deref-count: 135
+    m_systemId:
+      offset: 96
+      deref-count: 135
+  org.apache.xalan.templates.OutputProperties:
+    m_properties:
+      offset: 76
+      deref-count: 26136
+  org.apache.xml.serializer.ToHTMLStream$Trie:
+    m_Root:
+      offset: 16
+      deref-count: 1817973
+  org.apache.xerces.impl.dv.dtd.DTDDVFactoryImpl:
+    fBuiltInTypes:
+      offset: 112
+      deref-count: 10
+  org.apache.xalan.processor.WhitespaceInfoPaths:
+    m_elements:
+      offset: 124
+      deref-count: 3
+  org.apache.xerces.impl.dtd.DTDGrammarBucket:
+    fGrammars:
+      offset: 16
+      deref-count: 8730
+    fActiveGrammar:
+      offset: 20
+      deref-count: 8705
+  org.apache.xerces.impl.msg.XMLMessageFormatter:
+    fResourceBundle:
+      offset: 16
+      deref-count: 25
+    fLocale:
+      offset: 12
+      deref-count: 25
+  org.apache.xerces.util.ErrorHandlerWrapper:
+    fErrorHandler:
+      offset: 12
+      deref-count: 17408
+  org.apache.xerces.impl.XMLVersionDetector:
+    fEntityManager:
+      offset: 20
+      deref-count: 69641
+    fEncoding:
+      offset: 24
+      deref-count: 17435
+    fXMLSymbol:
+      offset: 132
+      deref-count: 17411
+    fErrorReporter:
+      offset: 16
+      deref-count: 17410
+    fSymbolTable:
+      offset: 12
+      deref-count: 8705
+    fVersionSymbol:
+      offset: 128
+      deref-count: 1
+  org.dacapo.xalan.XSLTBench$XalanWorker:
+    this$0:
+      offset: 124
+      deref-count: 17456
+  org.apache.xml.serializer.SecuritySupport$3:
+    val$cl:
+      offset: 12
+      deref-count: 52230
+  org.apache.xalan.templates.ElemNumber$MyPrefixResolver:
+    this$0:
+      offset: 24
+      deref-count: 21504
+    dtm:
+      offset: 20
+      deref-count: 21504
+  org.apache.xerces.impl.XMLDocumentScannerImpl:
+    fNamespaceContext:
+      offset: 176
+      deref-count: 4712303
+    fPrologDispatcher:
+      offset: 184
+      deref-count: 8730
+    fExternalSubsetSource:
+      offset: 208
+      deref-count: 8730
+    fXMLDeclDispatcher:
+      offset: 180
+      deref-count: 8730
+    fDoctypeSystemId:
+      offset: 172
+      deref-count: 8705
+    fDoctypeName:
+      offset: 164
+      deref-count: 8705
+    fDoctypePublicId:
+      offset: 168
+      deref-count: 8705
+    fDTDScanner:
+      offset: 156
+      deref-count: 50
+    fStringBuffer:
+      offset: 204
+      deref-count: 25
+    fString:
+      offset: 200
+      deref-count: 25
+    fValidationManager:
+      offset: 160
+      deref-count: 25
+    fDTDDescription:
+      offset: 212
+      deref-count: 25
+    fDTDDispatcher:
+      offset: 188
+      deref-count: 25
+    fTrailingMiscDispatcher:
+      offset: 192
+      deref-count: 25
+  org.apache.xpath.functions.FunctionOneArg:
+    m_arg0:
+      offset: 16
+      deref-count: 320
+  org.apache.xpath.operations.Operation:
+    m_right:
+      offset: 20
+      deref-count: 73169
+    m_left:
+      offset: 16
+      deref-count: 73169
+  org.apache.xpath.objects.XBoolean:
+    S_FALSE:
+      offset: 116
+      deref-count: 85101
+    S_TRUE:
+      offset: 112
+      deref-count: 52387
+  org.apache.xalan.templates.TemplateList:
+    m_wildCardPatterns:
+      offset: 20
+      deref-count: 3744071
+    m_patternTable:
+      offset: 16
+      deref-count: 3019253
+    m_textPatterns:
+      offset: 24
+      deref-count: 2263029
+    m_docPatterns:
+      offset: 28
+      deref-count: 8707
+    m_commentPatterns:
+      offset: 32
+      deref-count: 8699
+    m_namedTemplates:
+      offset: 12
+      deref-count: 23
+  org.apache.xml.dtm.ref.ExtendedType:
+    localName:
+      offset: 24
+      deref-count: 16477031
+    namespace:
+      offset: 20
+      deref-count: 13428247
+  org.apache.xalan.templates.ElemParam:
+    m_parentNode:
+      offset: 60
+      deref-count: 8
+    m_qname:
+      offset: 92
+      deref-count: 7
+  org.apache.xerces.impl.XMLDocumentScannerImpl$XMLDeclDispatcher:
+    this$0:
+      offset: 12
+      deref-count: 43553
+  org.apache.xml.serializer.SecuritySupport$6:
+    val$cl:
+      offset: 12
+      deref-count: 3
+    val$name:
+      offset: 16
+      deref-count: 2
+  org.apache.xml.serializer.SecuritySupport$4:
+    val$propName:
+      offset: 12
+      deref-count: 2
+  org.apache.xerces.xni.QName:
+    prefix:
+      offset: 12
+      deref-count: 16043202
+    uri:
+      offset: 24
+      deref-count: 15755406
+    rawname:
+      offset: 20
+      deref-count: 13019233
+    localpart:
+      offset: 16
+      deref-count: 9940304
+  org.apache.xpath.axes.OneStepIteratorForward:
+    m_traverser:
+      offset: 96
+      deref-count: 253510
+    m_cdtm:
+      offset: 84
+      deref-count: 85526
+  org.apache.xml.serializer.OutputPropertiesFactory:
+    m_text_properties:
+      offset: 192
+      deref-count: 17443
+    m_xml_properties:
+      offset: 184
+      deref-count: 8730
+    m_synch_object:
+      offset: 160
+      deref-count: 8709
+    class$org$apache$xml$serializer$OutputPropertiesFactory:
+      offset: 204
+      deref-count: 40
+    ACCESS_CONTROLLER_CLASS:
+      offset: 200
+      deref-count: 21
+    m_html_properties:
+      offset: 188
+      deref-count: 6
+    m_unknown_properties:
+      offset: 196
+      deref-count: 4
+    PROP_DIR:
+      offset: 164
+      deref-count: 1
+  org.apache.xml.utils.ObjectPool:
+    freeStack:
+      offset: 16
+      deref-count: 1899057
+    objectType:
+      offset: 12
+      deref-count: 34821
+  org.dacapo.parser.ConfigFileTokenManager:
+    input_stream:
+      offset: 52
+      deref-count: 1648
+    image:
+      offset: 68
+      deref-count: 161
+    jjimage:
+      offset: 64
+      deref-count: 82
+    debugStream:
+      offset: 48
+      deref-count: 1
+  org.apache.xpath.axes.ChildIterator:
+    m_cdtm:
+      offset: 84
+      deref-count: 5146709
+  org.dacapo.parser.SimpleCharStream:
+    inputStream:
+      offset: 60
+      deref-count: 4
+  org.apache.xpath.patterns.StepPattern$PredOwner:
+    this$0:
+      offset: 16
+      deref-count: 5
+  org.dacapo.parser.Config$Size:
+    outputFiles:
+      offset: 32
+      deref-count: 42
+    this$0:
+      offset: 36
+      deref-count: 9
+    name:
+      offset: 20
+      deref-count: 3
+  org.apache.xalan.templates.StylesheetRoot$ComposeState:
+    m_variableNames:
+      offset: 20
+      deref-count: 3180
+    m_marks:
+      offset: 24
+      deref-count: 2339
+    this$0:
+      offset: 28
+      deref-count: 668
+    m_ent:
+      offset: 16
+      deref-count: 40
+  org.dacapo.harness.Xalan:
+    benchmark:
+      offset: 60
+      deref-count: 3
+    method:
+      offset: 44
+      deref-count: 2
+    config:
+      offset: 28
+      deref-count: 2
+    createWorkersMethod:
+      offset: 64
+      deref-count: 2
+    loader:
+      offset: 32
+      deref-count: 1
+  org.apache.xml.serializer.ToTextStream:
+    m_tracer:
+      offset: 60
+      deref-count: 633480
+    m_writer:
+      offset: 68
+      deref-count: 435150
+  org.apache.xpath.axes.FilterExprWalker:
+    m_exprObj:
+      offset: 92
+      deref-count: 586508
+    m_lpi:
+      offset: 44
+      deref-count: 570112
+    m_expr:
+      offset: 88
+      deref-count: 142621
+  org.dacapo.harness.LatencyReporter:
+    callback:
+      offset: 132
+      deref-count: 2
+    globalIdx:
+      offset: 124
+      deref-count: 1
+  org.dacapo.harness.TestHarness:
+    commandLineArgs:
+      offset: 128
+      deref-count: 15
+    config:
+      offset: 12
+      deref-count: 14
+    BuildVersion:
+      offset: 124
+      deref-count: 4
+    BuildNickName:
+      offset: 120
+      deref-count: 1
+  org.apache.xalan.processor.XSLTElementProcessor:
+    m_elemDef:
+      offset: 80
+      deref-count: 8087
+    m_savedLastOrder:
+      offset: 76
+      deref-count: 3520
+  org.apache.xml.dtm.ref.DTMDefaultBaseTraversers$AncestorTraverser:
+    this$0:
+      offset: 12
+      deref-count: 1045213
+  org.apache.xpath.objects.XString:
+    EMPTYSTRING:
+      offset: 112
+      deref-count: 265016
+  org.dacapo.parser.Config:
+    sizes:
+      offset: 24
+      deref-count: 59
+    threadModel:
+      offset: 20
+      deref-count: 19
+    desc:
+      offset: 28
+      deref-count: 11
+    name:
+      offset: 12
+      deref-count: 5
+    className:
+      offset: 16
+      deref-count: 4
+  org.apache.xerces.impl.XMLEntityManager$ExternalEntity:
+    notation:
+      offset: 24
+      deref-count: 50
+    entityLocation:
+      offset: 20
+      deref-count: 50
+  org.apache.xerces.util.ParserConfigurationSettings:
+    fProperties:
+      offset: 16
+      deref-count: 53078
+    fFeatures:
+      offset: 24
+      deref-count: 26941
+    fRecognizedProperties:
+      offset: 12
+      deref-count: 2375
+    fRecognizedFeatures:
+      offset: 20
+      deref-count: 2326
+    fParentSettings:
+      offset: 28
+      deref-count: 25
+  org.apache.xalan.templates.StylesheetRoot:
+    m_defaultTextRule:
+      offset: 232
+      deref-count: 4526058
+    m_whiteSpaceInfoList:
+      offset: 228
+      deref-count: 2936507
+    m_templateList:
+      offset: 220
+      deref-count: 1511349
+    m_defaultRule:
+      offset: 236
+      deref-count: 24613
+    m_variables:
+      offset: 224
+      deref-count: 9418
+    m_outputProperties:
+      offset: 200
+      deref-count: 8708
+    m_extNsMgr:
+      offset: 192
+      deref-count: 8706
+    m_composeState:
+      offset: 252
+      deref-count: 3817
+    m_selectDefault:
+      offset: 248
+      deref-count: 20
+    m_namespaceAliasComposed:
+      offset: 216
+      deref-count: 5
+    m_defaultRootRule:
+      offset: 240
+      deref-count: 4
+    m_decimalFormatSymbols:
+      offset: 208
+      deref-count: 1
+    m_extensionHandlerClass:
+      offset: 256
+      deref-count: 1
+    m_availElems:
+      offset: 188
+      deref-count: 1
+    m_startRule:
+      offset: 244
+      deref-count: 1
+    m_keyDecls:
+      offset: 212
+      deref-count: 1
+    m_attrSets:
+      offset: 204
+      deref-count: 1
+  org.apache.xalan.processor.XSLTAttributeDef:
+    m_foreignAttr:
+      offset: 112
+      deref-count: 1
+  org.dacapo.harness.Callback$Mode:
+    WARMUP:
+      offset: 112
+      deref-count: 2
+    TIMING:
+      offset: 116
+      deref-count: 2
 opcodes:
-  aconst_null: 152491304
+  aconst_null: 152491219
   iconst_m1: 227936208
-  iconst_0: 153008043
-  iconst_1: 567031500
+  iconst_0: 153008040
+  iconst_1: 567031493
   iconst_2: 15977180
   iconst_3: 2630408
   iconst_4: 3501355
@@ -25,28 +2703,28 @@ opcodes:
   fconst_0: 24
   bipush: 469962980
   sipush: 101902242
-  ldc: 196251812
-  iload: 3677652297
+  ldc: 196251787
+  iload: 3677652281
   lload: 193549
   fload: 96
   dload: 132488
-  aload: 4228091814
+  aload: 4228091134
   iaload: 158371186
   laload: 185867
-  aaload: 171642440
+  aaload: 171642400
   baload: 319361741
   caload: 271523944
-  istore: 690943635
+  istore: 690943629
   lstore: 4610
   dstore: 66244
-  astore: 164643323
+  astore: 164643262
   iastore: 71336673
   lastore: 185867
   aastore: 52436731
   bastore: 3045857
   castore: 117795189
   pop: 46009250
-  dup: 285601142
+  dup: 285601135
   dup_x1: 141161024
   dup_x2: 3126457
   dup2: 1472860
@@ -78,48 +2756,46 @@ opcodes:
   lcmp: 20482
   fcmpg: 406
   dcmpl: 693850
-  ifeq: 309534077
-  ifne: 256562811
+  ifeq: 309534046
+  ifne: 256562807
   iflt: 152625198
   ifge: 4210013
   ifgt: 6078075
-  ifle: 29905360
+  ifle: 29905354
   if_icmpeq: 73384374
   if_icmpne: 332337183
   if_icmplt: 348836773
   if_icmpge: 531191708
   if_icmpgt: 101326453
   if_icmple: 20110886
-  if_acmpeq: 119405762
-  if_acmpne: 43013340
-  goto: 484263907
+  if_acmpeq: 119405681
+  if_acmpne: 43013288
+  goto: 484263885
   tableswitch: 12594457
   lookupswitch: 17529124
   ireturn: 737945566
   dreturn: 830430
-  areturn: 197243407
-  return: 238021239
-  getstatic: 122719474
-  putstatic: 47
-  getfield: 3722438698
-  putfield: 470646183
-  invokevirtual: 773181417
-  invokespecial: 49393538
-  invokestatic: 144923665
-  invokeinterface: 77236529
-  new: 5548362
+  areturn: 197243253
+  return: 238021226
+  getstatic: 122719467
+  putstatic: 48
+  getfield: 3722438505
+  putfield: 470646086
+  invokevirtual: 773181356
+  invokespecial: 49393478
+  invokestatic: 144923651
+  invokeinterface: 77236482
+  new: 5548359
   newarray: 1098458
   anewarray: 463711
   arraylength: 18673508
   athrow: 8704
-  checkcast: 30468825
+  checkcast: 30468679
   instanceof: 1557062
   monitorenter: 26112
   monitorexit: 26112
-  ifnull: 111532929
-  ifnonnull: 18405231
-
-# sun/launcher/LauncherHelper
+  ifnull: 111532926
+  ifnonnull: 18405218# sun/launcher/LauncherHelper
 # sun/nio/fs/UnixFileKey
 # java/util/jar/JarVerifier
 # java/util/ArrayList$SubList
@@ -168,6 +2844,8 @@ opcodes:
 # sun/util/locale/BaseLocale$Cache
 # sun/util/locale/LocaleObjectCache$CacheEntry
 # java/util/Locale$Category
+# org/dacapo/analysis/BytecodeCallback$FieldMetadata
+# java/io/Console
 # java/lang/Readable
 # java/nio/CharBuffer
 # java/nio/HeapCharBuffer
@@ -257,10 +2935,10 @@ opcodes:
 # java/nio/file/ClosedFileSystemException
 # java/nio/file/FileAlreadyExistsException
 # java/lang/NumberFormatException
-# java/nio/file/ReadOnlyFileSystemException
-# java/util/zip/DeflaterOutputStream
 # java/nio/file/NotDirectoryException
 # java/nio/file/DirectoryNotEmptyException
+# java/nio/file/ReadOnlyFileSystemException
+# java/util/zip/DeflaterOutputStream
 # java/nio/file/attribute/PosixFilePermissions
 # java/nio/file/attribute/PosixFilePermission
 # java/util/Collections$SynchronizedCollection
@@ -379,6 +3057,7 @@ opcodes:
 # java/util/LinkedList$ListItr
 # java/io/FileReader
 # java/util/zip/ZipInputStream
+# java/io/PrintWriter
 # sun/net/www/protocol/jar/JarURLConnection
 # java/net/JarURLConnection
 # sun/net/www/protocol/jar/JarFileFactory
@@ -393,6 +3072,9 @@ opcodes:
 # java/lang/invoke/LambdaFormEditor$1
 # java/util/TreeMap$EntrySet
 # java/util/TreeMap$EntryIterator
+# java/util/Formatter
+# jdk/internal/foreign/MemorySessionImpl
+# java/lang/foreign/MemorySegment$Scope
 # java/io/BufferedReader$1
 # java/lang/invoke/DirectMethodHandle$Special
 # java/util/stream/ReduceOps$1
@@ -408,6 +3090,10 @@ opcodes:
 # sun/security/jca/ProviderList$1
 # java/security/Provider$ServiceKey
 # java/security/Provider$EngineDescription
+# java/security/SecureRandomParameters
+# java/security/cert/CertStoreParameters
+# java/security/Policy$Parameters
+# javax/security/auth/login/Configuration$Parameters
 # jdk/internal/math/FloatingDecimal
 # jdk/internal/math/FloatingDecimal$ExceptionalBinaryToASCIIBuffer
 # jdk/internal/math/FloatingDecimal$BinaryToASCIIConverter
@@ -504,8 +3190,6 @@ opcodes:
 # java/net/URLClassLoader$3$1
 # java/net/MalformedURLException
 # com/sun/org/apache/xerces/internal/jaxp/datatype/DatatypeFactoryImpl
-# jdk/internal/foreign/MemorySessionImpl
-# java/lang/foreign/MemorySegment$Scope
 # java/util/regex/Pattern$BnM
 # java/util/regex/MatchResult
 # java/util/regex/Matcher
@@ -603,3 +3287,14 @@ opcodes:
 # sun/security/provider/SHA
 # sun/security/provider/ByteArrayAccess$BE
 # java/util/ComparableTimSort
+# java/util/HashMap$EntrySpliterator
+# java/util/HashMap$HashMapSpliterator
+# java/util/function/ToLongFunction
+# java/util/Collections$ReverseComparator
+# java/util/Comparators$NaturalOrderComparator
+# java/util/Collections$ReverseComparator2
+# java/util/stream/SortedOps
+# java/util/stream/SortedOps$OfRef
+# java/util/stream/ReferencePipeline$StatefulOp
+# java/util/stream/SortedOps$SizedRefSortingSink
+# java/util/stream/SortedOps$AbstractRefSortingSink
